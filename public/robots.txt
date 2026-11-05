@@ -1,1 +1,3 @@
-
+User-agent: *
+Allow: /
+Sitemap: https://www.apps308.com/sitemap-index.xml
