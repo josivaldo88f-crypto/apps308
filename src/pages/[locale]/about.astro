@@ -1,6 +1,61 @@
 ---
 import Layout from '../../layouts/Layout.astro';import {text,locales,href,type Locale} from '../../data/i18n';
 export function getStaticPaths(){return locales.map(locale=>({params:{locale}}));}const locale=Astro.params.locale as Locale;const t=text[locale];
-const content={en:[['About apps308','apps308 is an independent editorial project about apps, useful websites and online reward programs. We help readers understand a tool before spending time or money on it.'],['How we prepare our guides','We consult official product and support pages, distinguish documentation from device observations, and include original captures when available. A screenshot of a public page, onboarding or a balance does not establish that a payment was received.'],['Evidence and corrections','The initial guides were prepared on November 5, 2026. Payment and withdrawal tests are still pending. Availability, catalogs and promotional terms may change; check the current provider documentation. We do not assign ratings without a defined, completed evaluation.'],['Affiliate transparency','The Freecash guide includes a personal referral link extracted from our Android account. Its commercial nature is disclosed beside the button. Other apps are marked individually where no personal link or invitation code was verified. We do not promise a referral bonus.'],['Languages','English, Spanish and Portuguese pages are rendered separately. Language choices are voluntary; we do not redirect visitors by IP. Translations share the evidence available for the original guide.']],es:[['Acerca de apps308','apps308 es un proyecto editorial independiente sobre apps, sitios útiles y programas de recompensas. Ayudamos a entender una herramienta antes de dedicarle tiempo o dinero.'],['Cómo preparamos las guías','Consultamos páginas oficiales, distinguimos la documentación de lo observado en un dispositivo e incluimos capturas originales cuando están disponibles. Una pantalla pública, de registro o saldo no demuestra un pago recibido.'],['Evidencia y correcciones','Las guías iniciales se prepararon el 5 de noviembre de 2026. Las pruebas de pago y retiro siguen pendientes. Disponibilidad, catálogos y promociones pueden cambiar; consulta la documentación vigente. No asignamos notas sin una evaluación definida y completada.'],['Transparencia de afiliados','La guía de Freecash incluye un enlace personal extraído de nuestra cuenta Android. Indicamos su naturaleza comercial junto al botón. Las otras apps muestran su estado individual cuando no se verificó un enlace o código personal. No prometemos un bono de invitación.'],['Idiomas','Las páginas en inglés, español y portugués se generan por separado. El visitante elige el idioma y no se redirige por IP. Las traducciones comparten la evidencia disponible para la guía original.']],pt:[['Sobre o apps308','O apps308 é um projeto editorial independente sobre aplicativos, sites úteis e programas de recompensas. Ajudamos a entender uma ferramenta antes de dedicar tempo ou dinheiro a ela.'],['Como preparamos os guias','Consultamos páginas oficiais, separamos documentação do que foi observado no aparelho e incluímos capturas originais quando disponíveis. Uma tela pública, de cadastro ou saldo não comprova pagamento recebido.'],['Evidências e correções','Os guias iniciais foram preparados em 5 de novembro de 2026. Testes de pagamento e saque continuam pendentes. Disponibilidade, catálogos e promoções podem mudar; confira a documentação atual. Não atribuímos notas sem uma avaliação definida e concluída.'],['Transparência de afiliados','O guia do Freecash inclui um link pessoal extraído da nossa conta no Android. Sua natureza comercial é informada junto ao botão. Os demais apps mostram seu estado individual quando não houve verificação de link ou código pessoal. Não prometemos bônus de convite.'],['Idiomas','As páginas em inglês, espanhol e português são geradas separadamente. O visitante escolhe o idioma, sem redirecionamento por IP. As traduções compartilham a evidência disponível para o guia original.']]};
+const content={
+  "en": [
+    [
+      "About apps308",
+      "apps308 helps you discover useful apps, websites and reward programs. Find practical explanations, features to explore and tips for choosing what fits your daily life."
+    ],
+    [
+      "What you will find here",
+      "Our guides cover how to get started, useful features, strengths and limitations. For reward programs, we explain the type of reward, redemption requirements and processing information published by the provider."
+    ],
+    [
+      "Explore in your language",
+      "Read in English, Spanish or Portuguese. Use the language selector to open the equivalent guide and keep exploring."
+    ],
+    [
+      "Up-to-date information",
+      "Features, offers and regional availability can change. Each guide includes links to the provider’s product and support pages for current details."
+    ]
+  ],
+  "es": [
+    [
+      "Acerca de apps308",
+      "apps308 te ayuda a descubrir apps, sitios útiles y programas de recompensas. Encuentra explicaciones prácticas, funciones para explorar y consejos para elegir lo que encaja con tu día a día."
+    ],
+    [
+      "Qué encontrarás aquí",
+      "Las guías explican cómo empezar, funciones útiles, ventajas y aspectos a considerar. Para las recompensas, detallamos el tipo de beneficio, los requisitos de canje y los plazos publicados por el proveedor."
+    ],
+    [
+      "Explora en tu idioma",
+      "Lee en español, inglés o portugués. El selector de idioma abre la guía equivalente para seguir explorando."
+    ],
+    [
+      "Información actualizada",
+      "Las funciones, ofertas y disponibilidad regional pueden cambiar. Cada guía enlaza las páginas del producto y de soporte para consultar los detalles vigentes."
+    ]
+  ],
+  "pt": [
+    [
+      "Sobre o apps308",
+      "O apps308 ajuda você a descobrir aplicativos, sites úteis e programas de recompensas. Encontre explicações práticas, recursos para explorar e dicas para escolher o que combina com seu dia a dia."
+    ],
+    [
+      "O que você encontra por aqui",
+      "Os guias explicam como começar, recursos úteis, pontos positivos e o que considerar. Nos programas de recompensas, detalhamos o tipo de benefício, os requisitos de resgate e os prazos publicados pelo fornecedor."
+    ],
+    [
+      "Explore no seu idioma",
+      "Leia em português, inglês ou espanhol. Use o seletor de idioma para abrir o guia equivalente e continuar explorando."
+    ],
+    [
+      "Informações atualizadas",
+      "Recursos, ofertas e disponibilidade regional podem mudar. Cada guia inclui links para as páginas do produto e de suporte, onde você pode conferir os detalhes atuais."
+    ]
+  ]
+};
 ---
 <Layout locale={locale} title={`${t.about} | apps308`} description={content[locale][0][1]} alternates={Object.fromEntries(locales.map(l=>[l,href(l,'about')]))}><div class="policy wrap"><h1>{content[locale][0][0]}</h1><p>{content[locale][0][1]}</p>{content[locale].slice(1).map(([h,p])=><section><h2>{h}</h2><p>{p}</p></section>)}</div></Layout>
