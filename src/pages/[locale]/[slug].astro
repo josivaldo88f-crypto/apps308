@@ -1,1 +1,30 @@
-
+---
+import Layout from '../../layouts/Layout.astro';import Icon from '../../components/Icon.astro';import AppArt from '../../components/AppArt.astro';import AffiliateBox from '../../components/AffiliateBox.astro';import Card from '../../components/Card.astro';import {Image} from 'astro:assets';import {locales,text,href,category,type Locale} from '../../data/i18n';import {articles,apps,sourcesFor,type Article} from '../../data/articles';
+export function getStaticPaths(){return locales.flatMap(locale=>articles[locale].map(article=>({params:{locale,slug:article.slug},props:{article}})));}
+const locale=Astro.params.locale as Locale;const {article}=Astro.props as {article:Article};const t=text[locale];
+const alternates=Object.fromEntries(locales.map(l=>[l,href(l,articles[l].find(a=>a.id===article.id)!.slug)]));
+const url=`https://www.apps308.com${href(locale,article.slug)}`;const source=sourcesFor(article);
+const imageFiles=import.meta.glob<{default:ImageMetadata}>('../../assets/screenshots/*.webp',{eager:true});
+const imageKey=article.app==='compare'?'opinion':article.app;
+const screenshot=imageFiles[`../../assets/screenshots/${locale}-${imageKey}.webp`]?.default;
+const extraScreenshot=article.app==='freecash'?imageFiles[`../../assets/screenshots/${locale}-freecash-main.webp`]?.default:null;
+const extraCaption={en:'Main offer screen: no Android offers available at capture time. The account balance is excluded.',es:'Pantalla principal: no había ofertas para Android al capturarla. El saldo queda fuera del recorte.',pt:'Tela principal: não havia ofertas para Android no momento da captura. O saldo da conta ficou fora do recorte.'};
+const schema:any[]=[{'@context':'https://schema.org','@type':'Article',headline:article.title,description:article.description,inLanguage:locale,datePublished:'2026-11-05',dateModified:'2026-11-05',mainEntityOfPage:url,author:{'@type':'Organization',name:'apps308',url:`https://www.apps308.com${href(locale,'about')}`},publisher:{'@type':'Organization',name:'apps308',url:'https://www.apps308.com'},...(screenshot?{image:new URL(screenshot.src,'https://www.apps308.com').href}:{}),citation:source.map(s=>s.url)}, {'@context':'https://schema.org','@type':'FAQPage',inLanguage:locale,mainEntity:article.faq.map(f=>({'@type':'Question',name:f.q,acceptedAnswer:{'@type':'Answer',text:f.a}}))}];
+if(article.app!=='compare')schema.push({'@context':'https://schema.org','@type':'SoftwareApplication',name:apps[article.app].name,url:apps[article.app].url,operatingSystem:apps[article.app].os,applicationCategory:article.app==='lens'?'UtilitiesApplication':'LifestyleApplication',...(article.app==='lens'?{offers:{'@type':'Offer',price:'0',priceCurrency:'USD'}}:{})});
+const date=new Intl.DateTimeFormat(locale,{dateStyle:'medium',timeZone:'UTC'}).format(new Date('2026-11-05T12:00:00Z'));
+const readTime=Math.max(2,Math.ceil([article.intro,...article.sections.flatMap(s=>s.paragraphs),...article.steps,...article.faq.map(f=>f.a)].join(' ').split(/\s+/).length/180));
+---
+<Layout locale={locale} title={`${article.title} | apps308`} description={article.description} alternates={alternates} schema={schema}>
+<div class="wrap"><div class="breadcrumb"><a href={href(locale)}>{t.back}</a><Icon name="chevron" size={10}/><span>{category(locale,article.category)}</span></div><header class="article-header"><span class="eyebrow">{category(locale,article.category)}</span><h1>{article.title}</h1><p class="article-description">{article.description}</p><div class="article-meta"><span>{t.author}</span><span>{t.updated}: <time datetime="2026-11-05">{date}</time></span><span><Icon name="clock" size={13}/>{readTime} {t.minutes}</span></div></header>
+<div class="article-layout"><article class="article-body"><div class="article-art"><AppArt app={article.app}/></div><p class="intro">{article.intro}</p>
+{article.sections.map((section,i)=><section id={`section-${i}`}><h2>{section.heading}</h2>{section.paragraphs.map(p=><p>{p}</p>)}</section>)}
+<section id="steps"><h2>{t.steps}</h2><ol>{article.steps.map(step=><li>{step}</li>)}</ol></section>
+<div class="pros-cons"><div><h2>{t.pros}</h2><ul>{article.pros.map(p=><li>{p}</li>)}</ul></div><div><h2>{t.cons}</h2><ul>{article.cons.map(p=><li>{p}</li>)}</ul></div></div>
+{article.app!=='compare'&&<AffiliateBox locale={locale} app={article.app}/>}
+<section class="evidence" id="evidence"><h2>{t.evidence}</h2><p>{t.editorialNote}</p>{screenshot&&<figure><Image src={screenshot} alt={article.imageAlt} width={360} height={Math.round(screenshot.height/screenshot.width*360)} loading="lazy" format="webp"/><figcaption>{article.caption}<br/><br/>{t.photoCaption}<br/><br/>{t.proofLimit}</figcaption></figure>}{extraScreenshot&&<figure><Image src={extraScreenshot} alt={extraCaption[locale]} width={360} height={Math.round(extraScreenshot.height/extraScreenshot.width*360)} loading="lazy" format="webp"/><figcaption>{extraCaption[locale]}</figcaption></figure>}</section>
+<section class="verdict-box"><h2>{t.verdict}</h2><p>{article.verdict}</p></section>
+<section id="faq"><h2>{t.faq}</h2>{article.faq.map(f=><details class="faq-item"><summary>{f.q}</summary><p>{f.a}</p></details>)}</section>
+<section class="sources" id="sources"><h2>{t.source}</h2><ul>{source.map(s=><li><a href={s.url} rel="noopener">{s.title}</a></li>)}</ul></section>
+</article><aside class="article-sidebar"><h2>{t.contents}</h2>{article.sections.map((s,i)=><a href={`#section-${i}`}>{s.heading}</a>)}<a href="#steps">{t.steps}</a><a href="#evidence">{t.evidence}</a><a href="#faq">{t.faq}</a><a href="#sources">{t.source}</a><div class="sidebar-note"><Icon name="shield" size={24}/>{t.editorialNote}</div></aside></div></div>
+<section class="article-related wrap"><h2>{t.related}</h2><div class="cards-grid">{articles[locale].filter(a=>a.id!==article.id).slice(0,3).map(a=><Card locale={locale} article={a}/>)}</div></section>
+</Layout>
