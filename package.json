@@ -1,0 +1,22 @@
+{
+  "name": "apps308",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --host 0.0.0.0",
+    "build": "astro build",
+    "preview": "astro preview --host 0.0.0.0",
+    "verify": "node scripts/verify.mjs",
+    "screenshots": "node scripts/process-screenshots.mjs"
+  },
+  "dependencies": {
+    "astro": "latest",
+    "@astrojs/sitemap": "latest",
+    "sharp": "latest"
+  },
+  "engines": {
+    "node": ">=22.23.4"
+  },
+  "packageManager": "pnpm@10.28.2"
+}
