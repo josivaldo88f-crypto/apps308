@@ -1,1 +1,30 @@
-
+---
+import {text,locales,href,type Locale} from '../data/i18n';
+import Icon from '../components/Icon.astro';
+import '../styles/global.css';
+interface Props {locale:Locale;title:string;description:string;alternates?:Record<string,string>;schema?:any;noindex?:boolean;}
+const {locale,title,description,alternates,schema,noindex=false}=Astro.props;
+const t=text[locale];
+const current=new URL(Astro.url.pathname,'https://www.apps308.com').href;
+const translations=alternates||Object.fromEntries(locales.map(l=>[l,href(l)]));
+---
+<!doctype html><html lang={locale}><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>{title}</title><meta name="description" content={description}/><meta name="theme-color" content="#183f34"/>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"/><link rel="canonical" href={current}/>
+{locales.map(l=><link rel="alternate" hreflang={l} href={new URL(translations[l],'https://www.apps308.com').href}/>)}
+<link rel="alternate" hreflang="x-default" href={new URL(translations.en,'https://www.apps308.com').href}/>
+{noindex&&<meta name="robots" content="noindex,follow"/>}
+<meta property="og:type" content={schema?'article':'website'}/><meta property="og:site_name" content="apps308"/>
+<meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:url" content={current}/><meta property="og:locale" content={locale==='pt'?'pt_BR':locale==='es'?'es_ES':'en_US'}/><meta property="og:image" content="https://www.apps308.com/social.png"/><meta name="twitter:card" content="summary_large_image"/>
+{schema&&<script type="application/ld+json" set:html={JSON.stringify(schema).replaceAll('<','\\u003c')}/>}
+</head><body>
+<a href="#main" class="skip-link">{t.skip}</a>
+<div class="topbar"><div class="wrap"><span>{t.news}</span><span class="topbar-right"><Icon name="globe" size={13}/>{t.stat}</span></div></div>
+<header class="header wrap"><a class="brand" href={href(locale)} aria-label="apps308"><span class="brand-symbol"><i></i><i></i><i></i><i></i></span>apps<span class="brand-num">308</span><span class="brand-period">.</span></a>
+<nav class="main-nav" aria-label={locale==='pt'?'Navegação principal':locale==='es'?'Navegación principal':'Main navigation'}><a class="nav-active" href={href(locale)}>{t.nav[0]}</a><a href={`${href(locale)}?category=all#guides`}>{t.nav[1]}</a><a href={`${href(locale)}?category=rewards#guides`}>{t.nav[2]}</a><a href={`${href(locale)}?category=tools#guides`}>{t.nav[3]}</a></nav>
+<div class="header-actions"><details class="language-picker"><summary><Icon name="globe" size={17}/>{locale.toUpperCase()}<span class="down-caret">⌄</span></summary><div class="language-options">{locales.map(l=><a href={translations[l]} lang={l} hreflang={l} aria-current={l===locale?'page':undefined}>{text[l].name}<span>{l===locale?'✓':''}</span></a>)}</div></details><a class="header-search" href={`${href(locale)}#search`} aria-label={t.search}><Icon name="search"/></a></div>
+</header>
+<main id="main"><slot/></main>
+<footer><div class="footer-main wrap"><div><a class="brand" href={href(locale)}><span class="brand-symbol"><i></i><i></i><i></i><i></i></span>apps<span class="brand-num">308</span><span class="brand-period">.</span></a><p class="footer-slogan">{t.footer}</p><p class="footer-description">{t.footerSub}</p></div><div class="footer-links"><a href={href(locale,'about')}>{t.about}<Icon name="arrow" size={16}/></a><a href={href(locale,'privacy')}>{t.privacy}<Icon name="arrow" size={16}/></a><div class="footer-languages">{locales.map(l=><a lang={l} href={translations[l]} aria-current={l===locale?'page':undefined}>{text[l].name}</a>)}</div></div></div><div class="footer-bottom wrap"><span>© {new Date().getUTCFullYear()} apps308</span><span>Made for the curious <span class="footer-star">✳</span></span></div></footer>
+</body></html>
