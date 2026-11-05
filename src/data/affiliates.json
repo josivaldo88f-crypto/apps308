@@ -1,0 +1,33 @@
+{
+  "lastReviewed": "2026-11-05",
+  "programs": {
+    "lens": {
+      "status": "not-verified",
+      "code": null,
+      "referralUrl": null,
+      "verifiedAt": null
+    },
+    "opinion": {
+      "status": "generic-share-verified",
+      "code": null,
+      "referralUrl": null,
+      "verifiedAt": "2026-11-05",
+      "shareUrl": "https://googleopinionrewards.page.link/share",
+      "evidence": "Android share sheet opened from Apps 308 account; no personalized code or rewarded invitation displayed."
+    },
+    "microsoft": {
+      "status": "pending",
+      "code": null,
+      "referralUrl": null,
+      "verifiedAt": null
+    },
+    "freecash": {
+      "status": "verified",
+      "code": "3C7GKG",
+      "referralUrl": "https://freecash.com/r/3C7GKG",
+      "verifiedAt": "2026-11-05",
+      "codeType": "referral-link-identifier",
+      "evidence": "Freecash Android > Recompensas > Convide Amigos; exact URL read from screen via ADB. No manual redemption-code field tested."
+    }
+  }
+}
