@@ -1,0 +1,67 @@
+[
+  {
+    "app": "opinion",
+    "captureMethod": "adb exec-out screencap -p",
+    "captured": "2026-11-05",
+    "crop": {
+      "left": 0,
+      "top": 550,
+      "width": 1080,
+      "height": 1450
+    },
+    "privacy": "Status bar, account avatar and financial balance excluded where present",
+    "sourceLanguage": "pt"
+  },
+  {
+    "app": "microsoft",
+    "captureMethod": "adb exec-out screencap -p",
+    "captured": "2026-11-05",
+    "crop": {
+      "left": 0,
+      "top": 100,
+      "width": 1080,
+      "height": 2170
+    },
+    "privacy": "Status bar, account avatar and financial balance excluded where present",
+    "sourceLanguage": "pt"
+  },
+  {
+    "app": "lens",
+    "captureMethod": "adb exec-out screencap -p",
+    "captured": "2026-11-05",
+    "crop": {
+      "left": 0,
+      "top": 100,
+      "width": 1080,
+      "height": 2170
+    },
+    "privacy": "Status bar, account avatar and financial balance excluded where present",
+    "sourceLanguage": "en"
+  },
+  {
+    "app": "freecash",
+    "captureMethod": "adb exec-out screencap -p",
+    "captured": "2026-11-05",
+    "crop": {
+      "left": 0,
+      "top": 530,
+      "width": 1080,
+      "height": 720
+    },
+    "privacy": "Status bar, account avatar and financial balance excluded where present",
+    "sourceLanguage": "pt"
+  },
+  {
+    "app": "freecash-main",
+    "captureMethod": "adb exec-out screencap -p",
+    "captured": "2026-11-05",
+    "crop": {
+      "left": 0,
+      "top": 300,
+      "width": 1080,
+      "height": 1710
+    },
+    "privacy": "Status bar, account avatar and financial balance excluded where present",
+    "sourceLanguage": "pt"
+  }
+]

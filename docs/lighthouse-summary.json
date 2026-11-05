@@ -1,0 +1,38 @@
+{
+  "home": {
+    "url": "http://localhost:4322/pt/",
+    "date": "2026-11-05T16:45:07.538Z",
+    "environment": "Local production build; simulated mobile laboratory audit, not field data or production PageSpeed",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": "0.8 s",
+      "largest-contentful-paint": "0.8 s",
+      "total-blocking-time": "0 ms",
+      "cumulative-layout-shift": "0",
+      "speed-index": "0.8 s"
+    }
+  },
+  "article": {
+    "url": "http://localhost:4322/pt/freecash-ofertas-convites/",
+    "date": "2026-11-05T17:06:57.685Z",
+    "environment": "Local production build; simulated mobile laboratory audit, not field data or production PageSpeed",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": "0.8 s",
+      "largest-contentful-paint": "0.8 s",
+      "total-blocking-time": "0 ms",
+      "cumulative-layout-shift": "0",
+      "speed-index": "0.8 s"
+    }
+  }
+}
