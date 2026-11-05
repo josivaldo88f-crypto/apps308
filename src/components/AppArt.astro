@@ -1,0 +1,7 @@
+---
+const {app='lens',hero=false}=Astro.props;
+---
+<div class:list={['app-art',`art-${app}`,{hero}]} aria-hidden="true">
+  <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+  {app==='lens' ? <><div class="lens-frame"><i></i><span></span><b></b></div><div class="art-label"><span class="tiny-dot"></span> Google Lens <span>↗</span></div><div class="art-spark">✳</div></> : app==='opinion' ? <><div class="survey-card"><div class="survey-symbol">▥</div><div class="survey-line"></div><div class="survey-line short"></div><div class="survey-options"><i></i><i></i><i></i></div></div><div class="art-label"><span class="tiny-dot"></span> Opinion Rewards <span>↗</span></div></> : app==='microsoft' ? <><div class="ms-mark"><i></i><i></i><i></i><i></i></div><div class="art-label"><span class="tiny-dot"></span> Microsoft Rewards <span>↗</span></div><div class="art-spark">✳</div></> : app==='freecash' ? <><div class="cash-mark">F<span>✦</span></div><div class="art-label"><span class="tiny-dot"></span> Freecash <span>↗</span></div></> : <><div class="compare-mark"><span>↗</span><span>✓</span><span>✳</span></div><div class="art-label"><span class="tiny-dot"></span> apps308 <span>↗</span></div></>}
+</div>
