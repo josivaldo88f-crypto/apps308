@@ -6,14 +6,29 @@ import Icon from './Icon.astro';
 const {locale,app}=Astro.props as {locale:Locale;app:string};
 const t=text[locale];
 const program=data.programs[app as keyof typeof data.programs];
-const hasInvite=program?.status==='verified'&&program?.code&&program?.referralUrl;
-const open={en:'Open Freecash',es:'Acceder a Freecash',pt:'Acessar o Freecash'};
+const hasInvite=program?.status==='verified'&&Boolean(program?.referralUrl);
+const hasCodeCopy=app==='freecash'&&Boolean(program?.code);
+const open:Record<string,Record<Locale,string>>={
+  freecash:{en:'Open Freecash',es:'Acceder a Freecash',pt:'Acessar o Freecash'},
+  swagbucks:{en:'Sign up on Swagbucks',es:'Registrarse en Swagbucks',pt:'Criar conta no Swagbucks'}
+};
+const subtext:Record<string,Record<Locale,string>>={
+  swagbucks:{
+    en:'Official registration link — create your free account to browse surveys, mobile game milestones, and cashback deals.',
+    es:'Enlace de invitación — crea tu cuenta gratuita para explorar encuestas, metas en juegos móviles y reembolsos de compras.',
+    pt:'Link de convite para cadastro — crie sua conta gratuita para ver pesquisas, metas em jogos no celular e ofertas de cashback.'
+  }
+};
+const store={en:'Get it on Google Play',es:'Descargar en Google Play',pt:'Baixar na Google Play'};
 ---
-<aside class:list={['app-access',{'has-invite':hasInvite}]} aria-label={apps[app].name}>
-  <div class="access-heading"><strong>{apps[app].name}</strong></div>
-  {hasInvite&&<div class="copy-row"><code>{program.code}</code><button type="button" data-copy={program.code} data-success={t.copied} data-failure={t.copyFail}>{t.copy}</button><span role="status" aria-live="polite"></span></div>}
-  <a class="access-button" href={hasInvite?program.referralUrl!:apps[app].url} rel={hasInvite?'sponsored noopener':'noopener'}>{hasInvite?open[locale]:t.visit}<Icon name="arrow" size={17}/></a>
+<aside class:list={['app-access',{'has-invite':hasInvite,'access-swagbucks':app==='swagbucks'}]} aria-label={apps[app].name}>
+  <div class="access-heading">
+    <strong>{apps[app].name}</strong>
+    {subtext[app]&&<p class="access-sub">{subtext[app][locale]}</p>}
+  </div>
+  {hasCodeCopy&&<div class="copy-row"><code>{program.code}</code><button type="button" data-copy={program.code} data-success={t.copied} data-failure={t.copyFail}>{t.copy}</button><span role="status" aria-live="polite"></span></div>}
+  <a class="access-button" href={hasInvite?program.referralUrl!:apps[app].url} rel={hasInvite?'sponsored noopener':'noopener'}>{hasInvite?(open[app]?.[locale]||t.visit):app==='dramastack'?store[locale]:t.visit}<Icon name="arrow" size={17}/></a>
 </aside>
-{hasInvite&&<script is:inline>
+{hasCodeCopy&&<script is:inline>
  document.querySelectorAll('[data-copy]').forEach(button=>{button.addEventListener('click',async()=>{const status=button.parentElement?.querySelector('[role=status]');try{await navigator.clipboard.writeText(button.dataset.copy||'');if(status)status.textContent=button.dataset.success||'Copied';}catch{if(status)status.textContent=button.dataset.failure||'Copy manually';}});});
 </script>}

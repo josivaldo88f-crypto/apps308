@@ -1,5 +1,5 @@
 {
-  "lastReviewed": "2026-11-05",
+  "lastReviewed": "2026-11-07",
   "programs": {
     "lens": {
       "status": "not-verified",
@@ -28,6 +28,14 @@
       "verifiedAt": "2026-11-05",
       "codeType": "referral-link-identifier",
       "evidence": "Freecash Android > Recompensas > Convide Amigos; exact URL read from screen via ADB. No manual redemption-code field tested."
+    },
+    "swagbucks": {
+      "status": "verified",
+      "code": "NPHSOu1zhQuqNHgx",
+      "referralUrl": "https://www.swagbucks.com/p/register?rb=NPHSOu1zhQuqNHgx&rp=1",
+      "verifiedAt": "2026-11-07",
+      "codeType": "referral-registration-link",
+      "evidence": "Official Swagbucks registration invitation URL (rb=NPHSOu1zhQuqNHgx&rp=1) verified with HTTP 200 and web interface captures of Shop, Surveys, Play Games, and Farm Craze offer milestones."
     }
   }
 }

@@ -2,19 +2,70 @@
 import {Image} from 'astro:assets';
 import type {Locale} from '../data/i18n';
 import {apps} from '../data/articles';
-const {app,locale,large=false}=Astro.props as {app:string;locale:Locale;large?:boolean};
+const {app,locale,large=false,variant=app}=Astro.props as {app:string;locale:Locale;large?:boolean;variant?:string};
 const files=import.meta.glob<{default:ImageMetadata}>('../assets/screenshots/*.webp',{eager:true});
-const names=app==='compare'?['opinion','microsoft','freecash']:app==='freecash'?['freecash-main','freecash']:[app];
+const names=
+  variant==='swagbucks-games'?['swagbucks-games','swagbucks-goals']:
+  variant==='swagbucks-surveys'?['swagbucks-shop','swagbucks-offer']:
+  variant==='swagbucks-cashout'?['swagbucks-goals','swagbucks-shop']:
+  variant==='swagbucks-vs-freecash'?['swagbucks-games','freecash-main']:
+  app==='swagbucks'?['swagbucks-shop','swagbucks-games']:
+  app==='compare'?['opinion','microsoft','freecash']:
+  app==='freecash'?['freecash-main','freecash']:
+  app==='dramastack'?['dramastack-payout','dramastack']:[app];
 const photos=names.map(name=>({name,image:files[`../assets/screenshots/${locale}-${name}.webp`]?.default}));
-const label=app==='compare'?{en:'Rewards, compared.',es:'Compara recompensas.',pt:'Compare recompensas.'}[locale]:apps[app].name;
-const tag={en:{lens:'Search · Copy · Translate',opinion:'Surveys & Play credit',microsoft:'Points & rewards',freecash:'Games, offers & rewards',compare:'Cash · Points · Credit'},es:{lens:'Busca · Copia · Traduce',opinion:'Encuestas y saldo de Play',microsoft:'Puntos y recompensas',freecash:'Juegos, ofertas y recompensas',compare:'Dinero · Puntos · Crédito'},pt:{lens:'Busque · Copie · Traduza',opinion:'Pesquisas e créditos de Play',microsoft:'Pontos e recompensas',freecash:'Jogos, ofertas e recompensas',compare:'Dinheiro · Pontos · Crédito'}};
+const label=
+  variant==='swagbucks-vs-freecash'?{en:'Swagbucks vs. Freecash',es:'Swagbucks vs. Freecash',pt:'Swagbucks vs. Freecash'}[locale]:
+  app==='compare'?{en:'Rewards, compared.',es:'Compara recompensas.',pt:'Compare recompensas.'}[locale]:
+  apps[app].name;
+const tag:Record<Locale,Record<string,string>>={
+  en:{
+    lens:'Search · Copy · Translate',
+    opinion:'Surveys & Play credit',
+    microsoft:'Points & rewards',
+    freecash:'Games, offers & rewards',
+    dramastack:'Short dramas & cashout claims',
+    compare:'Cash · Points · Credit',
+    swagbucks:'Surveys · Games · Cashback',
+    'swagbucks-games':'Mobile games · Milestones · Tracking',
+    'swagbucks-surveys':'Paid surveys · Online cashback',
+    'swagbucks-cashout':'PayPal · Gift cards · Pending SB',
+    'swagbucks-vs-freecash':'GPT platforms · Payout rules'
+  },
+  es:{
+    lens:'Busca · Copia · Traduce',
+    opinion:'Encuestas y saldo de Play',
+    microsoft:'Puntos y recompensas',
+    freecash:'Juegos, ofertas y recompensas',
+    dramastack:'Dramas cortos y promesas de retiro',
+    compare:'Dinero · Puntos · Crédito',
+    swagbucks:'Encuestas · Juegos · Cashback',
+    'swagbucks-games':'Juegos móviles · Niveles · Seguimiento',
+    'swagbucks-surveys':'Encuestas pagadas · Cashback online',
+    'swagbucks-cashout':'PayPal · Tarjetas regalo · Pendientes',
+    'swagbucks-vs-freecash':'Plataformas GPT · Reglas de pago'
+  },
+  pt:{
+    lens:'Busque · Copie · Traduza',
+    opinion:'Pesquisas e créditos de Play',
+    microsoft:'Pontos e recompensas',
+    freecash:'Jogos, ofertas e recompensas',
+    dramastack:'Dramas curtos e promessa de saque',
+    compare:'Dinheiro · Pontos · Crédito',
+    swagbucks:'Pesquisas · Jogos · Cashback',
+    'swagbucks-games':'Jogos mobile · Metas · Rastreamento',
+    'swagbucks-surveys':'Pesquisas pagas · Cashback online',
+    'swagbucks-cashout':'PayPal · Gift cards · SB pendentes',
+    'swagbucks-vs-freecash':'Sites de renda extra · Regras de saque'
+  }
+};
 ---
-<div class:list={['app-cover',`cover-${app}`,{large}]}>
+<div class:list={['app-cover',`cover-${app}`,`variant-${variant}`,{large}]}>
   <div class="cover-copy">
     <div class:list={['cover-mark',`mark-${app}`]} aria-hidden="true">
-      {app==='microsoft'?<><i></i><i></i><i></i><i></i></>:app==='lens'?<svg viewBox="0 0 64 64"><path d="M8 24V16a8 8 0 0 1 8-8h8" stroke="#ea4335"/><path d="M40 8h8a8 8 0 0 1 8 8v8" stroke="#4285f4"/><path d="M8 40v8a8 8 0 0 0 8 8h8" stroke="#fbbc04"/><circle cx="32" cy="32" r="11" stroke="#4285f4"/><circle cx="51" cy="51" r="7" fill="#34a853" stroke="none"/></svg>:app==='opinion'?<svg viewBox="0 0 64 64"><path d="M17 12h30v24L32 52 17 36Z" fill="#4285f4"/><path d="M23 32l6 6 13-15" fill="none" stroke="white" stroke-width="5"/></svg>:app==='freecash'?<span>F<span>✦</span></span>:<span>↗</span>}
+      {app==='microsoft'?<><i></i><i></i><i></i><i></i></>:app==='lens'?<svg viewBox="0 0 64 64"><path d="M8 24V16a8 8 0 0 1 8-8h8" stroke="#ea4335"/><path d="M40 8h8a8 8 0 0 1 8 8v8" stroke="#4285f4"/><path d="M8 40v8a8 8 0 0 0 8 8h8" stroke="#fbbc04"/><circle cx="32" cy="32" r="11" stroke="#4285f4"/><circle cx="51" cy="51" r="7" fill="#34a853" stroke="none"/></svg>:app==='opinion'?<svg viewBox="0 0 64 64"><path d="M17 12h30v24L32 52 17 36Z" fill="#4285f4"/><path d="M23 32l6 6 13-15" fill="none" stroke="white" stroke-width="5"/></svg>:app==='freecash'?<span>F<span>✦</span></span>:app==='dramastack'?<span class="drama-logo">D<span>▶</span></span>:app==='swagbucks'?<span class="sb-logo">SB<span>◈</span></span>:<span>↗</span>}
     </div>
-    <strong>{label}</strong><span class="cover-tagline">{tag[locale][app as keyof typeof tag.pt]}</span>
+    <strong>{label}</strong><span class="cover-tagline">{tag[locale][variant]||tag[locale][app]}</span>
     <span class="cover-credit">apps308<span>✳</span></span>
   </div>
   <div class="cover-screens" aria-hidden="true">{photos.map(({name,image},i)=>image&&<div class:list={['cover-screen',`screen-${i+1}`,`screen-${name}`]}><Image src={image} alt={app==='compare'?apps[name].name:label} width={large?440:260} loading="lazy" format="webp"/></div>)}</div>

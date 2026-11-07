@@ -63,5 +63,83 @@
     },
     "privacy": "Status bar, account avatar and financial balance excluded where present",
     "sourceLanguage": "pt"
+  },
+  {
+    "app": "dramastack",
+    "captureMethod": "adb exec-out screencap -p",
+    "captured": "2026-11-05",
+    "crop": {
+      "left": 0,
+      "top": 240,
+      "width": 1080,
+      "height": 1850
+    },
+    "privacy": "Status bar, account avatar and financial balance excluded where present",
+    "sourceLanguage": "pt"
+  },
+  {
+    "app": "dramastack-payout",
+    "captureMethod": "adb exec-out screencap -p",
+    "captured": "2026-11-05",
+    "crop": {
+      "left": 0,
+      "top": 220,
+      "width": 1080,
+      "height": 1650
+    },
+    "privacy": "Status bar, account avatar and financial balance excluded where present",
+    "sourceLanguage": "pt"
+  },
+  {
+    "app": "swagbucks-shop",
+    "captureMethod": "browser capture",
+    "captured": "2026-11-07",
+    "crop": {
+      "left": 132,
+      "top": 66,
+      "width": 735,
+      "height": 432
+    },
+    "privacy": "Status bar, account avatar and financial balance excluded where present",
+    "sourceLanguage": "en"
+  },
+  {
+    "app": "swagbucks-games",
+    "captureMethod": "browser capture",
+    "captured": "2026-11-07",
+    "crop": {
+      "left": 145,
+      "top": 44,
+      "width": 690,
+      "height": 484
+    },
+    "privacy": "Status bar, account avatar and financial balance excluded where present",
+    "sourceLanguage": "en"
+  },
+  {
+    "app": "swagbucks-offer",
+    "captureMethod": "browser capture",
+    "captured": "2026-11-07",
+    "crop": {
+      "left": 10,
+      "top": 6,
+      "width": 974,
+      "height": 649
+    },
+    "privacy": "Status bar, account avatar and financial balance excluded where present",
+    "sourceLanguage": "en"
+  },
+  {
+    "app": "swagbucks-goals",
+    "captureMethod": "browser capture",
+    "captured": "2026-11-07",
+    "crop": {
+      "left": 430,
+      "top": 6,
+      "width": 554,
+      "height": 649
+    },
+    "privacy": "Status bar, account avatar and financial balance excluded where present",
+    "sourceLanguage": "en"
   }
 ]
