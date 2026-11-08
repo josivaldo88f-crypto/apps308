@@ -36,6 +36,22 @@
       "verifiedAt": "2026-11-07",
       "codeType": "referral-registration-link",
       "evidence": "Official Swagbucks registration invitation URL (rb=NPHSOu1zhQuqNHgx&rp=1) verified with HTTP 200 and web interface captures of Shop, Surveys, Play Games, and Farm Craze offer milestones."
+    },
+    "pawns": {
+      "status": "verified",
+      "code": "6823713",
+      "referralUrl": "https://discoverpawns.eu/6823713",
+      "verifiedAt": "2026-11-08",
+      "codeType": "referral-registration-link",
+      "evidence": "Official Pawns.app invitation link discoverpawns.eu/6823713 with invite code 6823713 verified from Android app Comunidade tab ($3 starter reward upon cashout)."
+    },
+    "primeopinion": {
+      "status": "verified",
+      "code": "ALNTFL",
+      "referralUrl": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d",
+      "verifiedAt": "2026-11-08",
+      "codeType": "referral-registration-link",
+      "evidence": "Official Prime Opinion referral link (ref=a32dad65-3bc5-4c37-af10-4f7590595b0d) and bonus code ALNTFL granting +10% survey bonus for 24h."
     }
   }
 }

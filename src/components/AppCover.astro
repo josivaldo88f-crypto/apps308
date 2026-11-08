@@ -5,6 +5,16 @@ import {apps} from '../data/articles';
 const {app,locale,large=false,variant=app}=Astro.props as {app:string;locale:Locale;large?:boolean;variant?:string};
 const files=import.meta.glob<{default:ImageMetadata}>('../assets/screenshots/*.webp',{eager:true});
 const names=
+  variant==='primeopinion-games'?['primeopinion-games','primeopinion-home']:
+  variant==='primeopinion-surveys'?['primeopinion-surveys','primeopinion-home']:
+  variant==='primeopinion-cashout'?['primeopinion-rewards','primeopinion-referral']:
+  variant==='primeopinion-vs-swagbucks'?['primeopinion-home','swagbucks-games']:
+  app==='primeopinion'?['primeopinion-home','primeopinion-rewards']:
+  variant==='pawns-games'?['pawns-offers','pawns-games']:
+  variant==='pawns-surveys'?['pawns-surveys','pawns-rewards']:
+  variant==='pawns-cashout'?['pawns-referral','pawns-rewards']:
+  variant==='pawns-vs-freecash'?['pawns-referral','freecash-main']:
+  app==='pawns'?['pawns-referral','pawns-surveys']:
   variant==='swagbucks-games'?['swagbucks-games','swagbucks-goals']:
   variant==='swagbucks-surveys'?['swagbucks-shop','swagbucks-offer']:
   variant==='swagbucks-cashout'?['swagbucks-goals','swagbucks-shop']:
@@ -15,6 +25,8 @@ const names=
   app==='dramastack'?['dramastack-payout','dramastack']:[app];
 const photos=names.map(name=>({name,image:files[`../assets/screenshots/${locale}-${name}.webp`]?.default}));
 const label=
+  variant==='primeopinion-vs-swagbucks'?{en:'Prime Opinion vs. Swagbucks',es:'Prime Opinion vs. Swagbucks',pt:'Prime Opinion vs. Swagbucks'}[locale]:
+  variant==='pawns-vs-freecash'?{en:'Pawns.app vs. Freecash',es:'Pawns.app vs. Freecash',pt:'Pawns.app vs. Freecash'}[locale]:
   variant==='swagbucks-vs-freecash'?{en:'Swagbucks vs. Freecash',es:'Swagbucks vs. Freecash',pt:'Swagbucks vs. Freecash'}[locale]:
   app==='compare'?{en:'Rewards, compared.',es:'Compara recompensas.',pt:'Compare recompensas.'}[locale]:
   apps[app].name;
@@ -30,7 +42,17 @@ const tag:Record<Locale,Record<string,string>>={
     'swagbucks-games':'Mobile games · Milestones · Tracking',
     'swagbucks-surveys':'Paid surveys · Online cashback',
     'swagbucks-cashout':'PayPal · Gift cards · Pending SB',
-    'swagbucks-vs-freecash':'GPT platforms · Payout rules'
+    'swagbucks-vs-freecash':'GPT platforms · Payout rules',
+    pawns:'Internet sharing · Surveys · Games',
+    'pawns-surveys':'Daily surveys · Prize wheel · Fast rewards',
+    'pawns-games':'Mobile offers · Game milestones · Clockmaker & Candy Crush',
+    'pawns-cashout':'PayPal & Bitcoin cashout · $3 referral bonus',
+    'pawns-vs-freecash':'Pawns.app vs. Freecash · Payout speed & earnings',
+    primeopinion:'Paid surveys · Instant cashouts · Games',
+    'primeopinion-surveys':'2-minute surveys · +25% boosters · Best Match',
+    'primeopinion-games':'Rise of Kingdoms · Amazon Music · High payouts',
+    'primeopinion-cashout':'PayPal & Venmo · From $5.25 USD · Code ALNTFL',
+    'primeopinion-vs-swagbucks':'Prime Opinion vs. Swagbucks · Payout speed comparison'
   },
   es:{
     lens:'Busca · Copia · Traduce',
@@ -43,7 +65,17 @@ const tag:Record<Locale,Record<string,string>>={
     'swagbucks-games':'Juegos móviles · Niveles · Seguimiento',
     'swagbucks-surveys':'Encuestas pagadas · Cashback online',
     'swagbucks-cashout':'PayPal · Tarjetas regalo · Pendientes',
-    'swagbucks-vs-freecash':'Plataformas GPT · Reglas de pago'
+    'swagbucks-vs-freecash':'Plataformas GPT · Reglas de pago',
+    pawns:'Internet compartido · Encuestas · Juegos',
+    'pawns-surveys':'Encuestas diarias · Ruleta de premios · Ganancias',
+    'pawns-games':'Ofertas móviles · Metas de juegos · Candy Crush y Clockmaker',
+    'pawns-cashout':'Retiros por PayPal y Bitcoin · Bono de $3',
+    'pawns-vs-freecash':'Pawns.app vs. Freecash · Velocidad y ganancias',
+    primeopinion:'Encuestas pagadas · Retiros rápidos · Juegos móviles',
+    'primeopinion-surveys':'Encuestas de 2 min · Bonos del 25% · Coincidencias',
+    'primeopinion-games':'Rise of Kingdoms · Amazon Music · Ofertas altas',
+    'primeopinion-cashout':'PayPal y Venmo · Retiro desde $5.25 · Código ALNTFL',
+    'primeopinion-vs-swagbucks':'Prime Opinion vs. Swagbucks · Comparativa de pagos'
   },
   pt:{
     lens:'Busque · Copie · Traduza',
@@ -56,14 +88,24 @@ const tag:Record<Locale,Record<string,string>>={
     'swagbucks-games':'Jogos mobile · Metas · Rastreamento',
     'swagbucks-surveys':'Pesquisas pagas · Cashback online',
     'swagbucks-cashout':'PayPal · Gift cards · SB pendentes',
-    'swagbucks-vs-freecash':'Sites de renda extra · Regras de saque'
+    'swagbucks-vs-freecash':'Sites de renda extra · Regras de saque',
+    pawns:'Internet compartilhada · Pesquisas · Jogos',
+    'pawns-surveys':'Pesquisas diárias · Roda de prêmios · Recompensas',
+    'pawns-games':'Ofertas de jogos · Metas por nível · Candy Crush e Clockmaker',
+    'pawns-cashout':'Saques via PayPal e Bitcoin · Bônus de $3 por convite',
+    'pawns-vs-freecash':'Pawns.app vs. Freecash · Velocidade de saque e ganhos',
+    primeopinion:'Pesquisas pagas · Saques rápidos · Jogos de celular',
+    'primeopinion-surveys':'Pesquisas de 2 min · Bônus de 25% · Alta pontuação',
+    'primeopinion-games':'Rise of Kingdoms · Amazon Music · Grandes recompensas',
+    'primeopinion-cashout':'PayPal e Venmo · Saque a partir de $5,25 · Código ALNTFL',
+    'primeopinion-vs-swagbucks':'Prime Opinion vs. Swagbucks · Qual paga mais rápido'
   }
 };
 ---
 <div class:list={['app-cover',`cover-${app}`,`variant-${variant}`,{large}]}>
   <div class="cover-copy">
     <div class:list={['cover-mark',`mark-${app}`]} aria-hidden="true">
-      {app==='microsoft'?<><i></i><i></i><i></i><i></i></>:app==='lens'?<svg viewBox="0 0 64 64"><path d="M8 24V16a8 8 0 0 1 8-8h8" stroke="#ea4335"/><path d="M40 8h8a8 8 0 0 1 8 8v8" stroke="#4285f4"/><path d="M8 40v8a8 8 0 0 0 8 8h8" stroke="#fbbc04"/><circle cx="32" cy="32" r="11" stroke="#4285f4"/><circle cx="51" cy="51" r="7" fill="#34a853" stroke="none"/></svg>:app==='opinion'?<svg viewBox="0 0 64 64"><path d="M17 12h30v24L32 52 17 36Z" fill="#4285f4"/><path d="M23 32l6 6 13-15" fill="none" stroke="white" stroke-width="5"/></svg>:app==='freecash'?<span>F<span>✦</span></span>:app==='dramastack'?<span class="drama-logo">D<span>▶</span></span>:app==='swagbucks'?<span class="sb-logo">SB<span>◈</span></span>:<span>↗</span>}
+      {app==='microsoft'?<><i></i><i></i><i></i><i></i></>:app==='lens'?<svg viewBox="0 0 64 64"><path d="M8 24V16a8 8 0 0 1 8-8h8" stroke="#ea4335"/><path d="M40 8h8a8 8 0 0 1 8 8v8" stroke="#4285f4"/><path d="M8 40v8a8 8 0 0 0 8 8h8" stroke="#fbbc04"/><circle cx="32" cy="32" r="11" stroke="#4285f4"/><circle cx="51" cy="51" r="7" fill="#34a853" stroke="none"/></svg>:app==='opinion'?<svg viewBox="0 0 64 64"><path d="M17 12h30v24L32 52 17 36Z" fill="#4285f4"/><path d="M23 32l6 6 13-15" fill="none" stroke="white" stroke-width="5"/></svg>:app==='freecash'?<span>F<span>✦</span></span>:app==='dramastack'?<span class="drama-logo">D<span>▶</span></span>:app==='swagbucks'?<span class="sb-logo">SB<span>◈</span></span>:app==='pawns'?<span class="pawns-logo">P<span>♟</span></span>:app==='primeopinion'?<span class="po-logo">PO<span>★</span></span>:<span>↗</span>}
     </div>
     <strong>{label}</strong><span class="cover-tagline">{tag[locale][variant]||tag[locale][app]}</span>
     <span class="cover-credit">apps308<span>✳</span></span>
