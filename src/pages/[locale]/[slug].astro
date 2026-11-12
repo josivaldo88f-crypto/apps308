@@ -11,7 +11,15 @@ const extraScreenshot=article.secondImage?imageFiles[`../../assets/screenshots/$
 const extraCaption={en:'This Android screen has no offers available. Offer availability depends on your device and region.',es:'Esta pantalla de Android no tiene ofertas disponibles. Las ofertas dependen del dispositivo y la región.',pt:'Nesta tela do Android, não há ofertas disponíveis. A lista varia conforme o aparelho e a região.'};
 const payoutCaption={en:'The app displays a R$300 cashout threshold and higher reward levels.',es:'La app muestra un mínimo de retiro de R$300 y niveles superiores.',pt:'O app exibe saque a partir de R$ 300 e níveis de recompensa mais altos.'};
 const publishedDate=article.app==='primeopinion'?'2026-11-08':article.app==='pawns'?'2026-11-08':article.app==='swagbucks'?'2026-11-07':'2026-11-05';
-const schema:any[]=[{'@context':'https://schema.org','@type':'Article',headline:article.title,description:article.description,inLanguage:locale,datePublished:publishedDate,dateModified:'2026-11-08',mainEntityOfPage:url,author:{'@type':'Organization',name:'apps308',url:`https://www.apps308.com${href(locale,'about')}`},publisher:{'@type':'Organization',name:'apps308',url:'https://www.apps308.com'},...(screenshot?{image:new URL(screenshot.src,'https://www.apps308.com').href}:{}),citation:source.map(s=>s.url)}, {'@context':'https://schema.org','@type':'FAQPage',inLanguage:locale,mainEntity:article.faq.map(f=>({'@type':'Question',name:f.q,acceptedAnswer:{'@type':'Answer',text:f.a}}))}];
+const schema:any[]=[
+  {'@context':'https://schema.org','@type':'Article',headline:article.title,description:article.description,inLanguage:locale,datePublished:publishedDate,dateModified:'2026-11-11',mainEntityOfPage:url,author:{'@type':'Organization',name:'apps308',url:`https://www.apps308.com${href(locale,'about')}`},publisher:{'@type':'Organization',name:'apps308',url:'https://www.apps308.com'},...(screenshot?{image:new URL(screenshot.src,'https://www.apps308.com').href}:{}),citation:source.map(s=>s.url)},
+  {'@context':'https://schema.org','@type':'FAQPage',inLanguage:locale,mainEntity:article.faq.map(f=>({'@type':'Question',name:f.q,acceptedAnswer:{'@type':'Answer',text:f.a}}))},
+  {'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[
+    {'@type':'ListItem',position:1,name:'apps308',item:`https://www.apps308.com${href(locale)}`},
+    {'@type':'ListItem',position:2,name:category(locale,article.category),item:`https://www.apps308.com${href(locale)}#guides`},
+    {'@type':'ListItem',position:3,name:article.title,item:url}
+  ]}
+];
 if(article.app!=='compare')schema.push({'@context':'https://schema.org','@type':'SoftwareApplication',name:apps[article.app].name,url:apps[article.app].url,operatingSystem:apps[article.app].os,applicationCategory:article.app==='lens'?'UtilitiesApplication':article.app==='dramastack'?'EntertainmentApplication':'LifestyleApplication',...(article.app==='lens'?{offers:{'@type':'Offer',price:'0',priceCurrency:'USD'}}:{})});
 const date=new Intl.DateTimeFormat(locale,{dateStyle:'medium',timeZone:'UTC'}).format(new Date(`${publishedDate}T12:00:00Z`));
 const readTime=Math.max(2,Math.ceil([article.intro,...article.sections.flatMap(s=>s.paragraphs),...article.steps,...article.faq.map(f=>f.a)].join(' ').split(/\s+/).length/180));
