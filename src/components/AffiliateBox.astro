@@ -5,14 +5,18 @@ import {apps} from '../data/articles';
 import Icon from './Icon.astro';
 const {locale,app}=Astro.props as {locale:Locale;app:string};
 const t=text[locale];
-const program=data.programs[app as keyof typeof data.programs];
-const hasInvite=program?.status==='verified'&&Boolean(program?.referralUrl);
+const program=data.programs[app as keyof typeof data.programs] as {status?:string;code?:string|null;referralUrl?:string|null;localeUrls?:Record<string,string>}|undefined;
+const targetUrl=program?.localeUrls?.[locale]||program?.referralUrl;
+const hasInvite=program?.status==='verified'&&Boolean(targetUrl);
 const hasCodeCopy=(app==='freecash'||app==='pawns'||app==='primeopinion')&&Boolean(program?.code);
 const open:Record<string,Record<Locale,string>>={
   freecash:{en:'Open Freecash',es:'Acceder a Freecash',pt:'Acessar o Freecash'},
   swagbucks:{en:'Sign up on Swagbucks',es:'Registrarse en Swagbucks',pt:'Criar conta no Swagbucks'},
   pawns:{en:'Download Pawns.app ($3 Starter Bonus)',es:'Descargar Pawns.app (Bono inicial $3)',pt:'Baixar Pawns.app (Bônus inicial $3)'},
-  primeopinion:{en:'Join Prime Opinion (+10% Bonus)',es:'Unirse a Prime Opinion (Bono +10%)',pt:'Entrar no Prime Opinion (Bônus +10%)'}
+  primeopinion:{en:'Join Prime Opinion (+10% Bonus)',es:'Unirse a Prime Opinion (Bono +10%)',pt:'Entrar no Prime Opinion (Bônus +10%)'},
+  nordvpn:{en:'View NordVPN official offer',es:'Ver oferta oficial de NordVPN',pt:'Ver oferta oficial da NordVPN'},
+  surfshark:{en:'View Surfshark official offer',es:'Ver oferta oficial de Surfshark',pt:'Ver oferta oficial do Surfshark'},
+  kaspersky:{en:'View Kaspersky official offer',es:'Ver oferta oficial de Kaspersky',pt:'Ver oferta oficial do Kaspersky'}
 };
 const subtext:Record<string,Record<Locale,string>>={
   swagbucks:{
@@ -29,6 +33,26 @@ const subtext:Record<string,Record<Locale,string>>={
     en:'Official sign-up link — redeem bonus code ALNTFL within 24 hours of registration to get an extra +10% bonus on all surveys.',
     es:'Enlace oficial de registro — ingresa el código de bono ALNTFL dentro de las primeras 24 horas para ganar un +10% extra en todas las encuestas.',
     pt:'Link oficial de cadastro — ative o código de bônus ALNTFL nas primeiras 24 horas para garantir +10% de ganho extra em todas as pesquisas.'
+  },
+  nordvpn:{
+    en:'Partner link — check current multi-device VPN plans and Threat Protection options directly on the official NordVPN page.',
+    es:'Enlace de afiliado — consulta los planes vigentes de VPN multidispositivo y Protección contra amenazas en la página oficial de NordVPN.',
+    pt:'Link de parceiro — confira os planos vigentes de VPN multidispositivo e Proteção contra ameaças na página oficial da NordVPN.'
+  },
+  surfshark:{
+    en:'Partner link — check current Surfshark plans with unlimited simultaneous devices and CleanWeb filtering on the official site.',
+    es:'Enlace de afiliado — consulta los planes vigentes de Surfshark con dispositivos ilimitados y bloqueo CleanWeb en el sitio oficial.',
+    pt:'Link de parceiro — confira os planos vigentes do Surfshark com dispositivos ilimitados e bloqueio CleanWeb no site oficial.'
+  },
+  kaspersky:{
+    en:'Partner link — check current Kaspersky antivirus and mobile security plans on the official regional page.',
+    es:'Enlace de afiliado — consulta los planes vigentes de antivirus y protección móvil de Kaspersky en la página oficial.',
+    pt:'Link de parceiro — confira os planos vigentes de antivírus e proteção móvel do Kaspersky na página oficial.'
+  },
+  pinedrama:{
+    en:'Official TikTok short-drama portal — check store availability and privacy rules before installing.',
+    es:'Portal oficial de dramas cortos de TikTok — verifica la disponibilidad en tienda y las reglas de privacidad antes de instalar.',
+    pt:'Portal oficial de dramas curtos do TikTok — confira a disponibilidade na loja e as regras antes de instalar.'
   }
 };
 const store={en:'Get it on Google Play',es:'Descargar en Google Play',pt:'Baixar na Google Play'};
@@ -38,8 +62,8 @@ const store={en:'Get it on Google Play',es:'Descargar en Google Play',pt:'Baixar
     <strong>{apps[app].name}</strong>
     {subtext[app]&&<p class="access-sub">{subtext[app][locale]}</p>}
   </div>
-  {hasCodeCopy&&<div class="copy-row"><code>{program.code}</code><button type="button" data-copy={program.code} data-success={t.copied} data-failure={t.copyFail}>{t.copy}</button><span role="status" aria-live="polite"></span></div>}
-  <a class="access-button" href={hasInvite?program.referralUrl!:apps[app].url} rel={hasInvite?'sponsored noopener':'noopener'}>{hasInvite?(open[app]?.[locale]||t.visit):app==='dramastack'?store[locale]:t.visit}<Icon name="arrow" size={17}/></a>
+  {hasCodeCopy&&<div class="copy-row"><code>{program?.code}</code><button type="button" data-copy={program?.code} data-success={t.copied} data-failure={t.copyFail}>{t.copy}</button><span role="status" aria-live="polite"></span></div>}
+  <a class="access-button" href={hasInvite?targetUrl!:apps[app].url} rel={hasInvite?'sponsored noopener':'noopener'}>{hasInvite?(open[app]?.[locale]||t.visit):app==='dramastack'?store[locale]:t.visit}<Icon name="arrow" size={17}/></a>
 </aside>
 {hasCodeCopy&&<script is:inline>
  document.querySelectorAll('[data-copy]').forEach(button=>{button.addEventListener('click',async()=>{const status=button.parentElement?.querySelector('[role=status]');try{await navigator.clipboard.writeText(button.dataset.copy||'');if(status)status.textContent=button.dataset.success||'Copied';}catch{if(status)status.textContent=button.dataset.failure||'Copy manually';}});});

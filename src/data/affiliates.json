@@ -1,5 +1,5 @@
 {
-  "lastReviewed": "2026-11-07",
+  "lastReviewed": "2026-11-12",
   "programs": {
     "lens": {
       "status": "not-verified",
@@ -52,6 +52,35 @@
       "verifiedAt": "2026-11-08",
       "codeType": "referral-registration-link",
       "evidence": "Official Prime Opinion referral link (ref=a32dad65-3bc5-4c37-af10-4f7590595b0d) and bonus code ALNTFL granting +10% survey bonus for 24h."
+    },
+    "nordvpn": {
+      "status": "verified",
+      "code": null,
+      "referralUrl": "https://www.kqzyfj.com/click-101927870-14471514-1764883017000",
+      "verifiedAt": "2026-11-12",
+      "codeType": "cj-affiliate-tracking-link",
+      "evidence": "CJ Affiliate approved advertiser 4837117 (NordVPN), Link ID 14471514 for Website ID 101927870."
+    },
+    "surfshark": {
+      "status": "verified",
+      "code": null,
+      "referralUrl": "https://www.dpbolvw.net/click-101927870-15438560-1759355883000",
+      "verifiedAt": "2026-11-12",
+      "codeType": "cj-affiliate-tracking-link",
+      "evidence": "CJ Affiliate approved advertiser 6282055 (Surfshark), Link ID 15438560 for Website ID 101927870."
+    },
+    "kaspersky": {
+      "status": "verified",
+      "code": null,
+      "referralUrl": "https://www.tkqlhce.com/click-101927870-17339440-1786992813000",
+      "localeUrls": {
+        "en": "https://www.tkqlhce.com/click-101927870-17339440-1786992813000",
+        "es": "https://www.tkqlhce.com/click-101927870-17339440-1786992813000",
+        "pt": "https://www.dpbolvw.net/click-101927870-17335774-1786126472000"
+      },
+      "verifiedAt": "2026-11-12",
+      "codeType": "cj-affiliate-tracking-link",
+      "evidence": "CJ Affiliate approved advertiser 6209147 (Kaspersky LATAM), Link IDs 17339440 (ES/LATAM) and 17335774 (PT-BR) for Website ID 101927870."
     }
   }
 }

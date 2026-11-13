@@ -21,7 +21,7 @@ for(const [file,html] of htmls){
  for(const m of html.matchAll(/<img\b[^>]*>/g)){assert(attr(m[0],'alt'),relative+' alt');assert(attr(m[0],'width')&&attr(m[0],'height'),relative+' dimensions');assert(attr(m[0],'loading')==='lazy',relative+' lazy image');imageCount++;}
  for(const schema of schemas)assert(!schema.aggregateRating,relative+' no invented ratings');
 }
-assert.equal(articleCount,63,'63 localized articles');
+assert.equal(articleCount,84,'84 localized articles');
 const sitemap=await readFile(path.join(root,'sitemap-0.xml'),'utf8');assert(sitemap.includes('x-default'),'sitemap x-default');for(const lang of ['en','es','pt'])assert(sitemap.includes(`hreflang="${lang}"`),'sitemap '+lang);
 assert(files.includes(path.join(root,'robots.txt')));assert(files.includes(path.join(root,'social.png')));
 console.log(`PASS: ${pages.length} HTML pages, ${articleCount} articles, ${links} local references, ${imageCount} optimized images; canonical, reciprocal hreflang, schema and sitemap verified.`);

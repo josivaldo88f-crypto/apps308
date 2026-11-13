@@ -1586,6 +1586,514 @@ export const articles:Record<Locale,Article[]>={
         "caption": "Fast cashout channels including PayPal and Venmo ensure you receive earned dollars without multi-day delays.",
         "wide": true
       }
+    },
+    {
+      "id": "nordvpn",
+      "app": "nordvpn",
+      "category": "tools",
+      "slug": "nordvpn-how-it-works-public-wifi-guide",
+      "title": "NordVPN (2026 Guide): How It Works, Public Wi-Fi Protection & Setup",
+      "description": "Learn how NordVPN encrypts mobile and desktop traffic on public Wi-Fi, what Threat Protection blocks, and how to set it up across devices.",
+      "intro": "Public Wi-Fi networks in airports, hotels, and cafes often expose unencrypted traffic to other users on the same network. NordVPN creates an encrypted tunnel between your device and a remote server so your browsing, logins, and app connections stay protected.",
+      "sections": [
+        {
+          "heading": "How NordVPN protects everyday connections",
+          "paragraphs": [
+            "Once connected, NordVPN routes your internet traffic through an encrypted server using modern protocols such as NordLynx (based on WireGuard) or OpenVPN. Even if someone monitors the local router, they only see encrypted packets rather than the sites or apps you open.",
+            "Beyond masking your IP address, the app includes a Kill Switch that blocks traffic if the VPN drops unexpectedly, plus Threat Protection features designed to filter known malicious domains and intrusive trackers."
+          ],
+          "cta": {
+            "label": "Check NordVPN official plans",
+            "url": "https://www.kqzyfj.com/click-101927870-14471514-1764883017000",
+            "sponsored": true
+          }
+        },
+        {
+          "heading": "Devices, streaming, and speed considerations",
+          "paragraphs": [
+            "A single subscription covers multiple devices across Android, iOS, Windows, macOS, and smart TVs, letting you protect phones and laptops under one account. Choosing a nearby server typically keeps latency low for video calls and everyday browsing.",
+            "Keep in mind that a VPN does not replace strong passwords or two-factor authentication, and routing traffic through distant countries will naturally add ping compared to a local server."
+          ]
+        }
+      ],
+      "steps": [
+        "Open the official NordVPN website and choose a plan that matches the number of devices you use.",
+        "Download the official NordVPN app from Google Play, the App Store, or the desktop installer.",
+        "Sign in, grant the OS VPN configuration permission, and tap Quick Connect or pick a nearby country.",
+        "Enable Kill Switch and Threat Protection in the app settings if you frequently use public Wi-Fi."
+      ],
+      "pros": [
+        "Fast NordLynx protocol suited for mobile and desktop use.",
+        "Includes Kill Switch and optional Threat Protection filtering."
+      ],
+      "cons": [
+        "Requires a paid subscription after any introductory guarantee period.",
+        "Distant server locations can add latency to gaming or video calls."
+      ],
+      "faq": [
+        {
+          "q": "Does NordVPN work on both Android and iPhone?",
+          "a": "Yes. NordVPN offers native apps for Android, iOS, Windows, macOS, and Linux under the same account."
+        },
+        {
+          "q": "Should I leave the VPN on all the time?",
+          "a": "You can keep it active on public or shared networks, or enable auto-connect only for untrusted Wi-Fi."
+        },
+        {
+          "q": "Does a VPN slow down internet speed?",
+          "a": "Encryption adds a small overhead, though choosing a geographically close server with NordLynx usually keeps speeds close to your baseline."
+        }
+      ],
+      "verdict": "A reliable everyday privacy tool if you work from cafes, travel often, or want consistent protection on public Wi-Fi across phone and laptop.",
+      "imageAlt": "NordVPN encrypted tunnel and public Wi-Fi protection overview",
+      "caption": "NordVPN protects mobile and desktop traffic with an encrypted tunnel on shared networks.",
+      "imageKey": "nordvpn",
+      "imageWide": true
+    },
+    {
+      "id": "surfshark",
+      "app": "surfshark",
+      "category": "tools",
+      "slug": "surfshark-vpn-how-it-works-devices-guide",
+      "title": "Surfshark VPN (2026 Guide): Unlimited Devices, CleanWeb & Setup",
+      "description": "See how Surfshark VPN works across unlimited simultaneous devices, what CleanWeb blocks, and how to configure it on phones and computers.",
+      "intro": "Most VPN services limit how many phones, tablets, and laptops you can connect at once. Surfshark stands out by allowing unlimited simultaneous connections on a single account, making it practical for households or users with several devices.",
+      "sections": [
+        {
+          "heading": "Unlimited devices and CleanWeb filtering",
+          "paragraphs": [
+            "With one Surfshark account, you can install and run the VPN simultaneously on smartphones, tablets, laptops, and routers without counting device slots. It supports WireGuard, OpenVPN, and IKEv2 depending on your platform.",
+            "The built-in CleanWeb toggle blocks known malware domains, phishing links, and many ad trackers before they load, which also helps reduce clutter when browsing on mobile."
+          ],
+          "cta": {
+            "label": "See current Surfshark plans",
+            "url": "https://www.dpbolvw.net/click-101927870-15438560-1759355883000",
+            "sponsored": true
+          }
+        },
+        {
+          "heading": "Practical features for travel and daily privacy",
+          "paragraphs": [
+            "Surfshark includes Bypasser (split tunneling) so specific banking or local delivery apps can connect directly while the rest of your traffic stays inside the VPN tunnel.",
+            "As with any VPN, check local regulations where you travel and test nearby servers first for the best balance between privacy and speed."
+          ]
+        }
+      ],
+      "steps": [
+        "Visit the official Surfshark page and select a plan.",
+        "Install the official Surfshark app on your phone, tablet, or computer.",
+        "Log in, approve the system VPN profile, and select WireGuard in Settings for faster connections.",
+        "Turn on CleanWeb and the Kill Switch before connecting to public hotspots."
+      ],
+      "pros": [
+        "Unlimited simultaneous device connections on one subscription.",
+        "CleanWeb blocks trackers and suspicious domains at the network level."
+      ],
+      "cons": [
+        "No permanent free tier beyond trial or refund policies.",
+        "Some advanced security tools require higher-tier bundles."
+      ],
+      "faq": [
+        {
+          "q": "Can I share one Surfshark account across all my devices?",
+          "a": "Yes. Surfshark allows unlimited simultaneous connections on a single account."
+        },
+        {
+          "q": "What does CleanWeb do?",
+          "a": "CleanWeb filters ads, trackers, and known phishing or malware domains while connected to the VPN."
+        },
+        {
+          "q": "Does Surfshark support split tunneling?",
+          "a": "Yes. Its Bypasser feature lets selected apps or websites bypass the VPN when needed."
+        }
+      ],
+      "verdict": "An accessible choice if you want one VPN subscription to cover every phone, computer, and tablet in your home without device limits.",
+      "imageAlt": "Surfshark VPN unlimited devices and CleanWeb overview",
+      "caption": "Surfshark covers unlimited simultaneous devices with CleanWeb filtering.",
+      "imageKey": "surfshark",
+      "imageWide": true
+    },
+    {
+      "id": "kaspersky",
+      "app": "kaspersky",
+      "category": "tools",
+      "slug": "kaspersky-antivirus-mobile-pc-protection-guide",
+      "title": "Kaspersky (2026 Guide): How Mobile & PC Malware Protection Works",
+      "description": "Understand how Kaspersky protects Android and Windows devices against malware, phishing links, and unsafe downloads, plus setup steps.",
+      "intro": "Phishing links sent by SMS, fake APK installers, and malicious browser extensions are among the most common threats on everyday devices. Kaspersky combines real-time malware scanning with link and payment protection across PC and mobile.",
+      "sections": [
+        {
+          "heading": "Real-time scanning and anti-phishing layers",
+          "paragraphs": [
+            "On Windows, macOS, and Android, Kaspersky inspects downloaded files, app installations, and web links against cloud threat intelligence before malicious code can run. On Android, it checks newly installed apps and warns about suspicious permissions or phishing URLs in messages.",
+            "Higher tiers also bundle Safe Money browser isolation for online banking, password management, and system cleanup utilities."
+          ],
+          "cta": {
+            "label": "Explore Kaspersky protection plans",
+            "url": "https://www.tkqlhce.com/click-101927870-17339440-1786992813000",
+            "sponsored": true
+          }
+        },
+        {
+          "heading": "Balancing protection and device performance",
+          "paragraphs": [
+            "Modern versions offload heavy signature analysis to the cloud so background scans stay lightweight on laptops and mid-range Android phones. Running a scheduled quick scan once a week helps catch leftover adware or unwanted browser add-ons.",
+            "Remember that on iOS, Apple restricts traditional filesystem antivirus scanning, so mobile protection there focuses on web filtering, breach alerts, and VPN/password tools."
+          ]
+        }
+      ],
+      "steps": [
+        "Choose a Kaspersky tier based on how many PCs or smartphones you want to cover.",
+        "Download the official installer or Android app from Google Play.",
+        "Sign in with your My Kaspersky account to link and manage your devices.",
+        "Run an initial full scan and enable real-time web and anti-phishing protection."
+      ],
+      "pros": [
+        "Strong real-time malware and phishing link detection.",
+        "Centralized My Kaspersky dashboard for managing multiple devices."
+      ],
+      "cons": [
+        "iOS apps cannot perform full local file scans due to Apple OS limits.",
+        "Availability of specific bundles varies by country."
+      ],
+      "faq": [
+        {
+          "q": "Does Kaspersky work on Android phones?",
+          "a": "Yes. Kaspersky for Android scans newly installed apps, blocks phishing links, and checks device security settings."
+        },
+        {
+          "q": "Do I need antivirus if I am careful online?",
+          "a": "Careful habits help, but real-time anti-phishing and file scanning add an extra safety net against disguised links and compromised downloads."
+        },
+        {
+          "q": "Can I manage family devices from one place?",
+          "a": "Yes. The My Kaspersky portal lets you view protection status and licenses across connected devices."
+        }
+      ],
+      "verdict": "A practical security suite for users who want straightforward malware and anti-phishing protection across PC and Android.",
+      "imageAlt": "Kaspersky malware and phishing protection overview",
+      "caption": "Kaspersky combines real-time malware scanning and anti-phishing across PC and mobile.",
+      "imageKey": "kaspersky",
+      "imageWide": true
+    },
+    {
+      "id": "pinedrama",
+      "app": "pinedrama",
+      "category": "rewards",
+      "slug": "pinedrama-reviews-tiktok-short-dramas-app",
+      "title": "PineDrama Reviews (2026): Is TikTok’s Short Drama App Legit, Safe & Free?",
+      "description": "Honest PineDrama reviews in 2026: how TikTok’s short-drama app works, whether it is free and safe, ad frequency, regional rewards, and real user complaints.",
+      "intro": "PineDrama (often searched as Pine Drama) is an official short-drama streaming app published by TikTok Pte. Ltd. Built for vertical 1-to-3-minute episodes, it connects directly with TikTok accounts—and in select markets like Brazil, it also includes a Rewards tab with daily check-ins and ad tasks. Knowing where entertainment ends and reward expectations begin is key before installing.",
+      "sections": [
+        {
+          "heading": "What PineDrama actually is and who built it",
+          "paragraphs": [
+            "On Google Play, PineDrama - Short Dramas is listed under package com.ss.android.ttmd.video and published by TikTok Pte. Ltd., with its official portal at shortdrama.tiktok.com. Unlike third-party clone apps, it is a legitimate ByteDance/TikTok product designed for bingeing vertical mini-series across fantasy, romance, revenge, and action genres.",
+            "Users can browse Categories, Popular, and New tabs inside Discover, save titles to My List, and track episode progress automatically—for example, 42/74 episodes watched on Resolving Crisis At 30,000 Feet or 43/47 on Fell Into the Giant's Arms."
+          ],
+          "source": {
+            "title": "PineDrama: Official TikTok Short Drama Portal",
+            "url": "https://shortdrama.tiktok.com/"
+          }
+        },
+        {
+          "heading": "PineDrama reviews: what users praise and complain about",
+          "paragraphs": [
+            "Positive PineDrama reviews focus on HD vertical video quality, fast-paced cliffhangers, and effortless TikTok sign-in that syncs series you discovered in short clips. Trending titles in the Discover feed regularly cross millions of views, such as O Irmão Esquecido de Thor (91.4M) and O Mago Supremo é um Menino (14.2M).",
+            "Critical PineDrama app reviews raise two main issues: heavy ad interruptions in free or reward-driven flows, and confusion created by clickbait social videos claiming anyone can make easy full-time money just by watching dramas. In practice, PineDrama is primarily an entertainment app, while its rewards program is region-dependent and pays very small amounts."
+          ],
+          "source": {
+            "title": "PineDrama - Short Dramas on Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=en"
+          }
+        },
+        {
+          "heading": "Is the PineDrama app safe and free to use?",
+          "paragraphs": [
+            "Downloading PineDrama from Google Play or the official TikTok portal is safe from a malware standpoint, as data handling follows TikTok's official privacy policy. However, avoid unofficial APK mirror sites searching for modded versions, which risk account compromise.",
+            "As for cost, browsing and watching introductory or ad-supported episodes is free, though specific markets or series may gate later episodes behind ads or coin unlocks. Treat any reward points as a minor bonus rather than guaranteed income."
+          ]
+        }
+      ],
+      "steps": [
+        "Verify the developer name is TikTok Pte. Ltd. (package com.ss.android.ttmd.video) on Google Play before installing.",
+        "Sign in with your TikTok account or browse available free episodes in the Discover tab.",
+        "Check whether the Rewards (Recompensas) tab is active in your country and read its current terms.",
+        "Review TikTok's privacy policy and manage watch-history permissions in Profile settings.",
+        "Avoid third-party APK downloads promising unlimited coins or hacked cashouts."
+      ],
+      "pros": [
+        "Official short-drama platform backed by TikTok Pte. Ltd. with HD vertical streaming.",
+        "Large, fast-updated catalog across fantasy, romance, thriller, and revenge mini-series.",
+        "Free to install and watch via ad-supported viewing without mandatory upfront subscriptions."
+      ],
+      "cons": [
+        "Frequent 30-second ads can interrupt binge sessions, especially in reward-supported tasks.",
+        "Misleading third-party videos exaggerate cash payouts, leading to disappointed expectations."
+      ],
+      "faq": [
+        {
+          "q": "Is PineDrama a legit app or a scam?",
+          "a": "PineDrama is a legitimate short-drama streaming app published by TikTok Pte. Ltd. (com.ss.android.ttmd.video). The app itself is real, though viral videos claiming high daily income from watching dramas are misleading."
+        },
+        {
+          "q": "Is PineDrama free to watch?",
+          "a": "Yes, you can download and watch short dramas for free, supported by advertisements and optional in-app tasks depending on your region."
+        },
+        {
+          "q": "Why do PineDrama reviews mention rewards and PIX?",
+          "a": "In supported regions such as Brazil, PineDrama includes a Rewards tab where users earn small point balances from check-ins, watching episodes, and viewing 30-second ads."
+        }
+      ],
+      "verdict": "PineDrama is a safe, legitimate TikTok streaming app for short vertical dramas, but go in for entertainment—not as a source of meaningful income.",
+      "imageAlt": "PineDrama Rewards screen showing 7-day check-in bonus and point conversion rate",
+      "caption": "PineDrama Rewards tab showing the 7-day check-in prompt and the 30,000 points = R$ 1 conversion notice.",
+      "imageKey": "pinedrama-checkin",
+      "imageWide": false,
+      "secondImage": {
+        "key": "pinedrama-discover",
+        "alt": "PineDrama Discover tab displaying Categories, Popular, and New short dramas",
+        "caption": "The Discover feed highlights Popular and New vertical dramas with view counts in the millions.",
+        "wide": false
+      }
+    },
+    {
+      "id": "pinedrama-rewards",
+      "app": "pinedrama",
+      "category": "rewards",
+      "slug": "pinedrama-rewards-does-it-pay-cash-withdrawal",
+      "title": "Does PineDrama Pay Real Money? How the Rewards Tab & Cashout Work (2026)",
+      "description": "Can you earn money on PineDrama? See how daily check-ins, 30-second ad tasks, coin conversion rates (30,000 coins = R$1), and regional PIX payouts work.",
+      "intro": "If you found PineDrama through a 'get paid to watch dramas' video, you probably noticed a Rewards tab inside the app—or wondered why others say it does not pay at all. Both reactions stem from regional rollouts: in supported markets like Brazil, PineDrama actually displays point tasks and PIX withdrawal options, but the math tells a very modest story.",
+      "sections": [
+        {
+          "heading": "How PineDrama points convert into cash",
+          "paragraphs": [
+            "On the Android version tested in Brazil, PineDrama states its conversion rate directly under the point balance: 30,000 points equal R$ 1. In the Redemption Center (Central de resgate), a balance of 920 points displays as R$ 0.03.",
+            "Available BRL cashout tiers start with a one-time R$ 0.10 starter option, followed by R$ 0.50, R$ 1.00, and R$ 2.00 via instant PIX once a PIX account is linked. We inspected these live screens directly in the app, though we did not accumulate enough points to complete a live withdrawal test."
+          ],
+          "source": {
+            "title": "PineDrama - Short Dramas on Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=en"
+          }
+        },
+        {
+          "heading": "Daily tasks, ad limits, and how fast points add up",
+          "paragraphs": [
+            "Daily tasks reset every day at 00:00 and vary slightly over time. In our screenshots from November 2026, watching dramas for up to 60 minutes offered 790 to 1,580 points, watching 30 daily ads paid either 6,000 points (200 per 30s ad) or 12,000 points (399 per 30s ad), timed rewards offered up to 2,880 points, and finishing a full series granted up to 1,800 points (60 for 3 episodes, 240 for 15 episodes, and 1,500 on completion).",
+            "Even at the higher 12,000-point daily ad cap—requiring 30 separate 30-second ads, or 15 full minutes of pure advertising—you earn roughly R$ 0.40 worth of points. A 7-day check-in streak advertises up to 19,758 points (~R$ 0.66 total across a week)."
+          ]
+        },
+        {
+          "heading": "Why some regions see no Rewards tab at all",
+          "paragraphs": [
+            "Outside promotional markets, PineDrama functions purely as a free or ad-supported micro-drama viewer without cash tasks, which is why US and European users often report zero money-making features. Even where the Rewards tab exists, point values and minimum cashout rules are governed by in-app Terms and Conditions that can change without notice."
+          ],
+          "source": {
+            "title": "TikTok Privacy Policy (PineDrama Developer)",
+            "url": "https://www.tiktok.com/legal/privacy-policy/"
+          }
+        }
+      ],
+      "steps": [
+        "Open the bottom navigation bar and tap Rewards (Recompensas) if available in your region.",
+        "Complete the 7-day check-in banner first, as it gives the quickest starter points without long ad streaks.",
+        "Track the real conversion rate (30,000 points = R$ 1 in Brazil) before committing time to 30-ad daily quotas.",
+        "Open the Redemption Center (Central de resgate) to check current cashout tiers and payment methods such as PIX.",
+        "Never pay fees or share sensitive data outside the official app to 'unlock' a withdrawal."
+      ],
+      "pros": [
+        "Shows transparent point-to-currency math (30,000 = R$ 1) and low initial cashout tiers like R$ 0.10 and R$ 0.50.",
+        "Rewards you passively for check-ins and dramas you were already planning to watch."
+      ],
+      "cons": [
+        "Payout rate is tiny: 30 ads (15 minutes of commercials) yields under R$ 0.40 in points.",
+        "Rewards tab and PIX cashouts are restricted to select regions and subject to changing daily caps."
+      ],
+      "faq": [
+        {
+          "q": "Does PineDrama really pay via PIX?",
+          "a": "In the Brazilian Android build we inspected, the Redemption Center lists BRL PIX cashouts starting at R$ 0.10 (one-time) up to R$ 2.00, with 30,000 points equal to R$ 1. We observed the interface directly, though we did not run a live payout transaction."
+        },
+        {
+          "q": "How many points do you need for R$ 1 on PineDrama?",
+          "a": "According to the in-app rate displayed in our capture, 30,000 points equal R$ 1 (so 920 points equal R$ 0.03)."
+        },
+        {
+          "q": "Can PineDrama replace a job or side hustle?",
+          "a": "No. Even maxing out daily ad and watch missions yields pocket-change cents per day. Treat it strictly as an entertainment app with small symbolic bonuses."
+        }
+      ],
+      "verdict": "PineDrama displays real regional PIX cashout tiers and low minimums, but at 30,000 points per R$ 1, earnings are strictly symbolic cents—never a reliable income stream.",
+      "imageAlt": "PineDrama Redemption Center showing R$ 0.03 balance and PIX cashout tiers",
+      "caption": "Central de resgate (Redemption Center) displaying R$ 0.10, R$ 0.50, R$ 1.00, and R$ 2.00 PIX withdrawal tiers.",
+      "imageKey": "pinedrama-cashout",
+      "imageWide": false,
+      "secondImage": {
+        "key": "pinedrama-tasks",
+        "alt": "PineDrama daily ad tasks, timed rewards, and full-series bonus milestones",
+        "caption": "Daily missions include up to 30 ads (12,000 pts), timed rewards (up to 2,880 pts), and full-series milestones (1,800 pts).",
+        "wide": false
+      }
+    },
+    {
+      "id": "pinedrama-guide",
+      "app": "pinedrama",
+      "category": "guides",
+      "slug": "pinedrama-app-download-login-pc-shows-guide",
+      "title": "PineDrama App Download, Login & PC Guide: How to Watch Short Dramas (2026)",
+      "description": "How to download PineDrama safely on Android or iOS, sync your TikTok login, watch on PC, and browse trending shows like O Irmão Esquecido de Thor and Tempest.",
+      "intro": "Searching for PineDrama app download, TikTok login steps, or how to watch PineDrama on PC brings up dozens of third-party APK mirrors. Here is the clean, safe way to install the official app, sync your watch list across devices, and navigate its short-drama catalog without risking your account.",
+      "sections": [
+        {
+          "heading": "Official PineDrama app download (Android, iOS & why to skip random APKs)",
+          "paragraphs": [
+            "The official Android build is published on Google Play under TikTok Pte. Ltd. (package ID com.ss.android.ttmd.video), and the official landing portal is shortdrama.tiktok.com. Installing from the official store ensures automatic security patches and working TikTok OAuth login.",
+            "Avoid downloading modified 'PineDrama APK' files from unknown blogs that promise unlimited coins or ad-free cashouts. Modified packages cannot verify payouts server-side and can expose your linked TikTok credentials."
+          ],
+          "source": {
+            "title": "PineDrama: Official TikTok Short Drama Portal",
+            "url": "https://shortdrama.tiktok.com/"
+          }
+        },
+        {
+          "heading": "TikTok login, My List, and watching PineDrama on PC",
+          "paragraphs": [
+            "PineDrama supports signing in with your TikTok account so your watch history, saved series in My List, and episode progress stay synced. Inside your Profile tab, separate tabs for Dramas and Posts organize episodes you have already started alongside saved items.",
+            "If you search for 'PineDrama PC' or 'PineDrama para PC', note that PineDrama is built primarily as a mobile vertical-video app. Desktop viewers can visit shortdrama.tiktok.com for official availability details, or run the official Google Play release inside an officially supported Android environment such as Google Play Games or a trusted Android emulator—avoiding unverified desktop wrappers."
+          ]
+        },
+        {
+          "heading": "Trending short dramas and categories inside the app",
+          "paragraphs": [
+            "The Discover tab filters titles by Categories, Popular, and New, covering fantasy, revenge, high-society intrigue, and sci-fi action. Captures from the live catalog include localized hits like O Irmão Esquecido de Thor (91.4M), O Mago Supremo é um Menino (14.2M), O Prisioneiro da Gigante (15.6M), and O Poder SSS do Aluno Humilhado (8.9M).",
+            "In English-language listings, series such as Resolving Crisis At 30,000 Feet (74 episodes), Fell Into the Giant's Arms (47 episodes), The Broke Fat Dad Won $500 Million (84 episodes), King of Wrenches (49 episodes), and Tempest: The Last Mecha show the typical 40-to-85-episode bite-sized format."
+          ],
+          "source": {
+            "title": "PineDrama - Short Dramas on Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=en"
+          }
+        }
+      ],
+      "steps": [
+        "Open shortdrama.tiktok.com or search 'PineDrama - Short Dramas' by TikTok Pte. Ltd. on Google Play.",
+        "Install the official app without granting unnecessary permissions beyond standard network and notification preferences.",
+        "Tap Profile to sign in with TikTok or continue browsing Discover under Categories, Popular, or New.",
+        "Bookmark series to My List so you can resume exact episode numbers (such as EP 42/74) without losing your place.",
+        "On PC, stick to official web portals or Google Play-backed environments rather than untrusted third-party installers."
+      ],
+      "pros": [
+        "Quick TikTok account sync preserves watch history and saved series across sessions.",
+        "Clean Discover filters (Categories, Popular, New) make finding 1-to-3-minute episodes effortless."
+      ],
+      "cons": [
+        "No dedicated native Windows or macOS desktop app equivalent to mobile.",
+        "Some catalog titles overlap with other vertical-drama platforms under different regional licensing."
+      ],
+      "faq": [
+        {
+          "q": "Is there an official PineDrama PC version?",
+          "a": "PineDrama is designed for mobile Android and iOS screens. While shortdrama.tiktok.com hosts the official web portal, watching full mobile feeds on PC requires a supported Android environment rather than a standalone Windows app."
+        },
+        {
+          "q": "Is it safe to download a PineDrama APK?",
+          "a": "Only install from Google Play or official store links. Unofficial APKs claiming unlocked coins or faster cashouts carry security risks and do not bypass server-side reward checks."
+        },
+        {
+          "q": "Do I need a TikTok account to log in to PineDrama?",
+          "a": "Linking your TikTok account is the easiest way to sync your library and preferences, especially if you jump from a viral TikTok clip into the full series."
+        }
+      ],
+      "verdict": "Stick to the official Google Play release or shortdrama.tiktok.com for safe TikTok login sync, clean episode tracking, and zero APK risk.",
+      "imageAlt": "PineDrama Discover tab with search bar, Categories, Popular, and New drama posters",
+      "caption": "Discover lets you search titles directly or browse Categories, Popular, and New releases.",
+      "imageKey": "pinedrama-discover",
+      "imageWide": false,
+      "secondImage": {
+        "key": "pinedrama-library",
+        "alt": "PineDrama Profile Dramas grid showing episode progress across multiple series",
+        "caption": "The Profile > Dramas tab tracks exact episode progress (such as EP 42/74) across series you started.",
+        "wide": false
+      }
+    },
+    {
+      "id": "pinedrama-vs-dramastack",
+      "app": "pinedrama",
+      "category": "rewards",
+      "slug": "pinedrama-vs-dramastack-which-short-drama-app-is-better",
+      "title": "PineDrama vs. DramaStack (2026): Cashout Rules, Ads & Which App Is Better?",
+      "description": "Compare PineDrama (by TikTok) and DramaStack side by side: minimum cashout (R$0.10 PIX vs R$300), ad requirements, written policies, and catalog quality.",
+      "intro": "Both PineDrama and DramaStack promise vertical short dramas alongside a rewards tab, which leads many users to ask which app is actually worth installing. When you compare their publishers, withdrawal minimums, and written rules side by side, the differences are stark.",
+      "sections": [
+        {
+          "heading": "Developer backing and written policy transparency",
+          "paragraphs": [
+            "PineDrama is published by TikTok Pte. Ltd. (com.ss.android.ttmd.video) and backed by TikTok's official portal and privacy documentation. DramaStack is published by HK Reel Time Technology Limited (com.reeltime.dramastack).",
+            "In DramaStack, the written privacy policy states that unspent virtual coins cannot be converted into currency, while the Benefits tab advertises high withdrawal thresholds starting at R$ 300. In PineDrama's Brazilian build, the Redemption Center clearly states 30,000 points = R$ 1 and lists low PIX tiers (R$ 0.10 starter, R$ 0.50, R$ 1.00, and R$ 2.00)."
+          ],
+          "source": {
+            "title": "PineDrama - Short Dramas on Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=en"
+          }
+        },
+        {
+          "heading": "Cashout thresholds vs. real-world effort",
+          "paragraphs": [
+            "DramaStack's R$ 300 cashout screen sets a massive bar that we could not verify as an achievable payout, especially given its non-convertible coin wording. PineDrama sets realistic micro-tiers—R$ 0.10 once, then R$ 0.50 to R$ 2.00—matching its 30,000-points-per-real rate.",
+            "Still, neither app is an income source. On PineDrama, watching 30 daily 30-second ads earns 6,000 to 12,000 points (R$ 0.20 to R$ 0.40), and watching 60 minutes of dramas adds 790 to 1,580 points (roughly R$ 0.03 to R$ 0.05). You earn pennies, not dollars."
+          ],
+          "source": {
+            "title": "DramaStack: privacy policy",
+            "url": "https://www.dramastack.video/privacypolicy.html"
+          }
+        },
+        {
+          "heading": "Catalog, interface, and which one you should pick",
+          "paragraphs": [
+            "If you want vertical micro-dramas synced with TikTok clips and a cleaner, well-supported player, PineDrama is the stronger choice. If your goal is actual extra cash from phone tasks or surveys, dedicated reward platforms like Prime Opinion or Pawns.app offer transparent dollar payouts rather than fractions of a cent per ad."
+          ]
+        }
+      ],
+      "steps": [
+        "Decide whether you want short-drama entertainment (choose PineDrama) or measurable cash rewards (use a dedicated survey/task app).",
+        "Check the exact publisher on Google Play: TikTok Pte. Ltd. for PineDrama vs. HK Reel Time Technology Limited for DramaStack.",
+        "Compare the withdrawal floor before grinding ads: R$ 0.10–R$ 2.00 PIX on PineDrama vs. R$ 300 shown on DramaStack.",
+        "Calculate your time cost: 30 ads on PineDrama take ~15 minutes for roughly R$ 0.40 in points.",
+        "Do not spend real money chasing withdrawal milestones in either short-drama app."
+      ],
+      "pros": [
+        "PineDrama offers verified TikTok Pte. Ltd. backing and low PIX redemption tiers (R$ 0.10–R$ 2.00) in Brazil.",
+        "Clear 30,000 points = R$ 1 conversion rate avoids misleading R$ 300+ cashout illusions."
+      ],
+      "cons": [
+        "Both apps rely heavily on ads if you chase reward tasks instead of casual viewing.",
+        "Neither app pays enough to treat as meaningful side income."
+      ],
+      "faq": [
+        {
+          "q": "Which is better: PineDrama or DramaStack?",
+          "a": "For watching short dramas, PineDrama wins thanks to TikTok backing, smoother library sync, and realistic micro-tiers instead of a R$ 300 cashout bar. Neither is suitable for real income."
+        },
+        {
+          "q": "Why is PineDrama's minimum cashout R$ 0.10 while DramaStack shows R$ 300?",
+          "a": "PineDrama prices its regional BRL rewards around small micro-redemptions (R$ 0.10 starter, R$ 0.50–R$ 2.00 at 30,000 points = R$ 1), whereas DramaStack displays a high R$ 300 screen alongside policies saying virtual coins are non-convertible."
+        },
+        {
+          "q": "Can I use both apps just to watch series?",
+          "a": "Yes, if you ignore the cash hype and treat the points as optional bonuses while watching vertical dramas."
+        }
+      ],
+      "verdict": "PineDrama beats DramaStack on publisher trust, TikTok integration, and transparent micro-reward math—though neither app should be used expecting real money.",
+      "imageAlt": "PineDrama daily tasks screen showing 30,000 points = R$ 1 rate",
+      "caption": "PineDrama clearly labels 30,000 points = R$ 1 alongside daily drama-watching and ad tasks.",
+      "imageKey": "pinedrama-daily",
+      "imageWide": false,
+      "secondImage": {
+        "key": "dramastack-payout",
+        "alt": "DramaStack cashout page displaying a R$300 minimum threshold",
+        "caption": "By comparison, DramaStack displays a R$300 withdrawal bar alongside non-convertible coin rules.",
+        "wide": false
+      }
     }  ],
   "es": [
     {
@@ -3171,6 +3679,514 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Menú de retiro de Prime Opinion con transferencias por PayPal y Venmo",
         "caption": "Sus vías de retiro directo por PayPal y Venmo permiten recibir el dinero ganado sin demoras innecesarias.",
         "wide": true
+      }
+    },
+    {
+      "id": "nordvpn",
+      "app": "nordvpn",
+      "category": "tools",
+      "slug": "nordvpn-como-funciona-guia-wifi-publico",
+      "title": "NordVPN (Guía 2026): Cómo funciona, protección en Wi-Fi público y configuración",
+      "description": "Aprende cómo NordVPN cifra tu conexión en redes Wi-Fi públicas, qué bloquea Protección contra amenazas y cómo configurarlo en móvil y PC.",
+      "intro": "Las redes Wi-Fi públicas de aeropuertos, hoteles y cafeterías pueden exponer el tráfico sin cifrar a otros dispositivos conectados a la misma red. NordVPN crea un túnel cifrado entre tu equipo y un servidor remoto para proteger tu navegación y tus inicios de sesión.",
+      "sections": [
+        {
+          "heading": "Cómo protege NordVPN tus conexiones diarias",
+          "paragraphs": [
+            "Al activarse, NordVPN dirige tu tráfico de internet a través de un servidor cifrado mediante protocolos modernos como NordLynx (basado en WireGuard) u OpenVPN. Incluso si alguien analiza el router local, solo verá datos cifrados en lugar de las páginas o apps que abres.",
+            "Además de ocultar tu dirección IP, la app incluye un Kill Switch que bloquea la conexión si la VPN se interrumpe de forma inesperada y funciones de Protección contra amenazas para filtrar dominios maliciosos y rastreadores."
+          ],
+          "cta": {
+            "label": "Ver planes oficiales de NordVPN",
+            "url": "https://www.kqzyfj.com/click-101927870-14471514-1764883017000",
+            "sponsored": true
+          }
+        },
+        {
+          "heading": "Dispositivos, velocidad y puntos a considerar",
+          "paragraphs": [
+            "Una sola suscripción cubre varios dispositivos en Android, iOS, Windows, macOS y televisores inteligentes. Elegir un servidor cercano suele mantener la latencia baja para videollamadas y uso cotidiano.",
+            "Ten presente que una VPN no sustituye contraseñas seguras ni la verificación en dos pasos, y conectarte a servidores muy lejanos puede aumentar ligeramente el ping."
+          ]
+        }
+      ],
+      "steps": [
+        "Entra en la página oficial de NordVPN y elige el plan adecuado para tus dispositivos.",
+        "Descarga la app oficial desde Google Play, App Store o el instalador de escritorio.",
+        "Inicia sesión, concede el permiso de configuración VPN del sistema y pulsa Conexión rápida.",
+        "Activa el Kill Switch y la Protección contra amenazas si te conectas seguido a redes Wi-Fi públicas."
+      ],
+      "pros": [
+        "Protocolo NordLynx rápido para móvil y computadora.",
+        "Incluye Kill Switch y filtrado de dominios sospechosos."
+      ],
+      "cons": [
+        "Requiere suscripción de pago tras el periodo promocional o de garantía.",
+        "Servidores lejanos pueden añadir latencia en juegos o videollamadas."
+      ],
+      "faq": [
+        {
+          "q": "¿NordVPN funciona en Android y iPhone?",
+          "a": "Sí. Cuenta con aplicaciones oficiales para Android, iOS, Windows, macOS y Linux bajo la misma cuenta."
+        },
+        {
+          "q": "¿Conviene dejar la VPN encendida siempre?",
+          "a": "Puedes mantenerla activa en redes públicas o configurar la conexión automática solo para redes Wi-Fi no confiables."
+        },
+        {
+          "q": "¿Una VPN reduce la velocidad de internet?",
+          "a": "El cifrado añade una carga mínima; si eliges un servidor cercano con NordLynx la velocidad suele mantenerse muy estable."
+        }
+      ],
+      "verdict": "Una herramienta práctica de privacidad si trabajas desde cafeterías, viajas con frecuencia o quieres proteger tu conexión en Wi-Fi público.",
+      "imageAlt": "Resumen de túnel cifrado y protección Wi-Fi con NordVPN",
+      "caption": "NordVPN protege el tráfico móvil y de escritorio mediante un túnel cifrado en redes compartidas.",
+      "imageKey": "nordvpn",
+      "imageWide": true
+    },
+    {
+      "id": "surfshark",
+      "app": "surfshark",
+      "category": "tools",
+      "slug": "surfshark-vpn-como-funciona-dispositivos-guia",
+      "title": "Surfshark VPN (Guía 2026): Dispositivos ilimitados, CleanWeb y configuración",
+      "description": "Descubre cómo funciona Surfshark VPN en dispositivos simultáneos ilimitados, qué bloquea CleanWeb y cómo configurarlo paso a paso.",
+      "intro": "La mayoría de los servicios VPN limitan cuántos teléfonos o computadoras puedes conectar al mismo tiempo. Surfshark destaca por permitir conexiones simultáneas ilimitadas con una sola cuenta, algo muy útil si usas varios equipos o compartes en casa.",
+      "sections": [
+        {
+          "heading": "Dispositivos ilimitados y bloqueo CleanWeb",
+          "paragraphs": [
+            "Con una suscripción de Surfshark puedes instalar y usar la VPN a la vez en móviles, tabletas, portátiles y routers sin límite de ranuras. Es compatible con WireGuard, OpenVPN e IKEv2 según tu sistema.",
+            "Su función CleanWeb bloquea dominios conocidos de malware, enlaces de phishing y muchos rastreadores publicitarios antes de que carguen en el navegador."
+          ],
+          "cta": {
+            "label": "Ver planes actuales de Surfshark",
+            "url": "https://www.dpbolvw.net/click-101927870-15438560-1759355883000",
+            "sponsored": true
+          }
+        },
+        {
+          "heading": "Funciones útiles para viajes y uso diario",
+          "paragraphs": [
+            "Surfshark incluye Bypasser (túnel dividido) para que apps bancarias o locales funcionen de forma directa mientras el resto del tráfico permanece cifrado.",
+            "Como con cualquier VPN, conviene probar primero servidores cercanos para equilibrar privacidad y velocidad."
+          ]
+        }
+      ],
+      "steps": [
+        "Accede a la página oficial de Surfshark y selecciona tu plan.",
+        "Instala la app oficial en tu teléfono, tableta o computadora.",
+        "Inicia sesión, acepta el perfil VPN del sistema y selecciona WireGuard en Ajustes.",
+        "Activa CleanWeb y el Kill Switch antes de conectarte a redes Wi-Fi abiertas."
+      ],
+      "pros": [
+        "Conexiones simultáneas ilimitadas con una sola cuenta.",
+        "CleanWeb ayuda a filtrar rastreadores y sitios maliciosos."
+      ],
+      "cons": [
+        "No ofrece versión gratuita permanente fuera de pruebas o garantía.",
+        "Algunas funciones extra pertenecen a paquetes superiores."
+      ],
+      "faq": [
+        {
+          "q": "¿Puedo usar Surfshark en todos mis dispositivos a la vez?",
+          "a": "Sí. Surfshark permite conexiones simultáneas ilimitadas en una misma cuenta."
+        },
+        {
+          "q": "¿Qué hace la función CleanWeb?",
+          "a": "CleanWeb bloquea anuncios intrusivos, rastreadores y dominios identificados como phishing o malware."
+        },
+        {
+          "q": "¿Tiene túnel dividido (split tunneling)?",
+          "a": "Sí. Con la función Bypasser puedes elegir qué apps o sitios pasan fuera de la VPN."
+        }
+      ],
+      "verdict": "Una opción cómoda y flexible si buscas una sola suscripción VPN para cubrir todos los teléfonos y computadoras de tu hogar.",
+      "imageAlt": "Resumen de dispositivos ilimitados y CleanWeb en Surfshark VPN",
+      "caption": "Surfshark cubre dispositivos ilimitados con filtrado CleanWeb integrado.",
+      "imageKey": "surfshark",
+      "imageWide": true
+    },
+    {
+      "id": "kaspersky",
+      "app": "kaspersky",
+      "category": "tools",
+      "slug": "kaspersky-antivirus-proteccion-movil-pc-guia",
+      "title": "Kaspersky (Guía 2026): Cómo funciona la protección antivirus en móvil y PC",
+      "description": "Conoce cómo Kaspersky protege Android y Windows frente a malware, enlaces phishing y descargas peligrosas, y cómo configurarlo.",
+      "intro": "Los enlaces falsos por SMS, instaladores APK modificados y extensiones maliciosas son amenazas frecuentes en el día a día. Kaspersky combina análisis de malware en tiempo real con protección web y anti-phishing para PC y teléfonos.",
+      "sections": [
+        {
+          "heading": "Análisis en tiempo real y defensa anti-phishing",
+          "paragraphs": [
+            "En Windows, macOS y Android, Kaspersky revisa archivos descargados, nuevas aplicaciones y direcciones web antes de que se ejecuten. En Android también alerta sobre enlaces sospechosos recibidos en mensajes o navegadores.",
+            "Los planes superiores añaden aislamiento bancario (Pago Seguro), gestor de contraseñas y herramientas de limpieza del sistema."
+          ],
+          "cta": {
+            "label": "Ver planes oficiales de Kaspersky",
+            "url": "https://www.tkqlhce.com/click-101927870-17339440-1786992813000",
+            "sponsored": true
+          }
+        },
+        {
+          "heading": "Rendimiento y diferencias entre sistemas",
+          "paragraphs": [
+            "Las versiones actuales apoyan gran parte de la detección en la nube para no ralentizar portátiles ni teléfonos Android de gama media. Programar un análisis rápido semanal ayuda a detectar adware residual.",
+            "En iOS, por las restricciones del sistema de Apple, la protección se centra en navegación segura, alertas de filtraciones y utilidades complementarias en lugar de escaneo profundo de archivos."
+          ]
+        }
+      ],
+      "steps": [
+        "Elige el plan de Kaspersky según la cantidad de equipos o móviles que deseas proteger.",
+        "Descarga el instalador oficial o la app desde Google Play.",
+        "Inicia sesión con tu cuenta My Kaspersky para vincular tus dispositivos.",
+        "Ejecuta un análisis inicial y verifica que la protección web y anti-phishing esté activa."
+      ],
+      "pros": [
+        "Detección sólida contra malware y enlaces de phishing.",
+        "Panel centralizado My Kaspersky para administrar varios equipos."
+      ],
+      "cons": [
+        "En iOS no permite escaneo completo de archivos por límites de Apple.",
+        "La disponibilidad de ciertos paquetes varía según el país."
+      ],
+      "faq": [
+        {
+          "q": "¿Kaspersky funciona en celulares Android?",
+          "a": "Sí. Kaspersky para Android analiza nuevas apps instaladas, bloquea enlaces phishing y revisa ajustes de seguridad."
+        },
+        {
+          "q": "¿Necesito antivirus si navego con cuidado?",
+          "a": "Los buenos hábitos son esenciales, pero la protección en tiempo real añade una barrera extra ante enlaces engañosos y archivos comprometidos."
+        },
+        {
+          "q": "¿Puedo gestionar varios dispositivos desde una cuenta?",
+          "a": "Sí. Desde My Kaspersky puedes revisar el estado de seguridad y licencias de cada equipo vinculado."
+        }
+      ],
+      "verdict": "Una suite de seguridad directa y confiable para proteger PC y Android frente a malware y estafas por phishing.",
+      "imageAlt": "Resumen de protección antivirus y anti-phishing de Kaspersky",
+      "caption": "Kaspersky combina análisis en tiempo real y defensa anti-phishing en PC y móvil.",
+      "imageKey": "kaspersky",
+      "imageWide": true
+    },
+    {
+      "id": "pinedrama",
+      "app": "pinedrama",
+      "category": "rewards",
+      "slug": "pinedrama-opiniones-es-confiable-que-es",
+      "title": "PineDrama Opiniones (2026): ¿Qué Es, Es Confiable y Gratis la App de TikTok?",
+      "description": "¿Qué es PineDrama y es confiable en 2026? Conoce cómo funciona la app oficial de mininovelas de TikTok, catálogo gratis, anuncios y opiniones reales.",
+      "intro": "PineDrama (también buscada como Pine Drama) es la aplicación oficial de mininovelas y dramas cortos verticales publicada por TikTok Pte. Ltd. Pensada para episodios rápidos de 1 a 3 minutos, se sincroniza con tu cuenta de TikTok y, en mercados como Brasil, incluye además una pestaña de recompensas. Antes de instalarla conviene distinguir entre su función real de entretenimiento y los videos virales sobre dinero fácil.",
+      "sections": [
+        {
+          "heading": "Qué es PineDrama y quién está detrás de la app",
+          "paragraphs": [
+            "En Google Play, PineDrama - Short Dramas aparece registrada bajo el paquete com.ss.android.ttmd.video por el desarrollador oficial TikTok Pte. Ltd., con portal en shortdrama.tiktok.com. Es un producto legítimo del ecosistema ByteDance/TikTok diseñado para ver miniseries verticales de romance, fantasía, venganza y suspenso.",
+            "Dentro de la pestaña Descubrir (Discover) ofrece filtros de Categorías, Populares y Nuevos, además de una lista personal (My List) que guarda tu avance exacto por episodio, por ejemplo EP 42/74 en Resolving Crisis At 30,000 Feet o EP 43/47 en Fell Into the Giant's Arms."
+          ],
+          "source": {
+            "title": "PineDrama: Official TikTok Short Drama Portal",
+            "url": "https://shortdrama.tiktok.com/"
+          }
+        },
+        {
+          "heading": "PineDrama opiniones: lo bueno y las quejas más comunes",
+          "paragraphs": [
+            "Las reseñas positivas destacan la reproducción vertical en alta definición, el ritmo ágil de las tramas y el acceso directo con TikTok para continuar series vistas en clips virales. Títulos destacados del catálogo superan millones de visualizaciones, como O Irmão Esquecido de Thor (91.4M) y O Mago Supremo é um Menino (14.2M).",
+            "Entre las críticas más frecuentes aparecen la cantidad de anuncios de 30 segundos al usar misiones de recompensa y la decepción de usuarios que descargan la app esperando ingresos altos por culpa de tutoriales engañosos en redes sociales."
+          ],
+          "source": {
+            "title": "PineDrama - Short Dramas on Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=en"
+          }
+        },
+        {
+          "heading": "¿PineDrama es seguro y gratis?",
+          "paragraphs": [
+            "Si descargas PineDrama desde Google Play o el portal oficial shortdrama.tiktok.com, la aplicación es segura y se rige por la política de privacidad de TikTok. Evita instalar archivos APK modificados de sitios desconocidos que prometen monedas infinitas, ya que ponen en riesgo tu cuenta.",
+            "Usarla para ver episodios gratuitos con publicidad no tiene costo obligatorio. Si aparece la pestaña de recompensas en tu país, tómala solo como un extra simbólico."
+          ]
+        }
+      ],
+      "steps": [
+        "Confirma en Google Play que el desarrollador sea TikTok Pte. Ltd. (paquete com.ss.android.ttmd.video).",
+        "Inicia sesión con tu cuenta de TikTok o explora los episodios gratuitos desde la pestaña Descubrir.",
+        "Revisa si tu región tiene activa la pestaña de Recompensas y lee sus términos vigentes.",
+        "Controla permisos e historial desde la sección de Perfil.",
+        "No instales APK modificados ni pagues por supuestos desbloqueos de saldo."
+      ],
+      "pros": [
+        "App oficial respaldada por TikTok Pte. Ltd. con reproducción vertical en HD.",
+        "Catálogo amplio de mininovelas con avance guardado episodio por episodio.",
+        "Descarga gratuita y acceso sin suscripción obligatoria."
+      ],
+      "cons": [
+        "Alta frecuencia de anuncios si buscas completar tareas de puntos.",
+        "Expectativas irreales generadas por videos que exageran supuestas ganancias."
+      ],
+      "faq": [
+        {
+          "q": "¿PineDrama es confiable o es una estafa?",
+          "a": "PineDrama es una aplicación legítima publicada por TikTok Pte. Ltd. para ver dramas cortos. No es una estafa, aunque tampoco sirve como fuente de ingresos significativos."
+        },
+        {
+          "q": "¿PineDrama es gratis?",
+          "a": "Sí, descargar la app y ver episodios con anuncios es gratuito. La disponibilidad de funciones adicionales varía según el país."
+        },
+        {
+          "q": "¿Por qué algunas opiniones hablan de recompensas y retiros?",
+          "a": "En mercados habilitados como Brasil, la app muestra tareas diarias con puntos convertibles en montos muy pequeños, lo que genera confusión en otros países donde esa pestaña no existe."
+        }
+      ],
+      "verdict": "PineDrama es una app oficial, segura y entretenida para ver mininovelas verticales, pero conviene usarla por sus series y no esperando ganar dinero real relevante.",
+      "imageAlt": "Pantalla de check-in y recompensas de PineDrama con tasa de conversión",
+      "caption": "Pantalla de check-in semanal en PineDrama donde se muestra la equivalencia de 30.000 puntos = R$ 1.",
+      "imageKey": "pinedrama-checkin",
+      "imageWide": false,
+      "secondImage": {
+        "key": "pinedrama-discover",
+        "alt": "Pestaña Descubrir de PineDrama con categorías y dramas populares",
+        "caption": "Catálogo de Descubrir con pestañas de Categorías, Populares y Nuevos y millones de vistas.",
+        "wide": false
+      }
+    },
+    {
+      "id": "pinedrama-rewards",
+      "app": "pinedrama",
+      "category": "rewards",
+      "slug": "pinedrama-paga-dinero-real-como-retirar",
+      "title": "¿PineDrama Paga Dinero Real por Ver Videos? Cómo Funcionan las Recompensas (2026)",
+      "description": "¿PineDrama te paga por ver mininovelas y anuncios? Analizamos las tareas diarias, check-in de 7 días, conversión de monedas y requisitos reales de retiro.",
+      "intro": "Quienes llegan a PineDrama buscando 'apps que te pagan por ver videos' suelen encontrarse con dos respuestas opuestas: algunos dicen que tiene centro de retiros y otros aseguran que no paga nada. La diferencia depende de la región: en países donde la pestaña Recompensas está activa, el sistema existe, pero su tasa de conversión deja ganancias mínimas.",
+      "sections": [
+        {
+          "heading": "Cuánto valen los puntos de PineDrama y cómo son los retiros",
+          "paragraphs": [
+            "En la versión de Android probada en Brasil, la propia app muestra la conversión debajo del saldo: 30.000 puntos equivalen a R$ 1. En el Centro de Canje (Central de resgate), un saldo de 920 puntos equivale a R$ 0,03.",
+            "Los niveles de retiro visibles en moneda local comienzan con un retiro único de R$ 0,10 y continúan con R$ 0,50, R$ 1,00 y R$ 2,00 mediante PIX instantáneo al vincular una cuenta. Verificamos estas pantallas directamente dentro de la app, aunque no acumulamos saldo suficiente para ejecutar una prueba de cobro real."
+          ],
+          "source": {
+            "title": "PineDrama - Short Dramas on Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=en"
+          }
+        },
+        {
+          "heading": "Tareas diarias, anuncios y cálculo real del tiempo invertido",
+          "paragraphs": [
+            "Las misiones se reinician todos los días a las 00:00 y sus montos pueden cambiar. En capturas de noviembre de 2026, ver novelas hasta 60 minutos otorgaba entre 790 y 1.580 puntos, ver hasta 30 anuncios diarios pagaba 6.000 puntos (200 cada 30s) o 12.000 puntos (399 cada 30s), las recompensas cronometradas llegaban a 2.880 puntos y completar una serie entera sumaba hasta 1.800 puntos (60 por 3 episodios, 240 por 15 y 1.500 al finalizar).",
+            "Incluso completando los 30 anuncios diarios de 30 segundos (15 minutos viendo publicidad sin parar) con la cuota más alta de 12.000 puntos, el valor generado equivale apenas a unos R$ 0,40. El bono de check-in de 7 días promete hasta 19.758 puntos (~R$ 0,66 en toda la semana)."
+          ]
+        },
+        {
+          "heading": "Por qué en muchos países no aparece la pestaña de dinero",
+          "paragraphs": [
+            "Fuera de los mercados con campañas promocionales activas, PineDrama funciona únicamente como plataforma de mininovelas sin recompensas en efectivo. Además, todas las actividades de puntos están sujetas a los Términos y Condiciones dentro de la app, que pueden modificar valores o límites en cualquier momento."
+          ],
+          "source": {
+            "title": "TikTok Privacy Policy (PineDrama Developer)",
+            "url": "https://www.tiktok.com/legal/privacy-policy/"
+          }
+        }
+      ],
+      "steps": [
+        "Abre la barra inferior y revisa si la pestaña Recompensas está habilitada en tu país.",
+        "Usa primero el check-in diario de 7 días, que entrega puntos rápidos sin ver decenas de anuncios.",
+        "Divide los puntos ofrecidos entre la tasa real (30.000 puntos = R$ 1 en Brasil) antes de dedicar minutos a anuncios.",
+        "Consulta en el centro de canje los métodos y montos vigentes en tu cuenta.",
+        "Desconfía de cualquier sitio externo que pida depósitos o datos personales para liberar pagos."
+      ],
+      "pros": [
+        "Muestra la tasa exacta de conversión en pantalla sin ocultar equivalencias.",
+        "Umbrales iniciales muy bajos (desde R$ 0,10) en mercados con PIX habilitado."
+      ],
+      "cons": [
+        "El pago por hora es mínimo: 30 anuncios diarios apenas suman centavos.",
+        "Las recompensas no están disponibles en todos los países y cambian de valor."
+      ],
+      "faq": [
+        {
+          "q": "¿PineDrama realmente paga dinero real?",
+          "a": "En la versión brasileña inspeccionada existen opciones reales de retiro en reales vía PIX desde R$ 0,10 hasta R$ 2,00 (a razón de 30.000 puntos por R$ 1), aunque no realizamos un retiro en vivo y las cifras son solo de centavos."
+        },
+        {
+          "q": "¿PineDrama paga por ver videos o novelas?",
+          "a": "Sí otorga puntos en regiones compatibles por minutos vistos y anuncios, pero ver 60 minutos de novelas da entre 790 y 1.580 puntos (menos de R$ 0,06)."
+        },
+        {
+          "q": "¿Paga en dólares o en moneda local?",
+          "a": "En los países donde está habilitado, el centro de canje opera en moneda local (como reales brasileños por PIX); en gran parte del resto del mundo ni siquiera tiene recompensas."
+        }
+      ],
+      "verdict": "PineDrama incluye recompensas regionales y montos bajos de canje en Brasil, pero con 30.000 puntos por R$ 1 solo rinde centavos simbólicos y no sustituye un ingreso real.",
+      "imageAlt": "Centro de canje de PineDrama mostrando saldo y opciones de retiro",
+      "caption": "Centro de canje con saldo equivalente (920 puntos = R$ 0,03) y montos desde R$ 0,10 hasta R$ 2,00 vía PIX.",
+      "imageKey": "pinedrama-cashout",
+      "imageWide": false,
+      "secondImage": {
+        "key": "pinedrama-tasks",
+        "alt": "Misiones diarias de anuncios y recompensas cronometradas en PineDrama",
+        "caption": "Tareas diarias de hasta 30 anuncios (12.000 pts), recompensas cronometradas (2.880 pts) y serie completa (1.800 pts).",
+        "wide": false
+      }
+    },
+    {
+      "id": "pinedrama-guide",
+      "app": "pinedrama",
+      "category": "guides",
+      "slug": "descargar-pinedrama-app-pc-iniciar-sesion",
+      "title": "Cómo Descargar PineDrama en Celular o PC, Iniciar Sesión y Ver Series (2026)",
+      "description": "Guía práctica para descargar PineDrama oficial sin APK riesgosos, iniciar sesión con TikTok, usarlo en PC y explorar las mininovelas más vistas.",
+      "intro": "Al buscar cómo descargar PineDrama, iniciar sesión o abrir PineDrama en PC aparecen muchas páginas con enlaces APK dudosos. Aquí tienes los pasos seguros para instalar la versión oficial de TikTok, sincronizar tus series guardadas y explorar las mininovelas más populares sin exponer tu cuenta.",
+      "sections": [
+        {
+          "heading": "Dónde descargar PineDrama oficial (y por qué evitar APK externos)",
+          "paragraphs": [
+            "En Android, la versión oficial se descarga desde Google Play bajo el nombre PineDrama - Short Dramas y el identificador com.ss.android.ttmd.video de TikTok Pte. Ltd. También puedes verificar el acceso oficial en shortdrama.tiktok.com.",
+            "Evita descargar archivos 'PineDrama APK mod' que prometen monedas infinitas o retiros desbloqueados: los puntos se validan en servidor y los paquetes alterados pueden comprometer tu cuenta de TikTok."
+          ],
+          "source": {
+            "title": "PineDrama: Official TikTok Short Drama Portal",
+            "url": "https://shortdrama.tiktok.com/"
+          }
+        },
+        {
+          "heading": "Iniciar sesión con TikTok, guardar series y ver PineDrama en PC",
+          "paragraphs": [
+            "Al entrar en Perfil puedes vincular tu cuenta de TikTok para sincronizar preferencias, historial y episodios guardados en My List. La pestaña Dramas muestra el progreso exacto de cada título, como EP 42/74 o EP 4/84.",
+            "Si buscas PineDrama para PC, ten en cuenta que es una app diseñada para pantallas móviles verticales. En computadora puedes consultar el portal shortdrama.tiktok.com o ejecutar la app oficial desde entornos Android compatibles vinculados a Google Play en lugar de instaladores desconocidos."
+          ]
+        },
+        {
+          "heading": "Series y mininovelas destacadas en el catálogo",
+          "paragraphs": [
+            "La sección Descubrir organiza el catálogo en Categorías, Populares y Nuevos, abarcando romance, fantasía, venganza y acción. Entre los títulos más vistos destacan O Irmão Esquecido de Thor (91.4M), O Mago Supremo é um Menino (14.2M), O Prisioneiro da Gigante (15.6M) y O Poder SSS do Aluno Humilhado (8.9M).",
+            "En el catálogo en inglés también sobresalen series de 40 a 85 episodios cortos como Resolving Crisis At 30,000 Feet, Fell Into the Giant's Arms, The Broke Fat Dad Won $500 Million, King of Wrenches y Tempest: The Last Mecha."
+          ],
+          "source": {
+            "title": "PineDrama - Short Dramas on Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=en"
+          }
+        }
+      ],
+      "steps": [
+        "Ingresa a shortdrama.tiktok.com o busca PineDrama - Short Dramas (TikTok Pte. Ltd.) en Google Play.",
+        "Instala la app oficial y concede solo los permisos básicos necesarios para reproducir video.",
+        "Accede a Perfil para iniciar sesión con TikTok si deseas sincronizar tu historial.",
+        "Explora Categorías, Populares y Nuevos en Descubrir y guarda tus series en My List.",
+        "En PC, utiliza únicamente portales oficiales o entornos compatibles con Google Play."
+      ],
+      "pros": [
+        "Sincronización rápida con TikTok para continuar mininovelas sin perder el episodio.",
+        "Interfaz limpia con barra de búsqueda y filtros por popularidad y estrenos."
+      ],
+      "cons": [
+        "No cuenta con una aplicación nativa dedicada exclusivamente para Windows o Mac.",
+        "La disponibilidad de subtítulos o doblajes cambia según la serie y el idioma."
+      ],
+      "faq": [
+        {
+          "q": "¿Existe PineDrama para PC?",
+          "a": "PineDrama está pensada para móviles en formato vertical. Puedes consultar shortdrama.tiktok.com o usar un entorno Android compatible con Google Play en tu computadora."
+        },
+        {
+          "q": "¿Es obligatorio iniciar sesión con TikTok?",
+          "a": "No siempre para explorar el catálogo inicial, pero vincular TikTok facilita guardar tu lista e historial entre dispositivos."
+        },
+        {
+          "q": "¿Es seguro bajar PineDrama APK?",
+          "a": "Solo es recomendable instalar la app desde Google Play o enlaces oficiales de TikTok Pte. Ltd., evitando archivos modificados de terceros."
+        }
+      ],
+      "verdict": "Descarga PineDrama únicamente desde Google Play o shortdrama.tiktok.com para disfrutar del catálogo y la sincronización con TikTok sin riesgos de seguridad.",
+      "imageAlt": "Pestaña Descubrir de PineDrama con buscador y filtros de series",
+      "caption": "En Descubrir puedes buscar mininovelas por nombre o filtrar por Categorías, Populares y Nuevos.",
+      "imageKey": "pinedrama-discover",
+      "imageWide": false,
+      "secondImage": {
+        "key": "pinedrama-library",
+        "alt": "Biblioteca de dramas vistos en PineDrama con número de episodio",
+        "caption": "Tu biblioteca en Perfil registra exactamente en qué episodio te quedaste en cada serie.",
+        "wide": false
+      }
+    },
+    {
+      "id": "pinedrama-vs-dramastack",
+      "app": "pinedrama",
+      "category": "rewards",
+      "slug": "pinedrama-vs-dramastack-cual-es-mejor-y-paga",
+      "title": "PineDrama vs. DramaStack (2026): ¿Cuál Es Mejor, Tiene Menos Anuncios y Paga?",
+      "description": "Comparamos PineDrama (de TikTok) y DramaStack frente a frente: mínimo de retiro, reglas escritas, cantidad de anuncios y catálogo de mininovelas.",
+      "intro": "Tanto PineDrama como DramaStack combinan series verticales cortas con una sección de recompensas, por lo que muchos usuarios dudan sobre cuál instalar. Al comparar sus desarrolladores, mínimos de retiro y políticas escritas, las diferencias son muy claras.",
+      "sections": [
+        {
+          "heading": "Respaldo oficial y transparencia de las reglas",
+          "paragraphs": [
+            "PineDrama está desarrollada por TikTok Pte. Ltd. (com.ss.android.ttmd.video) bajo la infraestructura oficial de TikTok. DramaStack está publicada por HK Reel Time Technology Limited (com.reeltime.dramastack).",
+            "Mientras la política de privacidad de DramaStack indica que las monedas virtuales no gastadas no se convierten en dinero (pese a mostrar una pantalla promocional con mínimo de R$ 300), la versión brasileña de PineDrama muestra abiertamente la tasa de 30.000 puntos = R$ 1 y retiros menores vía PIX desde R$ 0,10 hasta R$ 2,00."
+          ],
+          "source": {
+            "title": "PineDrama - Short Dramas on Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=en"
+          }
+        },
+        {
+          "heading": "Mínimo de retiro frente al esfuerzo real",
+          "paragraphs": [
+            "En DramaStack, alcanzar un umbral de R$ 300 sin condiciones claras ni verificación de pago resulta poco realista. En PineDrama los niveles son pequeños y coherentes con su tasa de puntos, pero el rendimiento sigue siendo de centavos: 30 anuncios diarios de 30 segundos generan entre R$ 0,20 y R$ 0,40 en puntos, y 60 minutos de series aportan entre R$ 0,03 y R$ 0,05.",
+            "Por eso, ninguna de las dos apps debe usarse esperando ingresos reales."
+          ],
+          "source": {
+            "title": "DramaStack: política de privacidad",
+            "url": "https://www.dramastack.video/privacypolicy.html"
+          }
+        },
+        {
+          "heading": "Catálogo y cuál conviene elegir en 2026",
+          "paragraphs": [
+            "Si buscas ver mininovelas verticales con mejor integración y soporte oficial, PineDrama es superior a DramaStack. Si tu prioridad es ganar recompensas reales en tu tiempo libre, conviene recurrir a plataformas dedicadas de encuestas y ofertas como Prime Opinion o Pawns.app, en lugar de apps de entretenimiento con anuncios."
+          ]
+        }
+      ],
+      "steps": [
+        "Define tu objetivo: entretenimiento con dramas cortos (PineDrama) o recompensas reales por encuestas (plataformas GPT).",
+        "Comprueba el desarrollador oficial en Google Play antes de descargar cualquier app de miniseries.",
+        "Revisa el mínimo de retiro real frente al valor de cada anuncio visto.",
+        "No inviertas dinero propio intentando desbloquear metas de retiro en ninguna app de dramas.",
+        "Usa las funciones de recompensas solo como extra ocasional mientras ves series."
+      ],
+      "pros": [
+        "PineDrama cuenta con respaldo de TikTok Pte. Ltd. y tasas de puntos explícitas en pantalla.",
+        "Umbrales iniciales bajos (R$ 0,10 a R$ 2,00 en Brasil) frente a la barra de R$ 300 de DramaStack."
+      ],
+      "cons": [
+        "Ambas muestran mucha publicidad si el usuario persigue misiones de puntos.",
+        "Ninguna genera ingresos relevantes por hora invertida."
+      ],
+      "faq": [
+        {
+          "q": "¿Cuál es mejor: PineDrama o DramaStack?",
+          "a": "PineDrama es mejor opción por el respaldo oficial de TikTok, mejor catálogo y reglas de puntos más transparentes en las regiones donde ofrece recompensas."
+        },
+        {
+          "q": "¿DramaStack paga R$ 300 más rápido que PineDrama?",
+          "a": "No pudimos verificar ningún pago de DramaStack y su propia política escrita dice que las monedas virtuales no son convertibles en dinero, mientras PineDrama muestra montos realistas de centavos vía PIX en Brasil."
+        },
+        {
+          "q": "¿Puedo usar PineDrama solo para ver series gratis?",
+          "a": "Sí, es la mejor forma de aprovechar la app sin frustrarse por las recompensas."
+        }
+      ],
+      "verdict": "PineDrama supera ampliamente a DramaStack en respaldo oficial, catálogo y transparencia, aunque ninguna de las dos sirve para ganar dinero en serio.",
+      "imageAlt": "Pantalla de tareas diarias de PineDrama con tasa de 30.000 puntos = R$ 1",
+      "caption": "PineDrama muestra de forma directa la equivalencia de 30.000 puntos = R$ 1 en sus tareas diarias.",
+      "imageKey": "pinedrama-daily",
+      "imageWide": false,
+      "secondImage": {
+        "key": "dramastack-payout",
+        "alt": "Pantalla de retiro de DramaStack con mínimo de R$300",
+        "caption": "En contraste, DramaStack exhibe un mínimo de R$300 junto a reglas que impiden convertir monedas.",
+        "wide": false
       }
     }  ],
   "pt": [
@@ -4758,6 +5774,514 @@ export const articles:Record<Locale,Article[]>={
         "caption": "Os saques rápidos via PayPal garantem que o valor conquistado chegue à sua conta sem longas esperas.",
         "wide": true
       }
+    },
+    {
+      "id": "nordvpn",
+      "app": "nordvpn",
+      "category": "tools",
+      "slug": "nordvpn-como-funciona-guia-wifi-publico",
+      "title": "NordVPN (Guia 2026): Como funciona, proteção em Wi-Fi público e configuração",
+      "description": "Entenda como a NordVPN criptografa sua conexão no celular e PC em redes Wi-Fi públicas, o que a Proteção contra ameaças bloqueia e como configurar.",
+      "intro": "Redes Wi-Fi públicas de aeroportos, hotéis e cafés podem expor dados não criptografados a outros usuários na mesma rede. A NordVPN cria um túnel criptografado entre o seu aparelho e um servidor remoto para proteger navegação, logins e aplicativos.",
+      "sections": [
+        {
+          "heading": "Como a NordVPN protege suas conexões no dia a dia",
+          "paragraphs": [
+            "Ao conectar, a NordVPN direciona o tráfego de internet por um servidor criptografado usando protocolos modernos como NordLynx (baseado em WireGuard) ou OpenVPN. Mesmo que alguém monitore o roteador local, verá apenas pacotes criptografados.",
+            "Além de ocultar seu endereço IP, o aplicativo traz o Kill Switch (que bloqueia a internet se a VPN cair) e recursos de Proteção contra ameaças para filtrar domínios maliciosos e rastreadores."
+          ],
+          "cta": {
+            "label": "Conferir planos oficiais da NordVPN",
+            "url": "https://www.kqzyfj.com/click-101927870-14471514-1764883017000",
+            "sponsored": true
+          }
+        },
+        {
+          "heading": "Dispositivos, velocidade e cuidados importantes",
+          "paragraphs": [
+            "Uma assinatura cobre múltiplos aparelhos em Android, iOS, Windows, macOS e Smart TVs. Escolher um servidor próximo mantém a latência baixa para chamadas de vídeo e uso diário.",
+            "Vale lembrar que nenhuma VPN substitui senhas fortes e autenticação em dois fatores, e servidores em países muito distantes aumentam naturalmente o tempo de resposta."
+          ]
+        }
+      ],
+      "steps": [
+        "Acesse a página oficial da NordVPN e escolha o plano adequado aos seus dispositivos.",
+        "Baixe o aplicativo oficial na Google Play, App Store ou no site para computador.",
+        "Entre na sua conta, autorize o perfil de VPN do sistema e toque em Conexão rápida.",
+        "Ative o Kill Switch e a Proteção contra ameaças nas configurações se você usa muito Wi-Fi público."
+      ],
+      "pros": [
+        "Protocolo NordLynx rápido no celular e no computador.",
+        "Inclui Kill Switch e filtro contra sites suspeitos."
+      ],
+      "cons": [
+        "Exige assinatura paga após o período promocional ou de garantia.",
+        "Servidores distantes podem aumentar o ping em jogos e chamadas."
+      ],
+      "faq": [
+        {
+          "q": "A NordVPN funciona tanto no Android quanto no iPhone?",
+          "a": "Sim. Há aplicativos nativos para Android, iOS, Windows, macOS e Linux na mesma conta."
+        },
+        {
+          "q": "Preciso deixar a VPN ligada o tempo todo?",
+          "a": "Você pode deixá-la ativa em redes compartilhadas ou configurar a conexão automática apenas para redes Wi-Fi desconhecidas."
+        },
+        {
+          "q": "A VPN deixa a internet mais lenta?",
+          "a": "A criptografia adiciona um pequeno custo, mas usando um servidor próximo com NordLynx a velocidade costuma ficar bem próxima da normal."
+        }
+      ],
+      "verdict": "Uma ferramenta sólida de privacidade para quem trabalha fora de casa, viaja com frequência ou precisa de segurança extra em redes Wi-Fi públicas.",
+      "imageAlt": "Resumo do túnel criptografado e proteção em Wi-Fi público da NordVPN",
+      "caption": "A NordVPN protege o tráfego do celular e computador com túnel criptografado em redes compartilhadas.",
+      "imageKey": "nordvpn",
+      "imageWide": true
+    },
+    {
+      "id": "surfshark",
+      "app": "surfshark",
+      "category": "tools",
+      "slug": "surfshark-vpn-como-funciona-dispositivos-guia",
+      "title": "Surfshark VPN (Guia 2026): Dispositivos ilimitados, CleanWeb e configuração",
+      "description": "Veja como funciona o Surfshark VPN em aparelhos simultâneos ilimitados, o que o CleanWeb bloqueia e como configurar no celular e PC.",
+      "intro": "A maioria das VPNs limita quantos celulares e computadores podem ficar conectados ao mesmo tempo. O Surfshark se destaca por liberar conexões simultâneas ilimitadas em uma única conta, facilitando o uso em todos os aparelhos da casa.",
+      "sections": [
+        {
+          "heading": "Aparelhos ilimitados e bloqueio CleanWeb",
+          "paragraphs": [
+            "Com uma assinatura do Surfshark você pode instalar e rodar a VPN ao mesmo tempo em smartphones, tablets, notebooks e roteadores sem contar vagas de dispositivos. O app suporta WireGuard, OpenVPN e IKEv2.",
+            "O recurso CleanWeb integrado bloqueia domínios conhecidos de malware, links de phishing e diversos rastreadores antes mesmo de carregarem no navegador."
+          ],
+          "cta": {
+            "label": "Ver planos vigentes do Surfshark",
+            "url": "https://www.dpbolvw.net/click-101927870-15438560-1759355883000",
+            "sponsored": true
+          }
+        },
+        {
+          "heading": "Recursos práticos para viagens e rotina",
+          "paragraphs": [
+            "O Surfshark conta com o Bypasser (túnel dividido) para permitir que aplicativos de banco ou entregas acessem a internet direto, mantendo o restante do tráfego protegido.",
+            "Como em qualquer VPN, teste primeiro servidores próximos da sua região para equilibrar privacidade e velocidade."
+          ]
+        }
+      ],
+      "steps": [
+        "Acesse o site oficial do Surfshark e escolha seu plano.",
+        "Instale o aplicativo oficial no celular, tablet ou computador.",
+        "Faça login, aprove o perfil de VPN do sistema e selecione WireGuard nas configurações.",
+        "Ligue o CleanWeb e o Kill Switch antes de usar redes Wi-Fi abertas."
+      ],
+      "pros": [
+        "Conexões simultâneas ilimitadas em uma única assinatura.",
+        "CleanWeb filtra rastreadores e domínios maliciosos na rede."
+      ],
+      "cons": [
+        "Não possui plano gratuito permanente além da política de garantia.",
+        "Algumas ferramentas extras ficam restritas a pacotes superiores."
+      ],
+      "faq": [
+        {
+          "q": "Posso usar o Surfshark em vários celulares e PCs ao mesmo tempo?",
+          "a": "Sim. O Surfshark permite conexões simultâneas ilimitadas na mesma conta."
+        },
+        {
+          "q": "Para que serve o recurso CleanWeb?",
+          "a": "O CleanWeb bloqueia anúncios invasivos, rastreadores e sites conhecidos por phishing ou malware."
+        },
+        {
+          "q": "O Surfshark tem túnel dividido (split tunneling)?",
+          "a": "Sim. Pelo recurso Bypasser você escolhe quais aplicativos ou sites passam fora da VPN."
+        }
+      ],
+      "verdict": "Uma escolha prática e econômica para quem precisa cobrir vários celulares, tablets e computadores em uma única assinatura.",
+      "imageAlt": "Resumo de aparelhos ilimitados e CleanWeb no Surfshark VPN",
+      "caption": "O Surfshark protege dispositivos ilimitados com bloqueio CleanWeb integrado.",
+      "imageKey": "surfshark",
+      "imageWide": true
+    },
+    {
+      "id": "kaspersky",
+      "app": "kaspersky",
+      "category": "tools",
+      "slug": "kaspersky-antivirus-protecao-celular-pc-guia",
+      "title": "Kaspersky (Guia 2026): Como funciona a proteção antivírus no celular e no PC",
+      "description": "Saiba como o Kaspersky protege Android e Windows contra malware, links de phishing e downloads falsos, além de como configurar passo a passo.",
+      "intro": "Links falsos enviados por SMS ou WhatsApp, arquivos APK adulterados e extensões maliciosas estão entre os golpes mais comuns no dia a dia. O Kaspersky combina varredura de malware em tempo real com defesa anti-phishing para PC e celular.",
+      "sections": [
+        {
+          "heading": "Varredura em tempo real e proteção anti-phishing",
+          "paragraphs": [
+            "No Windows, macOS e Android, o Kaspersky analisa arquivos baixados, novos aplicativos e endereços da web antes da execução. No celular Android, ele verifica apps recém-instalados e alerta ao detectar links suspeitos.",
+            "Planos intermediários e avançados também incluem proteção para transações bancárias (Safe Money), gerenciador de senhas e limpeza de sistema."
+          ],
+          "cta": {
+            "label": "Conferir planos oficiais do Kaspersky",
+            "url": "https://www.dpbolvw.net/click-101927870-17335774-1786126472000",
+            "sponsored": true
+          }
+        },
+        {
+          "heading": "Desempenho leve e diferenças entre sistemas",
+          "paragraphs": [
+            "As versões atuais usam verificação em nuvem para manter o consumo leve em notebooks e celulares Android intermediários. Agendar uma verificação rápida semanal ajuda a limpar adwares e extensões indesejadas.",
+            "No iOS, devido às restrições da Apple, a proteção foca em filtro de navegação segura, alertas de vazamento e ferramentas extras, sem varredura tradicional de arquivos locais."
+          ]
+        }
+      ],
+      "steps": [
+        "Escolha o plano do Kaspersky conforme a quantidade de computadores e celulares.",
+        "Baixe o instalador oficial para PC ou o aplicativo na Google Play.",
+        "Entre na conta My Kaspersky para vincular e acompanhar todos os aparelhos.",
+        "Faça a verificação inicial e confirme que a proteção web e anti-phishing está ligada."
+      ],
+      "pros": [
+        "Detecção consistente contra malware e links de phishing.",
+        "Painel centralizado My Kaspersky para gerenciar vários dispositivos."
+      ],
+      "cons": [
+        "No iOS não faz varredura completa de arquivos por limites do sistema Apple.",
+        "Os nomes dos pacotes podem variar conforme a região."
+      ],
+      "faq": [
+        {
+          "q": "O Kaspersky funciona em celulares Android?",
+          "a": "Sim. O aplicativo para Android verifica apps instalados, bloqueia links de phishing e checa ajustes de segurança."
+        },
+        {
+          "q": "Ainda vale usar antivírus tendo cuidado ao navegar?",
+          "a": "Bons hábitos reduzem riscos, mas o filtro anti-phishing e a análise em tempo real atuam como camada extra contra links disfarçados."
+        },
+        {
+          "q": "Consigo gerenciar os aparelhos da família em um só lugar?",
+          "a": "Sim. Pelo portal My Kaspersky você acompanha o status de proteção e as licenças de cada dispositivo."
+        }
+      ],
+      "verdict": "Uma suíte de segurança direta para quem busca proteção contínua contra vírus, golpes e links falsos no computador e no Android.",
+      "imageAlt": "Resumo da proteção antivírus e anti-phishing do Kaspersky",
+      "caption": "O Kaspersky reúne varredura em tempo real e defesa anti-phishing no PC e celular.",
+      "imageKey": "kaspersky",
+      "imageWide": true
+    },
+    {
+      "id": "pinedrama",
+      "app": "pinedrama",
+      "category": "rewards",
+      "slug": "pinedrama-e-confiavel-review-completo",
+      "title": "PineDrama é Confiável? Review Completo do App de Dramas do TikTok (2026)",
+      "description": "PineDrama é confiável e gratuito em 2026? Veja como funciona o app oficial de dramas curtos do TikTok, aba de recompensas, anúncios e o que observar antes de baixar.",
+      "intro": "O PineDrama (muito pesquisado como Pine Drama) é o aplicativo oficial de dramas curtos e mininovelas verticais publicado pela TikTok Pte. Ltd. Criado para episódios rápidos de 1 a 3 minutos, ele se integra à conta do TikTok e, no Brasil, também exibe uma aba de Recompensas com check-in diário e tarefas de anúncios. Entender onde termina o entretenimento e quanto valem os pontos evita frustrações.",
+      "sections": [
+        {
+          "heading": "O que é o PineDrama e quem desenvolveu o app",
+          "paragraphs": [
+            "Na Google Play, o PineDrama - Short Dramas aparece registrado com o pacote com.ss.android.ttmd.video pela desenvolvedora oficial TikTok Pte. Ltd., com portal em shortdrama.tiktok.com. Não se trata de um aplicativo genérico: é um produto oficial ligado ao ecossistema TikTok/ByteDance para assistir a minisséries verticais de fantasia, romance, vingança e ação.",
+            "Na aba Descobrir (Discover), o app separa o catálogo em Categorias, Populares e Novos, enquanto a área de Perfil organiza sua biblioteca em Dramas e Posts marcando exatamente o episódio em que você parou — como EP 42/74 em Resolving Crisis At 30,000 Feet ou EP 43/47 em Fell Into the Giant's Arms."
+          ],
+          "source": {
+            "title": "PineDrama: Portal Oficial de Dramas Curtos do TikTok",
+            "url": "https://shortdrama.tiktok.com/"
+          }
+        },
+        {
+          "heading": "PineDrama reviews: o que os usuários elogiam e criticam",
+          "paragraphs": [
+            "Nos comentários e análises positivas, usuários elogiam a qualidade em alta definição no formato vertical, a facilidade de entrar com o TikTok e títulos populares com milhões de visualizações no catálogo brasileiro, como O Irmão Esquecido de Thor (91,4M) e O Mago Supremo é um Menino (14,2M).",
+            "Já as críticas mais comuns envolvem o excesso de anúncios de 30 segundos ao tentar juntar pontos nas tarefas e a frustração de quem instala o app após ver vídeos prometendo 'renda extra fácil' apenas assistindo a novelas."
+          ],
+          "source": {
+            "title": "PineDrama - Short Dramas na Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=pt_BR"
+          }
+        },
+        {
+          "heading": "O PineDrama é seguro e gratuito?",
+          "paragraphs": [
+            "Baixando o PineDrama pela Google Play ou pelo portal oficial shortdrama.tiktok.com, o aplicativo é seguro e segue a política de privacidade oficial do TikTok. O risco está em baixar APKs modificados de sites de terceiros que prometem moedas infinitas.",
+            "O download e o acesso às mininovelas com anúncios são gratuitos. Caso utilize a aba de Recompensas, encare os pontos como um bônus simbólico enquanto assiste às histórias."
+          ]
+        }
+      ],
+      "steps": [
+        "Confirme na Google Play que o desenvolvedor é TikTok Pte. Ltd. (pacote com.ss.android.ttmd.video).",
+        "Faça login com sua conta do TikTok ou explore os títulos gratuitos na aba Descobrir.",
+        "Confira na aba Recompensas a taxa real de conversão exibida no seu aparelho.",
+        "Leia os Termos e Condições vinculados na Central de resgate antes de dedicar tempo às tarefas.",
+        "Nunca baixe APKs modificados nem informe dados bancários fora do aplicativo oficial."
+      ],
+      "pros": [
+        "App oficial publicado pela TikTok Pte. Ltd. com streaming vertical fluido em HD.",
+        "Catálogo variado de mininovelas em português e inglês com histórico salvo por episódio.",
+        "Acesso gratuito sem exigir assinatura obrigatória para começar a assistir."
+      ],
+      "cons": [
+        "Muitos anúncios de 30 segundos nas missões da aba Recompensas.",
+        "Vídeos de terceiros na internet exageram os ganhos possíveis e confundem novos usuários."
+      ],
+      "faq": [
+        {
+          "q": "PineDrama é confiável ou é golpe?",
+          "a": "O PineDrama é um aplicativo legítimo desenvolvido pela TikTok Pte. Ltd. para assistir a dramas curtos. O app é verdadeiro, mas promessas de ganhar muito dinheiro assistindo novelas são exageradas."
+        },
+        {
+          "q": "O PineDrama é gratuito?",
+          "a": "Sim. Baixar o app e assistir às mininovelas com suporte de anúncios é gratuito."
+        },
+        {
+          "q": "O PineDrama é do mesmo dono do TikTok?",
+          "a": "Sim. Na Google Play o desenvolvedor listado é TikTok Pte. Ltd. e o portal oficial fica em shortdrama.tiktok.com."
+        }
+      ],
+      "verdict": "O PineDrama é confiável e cumpre bem o papel de streaming gratuito de mininovelas curtas, mas deve ser usado pelo entretenimento e nunca como fonte de renda.",
+      "imageAlt": "Tela de check-in e pontos do PineDrama mostrando 30.000 = R$ 1",
+      "caption": "Tela de Recompensas do PineDrama com check-in de 7 dias e aviso de conversão 30.000 = R$ 1.",
+      "imageKey": "pinedrama-checkin",
+      "imageWide": false,
+      "secondImage": {
+        "key": "pinedrama-discover",
+        "alt": "Aba Descobrir do PineDrama com categorias e novelas populares em português",
+        "caption": "Catálogo na aba Descobrir com filtros Categorias, Populares e Novos e milhões de visualizações.",
+        "wide": false
+      }
+    },
+    {
+      "id": "pinedrama-rewards",
+      "app": "pinedrama",
+      "category": "rewards",
+      "slug": "pinedrama-paga-mesmo-como-sacar-pix",
+      "title": "PineDrama Paga Mesmo? Como Funciona a Aba Recompensas e Saque via PIX (2026)",
+      "description": "O PineDrama paga mesmo para assistir novelas e anúncios? Veja os valores reais no app (30.000 pontos = R$ 1), mínimo de saque no PIX e quanto rende na prática.",
+      "intro": "Muita gente pergunta se o PineDrama paga mesmo depois de ver vídeos falando em saque no PIX. Diferente de outros países onde o app exibe apenas dramas, no Brasil o PineDrama mostra sim uma aba Recompensas e uma Central de resgate via PIX — mas os números reais dentro do aplicativo mostram que o retorno é de poucos centavos.",
+      "sections": [
+        {
+          "heading": "Quanto valem os pontos e quais são os valores de saque no PIX",
+          "paragraphs": [
+            "Nas telas reais analisadas no Android no Brasil, o próprio PineDrama informa logo abaixo do saldo: 30.000 pontos equivalem a R$ 1. Na Central de resgate, um saldo de 920 pontos aparece convertido como R$ 0,03.",
+            "As opções de saque em Dinheiro listam R$ 0,10 (apenas uma vez), R$ 0,50, R$ 1,00 e R$ 2,00 com recebimento via PIX ao vincular a conta. Conferimos todas essas telas diretamente no app instalado, embora não tenhamos acumulado saldo suficiente para concluir um resgate ao vivo."
+          ],
+          "source": {
+            "title": "PineDrama - Short Dramas na Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=pt_BR"
+          }
+        },
+        {
+          "heading": "Tarefas diárias, limite de anúncios e conta real do rendimento",
+          "paragraphs": [
+            "As tarefas diárias são redefinidas todo dia às 00:00 e variam ao longo do tempo. Em nossas capturas de novembro de 2026, assistir a novelas por até 60 minutos pagava entre 790 e 1.580 pontos; assistir a até 30 anúncios diários rendia 6.000 pontos (200 por anúncio de 30s) em uma captura e 12.000 pontos (399 por anúncio de 30s) em outra; recompensas cronometradas somavam até 2.880 pontos; e completar uma série inteira dava até 1.800 pontos (60 em 3 episódios, 240 em 15 e 1.500 na série completa).",
+            "Fazendo as contas na cota máxima observada de 12.000 pontos pelos 30 anúncios do dia — o que exige 15 minutos assistindo apenas a propagandas — você junta cerca de R$ 0,40. Já o check-in de 7 dias anuncia até 19.758 pontos (~R$ 0,66 na semana inteira)."
+          ]
+        },
+        {
+          "heading": "O que observar antes de tentar juntar moedas no PineDrama",
+          "paragraphs": [
+            "Os valores de cada missão mudam dinamicamente conforme a conta e o período promocional, e toda participação fica sujeita aos Termos e Condições do app. Por isso, não vale gastar horas assistindo a anúncios esperando renda mensal: os valores existem como incentivo simbólico para manter você dentro do catálogo."
+          ],
+          "source": {
+            "title": "Política de Privacidade do TikTok (Desenvolvedor do PineDrama)",
+            "url": "https://www.tiktok.com/legal/privacy-policy/"
+          }
+        }
+      ],
+      "steps": [
+        "Toque na aba Recompensas na barra inferior do PineDrama para verificar se as missões estão ativas na sua conta.",
+        "Faça o check-in diário primeiro (Dia 1 com 800 pontos e Dia 2 com 1.200 pontos) sem precisar ver dezenas de propagandas.",
+        "Use a proporção oficial (30.000 pontos = R$ 1) para calcular se vale a pena assistir aos anúncios de 30 segundos.",
+        "Acesse Resgatar para abrir a Central de resgate e conferir os valores disponíveis no PIX (a partir de R$ 0,10 na primeira vez).",
+        "Nunca pague taxas nem compartilhe códigos ou senhas fora do app para tentar liberar um saque."
+      ],
+      "pros": [
+        "Mostra a conversão transparente (30.000 = R$ 1) direto na tela principal de pontos.",
+        "Valores mínimos acessíveis na Central de resgate (R$ 0,10 único e R$ 0,50 a R$ 2,00 via PIX)."
+      ],
+      "cons": [
+        "Rendimento muito baixo: 30 anúncios de 30s valem no máximo cerca de R$ 0,40.",
+        "Pontuação das tarefas oscila (por exemplo, de 6.000 para 12.000 nos anúncios e de 790 para 1.580 nas novelas)."
+      ],
+      "faq": [
+        {
+          "q": "Quantos pontos no PineDrama valem R$ 1?",
+          "a": "Conforme exibido na tela do aplicativo no Brasil, 30.000 pontos equivalem a R$ 1 (e 920 pontos equivalem a R$ 0,03)."
+        },
+        {
+          "q": "Qual o saque mínimo do PineDrama no PIX?",
+          "a": "A Central de resgate exibe uma opção promocional única de R$ 0,10 e saques regulares de R$ 0,50, R$ 1,00 e R$ 2,00 via PIX."
+        },
+        {
+          "q": "Vale a pena usar o PineDrama para renda extra?",
+          "a": "Não como renda extra. Os valores são de poucos centavos por dia; vale apenas como passatempo se você já gosta de assistir às mininovelas."
+        }
+      ],
+      "verdict": "O PineDrama exibe saque via PIX a partir de R$ 0,10 e conversão clara de 30.000 pontos = R$ 1, mas paga apenas centavos simbólicos e não serve como renda extra.",
+      "imageAlt": "Central de resgate do PineDrama mostrando saldo em reais e opções de PIX",
+      "caption": "Central de resgate exibindo saldo convertido (R$ 0,03 = 920 pontos) e opções via PIX de R$ 0,10 a R$ 2,00.",
+      "imageKey": "pinedrama-cashout",
+      "imageWide": false,
+      "secondImage": {
+        "key": "pinedrama-tasks",
+        "alt": "Tarefas diárias do PineDrama com anúncios, recompensas cronometradas e série completa",
+        "caption": "Missões diárias incluem até 30 anúncios (12.000 pts), recompensas cronometradas (2.880 pts) e série completa (1.800 pts).",
+        "wide": false
+      }
+    },
+    {
+      "id": "pinedrama-guide",
+      "app": "pinedrama",
+      "category": "guides",
+      "slug": "como-baixar-pinedrama-pc-login-novelas",
+      "title": "Como Baixar PineDrama no Celular e PC: Login com TikTok e Catálogo (2026)",
+      "description": "Aprenda como baixar o PineDrama oficial na Play Store, fazer login com o TikTok, assistir no PC e encontrar as mininovelas mais populares do app.",
+      "intro": "Ao pesquisar como baixar o PineDrama, entrar com sua conta ou abrir o PineDrama no PC, é comum cair em sites oferecendo arquivos APK modificados. Veja o caminho oficial e seguro para instalar o aplicativo do TikTok, sincronizar suas novelas em My List e explorar o catálogo sem riscos.",
+      "sections": [
+        {
+          "heading": "Como baixar o PineDrama oficial (e por que evitar APK pirata)",
+          "paragraphs": [
+            "No Android, o aplicativo oficial está na Google Play como PineDrama - Short Dramas (pacote com.ss.android.ttmd.video), publicado por TikTok Pte. Ltd., e o site oficial de apresentação fica em shortdrama.tiktok.com.",
+            "Evite baixar 'PineDrama APK mod' em sites desconhecidos prometendo moedas infinitas ou saque liberado: além do risco de vírus e roubo de conta do TikTok, a validação dos pontos acontece nos servidores da plataforma."
+          ],
+          "source": {
+            "title": "PineDrama: Portal Oficial de Dramas Curtos do TikTok",
+            "url": "https://shortdrama.tiktok.com/"
+          }
+        },
+        {
+          "heading": "Login com TikTok, lista de episódios e PineDrama para PC",
+          "paragraphs": [
+            "Você pode vincular sua conta do TikTok na aba Perfil para manter sincronizados os dramas salvos em My List e o histórico exato de episódios assistidos (como EP 42/74 ou EP 8/47).",
+            "Para quem procura PineDrama no PC, vale saber que o app foi criado para telas verticais de celular. No computador, acesse o portal oficial shortdrama.tiktok.com para informações de acesso ou utilize um ambiente Android compatível com a Google Play oficial, sem instalar executáveis suspeitos."
+          ]
+        },
+        {
+          "heading": "Mininovelas mais populares e categorias dentro do aplicativo",
+          "paragraphs": [
+            "Na aba Descobrir você encontra a barra de busca e três filtros principais: Categorias, Populares e Novos. Entre os destaques em português nas telas do app aparecem O Irmão Esquecido de Thor (91,4M), O Mago Supremo é um Menino (14,2M), O Prisioneiro da Gigante (15,6M) e O Poder SSS do Aluno Humilhado (8,9M).",
+            "O catálogo também reúne produções internacionais de 40 a 84 episódios curtos, como Resolving Crisis At 30,000 Feet, Fell Into the Giant's Arms, The Broke Fat Dad Won $500 Million, King of Wrenches e Tempest: The Last Mecha."
+          ],
+          "source": {
+            "title": "PineDrama - Short Dramas na Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=pt_BR"
+          }
+        }
+      ],
+      "steps": [
+        "Acesse a Google Play ou o portal oficial shortdrama.tiktok.com e confira o desenvolvedor TikTok Pte. Ltd.",
+        "Instale o app oficial evitando links de APK modificados de terceiros.",
+        "Entre na aba Perfil e conecte sua conta do TikTok para salvar seu progresso.",
+        "Use a busca e os filtros Categorias, Populares e Novos na aba Descobrir.",
+        "Adicione suas séries favoritas em My List para retomar exatamente do episódio em que parou."
+      ],
+      "pros": [
+        "Sincronização simples com a conta do TikTok e controle exato do episódio atual.",
+        "Filtros claros por Categorias, Populares e Novos facilitam achar mininovelas rápidas."
+      ],
+      "cons": [
+        "Não existe aplicativo nativo exclusivo para Windows ou macOS.",
+        "Alguns títulos possuem legendas ou áudio adaptados de forma diferente conforme o idioma."
+      ],
+      "faq": [
+        {
+          "q": "Existe PineDrama para PC?",
+          "a": "O PineDrama foi desenvolvido para celular (Android e iOS). No PC, você pode conferir o portal oficial shortdrama.tiktok.com ou usar um ambiente Android oficial ligado à Google Play."
+        },
+        {
+          "q": "Precisa ter TikTok para usar o PineDrama?",
+          "a": "Você pode navegar pelo catálogo, mas fazer login com o TikTok é o jeito mais prático de salvar seu histórico e continuar séries vistas em cortes do TikTok."
+        },
+        {
+          "q": "É seguro baixar PineDrama APK fora da Play Store?",
+          "a": "Não é recomendável. Instale sempre pela loja oficial para evitar arquivos adulterados que possam comprometer seus dados."
+        }
+      ],
+      "verdict": "Instale sempre pela Google Play ou por shortdrama.tiktok.com para aproveitar o catálogo e a sincronização com o TikTok com total segurança.",
+      "imageAlt": "Tela Descobrir do PineDrama com busca e capas de mininovelas",
+      "caption": "Na aba Descobrir, o usuário navega por Categorias, Populares e Novos ou pesquisa títulos direto na barra superior.",
+      "imageKey": "pinedrama-discover",
+      "imageWide": false,
+      "secondImage": {
+        "key": "pinedrama-library",
+        "alt": "Grade de dramas no Perfil do PineDrama mostrando progresso de episódios",
+        "caption": "Em Perfil > Dramas, o app registra exatamente o episódio assistido em cada minissérie.",
+        "wide": false
+      }
+    },
+    {
+      "id": "pinedrama-vs-dramastack",
+      "app": "pinedrama",
+      "category": "rewards",
+      "slug": "pinedrama-vs-dramastack-qual-melhor-paga-mais",
+      "title": "PineDrama vs. DramaStack (2026): Qual É Melhor, Tem Menos Anúncios e Paga?",
+      "description": "Comparamos PineDrama (do TikTok) e DramaStack lado a lado: saque mínimo (R$ 0,10 no PIX vs R$ 300), anúncios, regras e experiência para assistir mininovelas.",
+      "intro": "Tanto o PineDrama quanto o DramaStack entregam mininovelas verticais junto com uma aba de tarefas e recompensas, gerando dúvida sobre qual vale mais a pena baixar. Quando colocamos os desenvolvedores, as regras escritas e os limites de saque lado a lado, a diferença fica bem evidente.",
+      "sections": [
+        {
+          "heading": "Desenvolvedor e transparência nas regras de pagamento",
+          "paragraphs": [
+            "O PineDrama é publicado pela TikTok Pte. Ltd. (com.ss.android.ttmd.video), dentro da estrutura oficial do TikTok. Já o DramaStack é publicado pela HK Reel Time Technology Limited (com.reeltime.dramastack).",
+            "Enquanto a política de privacidade escrita do DramaStack afirma que moedas virtuais não podem ser convertidas em dinheiro (apesar de uma tela promocional de saque de R$ 300), o PineDrama exibe no Brasil a conversão clara de 30.000 pontos = R$ 1 e opções de PIX começando em R$ 0,10 até R$ 2,00."
+          ],
+          "source": {
+            "title": "PineDrama - Short Dramas na Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=pt_BR"
+          }
+        },
+        {
+          "heading": "Mínimo de saque versus tempo gasto nos anúncios",
+          "paragraphs": [
+            "No DramaStack, a barra de saque mínimo de R$ 300 é altíssima e não conseguimos comprovar nenhum pagamento, além do conflito com a política escrita. No PineDrama, os valores de saque são pequenos e coerentes com o valor dos pontos, mas o ganho continua mínimo: assistir a 30 anúncios de 30 segundos rende de R$ 0,20 a R$ 0,40 em pontos, e 60 minutos de novelas somam de R$ 0,03 a R$ 0,05.",
+            "Ou seja, nenhum dos dois aplicativos deve ser tratado como fonte de renda."
+          ],
+          "source": {
+            "title": "DramaStack: política de privacidade",
+            "url": "https://www.dramastack.video/privacypolicy.html"
+          }
+        },
+        {
+          "heading": "Qual aplicativo escolher em 2026",
+          "paragraphs": [
+            "Se o seu foco é assistir a dramas curtos com catálogo atualizado e integração com o TikTok, o PineDrama é a escolha mais confiável. Se você procura recompensas reais em dólar ou PayPal no tempo livre, plataformas focadas em pesquisas como Prime Opinion e Pawns.app fazem muito mais sentido do que aplicativos de vídeo."
+          ]
+        }
+      ],
+      "steps": [
+        "Defina seu objetivo: assistir a mininovelas (PineDrama) ou responder pesquisas remuneradas (sites dedicados).",
+        "Verifique sempre o desenvolvedor oficial na Google Play antes de instalar.",
+        "Compare o saque mínimo realista (R$ 0,10 no PIX do PineDrama) contra metas altas como R$ 300.",
+        "Calcule o tempo nos anúncios antes de tentar completar cotas diárias.",
+        "Não gaste dinheiro no app esperando retorno financeiro."
+      ],
+      "pros": [
+        "PineDrama tem respaldo oficial da TikTok Pte. Ltd. e conversão explícita de 30.000 pontos = R$ 1.",
+        "Saques menores no PIX (R$ 0,10 a R$ 2,00) evitam metas quase inalcançáveis de R$ 300."
+      ],
+      "cons": [
+        "Ambos exigem muitos anúncios para quem persegue pontos.",
+        "Nenhum dos dois entrega ganho financeiro relevante por hora."
+      ],
+      "faq": [
+        {
+          "q": "PineDrama ou DramaStack: qual é melhor?",
+          "a": "O PineDrama é superior pelo respaldo do TikTok, interface melhor organizada e regras de pontos bem mais transparentes no Brasil."
+        },
+        {
+          "q": "Por que o DramaStack mostra R$ 300 e o PineDrama começa em R$ 0,10?",
+          "a": "O PineDrama trabalha com micro-recompensas condizentes com sua taxa de 30.000 pontos por R$ 1, enquanto o DramaStack exibe uma barra de R$ 300 junto a termos que dizem que moedas virtuais não são conversíveis."
+        },
+        {
+          "q": "Posso usar o PineDrama só para ver novelas grátis?",
+          "a": "Sim, essa é a melhor maneira de aproveitar o app sem perder tempo com anúncios extras por centavos."
+        }
+      ],
+      "verdict": "O PineDrama vence o DramaStack em confiança, catálogo e transparência nas regras, mas ambos servem apenas para assistir a dramas curtos—não para ganhar dinheiro.",
+      "imageAlt": "Tela de tarefas diárias do PineDrama com taxa de 30.000 = R$ 1",
+      "caption": "No PineDrama, a taxa de 30.000 pontos = R$ 1 aparece visível ao lado das tarefas diárias.",
+      "imageKey": "pinedrama-daily",
+      "imageWide": false,
+      "secondImage": {
+        "key": "dramastack-payout",
+        "alt": "Tela de saque do DramaStack com mínimo de R$ 300",
+        "caption": "Já o DramaStack exibe saque mínimo de R$ 300 enquanto a política escrita proíbe conversão de moedas.",
+        "wide": false
+      }
     }  ]
 };
 export const apps:Record<string,{name:string;url:string;os:string;sources:{title:string;url:string}[]}>= {
@@ -4891,6 +6415,46 @@ export const apps:Record<string,{name:string;url:string;os:string;sources:{title
       {"title":"Swagbucks: Rewards Store","url":"https://www.swagbucks.com/rewards-store"},
       {"title":"Prodege: Terms of Use","url":"https://www.prodege.com/terms-of-use/"}
     ]
+  },
+  "nordvpn": {
+    "name": "NordVPN",
+    "url": "https://nordvpn.com/",
+    "os": "Android, iOS, Windows, macOS, Linux",
+    "sources": [
+      {"title":"NordVPN: Official Website","url":"https://nordvpn.com/"},
+      {"title":"NordVPN: What Is NordLynx?","url":"https://nordvpn.com/features/nordlynx/"},
+      {"title":"NordVPN: Threat Protection","url":"https://nordvpn.com/features/threat-protection/"}
+    ]
+  },
+  "surfshark": {
+    "name": "Surfshark",
+    "url": "https://surfshark.com/",
+    "os": "Android, iOS, Windows, macOS, Linux",
+    "sources": [
+      {"title":"Surfshark: Official Website","url":"https://surfshark.com/"},
+      {"title":"Surfshark: Features & CleanWeb","url":"https://surfshark.com/features/"},
+      {"title":"Surfshark: Bypasser Split Tunneling","url":"https://surfshark.com/features/bypasser/"}
+    ]
+  },
+  "kaspersky": {
+    "name": "Kaspersky",
+    "url": "https://www.kaspersky.com/",
+    "os": "Windows, macOS, Android, iOS",
+    "sources": [
+      {"title":"Kaspersky: Official Website","url":"https://www.kaspersky.com/"},
+      {"title":"Kaspersky: Android Security","url":"https://www.kaspersky.com/android-security"},
+      {"title":"My Kaspersky Portal","url":"https://my.kaspersky.com/"}
+    ]
+  },
+  "pinedrama": {
+    "name": "PineDrama",
+    "url": "https://shortdrama.tiktok.com/",
+    "os": "Android, iOS",
+    "sources": [
+      {"title":"PineDrama: Official TikTok Short Drama Portal","url":"https://shortdrama.tiktok.com/"},
+      {"title":"PineDrama - Short Dramas on Google Play","url":"https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=en"},
+      {"title":"TikTok Privacy Policy (PineDrama Developer)","url":"https://www.tiktok.com/legal/privacy-policy/"}
+    ]
   }
 };
-export const sourcesFor=(article:Article)=>article.id==='compare'?[...apps.opinion.sources.slice(0,1),...apps.microsoft.sources.slice(0,1),...apps.freecash.sources.slice(0,1),...apps.swagbucks.sources.slice(0,1)]:article.id==='swagbucks-vs-freecash'?[...apps.swagbucks.sources.slice(0,3),...apps.freecash.sources.slice(0,2)]:article.id==='pawns-vs-freecash'?[...apps.pawns.sources.slice(0,3),...apps.freecash.sources.slice(0,2)]:article.id==='primeopinion-vs-swagbucks'?[...apps.primeopinion.sources.slice(0,3),...apps.swagbucks.sources.slice(0,2)]:apps[article.app].sources;
+export const sourcesFor=(article:Article)=>article.id==='compare'?[...apps.opinion.sources.slice(0,1),...apps.microsoft.sources.slice(0,1),...apps.freecash.sources.slice(0,1),...apps.swagbucks.sources.slice(0,1)]:article.id==='swagbucks-vs-freecash'?[...apps.swagbucks.sources.slice(0,3),...apps.freecash.sources.slice(0,2)]:article.id==='pawns-vs-freecash'?[...apps.pawns.sources.slice(0,3),...apps.freecash.sources.slice(0,2)]:article.id==='primeopinion-vs-swagbucks'?[...apps.primeopinion.sources.slice(0,3),...apps.swagbucks.sources.slice(0,2)]:article.id==='pinedrama-vs-dramastack'?[...apps.pinedrama.sources,...apps.dramastack.sources.slice(0,2)]:apps[article.app].sources;
