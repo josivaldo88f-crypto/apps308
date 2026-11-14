@@ -21,18 +21,30 @@ const names=
   variant==='swagbucks-vs-freecash'?['swagbucks-games','freecash-main']:
   app==='swagbucks'?['swagbucks-shop','swagbucks-games']:
   app==='compare'?['opinion','microsoft','freecash']:
+  variant==='freecash-reviews'?['freecash-main','freecash']:
+  variant==='freecash-bonus-cashout'?['freecash','freecash-main']:
+  variant==='freecash-games-offers'?['freecash-main','freecash']:
   app==='freecash'?['freecash-main','freecash']:
+  variant==='nordvpn-vs-surfshark'?['nordvpn','surfshark']:
   variant==='pinedrama-rewards'?['pinedrama-cashout','pinedrama-tasks']:
   variant==='pinedrama-guide'?['pinedrama-discover','pinedrama-library']:
   variant==='pinedrama-vs-dramastack'?['pinedrama-daily','dramastack-payout']:
   app==='pinedrama'?['pinedrama-checkin','pinedrama-discover']:
+  variant==='cashdrama-withdraw'?['cashdrama-withdraw-1','cashdrama-withdraw-2']:
+  variant==='cashdrama-proofs'?['cashdrama-proofs','cashdrama-player']:
+  app==='cashdrama'?['cashdrama-tasks','cashdrama-discover']:
+  variant==='dramabox-coins'?['dramabox-coins','dramabox-catalog']:
+  variant==='dramabox-subscription'?['dramabox-membership','dramabox-subscription']:
+  app==='dramabox'?['dramabox-catalog','dramabox-profile']:
   app==='dramastack'?['dramastack-payout','dramastack']:[app];
 const photos=names.map(name=>({name,image:files[`../assets/screenshots/${locale}-${name}.webp`]?.default}));
 const label=
+  variant==='cashdrama-proofs'?{en:'CashDrama vs. DramaStack',es:'CashDrama vs. DramaStack',pt:'CashDrama vs. DramaStack'}[locale]:
   variant==='pinedrama-vs-dramastack'?{en:'PineDrama vs. DramaStack',es:'PineDrama vs. DramaStack',pt:'PineDrama vs. DramaStack'}[locale]:
   variant==='primeopinion-vs-swagbucks'?{en:'Prime Opinion vs. Swagbucks',es:'Prime Opinion vs. Swagbucks',pt:'Prime Opinion vs. Swagbucks'}[locale]:
   variant==='pawns-vs-freecash'?{en:'Pawns.app vs. Freecash',es:'Pawns.app vs. Freecash',pt:'Pawns.app vs. Freecash'}[locale]:
   variant==='swagbucks-vs-freecash'?{en:'Swagbucks vs. Freecash',es:'Swagbucks vs. Freecash',pt:'Swagbucks vs. Freecash'}[locale]:
+  variant==='nordvpn-vs-surfshark'?{en:'NordVPN vs. Surfshark',es:'NordVPN vs. Surfshark',pt:'NordVPN vs. Surfshark'}[locale]:
   app==='compare'?{en:'Rewards, compared.',es:'Compara recompensas.',pt:'Compare recompensas.'}[locale]:
   apps[app].name;
 const tag:Record<Locale,Record<string,string>>={
@@ -41,11 +53,20 @@ const tag:Record<Locale,Record<string,string>>={
     opinion:'Surveys & Play credit',
     microsoft:'Points & rewards',
     freecash:'Games, offers & rewards',
+    'freecash-reviews':'Reviews · Is it legit or scam?',
+    'freecash-bonus-cashout':'Bonus code 3C7GKG · PayPal & crypto',
+    'freecash-games-offers':'Mobile games · Milestones · Tracking',
     dramastack:'Short dramas & cashout claims',
+    cashdrama:'Short dramas · Review & red flags',
+    'cashdrama-withdraw':'$1 vs. $100 lock · Day 2 & 12-ep gate',
+    'cashdrama-proofs':'Payment proofs · Tasks vs. DramaStack',
     pinedrama:'TikTok short dramas · Reviews & safety',
     'pinedrama-rewards':'Daily tasks · Ad rewards · PIX cashout',
     'pinedrama-guide':'Download · TikTok login · PC & catalog',
     'pinedrama-vs-dramastack':'Short-drama apps · Cashout & ad rules',
+    dramabox:'16,000+ short dramas · Free vs. paid',
+    'dramabox-coins':'Free coins · Daily check-in · Watch ads',
+    'dramabox-subscription':'Weekly & annual plans · How to cancel',
     compare:'Cash · Points · Credit',
     swagbucks:'Surveys · Games · Cashback',
     'swagbucks-games':'Mobile games · Milestones · Tracking',
@@ -63,6 +84,7 @@ const tag:Record<Locale,Record<string,string>>={
     'primeopinion-cashout':'PayPal & Venmo · From $5.25 USD · Code ALNTFL',
     'primeopinion-vs-swagbucks':'Prime Opinion vs. Swagbucks · Payout speed comparison',
     nordvpn:'Encrypted VPN · Public Wi-Fi · Threat Protection',
+    'nordvpn-vs-surfshark':'Speed · Price · Unlimited devices',
     surfshark:'Unlimited devices · CleanWeb · Multi-platform VPN',
     kaspersky:'Antivirus · Phishing defense · Android & PC'
   },
@@ -71,11 +93,20 @@ const tag:Record<Locale,Record<string,string>>={
     opinion:'Encuestas y saldo de Play',
     microsoft:'Puntos y recompensas',
     freecash:'Juegos, ofertas y recompensas',
+    'freecash-reviews':'Opiniones · ¿Es confiable o estafa?',
+    'freecash-bonus-cashout':'Código 3C7GKG · PayPal y cripto',
+    'freecash-games-offers':'Juegos móviles · Metas · Seguimiento',
     dramastack:'Dramas cortos y promesas de retiro',
+    cashdrama:'Dramas cortos · ¿Es confiable o estafa?',
+    'cashdrama-withdraw':'Retiro de $1 y $100 · Bloqueo Día 2',
+    'cashdrama-proofs':'Pruebas de pago · Tareas vs. DramaStack',
     pinedrama:'Mininovelas de TikTok · Opiniones y seguridad',
     'pinedrama-rewards':'Tareas diarias · Recompensas · Retiros',
     'pinedrama-guide':'Descargar · Login TikTok · PC y catálogo',
     'pinedrama-vs-dramastack':'Apps de dramas · Reglas de retiro y anuncios',
+    dramabox:'16.000+ mininovelas · ¿Gratis o de paga?',
+    'dramabox-coins':'Monedas gratis · Check-in y anuncios',
+    'dramabox-subscription':'Precios · Cómo cancelar suscripción',
     compare:'Dinero · Puntos · Crédito',
     swagbucks:'Encuestas · Juegos · Cashback',
     'swagbucks-games':'Juegos móviles · Niveles · Seguimiento',
@@ -93,6 +124,7 @@ const tag:Record<Locale,Record<string,string>>={
     'primeopinion-cashout':'PayPal y Venmo · Retiro desde $5.25 · Código ALNTFL',
     'primeopinion-vs-swagbucks':'Prime Opinion vs. Swagbucks · Comparativa de pagos',
     nordvpn:'VPN cifrada · Wi-Fi público · Protección contra amenazas',
+    'nordvpn-vs-surfshark':'Velocidad · Precio · Dispositivos ilimitados',
     surfshark:'Dispositivos ilimitados · CleanWeb · VPN multiplataforma',
     kaspersky:'Antivirus · Defensa anti-phishing · Android y PC'
   },
@@ -101,11 +133,20 @@ const tag:Record<Locale,Record<string,string>>={
     opinion:'Pesquisas e créditos de Play',
     microsoft:'Pontos e recompensas',
     freecash:'Jogos, ofertas e recompensas',
+    'freecash-reviews':'Avaliações · É confiável ou golpe?',
+    'freecash-bonus-cashout':'Código 3C7GKG · PayPal e cripto',
+    'freecash-games-offers':'Jogos mobile · Metas · Rastreamento',
     dramastack:'Dramas curtos e promessa de saque',
+    cashdrama:'Dramas curtos · É confiável ou golpe?',
+    'cashdrama-withdraw':'Saque de $1 e $100 · Trava Dia 2 e 12 ep.',
+    'cashdrama-proofs':'Provas de pagamento · Tarefas vs. DramaStack',
     pinedrama:'Dramas curtos do TikTok · Review completo',
     'pinedrama-rewards':'Tarefas diárias · Anúncios · Saque via PIX',
     'pinedrama-guide':'Baixar app · Login TikTok · PC e catálogo',
     'pinedrama-vs-dramastack':'Apps de mininovelas · Regras de saque',
+    dramabox:'16 mil+ doramas · Grátis ou pago?',
+    'dramabox-coins':'Moedas grátis · Tarefas e anúncios',
+    'dramabox-subscription':'Preços · Como cancelar assinatura',
     compare:'Dinheiro · Pontos · Crédito',
     swagbucks:'Pesquisas · Jogos · Cashback',
     'swagbucks-games':'Jogos mobile · Metas · Rastreamento',
@@ -123,6 +164,7 @@ const tag:Record<Locale,Record<string,string>>={
     'primeopinion-cashout':'PayPal e Venmo · Saque a partir de $5,25 · Código ALNTFL',
     'primeopinion-vs-swagbucks':'Prime Opinion vs. Swagbucks · Qual paga mais rápido',
     nordvpn:'VPN criptografada · Wi-Fi público · Proteção contra ameaças',
+    'nordvpn-vs-surfshark':'Velocidade · Preço · Dispositivos ilimitados',
     surfshark:'Dispositivos ilimitados · CleanWeb · VPN multiplataforma',
     kaspersky:'Antivírus · Defesa anti-phishing · Android e PC'
   }
@@ -131,7 +173,7 @@ const tag:Record<Locale,Record<string,string>>={
 <div class:list={['app-cover',`cover-${app}`,`variant-${variant}`,{large}]}>
   <div class="cover-copy">
     <div class:list={['cover-mark',`mark-${app}`]} aria-hidden="true">
-      {app==='microsoft'?<><i></i><i></i><i></i><i></i></>:app==='lens'?<svg viewBox="0 0 64 64"><path d="M8 24V16a8 8 0 0 1 8-8h8" stroke="#ea4335"/><path d="M40 8h8a8 8 0 0 1 8 8v8" stroke="#4285f4"/><path d="M8 40v8a8 8 0 0 0 8 8h8" stroke="#fbbc04"/><circle cx="32" cy="32" r="11" stroke="#4285f4"/><circle cx="51" cy="51" r="7" fill="#34a853" stroke="none"/></svg>:app==='opinion'?<svg viewBox="0 0 64 64"><path d="M17 12h30v24L32 52 17 36Z" fill="#4285f4"/><path d="M23 32l6 6 13-15" fill="none" stroke="white" stroke-width="5"/></svg>:app==='freecash'?<span>F<span>✦</span></span>:app==='dramastack'?<span class="drama-logo">D<span>▶</span></span>:app==='pinedrama'?<span class="pine-logo">P<span>▶</span></span>:app==='swagbucks'?<span class="sb-logo">SB<span>◈</span></span>:app==='pawns'?<span class="pawns-logo">P<span>♟</span></span>:app==='primeopinion'?<span class="po-logo">PO<span>★</span></span>:<span>↗</span>}
+      {app==='microsoft'?<><i></i><i></i><i></i><i></i></>:app==='lens'?<svg viewBox="0 0 64 64"><path d="M8 24V16a8 8 0 0 1 8-8h8" stroke="#ea4335"/><path d="M40 8h8a8 8 0 0 1 8 8v8" stroke="#4285f4"/><path d="M8 40v8a8 8 0 0 0 8 8h8" stroke="#fbbc04"/><circle cx="32" cy="32" r="11" stroke="#4285f4"/><circle cx="51" cy="51" r="7" fill="#34a853" stroke="none"/></svg>:app==='opinion'?<svg viewBox="0 0 64 64"><path d="M17 12h30v24L32 52 17 36Z" fill="#4285f4"/><path d="M23 32l6 6 13-15" fill="none" stroke="white" stroke-width="5"/></svg>:app==='freecash'?<span>F<span>✦</span></span>:app==='dramastack'?<span class="drama-logo">D<span>▶</span></span>:app==='dramabox'?<span class="dramabox-logo">DB<span>▶</span></span>:app==='cashdrama'?<span class="cashdrama-logo">CD<span>$</span></span>:app==='pinedrama'?<span class="pine-logo">P<span>▶</span></span>:app==='swagbucks'?<span class="sb-logo">SB<span>◈</span></span>:app==='pawns'?<span class="pawns-logo">P<span>♟</span></span>:app==='primeopinion'?<span class="po-logo">PO<span>★</span></span>:<span>↗</span>}
     </div>
     <strong>{label}</strong><span class="cover-tagline">{tag[locale][variant]||tag[locale][app]}</span>
     <span class="cover-credit">apps308<span>✳</span></span>

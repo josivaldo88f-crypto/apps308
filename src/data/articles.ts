@@ -2094,6 +2094,711 @@ export const articles:Record<Locale,Article[]>={
         "caption": "By comparison, DramaStack displays a R$300 withdrawal bar alongside non-convertible coin rules.",
         "wide": false
       }
+    },
+    {
+      "id": "cashdrama",
+      "app": "cashdrama",
+      "category": "rewards",
+      "slug": "cashdrama-review-is-it-legit-or-scam",
+      "title": "CashDrama Review (2026): Is the Short Drama App Legit, Safe or a Scam?",
+      "description": "Honest CashDrama app review (com.reward.drama.earn.watch.tool): why balances jump to $99.86–$106.84 fast, how the $1 and $100 withdrawal locks work, and whether it pays.",
+      "intro": "CashDrama (package com.reward.drama.earn.watch.tool on Google Play) pitches itself as a short-drama app that rewards you with cash for watching vertical mini-series. In our hands-on inspection, the balance climbed to $99.86 and $106.84 on Day 1—yet the Withdraw Now button stayed disabled behind shifting episode and day-unlock gates.",
+      "sections": [
+        {
+          "heading": "What CashDrama is and how the interface works",
+          "paragraphs": [
+            "Inside the Android app, CashDrama is organized into four bottom tabs: Discover, For u, Tasks, and Profile. The Discover and For u feeds stream vertical romance, werewolf, and revenge mini-series such as Rejected Luna is His Fated Mate, Before We Break: Playing Dirty, and The Return of the Lost Striker.",
+            "On top of the video catalog sits an aggressive cash-reward overlay: a floating green balance badge in the top-right corner, a persistent banner urging you to 'Watch 12 more episodes to cash out,' and a floating treasure chest counting down tasks."
+          ],
+          "source": {
+            "title": "CashDrama on Google Play (com.reward.drama.earn.watch.tool)",
+            "url": "https://play.google.com/store/apps/details?id=com.reward.drama.earn.watch.tool&hl=en"
+          }
+        },
+        {
+          "heading": "Why balances reach $100 so quickly (red flag)",
+          "paragraphs": [
+            "Unlike legitimate survey or offerwall apps that pay cents per task, CashDrama's Tasks tab advertises $6.00 to $8.00 per daily task (such as watching 10 episodes, unlocking 5 episodes, opening chests, or enabling notifications) and a 7-day check-in promising $8 on Day 1 up to $50 on Day 6 and '$100 Unlock' milestones on Day 2 and Day 7.",
+            "In our test screens, the balance started at $99.86—just $0.14 shy of the $100 card—and crossed $106.84 within minutes. Inflated early balances are a classic retention hook designed to keep users watching ad-supported episodes in hopes of unlocking a large payout."
+          ]
+        },
+        {
+          "heading": "Is CashDrama legit or a scam for making money?",
+          "paragraphs": [
+            "While CashDrama is distributed through the official Google Play Store, independent user reports and our own inspection of its locked withdrawal flow strongly indicate it does not function as a reliable real-money app. Even after passing $100, users face multi-step hurdles before any payout button activates.",
+            "If you only want free vertical dramas, treat the dollar counter as decorative. If your goal is actual withdrawable cash, avoid investing hours chasing the $100–$1K tiers shown in the app."
+          ]
+        }
+      ],
+      "steps": [
+        "Verify the exact package ID (com.reward.drama.earn.watch.tool) on Google Play and avoid third-party APK clones.",
+        "Open the Withdraw tab before doing tasks to check the active episode-count and Day Unlock locks.",
+        "Do not treat inflated $6–$8 task rewards or $99.86 starting balances as real withdrawable money.",
+        "Avoid enabling intrusive notification permissions solely for bonus cash claims.",
+        "Use established reward platforms with transparent, low-threshold payouts if you want side income."
+      ],
+      "pros": [
+        "Vertical short-drama catalog is accessible in Discover and For u tabs without an upfront subscription.",
+        "Lists a recognizable payout processor name (Tremendous) on the withdrawal screen."
+      ],
+      "cons": [
+        "Unrealistic $6–$50 task/check-in amounts inflate the balance to $100+ while keeping Withdraw Now disabled.",
+        "Requires watching 12 episodes with claimed rewards per withdrawal chance plus Day 2 Unlock gates.",
+        "Displays generic, unverifiable in-app Payment Proofs claiming $100–$800 instant payouts."
+      ],
+      "faq": [
+        {
+          "q": "Is the CashDrama app legit?",
+          "a": "CashDrama is a real Android app on Google Play, but its cash-reward promises are heavily gated. Our inspection showed a $106.84 balance with the Withdraw Now button still disabled."
+        },
+        {
+          "q": "Does CashDrama really pay $100 or $300?",
+          "a": "We could not verify any payout. Reaching $100 on Day 1 still leaves the tier locked behind 'Day 2 Unlock' and 'Watch 12 more episodes' requirements."
+        },
+        {
+          "q": "Is CashDrama safe to install?",
+          "a": "Installing from Google Play avoids unofficial APK malware risks, though users report heavy ad exposure and should deny unnecessary permissions."
+        }
+      ],
+      "verdict": "CashDrama is not recommended as a money-making app. Its fast $99.86–$106.84 balance growth and $100–$1K withdrawal cards mask strict episode and day-unlock barriers that prevent straightforward cashouts.",
+      "imageAlt": "CashDrama Tasks tab showing $99.86 balance, $8-$50 daily check-in, and $6-$8 daily tasks",
+      "caption": "CashDrama's Tasks tab advertises $8–$50 check-ins and $6–$8 per task, pushing the balance to $99.86 on Day 1.",
+      "imageKey": "cashdrama-tasks",
+      "imageWide": false,
+      "secondImage": {
+        "key": "cashdrama-discover",
+        "alt": "CashDrama Discover screen with $106.84 balance and 'Watch 12 more episodes to cash out' banner",
+        "caption": "Even with a $106.84 balance, Discover displays the 'Watch 12 more episodes to cash out' gate.",
+        "wide": false
+      }
+    },
+    {
+      "id": "cashdrama-withdraw",
+      "app": "cashdrama",
+      "category": "rewards",
+      "slug": "cashdrama-how-to-withdraw-money-payment-proof",
+      "title": "Does CashDrama Pay Real Money? How Withdrawal, $1 Limit & Day 2 Lock Work",
+      "description": "Can you withdraw $1 or $100 from CashDrama? See what happens when your balance passes $100, why 'Withdraw Now' stays grayed out, and how the 12-episode rule works.",
+      "intro": "The biggest question around CashDrama is whether you can actually withdraw the $1 starter tier or the $100+ cards shown in its wallet. We tracked the Withdraw screen from $99.86 to $106.84—and found that hitting the dollar target still leaves the Withdraw Now button locked.",
+      "sections": [
+        {
+          "heading": "Why $1 and $100 stay locked even at $106.84",
+          "paragraphs": [
+            "CashDrama's Withdraw screen displays six payout cards: $1, $100, $300, $500, $800, and $1K, with Tremendous listed as the payment method. At $99.86, the $100 card reads '$0.14 to go' under an orange 'Day 2 Unlock' badge, while the $1 card says '12 ep. left.'",
+            "Once our balance rose to $106.84, the $100 card updated to '$0 to go'—meaning the balance requirement was met—yet the 'Day 2 Unlock' tag remained and the 'Withdraw Now' button stayed grayed out and unclickable."
+          ],
+          "source": {
+            "title": "CashDrama on Google Play (com.reward.drama.earn.watch.tool)",
+            "url": "https://play.google.com/store/apps/details?id=com.reward.drama.earn.watch.tool&hl=en"
+          }
+        },
+        {
+          "heading": "The 'Watch 12 eps = 1 withdrawal chance' rule",
+          "paragraphs": [
+            "Below the payout grid, CashDrama states: 'Watch 12 more episodes to unlock your next withdrawal. Claim at least one reward in an episode for it to count toward your withdrawal progress.' This means even the $1 cashout is not automatic.",
+            "Because each counted episode requires claiming an in-episode reward (typically tied to ads or timers), users must sit through repeated ad cycles just to unlock a single withdrawal attempt—and community reviews report additional tasks or delays appearing afterward."
+          ]
+        },
+        {
+          "heading": "What happens with the $300 to $1K tiers",
+          "paragraphs": [
+            "The $300, $500, $800, and $1K cards act as visual anchors. Even if early tasks hand out $6–$8 in virtual balance, payout-wall apps typically throttle earnings or stack consecutive-day streaks and episode quotas as soon as a user approaches a real cashout."
+          ]
+        }
+      ],
+      "steps": [
+        "Open the Withdraw tab from the Tasks screen to view your current balance and active locks.",
+        "Check the '$1' card for the remaining episode counter ('12 ep. left') and reward-claim requirement.",
+        "Verify whether the '$100' card still displays 'Day 2 Unlock' even after reaching '$0 to go'.",
+        "Note that 'Withdraw Now' remains disabled until every hidden or timed condition is cleared.",
+        "Stop before spending days watching ads if the $1 test withdrawal fails to process."
+      ],
+      "pros": [
+        "Shows a low $1 nominal card alongside higher $100–$1K tiers.",
+        "Displays the payment method label (Tremendous) directly on the wallet page."
+      ],
+      "cons": [
+        "Reaching $106.84 ('$0 to go' on $100) does not enable the Withdraw Now button.",
+        "Even the $1 option requires watching 12 episodes and claiming in-episode rewards first.",
+        "No verifiable public proof that $100–$1K withdrawals actually settle."
+      ],
+      "faq": [
+        {
+          "q": "How do you withdraw $1 on CashDrama?",
+          "a": "The Withdraw screen requires watching 12 episodes and claiming at least one reward per episode to unlock one withdrawal chance via Tremendous—and we could not confirm that a live payout completes."
+        },
+        {
+          "q": "Why can't I withdraw $100 on CashDrama when my balance is over $100?",
+          "a": "Even at $106.84 ('$0 to go'), the $100 card stays gated by the 'Day 2 Unlock' badge and the 12-episode withdrawal-chance requirement, keeping 'Withdraw Now' disabled."
+        },
+        {
+          "q": "Does CashDrama pay via PayPal or Tremendous?",
+          "a": "The Payment Method field lists Tremendous, while the bottom Payment Proofs section claims PayPal, Cash App, and Venmo payouts—none of which we could independently verify."
+        }
+      ],
+      "verdict": "CashDrama's withdrawal system is built around stacked locks: high virtual balances appear fast, but '12 ep. left' and 'Day 2 Unlock' keep the Withdraw Now button disabled. Do not rely on it for real cash.",
+      "imageAlt": "CashDrama Withdraw screen with $99.86 balance, $1 '12 ep. left', and $100 'Day 2 Unlock'",
+      "caption": "At $99.86, the $1 tier is blocked by '12 ep. left' and the $100 tier carries a 'Day 2 Unlock' lock.",
+      "imageKey": "cashdrama-withdraw-1",
+      "imageWide": false,
+      "secondImage": {
+        "key": "cashdrama-withdraw-2",
+        "alt": "CashDrama Withdraw screen at $106.84 showing '$0 to go' on $100 while Withdraw Now remains disabled",
+        "caption": "At $106.84 ('$0 to go' for $100), 'Day 2 Unlock' and '12 ep. left' still keep Withdraw Now grayed out.",
+        "wide": false
+      }
+    },
+    {
+      "id": "cashdrama-proofs",
+      "app": "cashdrama",
+      "category": "rewards",
+      "slug": "cashdrama-payment-proofs-tasks-vs-dramastack",
+      "title": "CashDrama Payment Proofs & Daily Tasks Exposed (vs. DramaStack)",
+      "description": "Are CashDrama's $100, $500, and $800 Payment Proofs real? Compare CashDrama's tasks and Tremendous claims with DramaStack before wasting time.",
+      "intro": "Scroll down on CashDrama's Withdraw page and you will see a 'Payment Proofs' feed claiming users just cashed out $100, $300, $500, and $800 to PayPal, Cash App, and Venmo. Here is why those proofs—and the app's $6–$8 daily tasks—look nearly identical to DramaStack's retention playbook.",
+      "sections": [
+        {
+          "heading": "Inside CashDrama's 'Payment Proofs' feed",
+          "paragraphs": [
+            "The bottom of the Withdraw tab displays cards with generic English names—Emily Johnson ($300 PayPal), Michael Brown ($500.00 Cash App, TXN-7315...4a01), Jessica Davis ($100.00 Venmo, TXN-5208...1f7d), and David Wilson ($800)—alongside five-star quotes.",
+            "These cards sit inside the app's own interface with masked transaction strings that cannot be audited on any public ledger. Just like DramaStack's in-app congratulatory banner for R$300 withdrawals, built-in testimonials are marketing UI, not independent proof of payment."
+          ],
+          "source": {
+            "title": "CashDrama on Google Play (com.reward.drama.earn.watch.tool)",
+            "url": "https://play.google.com/store/apps/details?id=com.reward.drama.earn.watch.tool&hl=en"
+          }
+        },
+        {
+          "heading": "CashDrama vs. DramaStack: same model, different wrapper",
+          "paragraphs": [
+            "Both CashDrama and DramaStack pair vertical romance/revenge dramas (such as Rejected Luna is His Fated Mate in CashDrama's For u player) with a high-value wallet tab. DramaStack advertises a R$300 threshold while its privacy policy states virtual coins cannot be converted into currency.",
+            "CashDrama uses a lower $1 teaser card alongside $100–$1K tiers and Tremendous branding, but adds '12 ep. left' per withdrawal chance and 'Day 2 Unlock' gates. In both cases, users report watching heavy ad loads without receiving reliable payouts."
+          ],
+          "source": {
+            "title": "DramaStack on Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.reeltime.dramastack&hl=en"
+          }
+        },
+        {
+          "heading": "Better alternatives if you want real payouts",
+          "paragraphs": [
+            "If you want vertical short dramas without fake cash expectations, official platforms like TikTok's PineDrama clearly disclose low point rates (such as 30,000 points = R$ 1) rather than dangling $500 screenshots.",
+            "If your goal is actual extra cash via PayPal or gift cards, stick to established get-paid-to and survey apps like Freecash, Prime Opinion, or Swagbucks where payout minimums ($1–$5) are transparent and verifiable."
+          ]
+        }
+      ],
+      "steps": [
+        "Treat in-app 'Payment Proofs' with generic names and truncated TXN IDs as unverified marketing UI.",
+        "Compare the promised $6–$8 per task against real ad-supported app economics.",
+        "Check whether the app requires consecutive-day unlocks or 12+ ad-heavy episodes per attempt.",
+        "Use CashDrama strictly for free drama entertainment if you enjoy its catalog, never for income.",
+        "Switch to verified survey or offerwall apps if you want real PayPal or gift-card redemptions."
+      ],
+      "pros": [
+        "Easy-to-browse vertical drama player with subtitles and quick episode switching.",
+        "Free to watch without mandatory upfront credit-card charges."
+      ],
+      "cons": [
+        "Built-in $100–$800 'Payment Proofs' cannot be independently verified.",
+        "Same high-promise, gated-withdrawal pattern seen in DramaStack.",
+        "Aggressive ad loops tied to chests and episode reward claims."
+      ],
+      "faq": [
+        {
+          "q": "Are CashDrama payment proofs real?",
+          "a": "The Payment Proofs section inside the Withdraw tab shows generic names, 5-star blurbs, and partial IDs (like TXN-7315...4a01) that cannot be independently verified."
+        },
+        {
+          "q": "Which is better: CashDrama or DramaStack?",
+          "a": "Neither is recommended for earning money. Both use high-value wallet screens to drive ad views while gating withdrawals behind strict rules or multi-day/episode hurdles."
+        },
+        {
+          "q": "What apps actually pay instead of CashDrama?",
+          "a": "Platforms such as Prime Opinion, Freecash, Pawns.app, and Swagbucks offer transparent survey and game-offer payouts with verifiable PayPal and gift-card redemptions."
+        }
+      ],
+      "verdict": "CashDrama's $100–$800 Payment Proofs and $6–$8 tasks mirror DramaStack's high-promise retention model. Watch the dramas if you like them, but do not expect real cash payouts.",
+      "imageAlt": "CashDrama Payment Proofs showing unverified $500 Cash App, $100 Venmo, and $800 claims",
+      "caption": "CashDrama's Withdraw tab displays unverified $100–$800 Payment Proofs with partial transaction IDs.",
+      "imageKey": "cashdrama-proofs",
+      "imageWide": false,
+      "secondImage": {
+        "key": "cashdrama-player",
+        "alt": "CashDrama For u vertical drama player streaming Rejected Luna is His Fated Mate",
+        "caption": "Behind the reward overlay, CashDrama is a vertical mini-drama player streaming romance and fantasy series.",
+        "wide": false
+      }
+    },
+    {
+      "id": "dramabox",
+      "app": "dramabox",
+      "category": "rewards",
+      "slug": "dramabox-app-review-free-or-paid-safe",
+      "title": "DramaBox App Review (2026): Is It Free, Safe & Legit to Watch Short Dramas?",
+      "description": "Honest DramaBox app review (StoryMatrix): how many episodes are free, how locked episodes work with ads and coins, membership pricing, and whether it is safe.",
+      "intro": "DramaBox (published by StoryMatrix Pte. Ltd. on Google Play and the Apple App Store) is one of the largest vertical short-drama streaming apps, advertising more than 16,000 series across romance, CEO, werewolf, fantasy, and anime categories. It is free to install and lets you watch the opening episodes of a series for free—before locking later episodes behind reward coins, video ads, or a recurring membership.",
+      "sections": [
+        {
+          "heading": "What DramaBox is and how its catalog works",
+          "paragraphs": [
+            "Unlike reward apps that promise cash payouts, DramaBox is purely an entertainment streaming app. Inside the Home tab, series are organized under Popular, New, Rankings, Categories, and Anime—featuring vertical bite-sized dramas such as A 7-Year Leap, Deadliest Prison, Forbidden Desires at the Manor, Love Square, and After Giving Birth to Six Dragonborns.",
+            "Episodes run around one to two minutes each in vertical 1080p-capable format, designed for quick mobile binge-watching. The Profile tab includes Top Up, My Wallet, Earn Rewards, Gifts, History, Download, and Language controls."
+          ],
+          "source": {
+            "title": "DramaBox Official Website (StoryMatrix)",
+            "url": "https://www.dramabox.com/"
+          }
+        },
+        {
+          "heading": "Is DramaBox free or paid? How locked episodes work",
+          "paragraphs": [
+            "DramaBox uses a freemium coin-and-subscription model. You can start any series without paying, because the opening episodes are unlocked for free. Once you reach the paywall, remaining episodes require Reward Coins or an active Membership.",
+            "You do not have to buy a subscription right away: the Earn Rewards screen lets you collect coins by watching video ads (10 to 30 coins per ad), checking in daily, and completing one-time account tasks. However, unlocking a full 60-to-100 episode series purely with free coins takes patience and daily ad viewing."
+          ]
+        },
+        {
+          "heading": "Is DramaBox safe and legit?",
+          "paragraphs": [
+            "Yes—DramaBox is a legitimate, widely distributed app on Google Play (package com.storymatrix.drama) and the Apple App Store, not a cash-out scam. The main catch is billing awareness: its Join Membership screen highlights auto-renewing weekly and annual plans, so users who only want free dramas should stick to Guest mode or free coin tasks and avoid starting a trial unless they intend to keep it.",
+            "Avoid unofficial 'DramaBox mod APK' or 'free coins generator' downloads, as modified APKs bypass store security checks and carry malware or account-ban risks."
+          ],
+          "source": {
+            "title": "DramaBox - Stream Drama Shorts on Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.storymatrix.drama&hl=en"
+          }
+        }
+      ],
+      "steps": [
+        "Download DramaBox only from the official Google Play Store or Apple App Store (developer: STORYMATRIX PTE. LTD.).",
+        "Browse the Popular, New, or Categories tabs to start watching the free opening episodes of any series.",
+        "Open Profile -> Earn Rewards to collect free Reward Coins via daily check-in and ad views before episodes lock.",
+        "If you choose a paid plan, review the weekly renewal price and cancellation window in Google Play or Apple Subscriptions first."
+      ],
+      "pros": [
+        "Huge catalog (16,000+ series advertised) with free opening episodes on every title.",
+        "Allows unlocking locked episodes for free using Reward Coins earned from ads and daily check-ins.",
+        "Available officially on both Android and iOS with language selection and offline download options for members."
+      ],
+      "cons": [
+        "Only the first batch of episodes is free; full series require many coins, ad watches, or a paid membership.",
+        "Weekly membership pricing is relatively expensive if auto-renewal is left on."
+      ],
+      "faq": [
+        {
+          "q": "Is the DramaBox app free to use?",
+          "a": "DramaBox is free to download and lets you watch the first several episodes of a drama for free. Later episodes are locked and require either Reward Coins (earned via ads/tasks or bought via Top Up) or a paid Membership."
+        },
+        {
+          "q": "Is DramaBox safe and legit?",
+          "a": "Yes. DramaBox is a legitimate streaming app from StoryMatrix Pte. Ltd. available on Google Play and the Apple App Store. Just avoid third-party APK mods and watch out for auto-renewing subscriptions."
+        },
+        {
+          "q": "Does DramaBox pay real money?",
+          "a": "No. DramaBox Reward Coins only unlock locked drama episodes inside the app—they cannot be withdrawn as cash."
+        }
+      ],
+      "verdict": "DramaBox is a legitimate short-drama app if you enjoy vertical mini-series and do not mind watching ads for coins or paying for a plan. Stick to the official store app and monitor auto-renewal if you ever subscribe.",
+      "imageAlt": "DramaBox Home catalog showing Popular, New, Rankings, Categories, and Anime vertical drama series",
+      "caption": "DramaBox Home catalog displaying Popular, New, Rankings, Categories, and Anime tabs with vertical mini-series.",
+      "imageKey": "dramabox-catalog",
+      "imageWide": false,
+      "secondImage": {
+        "key": "dramabox-profile",
+        "alt": "DramaBox Profile tab showing Guest wallet, Earn Rewards, Top Up, and Join Membership banner",
+        "caption": "Inside Profile, users can access My Wallet, Earn Rewards (+60), Top Up, and Join Membership.",
+        "wide": false
+      }
+    },
+    {
+      "id": "dramabox-coins",
+      "app": "dramabox",
+      "category": "rewards",
+      "slug": "how-to-get-free-dramabox-coins-unlock-episodes",
+      "title": "How to Get Free DramaBox Coins (2026): Unlock Episodes Without Paying",
+      "description": "Step-by-step guide to earning free DramaBox Reward Coins: daily check-ins (+10 to +50), Watch Ad for 30 coins, account tasks, and safe ways to watch free episodes.",
+      "intro": "Once the free opening episodes of a DramaBox series end, each new episode locks behind a coin paywall. Fortunately, you do not need to buy coins or pay for a weekly plan right away—DramaBox includes an Earn Rewards center that hands out free Reward Coins for daily check-ins, short video ads, and simple profile tasks.",
+      "sections": [
+        {
+          "heading": "Every official way to earn free DramaBox coins",
+          "paragraphs": [
+            "Open Profile and tap Earn Rewards (or the gift icon on the Home screen) to view your Reward Coins balance and active tasks. In our app inspection, the daily 7-day check-in streak awards +10 coins on Days 1 and 2, +20 on Days 3 and 4, +25 on Day 5, +30 on Day 6, and +50 coins on Day 7.",
+            "Right below the check-in bar sits the fastest repeatable option: 'Watch Ad to earn 30 coins.' Further down under Earn Rewards, you can also run 'Earn rewards (0/30) — Watch a video to earn 10 coins' up to 30 times per cycle, alongside one-time bonuses such as Login with any account (+60), Turn push notification (+60), Join Telegram Channel (+30), Follow on Facebook (+20), and Follow on YouTube (+20)."
+          ]
+        },
+        {
+          "heading": "How far free coins go—and avoiding fake generators",
+          "paragraphs": [
+            "Combining the Day 1 check-in, one-time social/login tasks (+190 coins), and daily ad watches can quickly unlock several episodes without spending money. Still, because a single mini-series often runs 60 to 100 episodes, free-only viewers usually pace their watching across several days.",
+            "Never trust websites or YouTube videos claiming 'unlimited DramaBox coins generator' or modified APKs. Reward Coins are tracked server-side on StoryMatrix accounts, and modded apps risk malware or account suspension. For genuinely ad-free or alternate short dramas, check our guide on PineDrama as well."
+          ],
+          "source": {
+            "title": "DramaBox - Stream Drama Shorts on Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.storymatrix.drama&hl=en"
+          }
+        }
+      ],
+      "steps": [
+        "Open DramaBox and tap Profile in the bottom-right corner, then select Earn Rewards.",
+        "Claim your daily check-in (+10 to +50 coins depending on your streak day).",
+        "Tap 'Watch Ad to earn 30 coins' and use the repeatable 'Watch a video to earn 10 coins' (up to 30/day) counter.",
+        "Complete one-time bonuses like Login with any account (+60) and social follows (+20 to +30 each) to build an initial coin reserve.",
+        "Return to a locked episode and unlock it with your Reward Coins balance."
+      ],
+      "pros": [
+        "Multiple free coin sources (check-in streak, 30-coin ad button, and up to 30 daily 10-coin video ads).",
+        "Works even without adding a credit card or starting a paid trial."
+      ],
+      "cons": [
+        "Watching ads for 10–30 coins at a time is slower than a membership when binge-watching long series.",
+        "One-time tasks (+60 login, +30 Telegram, +20 social) can only be claimed once per account."
+      ],
+      "faq": [
+        {
+          "q": "How do you get free coins on DramaBox?",
+          "a": "Go to Profile -> Earn Rewards to claim the 7-day check-in (+10 to +50 coins), tap 'Watch Ad to earn 30 coins,' watch up to 30 daily 10-coin ad videos, and claim one-time tasks like account login (+60)."
+        },
+        {
+          "q": "Do DramaBox free gift codes or coin generators work?",
+          "a": "Unofficial coin generators do not work and can compromise your device. Only use official in-app Gift/Earn Rewards promotions or StoryMatrix social channels."
+        },
+        {
+          "q": "Can I watch DramaBox for free without subscribing?",
+          "a": "Yes. The opening episodes of each series are free, and you can unlock more episodes by collecting Reward Coins through ads and daily check-ins."
+        }
+      ],
+      "verdict": "DramaBox lets you watch for free if you combine the free opening episodes with daily check-ins and Earn Rewards ad tasks—just avoid fake coin generators and unofficial APKs.",
+      "imageAlt": "DramaBox Reward coins screen showing 7-day check-in, Watch Ad to earn 30 coins, and Earn Rewards tasks",
+      "caption": "DramaBox's Reward coins tab lists the 7-day check-in (+10 to +50), Watch Ad for 30 coins, and +20 to +60 bonus tasks.",
+      "imageKey": "dramabox-coins",
+      "imageWide": false,
+      "secondImage": {
+        "key": "dramabox-catalog",
+        "alt": "DramaBox Popular and New series catalog",
+        "caption": "Use earned Reward Coins to unlock later episodes across DramaBox's Popular, New, and Rankings feeds.",
+        "wide": false
+      }
+    },
+    {
+      "id": "dramabox-subscription",
+      "app": "dramabox",
+      "category": "rewards",
+      "slug": "dramabox-subscription-cost-how-to-cancel",
+      "title": "DramaBox Subscription Cost & How to Cancel Membership (Android & iPhone)",
+      "description": "DramaBox membership pricing (weekly vs. annual plans), auto-renewal rules, and exact steps to cancel your DramaBox subscription on Google Play and iPhone.",
+      "intro": "DramaBox's Join Membership screen offers unlimited access to 16,000+ series, 1080p quality, offline downloads, and daily member points—but its default billing cycle is a recurring weekly or annual plan with auto-renewal enabled. Knowing the real cost and how to cancel before the 24-hour renewal window prevents surprise charges.",
+      "sections": [
+        {
+          "heading": "DramaBox subscription plans and pricing",
+          "paragraphs": [
+            "Pricing is localized by app store region. In our Brazil Google Play inspection, DramaBox displayed a Weekly Membership promo at R$ 34.99/week for the first 3 weeks (rising to R$ 45.99/week afterward) and an Annual Membership at R$ 459.99/year (about R$ 8.83/week). In the US and other regions, store tiers typically follow similar introductory-discount weekly and annual structures.",
+            "The Subscription Deals rules explicitly state: 'Users who successfully subscribe through this activity will have auto-renewal enabled by default' and renewal is charged automatically within 24 hours before the end of the current period."
+          ],
+          "source": {
+            "title": "DramaBox on Apple App Store (StoryMatrix)",
+            "url": "https://apps.apple.com/us/app/dramabox-stream-drama-shorts/id6445905219"
+          }
+        },
+        {
+          "heading": "How to cancel DramaBox subscription on Android & iPhone",
+          "paragraphs": [
+            "Deleting the DramaBox app from your phone does NOT cancel your subscription. Because billing is handled by Google Play or Apple, you must cancel directly in your store's Subscriptions menu at least 24 hours before the next billing date.",
+            "On Android, open the Google Play Store app, tap your profile icon -> Payments & subscriptions -> Subscriptions -> DramaBox -> Cancel subscription. On iPhone/iPad, open Settings -> tap your Apple ID name -> Subscriptions -> DramaBox -> Cancel Subscription."
+          ]
+        }
+      ],
+      "steps": [
+        "Check whether you subscribed via Google Play (Android) or Apple App Store (iPhone) and confirm the exact renewal date.",
+        "On Android: open Google Play Store -> Profile icon -> Payments & subscriptions -> Subscriptions -> DramaBox -> Cancel subscription.",
+        "On iPhone: open Settings -> [Your Name] -> Subscriptions -> DramaBox -> Cancel Subscription.",
+        "Keep the cancellation confirmation email/screenshot—you retain access until the end of the current paid period."
+      ],
+      "pros": [
+        "Membership removes episode locks across 16,000+ series and enables 1080p quality and downloads.",
+        "Subscriptions are managed through Google Play or Apple, making cancellation straightforward without contacting support."
+      ],
+      "cons": [
+        "Weekly renewal pricing is high compared to mainstream monthly streaming services, especially after the 3-week intro discount ends.",
+        "Auto-renewal is enabled by default and charges within 24 hours before the period ends."
+      ],
+      "faq": [
+        {
+          "q": "How do I cancel my DramaBox subscription?",
+          "a": "Do not just uninstall the app. Cancel in Google Play Store (Profile -> Payments & subscriptions -> Subscriptions -> DramaBox) on Android, or in iPhone Settings -> Apple ID -> Subscriptions -> DramaBox at least 24 hours before renewal."
+        },
+        {
+          "q": "How much does DramaBox cost per week or year?",
+          "a": "Prices vary by country and promo. On our inspected Android screen (Brazil), the Weekly Membership started at R$ 34.99/week for 3 weeks (then R$ 45.99/week) and the Annual Membership was R$ 459.99/year."
+        },
+        {
+          "q": "Is DramaBox membership worth it?",
+          "a": "Only if you plan to binge multiple full series within a short window and remember to cancel before renewal. Casual viewers can watch free episodes and unlock more using Reward Coins."
+        }
+      ],
+      "verdict": "If you subscribe to DramaBox for a weekend binge, cancel immediately in Google Play or Apple Subscriptions so auto-renewal does not bill a full-price second week.",
+      "imageAlt": "DramaBox Join Membership screen showing Weekly Membership and Annual Membership pricing and benefits",
+      "caption": "DramaBox's Join Membership screen compares the Weekly plan (3-week intro discount) and Annual plan with 1080p and downloads.",
+      "imageKey": "dramabox-membership",
+      "imageWide": false,
+      "secondImage": {
+        "key": "dramabox-subscription",
+        "alt": "DramaBox Subscription Deals rules showing auto-renewal enabled by default and 24-hour Google Play cancellation terms",
+        "caption": "The Subscription Deals rules confirm auto-renewal is enabled by default and billed via Google Play within 24 hours of renewal.",
+        "wide": false
+      }
+    },
+    {
+      "id": "nordvpn-vs-surfshark",
+      "app": "nordvpn",
+      "category": "tools",
+      "slug": "nordvpn-vs-surfshark-2026-comparison",
+      "title": "NordVPN vs. Surfshark (2026): Speed, Price, Devices & Which VPN Wins?",
+      "description": "Compare NordVPN vs. Surfshark in 2026 across 2-year pricing, simultaneous device limits (10 vs. unlimited), NordLynx vs. WireGuard speed, and security tools.",
+      "intro": "NordVPN and Surfshark operate under the same parent group, Nord Security, yet they target different budgets and households. NordVPN focuses on raw long-distance speed, a massive server fleet, and advanced networking tools, while Surfshark leads on multi-year pricing and unlimited simultaneous device connections.",
+      "sections": [
+        {
+          "heading": "Price and simultaneous device limits: 10 devices vs. unlimited",
+          "paragraphs": [
+            "The clearest everyday difference is how many screens one subscription covers. NordVPN caps a single account at 10 simultaneous devices, which is plenty for an individual with a phone, laptop, tablet, and TV. Surfshark allows unlimited simultaneous connections on one account, making it easier to cover an entire family or shared household without juggling logins.",
+            "On multi-year billing, Surfshark's 2-year starter tiers typically come in lower (around $2.39–$2.49/month on promotional plans), whereas NordVPN's 2-year plans generally start slightly higher (around $2.99–$3.49/month). Always verify renewal pricing on the checkout page before committing."
+          ],
+          "cta": {
+            "label": "Compare Surfshark unlimited-device plans",
+            "url": "https://www.dpbolvw.net/click-101927870-15438560-1759355883000",
+            "sponsored": true
+          }
+        },
+        {
+          "heading": "Speed, server network, and security extras",
+          "paragraphs": [
+            "Both providers use 10 Gbps servers, RAM-only infrastructure, audited no-logs policies, and WireGuard-based tunneling. NordVPN runs its custom NordLynx protocol across a larger network of over 8,400 servers in 111+ countries, which often delivers slightly lower latency on distant connections. Surfshark runs standard WireGuard across roughly 4,500+ servers in 100 countries, which is still fast enough for 4K streaming and video calls.",
+            "For extras, NordVPN includes Threat Protection Pro (ad, tracker, and malicious-domain filtering), Double VPN, and Meshnet for private device-to-device links. Surfshark counters with CleanWeb ad blocking, Bypasser split tunneling, and higher-tier Surfshark One bundles that add antivirus and Alternative ID tools."
+          ],
+          "cta": {
+            "label": "Check NordVPN official plans and Threat Protection",
+            "url": "https://www.kqzyfj.com/click-101927870-14471514-1764883017000",
+            "sponsored": true
+          }
+        },
+        {
+          "heading": "Which VPN fits your routine better?",
+          "paragraphs": [
+            "Pick NordVPN if you travel internationally, rely on distant servers for work or streaming, or want Meshnet and Double VPN built in. Pick Surfshark if you want the lowest 2-year cost or need one subscription for more than 10 phones, laptops, and smart TVs at home."
+          ],
+          "source": {
+            "title": "NordVPN: What Is NordLynx?",
+            "url": "https://nordvpn.com/features/nordlynx/"
+          }
+        }
+      ],
+      "steps": [
+        "Count how many phones, laptops, tablets, and TVs will stay connected at the same time (up to 10 for NordVPN, unlimited for Surfshark).",
+        "Compare the 2-year promotional rate and the standard renewal price on both official sites before subscribing.",
+        "Install the official app on your primary device and enable Kill Switch plus Threat Protection or CleanWeb.",
+        "Connect to the nearest server location using NordLynx (NordVPN) or WireGuard (Surfshark) for the lowest latency."
+      ],
+      "pros": [
+        "NordVPN offers a larger server network (8,400+ servers), NordLynx speed consistency, and Meshnet.",
+        "Surfshark supports unlimited simultaneous devices and lower entry-level 2-year pricing."
+      ],
+      "cons": [
+        "Both charge higher rates on month-to-month billing or after the initial promotional term renews.",
+        "NordVPN limits accounts to 10 simultaneous connections, while Surfshark has a smaller total server count."
+      ],
+      "faq": [
+        {
+          "q": "Are NordVPN and Surfshark owned by the same company?",
+          "a": "Yes, both operate under Nord Security, though they run separate server infrastructures, apps, and pricing tiers."
+        },
+        {
+          "q": "Which one is faster in 2026: NordVPN or Surfshark?",
+          "a": "Both deliver fast WireGuard-based speeds for 4K streaming, with NordVPN's NordLynx often maintaining slightly better consistency on long-distance servers."
+        },
+        {
+          "q": "Which VPN is better for families or many devices?",
+          "a": "Surfshark is better if you need more than 10 devices connected at once because it includes unlimited simultaneous connections."
+        }
+      ],
+      "verdict": "Choose Surfshark for value and unlimited household devices; choose NordVPN for maximum server coverage, long-distance speed, and advanced tools like Meshnet.",
+      "imageAlt": "NordVPN vs. Surfshark 2026 comparison of speed, price, and device limits",
+      "caption": "NordVPN vs. Surfshark compared across 2-year pricing, WireGuard/NordLynx speed, and simultaneous device limits.",
+      "imageKey": "nordvpn",
+      "imageWide": true
+    },
+    {
+      "id": "freecash-reviews",
+      "app": "freecash",
+      "category": "rewards",
+      "slug": "freecash-reviews-is-it-legit-or-scam",
+      "title": "Freecash Reviews (2026): Is It Legit, Real Payouts & What Users Say",
+      "description": "Is Freecash legit or a scam in 2026? Review real payout rules, why rewards go pending, account ban triggers, and how it compares to other GPT apps.",
+      "intro": "Freecash is a legitimate get-paid-to (GPT) platform that pays users for testing mobile games, completing partner offers, and answering surveys, not a passive income shortcut. Understanding why some users cash out smoothly while others run into pending holds or account blocks makes all the difference.",
+      "sections": [
+        {
+          "heading": "Is Freecash legit and how does it actually pay?",
+          "paragraphs": [
+            "Yes, Freecash is a real rewards site funded by game studios, app developers, and market-research partners who pay for user acquisition and feedback. Coins convert at 1,000 coins = $1.00 USD, and verified accounts can redeem balances via PayPal, gift cards, cryptocurrency, or bank transfer depending on the country.",
+            "Most negative Freecash reviews stem from unrealistic expectations or missed tracking rules rather than non-payment. High-value offers ($50 to $100+) almost always require reaching advanced game levels within 30 days or making optional in-app purchases."
+          ]
+        },
+        {
+          "heading": "Why accounts get flagged or rewards go pending",
+          "paragraphs": [
+            "Freecash enforces strict anti-fraud rules: only one account per household/IP is allowed, and using a VPN, proxy, or emulator can trigger an automatic lock. First-time withdrawals also require email and identity verification (selfie and ID check) plus a $25 first-cashout threshold in many regions.",
+            "New users can open an account using the verified invitation link below or copy code 3C7GKG, then test tracking on a small, free offer before committing hours to a long game milestone."
+          ]
+        }
+      ],
+      "steps": [
+        "Create a single Freecash account using your real location and primary email, with no VPN or proxy active.",
+        "Start with a quick, free app or survey offer to confirm that device tracking credits properly.",
+        "Save screenshots of the offer terms, level deadlines, and in-game progress in case support review is needed.",
+        "Complete email and ID verification before requesting your first $25 cashout."
+      ],
+      "pros": [
+        "Transparent coin conversion (1,000 coins = $1.00 USD) and fast subsequent payouts once verified.",
+        "Wide selection of mobile game milestones alongside surveys and partner offerwalls."
+      ],
+      "cons": [
+        "First withdrawal often requires a $25 minimum and identity verification.",
+        "Strict anti-VPN and one-account-per-household rules can freeze accounts if violated."
+      ],
+      "faq": [
+        {
+          "q": "Is Freecash legit or a scam?",
+          "a": "Freecash is legitimate and pays verified users via PayPal, gift cards, and crypto, provided you follow offer tracking rules and household limits."
+        },
+        {
+          "q": "Why do some Freecash offers stay pending?",
+          "a": "Partners hold high-value game rewards for several days to confirm valid gameplay and prevent chargebacks or duplicate installs."
+        },
+        {
+          "q": "Can two people in the same house use Freecash?",
+          "a": "Freecash restricts accounts per household and shared IP address, so check their terms before creating a second account on the same Wi-Fi."
+        }
+      ],
+      "verdict": "Freecash is a legitimate rewards site if you treat it as paid app testing, avoid VPNs, and focus on free milestones whose tracking works from day one.",
+      "imageAlt": "Freecash dashboard and offer list on Android",
+      "caption": "Freecash aggregates mobile game milestones, partner offers, and surveys in one account."
+    },
+    {
+      "id": "freecash-bonus-cashout",
+      "app": "freecash",
+      "category": "rewards",
+      "slug": "freecash-bonus-codes-withdrawal-methods-guide",
+      "title": "Freecash Bonus Codes & Cashout Guide (2026): PayPal, Crypto & Minimums",
+      "description": "How to use Freecash referral code 3C7GKG, find official bonus codes, meet the $25 first-cashout rule, and avoid PayPal or crypto withdrawal fees.",
+      "intro": "Knowing how Freecash bonus codes and withdrawal fees work helps you keep more of what you earn. While your first cashout carries a higher threshold and an identity check, subsequent withdrawals unlock much lower minimums and near-instant options.",
+      "sections": [
+        {
+          "heading": "How Freecash referral and bonus codes work",
+          "paragraphs": [
+            "When signing up, you can enter an invitation link or code such as 3C7GKG to tie your registration to a verified referral link. Freecash also publishes limited-time bonus codes during community giveaways on X/Twitter, Instagram, YouTube, and Discord, which can be redeemed inside your profile or rewards tab while slots remain active.",
+            "Avoid third-party websites promising 'unlimited Freecash coin generators'—valid bonus codes only come from Freecash's official channels or verified referral links."
+          ]
+        },
+        {
+          "heading": "First $25 withdrawal vs. subsequent cashouts and fees",
+          "paragraphs": [
+            "According to Freecash support documentation, first-time withdrawals typically require a $25 minimum (varying slightly by region) plus email and selfie/ID verification. Once that first withdrawal is approved, the $25 gate drops and many e-wallet or crypto methods allow cashouts starting around $5.",
+            "PayPal and Venmo withdrawals generally carry a 5% fee, whereas major gift cards (Amazon, Google Play, Apple, Steam) and several cryptocurrency options (Litecoin, Bitcoin, Ethereum) often process with zero or minimal platform fees. Bank transfers via ACH or Revolut can take 3–5 business days."
+          ],
+          "source": {
+            "title": "Freecash: first-withdrawal requirements",
+            "url": "https://freecash.com/academy/en/support/withdrawal/issues/first-cashout-requirements"
+          }
+        }
+      ],
+      "steps": [
+        "Open Freecash via the verified invitation button below or copy referral identifier 3C7GKG during sign-up.",
+        "Follow Freecash's official social channels if you want to catch time-limited community bonus drops.",
+        "Build your balance past the $25 first-cashout threshold and complete the ID verification prompt.",
+        "Compare fees before cashing out: pick gift cards or low-fee crypto if you want to avoid PayPal's 5% fee."
+      ],
+      "pros": [
+        "Multiple cashout routes including PayPal, crypto, bank transfer, and fee-free gift cards.",
+        "Lower withdrawal minimums unlock after completing the first verified cashout."
+      ],
+      "cons": [
+        "PayPal withdrawals carry a 5% processing fee.",
+        "First cashout requires reaching $25 and passing an identity check."
+      ],
+      "faq": [
+        {
+          "q": "What is the Freecash invitation code on apps308?",
+          "a": "The verified referral identifier is 3C7GKG, linked directly in the Freecash button on this page."
+        },
+        {
+          "q": "Which Freecash withdrawal method has no fees?",
+          "a": "Gift cards (such as Amazon, Google Play, and Steam) and select cryptocurrency options typically have no platform withdrawal fee, unlike PayPal's 5% fee."
+        },
+        {
+          "q": "How fast does Freecash pay after verification?",
+          "a": "Security checks usually take up to 30 minutes for PayPal, crypto, and gift cards, while bank transfers take 3–5 business days."
+        }
+      ],
+      "verdict": "Use code 3C7GKG at sign-up, clear the initial $25 ID-verified cashout once, and prefer gift cards or low-fee crypto for smaller, fee-free withdrawals afterward.",
+      "imageAlt": "Freecash withdrawal options and rewards screen",
+      "caption": "Freecash supports PayPal, gift cards, crypto, and bank transfers once first-cashout rules are met."
+    },
+    {
+      "id": "freecash-games-offers",
+      "app": "freecash",
+      "category": "rewards",
+      "slug": "freecash-games-and-offers-how-to-earn-more",
+      "title": "Best Freecash Games & Offers (2026): Milestones, Tracking & Tips",
+      "description": "How to pick profitable Freecash game offers in 2026, fix tracking issues on Android and iOS, and avoid spending more than an offer pays.",
+      "intro": "Mobile games make up the highest-paying section on Freecash, with headline rewards ranging from a few dollars to several hundred. Still, the headline number is split across progressive milestones, and a single tracking mistake can leave your progress uncredited.",
+      "sections": [
+        {
+          "heading": "How Freecash game milestones work",
+          "paragraphs": [
+            "Every game offer lists a sequence of goals—such as installing the app, reaching level 15 in 7 days, or hitting level 50 within 30 days. Early milestones pay small amounts quickly to confirm tracking, while the largest payouts sit at the deepest levels or require optional in-app bundles.",
+            "Before downloading, divide the realistic free-to-play milestones by the hours required. Skipping impossible final levels and moving on to a fresh game often yields a better hourly return."
+          ]
+        },
+        {
+          "heading": "How to prevent tracking failures on Android and iOS",
+          "paragraphs": [
+            "Tracking only works for first-time installs: never start an offer for a game you previously downloaded on the same Google Play or Apple ID. Disable ad-blockers, Private DNS filters, and VPNs before clicking the Freecash offer link, and launch the game immediately after installation finishes.",
+            "If you want to compare which platform pays more for the same game title, check our Swagbucks vs. Freecash comparison before installing."
+          ],
+          "source": {
+            "title": "Freecash: offer tracking best practices",
+            "url": "https://freecash.com/academy/en/support/offer/tracking/how-to-ensure-offer-tracks"
+          }
+        }
+      ],
+      "steps": [
+        "Turn off VPNs, ad-blockers, and Private DNS on your phone before opening Freecash.",
+        "Pick a game you have never installed before and read every milestone deadline.",
+        "Tap the offer inside Freecash, install directly from the official store, and play for 5–10 minutes right away.",
+        "Confirm the initial install or level-1 milestone credits before investing days into higher goals."
+      ],
+      "pros": [
+        "Progressive milestones pay out as you advance instead of forcing an all-or-nothing grind.",
+        "Clear offer cards show deadlines and exact level targets upfront."
+      ],
+      "cons": [
+        "Previously installed games will not track or credit.",
+        "Top-tier milestones may be unrealistic without in-app purchases."
+      ],
+      "faq": [
+        {
+          "q": "Why didn't my Freecash game offer track?",
+          "a": "Common causes include prior installation on the same device/store account, active VPNs or ad-blockers, or denying app-tracking permission on iOS."
+        },
+        {
+          "q": "Should I spend money on in-app purchases to finish a Freecash offer?",
+          "a": "Only if a specific purchase milestone clearly reimburses more than it costs; otherwise stick to free-to-play goals."
+        },
+        {
+          "q": "How long do I have to finish a Freecash game offer?",
+          "a": "Most featured game offers set a 14-day to 30-day window from the moment you install the app."
+        }
+      ],
+      "verdict": "Focus on fresh-install games with achievable mid-tier milestones, verify the first tracking check early, and skip paywalled final levels.",
+      "imageAlt": "Freecash mobile game offers and milestone rewards",
+      "caption": "Freecash game offers split rewards across timed level milestones that require clean first-install tracking."
     }  ],
   "es": [
     {
@@ -4188,6 +4893,711 @@ export const articles:Record<Locale,Article[]>={
         "caption": "En contraste, DramaStack exhibe un mínimo de R$300 junto a reglas que impiden convertir monedas.",
         "wide": false
       }
+    },
+    {
+      "id": "cashdrama",
+      "app": "cashdrama",
+      "category": "rewards",
+      "slug": "cashdrama-es-confiable-si-paga-opiniones",
+      "title": "CashDrama Opiniones (2026): ¿Es Confiable, Real o Estafa?",
+      "description": "Análisis honesto de CashDrama (com.reward.drama.earn.watch.tool): por qué el saldo sube a $99.86–$106.84 tan rápido, cómo funcionan sus bloqueos y si paga.",
+      "intro": "CashDrama (paquete com.reward.drama.earn.watch.tool en Google Play) se promociona como una app de dramas cortos que paga dinero por ver miniseries verticales. En nuestra revisión práctica, el saldo subió a $99.86 y $106.84 desde el primer día, pero el botón 'Withdraw Now' siguió desactivado tras bloqueos de episodios y días.",
+      "sections": [
+        {
+          "heading": "Qué es CashDrama y cómo funciona su interfaz",
+          "paragraphs": [
+            "En Android, CashDrama se divide en cuatro pestañas inferiores: Discover, For u, Tasks y Profile. En Discover y For u reproduce miniseries verticales de romance, hombres lobo y venganza como Rejected Luna is His Fated Mate, Before We Break: Playing Dirty y The Return of the Lost Striker.",
+            "Sobre el catálogo aparece una capa agresiva de recompensas: un contador verde con saldo en dólares arriba a la derecha, un aviso fijo de 'Watch 12 more episodes to cash out' y un cofre flotante con cuenta regresiva."
+          ],
+          "source": {
+            "title": "CashDrama en Google Play (com.reward.drama.earn.watch.tool)",
+            "url": "https://play.google.com/store/apps/details?id=com.reward.drama.earn.watch.tool&hl=es"
+          }
+        },
+        {
+          "heading": "Por qué el saldo llega a $100 el primer día (señal de alerta)",
+          "paragraphs": [
+            "A diferencia de las apps legítimas que pagan centavos por encuesta, la pestaña Tasks de CashDrama promete entre $6.00 y $8.00 por cada tarea diaria (ver 10 episodios, desbloquear 5 episodios, abrir el cofre 3 veces o activar notificaciones) y un registro de 7 días con bonos de $8 a $50 más desbloqueos de '$100 Unlock' en los días 2 y 7.",
+            "En nuestras capturas, la cuenta arrancó con $99.86 (a solo $0.14 del retiro de $100) y superó los $106.84 en minutos. Inflar el saldo inicial es un gancho clásico para retener al usuario viendo anuncios con la esperanza de cobrar."
+          ]
+        },
+        {
+          "heading": "¿CashDrama es confiable o es estafa para ganar dinero?",
+          "paragraphs": [
+            "Aunque la app está publicada en Google Play, tanto las reseñas de usuarios como nuestra inspección del sistema de retiro muestran que no funciona como una fuente confiable de dinero real. Incluso al superar los $100, el botón de retiro permanece bloqueado.",
+            "Si solo buscas entretenimiento gratuito en formato vertical, ignora el contador de dólares. Si buscas ingresos reales, no inviertas horas intentando desbloquear los niveles de $100 a $1K."
+          ]
+        }
+      ],
+      "steps": [
+        "Verifica en Google Play que el paquete sea com.reward.drama.earn.watch.tool y evita APKs de terceros.",
+        "Abre la pestaña Withdraw antes de hacer tareas para revisar los candados activos de episodios y días.",
+        "No tomes los premios inflados de $6–$8 ni el saldo inicial de $99.86 como dinero retirable real.",
+        "Evita conceder permisos de notificaciones solo por bonos simbólicos dentro de la app.",
+        "Elige plataformas transparentes con mínimos bajos reales si buscas dinero extra por internet."
+      ],
+      "pros": [
+        "Catálogo variado de mininovelas verticales accesible desde Discover y For u sin suscripción obligatoria.",
+        "Muestra el nombre de un procesador conocido (Tremendous) en la pantalla de retiro."
+      ],
+      "cons": [
+        "Montos irreales de $6 a $50 por tarea inflan el saldo a $100+ mientras 'Withdraw Now' sigue bloqueado.",
+        "Exige ver 12 episodios reclamando recompensas por cada intento de retiro más el candado 'Day 2 Unlock'.",
+        "Incluye supuestas pruebas de pago de $100–$800 que no se pueden verificar de forma independiente."
+      ],
+      "faq": [
+        {
+          "q": "¿CashDrama es confiable?",
+          "a": "Es una app real disponible en Google Play para ver dramas cortos, pero sus promesas de pago están llenas de trabas. En nuestras pruebas, con $106.84 de saldo, el botón de retiro seguía desactivado."
+        },
+        {
+          "q": "¿CashDrama paga de verdad $100 o $300?",
+          "a": "No pudimos verificar ningún pago. Al pasar de $100 el primer día, la tarjeta sigue bloqueada por 'Day 2 Unlock' y el requisito de ver 12 episodios más."
+        },
+        {
+          "q": "¿Es seguro descargar CashDrama?",
+          "a": "Descargarla desde Google Play reduce riesgos de malware frente a APKs externos, pero conviene limitar permisos y no esperar ganancias reales."
+        }
+      ],
+      "verdict": "No recomendamos CashDrama para ganar dinero. Su rápido salto a $99.86–$106.84 y las tarjetas de $100 a $1K ocultan bloqueos de episodios y días que impiden retirar con normalidad.",
+      "imageAlt": "Pestaña Tasks de CashDrama con saldo de $99.86, check-in de $8 a $50 y tareas de $6 a $8",
+      "caption": "La pestaña Tasks promete de $8 a $50 por check-in y $6–$8 por tarea, llevando el saldo a $99.86 el día 1.",
+      "imageKey": "cashdrama-tasks",
+      "imageWide": false,
+      "secondImage": {
+        "key": "cashdrama-discover",
+        "alt": "Pantalla Discover de CashDrama con $106.84 y el aviso 'Watch 12 more episodes to cash out'",
+        "caption": "Incluso con $106.84 en cuenta, Discover mantiene el bloqueo de ver 12 episodios más para retirar.",
+        "wide": false
+      }
+    },
+    {
+      "id": "cashdrama-withdraw",
+      "app": "cashdrama",
+      "category": "rewards",
+      "slug": "cashdrama-como-retirar-dinero-paga-por-ver-videos",
+      "title": "¿CashDrama Paga por Ver Videos? Cómo Retirar Dinero y Reglas de Pago (2026)",
+      "description": "¿Se puede retirar $1 o $100 en CashDrama? Mira qué ocurre al superar los $100 de saldo, por qué 'Withdraw Now' sigue gris y cómo funciona la regla de 12 episodios.",
+      "intro": "Quienes prueban CashDrama suelen preguntarse si al menos el retiro mínimo de $1 funciona o por qué no deja cobrar al pasar de $100. Seguimos la pantalla Withdraw desde $99.86 hasta $106.84 y comprobamos que alcanzar el monto no desbloquea el botón de retiro.",
+      "sections": [
+        {
+          "heading": "Por qué $1 y $100 siguen bloqueados incluso con $106.84",
+          "paragraphs": [
+            "La pantalla Withdraw muestra seis tarjetas de retiro: $1, $100, $300, $500, $800 y $1K, con Tremendous como método de pago. Con $99.86, la opción de $100 marca '$0.14 to go' bajo una etiqueta naranja 'Day 2 Unlock', mientras la de $1 indica '12 ep. left'.",
+            "Al subir el saldo a $106.84, la tarjeta de $100 pasó a mostrar '$0 to go' (meta de saldo cumplida), pero mantuvo la etiqueta 'Day 2 Unlock' y el botón 'Withdraw Now' continuó gris y deshabilitado."
+          ],
+          "source": {
+            "title": "CashDrama en Google Play (com.reward.drama.earn.watch.tool)",
+            "url": "https://play.google.com/store/apps/details?id=com.reward.drama.earn.watch.tool&hl=es"
+          }
+        },
+        {
+          "heading": "La regla de 'Watch 12 eps = 1 withdrawal chance'",
+          "paragraphs": [
+            "Debajo de las tarjetas, CashDrama advierte: 'Watch 12 more episodes to unlock your next withdrawal. Claim at least one reward in an episode for it to count toward your withdrawal progress.' Es decir, ni siquiera el retiro de $1 está disponible tras alcanzar el saldo.",
+            "Como cada episodio válido exige reclamar una recompensa interna (normalmente ligada a anuncios), el usuario debe ver decenas de comerciales por cada intento, y las opiniones en tienda reportan nuevas trabas al completar el conteo."
+          ]
+        },
+        {
+          "heading": "Qué pasa con los niveles de $300 a $1K",
+          "paragraphs": [
+            "Los cuadros de $300, $500, $800 y $1K funcionan como anzuelo visual. Aunque las primeras tareas sumen $6–$8 ficticios en pantalla, este tipo de apps suele frenar las ganancias o encadenar requisitos de rachas antes de aprobar un pago real."
+          ]
+        }
+      ],
+      "steps": [
+        "Ingresa a Withdraw desde Tasks para revisar tu saldo y los candados vigentes.",
+        "Observa el contador '12 ep. left' en la tarjeta de $1 y la exigencia de reclamar recompensa por episodio.",
+        "Comprueba que la tarjeta de $100 conserva 'Day 2 Unlock' aunque marque '$0 to go'.",
+        "Verifica que 'Withdraw Now' sigue gris hasta superar todas las condiciones ocultas o temporales.",
+        "Detente antes de gastar días viendo anuncios si el intento de $1 no se acredita."
+      ],
+      "pros": [
+        "Incluye una tarjeta nominal baja de $1 además de los niveles de $100–$1K.",
+        "Muestra Tremendous como método de envío en la pantalla de cartera."
+      ],
+      "cons": [
+        "Superar los $100 ($106.84 y '$0 to go') no habilita el botón Withdraw Now.",
+        "Incluso para $1 exige ver 12 episodios completos reclamando recompensas internas.",
+        "Sin pruebas independientes verificables de que los retiros de $100–$1K lleguen al usuario."
+      ],
+      "faq": [
+        {
+          "q": "¿Cómo retirar dinero en CashDrama?",
+          "a": "La pantalla Withdraw exige ver 12 episodios reclamando al menos una recompensa en cada uno para habilitar un intento vía Tremendous, y en nuestra prueba el botón siguió bloqueado incluso con $106.84."
+        },
+        {
+          "q": "¿Por qué no me deja sacar $100 si ya pasé de $100 en CashDrama?",
+          "a": "Porque además del saldo ('$0 to go'), la tarjeta exige 'Day 2 Unlock' y completar el requisito de 12 episodios para desbloquear el retiro."
+        },
+        {
+          "q": "¿CashDrama paga por PayPal o Tremendous?",
+          "a": "El campo Payment Method indica Tremendous, mientras las reseñas internas citan PayPal, Cash App y Venmo; no pudimos verificar ningún pago real."
+        }
+      ],
+      "verdict": "El sistema de retiro de CashDrama acumula candados: infla el saldo rápido, pero '12 ep. left' y 'Day 2 Unlock' mantienen 'Withdraw Now' desactivado. No cuentes con ese dinero.",
+      "imageAlt": "Pantalla Withdraw de CashDrama con $99.86, $1 bloqueado por 12 episodios y $100 con Day 2 Unlock",
+      "caption": "Con $99.86, la opción de $1 exige 12 episodios y la de $100 está bloqueada por 'Day 2 Unlock'.",
+      "imageKey": "cashdrama-withdraw-1",
+      "imageWide": false,
+      "secondImage": {
+        "key": "cashdrama-withdraw-2",
+        "alt": "Pantalla Withdraw de CashDrama con $106.84 y '$0 to go' en $100 pero botón desactivado",
+        "caption": "Con $106.84 ('$0 to go' en $100), 'Day 2 Unlock' y los 12 episodios siguen bloqueando el botón.",
+        "wide": false
+      }
+    },
+    {
+      "id": "cashdrama-proofs",
+      "app": "cashdrama",
+      "category": "rewards",
+      "slug": "cashdrama-pruebas-de-pago-tareas-vs-dramastack",
+      "title": "CashDrama: Pruebas de Pago, Tareas Diarias y Comparativa con DramaStack",
+      "description": "¿Son reales las pruebas de pago de $100, $500 y $800 en CashDrama? Comparamos sus tareas y bloqueos con DramaStack antes de que pierdas tiempo.",
+      "intro": "Al bajar en la pantalla Withdraw de CashDrama aparece una sección llamada 'Payment Proofs' con supuestos cobros de $100, $300, $500 y $800 en PayPal, Cash App y Venmo. Analizamos por qué esas capturas y sus tareas de $6–$8 repiten el mismo esquema de DramaStack.",
+      "sections": [
+        {
+          "heading": "Qué muestran las 'Payment Proofs' dentro de CashDrama",
+          "paragraphs": [
+            "En la parte inferior de Withdraw figuran tarjetas con nombres genéricos —Emily Johnson ($300 PayPal), Michael Brown ($500.00 Cash App, TXN-7315...4a01), Jessica Davis ($100.00 Venmo, TXN-5208...1f7d) y David Wilson ($800)— acompañadas de reseñas de cinco estrellas.",
+            "Estos comprobantes viven dentro de la propia interfaz de la app con códigos recortados que nadie puede auditar fuera. Igual que el aviso de retiro de R$300 dentro de DramaStack, son elementos de diseño para generar confianza, no evidencia verificada."
+          ],
+          "source": {
+            "title": "CashDrama en Google Play (com.reward.drama.earn.watch.tool)",
+            "url": "https://play.google.com/store/apps/details?id=com.reward.drama.earn.watch.tool&hl=es"
+          }
+        },
+        {
+          "heading": "CashDrama vs. DramaStack: mismo modelo con otro envoltorio",
+          "paragraphs": [
+            "Ambas apps combinan dramas verticales cortos (como Rejected Luna is His Fated Mate en el reproductor For u de CashDrama) con una billetera de montos altos. DramaStack muestra un mínimo de R$300 aunque su política aclara que las monedas virtuales no se convierten en dinero.",
+            "CashDrama añade un anzuelo de $1 junto a tarjetas de $100–$1K y el logo de Tremendous, pero interpone '12 ep. left' por intento y 'Day 2 Unlock'. En los dos casos, la prioridad es exponer anuncios."
+          ],
+          "source": {
+            "title": "DramaStack en Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.reeltime.dramastack&hl=es"
+          }
+        },
+        {
+          "heading": "Alternativas reales si buscas recompensas verificables",
+          "paragraphs": [
+            "Si te gustan las mininovelas verticales sin promesas infladas de cientos de dólares, la app oficial de TikTok (PineDrama) muestra tasas transparentes y modestas cuando habilita recompensas regionales.",
+            "Si tu objetivo es ganar dinero real por PayPal o tarjetas regalo, usa plataformas consolidadas como Prime Opinion, Freecash, Pawns.app o Swagbucks, con mínimos claros desde $1–$5."
+          ]
+        }
+      ],
+      "steps": [
+        "Desconfía de comprobantes internos con nombres genéricos y códigos TXN ocultos.",
+        "Compara las promesas de $6–$8 por tarea frente a lo que realmente pagan los anuncios móviles.",
+        "Revisa si la app exige días consecutivos o decenas de episodios con anuncios por cada intento.",
+        "Usa CashDrama solo como reproductor gratuito si te atrae su catálogo, nunca como ingreso.",
+        "Cámbiate a apps de encuestas y ofertas verificadas si buscas retiros reales en PayPal."
+      ],
+      "pros": [
+        "Reproductor vertical ágil con subtítulos y cambio rápido entre episodios.",
+        "Acceso gratuito a los capítulos sin exigir tarjeta bancaria al inicio."
+      ],
+      "cons": [
+        "Las supuestas pruebas de pago de $100–$800 no son verificables externamente.",
+        "Replica el patrón de saldo inflado y retiro bloqueado visto en DramaStack.",
+        "Alta carga de anuncios ligada a cofres y recompensas por episodio."
+      ],
+      "faq": [
+        {
+          "q": "¿Son reales las pruebas de pago de CashDrama?",
+          "a": "No se pueden verificar. Son tarjetas internas dentro de la app con nombres genéricos y códigos parciales como TXN-7315...4a01."
+        },
+        {
+          "q": "¿Qué es mejor, CashDrama o DramaStack?",
+          "a": "Ninguna es recomendable para ganar dinero. Ambas usan saldos llamativos para retener al usuario viendo anuncios mientras bloquean o limitan el cobro."
+        },
+        {
+          "q": "¿Qué apps sí pagan en lugar de CashDrama?",
+          "a": "Opciones como Prime Opinion, Freecash, Pawns.app y Swagbucks ofrecen retiros reales y verificables por PayPal y tarjetas regalo."
+        }
+      ],
+      "verdict": "Las pruebas de pago de $100–$800 y tareas de $6–$8 de CashDrama repiten el modelo de DramaStack. Úsala solo por entretenimiento si te gustan sus series, no para cobrar dinero.",
+      "imageAlt": "Sección Payment Proofs de CashDrama con supuestos pagos de $500 Cash App, $100 Venmo y $800",
+      "caption": "La pantalla Withdraw de CashDrama exhibe supuestas pruebas de $100 a $800 con IDs recortados.",
+      "imageKey": "cashdrama-proofs",
+      "imageWide": false,
+      "secondImage": {
+        "key": "cashdrama-player",
+        "alt": "Reproductor vertical For u de CashDrama mostrando Rejected Luna is His Fated Mate",
+        "caption": "Debajo de la capa de premios, CashDrama es un reproductor vertical de miniseries románticas y de fantasía.",
+        "wide": false
+      }
+    },
+    {
+      "id": "dramabox",
+      "app": "dramabox",
+      "category": "rewards",
+      "slug": "dramabox-es-confiable-gratis-o-de-paga",
+      "title": "DramaBox: ¿Es Confiable, Gratis o de Paga? Opiniones y Guía (2026)",
+      "description": "Análisis completo de DramaBox (StoryMatrix): cuántos episodios son gratis, cómo funcionan las monedas y anuncios para desbloquear capítulos, precios y seguridad.",
+      "intro": "DramaBox (publicada por StoryMatrix Pte. Ltd. en Google Play y App Store) es una de las aplicaciones más populares de dramas cortos en formato vertical, con un catálogo que supera las 16.000 series de romance, fantasía, suspenso y anime. La descarga es gratuita y permite ver los primeros episodios sin pagar, pero después bloquea la continuación detrás de monedas de recompensa, anuncios o una suscripción.",
+      "sections": [
+        {
+          "heading": "Qué es DramaBox y cómo funciona su catálogo",
+          "paragraphs": [
+            "A diferencia de apps que prometen dinero por ver videos, DramaBox es una plataforma de entretenimiento puro. En la pestaña Home organiza su catálogo en Popular, New, Rankings, Categories y Anime, con mininovelas verticales como A 7-Year Leap, Deadliest Prison, Forbidden Desires at the Manor y Love Square.",
+            "Cada capítulo dura entre uno y dos minutos y está pensado para verse rápido desde el celular. En la pestaña Profile se concentran las opciones de recarga (Top Up), billetera (My Wallet), recompensas (Earn Rewards), regalos, historial, descargas e idioma."
+          ],
+          "source": {
+            "title": "Sitio oficial de DramaBox (StoryMatrix)",
+            "url": "https://www.dramabox.com/"
+          }
+        },
+        {
+          "heading": "¿DramaBox es gratis o de paga? Así funcionan los episodios bloqueados",
+          "paragraphs": [
+            "DramaBox funciona bajo un modelo freemium. Puedes empezar cualquier serie gratis porque los primeros episodios vienen desbloqueados. Al llegar al límite gratuito, los capítulos siguientes requieren Reward Coins (monedas) o una membresía activa.",
+            "No es obligatorio pagar de inmediato: en Earn Rewards puedes juntar monedas gratis viendo anuncios de video (entre 10 y 30 monedas por anuncio), haciendo check-in diario y completando tareas de cuenta. Eso sí, desbloquear una serie completa de 60 a 100 episodios solo con anuncios exige varios días de constancia."
+          ]
+        },
+        {
+          "heading": "¿DramaBox es confiable y seguro?",
+          "paragraphs": [
+            "Sí: DramaBox es una app legítima y oficial en Google Play (paquete com.storymatrix.drama) y App Store. El punto que debes vigilar no es un fraude de pagos, sino la renovación automática de sus planes semanales y anuales si activas una suscripción.",
+            "Evita descargar archivos 'DramaBox APK gratis sin anuncios' de sitios externos o MediaFire, ya que suelen incluir malware y no desbloquean monedas reales del servidor."
+          ],
+          "source": {
+            "title": "DramaBox en Google Play (StoryMatrix)",
+            "url": "https://play.google.com/store/apps/details?id=com.storymatrix.drama&hl=es"
+          }
+        }
+      ],
+      "steps": [
+        "Instala DramaBox únicamente desde Google Play Store o Apple App Store (desarrollador: STORYMATRIX PTE. LTD.).",
+        "Explora las pestañas Popular, New o Categories y reproduce los primeros episodios gratuitos.",
+        "Entra en Profile -> Earn Rewards para reunir monedas gratis con check-in diario y anuncios antes de que se bloqueen los capítulos.",
+        "Si decides suscribirte, revisa el precio semanal y la regla de renovación automática de 24 horas en tu tienda."
+      ],
+      "pros": [
+        "Catálogo enorme (+16.000 series anunciadas) con primeros capítulos gratis en cada historia.",
+        "Permite desbloquear episodios sin pagar usando monedas ganadas con anuncios y tareas diarias.",
+        "Disponible de forma oficial para Android e iOS con selector de idioma."
+      ],
+      "cons": [
+        "Tras los primeros episodios, la serie se bloquea y exige muchas monedas, anuncios o membresía.",
+        "El plan semanal con renovación automática resulta costoso si olvidas cancelarlo."
+      ],
+      "faq": [
+        {
+          "q": "¿DramaBox es gratis?",
+          "a": "Descargarla y ver los primeros episodios de cada serie es gratis. Los episodios posteriores se bloquean y se desbloquean con monedas (ganadas en anuncios/tareas o compradas) o con suscripción."
+        },
+        {
+          "q": "¿DramaBox es confiable y seguro?",
+          "a": "Sí, es una aplicación oficial de StoryMatrix en Google Play y App Store. Solo evita APKs modificados de terceros y revisa la renovación automática si te suscribes."
+        },
+        {
+          "q": "¿DramaBox paga dinero real?",
+          "a": "No. Las monedas de DramaBox solo sirven para desbloquear episodios dentro de la aplicación, no se pueden retirar como dinero."
+        }
+      ],
+      "verdict": "DramaBox es una app confiable para ver mininovelas verticales si aceptas ver anuncios por monedas o pagar una suscripción temporal. Descárgala solo desde tiendas oficiales.",
+      "imageAlt": "Catálogo principal de DramaBox con pestañas Popular, New, Rankings, Categories y Anime",
+      "caption": "El inicio de DramaBox organiza sus miniseries verticales en Popular, New, Rankings, Categories y Anime.",
+      "imageKey": "dramabox-catalog",
+      "imageWide": false,
+      "secondImage": {
+        "key": "dramabox-profile",
+        "alt": "Perfil de DramaBox mostrando billetera, Earn Rewards, Top Up y banner Join Membership",
+        "caption": "Desde Profile accedes a My Wallet, Earn Rewards (+60), Top Up y al banner de membresía.",
+        "wide": false
+      }
+    },
+    {
+      "id": "dramabox-coins",
+      "app": "dramabox",
+      "category": "rewards",
+      "slug": "como-ver-dramabox-gratis-conseguir-monedas",
+      "title": "Cómo Ver DramaBox Gratis (2026): Conseguir Monedas, Anuncios y Tareas",
+      "description": "Guía paso a paso para conseguir monedas gratis en DramaBox: check-in de 7 días (+10 a +50), anuncios de 30 y 10 monedas, y tareas diarias sin pagar.",
+      "intro": "Cuando terminan los primeros capítulos gratuitos de una serie en DramaBox, los siguientes episodios quedan bloqueados. Aun así, puedes seguir viendo dramas sin gastar dinero aprovechando la sección Earn Rewards, donde la app entrega monedas por iniciar sesión a diario, ver anuncios cortos y completar tareas simples.",
+      "sections": [
+        {
+          "heading": "Todas las formas oficiales de ganar monedas gratis en DramaBox",
+          "paragraphs": [
+            "Abre Profile y toca Earn Rewards (o el ícono de regalo en el inicio) para ver tu saldo de Reward Coins y las misiones disponibles. En nuestra revisión de la app, el check-in de 7 días entrega +10 monedas los días 1 y 2, +20 los días 3 y 4, +25 el día 5, +30 el día 6 y +50 el día 7.",
+            "Justo debajo aparece el botón 'Watch Ad to earn 30 coins'. Más abajo en Earn Rewards dispones de 'Earn rewards (0/30) — Watch a video to earn 10 coins' hasta 30 veces por ciclo, además de bonos únicos: Login with any account (+60), activar notificaciones push (+60), unirse al canal de Telegram (+30), seguir en Facebook (+20) y seguir en YouTube (+20)."
+          ]
+        },
+        {
+          "heading": "Cuántos capítulos desbloquean y por qué evitar APKs modificados",
+          "paragraphs": [
+            "Sumando el check-in inicial, las tareas únicas (+190 monedas en total) y los anuncios diarios puedes desbloquear varios capítulos sin pagar. Como muchas series tienen entre 60 y 100 episodios cortos, quienes ven gratis suelen avanzar algunos capítulos al día.",
+            "Desconfía de supuestos generadores de monedas o APKs modificados de DramaBox: el saldo de monedas se valida en los servidores de StoryMatrix y los archivos fuera de Google Play exponen tu teléfono a virus o robo de datos. Si buscas alternativas de dramas cortos, también puedes revisar nuestra guía de PineDrama."
+          ],
+          "source": {
+            "title": "DramaBox en Google Play (StoryMatrix)",
+            "url": "https://play.google.com/store/apps/details?id=com.storymatrix.drama&hl=es"
+          }
+        }
+      ],
+      "steps": [
+        "Abre DramaBox, entra en Profile (abajo a la derecha) y toca Earn Rewards.",
+        "Reclama tu check-in diario (+10 a +50 monedas según el día de racha).",
+        "Pulsa 'Watch Ad to earn 30 coins' y aprovecha la tarea repetible de 10 monedas por video (hasta 30 diarios).",
+        "Completa las tareas únicas como iniciar sesión (+60), notificaciones (+60) y redes sociales (+20 a +30).",
+        "Vuelve al episodio bloqueado y desbloquéalo usando tus Reward Coins."
+      ],
+      "pros": [
+        "Varias fuentes gratuitas de monedas (check-in de 7 días, anuncios de 30 monedas y hasta 30 videos de 10 monedas).",
+        "No requiere tarjeta bancaria ni iniciar una prueba de suscripción."
+      ],
+      "cons": [
+        "Ver anuncios de 10 a 30 monedas lleva tiempo si quieres maratonear una serie larga en un solo día.",
+        "Las tareas de redes sociales e inicio de sesión solo otorgan monedas una vez por cuenta."
+      ],
+      "faq": [
+        {
+          "q": "¿Cómo conseguir monedas gratis en DramaBox?",
+          "a": "Entra en Profile -> Earn Rewards para hacer el check-in diario (+10 a +50 monedas), mirar anuncios de 30 y 10 monedas y completar tareas como vincular tu cuenta (+60)."
+        },
+        {
+          "q": "¿Funcionan los APK mod de DramaBox con monedas infinitas?",
+          "a": "No son seguros ni recomendables. El control de monedas y suscripciones se gestiona en servidores oficiales y los APKs alterados suelen contener malware."
+        },
+        {
+          "q": "¿Se puede ver DramaBox completo sin pagar?",
+          "a": "Sí, aunque de forma más lenta: los primeros capítulos son libres y los siguientes se desbloquean reuniendo monedas diarias con anuncios."
+        }
+      ],
+      "verdict": "Puedes ver DramaBox gratis combinando los episodios iniciales con el check-in de 7 días y los anuncios de Earn Rewards; evita siempre los APKs modificados.",
+      "imageAlt": "Pantalla Reward coins de DramaBox con check-in de 7 días, Watch Ad to earn 30 coins y tareas Earn Rewards",
+      "caption": "La pestaña Reward coins muestra el check-in de 7 días (+10 a +50), el botón de anuncio de 30 monedas y tareas de +20 a +60.",
+      "imageKey": "dramabox-coins",
+      "imageWide": false,
+      "secondImage": {
+        "key": "dramabox-catalog",
+        "alt": "Catálogo de series en DramaBox",
+        "caption": "Las monedas acumuladas sirven para desbloquear episodios en cualquier serie del catálogo.",
+        "wide": false
+      }
+    },
+    {
+      "id": "dramabox-subscription",
+      "app": "dramabox",
+      "category": "rewards",
+      "slug": "dramabox-cuanto-cuesta-como-cancelar-suscripcion",
+      "title": "DramaBox: Cuánto Cuesta y Cómo Cancelar la Suscripción (Android y iPhone)",
+      "description": "Precios de membresía de DramaBox (plan semanal y anual), reglas de renovación automática y pasos exactos para cancelar tu suscripción en Google Play y iPhone.",
+      "intro": "La membresía de DramaBox promete acceso ilimitado a más de 16.000 series en calidad 1080p y descargas offline, pero su cobro funciona con renovación automática activada por defecto. Conocer el precio real de los planes y saber cómo cancelar en Google Play o App Store evita cargos semanales inesperados.",
+      "sections": [
+        {
+          "heading": "Cuánto cuesta la suscripción de DramaBox (semanal y anual)",
+          "paragraphs": [
+            "Los precios se muestran en la moneda local de tu tienda. En nuestra inspección en Android (Brasil), la pantalla Join Membership ofreció el Plan Semanal en promoción por R$ 34,99/semana durante las primeras 3 semanas (subiendo luego a R$ 45,99/semana) y el Plan Anual por R$ 459,99/año. En México, España y EE. UU. las tarifas siguen la misma estructura semanal con descuento inicial y anual.",
+            "Las reglas de la pantalla Subscription Deals indican explícitamente que la renovación automática queda activada por defecto al suscribirse y que el nuevo cobro se procesa dentro de las 24 horas previas al vencimiento del período."
+          ],
+          "source": {
+            "title": "DramaBox en Apple App Store (StoryMatrix)",
+            "url": "https://apps.apple.com/us/app/dramabox-stream-drama-shorts/id6445905219"
+          }
+        },
+        {
+          "heading": "Cómo cancelar DramaBox en Google Play (Android) y iPhone",
+          "paragraphs": [
+            "Desinstalar la aplicación de DramaBox del teléfono NO cancela la suscripción ni detiene los cobros. Como el pago se gestiona mediante tu cuenta de Google o Apple, debes cancelar desde la tienda al menos 24 horas antes de la fecha de renovación.",
+            "En Android: abre Google Play Store -> toca tu foto de perfil -> Pagos y suscripciones -> Suscripciones -> DramaBox -> Cancelar suscripción. En iPhone: ve a Ajustes -> toca tu nombre (Apple ID) -> Suscripciones -> DramaBox -> Cancelar suscripción."
+          ]
+        }
+      ],
+      "steps": [
+        "Verifica en qué tienda contrataste la membresía (Google Play en Android o App Store en iPhone).",
+        "En Android: abre Google Play Store -> Perfil -> Pagos y suscripciones -> Suscripciones -> DramaBox -> Cancelar suscripción.",
+        "En iPhone: entra en Ajustes -> tu nombre -> Suscripciones -> DramaBox -> Cancelar suscripción.",
+        "Guarda el comprobante de cancelación; mantendrás el acceso hasta que termine el período ya pagado."
+      ],
+      "pros": [
+        "Desbloquea al instante todas las series en 1080p sin esperar anuncios ni juntar monedas.",
+        "Se cancela directamente desde Google Play o Apple sin depender de soporte por correo."
+      ],
+      "cons": [
+        "El plan semanal es caro frente a plataformas de streaming mensuales, sobre todo tras acabar el descuento de las 3 primeras semanas.",
+        "La renovación automática viene activa por defecto y cobra dentro de las 24 horas anteriores al fin del ciclo."
+      ],
+      "faq": [
+        {
+          "q": "¿Cómo cancelar la suscripción de DramaBox?",
+          "a": "No basta con borrar la app. En Android entra en Google Play -> Perfil -> Pagos y suscripciones -> Suscripciones -> DramaBox -> Cancelar. En iPhone ve a Ajustes -> Apple ID -> Suscripciones -> DramaBox."
+        },
+        {
+          "q": "¿Qué pasa si desinstalo DramaBox sin cancelar?",
+          "a": "La renovación automática seguirá cobrando cada semana o año hasta que canceles la suscripción en Google Play o Apple App Store."
+        },
+        {
+          "q": "¿Vale la pena pagar la membresía de DramaBox?",
+          "a": "Solo si planeas ver varias series completas en pocos días y cancelas antes de la renovación. Para uso ocasional conviene usar episodios gratis y monedas por anuncios."
+        }
+      ],
+      "verdict": "Si pagas una semana de DramaBox para hacer maratón, cancela la renovación automática enseguida en Google Play o iPhone para evitar el cobro de la semana siguiente.",
+      "imageAlt": "Pantalla Join Membership de DramaBox con precios de plan semanal y anual",
+      "caption": "La pantalla Join Membership detalla el plan semanal (con descuento por 3 semanas), el plan anual y beneficios como 1080p y descargas.",
+      "imageKey": "dramabox-membership",
+      "imageWide": false,
+      "secondImage": {
+        "key": "dramabox-subscription",
+        "alt": "Reglas de Subscription Deals de DramaBox sobre renovación automática y cancelación en Google Play",
+        "caption": "Las reglas confirman que la renovación automática está activada por defecto y se cobra en las 24 horas previas al vencimiento.",
+        "wide": false
+      }
+    },
+    {
+      "id": "nordvpn-vs-surfshark",
+      "app": "nordvpn",
+      "category": "tools",
+      "slug": "nordvpn-vs-surfshark-comparativa-2026",
+      "title": "NordVPN vs. Surfshark (2026): Velocidad, Precio, Dispositivos y Cuál Conviene",
+      "description": "Compara NordVPN vs. Surfshark en 2026: precios de planes de 2 años, límite de dispositivos (10 vs. ilimitados), velocidad NordLynx vs. WireGuard y seguridad.",
+      "intro": "NordVPN y Surfshark pertenecen al mismo grupo matriz, Nord Security, pero apuntan a necesidades distintas. NordVPN prioriza velocidad consistente a larga distancia, una red más amplia de servidores y funciones avanzadas de red, mientras que Surfshark destaca por su menor precio a largo plazo y dispositivos simultáneos ilimitados.",
+      "sections": [
+        {
+          "heading": "Precio y límite de dispositivos: 10 conexiones vs. ilimitadas",
+          "paragraphs": [
+            "La diferencia más práctica está en cuántas pantallas protege una sola cuenta. NordVPN permite hasta 10 dispositivos simultáneos, suficiente para uso personal entre celular, laptop, tablet y TV. Surfshark ofrece conexiones simultáneas ilimitadas en una misma suscripción, ideal para familias o casas compartidas.",
+            "En planes de 2 años, Surfshark suele resultar más económico (alrededor de $2.39–$2.49/mes en oferta inicial), mientras que NordVPN suele empezar un poco más arriba (cerca de $2.99–$3.49/mes). Revisa siempre el precio de renovación antes de pagar."
+          ],
+          "cta": {
+            "label": "Ver planes de Surfshark con dispositivos ilimitados",
+            "url": "https://www.dpbolvw.net/click-101927870-15438560-1759355883000",
+            "sponsored": true
+          }
+        },
+        {
+          "heading": "Velocidad, servidores y herramientas extra de seguridad",
+          "paragraphs": [
+            "Ambos usan servidores de 10 Gbps, infraestructura solo RAM, políticas auditadas de cero registros y protocolos basados en WireGuard. NordVPN emplea NordLynx sobre más de 8,400 servidores en 111+ países, logrando una latencia ligeramente menor en rutas internacionales. Surfshark usa WireGuard estándar en unos 4,500+ servidores en 100 países, con velocidad de sobra para streaming en 4K.",
+            "En extras, NordVPN incluye Protección contra amenazas Pro (bloqueo de rastreadores y sitios maliciosos), Double VPN y Meshnet para enlazar tus propios equipos de forma privada. Surfshark responde con CleanWeb, túnel dividido Bypasser y paquetes Surfshark One con antivirus e ID alternativo."
+          ],
+          "cta": {
+            "label": "Ver planes oficiales de NordVPN y NordLynx",
+            "url": "https://www.kqzyfj.com/click-101927870-14471514-1764883017000",
+            "sponsored": true
+          }
+        },
+        {
+          "heading": "¿Qué VPN elegir según tu uso diario?",
+          "paragraphs": [
+            "Elige NordVPN si viajas con frecuencia, dependes de servidores lejanos para trabajar o ver contenido y valoras Meshnet o Double VPN. Elige Surfshark si buscas ahorrar en un plan de 2 años o conectar más de 10 dispositivos a la vez en casa."
+          ],
+          "source": {
+            "title": "NordVPN: ¿Qué es NordLynx?",
+            "url": "https://nordvpn.com/features/nordlynx/"
+          }
+        }
+      ],
+      "steps": [
+        "Cuenta cuántos celulares, laptops, tablets y televisores usarán la VPN al mismo tiempo (hasta 10 en NordVPN; ilimitados en Surfshark).",
+        "Compara la tarifa promocional de 2 años y el costo de renovación estándar en ambos sitios oficiales.",
+        "Instala la app oficial en tu equipo principal y activa el Kill Switch junto con Threat Protection o CleanWeb.",
+        "Conéctate al servidor más cercano con NordLynx (NordVPN) o WireGuard (Surfshark) para reducir la latencia."
+      ],
+      "pros": [
+        "NordVPN ofrece mayor red de servidores (8,400+), velocidad constante con NordLynx y Meshnet.",
+        "Surfshark incluye conexiones simultáneas ilimitadas y mejor precio inicial en planes largos."
+      ],
+      "cons": [
+        "Ambas suben de precio en planes mensuales o al renovar tras el primer período promocional.",
+        "NordVPN limita la cuenta a 10 equipos simultáneos y Surfshark tiene menos servidores totales."
+      ],
+      "faq": [
+        {
+          "q": "¿NordVPN y Surfshark son de la misma empresa?",
+          "a": "Sí, ambas forman parte de Nord Security, pero mantienen redes de servidores, aplicaciones y precios independientes."
+        },
+        {
+          "q": "¿Cuál es más rápida en 2026: NordVPN o Surfshark?",
+          "a": "Las dos ofrecen velocidades altas con WireGuard para streaming 4K, con una ligera ventaja de NordVPN (NordLynx) en servidores lejanos."
+        },
+        {
+          "q": "¿Cuál conviene más para compartir en familia?",
+          "a": "Surfshark conviene más si necesitas proteger más de 10 dispositivos al mismo tiempo gracias a sus conexiones ilimitadas."
+        }
+      ],
+      "verdict": "Elige Surfshark por precio y dispositivos ilimitados en casa; elige NordVPN por cobertura global de servidores, velocidad internacional y Meshnet.",
+      "imageAlt": "Comparativa NordVPN vs. Surfshark 2026 en velocidad, precio y dispositivos",
+      "caption": "Comparativa entre NordVPN y Surfshark en planes de 2 años, protocolo WireGuard/NordLynx y límite de dispositivos.",
+      "imageKey": "nordvpn",
+      "imageWide": true
+    },
+    {
+      "id": "freecash-reviews",
+      "app": "freecash",
+      "category": "rewards",
+      "slug": "freecash-opiniones-es-confiable-si-paga",
+      "title": "Freecash Opiniones (2026): ¿Es Confiable o Estafa? Pagos Reales y Reglas",
+      "description": "¿Freecash es confiable y paga de verdad en 2026? Revisa opiniones reales, por qué los pagos quedan pendientes, motivos de bloqueo y cómo evitar errores.",
+      "intro": "Freecash es una plataforma legítima tipo GPT (ganar por tareas) que paga por probar juegos móviles, completar ofertas y responder encuestas, pero no es un ingreso automático. Saber por qué algunos usuarios cobran sin problemas y otros sufren retenciones o bloqueos evita perder tiempo.",
+      "sections": [
+        {
+          "heading": "¿Freecash es confiable y cómo genera los pagos?",
+          "paragraphs": [
+            "Sí, Freecash es confiable y paga en dinero real, tarjetas de regalo o criptomonedas gracias a estudios de juegos y marcas que pagan por instalaciones y pruebas de usuarios. La equivalencia base es 1,000 monedas = $1.00 USD.",
+            "La mayoría de las opiniones negativas vienen de no leer los plazos de cada oferta o esperar ganancias rápidas sin esfuerzo. Las ofertas altas ($50 a $100+) suelen exigir llegar a niveles avanzados en 30 días o realizar compras opcionales."
+          ]
+        },
+        {
+          "heading": "Por qué se bloquean cuentas o quedan pagos pendientes",
+          "paragraphs": [
+            "Freecash aplica controles antifraude estrictos: solo permite una cuenta por hogar/IP y prohíbe VPN, proxies o emuladores. Además, el primer retiro exige verificación de correo e identidad (selfie y documento) junto con un mínimo inicial de $25 en la mayoría de los países.",
+            "Puedes abrir tu cuenta desde el enlace oficial de invitación o copiar el código 3C7GKG y probar primero una oferta gratuita corta para confirmar que el seguimiento funcione en tu teléfono."
+          ]
+        }
+      ],
+      "steps": [
+        "Crea una única cuenta en Freecash con tu ubicación real y sin VPN ni proxy activos.",
+        "Empieza por una oferta gratuita y rápida para verificar que el rastreo registre tu progreso.",
+        "Guarda capturas de las condiciones y del nivel alcanzado por si necesitas soporte.",
+        "Completa la verificación de correo e identidad antes de solicitar tu primer retiro de $25."
+      ],
+      "pros": [
+        "Conversión clara (1,000 monedas = $1.00 USD) y retiros rápidos tras verificar la cuenta.",
+        "Gran variedad de metas en juegos móviles además de encuestas y paneles de ofertas."
+      ],
+      "cons": [
+        "El primer retiro suele exigir un mínimo de $25 y verificación de identidad.",
+        "Las reglas de un solo hogar y cero VPN pueden suspender cuentas si se incumplen."
+      ],
+      "faq": [
+        {
+          "q": "¿Freecash paga de verdad o es estafa?",
+          "a": "Freecash es real y paga por PayPal, tarjetas regalo y cripto a usuarios verificados que cumplen las reglas de seguimiento y cuenta única."
+        },
+        {
+          "q": "¿Por qué algunas recompensas aparecen pendientes?",
+          "a": "Los anunciantes retienen recompensas altas varios días para validar que el progreso en el juego sea legítimo."
+        },
+        {
+          "q": "¿Pueden usar Freecash dos personas en la misma casa?",
+          "a": "Freecash limita las cuentas por hogar e IP compartida; revisa sus términos antes de abrir una segunda cuenta en el mismo Wi-Fi."
+        }
+      ],
+      "verdict": "Freecash es confiable si lo usas para probar apps y juegos sin VPN, leyendo cada meta antes de empezar y verificando el rastreo desde el primer nivel.",
+      "imageAlt": "Panel de ofertas y recompensas de Freecash en Android",
+      "caption": "Freecash reúne metas de juegos móviles, ofertas de socios y encuestas en una sola cuenta."
+    },
+    {
+      "id": "freecash-bonus-cashout",
+      "app": "freecash",
+      "category": "rewards",
+      "slug": "freecash-codigo-de-bono-como-retirar-dinero",
+      "title": "Código de Bono Freecash y Cómo Retirar Dinero (2026): PayPal, Cripto y Mínimos",
+      "description": "Cómo usar el código 3C7GKG en Freecash, conseguir códigos promocionales oficiales, cumplir el mínimo de $25 del primer retiro y evitar comisiones.",
+      "intro": "Entender los códigos de bono y las comisiones de retiro en Freecash te permite conservar más saldo neto. Aunque el primer retiro tiene un mínimo más alto y control de identidad, los cobros siguientes bajan el umbral y se procesan rápido.",
+      "sections": [
+        {
+          "heading": "Cómo funcionan los códigos de invitación y bono",
+          "paragraphs": [
+            "Al registrarte puedes usar un enlace de invitación o el identificador 3C7GKG. Aparte del registro, Freecash publica códigos de bono por tiempo limitado en sus cuentas oficiales de X/Twitter, Instagram, YouTube y Discord, que se canjean dentro del panel mientras haya cupos.",
+            "Desconfía de páginas externas que prometen 'generadores de monedas': los únicos códigos válidos salen de canales oficiales de Freecash o enlaces de invitación verificados."
+          ]
+        },
+        {
+          "heading": "Primer retiro de $25 vs. retiros siguientes y comisiones",
+          "paragraphs": [
+            "La ayuda oficial indica un mínimo de $25 para el primer retiro (puede variar según el país) junto con verificación de correo e identidad. Tras completar ese primer cobro, ese tope desaparece y muchos métodos permiten retirar desde alrededor de $5.",
+            "PayPal y Venmo suelen aplicar una comisión del 5%, mientras que las tarjetas de regalo (Amazon, Google Play, Apple, Steam) y varias criptomonedas (Litecoin, Bitcoin, Ethereum) no cobran comisión de plataforma. Las transferencias bancarias o Revolut tardan de 3 a 5 días hábiles."
+          ],
+          "source": {
+            "title": "Freecash: requisitos del primer retiro",
+            "url": "https://freecash.com/academy/en/support/withdrawal/issues/first-cashout-requirements"
+          }
+        }
+      ],
+      "steps": [
+        "Accede a Freecash con el botón de invitación de esta página o copia el código 3C7GKG al crear tu cuenta.",
+        "Sigue los canales oficiales de Freecash si quieres aprovechar códigos promocionales temporales.",
+        "Acumula saldo hasta el mínimo inicial de $25 y completa la verificación de identidad.",
+        "Elige tarjetas regalo o cripto de baja comisión si quieres evitar el 5% de tarifa en PayPal."
+      ],
+      "pros": [
+        "Opciones variadas de cobro: PayPal, tarjetas regalo sin comisión, criptomonedas y transferencia bancaria.",
+        "Mínimos de retiro mucho más bajos después del primer cobro verificado."
+      ],
+      "cons": [
+        "PayPal cobra un 5% de comisión por retiro.",
+        "El primer cobro exige llegar a $25 y pasar verificación de identidad."
+      ],
+      "faq": [
+        {
+          "q": "¿Cuál es el código de invitación de Freecash en apps308?",
+          "a": "El identificador verificado es 3C7GKG, disponible directamente en el botón de acceso de esta guía."
+        },
+        {
+          "q": "¿Qué método de retiro en Freecash no cobra comisión?",
+          "a": "Las tarjetas de regalo (Amazon, Google Play, Steam) y varias criptomonedas suelen procesarse sin comisión de plataforma, frente al 5% de PayPal."
+        },
+        {
+          "q": "¿Cuánto tarda en pagar Freecash?",
+          "a": "La revisión de seguridad suele tardar hasta 30 minutos en PayPal, cripto y tarjetas regalo; las transferencias bancarias tardan 3–5 días hábiles."
+        }
+      ],
+      "verdict": "Regístrate con el código 3C7GKG, supera una vez el primer retiro verificado de $25 y luego usa tarjetas regalo o cripto para cobrar montos menores sin el 5% de PayPal.",
+      "imageAlt": "Opciones de retiro y recompensas en Freecash",
+      "caption": "Freecash ofrece retiros por PayPal, tarjetas regalo, criptomonedas y transferencia tras verificar la cuenta."
+    },
+    {
+      "id": "freecash-games-offers",
+      "app": "freecash",
+      "category": "rewards",
+      "slug": "freecash-juegos-y-ofertas-como-ganar-mas",
+      "title": "Mejores Juegos y Ofertas en Freecash (2026): Metas, Seguimiento y Consejos",
+      "description": "Cómo elegir ofertas de juegos rentables en Freecash, evitar fallos de seguimiento en Android e iOS y no gastar más de lo que paga la meta.",
+      "intro": "Los juegos móviles concentran las recompensas más altas de Freecash, con pagos anunciados que van desde unos dólares hasta cientos. Sin embargo, el total se divide por niveles con fecha límite y un error de seguimiento deja la oferta sin acreditar.",
+      "sections": [
+        {
+          "heading": "Cómo funcionan las metas por nivel en los juegos",
+          "paragraphs": [
+            "Cada juego divide el pago en pasos progresivos: instalar, alcanzar el nivel 15 en 7 días o llegar al nivel 50 en 30 días. Las metas iniciales pagan poco pero sirven para confirmar el rastreo, mientras que los premios más altos exigen muchas horas o compras opcionales.",
+            "Antes de descargar, calcula si los niveles gratuitos valen el tiempo invertido. Es más rentable completar metas intermedias alcanzables y pasar a otro juego que atascarse en el último nivel."
+          ]
+        },
+        {
+          "heading": "Cómo evitar errores de seguimiento en Android e iOS",
+          "paragraphs": [
+            "El seguimiento solo funciona si instalas el juego por primera vez en ese dispositivo y cuenta de tienda. Desactiva bloqueadores de anuncios, DNS privado y VPN antes de pulsar la oferta en Freecash, y abre el juego apenas termine la descarga.",
+            "Antes de instalar un título nuevo, conviene revisar nuestra comparativa Swagbucks vs. Freecash para ver qué plataforma paga mejor ese mismo juego."
+          ],
+          "source": {
+            "title": "Freecash: cómo asegurar el seguimiento de ofertas",
+            "url": "https://freecash.com/academy/en/support/offer/tracking/how-to-ensure-offer-tracks"
+          }
+        }
+      ],
+      "steps": [
+        "Desactiva VPN, bloqueadores de anuncios y DNS privado antes de abrir Freecash.",
+        "Elige un juego que nunca hayas descargado en tu teléfono ni en tu cuenta de Google Play o App Store.",
+        "Pulsa la oferta dentro de Freecash, instala desde la tienda oficial y juega 5–10 minutos al instante.",
+        "Comprueba que la instalación o primera meta se acredite antes de dedicar días a niveles altos."
+      ],
+      "pros": [
+        "Pagos escalonados por nivel sin tener que completar todo el juego para cobrar algo.",
+        "Condiciones, plazos y recompensas visibles antes de descargar."
+      ],
+      "cons": [
+        "Los juegos instalados previamente no se acreditan.",
+        "Las metas finales suelen requerir demasiado tiempo o compras dentro de la app."
+      ],
+      "faq": [
+        {
+          "q": "¿Por qué no se acreditó mi juego en Freecash?",
+          "a": "Las causas habituales son haber instalado el juego antes, tener una VPN o bloqueador activo, o denegar el permiso de seguimiento en iOS."
+        },
+        {
+          "q": "¿Conviene comprar paquetes dentro del juego?",
+          "a": "Solo si existe una meta específica que reembolse claramente más dinero del que cuesta la compra; de lo contrario, quédate en metas gratuitas."
+        },
+        {
+          "q": "¿Cuánto plazo dan las ofertas de juegos?",
+          "a": "La mayoría fija un límite de entre 14 y 30 días desde el momento de la instalación."
+        }
+      ],
+      "verdict": "Prioriza juegos nuevos en tu cuenta con metas intermedias realistas, confirma el primer registro de seguimiento y evita niveles que exijan gastar dinero.",
+      "imageAlt": "Ofertas de juegos móviles y metas en Freecash",
+      "caption": "Las ofertas de juegos en Freecash dividen las recompensas por niveles con plazos específicos."
     }  ],
   "pt": [
     {
@@ -6282,6 +7692,711 @@ export const articles:Record<Locale,Article[]>={
         "caption": "Já o DramaStack exibe saque mínimo de R$ 300 enquanto a política escrita proíbe conversão de moedas.",
         "wide": false
       }
+    },
+    {
+      "id": "cashdrama",
+      "app": "cashdrama",
+      "category": "rewards",
+      "slug": "cashdrama-e-confiavel-paga-mesmo-review",
+      "title": "CashDrama é Confiável? Review Completo e Análise (2026)",
+      "description": "Análise real do app CashDrama (com.reward.drama.earn.watch.tool): por que o saldo sobe para $99,86–$106,84 tão rápido, travas de saque e se paga mesmo.",
+      "intro": "O CashDrama (pacote com.reward.drama.earn.watch.tool na Google Play) promete pagar em dólar para assistir a mininovelas verticais. Na nossa inspeção real no Android, o saldo saltou para $99,86 e passou de $106,84 já no Dia 1 — mas o botão 'Withdraw Now' continuou bloqueado por travas de episódios e de dias.",
+      "sections": [
+        {
+          "heading": "O que é o CashDrama e como o aplicativo funciona",
+          "paragraphs": [
+            "O CashDrama organiza seu catálogo em quatro abas inferiores: Discover, For u, Tasks e Profile. Nas abas Discover e For u, o usuário assiste a dramas curtos de romance, lobisomens e vingança, como Rejected Luna is His Fated Mate, Before We Break: Playing Dirty e The Return of the Lost Striker.",
+            "Por cima dos vídeos fica uma camada agressiva de promessa de dinheiro: um saldo verde no canto superior direito, um banner fixo dizendo 'Watch 12 more episodes to cash out' e um baú flutuante com contagem regressiva."
+          ],
+          "source": {
+            "title": "CashDrama na Google Play (com.reward.drama.earn.watch.tool)",
+            "url": "https://play.google.com/store/apps/details?id=com.reward.drama.earn.watch.tool&hl=pt_BR"
+          }
+        },
+        {
+          "heading": "Por que o saldo passa de $100 tão rápido (sinal de alerta)",
+          "paragraphs": [
+            "Diferente de aplicativos legítimos que pagam centavos por tarefa, a aba Tasks do CashDrama promete de $6,00 a $8,00 por missão diária (assistir a 10 episódios, desbloquear 5 episódios, abrir o baú 3 vezes ou ativar notificações) e um check-in de 7 dias com bônus de $8 a $50, além de metas 'Unlock $100' nos dias 2 e 7.",
+            "Nas telas testadas, o saldo começou em $99,86 — faltando apenas $0,14 para o saque de $100 — e chegou a $106,84 em poucos minutos. Inflar o saldo logo no início é uma tática clássica para prender o usuário assistindo a anúncios."
+          ]
+        },
+        {
+          "heading": "CashDrama é confiável ou é golpe para ganhar dinheiro?",
+          "paragraphs": [
+            "Embora esteja hospedado na loja oficial da Google Play, a combinação de valores irreais por tarefa, travas que não liberam mesmo após bater $100 e reclamações recorrentes de usuários aponta que o CashDrama não funciona como um app confiável de renda extra.",
+            "Se você quiser apenas assistir às séries curtas gratuitamente, ignore o saldo em dólar. Se o seu objetivo for sacar dinheiro de verdade, não perca horas tentando liberar os níveis de $100 a $1K."
+          ]
+        }
+      ],
+      "steps": [
+        "Confira na Google Play se o pacote oficial é com.reward.drama.earn.watch.tool e evite APKs modificados.",
+        "Abra a aba Withdraw antes de fazer tarefas para ver as travas de episódios e de Day Unlock.",
+        "Não trate bônus inflados de $6–$8 nem saldos iniciais de $99,86 como dinheiro real disponível.",
+        "Evite liberar permissões invasivas ou notificações apenas por promessas de bônus.",
+        "Prefira plataformas transparentes com saques baixos reais se você busca renda extra."
+      ],
+      "pros": [
+        "Catálogo variado de mininovelas verticais liberado nas abas Discover e For u sem assinatura prévia.",
+        "Exibe o nome de um processador conhecido (Tremendous) no campo de pagamento."
+      ],
+      "cons": [
+        "Valores irreais de $6 a $50 por tarefa inflam o saldo para $100+ com o botão Withdraw Now desativado.",
+        "Exige assistir a 12 episódios resgatando recompensas por tentativa, além da trava 'Day 2 Unlock'.",
+        "Mostra supostas provas de pagamento de $100 a $800 sem possibilidade de auditoria externa."
+      ],
+      "faq": [
+        {
+          "q": "O aplicativo CashDrama é confiável?",
+          "a": "O app existe na Google Play para assistir a dramas curtos, mas suas promessas de saque em dólar são travadas por várias barreiras. Mesmo com $106,84 de saldo, o botão de saque permaneceu bloqueado."
+        },
+        {
+          "q": "O CashDrama paga mesmo $100 ou $300?",
+          "a": "Não há comprovação de pagamento. Ao atingir $106,84 no primeiro dia, a opção de $100 continuou travada em 'Day 2 Unlock' e pela exigência de assistir a 12 episódios."
+        },
+        {
+          "q": "É seguro baixar o CashDrama?",
+          "a": "Baixar pela Google Play evita riscos de APKs adulterados, mas o app exibe muitos anúncios e não deve ser usado com expectativa de lucro."
+        }
+      ],
+      "verdict": "O CashDrama não é recomendado como aplicativo para ganhar dinheiro. O saldo sobe rápido para $99,86–$106,84, mas as travas de 12 episódios e 'Day 2 Unlock' impedem um saque direto.",
+      "imageAlt": "Aba Tasks do CashDrama mostrando saldo de $99,86, check-in de $8 a $50 e tarefas de $6 a $8",
+      "caption": "A aba Tasks promete de $8 a $50 no check-in e $6–$8 por tarefa, levando o saldo a $99,86 já no Dia 1.",
+      "imageKey": "cashdrama-tasks",
+      "imageWide": false,
+      "secondImage": {
+        "key": "cashdrama-discover",
+        "alt": "Tela Discover do CashDrama com saldo de $106,84 e aviso de assistir a mais 12 episódios para sacar",
+        "caption": "Mesmo com $106,84 na tela, a aba Discover mantém o bloqueio de assistir a mais 12 episódios para sacar.",
+        "wide": false
+      }
+    },
+    {
+      "id": "cashdrama-withdraw",
+      "app": "cashdrama",
+      "category": "rewards",
+      "slug": "cashdrama-paga-mesmo-como-sacar-dinheiro",
+      "title": "CashDrama Paga Mesmo? Como Funciona o Saque de $1, $100 e Trava do Dia 2",
+      "description": "Dá para sacar $1 ou $100 no CashDrama? Veja o que acontece quando o saldo passa de $100, por que o botão Withdraw Now fica cinza e como funciona a regra dos 12 episódios.",
+      "intro": "A principal dúvida sobre o CashDrama é se ao menos o saque de $1 funciona ou por que não libera ao passar de $100. Acompanhamo a tela Withdraw de $99,86 até $106,84 e vimos que bater o valor mínimo não ativa o botão de retirada.",
+      "sections": [
+        {
+          "heading": "Por que $1 e $100 continuam travados mesmo com $106,84",
+          "paragraphs": [
+            "Na tela Withdraw, o CashDrama exibe seis opções de saque: $1, $100, $300, $500, $800 e $1K, listando Tremendous como método de envio. Com $99,86 de saldo, o cartão de $100 mostrava '$0.14 to go' sob o selo laranja 'Day 2 Unlock', enquanto o de $1 exibia '12 ep. left'.",
+            "Quando o saldo subiu para $106,84, o cartão de $100 atualizou para '$0 to go' (meta de valor batida), mas o selo 'Day 2 Unlock' continuou lá e o botão 'Withdraw Now' seguiu cinza e inclicável."
+          ],
+          "source": {
+            "title": "CashDrama na Google Play (com.reward.drama.earn.watch.tool)",
+            "url": "https://play.google.com/store/apps/details?id=com.reward.drama.earn.watch.tool&hl=pt_BR"
+          }
+        },
+        {
+          "heading": "A regra 'Watch 12 eps = 1 withdrawal chance'",
+          "paragraphs": [
+            "Logo abaixo das opções de valor, o app informa: 'Watch 12 more episodes to unlock your next withdrawal. Claim at least one reward in an episode for it to count toward your withdrawal progress.' Ou seja, até o saque de $1 exige concluir episódios com resgate de recompensa.",
+            "Como cada recompensa dentro dos episódios envolve assistir a anúncios ou aguardar contadores, o usuário precisa passar por várias rodadas de propaganda só para liberar uma tentativa — e relatos de usuários apontam novas exigências em seguida."
+          ]
+        },
+        {
+          "heading": "O que acontece nos níveis de $300 a $1K",
+          "paragraphs": [
+            "As opções de $300, $500, $800 e $1K servem como chamariz visual. Mesmo que as primeiras tarefas somem $6–$8 fictícios no saldo, aplicativos desse padrão costumam reduzir drasticamente os ganhos ou empilhar novas metas de dias consecutivos antes de qualquer pagamento."
+          ]
+        }
+      ],
+      "steps": [
+        "Acesse Withdraw a partir da aba Tasks para conferir seu saldo e os bloqueios ativos.",
+        "Observe o contador '12 ep. left' no cartão de $1 e a exigência de resgatar recompensa em cada episódio.",
+        "Note que o cartão de $100 mantém o selo 'Day 2 Unlock' mesmo após mostrar '$0 to go'.",
+        "Confirme que o botão 'Withdraw Now' permanece desativado enquanto houver travas pendentes.",
+        "Pare antes de gastar dias assistindo a anúncios caso a tentativa inicial de $1 não seja concluída."
+      ],
+      "pros": [
+        "Exibe uma opção nominal de $1 ao lado dos valores altos de $100 a $1K.",
+        "Mostra o nome do método Tremendous na tela de saque."
+      ],
+      "cons": [
+        "Ultrapassar $100 ($106,84 e '$0 to go') não libera o botão Withdraw Now.",
+        "Até a opção de $1 exige assistir a 12 episódios e resgatar recompensas internas.",
+        "Sem comprovação independente de que os saques de $100 a $1K realmente caiam na conta."
+      ],
+      "faq": [
+        {
+          "q": "Como sacar $1 no CashDrama?",
+          "a": "A tela Withdraw exige assistir a 12 episódios e resgatar pelo menos uma recompensa em cada um para liberar uma tentativa via Tremendous — e não confirmamos pagamento real."
+        },
+        {
+          "q": "Por que não consigo sacar $100 no CashDrama mesmo tendo mais de $100?",
+          "a": "Mesmo com $106,84 ('$0 to go'), a opção de $100 segue presa pelo selo 'Day 2 Unlock' e pela trava dos 12 episódios, mantendo 'Withdraw Now' desativado."
+        },
+        {
+          "q": "O CashDrama paga no PIX, PayPal ou Tremendous?",
+          "a": "A tela de saque mostra Tremendous como método, enquanto os depoimentos internos citam PayPal, Cash App e Venmo; nenhum pagamento foi verificado."
+        }
+      ],
+      "verdict": "O saque do CashDrama funciona por travas empilhadas: o saldo sobe rápido, mas '12 ep. left' e 'Day 2 Unlock' mantêm o botão 'Withdraw Now' bloqueado. Não conte com esse dinheiro.",
+      "imageAlt": "Tela Withdraw do CashDrama com saldo de $99,86, $1 travado em 12 episódios e $100 em Day 2 Unlock",
+      "caption": "Com $99,86, a opção de $1 pede 12 episódios e a de $100 exibe a trava 'Day 2 Unlock'.",
+      "imageKey": "cashdrama-withdraw-1",
+      "imageWide": false,
+      "secondImage": {
+        "key": "cashdrama-withdraw-2",
+        "alt": "Tela Withdraw do CashDrama com $106,84 e '$0 to go' em $100 mas botão Withdraw Now desativado",
+        "caption": "Com $106,84 ('$0 to go' em $100), 'Day 2 Unlock' e os 12 episódios ainda deixam o botão cinza.",
+        "wide": false
+      }
+    },
+    {
+      "id": "cashdrama-proofs",
+      "app": "cashdrama",
+      "category": "rewards",
+      "slug": "cashdrama-provas-de-pagamento-tarefas-vs-dramastack",
+      "title": "CashDrama: Provas de Pagamento, Tarefas e Comparativo com DramaStack",
+      "description": "As provas de pagamento de $100, $500 e $800 no CashDrama são verdadeiras? Veja como funcionam as tarefas, os baús e a comparação com o DramaStack.",
+      "intro": "Ao rolar a tela Withdraw do CashDrama até o fim, aparece uma lista chamada 'Payment Proofs' afirmando que usuários acabaram de sacar $100, $300, $500 e $800 via PayPal, Cash App e Venmo. Veja por que essas provas e as tarefas de $6–$8 repetem a mesma fórmula do DramaStack.",
+      "sections": [
+        {
+          "heading": "Por dentro das 'Payment Proofs' do CashDrama",
+          "paragraphs": [
+            "No rodapé da tela Withdraw aparecem cartões com nomes genéricos — Emily Johnson ($300 PayPal), Michael Brown ($500.00 Cash App, TXN-7315...4a01), Jessica Davis ($100.00 Venmo, TXN-5208...1f7d) e David Wilson ($800) — com avaliações de 5 estrelas.",
+            "Esses cartões fazem parte da própria interface do aplicativo e trazem códigos parciais impossíveis de auditar externamente. Assim como o aviso de saque de R$ 300 dentro do DramaStack, funcionam apenas como vitrine interna de convencimento."
+          ],
+          "source": {
+            "title": "CashDrama na Google Play (com.reward.drama.earn.watch.tool)",
+            "url": "https://play.google.com/store/apps/details?id=com.reward.drama.earn.watch.tool&hl=pt_BR"
+          }
+        },
+        {
+          "heading": "CashDrama vs. DramaStack: mesmo modelo com visual diferente",
+          "paragraphs": [
+            "Tanto o CashDrama quanto o DramaStack unem séries verticais curtas (como Rejected Luna is His Fated Mate no player For u do CashDrama) a uma carteira com valores altos. O DramaStack exibe saque mínimo de R$ 300, embora sua política escrita diga que moedas virtuais não se convertem em dinheiro.",
+            "O CashDrama coloca uma opção de $1 ao lado de cartões de $100–$1K e do nome Tremendous, mas exige '12 ep. left' por tentativa e 'Day 2 Unlock'. Nos dois apps, o foco real é retenção para exibição de anúncios."
+          ],
+          "source": {
+            "title": "DramaStack na Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.reeltime.dramastack&hl=pt_BR"
+          }
+        },
+        {
+          "heading": "Alternativas melhores se você busca recompensas reais",
+          "paragraphs": [
+            "Se a ideia é apenas assistir a mininovelas verticais sem ilusão de ganhar centenas de dólares, o aplicativo oficial do TikTok (PineDrama) informa claramente taxas modestas como 30.000 pontos = R$ 1 no Brasil.",
+            "Para ganhar dinheiro extra de verdade via PayPal ou vale-presente, prefira plataformas consolidadas como Prime Opinion, Freecash, Pawns.app e Swagbucks, onde os mínimos de saque são transparentes e verificáveis."
+          ]
+        }
+      ],
+      "steps": [
+        "Desconfie de 'provas de pagamento' exibidas dentro do próprio app com nomes genéricos e TXN oculto.",
+        "Compare promessas de $6–$8 por tarefa com o que anúncios de celular realmente pagam por visualização.",
+        "Observe se há exigência de dias seguidos ou dezenas de episódios com anúncios por tentativa.",
+        "Use o CashDrama apenas para entretenimento gratuito se gostar das séries, nunca como renda.",
+        "Migre para plataformas de pesquisas e ofertas verificadas se quiser saques reais no PayPal."
+      ],
+      "pros": [
+        "Player vertical simples com legendas e troca rápida entre episódios.",
+        "Permite assistir aos capítulos gratuitamente sem exigir cartão de crédito."
+      ],
+      "cons": [
+        "Provas internas de $100–$800 não têm validação externa.",
+        "Repete o mesmo padrão de saldo inflado e saque travado do DramaStack.",
+        "Excesso de anúncios ligados a baús e recompensas por episódio."
+      ],
+      "faq": [
+        {
+          "q": "As provas de pagamento do CashDrama são reais?",
+          "a": "Não podem ser confirmadas. São cartões internos da própria interface com nomes genéricos e códigos parciais como TXN-7315...4a01."
+        },
+        {
+          "q": "Qual é melhor: CashDrama ou DramaStack?",
+          "a": "Nenhum dos dois é indicado para ganhar dinheiro. Ambos usam carteiras com valores altos para gerar visualizações de anúncios enquanto travam ou limitam a retirada."
+        },
+        {
+          "q": "Quais apps pagam de verdade no lugar do CashDrama?",
+          "a": "Plataformas como Prime Opinion, Freecash, Pawns.app e Swagbucks oferecem saques reais e verificáveis via PayPal e cartões-presente."
+        }
+      ],
+      "verdict": "As provas de $100–$800 e tarefas de $6–$8 do CashDrama seguem o mesmo roteiro do DramaStack. Assista às séries se gostar do catálogo, mas não espere sacar dinheiro real.",
+      "imageAlt": "Seção Payment Proofs do CashDrama com supostos saques de $500 Cash App, $100 Venmo e $800",
+      "caption": "A aba Withdraw do CashDrama exibe supostas provas de pagamento de $100 a $800 com IDs parciais.",
+      "imageKey": "cashdrama-proofs",
+      "imageWide": false,
+      "secondImage": {
+        "key": "cashdrama-player",
+        "alt": "Player vertical For u do CashDrama exibindo Rejected Luna is His Fated Mate",
+        "caption": "Por trás da aba de prêmios, o CashDrama funciona como um player vertical de mininovelas de romance e fantasia.",
+        "wide": false
+      }
+    },
+    {
+      "id": "dramabox",
+      "app": "dramabox",
+      "category": "rewards",
+      "slug": "dramabox-e-pago-ou-gratuito-confiavel-review",
+      "title": "DramaBox é Pago ou Gratuito? É Confiável? Review Completo (2026)",
+      "description": "Entenda como funciona o DramaBox (StoryMatrix): quantos episódios são grátis, como desbloquear capítulos com moedas e anúncios, preços da assinatura e se o app é seguro.",
+      "intro": "O DramaBox (publicado pela StoryMatrix Pte. Ltd. na Google Play e na App Store) é um dos principais aplicativos de dramas curtos e mininovelas verticais, com mais de 16 mil séries no catálogo. Ele é gratuito para baixar e libera os primeiros episódios de graça, mas bloqueia a continuação da história exigindo moedas de recompensa, visualização de anúncios ou assinatura paga.",
+      "sections": [
+        {
+          "heading": "O que é o DramaBox e como funciona o catálogo",
+          "paragraphs": [
+            "Diferente de aplicativos que prometem dinheiro para assistir vídeos, o DramaBox é um serviço de streaming de entretenimento. Na aba Home, as mininovelas ficam divididas em Popular, New, Rankings, Categories e Anime, com títulos de romance, CEO, fantasia e suspense como A 7-Year Leap, Deadliest Prison, Forbidden Desires at the Manor e Love Square.",
+            "Os episódios têm cerca de um a dois minutos em formato vertical pensado para o celular. Na aba Profile, ficam a carteira de moedas (My Wallet), recarga (Top Up), tarefas de recompensa (Earn Rewards), presentes, histórico, downloads e idioma."
+          ],
+          "source": {
+            "title": "Site oficial do DramaBox (StoryMatrix)",
+            "url": "https://www.dramabox.com/"
+          }
+        },
+        {
+          "heading": "DramaBox é pago ou gratuito? Como funcionam os episódios bloqueados",
+          "paragraphs": [
+            "O DramaBox usa o modelo freemium (misto de acesso grátis e pago). Os primeiros capítulos de qualquer série vêm liberados sem custo para você testar a história; depois disso, os episódios seguintes ficam bloqueados.",
+            "Para continuar assistindo sem pagar em dinheiro, você pode entrar em Earn Rewards, assistir a anúncios em vídeo (ganhando 10 a 30 moedas por anúncio), fazer check-in diário e cumprir tarefas simples. Quem quiser liberar tudo na hora sem anúncios precisa comprar pacotes de moedas (Top Up) ou assinar um plano."
+          ]
+        },
+        {
+          "heading": "DramaBox é confiável e seguro?",
+          "paragraphs": [
+            "Sim — o DramaBox é um aplicativo legítimo distribuído oficialmente na Google Play Store (pacote com.storymatrix.drama) e na Apple App Store. O principal cuidado é com a cobrança recorrente: os planos semanais e anuais ativam renovação automática por padrão.",
+            "Não baixe versões modificadas como 'DramaBox Lite APK' ou 'DramaBox mod moedas infinitas' fora das lojas oficiais, pois as moedas são validadas no servidor e arquivos APK de terceiros trazem risco de vírus."
+          ],
+          "source": {
+            "title": "DramaBox na Google Play (StoryMatrix)",
+            "url": "https://play.google.com/store/apps/details?id=com.storymatrix.drama&hl=pt_BR"
+          }
+        }
+      ],
+      "steps": [
+        "Baixe o DramaBox apenas pela Google Play Store ou Apple App Store (desenvolvedor: STORYMATRIX PTE. LTD.).",
+        "Navegue pelas abas Popular, New ou Categories e assista aos primeiros episódios gratuitos de qualquer dorama.",
+        "Acesse Profile -> Earn Rewards para juntar moedas grátis com check-in diário e anúncios antes de chegar aos episódios bloqueados.",
+        "Se optar pela assinatura, confira o valor semanal e cancele na loja caso não queira renovação automática."
+      ],
+      "pros": [
+        "Catálogo gigante (mais de 16 mil séries anunciadas) com episódios iniciais gratuitos.",
+        "Permite desbloquear capítulos bloqueados de graça usando moedas ganhas em anúncios e tarefas diárias.",
+        "Disponível oficialmente para Android e iPhone com qualidade até 1080p."
+      ],
+      "cons": [
+        "Após os primeiros episódios grátis, a maioria dos capítulos exige moedas, anúncios ou assinatura.",
+        "O plano semanal tem valor alto e renovação automática ativada por padrão."
+      ],
+      "faq": [
+        {
+          "q": "O aplicativo DramaBox é gratuito?",
+          "a": "Sim para baixar e assistir aos primeiros episódios de cada série. Os episódios seguintes ficam bloqueados e pedem moedas (ganhas com anúncios/tarefas ou compradas) ou assinatura."
+        },
+        {
+          "q": "DramaBox é confiável ou é golpe?",
+          "a": "É um aplicativo oficial e seguro de streaming da StoryMatrix na Google Play e App Store. Apenas fique atento à renovação automática se assinar algum plano."
+        },
+        {
+          "q": "DramaBox paga dinheiro de verdade?",
+          "a": "Não. As Reward Coins (moedas) do DramaBox servem apenas para desbloquear episódios dentro do aplicativo, sem opção de saque via PIX."
+        }
+      ],
+      "verdict": "O DramaBox é confiável para assistir mininovelas verticais: dá para começar grátis e desbloquear capítulos com moedas de anúncios, mas vale ficar de olho na renovação automática se você assinar um plano.",
+      "imageAlt": "Catálogo inicial do DramaBox com abas Popular, New, Rankings, Categories e Anime",
+      "caption": "A tela inicial do DramaBox exibe séries verticais divididas em Popular, New, Rankings, Categories e Anime.",
+      "imageKey": "dramabox-catalog",
+      "imageWide": false,
+      "secondImage": {
+        "key": "dramabox-profile",
+        "alt": "Aba Profile do DramaBox com carteira de moedas, Earn Rewards, Top Up e banner de assinatura",
+        "caption": "Na aba Profile ficam My Wallet, Earn Rewards (+60), Top Up e o atalho Join Membership.",
+        "wide": false
+      }
+    },
+    {
+      "id": "dramabox-coins",
+      "app": "dramabox",
+      "category": "rewards",
+      "slug": "como-assistir-dramabox-gratis-ganhar-moedas",
+      "title": "Como Assistir DramaBox Grátis (2026): Ganhar Moedas, Anúncios e Tarefas",
+      "description": "Veja como conseguir moedas grátis no DramaBox para desbloquear episódios bloqueados: check-in de 7 dias (+10 a +50), anúncios de 30 e 10 moedas e bônus de tarefas.",
+      "intro": "Depois dos primeiros episódios gratuitos no DramaBox, o restante da série fica bloqueado por moedas. Mesmo assim, você não precisa assinar nem gastar dinheiro: o aplicativo oferece a central Earn Rewards, onde é possível acumular Reward Coins assistindo anúncios, fazendo check-in diário e concluindo tarefas simples.",
+      "sections": [
+        {
+          "heading": "Todas as formas oficiais de ganhar moedas grátis no DramaBox",
+          "paragraphs": [
+            "Entre em Profile e toque em Earn Rewards (ou no ícone de presente no topo da tela inicial) para acompanhar seu saldo de Reward Coins. Na nossa inspeção do app, o check-in diário de 7 dias paga +10 moedas nos dias 1 e 2, +20 nos dias 3 e 4, +25 no dia 5, +30 no dia 6 e +50 moedas no dia 7.",
+            "Logo abaixo do calendário aparece o botão 'Watch Ad to earn 30 coins'. Descendo a tela em Earn Rewards, você também encontra a missão repetível 'Earn rewards (0/30) — Watch a video to earn 10 coins' (até 30 vídeos por ciclo), além de tarefas únicas: Login with any account (+60), ativar notificações push (+60), entrar no canal do Telegram (+30), seguir no Facebook (+20) e seguir no YouTube (+20)."
+          ]
+        },
+        {
+          "heading": "Quantos episódios dá para liberar e por que evitar APK mod",
+          "paragraphs": [
+            "Juntando o check-in inicial, as tarefas únicas (+190 moedas somadas) e os anúncios diários de 10 a 30 moedas, você já consegue destravar vários capítulos sem pagar nada. Como muitas mininovelas passam de 60 episódios, quem assiste só no modo gratuito costuma liberar alguns capítulos por dia.",
+            "Evite sites que prometem 'gerador de moedas grátis no DramaBox' ou 'DramaBox APK infinito'. O controle das moedas fica nos servidores da StoryMatrix e APKs modificados podem roubar dados do celular. Se quiser conhecer outra opção de dramas curtos gratuita, confira também nosso guia do PineDrama."
+          ],
+          "source": {
+            "title": "DramaBox na Google Play (StoryMatrix)",
+            "url": "https://play.google.com/store/apps/details?id=com.storymatrix.drama&hl=pt_BR"
+          }
+        }
+      ],
+      "steps": [
+        "Abra o DramaBox, toque em Profile no canto inferior direito e entre em Earn Rewards.",
+        "Faça o check-in diário para receber de +10 a +50 moedas conforme a sequência de dias.",
+        "Toque em 'Watch Ad to earn 30 coins' e use também os vídeos diários de 10 moedas (até 30 por dia).",
+        "Conclua as tarefas únicas como vincular conta (+60), ativar notificações (+60) e seguir redes sociais (+20 a +30).",
+        "Volte ao episódio bloqueado da sua série e confirme o desbloqueio com suas Reward Coins."
+      ],
+      "pros": [
+        "Diversas formas gratuitas de ganhar moedas (check-in de 7 dias, anúncio de 30 moedas e até 30 vídeos de 10 moedas).",
+        "Não exige cadastrar cartão de crédito nem ativar teste pago."
+      ],
+      "cons": [
+        "Assistir anúncios para juntar 10–30 moedas por vez é lento para maratonar séries longas no mesmo dia.",
+        "As tarefas de login e redes sociais pagam o bônus apenas uma vez por conta."
+      ],
+      "faq": [
+        {
+          "q": "Como ganhar moedas grátis no DramaBox?",
+          "a": "Acesse Profile -> Earn Rewards para resgatar o check-in de 7 dias (+10 a +50 moedas), assistir anúncios de 30 e 10 moedas e fazer tarefas como login (+60)."
+        },
+        {
+          "q": "DramaBox APK com moedas infinitas funciona?",
+          "a": "Não é seguro e não libera acesso real no servidor. Use apenas o app oficial da Google Play ou App Store."
+        },
+        {
+          "q": "Dá para assistir DramaBox de graça sem pagar assinatura?",
+          "a": "Sim. Os primeiros capítulos são livres e os seguintes podem ser desbloqueados aos poucos com moedas ganhas em anúncios e tarefas diárias."
+        }
+      ],
+      "verdict": "Dá para assistir DramaBox grátis combinando os episódios iniciais liberados com o check-in diário e os anúncios da aba Earn Rewards — basta ter paciência e evitar APKs modificados.",
+      "imageAlt": "Tela Reward coins do DramaBox com check-in de 7 dias, Watch Ad to earn 30 coins e tarefas Earn Rewards",
+      "caption": "Na tela Reward coins ficam o check-in de 7 dias (+10 a +50), o botão de 30 moedas por anúncio e as tarefas de +20 a +60.",
+      "imageKey": "dramabox-coins",
+      "imageWide": false,
+      "secondImage": {
+        "key": "dramabox-catalog",
+        "alt": "Catálogo de mininovelas do DramaBox",
+        "caption": "As Reward Coins acumuladas servem para desbloquear capítulos em qualquer série do catálogo.",
+        "wide": false
+      }
+    },
+    {
+      "id": "dramabox-subscription",
+      "app": "dramabox",
+      "category": "rewards",
+      "slug": "dramabox-quanto-custa-como-cancelar-assinatura",
+      "title": "DramaBox: Quanto Custa a Assinatura e Como Cancelar (Android e iPhone)",
+      "description": "Preços oficiais do DramaBox no Brasil (plano semanal e anual), regras de renovação automática e passo a passo para cancelar a assinatura na Google Play e iPhone.",
+      "intro": "A assinatura do DramaBox libera acesso ilimitado a mais de 16 mil séries em 1080p e downloads offline, mas funciona com cobrança recorrente e renovação automática ativada por padrão. Saber os valores exatos e onde cancelar evita ser cobrado novamente após a primeira semana.",
+      "sections": [
+        {
+          "heading": "Quanto custa a assinatura do DramaBox (semanal e anual)",
+          "paragraphs": [
+            "Na tela Join Membership verificada no Android no Brasil, o DramaBox exibe o Plano Semanal promocional por R$ 34,99/semana nas 3 primeiras semanas (passando para R$ 45,99/semana depois) e o Plano Anual por R$ 459,99/ano (equivalente a R$ 8,83/semana).",
+            "As regras da tela Subscription Deals deixam claro que a renovação automática é ativada por padrão no momento da compra e que a cobrança do próximo ciclo acontece automaticamente nas 24 horas anteriores ao fim do período atual."
+          ],
+          "source": {
+            "title": "DramaBox na Apple App Store (StoryMatrix)",
+            "url": "https://apps.apple.com/us/app/dramabox-stream-drama-shorts/id6445905219"
+          }
+        },
+        {
+          "heading": "Como cancelar a assinatura do DramaBox no Android e no iPhone",
+          "paragraphs": [
+            "Apenas desinstalar o aplicativo do celular NÃO cancela a assinatura do DramaBox. Como a cobrança passa pela Google Play ou pela Apple, o cancelamento precisa ser feito diretamente na loja de aplicativos pelo menos 24 horas antes da renovação.",
+            "No Android (Google Play): abra a Google Play Store -> toque na sua foto de perfil -> Pagamentos e assinaturas -> Assinaturas -> DramaBox -> Cancelar assinatura. No iPhone: abra Ajustes -> toque no seu nome (ID Apple) -> Assinaturas -> DramaBox -> Cancelar assinatura."
+          ]
+        }
+      ],
+      "steps": [
+        "Confirme se a assinatura foi feita pela Google Play (Android) ou App Store (iPhone).",
+        "No Android: abra Google Play Store -> Perfil -> Pagamentos e assinaturas -> Assinaturas -> DramaBox -> Cancelar assinatura.",
+        "No iPhone: acesse Ajustes -> seu nome -> Assinaturas -> DramaBox -> Cancelar assinatura.",
+        "Guarde a confirmação do cancelamento; você continua com acesso VIP até o fim do período já pago."
+      ],
+      "pros": [
+        "Libera todas as mais de 16 mil séries sem anúncios, com qualidade 1080p e opção de download.",
+        "O cancelamento é feito direto pela Google Play ou Apple, sem precisar falar com suporte."
+      ],
+      "cons": [
+        "O valor semanal (R$ 34,99 e depois R$ 45,99/semana no Brasil) é elevado frente a streamings mensais tradicionais.",
+        "A renovação automática vem ligada por padrão e cobra até 24 horas antes do vencimento."
+      ],
+      "faq": [
+        {
+          "q": "Como cancelar a assinatura do DramaBox?",
+          "a": "Não basta apagar o app. No Android, cancele em Google Play Store -> Perfil -> Pagamentos e assinaturas -> Assinaturas -> DramaBox. No iPhone, vá em Ajustes -> ID Apple -> Assinaturas -> DramaBox."
+        },
+        {
+          "q": "Quanto custa o DramaBox por mês ou semana no Brasil?",
+          "a": "Na tela oficial verificada no Android, o plano semanal custa R$ 34,99/semana nas 3 primeiras semanas e depois R$ 45,99/semana; o plano anual sai por R$ 459,99/ano."
+        },
+        {
+          "q": "Vale a pena assinar o DramaBox?",
+          "a": "Só compensa se você pretende maratonar várias séries em uma única semana e cancelar logo após assinar para não renovar. Para uso leve, prefira os episódios grátis e moedas por anúncios."
+        }
+      ],
+      "verdict": "Se assinar o plano semanal do DramaBox para maratonar uma série, cancele a renovação automática imediatamente na Google Play ou no iPhone para evitar uma nova cobrança de R$ 34,99 a R$ 45,99.",
+      "imageAlt": "Tela Join Membership do DramaBox mostrando preços do plano semanal e anual",
+      "caption": "A tela Join Membership mostra o plano semanal (R$ 34,99 nas 3 primeiras semanas, depois R$ 45,99) e o plano anual (R$ 459,99).",
+      "imageKey": "dramabox-membership",
+      "imageWide": false,
+      "secondImage": {
+        "key": "dramabox-subscription",
+        "alt": "Regras de Subscription Deals do DramaBox sobre renovação automática e cancelamento na Google Play",
+        "caption": "As regras de Subscription Deals confirmam que a renovação automática vem ativada e é cobrada em até 24h antes do vencimento.",
+        "wide": false
+      }
+    },
+    {
+      "id": "nordvpn-vs-surfshark",
+      "app": "nordvpn",
+      "category": "tools",
+      "slug": "nordvpn-vs-surfshark-comparativo-2026",
+      "title": "NordVPN vs. Surfshark (2026): Velocidade, Preço, Dispositivos e Qual Escolher",
+      "description": "Compare NordVPN vs. Surfshark em 2026: preços dos planos de 2 anos, limite de aparelhos (10 vs. ilimitados), velocidade NordLynx vs. WireGuard e segurança.",
+      "intro": "NordVPN e Surfshark pertencem ao mesmo grupo controlador, a Nord Security, mas atendem perfis diferentes. A NordVPN foca em velocidade consistente em conexões distantes, rede maior de servidores e recursos avançados, enquanto o Surfshark se destaca pelo preço mais baixo em planos longos e conexões simultâneas ilimitadas.",
+      "sections": [
+        {
+          "heading": "Preço e limite de aparelhos: 10 dispositivos vs. ilimitados",
+          "paragraphs": [
+            "A diferença mais prática no dia a dia está em quantas telas uma única assinatura protege. A NordVPN limita cada conta a 10 dispositivos simultâneos, o que atende bem uma pessoa com celular, notebook, tablet e TV. Já o Surfshark libera conexões simultâneas ilimitadas, facilitando proteger toda a família com um único login.",
+            "Nos planos de 2 anos, o Surfshark costuma ter o valor inicial mais baixo (na faixa de US$ 2,39–2,49/mês em promoções), enquanto a NordVPN normalmente começa um pouco acima (cerca de US$ 2,99–3,49/mês). Confira sempre o valor de renovação na página final antes de assinar."
+          ],
+          "cta": {
+            "label": "Conferir planos do Surfshark com aparelhos ilimitados",
+            "url": "https://www.dpbolvw.net/click-101927870-15438560-1759355883000",
+            "sponsored": true
+          }
+        },
+        {
+          "heading": "Velocidade, rede de servidores e recursos extras",
+          "paragraphs": [
+            "Ambas usam servidores de 10 Gbps, infraestrutura somente em RAM, política auditada de zero registros e protocolos baseados em WireGuard. A NordVPN roda o protocolo próprio NordLynx em mais de 8.400 servidores em 111+ países, entregando latência ligeiramente menor em rotas internacionais. O Surfshark usa WireGuard padrão em cerca de 4.500+ servidores em 100 países, mantendo folga para streaming em 4K e videochamadas.",
+            "Nos extras, a NordVPN traz Proteção contra ameaças Pro (bloqueio de rastreadores e domínios maliciosos), Double VPN e Meshnet para conectar seus próprios dispositivos em rede privada. O Surfshark responde com bloqueador CleanWeb, túnel dividido Bypasser e pacotes Surfshark One com antivírus e ID alternativo."
+          ],
+          "cta": {
+            "label": "Ver planos oficiais da NordVPN e NordLynx",
+            "url": "https://www.kqzyfj.com/click-101927870-14471514-1764883017000",
+            "sponsored": true
+          }
+        },
+        {
+          "heading": "Qual VPN combina mais com a sua rotina?",
+          "paragraphs": [
+            "Escolha a NordVPN se você viaja bastante, depende de servidores distantes para trabalho ou streaming e quer Meshnet ou Double VPN. Escolha o Surfshark se busca o menor custo no plano de 2 anos ou precisa proteger mais de 10 celulares, notebooks e TVs ao mesmo tempo."
+          ],
+          "source": {
+            "title": "NordVPN: O que é NordLynx?",
+            "url": "https://nordvpn.com/features/nordlynx/"
+          }
+        }
+      ],
+      "steps": [
+        "Conte quantos celulares, notebooks, tablets e smart TVs ficam conectados ao mesmo tempo (até 10 na NordVPN; ilimitados no Surfshark).",
+        "Compare a tarifa promocional de 2 anos e o preço de renovação nos dois sites oficiais.",
+        "Instale o app oficial no aparelho principal e ative o Kill Switch junto com Proteção contra ameaças ou CleanWeb.",
+        "Conecte-se ao servidor mais próximo usando NordLynx (NordVPN) ou WireGuard (Surfshark) para ter menor latência."
+      ],
+      "pros": [
+        "NordVPN oferece rede maior (8.400+ servidores), ótima estabilidade no NordLynx e Meshnet.",
+        "Surfshark garante dispositivos simultâneos ilimitados e menor preço inicial em planos de 2 anos."
+      ],
+      "cons": [
+        "Ambas ficam mais caras na cobrança mensal avulsa ou após a renovação do ciclo promocional.",
+        "NordVPN limita a conta a 10 aparelhos simultâneos e o Surfshark tem rede total menor."
+      ],
+      "faq": [
+        {
+          "q": "NordVPN e Surfshark são da mesma empresa?",
+          "a": "Sim, ambas fazem parte da Nord Security, mas operam com servidores, aplicativos e tabelas de preços independentes."
+        },
+        {
+          "q": "Qual é mais rápida em 2026: NordVPN ou Surfshark?",
+          "a": "As duas entregam alta velocidade via WireGuard para vídeo em 4K, com leve vantagem da NordVPN (NordLynx) em servidores internacionais distantes."
+        },
+        {
+          "q": "Qual VPN vale mais a pena para família ou muitos aparelhos?",
+          "a": "O Surfshark leva vantagem se você precisa conectar mais de 10 dispositivos ao mesmo tempo por oferecer conexões ilimitadas."
+        }
+      ],
+      "verdict": "Vá de Surfshark pelo custo-benefício e aparelhos ilimitados em casa; vá de NordVPN pela maior rede de servidores, velocidade internacional e Meshnet.",
+      "imageAlt": "Comparativo NordVPN vs. Surfshark 2026 em velocidade, preço e dispositivos",
+      "caption": "Comparativo entre NordVPN e Surfshark em planos de 2 anos, protocolo NordLynx/WireGuard e limite de dispositivos.",
+      "imageKey": "nordvpn",
+      "imageWide": true
+    },
+    {
+      "id": "freecash-reviews",
+      "app": "freecash",
+      "category": "rewards",
+      "slug": "freecash-e-confiavel-paga-mesmo-avaliacoes",
+      "title": "Freecash é Confiável e Paga Mesmo? Avaliações e Regras (2026)",
+      "description": "O Freecash é confiável ou golpe em 2026? Veja como os pagamentos funcionam, por que ofertas ficam pendentes, motivos de bloqueio e regras da conta.",
+      "intro": "O Freecash é uma plataforma legítima de recompensas (GPT) que paga para testar jogos de celular, concluir ofertas de parceiros e responder pesquisas — mas não é renda automática. Entender por que alguns usuários sacam sem problemas enquanto outros enfrentam travas ou bloqueios evita frustração.",
+      "sections": [
+        {
+          "heading": "O Freecash é confiável e de onde vem o dinheiro?",
+          "paragraphs": [
+            "Sim, o Freecash é confiável e paga via PayPal, cartões-presente, criptomoedas e transferência bancária conforme a região. O dinheiro vem de estúdios de jogos e empresas que pagam pela aquisição e teste de novos usuários. A conversão padrão é 1.000 moedas = US$ 1,00.",
+            "A maior parte das reclamações nasce de não ler os prazos das metas ou esperar ganhos altos sem esforço. Ofertas grandes (US$ 50 a US$ 100+) quase sempre exigem atingir níveis avançados em até 30 dias ou fazer compras opcionais dentro do jogo."
+          ]
+        },
+        {
+          "heading": "Por que contas são bloqueadas ou saldos ficam pendentes",
+          "paragraphs": [
+            "O Freecash aplica regras antifraude rígidas: permite apenas uma conta por residência/IP e proíbe VPN, proxy ou emuladores. Além disso, o primeiro saque exige verificação de e-mail e identidade (selfie e documento) e costuma ter mínimo inicial de US$ 25.",
+            "Você pode criar sua conta pelo link oficial de convite abaixo ou copiar o código 3C7GKG e testar primeiro uma tarefa gratuita rápida para confirmar se o rastreamento do celular está funcionando."
+          ]
+        }
+      ],
+      "steps": [
+        "Crie apenas uma conta no Freecash usando sua localização real, sem VPN nem proxy.",
+        "Comece por uma oferta gratuita curta para confirmar que o rastreamento contabilizou o progresso.",
+        "Guarde prints das regras da oferta e dos níveis alcançados caso precise acionar o suporte.",
+        "Conclua a verificação de e-mail e documento antes de pedir o primeiro saque de US$ 25."
+      ],
+      "pros": [
+        "Conversão transparente (1.000 moedas = US$ 1,00) e saques rápidos após a primeira verificação.",
+        "Catálogo amplo de jogos com metas progressivas, pesquisas e ofertas."
+      ],
+      "cons": [
+        "O primeiro saque costuma exigir mínimo de US$ 25 e verificação de identidade.",
+        "Regras rígidas contra VPN e múltiplas contas no mesmo Wi-Fi podem suspender o perfil."
+      ],
+      "faq": [
+        {
+          "q": "O Freecash paga mesmo ou é golpe?",
+          "a": "O Freecash paga de verdade via PayPal, gift cards e cripto para contas verificadas que seguem as regras de rastreamento e conta única."
+        },
+        {
+          "q": "Por que algumas ofertas ficam com saldo pendente?",
+          "a": "Os anunciantes seguram recompensas maiores por alguns dias para validar o progresso no jogo e evitar fraudes."
+        },
+        {
+          "q": "Duas pessoas na mesma casa podem usar o Freecash?",
+          "a": "O Freecash restringe contas por residência e IP compartilhado; confira os termos antes de abrir outro cadastro no mesmo Wi-Fi."
+        }
+      ],
+      "verdict": "O Freecash é confiável se você usá-lo para testar jogos e apps sem VPN, conferindo as metas antes de começar e validando o rastreamento logo no início.",
+      "imageAlt": "Painel de ofertas e recompensas do Freecash no Android",
+      "caption": "O Freecash reúne metas de jogos mobile, ofertas de parceiros e pesquisas em um só painel."
+    },
+    {
+      "id": "freecash-bonus-cashout",
+      "app": "freecash",
+      "category": "rewards",
+      "slug": "freecash-codigo-bonus-como-sacar-dinheiro",
+      "title": "Código de Bônus Freecash e Como Sacar Dinheiro (2026): PayPal, Cripto e Taxas",
+      "description": "Como usar o código 3C7GKG no Freecash, achar códigos promocionais oficiais, cumprir o mínimo de US$ 25 no primeiro saque e evitar taxas no PayPal.",
+      "intro": "Entender como funcionam os códigos de bônus e as taxas de saque no Freecash ajuda você a perder menos saldo em tarifas. Embora o primeiro saque peça um valor maior e checagem de identidade, os saques seguintes liberam mínimos menores e envio rápido.",
+      "sections": [
+        {
+          "heading": "Como usar código de convite e códigos de bônus",
+          "paragraphs": [
+            "Ao criar a conta, você pode entrar por um link oficial de convite ou usar o identificador 3C7GKG. Além disso, o Freecash divulga códigos promocionais temporários em sorteios e eventos nos canais oficiais (X/Twitter, Instagram, YouTube e Discord), resgatáveis no painel enquanto houver limite disponível.",
+            "Ignore sites de terceiros prometendo 'gerador de moedas': códigos legítimos só vêm dos canais oficiais do Freecash ou de links de convite verificados."
+          ]
+        },
+        {
+          "heading": "Primeiro saque de US$ 25 vs. próximos saques e taxas",
+          "paragraphs": [
+            "A central de ajuda do Freecash informa um mínimo inicial de US$ 25 para o primeiro saque (variando conforme o país), além de verificação por e-mail e documento com selfie. Depois desse primeiro saque aprovado, a trava de US$ 25 cai e vários métodos permitem retirar a partir de cerca de US$ 5.",
+            "PayPal e Venmo costumam cobrar taxa de 5%, enquanto cartões-presente (Amazon, Google Play, Apple, Steam) e várias criptomoedas (Litecoin, Bitcoin, Ethereum) geralmente não têm taxa de plataforma. Transferências bancárias ou Revolut levam de 3 a 5 dias úteis."
+          ],
+          "source": {
+            "title": "Freecash: requisitos para o primeiro saque",
+            "url": "https://freecash.com/academy/en/support/withdrawal/issues/first-cashout-requirements"
+          }
+        }
+      ],
+      "steps": [
+        "Acesse o Freecash pelo botão oficial desta página ou copie o código 3C7GKG no cadastro.",
+        "Acompanhe os perfis oficiais do Freecash se quiser aproveitar códigos temporários da comunidade.",
+        "Junte saldo acima do mínimo inicial de US$ 25 e conclua a verificação de identidade.",
+        "Compare as taxas antes de sacar: prefira gift cards ou cripto de taxa baixa se quiser fugir dos 5% do PayPal."
+      ],
+      "pros": [
+        "Várias formas de saque: PayPal, gift cards sem taxa, criptomoedas e transferência bancária.",
+        "Mínimos de saque bem menores após completar a primeira retirada verificada."
+      ],
+      "cons": [
+        "Saques via PayPal têm taxa padrão de 5%.",
+        "O primeiro saque exige atingir US$ 25 e passar pela verificação de identidade."
+      ],
+      "faq": [
+        {
+          "q": "Qual é o código de convite do Freecash no apps308?",
+          "a": "O identificador verificado é 3C7GKG, já vinculado ao botão oficial do Freecash nesta página."
+        },
+        {
+          "q": "Qual método de saque do Freecash não cobra taxa?",
+          "a": "Cartões-presente (Amazon, Google Play, Steam) e diversas opções de criptomoedas costumam não cobrar taxa da plataforma, ao contrário dos 5% do PayPal."
+        },
+        {
+          "q": "Quanto tempo demora o pagamento do Freecash?",
+          "a": "A checagem de segurança leva até 30 minutos para PayPal, cripto e gift cards; transferências bancárias levam de 3 a 5 dias úteis."
+        }
+      ],
+      "verdict": "Cadastre-se com o código 3C7GKG, vença uma vez o mínimo de US$ 25 com verificação e depois use gift cards ou cripto para sacar valores menores sem pagar os 5% do PayPal.",
+      "imageAlt": "Opções de saque e recompensas no Freecash",
+      "caption": "O Freecash permite sacar por PayPal, gift cards, criptomoedas e banco após cumprir as regras iniciais."
+    },
+    {
+      "id": "freecash-games-offers",
+      "app": "freecash",
+      "category": "rewards",
+      "slug": "freecash-jogos-e-ofertas-como-ganhar-mais",
+      "title": "Melhores Jogos e Ofertas no Freecash (2026): Metas, Rastreamento e Dicas",
+      "description": "Como escolher jogos que pagam bem no Freecash em 2026, evitar falhas de rastreamento no Android e iOS e não gastar mais do que a recompensa.",
+      "intro": "Os jogos de celular concentram as maiores recompensas do Freecash, com ofertas que vão de alguns dólares a centenas. Porém, o valor anunciado é dividido por metas com prazo fechado, e um erro simples de rastreamento impede o crédito dos níveis.",
+      "sections": [
+        {
+          "heading": "Como funcionam as metas por nível nos jogos",
+          "paragraphs": [
+            "Cada oferta divide o prêmio total em etapas — como instalar o app, chegar ao nível 15 em 7 dias ou atingir o nível 50 em 30 dias. As primeiras metas pagam pouco, mas confirmam o rastreamento, enquanto os valores maiores ficam nos níveis finais ou exigem compras opcionais.",
+            "Antes de baixar, compare as metas gratuitas viáveis com o tempo exigido. Em geral vale mais cumprir metas intermediárias e partir para outro jogo do que insistir em um nível final quase impossível."
+          ]
+        },
+        {
+          "heading": "Como evitar falhas de rastreamento no Android e iOS",
+          "paragraphs": [
+            "O rastreamento só funciona na primeira instalação: nunca escolha um jogo que você já baixou antes no mesmo aparelho ou conta da Google Play/App Store. Desative bloqueadores de anúncios, DNS privado e VPN antes de clicar na oferta do Freecash e abra o jogo logo após instalar.",
+            "Para ver qual plataforma paga mais pelo mesmo jogo antes de baixar, confira também nosso comparativo Swagbucks vs. Freecash."
+          ],
+          "source": {
+            "title": "Freecash: boas práticas de rastreamento de ofertas",
+            "url": "https://freecash.com/academy/en/support/offer/tracking/how-to-ensure-offer-tracks"
+          }
+        }
+      ],
+      "steps": [
+        "Desligue VPN, bloqueadores de anúncio e DNS privado no celular antes de abrir o Freecash.",
+        "Escolha um jogo inédito no seu aparelho e leia todos os prazos de cada meta.",
+        "Toque na oferta dentro do Freecash, baixe pela loja oficial e jogue por 5 a 10 minutos na hora.",
+        "Confirme se a instalação ou a primeira meta foi creditada antes de investir dias nos níveis seguintes."
+      ],
+      "pros": [
+        "Recompensas pagas por etapa conforme você avança nos níveis.",
+        "Prazos e metas detalhados antes mesmo de baixar o jogo."
+      ],
+      "cons": [
+        "Jogos já instalados anteriormente não contabilizam.",
+        "Metas finais podem exigir horas excessivas ou compras dentro do app."
+      ],
+      "faq": [
+        {
+          "q": "Por que minha oferta de jogo no Freecash não contabilizou?",
+          "a": "Os motivos mais comuns são instalação prévia do jogo na mesma conta, uso de VPN ou bloqueador de anúncios, ou recusa de rastreamento no iOS."
+        },
+        {
+          "q": "Vale a pena gastar dinheiro dentro do jogo para bater uma meta?",
+          "a": "Só quando houver uma meta específica de reembolso que pague claramente mais do que o pacote custa; caso contrário, foque nas metas gratuitas."
+        },
+        {
+          "q": "Qual o prazo comum das ofertas de jogos?",
+          "a": "A maioria das ofertas em destaque define janela de 14 a 30 dias a partir da instalação."
+        }
+      ],
+      "verdict": "Foque em jogos inéditos na sua conta com metas intermediárias alcançáveis, valide o primeiro registro de rastreamento cedo e pule níveis que exijam gastar.",
+      "imageAlt": "Ofertas de jogos mobile e metas de recompensas no Freecash",
+      "caption": "As ofertas de jogos no Freecash dividem os ganhos em metas por nível que dependem de rastreamento limpo."
     }  ]
 };
 export const apps:Record<string,{name:string;url:string;os:string;sources:{title:string;url:string}[]}>= {
@@ -6455,6 +8570,26 @@ export const apps:Record<string,{name:string;url:string;os:string;sources:{title
       {"title":"PineDrama - Short Dramas on Google Play","url":"https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=en"},
       {"title":"TikTok Privacy Policy (PineDrama Developer)","url":"https://www.tiktok.com/legal/privacy-policy/"}
     ]
+  },
+  "cashdrama": {
+    "name": "CashDrama",
+    "url": "https://play.google.com/store/apps/details?id=com.reward.drama.earn.watch.tool&hl=en",
+    "os": "Android",
+    "sources": [
+      {"title":"CashDrama on Google Play (com.reward.drama.earn.watch.tool)","url":"https://play.google.com/store/apps/details?id=com.reward.drama.earn.watch.tool&hl=en"},
+      {"title":"CashDrama on Google Play (Español)","url":"https://play.google.com/store/apps/details?id=com.reward.drama.earn.watch.tool&hl=es"},
+      {"title":"CashDrama on Google Play (Português)","url":"https://play.google.com/store/apps/details?id=com.reward.drama.earn.watch.tool&hl=pt_BR"}
+    ]
+  },
+  "dramabox": {
+    "name": "DramaBox",
+    "url": "https://play.google.com/store/apps/details?id=com.storymatrix.drama&hl=en",
+    "os": "Android, iOS",
+    "sources": [
+      {"title":"DramaBox Official Website (StoryMatrix)","url":"https://www.dramabox.com/"},
+      {"title":"DramaBox - Stream Drama Shorts on Google Play","url":"https://play.google.com/store/apps/details?id=com.storymatrix.drama&hl=en"},
+      {"title":"DramaBox on Apple App Store (StoryMatrix)","url":"https://apps.apple.com/us/app/dramabox-stream-drama-shorts/id6445905219"}
+    ]
   }
 };
-export const sourcesFor=(article:Article)=>article.id==='compare'?[...apps.opinion.sources.slice(0,1),...apps.microsoft.sources.slice(0,1),...apps.freecash.sources.slice(0,1),...apps.swagbucks.sources.slice(0,1)]:article.id==='swagbucks-vs-freecash'?[...apps.swagbucks.sources.slice(0,3),...apps.freecash.sources.slice(0,2)]:article.id==='pawns-vs-freecash'?[...apps.pawns.sources.slice(0,3),...apps.freecash.sources.slice(0,2)]:article.id==='primeopinion-vs-swagbucks'?[...apps.primeopinion.sources.slice(0,3),...apps.swagbucks.sources.slice(0,2)]:article.id==='pinedrama-vs-dramastack'?[...apps.pinedrama.sources,...apps.dramastack.sources.slice(0,2)]:apps[article.app].sources;
+export const sourcesFor=(article:Article)=>article.id==='compare'?[...apps.opinion.sources.slice(0,1),...apps.microsoft.sources.slice(0,1),...apps.freecash.sources.slice(0,1),...apps.swagbucks.sources.slice(0,1)]:article.id==='nordvpn-vs-surfshark'?[...apps.nordvpn.sources,...apps.surfshark.sources]:article.id==='swagbucks-vs-freecash'?[...apps.swagbucks.sources.slice(0,3),...apps.freecash.sources.slice(0,2)]:article.id==='pawns-vs-freecash'?[...apps.pawns.sources.slice(0,3),...apps.freecash.sources.slice(0,2)]:article.id==='primeopinion-vs-swagbucks'?[...apps.primeopinion.sources.slice(0,3),...apps.swagbucks.sources.slice(0,2)]:article.id==='pinedrama-vs-dramastack'?[...apps.pinedrama.sources,...apps.dramastack.sources.slice(0,2)]:article.id==='cashdrama-proofs'?[...apps.cashdrama.sources,...apps.dramastack.sources.slice(0,2)]:apps[article.app].sources;

@@ -53,6 +53,16 @@ const subtext:Record<string,Record<Locale,string>>={
     en:'Official TikTok short-drama portal — check store availability and privacy rules before installing.',
     es:'Portal oficial de dramas cortos de TikTok — verifica la disponibilidad en tienda y las reglas de privacidad antes de instalar.',
     pt:'Portal oficial de dramas curtos do TikTok — confira a disponibilidade na loja e as regras antes de instalar.'
+  },
+  cashdrama:{
+    en:'Official Google Play listing — check developer details, ad frequency, and withdrawal rules before spending time on tasks.',
+    es:'Ficha oficial en Google Play — revisa el desarrollador, la carga de anuncios y las reglas de retiro antes de invertir tiempo.',
+    pt:'Página oficial na Google Play — confira o desenvolvedor, o volume de anúncios e as travas de saque antes de perder tempo.'
+  },
+  dramabox:{
+    en:'Official Google Play listing (StoryMatrix) — watch free episodes, earn coins via ads and daily check-ins, or review plan terms before subscribing.',
+    es:'Ficha oficial en Google Play (StoryMatrix) — mira episodios gratis, gana monedas con anuncios y tareas o revisa los planes antes de suscribirte.',
+    pt:'Página oficial na Google Play (StoryMatrix) — assista aos primeiros episódios grátis, ganhe moedas com anúncios e tarefas ou confira os planos antes de assinar.'
   }
 };
 const store={en:'Get it on Google Play',es:'Descargar en Google Play',pt:'Baixar na Google Play'};
@@ -63,7 +73,7 @@ const store={en:'Get it on Google Play',es:'Descargar en Google Play',pt:'Baixar
     {subtext[app]&&<p class="access-sub">{subtext[app][locale]}</p>}
   </div>
   {hasCodeCopy&&<div class="copy-row"><code>{program?.code}</code><button type="button" data-copy={program?.code} data-success={t.copied} data-failure={t.copyFail}>{t.copy}</button><span role="status" aria-live="polite"></span></div>}
-  <a class="access-button" href={hasInvite?targetUrl!:apps[app].url} rel={hasInvite?'sponsored noopener':'noopener'}>{hasInvite?(open[app]?.[locale]||t.visit):app==='dramastack'?store[locale]:t.visit}<Icon name="arrow" size={17}/></a>
+  <a class="access-button" href={hasInvite?targetUrl!:apps[app].url} rel={hasInvite?'sponsored noopener':'noopener'}>{hasInvite?(open[app]?.[locale]||t.visit):(app==='dramastack'||app==='cashdrama'||app==='dramabox')?store[locale]:t.visit}<Icon name="arrow" size={17}/></a>
 </aside>
 {hasCodeCopy&&<script is:inline>
  document.querySelectorAll('[data-copy]').forEach(button=>{button.addEventListener('click',async()=>{const status=button.parentElement?.querySelector('[role=status]');try{await navigator.clipboard.writeText(button.dataset.copy||'');if(status)status.textContent=button.dataset.success||'Copied';}catch{if(status)status.textContent=button.dataset.failure||'Copy manually';}});});
