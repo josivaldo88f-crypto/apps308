@@ -81,6 +81,14 @@
       "verifiedAt": "2026-11-12",
       "codeType": "cj-affiliate-tracking-link",
       "evidence": "CJ Affiliate approved advertiser 6209147 (Kaspersky LATAM), Link IDs 17339440 (ES/LATAM) and 17335774 (PT-BR) for Website ID 101927870."
+    },
+    "attapoll": {
+      "status": "verified",
+      "code": "cgfky",
+      "referralUrl": "https://attapoll.app/join/cgfky",
+      "verifiedAt": "2026-11-15",
+      "codeType": "referral-registration-link",
+      "evidence": "Official AttaPoll invitation link https://attapoll.app/join/cgfky with code cgfky (shown as CGFKY in the Convidar & Ganhar screen)."
     }
   }
 }

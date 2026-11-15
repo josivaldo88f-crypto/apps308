@@ -19,8 +19,11 @@ export default defineConfig({
    const [locale,slug]=parts;
    if(!languages.includes(locale))return item;
    const article=articles[locale].find(a=>a.slug===slug);
-   const links=languages.map(lang=>({lang,url:`${site}/${lang}/${article?articles[lang].find(a=>a.id===article.id).slug+'/':slug?slug+'/':''}`}));
-   links.push({lang:'x-default',url:links.find(l=>l.lang==='en').url});
+   const links=article
+    ?languages.flatMap(lang=>{const match=articles[lang].find(a=>a.id===article.id);return match?[{lang,url:`${site}/${lang}/${match.slug}/`}]:[];})
+    :languages.map(lang=>({lang,url:`${site}/${lang}/${slug?slug+'/':''}`}));
+   const xDefault=(links.find(l=>l.lang==='en')||links.find(l=>l.lang===locale)||links[0])?.url;
+   if(xDefault)links.push({lang:'x-default',url:xDefault});
    return {...item,...(article?{lastmod:articleDates(article).modifiedDate}:{}),links};
   }
  })],

@@ -8,7 +8,7 @@ const t=text[locale];
 const program=data.programs[app as keyof typeof data.programs] as {status?:string;code?:string|null;referralUrl?:string|null;localeUrls?:Record<string,string>}|undefined;
 const targetUrl=program?.localeUrls?.[locale]||program?.referralUrl;
 const hasInvite=program?.status==='verified'&&Boolean(targetUrl);
-const hasCodeCopy=(app==='freecash'||app==='pawns'||app==='primeopinion')&&Boolean(program?.code);
+const hasCodeCopy=(app==='freecash'||app==='pawns'||app==='primeopinion'||app==='attapoll')&&Boolean(program?.code);
 const open:Record<string,Record<Locale,string>>={
   freecash:{en:'Open Freecash',es:'Acceder a Freecash',pt:'Acessar o Freecash'},
   swagbucks:{en:'Sign up on Swagbucks',es:'Registrarse en Swagbucks',pt:'Criar conta no Swagbucks'},
@@ -16,7 +16,8 @@ const open:Record<string,Record<Locale,string>>={
   primeopinion:{en:'Join Prime Opinion (+10% Bonus)',es:'Unirse a Prime Opinion (Bono +10%)',pt:'Entrar no Prime Opinion (Bônus +10%)'},
   nordvpn:{en:'View NordVPN official offer',es:'Ver oferta oficial de NordVPN',pt:'Ver oferta oficial da NordVPN'},
   surfshark:{en:'View Surfshark official offer',es:'Ver oferta oficial de Surfshark',pt:'Ver oferta oficial do Surfshark'},
-  kaspersky:{en:'View Kaspersky official offer',es:'Ver oferta oficial de Kaspersky',pt:'Ver oferta oficial do Kaspersky'}
+  kaspersky:{en:'View Kaspersky official offer',es:'Ver oferta oficial de Kaspersky',pt:'Ver oferta oficial do Kaspersky'},
+  attapoll:{en:'Download AttaPoll via invite',es:'Descargar AttaPoll con invitación',pt:'Baixar o AttaPoll pelo convite'}
 };
 const subtext:Record<string,Record<Locale,string>>={
   swagbucks:{
@@ -63,11 +64,16 @@ const subtext:Record<string,Record<Locale,string>>={
     en:'Official Google Play listing (StoryMatrix) — watch free episodes, earn coins via ads and daily check-ins, or review plan terms before subscribing.',
     es:'Ficha oficial en Google Play (StoryMatrix) — mira episodios gratis, gana monedas con anuncios y tareas o revisa los planes antes de suscribirte.',
     pt:'Página oficial na Google Play (StoryMatrix) — assista aos primeiros episódios grátis, ganhe moedas com anúncios e tarefas ou confira os planos antes de assinar.'
+  },
+  attapoll:{
+    en:'Invitation code cgfky — review program rules and the seven-day manual registration window in the app.',
+    es:'Código de invitación cgfky — revisa las condiciones del programa y el plazo de siete días en la app.',
+    pt:'Código de convite cgfky — confira as condições do programa e o prazo de sete dias para indicação manual diretamente no aplicativo.'
   }
 };
 const store={en:'Get it on Google Play',es:'Descargar en Google Play',pt:'Baixar na Google Play'};
 ---
-<aside class:list={['app-access',{'has-invite':hasInvite,'access-swagbucks':app==='swagbucks','access-pawns':app==='pawns','access-primeopinion':app==='primeopinion'}]} aria-label={apps[app].name}>
+<aside class:list={['app-access',{'has-invite':hasInvite,'access-swagbucks':app==='swagbucks','access-pawns':app==='pawns','access-primeopinion':app==='primeopinion','access-attapoll':app==='attapoll'}]} aria-label={apps[app].name}>
   <div class="access-heading">
     <strong>{apps[app].name}</strong>
     {subtext[app]&&<p class="access-sub">{subtext[app][locale]}</p>}
