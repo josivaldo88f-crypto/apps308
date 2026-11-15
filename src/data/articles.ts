@@ -3036,7 +3036,842 @@ export const articles:Record<Locale,Article[]>={
       "imageAlt": "Freecash referral-link panel with identifier 3C7GKG",
       "caption": "This saved screen shows a referral link, not a withdrawal receipt.",
       "modifiedDate": "2026-11-15"
-    }  ],
+    },
+    {
+      "id": "attapoll",
+      "app": "attapoll",
+      "category": "rewards",
+      "slug": "attapoll-how-it-works",
+      "title": "AttaPoll: How It Works, Surveys and Star Ratings",
+      "description": "Learn how AttaPoll surveys work, what star ratings mean and why surveys may disappear. See real screen examples and the limits before you start.",
+      "intro": "AttaPoll offers rewards for surveys that the provider accepts as complete, alongside games and tasks. Survey listings can show a reward, an estimated duration and a star rating to help you choose. Here is how to read those details, understand an empty list or a disqualification, and get started with realistic expectations.",
+      "sections": [
+        {
+          "heading": "What AttaPoll does and what your screen can tell you",
+          "paragraphs": [
+            "ATTAPOLL LTD publishes AttaPoll, which is listed on Google Play as a paid-surveys app. Companies use surveys to reach specific audiences, and the app matches studies with your profile. It also offers games and tasks, each with its own conditions. This guide focuses on surveys; the related guides cover games, payments and invitations.",
+            "The supplied screenshots show an example account with a Portuguese interface and USD amounts. The language, currency and offers in your account may differ. Payment methods and withdrawal minimums also vary by country and account. Use these screens to understand the layout, then check the values shown in your own app."
+          ],
+          "sources": [
+            {
+              "title": "AttaPoll on Google Play",
+              "url": "https://play.google.com/store/apps/details?id=com.requapp.requ&hl=en"
+            },
+            {
+              "title": "Get Paid to Test and Play Games with AttaPoll",
+              "url": "https://attapoll.com/en-us/get-paid-to-test-and-play-games-with-attapoll/"
+            },
+            {
+              "title": "AttaPoll Help",
+              "url": "https://attapoll.com/en-us/help/"
+            }
+          ]
+        },
+        {
+          "heading": "Reading survey rewards, time estimates and stars",
+          "paragraphs": [
+            "Check the advertised reward, estimated duration and stars where they are shown on a survey card. In the example account, a GMR Inteligência de Mercado offer listed USD 0.12, an estimated 12 minutes and 2 stars. A CPX Research offer listed USD 0.39, an estimated 8 minutes and 3 stars. These are individual offers, not typical earnings.",
+            "The stars, according to AttaPoll's help page, indicate the relative likelihood that you will finish that survey. They are not a quality score for the study and not a rating of you as a user: three stars suggest a better chance of completing than one star, and that is all they claim.",
+            "Another card listed USD 0.02 for 11 questions under the Portuguese label Desbloquear inquéritos, meaning Unlock surveys. The screenshot does not include its full conditions. Read that card separately rather than assuming it has the same fields or requirements as the other offers."
+          ],
+          "source": {
+            "title": "AttaPoll Help",
+            "url": "https://attapoll.com/en-us/help/"
+          }
+        },
+        {
+          "heading": "No surveys available and survey disqualifications",
+          "paragraphs": [
+            "An empty list and a disqualification happen at different points. An empty list can mean there are no surveys matching your profile at that moment. A disqualification happens after you start: the study may need a different audience, have enough participants already, or reject an incorrectly answered control question.",
+            "An offer can also close between the notification and the moment you open it. The official help says availability varies, so a quiet day does not establish that your account is faulty. Check any messages about your profile or verification, keep your details accurate and use the in-app help if you need to investigate a specific problem."
+          ],
+          "source": {
+            "title": "AttaPoll Help",
+            "url": "https://attapoll.com/en-us/help/"
+          }
+        },
+        {
+          "heading": "Getting started without assuming a daily income",
+          "paragraphs": [
+            "Start by checking the app's terms, your profile and the offers available to you. If you want to use referral code cgfky, the official help places the entry field in Settings and gives you seven days after registration to enter a code. An existing referral cannot be replaced. Any incentive depends on the program's eligibility rules and the offer applicable to your account."
+          ],
+          "sources": [
+            {
+              "title": "AttaPoll on Google Play",
+              "url": "https://play.google.com/store/apps/details?id=com.requapp.requ&hl=en"
+            },
+            {
+              "title": "AttaPoll Terms and Conditions",
+              "url": "https://attapoll.com/en-us/terms-and-conditions/"
+            },
+            {
+              "title": "AttaPoll Help",
+              "url": "https://attapoll.com/en-us/help/"
+            }
+          ]
+        },
+        {
+          "heading": "When a completed survey has no reward",
+          "paragraphs": [
+            "A finished survey is not automatically a paid survey. The reward depends on validation: the study's provider checks that your completion met the rules, and that check decides the credit. When one specific survey finishes without a reward, the route is Settings > Help > Surveys, with the survey's name and details ready.",
+            "For the next step, the cash-out guide explains minimums and payment statuses, the games guide covers milestones, and the referral guide explains how to use cgfky. If you decide to install AttaPoll, you can use the invitation link below. Check the developer and current terms on the official app-store page before downloading."
+          ],
+          "sources": [
+            {
+              "title": "AttaPoll Help",
+              "url": "https://attapoll.com/en-us/help/"
+            },
+            {
+              "title": "AttaPoll Terms and Conditions",
+              "url": "https://attapoll.com/en-us/terms-and-conditions/"
+            }
+          ],
+          "cta": {
+            "label": "Download AttaPoll with code cgfky",
+            "url": "https://attapoll.app/join/cgfky",
+            "sponsored": true
+          }
+        }
+      ],
+      "steps": [
+        "Use the invitation link in this guide if you want to download AttaPoll with code cgfky.",
+        "Check the developer (ATTAPOLL LTD) and the current terms before installing.",
+        "Register with your real details and answer the profile questions honestly.",
+        "Open the surveys tab and see which offers are available for your account.",
+        "Compare the advertised reward, estimated duration and stars where available before choosing a survey.",
+        "Check which completions were accepted and credited, and only then look at withdrawal requirements."
+      ],
+      "stepsSectionIndex": 3,
+      "pros": [
+        "Survey listings can show rewards, time estimates and stars before you choose an offer",
+        "Surveys, games and tasks are separate activities, each with its own listed conditions"
+      ],
+      "cons": [
+        "Availability is irregular, and offers can close before you open them",
+        "Rewards depend on accepted completions; starting a survey does not guarantee payment"
+      ],
+      "faq": [
+        {
+          "q": "How does AttaPoll work?",
+          "a": "AttaPoll matches surveys with your profile and also offers games and tasks. Check the reward and any time estimate or stars shown before starting. Survey rewards depend on the provider accepting the completion as valid."
+        },
+        {
+          "q": "Why are there no surveys on my AttaPoll account?",
+          "a": "There may be no surveys matching your profile at that time, or an offer may have closed before you opened it. Check any account or verification messages as well. If a specific issue persists, use the in-app help rather than assuming one cause."
+        },
+        {
+          "q": "What do the stars on an AttaPoll survey mean?",
+          "a": "They indicate the relative likelihood that you will finish that survey, per the official help. They are not a satisfaction score and not a rating of you."
+        },
+        {
+          "q": "Does finishing a survey always mean I will be paid?",
+          "a": "No. The provider validates the completion; a profile mismatch, a filled quota or a failed attention check can end the survey without a reward."
+        }
+      ],
+      "verdict": "AttaPoll is a matchmaker between your profile and studies that pay for accepted answers. Read the card, answer honestly, and let the accepted balance — not the advertised number — be your measure of what it is worth. Games, withdrawals and referral codes each follow their own rules, covered in the related guides.",
+      "imageKey": "attapoll-pesquisas",
+      "imageAlt": "AttaPoll survey list in a Portuguese interface, showing rewards in USD, estimated times and star ratings",
+      "caption": "Example account with a Portuguese interface and USD amounts. Currency, payment methods and withdrawal minimums vary by country and account.",
+      "imageWide": false,
+      "sources": [
+        {
+          "title": "AttaPoll Help",
+          "url": "https://attapoll.com/en-us/help/"
+        },
+        {
+          "title": "AttaPoll Terms and Conditions",
+          "url": "https://attapoll.com/en-us/terms-and-conditions/"
+        },
+        {
+          "title": "AttaPoll on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.requapp.requ&hl=en"
+        },
+        {
+          "title": "Get Paid to Test and Play Games with AttaPoll",
+          "url": "https://attapoll.com/en-us/get-paid-to-test-and-play-games-with-attapoll/"
+        }
+      ],
+      "relatedIds": [
+        "attapoll-saque",
+        "attapoll-jogos",
+        "attapoll-convite"
+      ],
+      "tables": [
+        {
+          "heading": "Survey cards in the supplied example account",
+          "columns": [
+            "Survey card",
+            "Advertised reward",
+            "Estimated time",
+            "Stars"
+          ],
+          "rows": [
+            [
+              "GMR Inteligência de Mercado",
+              "USD 0.12",
+              "12 minutes",
+              "2"
+            ],
+            [
+              "CPX Research",
+              "USD 0.39",
+              "8 minutes",
+              "3"
+            ]
+          ],
+          "afterSectionIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "attapoll-saque",
+      "app": "attapoll",
+      "category": "rewards",
+      "slug": "attapoll-cash-out-paypal",
+      "title": "AttaPoll Cash Out: PayPal, Minimums and Timing",
+      "description": "Learn how to cash out from AttaPoll, check your PayPal minimum and understand pending payments. See which methods appear in one example account.",
+      "intro": "To cash out from AttaPoll, check your confirmed balance, the minimum for your chosen method and the receiving account details before submitting a request. The official help says sending a payment can sometimes take up to 72 hours. Your next step depends on whether the request is pending, failed or marked complete.",
+      "sections": [
+        {
+          "heading": "Check your balance and withdrawal minimum first",
+          "paragraphs": [
+            "Start with the Balance screen, where accepted rewards accumulate. Select a payment method to see its withdrawal minimum. That minimum depends on your country and method and can change, so use the amount currently shown in your own account.",
+            "The English-language Google Play description mentions $3, while the Spanish-language description mentions €2.50. Those store figures do not establish the minimum for every account. The supplied balance screenshot reads USD 2.52: it shows an accumulated balance, not a completed withdrawal."
+          ],
+          "sources": [
+            {
+              "title": "AttaPoll Terms and Conditions",
+              "url": "https://attapoll.com/en-us/terms-and-conditions/"
+            },
+            {
+              "title": "AttaPoll Help",
+              "url": "https://attapoll.com/en-us/help/"
+            },
+            {
+              "title": "AttaPoll on Google Play",
+              "url": "https://play.google.com/store/apps/details?id=com.requapp.requ&hl=en"
+            },
+            {
+              "title": "AttaPoll en Google Play (ficha en español)",
+              "url": "https://play.google.com/store/apps/details?id=com.requapp.requ&hl=es"
+            }
+          ]
+        },
+        {
+          "heading": "Payment methods depend on your country and account",
+          "paragraphs": [
+            "The supplied images show a Portuguese interface with a balance in USD, PayPal and Revolut payment options, and gift cards for the Brazilian market. The cards include Carrefour, Assaí, Casas Bahia, Renner, C&A, Centauro, Decathlon and Petz. These are examples from that account's catalog.",
+            "Your own list depends on your country and your account, and so do the currency and the per-method minimum. PayPal itself is an option only where it is offered and where your account meets its requirements; the help pages treat it as one method among others, not as a promise."
+          ],
+          "sources": [
+            {
+              "title": "AttaPoll Help",
+              "url": "https://attapoll.com/en-us/help/"
+            },
+            {
+              "title": "AttaPoll Terms and Conditions",
+              "url": "https://attapoll.com/en-us/terms-and-conditions/"
+            },
+            {
+              "title": "AttaPoll on Google Play",
+              "url": "https://play.google.com/store/apps/details?id=com.requapp.requ&hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Requesting a payment to the correct account",
+          "paragraphs": [
+            "Check the receiving details carefully before confirming a request. The PayPal address can differ from the email you use to log into AttaPoll, but the terms require the payment account to belong to you. Confirm that the address is correct and that your account meets the payment provider's current requirements."
+          ],
+          "sources": [
+            {
+              "title": "AttaPoll Help",
+              "url": "https://attapoll.com/en-us/help/"
+            },
+            {
+              "title": "AttaPoll Terms and Conditions",
+              "url": "https://attapoll.com/en-us/terms-and-conditions/"
+            }
+          ]
+        },
+        {
+          "heading": "Pending, failed and completed payments mean different things",
+          "paragraphs": [
+            "The help page's 72-hour figure concerns sending a payment. Check the request's status and details in Balance. A later transfer from PayPal to a bank has its own timing, and the help does not present 72 hours as a support response deadline.",
+            "For a failed PayPal request, the help lists an unverified account or restrictions on receiving payments among the possible causes. Check the error and ask PayPal about the requirements that apply to your account. For a payment marked complete but not visible at the destination, compare the address and the PayPal transaction ID in the payment details, then contact the relevant support team."
+          ],
+          "sources": [
+            {
+              "title": "AttaPoll Help",
+              "url": "https://attapoll.com/en-us/help/"
+            },
+            {
+              "title": "AttaPoll Help (Canada)",
+              "url": "https://attapoll.com/en-ca/help/"
+            }
+          ]
+        },
+        {
+          "heading": "Getting help with a missing payment",
+          "paragraphs": [
+            "When a payment is late or wrong, the route is Settings > Help > Payments. A useful message names the payment, the date, the method and the status — never your password or any access code.",
+            "If you have not installed AttaPoll yet, you can use the invitation link below and code cgfky. The official help allows code entry in Settings within seven days of registration, provided no referral has already been applied. Check the current eligibility rules and any incentive in your account."
+          ],
+          "source": {
+            "title": "AttaPoll Help",
+            "url": "https://attapoll.com/en-us/help/"
+          },
+          "cta": {
+            "label": "Download AttaPoll with code cgfky",
+            "url": "https://attapoll.app/join/cgfky",
+            "sponsored": true
+          }
+        }
+      ],
+      "steps": [
+        "Open the Balance screen.",
+        "Choose one of the payment methods offered in your account.",
+        "Check the minimum and the currency for that method.",
+        "Confirm the destination is your own account and meets the provider's requirements.",
+        "Submit the withdrawal request.",
+        "Open the payment record in Balance, check its status and details, and verify receipt in the receiving account."
+      ],
+      "stepsSectionIndex": 2,
+      "pros": [
+        "The minimum and the methods are shown in your own account before you request",
+        "Payments are tracked in the app with a status and details"
+      ],
+      "cons": [
+        "Minimums, currency and the method catalog vary by country and account",
+        "Provider requirements can cause a request to fail; a completed status still needs checking against the receiving account"
+      ],
+      "faq": [
+        {
+          "q": "What is the minimum AttaPoll cash out?",
+          "a": "There is no single global minimum. It depends on your country and payment method, and the app shows it for your account when you request a withdrawal."
+        },
+        {
+          "q": "Can I use PayPal outside the United States?",
+          "a": "Only where PayPal is offered and where your account meets its requirements. The methods list in your own app is the one that counts."
+        },
+        {
+          "q": "How long does an AttaPoll payment take?",
+          "a": "The help says sending a payment can take up to 72 hours. That covers the send, not the rest of the chain to your bank."
+        },
+        {
+          "q": "Is a balance screenshot proof of payment?",
+          "a": "No. The example's USD 2.52 is an accumulated balance. To verify a payment, check its transaction record and receipt through the chosen payment method."
+        }
+      ],
+      "verdict": "Check the minimum and currency for the method available in your account, enter your own receiving details and follow the payment record. If the status or receipt does not match what you expect, use the transaction details and the appropriate support channel. The published 72-hour window concerns sending the payment.",
+      "imageKey": "attapoll-carteira",
+      "imageAlt": "AttaPoll balance screen in a Portuguese interface showing USD 2.52 and a withdrawal button",
+      "caption": "Example account with a Portuguese interface and USD amounts. Currency, payment methods and withdrawal minimums vary by country and account. This screen is not a withdrawal receipt.",
+      "imageWide": false,
+      "secondImage": {
+        "key": "attapoll-metodos",
+        "alt": "Payment method picker showing PayPal, Revolut and Brazilian gift cards in a Portuguese interface",
+        "caption": "Portuguese interface from the same example account, whose balance screens use USD. The methods and stores shown are that account's catalog; check your own app for yours. Currency, payment methods and withdrawal minimums vary by country and account.",
+        "wide": false
+      },
+      "sources": [
+        {
+          "title": "AttaPoll Help",
+          "url": "https://attapoll.com/en-us/help/"
+        },
+        {
+          "title": "AttaPoll Terms and Conditions",
+          "url": "https://attapoll.com/en-us/terms-and-conditions/"
+        },
+        {
+          "title": "AttaPoll on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.requapp.requ&hl=en"
+        },
+        {
+          "title": "AttaPoll Help (Canada)",
+          "url": "https://attapoll.com/en-ca/help/"
+        },
+        {
+          "title": "AttaPoll en Google Play (ficha en español)",
+          "url": "https://play.google.com/store/apps/details?id=com.requapp.requ&hl=es"
+        }
+      ],
+      "relatedIds": [
+        "attapoll",
+        "attapoll-jogos",
+        "attapoll-convite"
+      ],
+      "tables": [
+        {
+          "heading": "Methods shown in the Portuguese-language example",
+          "columns": [
+            "Method",
+            "What the screenshot shows",
+            "What to check in your account"
+          ],
+          "rows": [
+            [
+              "PayPal",
+              "A payment option in the example account",
+              "Whether it is offered to you, your own PayPal address, and the minimum"
+            ],
+            [
+              "Revolut",
+              "Another option in the same account",
+              "Your eligibility and the minimum shown in your account"
+            ],
+            [
+              "Gift cards",
+              "A catalog of gift cards for the Brazilian market",
+              "Which stores, minimum amounts and redemption rules apply to you"
+            ]
+          ],
+          "afterSectionIndex": 1
+        },
+        {
+          "heading": "How to read a payment status",
+          "columns": [
+            "Status",
+            "Meaning to check",
+            "Next action"
+          ],
+          "rows": [
+            [
+              "Pending",
+              "The request is being processed",
+              "Check the details and elapsed time against the help guidance; use payment support if the delay continues"
+            ],
+            [
+              "Failed",
+              "The request was refused",
+              "Read the message and check the method's requirements (for example, PayPal verification)"
+            ],
+            [
+              "Complete",
+              "The app records the payment as sent",
+              "Compare the address and the transaction ID with your destination account, and contact support if needed"
+            ]
+          ],
+          "afterSectionIndex": 3
+        }
+      ]
+    },
+    {
+      "id": "attapoll-jogos",
+      "app": "attapoll",
+      "category": "rewards",
+      "slug": "attapoll-games-rewards",
+      "title": "AttaPoll Games: How Milestones and Rewards Work",
+      "description": "See how AttaPoll game offers work, from levels and deadlines to purchase milestones. Learn what advertised totals mean and how to check a missing reward.",
+      "intro": "AttaPoll game offers list milestones such as reaching a level or completing a purchase. A reward depends on meeting the offer's conditions and having the completion validated. The headline total advertises the offer; it does not show money already credited to your balance. The supplied screens illustrate how to read the milestones and deadline.",
+      "sections": [
+        {
+          "heading": "Advertised game totals are not a credited balance",
+          "paragraphs": [
+            "AttaPoll's official games page confirms that games are available alongside surveys and tasks. The supplied list shows two offers with advertised totals, milestone counts and deadlines. Check the details of the actual offer in your account before starting.",
+            "The example account uses a Portuguese interface and USD amounts. Merge Restaurant lists USD 15.17 and 10 milestones; Twisted Fates: Merge and Story lists USD 18.41 and 16 milestones. Both show a 30-day completion window. The screenshot does not show those totals being paid, and the partial details do not let us verify a complete sum of every milestone. Currency, payment methods and withdrawal minimums vary by country and account."
+          ],
+          "sources": [
+            {
+              "title": "Get Paid to Test and Play Games with AttaPoll",
+              "url": "https://attapoll.com/en-us/get-paid-to-test-and-play-games-with-attapoll/"
+            },
+            {
+              "title": "AttaPoll on Google Play",
+              "url": "https://play.google.com/store/apps/details?id=com.requapp.requ&hl=en"
+            },
+            {
+              "title": "AttaPoll Terms and Conditions",
+              "url": "https://attapoll.com/en-us/terms-and-conditions/"
+            }
+          ]
+        },
+        {
+          "heading": "Read each level and purchase milestone separately",
+          "paragraphs": [
+            "Opening an offer shows its milestones. The Twisted Fates details in the example listed rewards per level — USD 0.05 at level 5, USD 0.08 at level 7 and USD 0.11 at level 9 — plus a milestone for buying the starter pack, with an advertised reward of USD 1.30. The bottom of that screen is cut off, so this is not the full list.",
+            "USD 1.30 is the advertised reward for buying the starter pack. Its price is not shown, so the screenshot does not let you compare reward with cost. The level rewards and the purchase milestone are separate entries; read each entry's full conditions to understand what it requires."
+          ],
+          "source": {
+            "title": "AttaPoll Terms and Conditions",
+            "url": "https://attapoll.com/en-us/terms-and-conditions/"
+          }
+        },
+        {
+          "heading": "Check the deadline and costs before starting",
+          "paragraphs": [
+            "The 30-day window is shown for these two offers. Read your chosen offer's deadline, installation conditions and eligibility before spending time on it. If a milestone involves a purchase, compare the actual price with the advertised reward. Spending more than the reward leaves a cost to cover even if that milestone is accepted."
+          ],
+          "source": {
+            "title": "AttaPoll Terms and Conditions",
+            "url": "https://attapoll.com/en-us/terms-and-conditions/"
+          }
+        },
+        {
+          "heading": "What to check when a game reward is missing",
+          "paragraphs": [
+            "The terms say rewards depend on verified completion. For third-party activities, the provider must confirm that you met the requirements before AttaPoll can credit the reward. If a game milestone is missing, review the offer, keep useful records of your progress and use the help available in the app. Identify the game and milestone when describing the issue.",
+            "The help page's 72-hour payment window concerns sending payments, rather than validating game milestones. The official pages used for this guide do not specify one validation deadline for every game offer. Check the timing and instructions in the offer itself and ask support if needed."
+          ],
+          "sources": [
+            {
+              "title": "AttaPoll Terms and Conditions",
+              "url": "https://attapoll.com/en-us/terms-and-conditions/"
+            },
+            {
+              "title": "AttaPoll Help",
+              "url": "https://attapoll.com/en-us/help/"
+            }
+          ]
+        },
+        {
+          "heading": "A practical way to assess a game offer",
+          "paragraphs": [
+            "Use the steps below to review an offer before committing time or money. If you decide to install AttaPoll, the invitation button uses code cgfky. You can also enter it in Settings within seven days of registering if no referral has already been applied; any incentive remains subject to the program's terms."
+          ],
+          "sources": [
+            {
+              "title": "Get Paid to Test and Play Games with AttaPoll",
+              "url": "https://attapoll.com/en-us/get-paid-to-test-and-play-games-with-attapoll/"
+            },
+            {
+              "title": "AttaPoll Terms and Conditions",
+              "url": "https://attapoll.com/en-us/terms-and-conditions/"
+            },
+            {
+              "title": "AttaPoll Help",
+              "url": "https://attapoll.com/en-us/help/"
+            }
+          ],
+          "cta": {
+            "label": "Download AttaPoll with code cgfky",
+            "url": "https://attapoll.app/join/cgfky",
+            "sponsored": true
+          }
+        }
+      ],
+      "steps": [
+        "Open the game offer in the app and read its page before installing anything.",
+        "List each milestone and its advertised reward.",
+        "Check the offer's deadline, installation rules and eligibility conditions.",
+        "Identify any purchase milestones and find the real price before deciding.",
+        "Track your progress and the accepted balance as milestones validate."
+      ],
+      "stepsSectionIndex": 4,
+      "pros": [
+        "The supplied offers show rewards, milestone counts and a deadline to review before starting",
+        "Games add another activity alongside surveys and tasks"
+      ],
+      "cons": [
+        "Conditions, eligibility, deadlines and availability depend on the offer",
+        "Purchase milestones involve a real cost, and rewards still depend on validated completion"
+      ],
+      "faq": [
+        {
+          "q": "Does the advertised total mean I have already earned it?",
+          "a": "No. It is the offer's advertised total, not a payment record. Whether an installation or any other action earns a reward depends on the listed conditions and validation. Check the amount actually credited to your account."
+        },
+        {
+          "q": "Do AttaPoll games require purchases?",
+          "a": "It depends on the offer: the example shows a purchase milestone, but whether a purchase is required for other rewards is written in each offer's own conditions."
+        },
+        {
+          "q": "How much does the starter pack cost?",
+          "a": "The screenshot shows only the USD 1.30 reward for that milestone; the pack's price is not displayed. Check it in the offer before buying."
+        },
+        {
+          "q": "What should I do if a game reward is not credited?",
+          "a": "Review the offer's conditions, keep useful records of your progress and use the available in-app help with the game and milestone details. The official sources used here do not set one validation deadline for all games."
+        }
+      ],
+      "verdict": "Read the milestones, deadline and purchase conditions before deciding how much time or money an offer deserves. Track the rewards actually credited to your account and keep the offer details if you need to query a missing milestone.",
+      "imageKey": "attapoll-jogos",
+      "imageAlt": "AttaPoll games list in a Portuguese interface showing advertised totals in USD, milestone counts and deadlines",
+      "caption": "Example account with a Portuguese interface and USD amounts. Currency, payment methods and withdrawal minimums vary by country and account. The advertised totals are offers, not a credited balance.",
+      "imageWide": false,
+      "secondImage": {
+        "key": "attapoll-jogo-metas",
+        "alt": "Twisted Fates offer details in Portuguese listing level rewards in USD and a starter-pack purchase milestone",
+        "caption": "Portuguese interface from the same example account, whose balance screens use USD. Rewards are advertised values; the starter pack's price is not shown, and the bottom of the screen is cut off. Currency, payment methods and withdrawal minimums vary by country and account.",
+        "wide": false
+      },
+      "sources": [
+        {
+          "title": "Get Paid to Test and Play Games with AttaPoll",
+          "url": "https://attapoll.com/en-us/get-paid-to-test-and-play-games-with-attapoll/"
+        },
+        {
+          "title": "AttaPoll on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.requapp.requ&hl=en"
+        },
+        {
+          "title": "AttaPoll Terms and Conditions",
+          "url": "https://attapoll.com/en-us/terms-and-conditions/"
+        },
+        {
+          "title": "AttaPoll Help",
+          "url": "https://attapoll.com/en-us/help/"
+        }
+      ],
+      "relatedIds": [
+        "attapoll",
+        "attapoll-saque",
+        "attapoll-convite"
+      ],
+      "tables": [
+        {
+          "heading": "Two game offers in the supplied screenshot",
+          "columns": [
+            "Game",
+            "Advertised total",
+            "Listed milestones",
+            "Shown deadline"
+          ],
+          "rows": [
+            [
+              "Merge Restaurant",
+              "USD 15.17",
+              "10",
+              "30 days"
+            ],
+            [
+              "Twisted Fates: Merge and Story",
+              "USD 18.41",
+              "16",
+              "30 days"
+            ]
+          ],
+          "afterSectionIndex": 0
+        },
+        {
+          "heading": "Examples of listed Twisted Fates milestones",
+          "columns": [
+            "Milestone",
+            "Advertised reward",
+            "What remains to check"
+          ],
+          "rows": [
+            [
+              "Reach level 5",
+              "USD 0.05",
+              "The offer's full conditions and the validation step"
+            ],
+            [
+              "Reach level 7",
+              "USD 0.08",
+              "The same checks as any level milestone"
+            ],
+            [
+              "Reach level 9",
+              "USD 0.11",
+              "The same checks as any level milestone"
+            ],
+            [
+              "Buy the starter pack",
+              "USD 1.30",
+              "The actual purchase price and full conditions; the screenshot does not show the pack's cost"
+            ]
+          ],
+          "afterSectionIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "attapoll-convite",
+      "app": "attapoll",
+      "category": "rewards",
+      "slug": "attapoll-referral-code",
+      "title": "AttaPoll Referral Code cgfky: How to Use It",
+      "description": "Find where to enter AttaPoll referral code cgfky, the seven-day deadline and country bonus rules. See what the 10% reward means before you sign up.",
+      "intro": "You can enter AttaPoll referral code cgfky in Settings within seven days of registration, according to the official help. Only one code can be applied to an account, and it cannot be replaced afterward. Any incentive depends on the program's current terms, your country and your eligibility.",
+      "sections": [
+        {
+          "heading": "Where to enter code cgfky and the seven-day limit",
+          "paragraphs": [
+            "Go to Settings > Enter Referral Code within seven days of creating your account. If a referral has already been applied through a link or a code, you cannot add another one or change it.",
+            "The supplied screenshot shows the inviter's page: code CGFKY and a 10% offer for the person inviting others. The interface is Portuguese, and the same account's other screens show USD amounts. Currency, payment methods and withdrawal minimums vary by country and account. This image does not show a welcome bonus received by a new user."
+          ],
+          "sources": [
+            {
+              "title": "AttaPoll Help",
+              "url": "https://attapoll.com/en-us/help/"
+            },
+            {
+              "title": "AttaPoll Terms and Conditions",
+              "url": "https://attapoll.com/en-us/terms-and-conditions/"
+            }
+          ]
+        },
+        {
+          "heading": "Country bonus examples are not a guaranteed cgfky offer",
+          "paragraphs": [
+            "The referral-program page displayed the amounts below in its US, GB, AU and CA tabs on 15 November 2026. The table retains each tab's currency symbols; it does not convert the amounts to a single currency.",
+            "These are published country examples, rather than a confirmed offer for cgfky. The full referral terms allow incentives to be reduced or withheld for cross-country invitations, including the new user's incentive. Check the current conditions and any offer shown in your account before expecting a bonus."
+          ],
+          "sources": [
+            {
+              "title": "AttaPoll Referral Program",
+              "url": "https://attapoll.com/en-us/ambassadors/"
+            },
+            {
+              "title": "AttaPoll Terms and Conditions",
+              "url": "https://attapoll.com/en-us/terms-and-conditions/"
+            }
+          ]
+        },
+        {
+          "heading": "Who receives the 10% referral reward",
+          "paragraphs": [
+            "The 10% in the program — and in the example screenshot — belongs to the referrer, the person who invites. It applies to eligible completed surveys by their invitees. It is not an extra 10% for the new user, not a percentage of games, and not a share of everything an invitee earns.",
+            "The help describes a daily credit subject to a minimum. Small amounts can accumulate until they qualify to be added to the balance. This crediting threshold is separate from the minimum needed to withdraw your balance."
+          ],
+          "sources": [
+            {
+              "title": "AttaPoll Referral Program",
+              "url": "https://attapoll.com/en-us/ambassadors/"
+            },
+            {
+              "title": "AttaPoll Help",
+              "url": "https://attapoll.com/en-us/help/"
+            },
+            {
+              "title": "AttaPoll Terms and Conditions",
+              "url": "https://attapoll.com/en-us/terms-and-conditions/"
+            }
+          ]
+        },
+        {
+          "heading": "Why the code field or a referral bonus may be missing",
+          "paragraphs": [
+            "If the code field is missing, the official help advises checking that you have the latest app version. A code already applied cannot be replaced, and the entry window closes seven days after registration. An installation linked to another campaign may also affect whether a referral qualifies. The program's published eligibility is 18 or over in a supported country, with account-quality and country checks. Reinstalling does not remove the one-code rule."
+          ],
+          "sources": [
+            {
+              "title": "AttaPoll Help",
+              "url": "https://attapoll.com/en-us/help/"
+            },
+            {
+              "title": "AttaPoll Terms and Conditions",
+              "url": "https://attapoll.com/en-us/terms-and-conditions/"
+            }
+          ]
+        },
+        {
+          "heading": "Check eligibility and any referral credit in your account",
+          "paragraphs": [
+            "Check the app's response when you enter a code and any reward actually credited to your account. The Invite Friends page shows your own code and incentives for inviting other people; seeing your own code there does not establish that cgfky was applied to your registration or that you received a welcome bonus. Automatic association through this link was not tested for this guide.",
+            "The related guides explain the surveys, payment requests and game offers you may use after joining. If you choose to join through an invitation, you can use the link below and code cgfky, subject to the program's current conditions."
+          ],
+          "cta": {
+            "label": "Download AttaPoll with code cgfky",
+            "url": "https://attapoll.app/join/cgfky",
+            "sponsored": true
+          },
+          "sources": [
+            {
+              "title": "AttaPoll Terms and Conditions",
+              "url": "https://attapoll.com/en-us/terms-and-conditions/"
+            },
+            {
+              "title": "AttaPoll Help",
+              "url": "https://attapoll.com/en-us/help/"
+            }
+          ]
+        }
+      ],
+      "steps": [
+        "Use the invitation link in this guide if you want to download AttaPoll with code cgfky.",
+        "Review the current terms and register your account.",
+        "Check any existing referral and the app's messages before trying to enter a code.",
+        "If the field is available and allowed for you, enter cgfky within seven days of registering.",
+        "Read the app's response and check any credited reward instead of assuming a welcome bonus."
+      ],
+      "stepsSectionIndex": 0,
+      "pros": [
+        "The entry path and the seven-day deadline are documented in the official help",
+        "The one-code rule and the conditions affecting referral incentives are published"
+      ],
+      "cons": [
+        "The seven-day window is short, and the code cannot be swapped once applied",
+        "What a code grants varies by country and campaign, and cross-country invites may carry no incentive"
+      ],
+      "faq": [
+        {
+          "q": "Where do I enter an AttaPoll referral code?",
+          "a": "In Settings, choose Enter Referral Code within seven days of registering. Only one referral code can be applied to an account."
+        },
+        {
+          "q": "Can I change a referral code already applied?",
+          "a": "No. Once a referral code has been applied, it cannot be replaced by another."
+        },
+        {
+          "q": "Can I enter cgfky more than seven days after joining?",
+          "a": "Not per the official help: the window for entering a referral code is the first seven days after registration."
+        },
+        {
+          "q": "Does cgfky guarantee the same bonus in every country?",
+          "a": "No. Bonuses are published per country, cross-country invites can carry a reduced or no incentive, and the app decides the offer that applies to your account."
+        }
+      ],
+      "verdict": "If you choose to use cgfky, enter it in Settings within your first seven days and check the app's response. Read the conditions for your account before expecting a welcome reward. The published 10% rewards the referrer for eligible surveys completed by invited users, subject to the program's rules.",
+      "imageKey": "attapoll-convite",
+      "imageAlt": "AttaPoll invite screen in a Portuguese interface showing the code CGFKY and a 10% referral offer for the inviter",
+      "caption": "Portuguese interface from the same example account, whose balance screens use USD. Currency, payment methods and withdrawal minimums vary by country and account. The screen shows the inviter's side; it is not proof of a new-user bonus.",
+      "imageWide": false,
+      "sources": [
+        {
+          "title": "AttaPoll Help",
+          "url": "https://attapoll.com/en-us/help/"
+        },
+        {
+          "title": "AttaPoll Terms and Conditions",
+          "url": "https://attapoll.com/en-us/terms-and-conditions/"
+        },
+        {
+          "title": "AttaPoll Referral Program",
+          "url": "https://attapoll.com/en-us/ambassadors/"
+        }
+      ],
+      "relatedIds": [
+        "attapoll",
+        "attapoll-saque",
+        "attapoll-jogos"
+      ],
+      "tables": [
+        {
+          "heading": "Published referral bonus examples by country",
+          "columns": [
+            "Country tab",
+            "Referrer amount shown",
+            "New-user amount shown"
+          ],
+          "rows": [
+            [
+              "US",
+              "$0.50",
+              "$0.50"
+            ],
+            [
+              "GB",
+              "£0.40",
+              "£0.40"
+            ],
+            [
+              "AU",
+              "$1.00",
+              "$1.00"
+            ],
+            [
+              "CA",
+              "$0.50",
+              "$0.50"
+            ]
+          ],
+          "afterSectionIndex": 1
+        }
+      ]
+    }
+  ],
   "es": [
     {
       "id": "lens",
@@ -6072,7 +6907,860 @@ export const articles:Record<Locale,Article[]>={
       "imageAlt": "Panel del enlace de referido de Freecash con identificador 3C7GKG",
       "caption": "Esta captura guardada muestra un enlace de referido, no un comprobante de retiro.",
       "modifiedDate": "2026-11-15"
-    }  ],
+    },
+    {
+      "id": "attapoll",
+      "app": "attapoll",
+      "category": "rewards",
+      "slug": "attapoll-como-funciona-encuestas",
+      "title": "AttaPoll: cómo funciona y por qué faltan encuestas",
+      "description": "Descubre cómo funciona AttaPoll, qué significan las estrellas y por qué no aparecen encuestas. Revisa ejemplos de la app antes de empezar a usarla.",
+      "intro": "AttaPoll ofrece recompensas por encuestas que el proveedor acepta como completas, además de juegos y tareas. Las ofertas pueden mostrar un importe, una duración estimada y estrellas para ayudarte a elegir. Aquí puedes ver cómo leer esos datos, qué diferencia hay entre una lista vacía y una descalificación, y cómo empezar con expectativas realistas.",
+      "sections": [
+        {
+          "heading": "Qué puedes hacer en AttaPoll",
+          "paragraphs": [
+            "ATTAPOLL LTD publica AttaPoll, que figura en Google Play como una app de encuestas pagadas. Las empresas buscan respuestas de públicos concretos y la app relaciona los estudios con tu perfil. También ofrece juegos y tareas, cada uno con sus condiciones. Esta guía se centra en las encuestas; las relacionadas explican los juegos, los pagos y las invitaciones.",
+            "Las capturas muestran una cuenta de ejemplo con la interfaz en portugués e importes en USD. El idioma, la moneda y las ofertas de tu cuenta pueden ser diferentes. Los métodos de pago y los mínimos de retiro también varían según el país y la cuenta. Usa las imágenes para entender la pantalla y consulta los valores de tu propia app."
+          ],
+          "sources": [
+            {
+              "title": "AttaPoll en Google Play",
+              "url": "https://play.google.com/store/apps/details?id=com.requapp.requ&hl=es"
+            },
+            {
+              "title": "Cobra por probar y jugar con AttaPoll",
+              "url": "https://attapoll.com/es-es/cobra-por-probar-y-jugar-con-attapoll/"
+            },
+            {
+              "title": "Ayuda de AttaPoll",
+              "url": "https://attapoll.com/es-es/ayuda/"
+            }
+          ]
+        },
+        {
+          "heading": "Cómo leer el importe, la duración y las estrellas",
+          "paragraphs": [
+            "Revisa la recompensa anunciada, la duración estimada y las estrellas cuando aparezcan en la oferta. En la cuenta de ejemplo, un estudio de GMR Inteligência de Mercado mostraba USD 0,12, una estimación de 12 minutos y 2 estrellas. Otro de CPX Research ofrecía USD 0,39, con 8 minutos estimados y 3 estrellas. Son ofertas concretas, no ganancias habituales.",
+            "Las estrellas, según la página de ayuda de AttaPoll, indican la probabilidad relativa de que termines esa encuesta. No son una nota de calidad del estudio ni una valoración tuya como usuario: tres estrellas sugieren más posibilidades de terminar que una, y nada más.",
+            "Otra tarjeta indicaba USD 0,02 por 11 preguntas bajo el rótulo en portugués Desbloquear inquéritos, que significa desbloquear encuestas. La captura no incluye todas sus condiciones. Revisa esa tarjeta por separado, sin asumir que tiene los mismos campos o requisitos que las otras ofertas."
+          ],
+          "source": {
+            "title": "Ayuda de AttaPoll",
+            "url": "https://attapoll.com/es-es/ayuda/"
+          }
+        },
+        {
+          "heading": "Por qué no aparecen encuestas o te descalifican",
+          "paragraphs": [
+            "Una lista vacía y una descalificación ocurren en momentos distintos. La lista vacía puede indicar que no hay encuestas que encajen con tu perfil en ese momento. La descalificación llega después de empezar: el estudio puede buscar otro público, haber reunido suficientes participantes o rechazar una respuesta incorrecta a una pregunta de control.",
+            "Una oferta también puede cerrarse entre la notificación y el momento de abrirla. La ayuda oficial explica que la disponibilidad cambia, así que un día sin encuestas no demuestra que tu cuenta tenga un problema. Revisa los mensajes sobre tu perfil o verificación, mantén tus datos correctos y consulta la ayuda de la app si necesitas investigar un caso concreto."
+          ],
+          "sources": [
+            {
+              "title": "Ayuda de AttaPoll",
+              "url": "https://attapoll.com/es-es/ayuda/"
+            },
+            {
+              "title": "Ayuda de AttaPoll (México)",
+              "url": "https://attapoll.com/es-mx/ayuda/"
+            }
+          ]
+        },
+        {
+          "heading": "Cómo empezar y revisar las ofertas disponibles",
+          "paragraphs": [
+            "Antes de empezar, revisa las condiciones, tu perfil y las ofertas disponibles. Si quieres usar el código de invitación cgfky, la ayuda oficial sitúa el campo en Configuración y permite introducirlo durante los siete días posteriores al registro. Una invitación ya asociada no se puede sustituir. Cualquier incentivo depende de las condiciones del programa y de la oferta aplicable a tu cuenta."
+          ],
+          "sources": [
+            {
+              "title": "AttaPoll en Google Play",
+              "url": "https://play.google.com/store/apps/details?id=com.requapp.requ&hl=es"
+            },
+            {
+              "title": "Condiciones generales de AttaPoll",
+              "url": "https://attapoll.com/es-es/condiciones-generales/"
+            },
+            {
+              "title": "Ayuda de AttaPoll",
+              "url": "https://attapoll.com/es-es/ayuda/"
+            }
+          ]
+        },
+        {
+          "heading": "Qué hacer si una encuesta terminada no se acredita",
+          "paragraphs": [
+            "Terminar una encuesta no equivale a cobrarla. La recompensa depende de la validación: el proveedor del estudio comprueba que tu participación cumplió las reglas, y esa comprobación decide el abono. Cuando una encuesta concreta termina sin recompensa, la ruta es Ajustes > Ayuda > Encuestas, con el nombre de la encuesta y los detalles a mano.",
+            "La guía de retiro explica los mínimos y los estados del pago; la de juegos, las metas; y la de invitación, cómo usar cgfky. Si decides instalar AttaPoll, puedes usar el enlace de invitación de abajo. Comprueba el desarrollador y las condiciones vigentes en la tienda oficial antes de descargar."
+          ],
+          "sources": [
+            {
+              "title": "Ayuda de AttaPoll",
+              "url": "https://attapoll.com/es-es/ayuda/"
+            },
+            {
+              "title": "Condiciones generales de AttaPoll",
+              "url": "https://attapoll.com/es-es/condiciones-generales/"
+            }
+          ],
+          "cta": {
+            "label": "Descargar AttaPoll con el código cgfky",
+            "url": "https://attapoll.app/join/cgfky",
+            "sponsored": true
+          }
+        }
+      ],
+      "steps": [
+        "Usa el enlace de invitación de esta guía si quieres descargar AttaPoll con el código cgfky.",
+        "Comprueba el desarrollador (ATTAPOLL LTD) y las condiciones vigentes antes de instalar.",
+        "Regístrate con tus datos reales y responde las preguntas del perfil con honestidad.",
+        "Abre la pestaña de encuestas y revisa qué ofertas hay para tu cuenta.",
+        "Compara el importe, la duración estimada y las estrellas cuando aparezcan en la oferta.",
+        "Confirma qué participaciones fueron aceptadas y acreditadas, y solo después mira los requisitos de retiro."
+      ],
+      "stepsSectionIndex": 3,
+      "pros": [
+        "Las ofertas pueden mostrar el importe, la duración estimada y las estrellas antes de empezar",
+        "Encuestas, juegos y tareas son actividades distintas, cada una con sus condiciones"
+      ],
+      "cons": [
+        "La disponibilidad es irregular y las ofertas pueden cerrarse antes de abrirlas",
+        "La recompensa depende de una participación aceptada; empezar una encuesta no garantiza cobrarla"
+      ],
+      "faq": [
+        {
+          "q": "¿Cómo funciona AttaPoll?",
+          "a": "AttaPoll relaciona encuestas con tu perfil y también ofrece juegos y tareas. Antes de empezar, consulta la recompensa y los datos de duración o estrellas que aparezcan. El pago de una encuesta depende de que el proveedor acepte la participación como válida."
+        },
+        {
+          "q": "¿Por qué no me salen encuestas en AttaPoll?",
+          "a": "Puede que no haya encuestas que encajen con tu perfil en ese momento o que una oferta se haya cerrado antes de abrirla. Revisa también los mensajes sobre tu cuenta o verificación. Si persiste un problema concreto, consulta la ayuda de la app sin dar por hecha una única causa."
+        },
+        {
+          "q": "¿Qué significan las estrellas de las encuestas?",
+          "a": "Indican la probabilidad relativa de que termines esa encuesta, según la ayuda oficial. No son una nota de satisfacción ni una valoración tuya."
+        },
+        {
+          "q": "¿Terminar una encuesta garantiza recibir la recompensa?",
+          "a": "No. El proveedor valida la participación: un perfil distinto al buscado, una cuota llena o un control de atención fallido pueden dejar la encuesta sin recompensa."
+        }
+      ],
+      "verdict": "AttaPoll funciona como un puente entre tu perfil y estudios que pagan por respuestas aceptadas. Lee la tarjeta, responde con honestidad y mide por el saldo aceptado, no por el importe anunciado. El retiro, los juegos y los códigos de invitación tienen reglas propias en las guías relacionadas.",
+      "imageKey": "attapoll-pesquisas",
+      "imageAlt": "Lista de encuestas de AttaPoll con la interfaz en portugués, importes en USD, duraciones estimadas y estrellas",
+      "caption": "Cuenta de ejemplo con la interfaz en portugués e importes en USD. La moneda, los métodos de pago y los mínimos de retiro varían según el país y la cuenta.",
+      "imageWide": false,
+      "sources": [
+        {
+          "title": "Ayuda de AttaPoll",
+          "url": "https://attapoll.com/es-es/ayuda/"
+        },
+        {
+          "title": "Condiciones generales de AttaPoll",
+          "url": "https://attapoll.com/es-es/condiciones-generales/"
+        },
+        {
+          "title": "AttaPoll en Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.requapp.requ&hl=es"
+        },
+        {
+          "title": "Cobra por probar y jugar con AttaPoll",
+          "url": "https://attapoll.com/es-es/cobra-por-probar-y-jugar-con-attapoll/"
+        },
+        {
+          "title": "Ayuda de AttaPoll (México)",
+          "url": "https://attapoll.com/es-mx/ayuda/"
+        }
+      ],
+      "relatedIds": [
+        "attapoll-saque",
+        "attapoll-jogos",
+        "attapoll-convite"
+      ],
+      "tables": [
+        {
+          "heading": "Encuestas de la cuenta de ejemplo",
+          "columns": [
+            "Encuesta",
+            "Recompensa anunciada",
+            "Duración estimada",
+            "Estrellas"
+          ],
+          "rows": [
+            [
+              "GMR Inteligência de Mercado",
+              "USD 0,12",
+              "12 minutos",
+              "2"
+            ],
+            [
+              "CPX Research",
+              "USD 0,39",
+              "8 minutos",
+              "3"
+            ]
+          ],
+          "afterSectionIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "attapoll-saque",
+      "app": "attapoll",
+      "category": "rewards",
+      "slug": "como-retirar-dinero-attapoll",
+      "title": "Cómo retirar dinero de AttaPoll: PayPal y mínimos",
+      "description": "Aprende a retirar dinero de AttaPoll, consultar el mínimo para PayPal y revisar un pago pendiente. Los métodos y requisitos dependen de tu cuenta.",
+      "intro": "Para retirar dinero de AttaPoll, comprueba el saldo confirmado, el mínimo del método elegido y los datos de la cuenta de destino antes de enviar la solicitud. La ayuda oficial indica que el envío del pago puede tardar hasta 72 horas. El siguiente paso depende de si la solicitud está pendiente, ha fallado o figura como completada.",
+      "sections": [
+        {
+          "heading": "Consulta el saldo confirmado y el mínimo de retiro",
+          "paragraphs": [
+            "Empieza en la pantalla Saldo, donde se acumulan las recompensas aceptadas. Selecciona un método de pago para consultar su mínimo de retiro. Ese mínimo depende del país y del método, y puede cambiar: utiliza el importe que aparezca en tu cuenta en ese momento.",
+            "La descripción de Google Play en inglés menciona $3, mientras que la versión en español menciona €2,50. Esos importes de la tienda no establecen el mínimo de todas las cuentas. En la captura proporcionada, el saldo marca USD 2,52: muestra saldo acumulado, no un retiro completado."
+          ],
+          "sources": [
+            {
+              "title": "Condiciones generales de AttaPoll",
+              "url": "https://attapoll.com/es-es/condiciones-generales/"
+            },
+            {
+              "title": "Ayuda de AttaPoll",
+              "url": "https://attapoll.com/es-es/ayuda/"
+            },
+            {
+              "title": "AttaPoll en Google Play",
+              "url": "https://play.google.com/store/apps/details?id=com.requapp.requ&hl=es"
+            },
+            {
+              "title": "AttaPoll en Google Play (ficha en inglés)",
+              "url": "https://play.google.com/store/apps/details?id=com.requapp.requ&hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "PayPal, Revolut y tarjetas: revisa tu propio catálogo",
+          "paragraphs": [
+            "Las imágenes muestran una interfaz en portugués, un saldo en USD, las opciones PayPal y Revolut, y tarjetas de regalo para el mercado brasileño. Entre ellas aparecen Carrefour, Assaí, Casas Bahia, Renner, C&A, Centauro, Decathlon y Petz. Son ejemplos del catálogo de esa cuenta.",
+            "Tu lista depende de tu país y de tu cuenta, y lo mismo vale para la moneda y el mínimo de cada método. PayPal solo es una opción donde se ofrece y donde tu cuenta cumple sus requisitos: la ayuda lo trata como un método más, no como una promesa."
+          ],
+          "sources": [
+            {
+              "title": "Ayuda de AttaPoll",
+              "url": "https://attapoll.com/es-es/ayuda/"
+            },
+            {
+              "title": "Condiciones generales de AttaPoll",
+              "url": "https://attapoll.com/es-es/condiciones-generales/"
+            }
+          ]
+        },
+        {
+          "heading": "Cómo solicitar el pago con los datos correctos",
+          "paragraphs": [
+            "Revisa los datos de destino antes de confirmar la solicitud. La dirección de PayPal puede ser distinta del correo con el que inicias sesión en AttaPoll, pero las condiciones exigen que la cuenta de pago te pertenezca. Comprueba que la dirección sea correcta y que tu cuenta cumpla los requisitos vigentes del proveedor."
+          ],
+          "sources": [
+            {
+              "title": "Ayuda de AttaPoll",
+              "url": "https://attapoll.com/es-es/ayuda/"
+            },
+            {
+              "title": "Condiciones generales de AttaPoll",
+              "url": "https://attapoll.com/es-es/condiciones-generales/"
+            }
+          ]
+        },
+        {
+          "heading": "Pago pendiente, fallido o completado",
+          "paragraphs": [
+            "Las 72 horas de la ayuda corresponden al envío del pago. Consulta el estado y los detalles de la solicitud en Saldo. Una transferencia posterior de PayPal al banco tiene sus propios plazos, y la ayuda no presenta esas 72 horas como un plazo de respuesta del soporte.",
+            "Para una solicitud fallida de PayPal, la ayuda menciona una cuenta sin verificar o restricciones para recibir pagos entre las posibles causas. Revisa el error y consulta a PayPal qué requisitos se aplican a tu cuenta. Si un pago figura como completado pero no aparece en el destino, compara la dirección y el identificador de transacción de PayPal de los detalles del pago, y contacta con el soporte correspondiente."
+          ],
+          "sources": [
+            {
+              "title": "Ayuda de AttaPoll",
+              "url": "https://attapoll.com/es-es/ayuda/"
+            },
+            {
+              "title": "Ayuda de AttaPoll (México)",
+              "url": "https://attapoll.com/es-mx/ayuda/"
+            }
+          ]
+        },
+        {
+          "heading": "Dónde pedir ayuda si no recibes el dinero",
+          "paragraphs": [
+            "Cuando un pago se demora o sale mal, la ruta es Ajustes > Ayuda > Pagos. Un mensaje útil nombra el pago, la fecha, el método y el estado — nunca tu contraseña ni ningún código de acceso.",
+            "Si todavía no has instalado AttaPoll, puedes usar el enlace de invitación de abajo y el código cgfky. La ayuda oficial permite introducirlo en Configuración durante los siete días posteriores al registro, siempre que no haya otra invitación aplicada. Revisa las condiciones vigentes y cualquier incentivo en tu cuenta."
+          ],
+          "source": {
+            "title": "Ayuda de AttaPoll",
+            "url": "https://attapoll.com/es-es/ayuda/"
+          },
+          "cta": {
+            "label": "Descargar AttaPoll con el código cgfky",
+            "url": "https://attapoll.app/join/cgfky",
+            "sponsored": true
+          }
+        }
+      ],
+      "steps": [
+        "Abre la pantalla Saldo.",
+        "Elige uno de los métodos de pago que ofrece tu cuenta.",
+        "Consulta el mínimo y la moneda de ese método.",
+        "Confirma que el destino es una cuenta tuya que cumple los requisitos del proveedor.",
+        "Envía la solicitud de retiro.",
+        "Abre el registro del pago en Saldo, consulta el estado y los detalles, y comprueba la recepción en la cuenta de destino."
+      ],
+      "stepsSectionIndex": 2,
+      "pros": [
+        "El mínimo y los métodos se ven en tu propia cuenta antes de solicitar",
+        "Los pagos se siguen dentro de la app con estado y detalles"
+      ],
+      "cons": [
+        "Mínimos, moneda y catálogo varían por país y cuenta",
+        "Los requisitos del proveedor pueden causar fallos; un estado completado todavía debe contrastarse con la cuenta de destino"
+      ],
+      "faq": [
+        {
+          "q": "¿Cuál es el mínimo para retirar dinero de AttaPoll?",
+          "a": "No hay un mínimo global único: depende del país y del método de pago, y la app lo muestra en tu cuenta al solicitar el retiro."
+        },
+        {
+          "q": "¿Se puede cobrar por PayPal en cualquier país?",
+          "a": "Solo donde PayPal se ofrece y donde tu cuenta cumple sus requisitos. La lista de métodos de tu propia app es la que cuenta."
+        },
+        {
+          "q": "¿Cuánto tarda un pago de AttaPoll?",
+          "a": "La ayuda indica que el envío puede tardar hasta 72 horas. Eso cubre el envío, no toda la cadena hasta tu banco."
+        },
+        {
+          "q": "¿Una captura del saldo demuestra que AttaPoll pagó?",
+          "a": "No. Los USD 2,52 del ejemplo son saldo acumulado. Para comprobar un pago, revisa el registro de la operación y su recepción mediante el método elegido."
+        }
+      ],
+      "verdict": "Consulta el mínimo y la moneda del método disponible en tu cuenta, introduce tus propios datos de destino y sigue el registro del pago. Si el estado o la recepción no coinciden con lo esperado, utiliza los detalles de la transacción y el canal de ayuda correspondiente. Las 72 horas publicadas se refieren al envío del pago.",
+      "imageKey": "attapoll-carteira",
+      "imageAlt": "Pantalla de la cartera de AttaPoll en portugués con un saldo de USD 2,52 y el botón de retiro",
+      "caption": "Cuenta de ejemplo con la interfaz en portugués e importes en USD. La moneda, los métodos de pago y los mínimos de retiro varían según el país y la cuenta. Esta pantalla no es un comprobante de retiro.",
+      "imageWide": false,
+      "secondImage": {
+        "key": "attapoll-metodos",
+        "alt": "Selección de PayPal, Revolut y tarjetas de regalo brasileñas en una interfaz en portugués",
+        "caption": "Interfaz en portugués de la misma cuenta de ejemplo, cuyas pantallas de saldo usan USD. Los métodos y tiendas que se ven son el catálogo de esa cuenta; revisa los tuyos en tu propia app. La moneda, los métodos de pago y los mínimos de retiro varían según el país y la cuenta.",
+        "wide": false
+      },
+      "sources": [
+        {
+          "title": "Ayuda de AttaPoll",
+          "url": "https://attapoll.com/es-es/ayuda/"
+        },
+        {
+          "title": "Condiciones generales de AttaPoll",
+          "url": "https://attapoll.com/es-es/condiciones-generales/"
+        },
+        {
+          "title": "AttaPoll en Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.requapp.requ&hl=es"
+        },
+        {
+          "title": "Ayuda de AttaPoll (México)",
+          "url": "https://attapoll.com/es-mx/ayuda/"
+        },
+        {
+          "title": "AttaPoll en Google Play (ficha en inglés)",
+          "url": "https://play.google.com/store/apps/details?id=com.requapp.requ&hl=en"
+        }
+      ],
+      "relatedIds": [
+        "attapoll",
+        "attapoll-jogos",
+        "attapoll-convite"
+      ],
+      "tables": [
+        {
+          "heading": "Métodos visibles en la cuenta de ejemplo",
+          "columns": [
+            "Método",
+            "Qué muestra la captura",
+            "Qué debes comprobar"
+          ],
+          "rows": [
+            [
+              "PayPal",
+              "Una opción de pago en la cuenta de ejemplo",
+              "Si te la ofrece a ti, tu propia dirección de PayPal y el mínimo"
+            ],
+            [
+              "Revolut",
+              "Otra opción en la misma cuenta",
+              "Tu elegibilidad y el mínimo que figura en tu cuenta"
+            ],
+            [
+              "Tarjetas de regalo",
+              "Un catálogo de tarjetas de regalo para el mercado brasileño",
+              "Qué tiendas, importes mínimos y reglas de canje te aplican a ti"
+            ]
+          ],
+          "afterSectionIndex": 1
+        },
+        {
+          "heading": "Qué revisar según el estado del pago",
+          "columns": [
+            "Estado",
+            "Qué indica",
+            "Siguiente paso"
+          ],
+          "rows": [
+            [
+              "Pendiente",
+              "La solicitud está en proceso",
+              "Revisa los detalles y el tiempo transcurrido según la ayuda; consulta al soporte si la demora continúa"
+            ],
+            [
+              "Fallido",
+              "La solicitud fue rechazada",
+              "Lee el mensaje y comprueba los requisitos del método (por ejemplo, la verificación de PayPal)"
+            ],
+            [
+              "Completado",
+              "La app registró el envío",
+              "Compara la dirección y el ID de la transacción con tu cuenta de destino, y contacta al soporte si hace falta"
+            ]
+          ],
+          "afterSectionIndex": 3
+        }
+      ]
+    },
+    {
+      "id": "attapoll-jogos",
+      "app": "attapoll",
+      "category": "rewards",
+      "slug": "attapoll-juegos-recompensas",
+      "title": "Juegos de AttaPoll: metas, plazos y recompensas",
+      "description": "Conoce cómo funcionan los juegos de AttaPoll, sus metas, plazos y compras. Aprende a distinguir el total anunciado de las recompensas ya confirmadas.",
+      "intro": "Las ofertas de juegos de AttaPoll incluyen metas, como alcanzar un nivel o realizar una compra. Para recibir una recompensa debes cumplir las condiciones y obtener la validación correspondiente. El total anunciado describe la oferta, pero no es dinero ya acreditado en tu saldo. Las capturas muestran cómo revisar las metas y el plazo.",
+      "sections": [
+        {
+          "heading": "El total anunciado no es dinero ya acreditado",
+          "paragraphs": [
+            "La página oficial de juegos de AttaPoll confirma esta actividad junto con las encuestas y las tareas. En la lista proporcionada aparecen dos ofertas con un total anunciado, un número de metas y un plazo. Consulta siempre los detalles de la oferta disponible en tu cuenta antes de empezar.",
+            "La cuenta de ejemplo tiene la interfaz en portugués e importes en USD. Merge Restaurant indica USD 15,17 y 10 metas; Twisted Fates: Merge and Story, USD 18,41 y 16 metas. Ambas muestran un plazo de 30 días. La captura no demuestra que esos totales se hayan cobrado, y los detalles parciales no permiten comprobar la suma completa de todas las metas. La moneda, los métodos de pago y los mínimos de retiro varían según el país y la cuenta."
+          ],
+          "sources": [
+            {
+              "title": "Cobra por probar y jugar con AttaPoll",
+              "url": "https://attapoll.com/es-es/cobra-por-probar-y-jugar-con-attapoll/"
+            },
+            {
+              "title": "AttaPoll en Google Play",
+              "url": "https://play.google.com/store/apps/details?id=com.requapp.requ&hl=es"
+            },
+            {
+              "title": "Condiciones generales de AttaPoll",
+              "url": "https://attapoll.com/es-es/condiciones-generales/"
+            }
+          ]
+        },
+        {
+          "heading": "Lee por separado las metas de nivel y las compras",
+          "paragraphs": [
+            "Al abrir una oferta se ven sus metas. El detalle de Twisted Fates del ejemplo listaba recompensas por nivel —USD 0,05 al nivel 5, USD 0,08 al nivel 7 y USD 0,11 al nivel 9— y una meta por comprar el paquete inicial, con una recompensa anunciada de USD 1,30. La parte inferior de esa pantalla está cortada: esta no es la lista completa.",
+            "Los USD 1,30 son la recompensa anunciada por comprar el paquete inicial. Su precio no aparece, por lo que la captura no permite comparar la recompensa con el coste. Las metas de nivel y la de compra son entradas separadas: lee las condiciones completas de cada una para saber qué exige."
+          ],
+          "source": {
+            "title": "Condiciones generales de AttaPoll",
+            "url": "https://attapoll.com/es-es/condiciones-generales/"
+          }
+        },
+        {
+          "heading": "Comprueba el plazo y el coste antes de empezar",
+          "paragraphs": [
+            "El plazo de 30 días aparece en esas dos ofertas. Antes de dedicar tiempo a un juego, revisa el plazo, las condiciones de instalación y los requisitos de la oferta que elijas. Si una meta implica comprar algo, compara el precio real con la recompensa anunciada. Si gastas más de lo que recibes, queda un coste por cubrir incluso cuando la meta se acepta."
+          ],
+          "source": {
+            "title": "Condiciones generales de AttaPoll",
+            "url": "https://attapoll.com/es-es/condiciones-generales/"
+          }
+        },
+        {
+          "heading": "Qué revisar si no llega la recompensa del juego",
+          "paragraphs": [
+            "Las condiciones indican que una recompensa depende de que se verifique la participación. En actividades de terceros, el proveedor debe confirmar que cumpliste los requisitos antes de que AttaPoll pueda acreditarla. Si falta una recompensa, revisa la oferta, guarda registros útiles de tu avance y usa la ayuda disponible en la app. Identifica el juego y la meta al explicar el problema.",
+            "Las 72 horas de la ayuda corresponden al envío de pagos, no a la validación de metas de juegos. Las páginas oficiales consultadas para esta guía no fijan un único plazo de validación para todas las ofertas. Revisa los plazos y las instrucciones del juego elegido y consulta al soporte si es necesario."
+          ],
+          "sources": [
+            {
+              "title": "Condiciones generales de AttaPoll",
+              "url": "https://attapoll.com/es-es/condiciones-generales/"
+            },
+            {
+              "title": "Ayuda de AttaPoll",
+              "url": "https://attapoll.com/es-es/ayuda/"
+            }
+          ]
+        },
+        {
+          "heading": "Cómo valorar una oferta antes de jugar",
+          "paragraphs": [
+            "Los pasos de abajo te ayudan a revisar una oferta antes de dedicarle tiempo o dinero. Si decides instalar AttaPoll, puedes usar el enlace de invitación con el código cgfky. También puedes introducirlo en Configuración durante los siete días posteriores al registro si no hay otra invitación aplicada; cualquier incentivo está sujeto a las condiciones del programa."
+          ],
+          "sources": [
+            {
+              "title": "Cobra por probar y jugar con AttaPoll",
+              "url": "https://attapoll.com/es-es/cobra-por-probar-y-jugar-con-attapoll/"
+            },
+            {
+              "title": "Condiciones generales de AttaPoll",
+              "url": "https://attapoll.com/es-es/condiciones-generales/"
+            },
+            {
+              "title": "Ayuda de AttaPoll",
+              "url": "https://attapoll.com/es-es/ayuda/"
+            }
+          ],
+          "cta": {
+            "label": "Descargar AttaPoll con el código cgfky",
+            "url": "https://attapoll.app/join/cgfky",
+            "sponsored": true
+          }
+        }
+      ],
+      "steps": [
+        "Abre la oferta del juego en la app y lee su página antes de instalar nada.",
+        "Enumera cada meta y su recompensa anunciada.",
+        "Comprueba el plazo, las reglas de instalación y la elegibilidad de la oferta.",
+        "Identifica las metas de compra y busca el precio real antes de decidir.",
+        "Sigue tu avance y el saldo aceptado a medida que las metas se validan."
+      ],
+      "stepsSectionIndex": 4,
+      "pros": [
+        "Las ofertas del ejemplo muestran recompensas, número de metas y un plazo para revisar antes de empezar",
+        "Los juegos suman una actividad aparte de encuestas y tareas"
+      ],
+      "cons": [
+        "Las condiciones, los requisitos, los plazos y la disponibilidad dependen de cada oferta",
+        "Las metas de compra tienen un coste real y la recompensa sigue dependiendo de la validación"
+      ],
+      "faq": [
+        {
+          "q": "¿El total del juego ya está en mi saldo?",
+          "a": "No. Es el total anunciado de la oferta, no un registro de pago. Que una instalación u otra acción genere una recompensa depende de las condiciones indicadas y de su validación. Consulta el importe acreditado en tu cuenta."
+        },
+        {
+          "q": "¿Es necesario comprar para ganar con los juegos?",
+          "a": "Depende de la oferta: el ejemplo muestra una meta de compra, pero si una compra es requisito para otras recompensas lo dicen las condiciones de cada oferta."
+        },
+        {
+          "q": "¿Cuánto cuesta el paquete inicial?",
+          "a": "La captura solo muestra la recompensa de USD 1,30 para esa meta; el precio del paquete no aparece. Consúltalo en la oferta antes de comprar."
+        },
+        {
+          "q": "¿Qué hago si no se acredita una recompensa?",
+          "a": "Revisa las condiciones, guarda registros útiles de tu avance y consulta la ayuda disponible con los datos del juego y de la meta. Las fuentes oficiales usadas aquí no fijan un único plazo de validación para todos los juegos."
+        }
+      ],
+      "verdict": "Lee las metas, el plazo y las condiciones de compra antes de decidir cuánto tiempo o dinero dedicar a una oferta. Sigue las recompensas acreditadas en tu cuenta y conserva los detalles de la oferta si necesitas consultar por una meta pendiente.",
+      "imageKey": "attapoll-jogos",
+      "imageAlt": "Lista de juegos de AttaPoll con la interfaz en portugués, totales anunciados en USD, número de metas y plazos",
+      "caption": "Cuenta de ejemplo con la interfaz en portugués e importes en USD. La moneda, los métodos de pago y los mínimos de retiro varían según el país y la cuenta. Los totales anunciados son ofertas, no saldo acreditado.",
+      "imageWide": false,
+      "secondImage": {
+        "key": "attapoll-jogo-metas",
+        "alt": "Detalles de la oferta Twisted Fates en portugués con recompensas por nivel en USD y una meta de compra del paquete inicial",
+        "caption": "Interfaz en portugués de la misma cuenta de ejemplo, cuyas pantallas de saldo usan USD. Las recompensas son importes anunciados; el precio del paquete inicial no se muestra y la parte inferior de la pantalla está cortada. La moneda, los métodos de pago y los mínimos de retiro varían según el país y la cuenta.",
+        "wide": false
+      },
+      "sources": [
+        {
+          "title": "Cobra por probar y jugar con AttaPoll",
+          "url": "https://attapoll.com/es-es/cobra-por-probar-y-jugar-con-attapoll/"
+        },
+        {
+          "title": "AttaPoll en Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.requapp.requ&hl=es"
+        },
+        {
+          "title": "Condiciones generales de AttaPoll",
+          "url": "https://attapoll.com/es-es/condiciones-generales/"
+        },
+        {
+          "title": "Ayuda de AttaPoll",
+          "url": "https://attapoll.com/es-es/ayuda/"
+        }
+      ],
+      "relatedIds": [
+        "attapoll",
+        "attapoll-saque",
+        "attapoll-convite"
+      ],
+      "tables": [
+        {
+          "heading": "Dos ofertas de juegos en la captura",
+          "columns": [
+            "Juego",
+            "Total anunciado",
+            "Metas indicadas",
+            "Plazo mostrado"
+          ],
+          "rows": [
+            [
+              "Merge Restaurant",
+              "USD 15,17",
+              "10",
+              "30 días"
+            ],
+            [
+              "Twisted Fates: Merge and Story",
+              "USD 18,41",
+              "16",
+              "30 días"
+            ]
+          ],
+          "afterSectionIndex": 0
+        },
+        {
+          "heading": "Ejemplos de metas de Twisted Fates",
+          "columns": [
+            "Meta",
+            "Recompensa anunciada",
+            "Qué falta comprobar"
+          ],
+          "rows": [
+            [
+              "Alcanzar el nivel 5",
+              "USD 0,05",
+              "Las condiciones completas de la oferta y la validación"
+            ],
+            [
+              "Alcanzar el nivel 7",
+              "USD 0,08",
+              "Las mismas comprobaciones que cualquier meta de nivel"
+            ],
+            [
+              "Alcanzar el nivel 9",
+              "USD 0,11",
+              "Las mismas comprobaciones que cualquier meta de nivel"
+            ],
+            [
+              "Comprar el paquete inicial",
+              "USD 1,30",
+              "El precio real de compra y las condiciones completas; la captura no muestra cuánto cuesta el paquete"
+            ]
+          ],
+          "afterSectionIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "attapoll-convite",
+      "app": "attapoll",
+      "category": "rewards",
+      "slug": "codigo-invitacion-attapoll",
+      "title": "Código de invitación AttaPoll cgfky: cómo usarlo",
+      "description": "Consulta dónde introducir el código de invitación cgfky en AttaPoll, el plazo de siete días y las condiciones de los bonos y del 10% por encuestas.",
+      "intro": "Puedes introducir el código de invitación cgfky en Configuración durante los siete días posteriores al registro en AttaPoll, según la ayuda oficial. Solo se puede aplicar un código por cuenta y después no se puede sustituir. Cualquier incentivo depende de las condiciones vigentes del programa, de tu país y de que cumplas los requisitos.",
+      "sections": [
+        {
+          "heading": "Dónde introducir cgfky y cuánto tiempo tienes",
+          "paragraphs": [
+            "Entra en Configuración > Introducir código de referencia durante los siete días posteriores a la creación de la cuenta. Si ya se ha aplicado una invitación mediante un enlace o un código, no puedes añadir otra ni cambiarla.",
+            "La captura muestra la página de quien invita: el código CGFKY y una oferta del 10% para esa persona. La interfaz está en portugués y las otras pantallas de la misma cuenta muestran importes en USD. La moneda, los métodos de pago y los mínimos de retiro varían según el país y la cuenta. Esta imagen no muestra un bono de bienvenida recibido por un usuario nuevo."
+          ],
+          "sources": [
+            {
+              "title": "Ayuda de AttaPoll",
+              "url": "https://attapoll.com/es-es/ayuda/"
+            },
+            {
+              "title": "Condiciones generales de AttaPoll",
+              "url": "https://attapoll.com/es-es/condiciones-generales/"
+            }
+          ]
+        },
+        {
+          "heading": "Los bonos publicados cambian según el país",
+          "paragraphs": [
+            "La página del programa de invitación mostraba los importes de la tabla el 15 de noviembre de 2026 en sus selectores US, DE, FR y NL. Se conservan los símbolos de moneda del selector y se adapta el separador decimal al español, sin convertir los importes. Son ejemplos de Estados Unidos, Alemania, Francia y Países Bajos, no una oferta general para España o América Latina.",
+            "Son ejemplos publicados por país, no una oferta confirmada para cgfky. Las condiciones completas permiten reducir o excluir los incentivos cuando la invitación es entre países distintos, también para el nuevo usuario. Revisa las condiciones y cualquier oferta que aparezca en tu cuenta antes de contar con un bono."
+          ],
+          "sources": [
+            {
+              "title": "Programa de invitación de AttaPoll (embajadores)",
+              "url": "https://attapoll.com/es-es/embajadores/"
+            },
+            {
+              "title": "AttaPoll Terms and Conditions (versión en inglés)",
+              "url": "https://attapoll.com/en-us/terms-and-conditions/"
+            }
+          ]
+        },
+        {
+          "heading": "Quién recibe el 10% y sobre qué encuestas",
+          "paragraphs": [
+            "El 10% del programa —y de la captura de ejemplo— es de quien invita. Se aplica sobre las encuestas elegibles completadas por sus invitados. No es un 10% extra para el usuario nuevo, ni un porcentaje de los juegos, ni una parte de todo lo que gana un invitado.",
+            "La ayuda describe un abono diario sujeto a un mínimo. Las cantidades pequeñas pueden acumularse hasta que se añadan al saldo. Ese umbral de abono es distinto del mínimo que necesitas para retirar el saldo."
+          ],
+          "sources": [
+            {
+              "title": "Ayuda de AttaPoll",
+              "url": "https://attapoll.com/es-es/ayuda/"
+            },
+            {
+              "title": "Programa de invitación de AttaPoll (embajadores)",
+              "url": "https://attapoll.com/es-es/embajadores/"
+            },
+            {
+              "title": "AttaPoll Terms and Conditions (versión en inglés)",
+              "url": "https://attapoll.com/en-us/terms-and-conditions/"
+            }
+          ]
+        },
+        {
+          "heading": "Por qué no aparece el campo o no recibes un bono",
+          "paragraphs": [
+            "Si el campo no aparece, la ayuda oficial recomienda comprobar que tengas la última versión de la app. Un código ya aplicado no se puede sustituir, y el plazo de entrada termina siete días después del registro. Una instalación vinculada a otra campaña también puede afectar a la validez de la invitación. El programa publica como requisito tener 18 años o más y residir en un país admitido, además de superar las comprobaciones de cuenta y país. Reinstalar no elimina la regla de un solo código."
+          ],
+          "sources": [
+            {
+              "title": "Ayuda de AttaPoll",
+              "url": "https://attapoll.com/es-es/ayuda/"
+            },
+            {
+              "title": "Condiciones generales de AttaPoll",
+              "url": "https://attapoll.com/es-es/condiciones-generales/"
+            },
+            {
+              "title": "AttaPoll Terms and Conditions (versión en inglés)",
+              "url": "https://attapoll.com/en-us/terms-and-conditions/"
+            }
+          ]
+        },
+        {
+          "heading": "Comprueba los requisitos y cualquier abono en tu cuenta",
+          "paragraphs": [
+            "Revisa la respuesta de la app al introducir un código y cualquier recompensa acreditada en tu cuenta. La página Invitar amigos muestra tu propio código y los incentivos por invitar a otras personas; ver allí tu código no demuestra que cgfky se haya aplicado a tu registro ni que hayas recibido un bono de bienvenida. La asociación automática mediante este enlace no se ha probado para esta guía.",
+            "Las guías relacionadas explican las encuestas, las solicitudes de pago y las ofertas de juegos disponibles después del registro. Si decides unirte mediante una invitación, puedes usar el enlace de abajo y el código cgfky, sujeto a las condiciones vigentes del programa."
+          ],
+          "sources": [
+            {
+              "title": "Condiciones generales de AttaPoll",
+              "url": "https://attapoll.com/es-es/condiciones-generales/"
+            },
+            {
+              "title": "AttaPoll Terms and Conditions (versión en inglés)",
+              "url": "https://attapoll.com/en-us/terms-and-conditions/"
+            },
+            {
+              "title": "Ayuda de AttaPoll",
+              "url": "https://attapoll.com/es-es/ayuda/"
+            }
+          ],
+          "cta": {
+            "label": "Descargar AttaPoll con el código cgfky",
+            "url": "https://attapoll.app/join/cgfky",
+            "sponsored": true
+          }
+        }
+      ],
+      "steps": [
+        "Usa el enlace de invitación de esta guía si quieres descargar AttaPoll con el código cgfky.",
+        "Revisa las condiciones vigentes y registra tu cuenta.",
+        "Revisa cualquier invitación existente y los mensajes de la app antes de intentar introducir un código.",
+        "Si el campo está disponible y permitido para ti, introduce cgfky dentro de los siete días del registro.",
+        "Lee la respuesta de la app y comprueba cualquier abono, sin dar por hecho un bono de bienvenida."
+      ],
+      "stepsSectionIndex": 0,
+      "pros": [
+        "La ruta de entrada y el plazo de siete días están documentados en la ayuda oficial",
+        "La regla de un código por cuenta y las condiciones de los incentivos están publicadas"
+      ],
+      "cons": [
+        "La ventana de siete días es corta y el código no se cambia una vez aplicado",
+        "Lo que otorga un código varía por país y campaña, y una invitación entre países puede no llevar incentivo"
+      ],
+      "faq": [
+        {
+          "q": "¿Dónde se pone el código de invitación en AttaPoll?",
+          "a": "En Configuración, en «Introducir código de referencia», dentro de los siete días posteriores al registro. Un código por cuenta."
+        },
+        {
+          "q": "¿Puedo cambiar un código ya aplicado?",
+          "a": "No: una vez asociado, el código no se puede sustituir por otro."
+        },
+        {
+          "q": "¿Puedo introducir cgfky después de siete días?",
+          "a": "Según la ayuda oficial, no: la ventana para introducir un código de referencia son los primeros siete días tras el registro."
+        },
+        {
+          "q": "¿El código garantiza el mismo bono en todos los países?",
+          "a": "No. Los bonos se publican por país, las invitaciones entre países pueden llevar un incentivo reducido o nulo, y la app decide la oferta que aplica a tu cuenta."
+        }
+      ],
+      "verdict": "Si decides usar cgfky, introdúcelo en Configuración durante tus primeros siete días y comprueba la respuesta de la app. Revisa las condiciones de tu cuenta antes de contar con un bono de bienvenida. El 10% publicado recompensa a quien invita por las encuestas elegibles completadas por sus invitados, según las reglas del programa.",
+      "imageKey": "attapoll-convite",
+      "imageAlt": "Pantalla de invitación de AttaPoll en portugués con el código CGFKY y una oferta del 10% para quien invita",
+      "caption": "Interfaz en portugués de la misma cuenta de ejemplo, cuyas pantallas de saldo usan USD. La moneda, los métodos de pago y los mínimos de retiro varían según el país y la cuenta. La pantalla muestra el lado de quien invita; no es prueba de un bono para el nuevo usuario.",
+      "imageWide": false,
+      "sources": [
+        {
+          "title": "Ayuda de AttaPoll",
+          "url": "https://attapoll.com/es-es/ayuda/"
+        },
+        {
+          "title": "Condiciones generales de AttaPoll",
+          "url": "https://attapoll.com/es-es/condiciones-generales/"
+        },
+        {
+          "title": "Programa de invitación de AttaPoll (embajadores)",
+          "url": "https://attapoll.com/es-es/embajadores/"
+        },
+        {
+          "title": "AttaPoll Terms and Conditions (versión en inglés)",
+          "url": "https://attapoll.com/en-us/terms-and-conditions/"
+        }
+      ],
+      "relatedIds": [
+        "attapoll",
+        "attapoll-saque",
+        "attapoll-jogos"
+      ],
+      "tables": [
+        {
+          "heading": "Ejemplos de bonos publicados por país",
+          "columns": [
+            "Selector de país",
+            "Importe para quien invita",
+            "Importe para el nuevo usuario"
+          ],
+          "rows": [
+            [
+              "US",
+              "$0,50",
+              "$0,50"
+            ],
+            [
+              "DE",
+              "€0,40",
+              "€0,40"
+            ],
+            [
+              "FR",
+              "€0,20",
+              "€0,40"
+            ],
+            [
+              "NL",
+              "€0,20",
+              "€0,40"
+            ]
+          ],
+          "afterSectionIndex": 1
+        }
+      ]
+    }
+  ],
   "pt": [
     {
       "id": "lens",
@@ -9986,18 +11674,18 @@ export const apps:Record<string,{name:string;url:string;os:string;sources:{title
   },
   "attapoll": {
     "name": "AttaPoll",
-    "url": "https://attapoll.com/pt-br/ajuda/",
-    "os": "Android",
+    "url": "https://attapoll.com/en-us/help/",
+    "os": "Android, iOS",
     "sources": [
-      {"title":"AttaPoll: ajuda em português brasileiro","url":"https://attapoll.com/pt-br/ajuda/"},
-      {"title":"AttaPoll: termos e condições em português brasileiro","url":"https://attapoll.com/pt-br/termos-e-condicoes/"},
-      {"title":"AttaPoll na Google Play","url":"https://play.google.com/store/apps/details?id=com.requapp.requ"},
-      {"title":"AttaPoll: seja pago para testar e jogar jogos","url":"https://attapoll.com/pt-br/seja-pago-para-testar-e-jogar-jogos-com-a-attapoll/"},
-      {"title":"AttaPoll: programa de indicação","url":"https://attapoll.com/pt-br/embaixadores/"}
+      {"title":"AttaPoll: Help Center","url":"https://attapoll.com/en-us/help/"},
+      {"title":"AttaPoll: Terms and Conditions","url":"https://attapoll.com/en-us/terms-and-conditions/"},
+      {"title":"AttaPoll on Google Play","url":"https://play.google.com/store/apps/details?id=com.requapp.requ&hl=en"},
+      {"title":"AttaPoll: Get Paid to Test and Play Games","url":"https://attapoll.com/en-us/get-paid-to-test-and-play-games-with-attapoll/"},
+      {"title":"AttaPoll: Referral Program","url":"https://attapoll.com/en-us/ambassadors/"}
     ]
   }
 };
-const defaultSourcesFor=(article:Article)=>article.id==='compare'?[...apps.opinion.sources.slice(0,1),...apps.microsoft.sources.slice(0,1),...apps.freecash.sources.slice(0,1),...apps.swagbucks.sources.slice(0,1)]:article.id==='nordvpn-vs-surfshark'?[...apps.nordvpn.sources,...apps.surfshark.sources]:article.id==='swagbucks-vs-freecash'?[...apps.swagbucks.sources.slice(0,3),...apps.freecash.sources.slice(0,2)]:article.id==='pawns-vs-freecash'?[...apps.pawns.sources.slice(0,3),...apps.freecash.sources.slice(0,2)]:article.id==='primeopinion-vs-swagbucks'?[...apps.primeopinion.sources.slice(0,3),...apps.swagbucks.sources.slice(0,2)]:article.id==='pinedrama-vs-dramastack'?[...apps.pinedrama.sources,...apps.dramastack.sources.slice(0,2)]:article.id==='cashdrama-proofs'?[...apps.cashdrama.sources,...apps.dramastack.sources.slice(0,2)]:apps[article.app].sources;
+const defaultSourcesFor=(article:Article)=>article.id==='compare'?[...apps.opinion.sources.slice(0,1),...apps.microsoft.sources.slice(0,1),...apps.freecash.sources.slice(0,1),...apps.swagbucks.sources.slice(0,1)]:article.id==='nordvpn-vs-surfshark'?[...apps.nordvpn.sources,...apps.surfshark.sources]:article.id==='swagbucks-vs-freecash'?[...apps.swagbucks.sources.slice(0,3),...apps.freecash.sources.slice(0,2)]:article.id==='pawns-vs-freecash'?[...apps.pawns.sources.slice(0,3),...apps.freecash.sources.slice(0,2)]:article.id==='primeopinion-vs-swagbucks'?[...apps.primeopinion.sources.slice(0,3),...apps.swagbucks.sources.slice(0,2)]:article.id==='pinedrama-vs-dramastack'?[...apps.pinedrama.sources,...apps.dramastack.sources.slice(0,2)]:article.id==='cashdrama-proofs'?[...apps.cashdrama.sources,...apps.dramastack.sources.slice(0,2)]:article.app==='attapoll'&&article.sources?.length?[]:apps[article.app].sources;
 
 export const sourcesFor=(article:Article)=>{
  const all=[...(article.sources||[]),...defaultSourcesFor(article),...article.sections.flatMap(section=>[...(section.source?[section.source]:[]),...(section.sources||[])])];

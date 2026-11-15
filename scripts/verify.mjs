@@ -14,9 +14,8 @@ for(const [file,html] of htmls){
  const title=html.match(/<title>(.*?)<\/title>/s)?.[1];assert(title?.includes('apps308'),relative+' branding');assert(!titles.has(title),relative+' unique title');titles.add(title);
  const canonical=[...html.matchAll(/<link\b[^>]*>/g)].map(m=>m[0]).find(t=>attr(t,'rel')==='canonical');assert(canonical,relative+' canonical');const canonicalUrl=attr(canonical,'href');assert(canonicalUrl?.startsWith(origin),relative+' canonical origin');
  const alternates=[...html.matchAll(/<link\b[^>]*>/g)].map(m=>m[0]).filter(t=>attr(t,'rel')==='alternate');
- const isPtOnly=relative.includes('attapoll');
- assert.equal(alternates.length,isPtOnly?2:4,relative+' alternate count');
- for(const lang of (isPtOnly?['pt','x-default']:['en','es','pt','x-default'])){const tag=alternates.find(t=>attr(t,'hreflang')===lang);assert(tag,relative+' '+lang);const url=new URL(attr(tag,'href'));assert(files.includes(targetFile(url)),relative+' alternate exists '+url);if(lang!=='x-default'&&['en','es','pt'].includes(locale)){const counterpart=htmls.get(targetFile(url));assert(counterpart?.includes(`hreflang="${locale}" href="${canonicalUrl}"`),relative+' reciprocal alternate');}}
+ assert.equal(alternates.length,4,relative+' alternate count');
+ for(const lang of ['en','es','pt','x-default']){const tag=alternates.find(t=>attr(t,'hreflang')===lang);assert(tag,relative+' '+lang);const url=new URL(attr(tag,'href'));assert(files.includes(targetFile(url)),relative+' alternate exists '+url);if(lang!=='x-default'&&['en','es','pt'].includes(locale)){const counterpart=htmls.get(targetFile(url));assert(counterpart?.includes(`hreflang="${locale}" href="${canonicalUrl}"`),relative+' reciprocal alternate');}}
  for(const match of html.matchAll(/<(?:a|img|script|link)\b[^>]*>/g)){const tag=match[0];const raw=attr(tag,'href')||attr(tag,'src');if(!raw||raw.startsWith('#')||raw.startsWith('data:')||raw.startsWith('mailto:'))continue;const url=new URL(raw,canonicalUrl);if(url.origin!==origin)continue;assert(files.includes(targetFile(url)),relative+' internal target '+raw);links++;}
  const schemas=[...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)].flatMap(m=>JSON.parse(m[1]));
  const articleSchema=schemas.find(s=>s['@type']==='Article');
@@ -33,7 +32,7 @@ for(const [file,html] of htmls){
  for(const m of html.matchAll(/<img\b[^>]*>/g)){assert(attr(m[0],'alt'),relative+' alt');assert(attr(m[0],'width')&&attr(m[0],'height'),relative+' dimensions');assert(attr(m[0],'loading')==='lazy',relative+' lazy image');imageCount++;}
  for(const schema of schemas)assert(!schema.aggregateRating,relative+' no invented ratings');
 }
-assert.equal(articleCount,118,'118 localized articles');
+assert.equal(articleCount,126,'126 localized articles');
 const sitemap=await readFile(path.join(root,'sitemap-0.xml'),'utf8');assert(sitemap.includes('x-default'),'sitemap x-default');for(const lang of ['en','es','pt'])assert(sitemap.includes(`hreflang="${lang}"`),'sitemap '+lang);
 const sitemapEntries=new Map([...sitemap.matchAll(/<url>(.*?)<\/url>/gs)].map(match=>[match[1].match(/<loc>(.*?)<\/loc>/)?.[1],match[1]]));
 for(const [url,date] of articleDates){const entry=sitemapEntries.get(url);assert(entry,url+' sitemap entry');assert.equal(entry.match(/<lastmod>(.*?)<\/lastmod>/)?.[1]?.slice(0,10),date,url+' sitemap modification date');}
