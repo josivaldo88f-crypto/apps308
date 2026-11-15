@@ -5,7 +5,7 @@ const root=path.resolve('dist');
 async function walk(dir){const entries=await readdir(dir,{withFileTypes:true});return (await Promise.all(entries.map(e=>e.isDirectory()?walk(path.join(dir,e.name)):path.join(dir,e.name)))).flat();}
 const files=await walk(root);const pages=files.filter(f=>f.endsWith('.html'));const origin='https://www.apps308.com';const htmls=new Map();
 for(const file of pages)htmls.set(file,await readFile(file,'utf8'));
-let articleCount=0,links=0,imageCount=0;const titles=new Set();
+let articleCount=0,links=0,imageCount=0;const titles=new Set();const articleDates=new Map();
 const attr=(tag,name)=>tag.match(new RegExp(`(?:^|\\s)${name}="([^"]*)"`))?.[1];
 function targetFile(url){const pathname=decodeURIComponent(url.pathname);return path.join(root,pathname.endsWith('/')?pathname+'index.html':pathname);}
 for(const [file,html] of htmls){
@@ -17,11 +17,21 @@ for(const [file,html] of htmls){
  for(const lang of ['en','es','pt','x-default']){const tag=alternates.find(t=>attr(t,'hreflang')===lang);assert(tag,relative+' '+lang);const url=new URL(attr(tag,'href'));assert(files.includes(targetFile(url)),relative+' alternate exists '+url);if(lang!=='x-default'&&['en','es','pt'].includes(locale)){const counterpart=htmls.get(targetFile(url));assert(counterpart?.includes(`hreflang="${locale}" href="${canonicalUrl}"`),relative+' reciprocal alternate');}}
  for(const match of html.matchAll(/<(?:a|img|script|link)\b[^>]*>/g)){const tag=match[0];const raw=attr(tag,'href')||attr(tag,'src');if(!raw||raw.startsWith('#')||raw.startsWith('data:')||raw.startsWith('mailto:'))continue;const url=new URL(raw,canonicalUrl);if(url.origin!==origin)continue;assert(files.includes(targetFile(url)),relative+' internal target '+raw);links++;}
  const schemas=[...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)].flatMap(m=>JSON.parse(m[1]));
+ const articleSchema=schemas.find(s=>s['@type']==='Article');
+ if(articleSchema){
+  assert(/^\d{4}-\d{2}-\d{2}$/.test(articleSchema.datePublished),relative+' publication date');
+  assert(/^\d{4}-\d{2}-\d{2}$/.test(articleSchema.dateModified)&&articleSchema.dateModified>=articleSchema.datePublished,relative+' modification date');
+  const visibleDate=html.match(/<time\b[^>]*datetime="([^"]+)"/i)?.[1];
+  assert.equal(visibleDate,articleSchema.dateModified,relative+' visible/schema updated date');
+  articleDates.set(canonicalUrl,articleSchema.dateModified);
+ }
  if(schemas.some(s=>s['@type']==='Article')){articleCount++;assert(schemas.some(s=>s['@type']==='FAQPage'),relative+' faq');if(!relative.includes('freecash')&&!relative.includes('pawns')&&!relative.includes('prime'))assert(!/<script(?![^>]*type="application\/ld\+json")[^>]*>/g.test(html),relative+' zero client JS');assert(html.includes('srcset=')||html.includes('<img'),relative+' screenshot included');if(relative.includes('swagbucks')&&!relative.includes('prime')){assert(html.includes('https://www.swagbucks.com/p/register?rb=NPHSOu1zhQuqNHgx&amp;rp=1'),relative+' swagbucks affiliate link');assert(html.includes('rel="sponsored noopener"'),relative+' sponsored rel');}if(relative.includes('pawns')){assert(html.includes('https://discoverpawns.eu/6823713'),relative+' pawns affiliate link');}if(relative.includes('prime')){assert(html.includes('https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d'),relative+' primeopinion affiliate link');}}
  for(const m of html.matchAll(/<img\b[^>]*>/g)){assert(attr(m[0],'alt'),relative+' alt');assert(attr(m[0],'width')&&attr(m[0],'height'),relative+' dimensions');assert(attr(m[0],'loading')==='lazy',relative+' lazy image');imageCount++;}
  for(const schema of schemas)assert(!schema.aggregateRating,relative+' no invented ratings');
 }
 assert.equal(articleCount,114,'114 localized articles');
 const sitemap=await readFile(path.join(root,'sitemap-0.xml'),'utf8');assert(sitemap.includes('x-default'),'sitemap x-default');for(const lang of ['en','es','pt'])assert(sitemap.includes(`hreflang="${lang}"`),'sitemap '+lang);
+const sitemapEntries=new Map([...sitemap.matchAll(/<url>(.*?)<\/url>/gs)].map(match=>[match[1].match(/<loc>(.*?)<\/loc>/)?.[1],match[1]]));
+for(const [url,date] of articleDates){const entry=sitemapEntries.get(url);assert(entry,url+' sitemap entry');assert.equal(entry.match(/<lastmod>(.*?)<\/lastmod>/)?.[1]?.slice(0,10),date,url+' sitemap modification date');}
 assert(files.includes(path.join(root,'robots.txt')));assert(files.includes(path.join(root,'social.png')));
 console.log(`PASS: ${pages.length} HTML pages, ${articleCount} articles, ${links} local references, ${imageCount} optimized images; canonical, reciprocal hreflang, schema and sitemap verified.`);

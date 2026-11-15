@@ -1,5 +1,5 @@
 import type { Locale } from './i18n';
-export interface Article { id:string;app:string;category:string;slug:string;title:string;description:string;intro:string;sections:{heading:string;paragraphs:string[];source?:{title:string;url:string};cta?:{label:string;url:string;sponsored?:boolean}}[];steps:string[];pros:string[];cons:string[];faq:{q:string;a:string}[];verdict:string;imageAlt:string;caption:string;imageKey?:string;imageWide?:boolean;secondImage?:{key:string;alt:string;caption:string;wide?:boolean}; }
+export interface Article { id:string;app:string;category:string;slug:string;title:string;description:string;intro:string;modifiedDate?:string;sections:{heading:string;paragraphs:string[];source?:{title:string;url:string};cta?:{label:string;url:string;sponsored?:boolean}}[];steps:string[];pros:string[];cons:string[];faq:{q:string;a:string}[];verdict:string;imageAlt:string;caption:string;imageKey?:string;imageWide?:boolean;secondImage?:{key:string;alt:string;caption:string;wide?:boolean}; }
 export const articles:Record<Locale,Article[]>={
   "en": [
     {
@@ -198,78 +198,77 @@ export const articles:Record<Locale,Article[]>={
       "app": "freecash",
       "category": "rewards",
       "slug": "freecash-offers-referrals-guide",
-      "title": "Freecash Review & Referral Guide (2026): Offers, Payouts & Account Rules",
-      "description": "How does Freecash work in 2026? Full guide to Freecash offers, referral program rules, one-account-per-household policy, and first withdrawal times.",
-      "intro": "Freecash brings together games, surveys and other offers that can earn rewards. Each activity has its own goals and deadlines, and availability changes with your device, region and account. Before you start, understand how the offer is credited and how withdrawals work.",
+      "title": "How Freecash Works (2026): Getting Started, Offers & Referrals",
+      "description": "New to Freecash? Understand the offer-to-reward process, what a referral link does and what to check before starting your first activity.",
+      "intro": "Freecash is a rewards platform with games, surveys and partner offers. This starter guide explains the route from registration to an eligible reward, including invitations. For payment restrictions, fees or a missing game milestone, use the dedicated guides in this series.",
       "sections": [
         {
-          "heading": "How offers work",
+          "heading": "Understand the three stages before joining",
           "paragraphs": [
-            "Check the goal, deadline and required actions before starting. For a game, for example, a reward may depend on reaching a particular level. Keep the offer instructions so you can track your progress.",
-            "Consider the time and any purchases involved. Choose activities that interest you and weigh the reward against the effort. If the list is empty, check again later: availability can change."
+            "An offer is an activity with its own requirements; a credited reward is the result of an accepted activity; a withdrawal is a separate request to redeem available rewards. Installing a game, seeing a large promotional total or entering a code does not complete all three stages.",
+            "Start by checking whether the offers on your own device and account interest you. Do not plan around another person’s catalog or assume that surveys and every payment method are available in your region. Choose an activity you understand before considering its advertised maximum."
           ]
         },
         {
-          "heading": "How to use the invitation",
+          "heading": "What the invitation code 3C7GKG does",
           "paragraphs": [
-            "Use the button below to open Freecash through the invitation. You can also copy 3C7GKG to save the link identifier. The terms for each promotion appear on Freecash.",
-            "Invitations and promotions can depend on your country, account and qualifying activities. Check the requirements before counting a bonus toward your balance."
-          ]
+            "The Freecash button on apps308 uses our referral identifier 3C7GKG. We may receive a referral reward if you meet the program’s conditions. This is an affiliate relationship, not a coupon that guarantees a fixed cash amount.",
+            "Freecash documents signing up through the referral link or entering a referral code before opening the welcome case. Eligibility depends on the referred person’s country and the current program. Read the promotion shown to you before proceeding; do not create a second account to try a different invitation."
+          ],
+          "source": {
+            "title": "Freecash: how the referral system works",
+            "url": "https://freecash.com/academy/en/support/account/rewards/how-affiliate-system-works"
+          }
         },
         {
-          "heading": "First withdrawal: minimum and verification",
+          "heading": "A first-session plan with a clear stopping point",
           "paragraphs": [
-            "Freecash help lists a $25 first-withdrawal threshold, varying by region, plus email and identity verification. Cashout shows your applicable amount. Check the fee before confirming."
+            "Before starting, save the offer name, eligibility, deadline, each milestone and any purchase requirement. Decide how much time you are willing to spend. If the first required action does not register, investigate before investing more time.",
+            "Then check the Cashout screen for the amount and verification that would apply to you. This is a feasibility check, not a withdrawal request. If the available rewards or required personal data do not suit you, stop before working toward a balance you would not redeem."
           ],
           "source": {
             "title": "Freecash: first-withdrawal requirements",
             "url": "https://freecash.com/academy/en/support/withdrawal/issues/first-cashout-requirements"
-          }
-        },
-        {
-          "heading": "How long does payment take?",
-          "paragraphs": [
-            "According to Freecash, security checks can take up to 30 minutes; bank transfers, Stash and Revolut can take 3–5 business days. Timing depends on the method and review.",
-            "Track the status in My Withdrawals. An offer reward being released is an earlier step than withdrawal: first check that the amount is available to cash out."
-          ],
-          "source": {
-            "title": "Freecash: pending withdrawals and processing times",
-            "url": "https://freecash.com/academy/en/support/withdrawal/issues/why-withdrawal-pending"
+          },
+          "cta": {
+            "label": "Read the guide to evaluating Freecash game offers",
+            "url": "/en/freecash-games-and-offers-how-to-earn-more/"
           }
         }
       ],
       "steps": [
-        "Open the official website or its verified app-store listing.",
-        "Read account eligibility and the terms shown for your country before joining.",
-        "Choose one offer and record its conditions, deadline and any spending requirements.",
-        "Check the withdrawal information and verification requirements in your own account.",
-        "If using a referral, verify that the program and offer apply to your region before expecting a reward."
+        "Review your country’s eligibility and the offers in your own account.",
+        "If using our invitation, check the referral conditions before opening the welcome case.",
+        "Save one offer’s requirements and choose a personal time limit.",
+        "Check that its first action registers before continuing.",
+        "Consult the dedicated payment or game-tracking guide for the next step."
       ],
       "pros": [
-        "Offer conditions can be reviewed before deciding to start.",
-        "Official help explains affiliate qualification and verification."
+        "Offer instructions help you decide before committing time.",
+        "A documented referral route makes the invitation’s purpose clear."
       ],
       "cons": [
-        "Rewards depend on specific actions and eligibility.",
-        "Time, spending and verification can reduce the value of an offer."
+        "Catalogs and promotions vary by region and account.",
+        "Starting an offer is not the same as earning an available reward."
       ],
       "faq": [
         {
-          "q": "What is the invitation code?",
-          "a": "The invitation link identifier is 3C7GKG. Copy it or open the invitation directly with the Freecash button on this page."
+          "q": "Is 3C7GKG a guaranteed cash bonus?",
+          "a": "No. It identifies our referral. Any promotion depends on the conditions Freecash shows to the new user."
         },
         {
-          "q": "Does the invitation unlock a bonus immediately?",
-          "a": "Promotions have their own requirements. Check the qualifying activities and conditions shown in your account."
+          "q": "Should I start several offers at once?",
+          "a": "Start with one clear offer so you can record its terms, see whether it registers and understand the effort involved."
         },
         {
-          "q": "Where can I track my withdrawal?",
-          "a": "In Cashout, open My Withdrawals to check the status. Contact support if it is rejected or exceeds the stated processing time."
+          "q": "Where are the payment and tracking details?",
+          "a": "The Freecash series below includes separate guides for reviews and account rules, cashout and fees, and selecting and tracking game offers."
         }
       ],
-      "verdict": "Read the individual offer as carefully as the headline. Start only when the conditions, time involved and verification requirements are clear.",
-      "imageAlt": "Freecash",
-      "caption": "The invitation area lets you copy the link to open or share Freecash."
+      "verdict": "Use this page as a starting map: understand the offer, check the invitation terms and set a limit before spending time. Move to the specific guide when you need cashout or tracking instructions.",
+      "imageAlt": "Freecash referral-link panel with identifier 3C7GKG",
+      "caption": "This saved screen shows a referral link, not a withdrawal receipt.",
+      "modifiedDate": "2026-11-15"
     },
     {
       "id": "dramastack",
@@ -524,85 +523,127 @@ export const articles:Record<Locale,Article[]>={
       "app": "swagbucks",
       "category": "rewards",
       "slug": "swagbucks-surveys-and-cashback-shopping-guide",
-      "title": "Swagbucks paid surveys and cashback shopping: how to earn SB without overspending",
-      "description": "A practical guide to Swagbucks Answer Surveys and Shop and Earn cashback at stores like Walmart, eBay and Home Depot, including why survey disqualifications happen.",
-      "intro": "Not everyone wants to grind mobile game levels for 30 days. For users who prefer quick browser tasks or want to earn rebates on online shopping they already plan to do, Swagbucks offers two core channels: Answer Surveys and Shop and Earn cashback. Combining both carefully helps you accumulate SB without spending extra money.",
+      "title": "Swagbucks surveys and cashback: disqualifications, tracking and pending SB",
+      "description": "Learn how Swagbucks surveys and shopping cashback work, compare SB per minute, check pending rewards and troubleshoot purchases that do not track.",
+      "intro": "Swagbucks surveys trade time for a possible reward; Shop & Earn rebates part of an eligible purchase. They need different checks: qualification and time spent for surveys, purchase terms and tracking for shopping. This guide explains those two workflows using our supplied dashboard capture and Swagbucks help pages. It does not report a completed purchase or an earnings test.",
       "sections": [
         {
-          "heading": "How Answer Surveys work and why disqualifications happen",
+          "heading": "Survey disqualification, missing credit and disabled surveys are different",
           "paragraphs": [
-            "On the Swagbucks dashboard we captured, the Answer Surveys and Earn row listed each questionnaire with its estimated duration and payout: 5 SB for 5 minutes (Survey #201976545), 10 SB for 5 minutes, and 25 SB for 20 minutes, alongside a 'Get Started! Earn 5 SB in about 5 minutes' profile card.",
-            "Every market research survey targets a specific consumer group—such as homeowners, parents or users of a certain software brand. When you open a survey, the first few questions act as a demographic filter. If your profile does not match the quota, the survey closes early. Always answer truthfully and consistently; rushing through questions or giving contradictory answers across surveys can get you blocked from the Answer channel."
+            "A survey that says you do not qualify has ended without completion. Swagbucks explains that a study may need a different profile or already have enough participants. One screening rejection is different from having surveys disabled across the account.",
+            "Read the final message before deciding that a reward is missing. Changing demographic answers to get past the filter is not a solution: keep your profile truthful and answer the actual question. If the screen confirms completion instead, use the credit-check steps below."
           ],
           "source": {
-            "title": "Swagbucks: paid online surveys overview",
-            "url": "https://www.swagbucks.com/g/paid-surveys"
+            "title": "Swagbucks: survey disqualification",
+            "url": "https://help.swagbucks.com/hc/en-us/articles/205642084-Why-did-the-survey-disqualify-me-before-I-finished"
           }
         },
         {
-          "heading": "Shop and Earn: turning routine online purchases into SB",
+          "heading": "Compare the time cost with the dashboard, not a daily earnings promise",
           "paragraphs": [
-            "The Shop and Earn section functions as a cashback portal where partner retailers pay Swagbucks a referral commission and you receive a percentage back in SB per dollar spent. In our captured screen, featured rates included Walmart (up to 8% cash back, or 8 SB per $1), eBay (up to 5% cash back), Best Buy (up to 6% cash back), Kohl's (4% cash back), Expedia (up to 12% cash back), Hotels.com (up to 12% cash back), and QVC, HSN and The Home Depot (up to 15% cash back, or 15 SB per $1).",
-            "You can sign up via the official Swagbucks registration link below to check the current cashback percentages and survey list for your region. To make sure a store purchase tracks properly, start with an empty shopping cart, click through from Swagbucks Shop, and avoid activating competing coupon or cashback browser extensions during checkout."
+            "The capture used in this article shows survey examples of 5 SB for 5 minutes, 10 SB for 5 minutes and 25 SB for 20 minutes. These are examples from that screen, not offers verified as available now or in every country. The displayed estimate also is not a guarantee that you will qualify or finish in that time.",
+            "For those examples, divide SB by estimated minutes: 1, 2 and 1.25 SB per minute respectively. The largest headline reward is not the best ratio. Set your own time limit and include time spent on unsuccessful attempts when reviewing whether surveys are worthwhile; do not extrapolate the best card into an hourly income."
           ],
+          "source": {
+            "title": "Swagbucks: survey profile and opportunities",
+            "url": "https://help.swagbucks.com/hc/en-us/articles/205642024-How-can-I-earn-more-SB-by-taking-surveys"
+          }
+        },
+        {
+          "heading": "Shopping cashback applies to the eligible purchase, not every charge",
+          "paragraphs": [
+            "Open the retailer from Shop & Earn and read its Special Terms before paying. Swagbucks says eligible amounts can exclude taxes, shipping and other charges; returns or cancellations can reverse rewards. Store-specific exclusions matter more than the largest rate on the directory card.",
+            "Illustrative calculation: if a store offers 5 SB per eligible US dollar and only US$40 of a US$48 checkout qualifies, the expected reward is 200 SB, not 240 SB. This is a calculation example, not a current store offer. Compare the full checkout price with other shops before treating cashback as a saving."
+          ],
+          "source": {
+            "title": "Swagbucks: Shop & Earn rules",
+            "url": "https://help.swagbucks.com/hc/en-us/articles/205641124-How-does-Shop-Earn-work"
+          },
           "cta": {
-            "label": "Join Swagbucks free to access surveys and cashback deals",
+            "label": "Check surveys and shopping offers in Swagbucks",
             "url": "https://www.swagbucks.com/p/register?rb=NPHSOu1zhQuqNHgx&rp=1",
             "sponsored": true
           }
         },
         {
-          "heading": "Golden rules to protect your time and budget",
+          "heading": "Check whether the shopping visit tracked before spending",
           "paragraphs": [
-            "For surveys, look at the ratio between SB and minutes. A 5-minute survey paying 10 SB offers a better return per minute than a 20-minute survey paying 25 SB, and shorter surveys reduce frustration if you get screened out.",
-            "For Shop and Earn, treat cashback strictly as a rebate on items you already budgeted for. Buying something at 15% cashback just to collect 15 SB per dollar still leaves you spending 85% of the price—so compare the store's final price before clicking buy."
+            "The official tracking guide recommends starting from Swagbucks, staying on the same device and avoiding competing shopping extensions. Those extensions or restrictive privacy settings can prevent the click from being attributed. An outside coupon is not automatically compatible: check the retailer terms instead of assuming that every discount can be combined.",
+            "After clicking through, check the Activity ledger for the visit and keep the offer terms and order confirmation. If you are unwilling to allow the tracking the offer needs, compare prices without counting on its SB. A screenshot or receipt is evidence for a review, not a guarantee that missing attribution can be repaired."
           ],
           "source": {
-            "title": "Swagbucks: Shop and Earn cashback directory",
-            "url": "https://www.swagbucks.com/shop"
+            "title": "Swagbucks: how offer tracking works",
+            "url": "https://help.swagbucks.com/hc/en-us/articles/36978174310548-How-does-offer-tracking-work"
+          }
+        },
+        {
+          "heading": "Visited, Pending and Posted: what the Activity ledger tells you",
+          "paragraphs": [
+            "Visited records a click; it is not proof that a purchase qualified. Pending means a tracked reward is awaiting posting, with details and an estimated credit date. Posted is the credited activity. This distinction avoids confusing an acknowledged shopping visit with spendable SB.",
+            "Use the date and activity filters to find the correct transaction. When an order has a pending date, wait for that date before treating it as overdue. If the offer is absent or overdue, use the help option connected to that activity and describe the discrepancy, rather than opening unrelated requests."
+          ],
+          "source": {
+            "title": "Swagbucks: Activity ledger",
+            "url": "https://help.swagbucks.com/hc/en-us/articles/360050460651-How-do-I-check-my-SB-in-the-Activity-ledger"
+          }
+        },
+        {
+          "heading": "What to do when a finished survey or a purchase has no SB",
+          "paragraphs": [
+            "For a survey, save the Survey ID and completion message, check Answer in the Activity ledger, and respect any delayed-credit period stated before starting. If the stated time has passed with no credit, use Get Help for that survey. A disqualification message should not be presented as proof of completion.",
+            "For shopping, distinguish the wait for an order to appear from the later wait for pending SB to post. Consult the current help page and the store’s Special Terms for its own time window; there is no single promise covering every retailer, travel reservation or order. Keep the receipt and avoid buying more just to investigate an untracked purchase."
+          ],
+          "source": {
+            "title": "Swagbucks: completed survey missing SB",
+            "url": "https://help.swagbucks.com/hc/en-us/articles/205642184-I-completed-a-survey-but-did-not-receive-SB-What-can-I-do"
           }
         }
       ],
       "steps": [
-        "Create your free Swagbucks account and complete the 5-minute starter profile under Answer Surveys.",
-        "Sort available surveys by duration and start with short 5-to-10-minute questionnaires.",
-        "Before shopping online at retailers like Walmart, eBay or Expedia, search the store inside Swagbucks Shop and Earn.",
-        "Read the store's category exclusions and disable third-party coupon extensions before clicking through to the retailer.",
-        "Verify that your shopping visit or completed survey appears in your Swagbucks Activity Ledger."
+        "Check which surveys and Shop & Earn stores your own account and country can access.",
+        "For surveys, compare SB with estimated minutes and answer honestly; record a completed survey’s ID.",
+        "For shopping, compare the full price first, then save the retailer’s rate, exclusions and waiting period.",
+        "Start the eligible purchase from Swagbucks on the same device and check the visit in Activity.",
+        "Review Pending and Posted separately; use help on the relevant activity only when its stated wait has passed."
       ],
       "pros": [
-        "Surveys require zero spending and clearly display estimated minutes and SB before you click.",
-        "Cashback shopping rewards up to 1%–15% (1–15 SB per $1) at major everyday retailers."
+        "Surveys can be considered without making a purchase.",
+        "The Activity ledger separates visits, pending rewards and credited SB."
       ],
       "cons": [
-        "Demographic screening frequently disqualifies users partway through survey questionnaires.",
-        "Cashback SB usually remain pending until the retailer's return window closes."
+        "A survey estimate does not guarantee qualification, completion or a reward.",
+        "Shopping requires spending and successful attribution; rates and waiting periods vary."
       ],
       "faq": [
         {
-          "q": "Why do I keep getting disqualified from Swagbucks surveys?",
-          "a": "Research providers close surveys when a demographic quota fills up or when your answers do not match the specific buyer profile they are studying."
+          "q": "Why do Swagbucks surveys keep disqualifying me?",
+          "a": "A study may need a different profile or its quota may already be full. Read the final message; a screen-out is different from completing the survey and not receiving its stated credit."
         },
         {
-          "q": "How does 'Earn up to 15 SB per $1' work in Shop and Earn?",
-          "a": "Each 1% of cashback equals 1 SB per $1 spent on eligible pre-tax, pre-shipping items. Rates vary by product category within each store."
+          "q": "Does Pending SB mean I can redeem it?",
+          "a": "No. Pending records a reward awaiting posting. Check its expected date and verify that it has moved to credited activity before counting on it for redemption."
         },
         {
-          "q": "Can I combine Swagbucks cashback with other coupon extensions?",
-          "a": "No. Activating another browser extension at checkout usually overwrites Swagbucks's affiliate cookie and cancels your SB cashback."
+          "q": "Can I combine a coupon with Swagbucks cashback?",
+          "a": "Only assume compatibility when the retailer’s Special Terms support it. Other shopping extensions and outside coupons can interfere with attribution or eligibility."
+        },
+        {
+          "q": "Are the rates in the screenshot still available?",
+          "a": "They are examples from the supplied capture, not current offers checked in your account. Consult your own survey dashboard and retailer terms before starting."
         }
       ],
-      "verdict": "Use Answer Surveys for quick, zero-cost points during short breaks, and activate Shop and Earn only when buying from retailers you already planned to use.",
+      "verdict": "Choose surveys by the time you can afford to lose on screening, and use shopping cashback only for a planned purchase at a competitive final price. Track the difference between a click, a pending reward and credited SB before assuming that anything is missing.",
       "imageAlt": "Swagbucks Shop and Earn retail cashback cards and Answer Surveys list",
-      "caption": "Shop and Earn displays cashback rates in percentages and SB per dollar alongside timed survey opportunities.",
+      "caption": "Supplied dashboard capture: retailer rates and survey durations are historical screen examples, not current offers for every account.",
       "imageKey": "swagbucks-shop",
       "imageWide": true,
       "secondImage": {
         "key": "swagbucks-goals",
         "alt": "Swagbucks offer rules and referral terms panel",
-        "caption": "Offer panels specify tracking rules, pending days and referral conditions (such as earning 300 SB within 30 days).",
+        "caption": "The accompanying offer panel illustrates where conditions appear; use the current terms in your own account for deadlines and eligibility.",
         "wide": true
-      }
+      },
+      "modifiedDate": "2026-11-15"
     },
     {
       "id": "swagbucks-cashout",
@@ -781,25 +822,26 @@ export const articles:Record<Locale,Article[]>={
       "category": "rewards",
       "slug": "pawns-app-review-how-it-works",
       "title": "Pawns.app Review (2026): Is It Legit? Passive Income, Surveys & $3 Bonus",
-      "description": "How does Pawns.app work in 2026? Earn passive income sharing internet, answer paid surveys, play mobile games and claim a $3 bonus (code 6823713).",
-      "intro": "Pawns.app is a global reward platform that lets you monetize unused internet bandwidth passively while offering active earning options through paid surveys and mobile game offers. If you want a flexible app that generates revenue on Android, iOS, Windows, or Mac without requiring all-day manual screen time, Pawns.app stands out with a low $5 payout threshold.",
+      "description": "Pawns.app review: optional internet sharing, surveys, game offers, withdrawal conditions and the conditional $3 referral promotion with code 6823713.",
+      "intro": "Pawns.app combines optional internet sharing with paid surveys and game offers. Availability, eligibility and actual rewards vary. The supplied screenshots illustrate the interface; this review does not establish a measured earnings rate or independently completed payout.",
       "sections": [
         {
-          "heading": "How passive internet sharing works safely",
+          "heading": "What to consider before sharing your connection",
           "paragraphs": [
-            "The core feature of Pawns.app is background bandwidth sharing. Businesses use the residential proxy network operated by Pawns.app for verified tasks like search engine verification, market research, and localized price checking. Your personal browsing history, private files, and local network devices remain inaccessible because the client only routes public traffic through an encrypted tunnel.",
-            "Earnings from internet sharing depend on your uptime, upload speed, and geographical demand for IP addresses in your country. Keeping the application active on a home Wi-Fi connection or desktop PC provides predictable background earnings without slowing down everyday streaming or gaming."
+            "The internet-sharing feature lets third parties use your connection through the service. Read the provider’s privacy information, permissions and network-use conditions before deciding whether you want to enable it.",
+            "We have not audited the software or measured its effect on this network. Do not assume constant earnings, unrestricted safety or no effect on data use and connection performance. You can evaluate the active tasks separately from sharing."
           ],
           "cta": {
-            "label": "Download Pawns.app & activate starter reward with code 6823713",
-            "url": "https://discoverpawns.eu/6823713"
+            "label": "View Pawns.app using referral code 6823713",
+            "url": "https://discoverpawns.eu/6823713",
+            "sponsored": true
           }
         },
         {
           "heading": "Active earnings: daily surveys and mobile game offers",
           "paragraphs": [
-            "Beyond passive sharing, Pawns.app features active task sections that accelerate your progress toward withdrawal. The Surveys tab presents market research questionnaires typically paying between $0.14 and $0.67 for 3 to 10 minutes of participation. Daily survey counters and prize wheels reward regular engagement.",
-            "For higher single payouts, the Offers section lists popular Android and iOS games like Clockmaker ($20.66) and Candy Crush Saga ($54.17). Completing milestone levels within the required window credits your balance directly in US dollars."
+            "The supplied survey screen lists examples from $0.14 to $0.67 with estimated durations. These are examples from that capture, not a typical rate, and eligibility does not guarantee every attempt is rewarded.",
+            "The offer capture includes Clockmaker ($20.66) and Candy Crush Saga ($54.17) as advertised totals. These are conditional milestones from a historical screen, not a current guaranteed amount for installing or playing."
           ],
           "source": {
             "title": "Pawns.app: How It Works & Earning Guide",
@@ -809,23 +851,26 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "Payment options and the $3 community bonus",
           "paragraphs": [
-            "Pawns.app supports withdrawals starting at just $5.00 USD through PayPal, Bitcoin cryptocurrency, and regional virtual gift cards. Unlike sites that impose complicated multi-tier redemption delays, verified accounts can request payouts as soon as the account balance reaches five dollars.",
-            "New users downloading the application through the official community link (discoverpawns.eu/6823713) or entering invitation code 6823713 qualify for a $3 starter bonus credited upon completing their first redemption, effectively boosting their initial payout."
-          ]
+            "Pawns.app publishes a $5 withdrawal minimum. Methods depend on country; review fees, verification and any claim step before confirming. The requested amount can differ from the amount received.",
+            "Current referral rules split the advertised $3 into $1 after each of the first three qualifying payouts, with regional time windows shown in the app. Code 6823713 does not remove those conditions."
+          ],
+          "source": {
+            "title": "Pawns.app: referral bonus conditions",
+            "url": "https://help.pawns.app/en/articles/8658858-how-does-your-referral-system-work"
+          }
         }
       ],
       "steps": [
         "Download Pawns.app on your smartphone or desktop computer via the official link discoverpawns.eu/6823713.",
         "Create a free account using your Google account or email, ensuring invitation code 6823713 is applied.",
-        "Enable internet sharing in app settings and grant background execution permissions so it runs smoothly on Wi-Fi.",
+        "Review the network conditions and enable sharing only if you want to use that optional feature.",
         "Check the Surveys and Offers tabs to answer quick questionnaires and play mobile games to reach $5 faster.",
-        "Request your cashout via PayPal, Bitcoin, or gift card once your balance reaches the $5 minimum threshold."
+        "Read the method, fees and verification requirements before requesting a withdrawal."
       ],
       "pros": [
-        "True passive background income by sharing unused home internet.",
-        "Accessible $5.00 USD cashout threshold across PayPal, Bitcoin, and gift cards.",
-        "Global availability with cross-platform support on Android, iOS, Windows, and Mac.",
-        "Lucrative community invitation bonus ($3 extra upon first withdrawal)."
+        "Combines several optional task types in one service.",
+        "Published $5 withdrawal minimum, with methods depending on country.",
+        "Conditional referral promotion for eligible new accounts."
       ],
       "cons": [
         "Internet sharing rate depends heavily on location and local IP demand.",
@@ -834,7 +879,7 @@ export const articles:Record<Locale,Article[]>={
       "faq": [
         {
           "q": "Is Pawns.app safe to use on my home network?",
-          "a": "Yes. Pawns.app operates as an encrypted proxy client. It does not access your personal browsing data, saved passwords, or local devices, and only routes verified commercial traffic."
+          "a": "We have not audited its security. Review privacy terms, permissions, network conditions and your own data plan before allowing third-party traffic through your connection."
         },
         {
           "q": "What is the minimum cashout amount on Pawns.app?",
@@ -842,101 +887,122 @@ export const articles:Record<Locale,Article[]>={
         },
         {
           "q": "How does invitation code 6823713 work?",
-          "a": "Entering code 6823713 or registering via discoverpawns.eu/6823713 links your account to the official community bonus, unlocking $3.00 in rewards when you complete your cashout."
+          "a": "It is a referral code. Current rules provide $1 after each of the first three qualifying payouts, subject to the regional time windows shown in your account."
         }
       ],
-      "verdict": "Pawns.app is an excellent addition to any smartphone or PC. Its hands-off internet sharing combined with fast surveys and game rewards makes reaching the $5 payout mark straightforward.",
+      "verdict": "Consider the available tasks and payout conditions, then judge your own credited results against the time, costs and connection access involved. A promotional screen is not payment proof.",
       "imageAlt": "Pawns.app community invitation screen showing $3 bonus and referral link",
-      "caption": "Pawns.app Community tab featuring the $3 starter bonus and official referral link discoverpawns.eu/6823713.",
+      "caption": "Supplied Community screen with a referral promotion; current eligibility and payout stages must be checked in the account.",
       "imageKey": "pawns-referral",
       "imageWide": true,
       "secondImage": {
         "key": "pawns-surveys",
         "alt": "Pawns.app daily surveys dashboard showing payouts in US dollars",
-        "caption": "The Surveys section displays daily questionnaires with real cash rewards from $0.14 to $0.67.",
+        "caption": "The supplied survey screen shows historical amounts and duration estimates, not a dependable daily rate.",
         "wide": true
-      }
+      },
+      "modifiedDate": "2026-11-15"
     },
     {
       "id": "pawns-surveys",
       "app": "pawns",
       "category": "rewards",
       "slug": "pawns-app-surveys-daily-earnings",
-      "title": "Pawns.app paid surveys: payout rates, disqualifications and daily prize wheel",
-      "description": "Analyze real survey payouts on Pawns.app ($0.14 to $0.67), profile consistency tips, and how daily prize wheel spins boost your cashout speed.",
-      "intro": "While internet sharing runs silently in the background, paid surveys on Pawns.app represent the fastest route to your first $5 cashout. Understanding qualification filters, reward rates per minute, and gamified bonus features like the daily prize wheel ensures your time is spent on the highest-yield opportunities.",
+      "title": "Pawns.app surveys: rewards, disqualifications and missing credit",
+      "description": "How Pawns.app paid surveys work: compare reward and time estimates, handle disqualifications and document missing credit without assuming daily earnings.",
+      "intro": "Pawns.app surveys are paid questionnaires with eligibility filters. A reward displayed before you start is an offer for a qualifying completion, not money already earned. This guide focuses on choosing a survey, understanding rejection and keeping the evidence needed if a completed questionnaire is not credited. It is a review of the supplied screens and official guidance, not a timed earnings test.",
       "sections": [
         {
-          "heading": "Realistic survey rewards and completion windows",
+          "heading": "What the reward and duration actually tell you",
           "paragraphs": [
-            "Pawns.app lists surveys directly in its primary navigation bar with upfront dollar values and estimated durations. Short surveys frequently offer between $0.14 and $0.67 for 3 to 8 minutes of answering. Unlike platforms that pay in arbitrary fractional points, Pawns.app credits directly in real US dollars.",
-            "Surveys are rated with community star ratings (e.g. 3/5 or 4/5) indicating qualification reliability. Selecting higher-rated short surveys minimizes screen fatigue and keeps your hourly return efficient."
-          ],
-          "cta": {
-            "label": "Start answering surveys on Pawns.app with invitation code 6823713",
-            "url": "https://discoverpawns.eu/6823713"
-          }
-        },
-        {
-          "heading": "Minimizing screen-outs and profile disqualifications",
-          "paragraphs": [
-            "Survey providers use initial screener questions to match participants with specific demographic targets. Disqualifications typically occur during the first 60 seconds if your age, occupation, or location does not match market research criteria.",
-            "To avoid account flags and maximize survey delivery, answer consistently across all sessions. Rushing through questions or contradicting previously saved demographic answers can trigger quality filters that reduce survey invitations."
+            "The supplied survey screen shows individual amounts and time estimates. Those examples describe that capture; they do not establish a normal rate for every user. Pawns.app says rewards depend on location and research demand.",
+            "Compare the offered amount with the estimated time before starting, but also record the time actually spent. If you try several questionnaires and qualify for only one, include the unsuccessful attempts when deciding whether the session was worthwhile."
           ],
           "source": {
-            "title": "Pawns.app: Paid Online Surveys Guide",
-            "url": "https://pawns.app/surveys/"
+            "title": "Pawns.app: survey rewards by region",
+            "url": "https://help.pawns.app/en/articles/8646171-how-much-do-surveys-pay"
+          },
+          "cta": {
+            "label": "View Pawns.app with referral code 6823713",
+            "url": "https://discoverpawns.eu/6823713",
+            "sponsored": true
           }
         },
         {
-          "heading": "Gamified rewards: prize wheel, streaks and prize pools",
+          "heading": "Why a survey can disqualify you",
           "paragraphs": [
-            "Pawns.app incorporates interactive incentives in its Recompensas tab. Daily check-ins grant free spins on the Prize Wheel, awarding bonus gems, booster tickets (such as +15% earning boosts), and direct entries into $150 prize pools.",
-            "Gems collected from daily participation can be redeemed for promotional raffle entries, creating an extra layer of earning potential while working toward your withdrawal goal."
-          ]
+            "A screen-out can mean that your profile does not match the study. The official help page recommends an accurate, current profile; rejection alone does not prove an account problem. VPNs and proxies used to conceal location are prohibited.",
+            "Do not change age, occupation or country to fit an offer. If there are repeated rejections, stop the session and review the profile instead of treating another attempt as a guaranteed payment."
+          ],
+          "source": {
+            "title": "Pawns.app: survey disqualifications",
+            "url": "https://help.pawns.app/en/articles/8646182-why-am-i-getting-disqualified-from-surveys"
+          }
+        },
+        {
+          "heading": "Set a time limit before opening a questionnaire",
+          "paragraphs": [
+            "The provider says surveys can last from a few minutes to around half an hour. The listed duration is an estimate rather than a promise that you will finish in that time.",
+            "Choose a session you can complete carefully. A useful personal log has the survey identifier, offered amount, estimated duration, actual minutes, final screen and credited amount. This separates attractive listings from your own results."
+          ],
+          "source": {
+            "title": "Pawns.app: survey length and estimates",
+            "url": "https://help.pawns.app/en/articles/8646112-how-long-are-the-surveys"
+          }
+        },
+        {
+          "heading": "If the survey list is empty or credit is missing",
+          "paragraphs": [
+            "Inventory depends on region and client demand, so an empty list does not establish a technical failure or a fixed waiting period. Notifications can tell you when new opportunities are available.",
+            "For a completion without credit, keep the survey identifier, date, reward and final message, then use official support. Exclude private answers from screenshots. A completion screen, a rejection and a balance entry are different evidence; keep them separate rather than claiming a payment before it is recorded."
+          ],
+          "source": {
+            "title": "Pawns.app: survey availability",
+            "url": "https://help.pawns.app/en/articles/8646179-how-often-will-i-receive-surveys"
+          }
         }
       ],
       "steps": [
-        "Open Pawns.app and navigate to the Surveys tab from the bottom menu.",
-        "Complete your demographic profile carefully with accurate household and employment information.",
-        "Prioritize surveys displaying high star ratings and short durations (e.g., $0.55 to $0.67 for under 5 minutes).",
-        "Spin the daily Prize Wheel in the Rewards tab to collect bonus gems and earning boosters.",
-        "Check your live balance counter in the top bar as completed survey rewards credit immediately."
+        "Read the offered reward, estimated duration and eligibility notes.",
+        "Use your real profile and location; do not conceal them with a VPN.",
+        "Record the survey identifier and start time.",
+        "Answer carefully and save the final message if a problem occurs.",
+        "Check the credited balance and compare your full session time with the amount received."
       ],
       "pros": [
-        "Transparent rewards shown in real US dollars rather than confusing virtual coins.",
-        "Quick questionnaires with completion times typically under 10 minutes.",
-        "Daily gamified prize wheel and boost multipliers add free bonus earnings."
+        "Reward and duration estimates help you compare individual surveys.",
+        "A simple activity log makes missing-credit requests more specific."
       ],
       "cons": [
-        "Demographic screen-outs can occur during the initial screening questions.",
-        "Survey inventory fluctuates depending on market research demand in your region."
+        "Screen-outs consume time without establishing a completed reward.",
+        "Availability and earnings vary; there is no dependable daily amount."
       ],
       "faq": [
         {
-          "q": "Why did I get disqualified from a survey on Pawns.app?",
-          "a": "Disqualifications happen when a survey's demographic quota is already full or when your profile does not match the specific study criteria."
+          "q": "How much can I earn per day with Pawns.app surveys?",
+          "a": "There is no verified daily amount in this review. Measure your credited rewards against all time spent, including rejected attempts."
         },
         {
-          "q": "How fast do survey rewards appear in my balance?",
-          "a": "Survey earnings on Pawns.app are normally credited instantly to your account balance upon successfully reaching the completion page."
+          "q": "Does a disqualification mean my account is blocked?",
+          "a": "Not by itself. Check the message: profile eligibility is different from an explicit account restriction."
         },
         {
-          "q": "Can I do surveys on my computer as well as my phone?",
-          "a": "Yes. Pawns.app surveys can be completed through both the mobile application on Android/iOS and the web dashboard on desktop browsers."
+          "q": "Is a reward on the screen already withdrawable?",
+          "a": "No. An offer listing is not a credited balance, and the balance must meet the applicable payout rules."
         }
       ],
-      "verdict": "Pawns.app surveys offer a clean, dollar-denominated way to speed up withdrawals. Stacking short surveys with daily prize wheel spins makes reaching the $5 threshold fast and predictable.",
+      "verdict": "Use the survey screen as a list of conditional opportunities. Try a limited session, record the result and continue only if the actual return is worth your time. Prize-wheel promotions do not make survey income predictable.",
       "imageAlt": "Pawns.app surveys tab displaying real questionnaires and dollar payouts",
-      "caption": "The Surveys interface displays multiple daily questionnaires with upfront dollar amounts and completion time indicators.",
+      "caption": "Supplied Pawns.app survey screen: the listed rewards and durations are examples from the capture, not a current earnings forecast.",
       "imageKey": "pawns-surveys",
       "imageWide": true,
       "secondImage": {
         "key": "pawns-rewards",
-        "alt": "Pawns.app daily rewards tab with prize wheel and $150 sweepstakes",
-        "caption": "The Rewards section provides a free daily prize wheel, gem collections, and ticket entries for $150 prize pools.",
+        "alt": "Pawns.app rewards screen with wheel and prize promotions",
+        "caption": "Promotional rewards shown in the supplied capture are separate from a survey completion and can change.",
         "wide": true
-      }
+      },
+      "modifiedDate": "2026-11-15"
     },
     {
       "id": "pawns-games",
@@ -944,14 +1010,14 @@ export const articles:Record<Locale,Article[]>={
       "category": "rewards",
       "slug": "pawns-app-games-offers-guide",
       "title": "Pawns.app games & offers: Candy Crush, Clockmaker and milestone tracking",
-      "description": "Explore mobile game offers on Pawns.app. Learn how Candy Crush ($54.17) and Clockmaker ($20.66) track level milestones and payout deadlines.",
-      "intro": "For users looking to make larger sums than surveys provide, the Offers tab in Pawns.app unlocks milestone-based mobile game rewards. High-profile titles like Candy Crush Saga ($54.17), Clockmaker ($20.66), and Wood Block Jam ($8.36) pay substantial rewards when you reach designated gameplay levels within set timeframes.",
+      "description": "Pawns.app game offers: read milestones, purchase requirements and deadlines, check first-install tracking and report missing progress.",
+      "intro": "The supplied Offers screen includes Candy Crush Saga ($54.17), Clockmaker ($20.66) and Wood Block Jam ($8.36) as advertised totals. Those examples are historical, conditional offers, not current guaranteed earnings. This guide explains what to check before installing and how to handle missing progress.",
       "sections": [
         {
           "heading": "How milestone payouts work in mobile games",
           "paragraphs": [
             "Unlike legacy apps that only paid pennies for casual playtime, modern offerwalls reward progress milestones. When you start an offer like Wood Block Jam or Clockmaker, the app breaks down the total reward into escalating achievements (for example, reaching level 30, level 40, and level 50).",
-            "Each completed milestone releases a specific dollar amount directly into your account, allowing you to collect partial earnings even if you choose not to complete the entire game."
+            "Only eligible milestones listed in the offer can earn their assigned reward. A total shown at the top is not paid simply for installing, and reaching a level does not by itself establish that credit has been recorded."
           ],
           "cta": {
             "label": "Browse gaming offers on Pawns.app using invite code 6823713",
@@ -961,33 +1027,32 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "Tracking permissions and completion deadlines",
           "paragraphs": [
-            "To ensure milestones register accurately, you must install the game directly through the Pawns.app link and enable App Tracking Transparency on iOS or Usage Access on Android. Playing on a modified device, using VPNs, or installing a game you previously played on the same store account will void tracking.",
-            "Most offers include a time limit, typically between 14 and 30 days (such as 29 days remaining displayed on Wood Block Jam). Review the required milestones before starting to ensure the pace matches your schedule."
+            "Pawns.app says the game must be a first installation through its offer link. Check requested location/ad-tracking settings and keep VPN off; on iPhone, allow the game’s tracking request if you choose to participate.",
+            "Use the specific deadline in your offer, not a general 14–30-day assumption. The supplied Wood Block Jam screenshot shows 29 days remaining at capture time; that is not a rule for other titles."
           ],
           "source": {
-            "title": "Pawns.app: Games & Offers Directory",
-            "url": "https://pawns.app/games/"
+            "title": "Pawns.app: missing game progress and tracking requirements",
+            "url": "https://help.pawns.app/en/articles/15944782-why-isn-t-my-game-progress-being-tracked"
           }
         },
         {
           "heading": "Free-to-play strategy vs. in-app purchases",
           "paragraphs": [
-            "Game offers often list an optional cashback milestone for buying an introductory bundle (such as a $0.29 reward on a Beginner Bundle). These in-app purchases are strictly optional; all standard level milestones can be achieved through regular gameplay.",
-            "Focus on puzzle, match-three, and casual titles where skill and daily play yield steady level progression without needing real-money purchases."
+            "The supplied Wood Block Jam screen includes a Beginner Bundle purchase milestone. A purchase can be required for that specific reward even when other level milestones do not mention spending. Read each task rather than treating all stages as free.",
+            "Work out the purchase cost, reward and deadline before deciding. We have not tested whether every advertised level can be completed without spending. Skip a stage that does not make economic sense for you."
           ]
         }
       ],
       "steps": [
-        "Open Pawns.app and tap the Ofertas (Offers/Games) tab in the bottom menu.",
-        "Browse available titles like Candy Crush Saga or Clockmaker and review the milestone rewards list.",
-        "Tap 'Ganhar' or 'Jogue e Ganhe' to be directed to the official Google Play Store or Apple App Store.",
-        "Install the game as a new user and enable usage tracking permissions when prompted.",
-        "Progress through the game levels within the 30-day window to unlock milestone dollar payouts automatically."
+        "Open Offers and inspect the full milestone list.",
+        "Save eligibility, reward, deadline and any purchase requirement before starting.",
+        "If eligible, install once through the selected offer link and open the game.",
+        "Review the permissions required for that offer; do not use a VPN to change your location.",
+        "Check recorded progress and use the provider’s Report a Problem route if a qualifying milestone is missing."
       ],
       "pros": [
-        "Substantial earning potential with individual games paying over $50 USD in milestones.",
-        "Partial payouts rewarded as each level benchmark is reached.",
-        "High variety of popular genres including puzzle, city builder, and arcade games."
+        "Milestone lists let you inspect the conditions before playing.",
+        "Separate stages help you evaluate a smaller target instead of the headline total."
       ],
       "cons": [
         "Higher milestones require consistent daily gameplay before the time limit expires.",
@@ -996,20 +1061,20 @@ export const articles:Record<Locale,Article[]>={
       "faq": [
         {
           "q": "Do I have to spend money to earn on Pawns.app game offers?",
-          "a": "No. In-app purchases are optional. You can earn the majority of game rewards purely through free gameplay by reaching specified levels."
+          "a": "It depends on the milestone. A purchase task requires spending for that reward; a level task has its own conditions. We have not established that every level is practical to finish for free."
         },
         {
           "q": "Why did a game level milestone not track?",
-          "a": "Tracking failures typically occur if app usage tracking permissions were denied, if a VPN was active, or if the game was installed previously."
+          "a": "Check first-install eligibility and the offer’s terms. Pawns.app says tracking may take up to 48 hours; its offer page has an information icon and Report a Problem option for missing progress."
         },
         {
           "q": "How long do I have to finish game milestones?",
-          "a": "Most game offers allow between 14 and 30 days from the initial installation date to complete all target levels."
+          "a": "Use the deadline written in your chosen offer. A remaining-time screenshot from one game does not establish a universal limit."
         }
       ],
-      "verdict": "Mobile game milestones on Pawns.app turn casual phone gaming into concrete dollar earnings. Stacking game progress with background internet sharing is the most effective way to maximize your balance.",
+      "verdict": "Choose a modest milestone whose terms you can meet. Confirm progress, compare reward with costs and time, and avoid interpreting a high advertised total as money already earned.",
       "imageAlt": "Pawns.app offers tab featuring Clockmaker and Candy Crush Saga mobile game rewards",
-      "caption": "The Offers section displays high-value mobile games with cumulative milestone rewards exceeding $50 USD.",
+      "caption": "Historical offer totals in the supplied screenshot; availability, reward and eligibility can differ in your account.",
       "imageKey": "pawns-offers",
       "imageWide": true,
       "secondImage": {
@@ -1017,169 +1082,229 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Wood Block Jam level progression milestones and deadline terms in Pawns.app",
         "caption": "Game detail screen displaying incremental payouts for reaching levels 30, 40, and 50 within a 29-day window.",
         "wide": true
-      }
+      },
+      "modifiedDate": "2026-11-15"
     },
     {
       "id": "pawns-cashout",
       "app": "pawns",
       "category": "rewards",
       "slug": "pawns-app-payout-methods-referral-bonus",
-      "title": "Pawns.app cash out guide: PayPal, Bitcoin, gift cards and the $3 invite bonus",
-      "description": "Step-by-step Pawns.app withdrawal guide: $5 minimum threshold, payment processing times, and how invitation code 6823713 unlocks a $3 bonus.",
-      "intro": "Reaching your target balance is satisfying, but understanding the exact withdrawal mechanics is what guarantees you receive your funds without delays. Pawns.app keeps things transparent with a low $5.00 USD cashout floor, flexible payout options including PayPal and Bitcoin, and an active referral bonus that rewards both parties.",
+      "title": "Pawns.app cashout: $5 minimum, fees and referral bonus rules",
+      "description": "How to withdraw from Pawns.app, check PayPal and Bitcoin fees, claim a payout email and understand the $3 referral bonus split across three payouts.",
+      "intro": "Pawns.app lists a $5 withdrawal minimum, but the amount requested is not always the amount received. Fees, regional payment options and the reward-claim email matter before you confirm. This guide corrects a common referral misunderstanding: the advertised $3 bonus is conditional and split across three payouts, rather than paid in full at the first withdrawal.",
       "sections": [
         {
-          "heading": "Available withdrawal options: PayPal, Bitcoin, and Gift Cards",
+          "heading": "Where to request a withdrawal",
           "paragraphs": [
-            "Pawns.app offers three primary payout routes tailored to global audiences. For cash liquidity, PayPal delivers direct funds to your connected email in US dollars or your local converted currency. For cryptocurrency enthusiasts, Bitcoin withdrawals allow transfers straight to your personal crypto wallet.",
-            "Virtual gift cards (including Amazon, Google Play, Visa, and regional retail vouchers) are also available depending on your country. All options activate at the same accessible $5.00 USD account threshold."
-          ],
-          "cta": {
-            "label": "Create your Pawns.app account with code 6823713 for a $3 bonus",
-            "url": "https://discoverpawns.eu/6823713"
-          }
-        },
-        {
-          "heading": "Payment processing times and account verification",
-          "paragraphs": [
-            "Withdrawal requests are processed promptly, typically arriving within 24 to 72 business hours. Before processing your first payout, Pawns.app requires standard email confirmation and two-factor authentication (2FA) to safeguard your account against unauthorized redemptions.",
-            "There are no predatory hidden withdrawal maintenance fees. The full dollar value you earn through internet sharing, surveys, and game offers translates into your chosen payout method."
+            "Tap your account balance, choose Request Payout, then select your country and an available method. Pawns.app states a $5 minimum; the options offered depend on your region.",
+            "Check the destination, the method and the final summary before confirming. A virtual gift card has different spending restrictions from money in a payment account. Do not choose one only because its headline fee looks lower."
           ],
           "source": {
-            "title": "Pawns.app: Payment Methods & Cashout Rules",
-            "url": "https://pawns.app/payment-methods/"
+            "title": "Pawns.app: requesting a payout",
+            "url": "https://help.pawns.app/en/articles/8646170-how-do-i-get-paid"
+          },
+          "cta": {
+            "label": "See Pawns.app using referral code 6823713",
+            "url": "https://discoverpawns.eu/6823713",
+            "sponsored": true
           }
         },
         {
-          "heading": "How the $3 community referral bonus works",
+          "heading": "Fees: compare the amount you will actually receive",
           "paragraphs": [
-            "Pawns.app runs one of the most generous referral systems in the rewards industry: '$3 for you, $3 for a friend'. When you sign up using the official invite link discoverpawns.eu/6823713 or enter code 6823713, you unlock a $3.00 bonus credited upon completing your first cashout.",
-            "In addition, once you have an active account, you can share your own code with friends and family to earn 10% lifetime commissions on their activity plus $3 when they cash out, creating long-term recurring revenue."
-          ]
+            "The official fee page lists PayPal at 4%, with a $0.25 minimum fee: a $5 withdrawal leaves $4.75. It lists $2 for Bitcoin and no payout fee for virtual gift cards. Check the current summary before confirming.",
+            "Currency conversion or the receiving service may affect the final amount you can spend. Keep the request amount and the received amount in your records so a fee is not mistaken for a missing reward."
+          ],
+          "source": {
+            "title": "Pawns.app: payout fees",
+            "url": "https://help.pawns.app/en/articles/8658813-what-are-the-payout-fees"
+          }
+        },
+        {
+          "heading": "Pending payout: look for the claim email",
+          "paragraphs": [
+            "Pawns.app says processing usually takes up to 72 hours and can take longer on weekends. For PayPal, gift cards and Cash App, check inbox and spam for a Tremendous email with the reward-claim link.",
+            "If the documented period has passed, contact official support with the request date, amount and method. Do not publish receiving addresses, document photos or one-time codes when asking for help."
+          ],
+          "source": {
+            "title": "Pawns.app: payout not received",
+            "url": "https://help.pawns.app/en/articles/8658805-what-to-do-if-i-have-not-received-my-payout"
+          }
+        },
+        {
+          "heading": "The $3 referral bonus is released in three parts",
+          "paragraphs": [
+            "Current referral rules award $1 after each of the first three qualifying payouts. Each payout has a regional time window shown in the app. Code 6823713 is a referral code, not a way to bypass those conditions.",
+            "The supplied Community screenshot is evidence of an advertised promotion, not proof of receipt or an unconditional $3 balance. Read the rules visible in your own account before relying on the bonus."
+          ],
+          "source": {
+            "title": "Pawns.app: referral bonus conditions",
+            "url": "https://help.pawns.app/en/articles/8658858-how-does-your-referral-system-work"
+          }
+        },
+        {
+          "heading": "Verification and the final confirmation",
+          "paragraphs": [
+            "A payout partner may request an identity check; Pawns.app says instructions appear during the withdrawal when applicable. Follow the official flow rather than sending documents to someone who contacts you privately.",
+            "Save the confirmation and compare its status with the balance and your receiving account. This review documents the process and published conditions; it does not report an independently completed withdrawal."
+          ],
+          "source": {
+            "title": "Pawns.app: identity checks at payout",
+            "url": "https://help.pawns.app/en/articles/15943103-why-was-i-asked-for-an-id-check-when-requesting-a-payout"
+          }
         }
       ],
       "steps": [
-        "Accumulate at least $5.00 USD in your Pawns.app balance via bandwidth sharing, surveys, or games.",
-        "Navigate to the Payout or Recompensas section and verify your registered email address.",
-        "Select your preferred redemption method (PayPal, Bitcoin, or digital gift card).",
-        "Enter your receiving details (such as your PayPal email or BTC wallet address) and confirm the request.",
-        "Receive your payment and enjoy your $3 bonus reward unlocked through community invite code 6823713."
+        "Reach the minimum shown for withdrawal and open your balance.",
+        "Choose your country and a supported payout method.",
+        "Review the destination, fee and amount you will receive.",
+        "Complete any verification in the official payout flow and confirm.",
+        "Keep the confirmation; check email and spam for any claim step.",
+        "After the stated processing period, contact support if the reward is still missing."
       ],
       "pros": [
-        "Low $5.00 USD minimum threshold makes cashing out achievable quickly.",
-        "Versatile payout options covering fiat cash (PayPal), crypto (Bitcoin), and gift cards.",
-        "Mutual $3 invitation bonus rewards new users when they complete their first redemption."
+        "A published minimum and fee schedule make comparison possible.",
+        "Multiple redemption types may be available depending on country."
       ],
       "cons": [
-        "Bitcoin network fees can vary depending on blockchain traffic.",
-        "PayPal payouts require an email address matching a verified PayPal account."
+        "Fees can be material on a small withdrawal.",
+        "Processing, verification and promotional deadlines need separate attention."
       ],
       "faq": [
         {
-          "q": "How long does a Pawns.app withdrawal take to process?",
-          "a": "Most payouts are processed within 24 to 48 hours, though first-time security checks may take up to 72 hours."
+          "q": "Is Pawns.app cashout fee-free?",
+          "a": "Do not assume so. Read the fee section and the final confirmation for your selected method."
         },
         {
-          "q": "What is the fee for cashing out via PayPal?",
-          "a": "Pawns.app does not charge withdrawal fees on standard redemptions, though PayPal may apply local currency conversion rates if your account is outside the US."
+          "q": "Does code 6823713 add $3 immediately?",
+          "a": "No. It is a referral promotion with qualifying payout stages and time limits, not immediately withdrawable cash."
         },
         {
-          "q": "When does the $3 invitation bonus get credited?",
-          "a": "The $3 community bonus linked to code 6823713 is released as soon as you complete your first eligible withdrawal."
+          "q": "What should I keep if a payout does not arrive?",
+          "a": "Keep the request date, amount, method, confirmation and status. Use official support and hide private receiving information."
         }
       ],
-      "verdict": "With a realistic $5 payout barrier, PayPal/Bitcoin support, and a generous $3 community bonus, Pawns.app delivers one of the most dependable cashout workflows among modern reward apps.",
+      "verdict": "Before withdrawing, compare the net amount, complete the official verification and check for a claim email. Treat the referral reward as a conditional promotion. A successful result must be confirmed in the receiving account, not inferred from a promotional screen.",
       "imageAlt": "Pawns.app community invitation screen highlighting the $3 bonus reward",
-      "caption": "The Community screen details the mutual $3 bonus program and the official registration link discoverpawns.eu/6823713.",
+      "caption": "Supplied Community screen advertising a referral bonus; the current conditions split it across qualifying payouts.",
       "imageKey": "pawns-referral",
       "imageWide": true,
       "secondImage": {
         "key": "pawns-rewards",
-        "alt": "Pawns.app rewards tab showing cash prizes and bonus boosters",
-        "caption": "The Rewards tab complements cashouts with daily prize wheel spins, earning boosts, and entry tickets.",
+        "alt": "Pawns.app rewards screen with promotional wheel and prizes",
+        "caption": "The promotional Rewards area is distinct from a confirmed withdrawal or proof of payment.",
         "wide": true
-      }
+      },
+      "modifiedDate": "2026-11-15"
     },
     {
       "id": "pawns-vs-freecash",
       "app": "pawns",
       "category": "guides",
       "slug": "pawns-app-vs-freecash-rewards-compared",
-      "title": "Pawns.app vs. Freecash: passive sharing vs gaming offerwalls compared",
-      "description": "Compare Pawns.app and Freecash across passive internet sharing, survey frequency, mobile game rewards, and minimum payout limits.",
-      "intro": "Pawns.app and Freecash are two of the most popular platforms in the 'get-paid-to' (GPT) landscape, but they serve different user styles. While Freecash is heavily focused on intense game offerwalls and micro-tasks, Pawns.app offers hands-off passive bandwidth sharing alongside its surveys and mobile games. Here is how they compare so you can choose the best fit.",
+      "title": "Pawns.app vs Freecash: tasks, withdrawal rules and which to choose",
+      "description": "Compare Pawns.app and Freecash by earning method, first-withdrawal requirements, fees and offer conditions. Choose based on your account, not headline prizes.",
+      "intro": "Choose between Pawns.app and Freecash by checking what you must do and what you can actually withdraw. Pawns.app adds optional internet sharing to surveys and games; Freecash focuses on rewarded tasks. Neither is an assured income source. This comparison uses official rules and the supplied Pawns.app captures, without a shared earnings or payout-speed test.",
       "sections": [
         {
-          "heading": "Earning style: hands-off passive sharing vs. active grind",
+          "heading": "Internet sharing is a separate choice",
           "paragraphs": [
-            "The biggest difference between the two platforms lies in user effort. Pawns.app allows you to earn passively by sharing unused home internet bandwidth in the background of your phone or PC, making it ideal for busy individuals who cannot commit hours every day to gaming.",
-            "Freecash, on the other hand, is an active offerwall hub. While its game offers can pay high rewards, unlocking those earnings requires dedicated daily screen time, strict milestone grinding, and rapid level progression within tight deadlines."
-          ],
-          "cta": {
-            "label": "Try Pawns.app for passive income with starter code 6823713",
-            "url": "https://discoverpawns.eu/6823713"
-          }
-        },
-        {
-          "heading": "Cashout minimums, payment methods and crypto support",
-          "paragraphs": [
-            "Freecash features an ultra-low starting cashout limit ($0.50 on select crypto options like Litecoin), but PayPal withdrawals typically require $5.00 or higher. Pawns.app sets a clean, universal $5.00 USD cashout floor across all primary payment methods, including PayPal, Bitcoin, and gift cards.",
-            "Both platforms display earnings transparently in real currency (Pawns.app directly in USD; Freecash in coins where 1,000 coins equal $1.00 USD)."
+            "Pawns.app offers an internet-sharing mode as well as surveys and games. Consider whether you want a third party using your connection, and review permission, data-plan and network-use terms before enabling it.",
+            "Leaving software running does not establish a predictable return. If you prefer not to share a connection, compare the active tasks alone. A feature you will not use should not decide the winner."
           ],
           "source": {
-            "title": "Pawns.app vs. Competitors: Official Overview",
+            "title": "Pawns.app: official product overview",
             "url": "https://pawns.app/"
+          },
+          "cta": {
+            "label": "View Pawns.app with referral code 6823713",
+            "url": "https://discoverpawns.eu/6823713",
+            "sponsored": true
           }
         },
         {
-          "heading": "Which platform should you prioritize?",
+          "heading": "First withdrawal: compare access, not just a small denomination",
           "paragraphs": [
-            "You do not have to choose strictly between them. Running Pawns.app on your home computer or Wi-Fi connected phone generates steady background income without requiring your active attention.",
-            "When you have free time to play mobile games or complete surveys, you can compare specific game offers between Pawns.app and Freecash to see which app offers the higher milestone payout for your favorite game title."
+            "Pawns.app publishes a $5 minimum. Freecash’s current first-withdrawal guide states $25, subject to region, plus email and identity verification. Check your Cashout screen; later method minimums do not describe the first withdrawal.",
+            "Before starting, confirm you can use an available method in your country and meet its verification requirements. A promotional balance that is not yet eligible for cashout is different from money received."
+          ],
+          "source": {
+            "title": "Freecash: first withdrawal requirements",
+            "url": "https://freecash.com/academy/en/support/withdrawal/issues/first-cashout-requirements"
+          }
+        },
+        {
+          "heading": "Fees and waiting time: use your final summary",
+          "paragraphs": [
+            "Compare the net amount after the displayed fee, not only the requested amount. Freecash lists fees on several cash methods and fee-free gift cards; each method’s confirmation is the place to check the current total.",
+            "We have not timed matched withdrawals from both accounts, so we cannot name a faster payer. Payment review, an email claim step and the receiving service can change the experience."
+          ],
+          "source": {
+            "title": "Freecash: withdrawal limits and fees",
+            "url": "https://freecash.com/academy/en/support/withdrawal/issues/withdrawal-limits"
+          }
+        },
+        {
+          "heading": "For games, compare the same milestone before installing",
+          "paragraphs": [
+            "Write down the task, eligible device, new-player condition, deadline, purchase requirement and reward for the same milestone on each platform. A larger total can include costly or impractical stages.",
+            "Do not assume the same installation can earn both offers. Read eligibility before choosing where to start, keep a copy of the terms and check whether the first tracked action appears before investing more time. This is a comparison method, not a claim that one catalog pays more."
           ]
+        },
+        {
+          "heading": "Decision: which trade-off fits your situation?",
+          "paragraphs": [
+            "Consider Pawns.app if optional connection sharing is a feature you want and its payout options fit you. Consider Freecash if its available tasks and first-withdrawal requirements fit your plans better. Skip either if the useful reward is unlikely to justify the time or cost.",
+            "Use your real region. Freecash prohibits VPNs and proxies, including iCloud Private Relay. Availability differences are not a reason to conceal your location."
+          ],
+          "source": {
+            "title": "Freecash: VPN and proxy restrictions",
+            "url": "https://freecash.com/academy/en/support/account/restrictions/can-i-use-vpn-proxy"
+          }
         }
       ],
       "steps": [
-        "Install Pawns.app via discoverpawns.eu/6823713 and set up passive bandwidth sharing on Wi-Fi.",
-        "Enter invitation code 6823713 during onboarding to secure your $3 community starter bonus.",
-        "If you enjoy gaming, check the Offers tab in Pawns.app for titles like Candy Crush Saga and Clockmaker.",
-        "Compare offer terms with Freecash to select the game with the best payout-to-time ratio.",
-        "Cash out your earnings as soon as you reach the $5 mark via PayPal or Bitcoin."
+        "Check methods and verification requirements available in your country.",
+        "Compare the first eligible withdrawal, fees and net amount.",
+        "Decide whether you want internet sharing at all.",
+        "Compare one actual task with identical milestones before installing.",
+        "Record your time and credited rewards, then choose based on the result."
       ],
       "pros": [
-        "Pawns.app provides effortless background passive income that Freecash lacks.",
-        "Both platforms support fast PayPal cashouts and popular crypto withdrawal methods.",
-        "Running both apps simultaneously maximizes total monthly earnings."
+        "The platforms offer different task mixes for different preferences.",
+        "Comparing individual conditions avoids choosing by the largest advertised prize."
       ],
       "cons": [
-        "Freecash has a wider selection of third-party offerwall providers.",
-        "Pawns.app passive bandwidth rate depends on local residential IP demand."
+        "No matched earnings or payout-speed test supports a universal winner.",
+        "Task availability, verification and fees vary by country or account."
       ],
       "faq": [
         {
-          "q": "Can I use Pawns.app and Freecash on the same phone?",
-          "a": "Yes. You can run Pawns.app in the background to share bandwidth while using Freecash or Pawns.app surveys and games whenever you have spare time."
+          "q": "Which pays more: Pawns.app or Freecash?",
+          "a": "This review does not establish an earnings winner. Compare the same task and measure actual credit, cost and time in your own account."
         },
         {
-          "q": "Which platform pays faster to PayPal?",
-          "a": "Both platforms process PayPal withdrawals within 24 to 48 hours once account verification is satisfied."
+          "q": "Should I run both apps to maximize income?",
+          "a": "Using both does not guarantee a better return. It adds terms and tracking to manage; do not attempt the same new-user offer twice unless its rules explicitly allow it."
         },
         {
-          "q": "Does Pawns.app or Freecash pay more for game offers?",
-          "a": "Payouts vary by game title. Pawns.app frequently offers higher payouts on casual hits like Candy Crush ($54+), while Freecash excels in hardcore strategy games."
+          "q": "Which has the lowest first cashout?",
+          "a": "Compare the current first-withdrawal requirements in each account. Do not use a later low-denomination cashout as evidence of initial access."
         }
       ],
-      "verdict": "If you want passive income with minimal effort, Pawns.app is the clear winner. For the highest overall earnings, run Pawns.app in the background and cherry-pick the best mobile game offers across both sites.",
-      "imageAlt": "Pawns.app referral dashboard and mobile game offer options",
-      "caption": "Pawns.app pairs effortless background sharing with high-paying mobile game offers like Candy Crush and Clockmaker.",
+      "verdict": "There is no demonstrated overall winner. Choose the task and payout conditions you can actually use, and judge net rewards against real time and costs. Internet sharing is optional, not an automatic recommendation.",
+      "imageAlt": "Pawns.app Community screen used as a supplied reference for the comparison",
+      "caption": "The Pawns.app capture illustrates that product only; it is not a side-by-side earnings benchmark.",
       "imageKey": "pawns-referral",
       "imageWide": true,
       "secondImage": {
         "key": "pawns-offers",
-        "alt": "Pawns.app mobile game offers screen showing Clockmaker and Candy Crush",
-        "caption": "The Offers section provides substantial rewards on leading mobile titles without the aggressive grind found on pure offerwalls.",
+        "alt": "Pawns.app mobile game offers in the supplied capture",
+        "caption": "Listed game totals must be read with milestones and conditions; they do not establish a better return than Freecash.",
         "wide": true
-      }
+      },
+      "modifiedDate": "2026-11-15"
     },
     {
       "id": "primeopinion",
@@ -1941,70 +2066,101 @@ export const articles:Record<Locale,Article[]>={
       "app": "pinedrama",
       "category": "guides",
       "slug": "pinedrama-app-download-login-pc-shows-guide",
-      "title": "PineDrama App Download, Login & PC Guide: How to Watch Short Dramas (2026)",
-      "description": "How to download PineDrama safely on Android or iOS, sync your TikTok login, watch on PC, and browse trending shows like O Irmão Esquecido de Thor and Tempest.",
-      "intro": "Searching for PineDrama app download, TikTok login steps, or how to watch PineDrama on PC brings up dozens of third-party APK mirrors. Here is the clean, safe way to install the official app, sync your watch list across devices, and navigate its short-drama catalog without risking your account.",
+      "title": "PineDrama Download, TikTok Login & PC Availability (2026)",
+      "description": "Download the official PineDrama app on Android or iPhone, connect TikTok, find saved episodes and understand what is verified about PC access.",
+      "intro": "PineDrama has official Android and iPhone listings linked from its TikTok portal. We have not verified a Windows or macOS player or a supported emulator route. This guide separates those confirmed download options from PC claims and explains how to find your series again. The screenshots show the Android interface supplied for this guide; store information was checked on November 15, 2026.",
       "sections": [
         {
-          "heading": "Official PineDrama app download (Android, iOS & why to skip random APKs)",
+          "heading": "Android: identify the official Google Play listing",
           "paragraphs": [
-            "The official Android build is published on Google Play under TikTok Pte. Ltd. (package ID com.ss.android.ttmd.video), and the official landing portal is shortdrama.tiktok.com. Installing from the official store ensures automatic security patches and working TikTok OAuth login.",
-            "Avoid downloading modified 'PineDrama APK' files from unknown blogs that promise unlimited coins or ad-free cashouts. Modified packages cannot verify payouts server-side and can expose your linked TikTok credentials."
+            "Open the Google Play link below and check PineDrama - Short Dramas, publisher TikTok Pte. Ltd. and package com.ss.android.ttmd.video. A similar name or icon on an APK website is not enough to identify the same app. The official shortdrama.tiktok.com portal also links to this listing.",
+            "Let Google Play check compatibility with your device and account region. If installation is unavailable, read the store message rather than assuming that an APK will fix it. The listing includes in-app purchases; a free download does not mean every feature or episode is free."
           ],
           "source": {
-            "title": "PineDrama: Official TikTok Short Drama Portal",
+            "title": "PineDrama: official Google Play listing",
+            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=en"
+          }
+        },
+        {
+          "heading": "iPhone and iPad: use the App Store link",
+          "paragraphs": [
+            "The official portal links to PineDrama - Short Dramas in the App Store, app ID 6754134922. The listing shows developer TikTok Ltd. and seller TikTok Pte. Ltd. Open it in your own store region to check availability and the required system version before installing.",
+            "The App Store listing includes in-app purchases and describes automatically renewing plans. Read the price and renewal terms on your purchase screen before subscribing. This guide does not establish a universal price or guarantee that every drama is unlocked for free."
+          ],
+          "source": {
+            "title": "PineDrama: official App Store listing",
+            "url": "https://apps.apple.com/us/app/pinedrama-short-dramas/id6754134922"
+          }
+        },
+        {
+          "heading": "TikTok login and missing episode progress",
+          "paragraphs": [
+            "Google Play describes syncing a TikTok account to keep watch progress and preferences. Use the login flow inside the official app. In the supplied Android screenshots, Profile > Dramas shows progress such as EP 42/74, while My List helps you find saved series.",
+            "If your series is missing, first confirm that you used the same TikTok account, then search for the title and check your saved list and episode number. Check for an app update and a working connection. If the problem continues, use the support contact in the official listing and describe your device, app version and error without sharing passwords. We have not tested every login or recovery scenario."
+          ],
+          "source": {
+            "title": "PineDrama on Google Play: TikTok account sync and support",
+            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=en"
+          }
+        },
+        {
+          "heading": "Can you watch PineDrama on a PC?",
+          "paragraphs": [
+            "In the official sources checked, shortdrama.tiktok.com presents the app and links to Google Play and the App Store. That page alone is not evidence of a complete browser player. We did not verify a supported Windows or macOS installer or playback through an Android emulator.",
+            "Google Play Games on PC should not be recommended as a PineDrama installation method without confirmed support for this app. Use the official mobile listings, and check the publisher portal for future desktop information. A third-party page advertising PineDrama for PC does not establish official compatibility."
+          ],
+          "source": {
+            "title": "PineDrama: official download portal",
             "url": "https://shortdrama.tiktok.com/"
           }
         },
         {
-          "heading": "TikTok login, My List, and watching PineDrama on PC",
+          "heading": "Find the full series rather than another short clip",
           "paragraphs": [
-            "PineDrama supports signing in with your TikTok account so your watch history, saved series in My List, and episode progress stay synced. Inside your Profile tab, separate tabs for Dramas and Posts organize episodes you have already started alongside saved items.",
-            "If you search for 'PineDrama PC' or 'PineDrama para PC', note that PineDrama is built primarily as a mobile vertical-video app. Desktop viewers can visit shortdrama.tiktok.com for official availability details, or run the official Google Play release inside an officially supported Android environment such as Google Play Games or a trusted Android emulator—avoiding unverified desktop wrappers."
-          ]
-        },
-        {
-          "heading": "Trending short dramas and categories inside the app",
-          "paragraphs": [
-            "The Discover tab filters titles by Categories, Popular, and New, covering fantasy, revenge, high-society intrigue, and sci-fi action. Captures from the live catalog include localized hits like O Irmão Esquecido de Thor (91.4M), O Mago Supremo é um Menino (14.2M), O Prisioneiro da Gigante (15.6M), and O Poder SSS do Aluno Humilhado (8.9M).",
-            "In English-language listings, series such as Resolving Crisis At 30,000 Feet (74 episodes), Fell Into the Giant's Arms (47 episodes), The Broke Fat Dad Won $500 Million (84 episodes), King of Wrenches (49 episodes), and Tempest: The Last Mecha show the typical 40-to-85-episode bite-sized format."
+            "The Android screenshots show Discover with a search bar and Categories, Popular and New filters. Search the title, open the series page and check episode order before resuming. Save the series so you can return to it instead of searching for the same social clip again.",
+            "Titles such as O Irmão Esquecido de Thor appear in the supplied catalog screenshots. Those images record what was available at capture time; they are not a current ranking or a guarantee of availability in another country. Titles, dubbing and subtitles can differ by region."
           ],
           "source": {
-            "title": "PineDrama - Short Dramas on Google Play",
+            "title": "PineDrama on Google Play: Discover and watchlist",
             "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=en"
           }
         }
       ],
       "steps": [
-        "Open shortdrama.tiktok.com or search 'PineDrama - Short Dramas' by TikTok Pte. Ltd. on Google Play.",
-        "Install the official app without granting unnecessary permissions beyond standard network and notification preferences.",
-        "Tap Profile to sign in with TikTok or continue browsing Discover under Categories, Popular, or New.",
-        "Bookmark series to My List so you can resume exact episode numbers (such as EP 42/74) without losing your place.",
-        "On PC, stick to official web portals or Google Play-backed environments rather than untrusted third-party installers."
+        "Open the official PineDrama portal and choose Google Play or the App Store for your device.",
+        "Check the publisher, app identity, compatibility and any purchase information in the store.",
+        "Install the app and use its own TikTok login flow if you want account sync.",
+        "Search for a series in Discover, then open its episode list.",
+        "Save the series and confirm the episode number in your profile before resuming.",
+        "For PC access, check official announcements; this guide has no verified desktop or emulator method."
       ],
       "pros": [
-        "Quick TikTok account sync preserves watch history and saved series across sessions.",
-        "Clean Discover filters (Categories, Popular, New) make finding 1-to-3-minute episodes effortless."
+        "Official store links identify the mobile app and publisher.",
+        "Account sync and saved series help locate episode progress."
       ],
       "cons": [
-        "No dedicated native Windows or macOS desktop app equivalent to mobile.",
-        "Some catalog titles overlap with other vertical-drama platforms under different regional licensing."
+        "Desktop playback and emulator compatibility were not verified.",
+        "Availability, purchases and catalog options can differ by region."
       ],
       "faq": [
         {
-          "q": "Is there an official PineDrama PC version?",
-          "a": "PineDrama is designed for mobile Android and iOS screens. While shortdrama.tiktok.com hosts the official web portal, watching full mobile feeds on PC requires a supported Android environment rather than a standalone Windows app."
+          "q": "Is there a verified PineDrama PC download?",
+          "a": "We did not verify an official Windows or macOS installer or supported emulator route in the sources checked. The official portal links to the mobile app stores."
         },
         {
-          "q": "Is it safe to download a PineDrama APK?",
-          "a": "Only install from Google Play or official store links. Unofficial APKs claiming unlocked coins or faster cashouts carry security risks and do not bypass server-side reward checks."
+          "q": "Is PineDrama available for iPhone?",
+          "a": "Yes, the official portal links to App Store app ID 6754134922. Check availability and device compatibility in your own store region."
         },
         {
-          "q": "Do I need a TikTok account to log in to PineDrama?",
-          "a": "Linking your TikTok account is the easiest way to sync your library and preferences, especially if you jump from a viral TikTok clip into the full series."
+          "q": "Why did my PineDrama history disappear?",
+          "a": "First check that you used the same TikTok account, then inspect your saved series and episode progress. If an update and connection check do not help, use the support contact in the official listing."
+        },
+        {
+          "q": "Does a free download unlock all episodes?",
+          "a": "Not necessarily. Both store listings include in-app purchases. Check the episode and purchase screens for the conditions offered to your account."
         }
       ],
-      "verdict": "Stick to the official Google Play release or shortdrama.tiktok.com for safe TikTok login sync, clean episode tracking, and zero APK risk.",
+      "verdict": "Use the verified Google Play or App Store listing, keep the same account for progress and check episode order. PC playback remains unverified in this guide.",
       "imageAlt": "PineDrama Discover tab with search bar, Categories, Popular, and New drama posters",
       "caption": "Discover lets you search titles directly or browse Categories, Popular, and New releases.",
       "imageKey": "pinedrama-discover",
@@ -2014,7 +2170,8 @@ export const articles:Record<Locale,Article[]>={
         "alt": "PineDrama Profile Dramas grid showing episode progress across multiple series",
         "caption": "The Profile > Dramas tab tracks exact episode progress (such as EP 42/74) across series you started.",
         "wide": false
-      }
+      },
+      "modifiedDate": "2026-11-15"
     },
     {
       "id": "pinedrama-vs-dramastack",
@@ -2629,176 +2786,256 @@ export const articles:Record<Locale,Article[]>={
       "app": "freecash",
       "category": "rewards",
       "slug": "freecash-reviews-is-it-legit-or-scam",
-      "title": "Freecash Reviews (2026): Is It Legit, Real Payouts & What Users Say",
-      "description": "Is Freecash legit or a scam in 2026? Review real payout rules, why rewards go pending, account ban triggers, and how it compares to other GPT apps.",
-      "intro": "Freecash is a legitimate get-paid-to (GPT) platform that pays users for testing mobile games, completing partner offers, and answering surveys, not a passive income shortcut. Understanding why some users cash out smoothly while others run into pending holds or account blocks makes all the difference.",
+      "title": "Is Freecash Legit? Review of Payments, Pending Rewards & Account Rules",
+      "description": "A documentation-based Freecash review: who operates it, what pending rewards mean, account restrictions and what this review does not prove about payouts.",
+      "intro": "Freecash has an identifiable operator and published reward and redemption rules. That establishes a real service, but it does not guarantee that a particular offer will track or that every withdrawal will be accepted. This review separates those questions instead of promising easy earnings.",
       "sections": [
         {
-          "heading": "Is Freecash legit and how does it actually pay?",
+          "heading": "What this review verifies—and what it does not",
           "paragraphs": [
-            "Yes, Freecash is a real rewards site funded by game studios, app developers, and market-research partners who pay for user acquisition and feedback. Coins convert at 1,000 coins = $1.00 USD, and verified accounts can redeem balances via PayPal, gift cards, cryptocurrency, or bank transfer depending on the country.",
-            "Most negative Freecash reviews stem from unrealistic expectations or missed tracking rules rather than non-payment. High-value offers ($50 to $100+) almost always require reaching advanced game levels within 30 days or making optional in-app purchases."
-          ]
+            "We reviewed the official help center and terms on November 15, 2026, alongside previously saved interface images. Our Android capture says no offers are available; it does not establish the catalog available to other accounts. We did not complete an earning cycle or independently test a withdrawal for this review.",
+            "The terms identify Almedia GmbH as the provider for the main rewards service and make redemption subject to eligibility and verification. Evaluate the written conditions and your actual account history; neither a promotional payout total nor an isolated rating establishes your likely result."
+          ],
+          "source": {
+            "title": "Freecash: terms and operator",
+            "url": "https://freecash.com/en/policies/terms"
+          }
         },
         {
-          "heading": "Why accounts get flagged or rewards go pending",
+          "heading": "Untracked, unclaimed and pending are different problems",
           "paragraphs": [
-            "Freecash enforces strict anti-fraud rules: only one account per household/IP is allowed, and using a VPN, proxy, or emulator can trigger an automatic lock. First-time withdrawals also require email and identity verification (selfie and ID check) plus a $25 first-cashout threshold in many regions.",
-            "New users can open an account using the verified invitation link below or copy code 3C7GKG, then test tracking on a small, free offer before committing hours to a long game milestone."
+            "Untracked means the required action has not been registered as complete. Unclaimed means a completed reward is waiting for the Claim action where that feature applies. Pending means a reward is undergoing checks before joining the available balance. A withdrawal pending after you request payment is a different stage again.",
+            "Identify the stage before contacting support. Save the offer name, completion evidence and status, rather than repeating the activity or paying for another milestone in the hope that the first one will appear."
+          ],
+          "source": {
+            "title": "Freecash: claiming offer rewards",
+            "url": "https://freecash.com/academy/en/support/offer/miscellaneous/how-to-claim-offer-rewards"
+          },
+          "cta": {
+            "label": "See the Freecash withdrawal requirements and status guide",
+            "url": "/en/freecash-bonus-codes-withdrawal-methods-guide/"
+          }
+        },
+        {
+          "heading": "Account rules and the privacy trade-off",
+          "paragraphs": [
+            "The official rules limit participation to one account per household and prohibit VPN use, including iCloud Private Relay. Use accurate registration details and contact support about an existing account instead of creating a replacement.",
+            "Reward tracking requires activity data and some permissions. Read the relevant prompts before agreeing. If you are uncomfortable with the data requested for an offer or identity verification, skip the activity; a reward is not a reason to accept a permission you do not want."
+          ],
+          "source": {
+            "title": "Freecash: account restrictions",
+            "url": "https://freecash.com/academy/en/support/account/restrictions/how-can-i-ensure-that-my-freecash-account-will-not-be-banned"
+          }
+        },
+        {
+          "heading": "When to continue and when to stop",
+          "paragraphs": [
+            "Continue only when the conditions are understandable, an early action registers and the possible reward justifies your time. Stop adding time or purchases when tracking fails, a deadline is impractical or a withdrawal requirement is unacceptable to you.",
+            "Missing credit by itself does not identify the cause. Ask support to investigate the specific record and keep the response. Do not treat a support request as a promise that the reward will be approved."
           ]
         }
       ],
       "steps": [
-        "Create a single Freecash account using your real location and primary email, with no VPN or proxy active.",
-        "Start with a quick, free app or survey offer to confirm that device tracking credits properly.",
-        "Save screenshots of the offer terms, level deadlines, and in-game progress in case support review is needed.",
-        "Complete email and ID verification before requesting your first $25 cashout."
+        "Check the operator and current account rules.",
+        "Identify whether the problem is tracking, claiming, reward review or a withdrawal.",
+        "Save the offer terms and evidence of the exact milestone.",
+        "Use the appropriate support route without opening another account.",
+        "Reassess the time and data involved before continuing."
       ],
       "pros": [
-        "Transparent coin conversion (1,000 coins = $1.00 USD) and fast subsequent payouts once verified.",
-        "Wide selection of mobile game milestones alongside surveys and partner offerwalls."
+        "Identifiable operator and public help for account and reward issues.",
+        "Different reward states can be checked instead of treating every delay as the same problem."
       ],
       "cons": [
-        "First withdrawal often requires a $25 minimum and identity verification.",
-        "Strict anti-VPN and one-account-per-household rules can freeze accounts if violated."
+        "This review does not independently verify a withdrawal.",
+        "Tracking, verification and offer conditions can prevent a reward from becoming available."
       ],
       "faq": [
         {
-          "q": "Is Freecash legit or a scam?",
-          "a": "Freecash is legitimate and pays verified users via PayPal, gift cards, and crypto, provided you follow offer tracking rules and household limits."
+          "q": "Does a real Freecash account guarantee payment?",
+          "a": "No. The activity must meet its terms, be credited and pass the applicable redemption and verification checks."
         },
         {
-          "q": "Why do some Freecash offers stay pending?",
-          "a": "Partners hold high-value game rewards for several days to confirm valid gameplay and prevent chargebacks or duplicate installs."
+          "q": "Does pending mean my money was lost?",
+          "a": "Not necessarily. First distinguish a reward under review from a withdrawal being processed; each has its own status and support route."
         },
         {
-          "q": "Can two people in the same house use Freecash?",
-          "a": "Freecash restricts accounts per household and shared IP address, so check their terms before creating a second account on the same Wi-Fi."
+          "q": "Can two people in the same household create accounts?",
+          "a": "The published account rules limit Freecash to one account per household. Check with support before another person registers."
         }
       ],
-      "verdict": "Freecash is a legitimate rewards site if you treat it as paid app testing, avoid VPNs, and focus on free milestones whose tracking works from day one.",
-      "imageAlt": "Freecash dashboard and offer list on Android",
-      "caption": "Freecash aggregates mobile game milestones, partner offers, and surveys in one account."
+      "verdict": "Freecash is an identifiable rewards service, but the useful decision is whether a specific offer is worth its conditions. We do not label earnings as guaranteed or present our screenshots as independently verified payout evidence.",
+      "imageAlt": "Freecash referral-link panel with identifier 3C7GKG",
+      "caption": "This saved screen shows a referral link, not a withdrawal receipt.",
+      "modifiedDate": "2026-11-15"
     },
     {
       "id": "freecash-bonus-cashout",
       "app": "freecash",
       "category": "rewards",
       "slug": "freecash-bonus-codes-withdrawal-methods-guide",
-      "title": "Freecash Bonus Codes & Cashout Guide (2026): PayPal, Crypto & Minimums",
-      "description": "How to use Freecash referral code 3C7GKG, find official bonus codes, meet the $25 first-cashout rule, and avoid PayPal or crypto withdrawal fees.",
-      "intro": "Knowing how Freecash bonus codes and withdrawal fees work helps you keep more of what you earn. While your first cashout carries a higher threshold and an identity check, subsequent withdrawals unlock much lower minimums and near-instant options.",
+      "title": "Freecash Bonus Codes & Cashout (2026): Minimums, PayPal Fees & Status",
+      "description": "Understand referral versus bonus codes, the regional first-cashout minimum, PayPal’s percentage and small-payment fee, and how to follow a withdrawal.",
+      "intro": "A referral identifier, a promotional bonus and an available cashout balance are different things. This guide explains what to check at each step and corrects a common oversimplification: PayPal cashouts can cost more than the headline 5% fee.",
       "sections": [
         {
-          "heading": "How Freecash referral and bonus codes work",
+          "heading": "Referral code, bonus code or lottery code?",
           "paragraphs": [
-            "When signing up, you can enter an invitation link or code such as 3C7GKG to tie your registration to a verified referral link. Freecash also publishes limited-time bonus codes during community giveaways on X/Twitter, Instagram, YouTube, and Discord, which can be redeemed inside your profile or rewards tab while slots remain active.",
-            "Avoid third-party websites promising 'unlimited Freecash coin generators'—valid bonus codes only come from Freecash's official channels or verified referral links."
-          ]
+            "3C7GKG is the identifier used by our affiliate invitation. It does not promise a fixed bonus. Freecash separately documents bonus codes and lottery codes: the latter award draw entries rather than a guaranteed cash amount.",
+            "Use only the code route and promotion shown in your account. A code can be expired, exhausted or restricted to selected users. Never pay a third party to unlock a code or share your login with a supposed code generator."
+          ],
+          "source": {
+            "title": "Freecash: code types and availability",
+            "url": "https://freecash.com/academy/en/support/account/rewards/where-freecash-codes"
+          }
         },
         {
-          "heading": "First $25 withdrawal vs. subsequent cashouts and fees",
+          "heading": "Check the first-cashout requirement in your region",
           "paragraphs": [
-            "According to Freecash support documentation, first-time withdrawals typically require a $25 minimum (varying slightly by region) plus email and selfie/ID verification. Once that first withdrawal is approved, the $25 gate drops and many e-wallet or crypto methods allow cashouts starting around $5.",
-            "PayPal and Venmo withdrawals generally carry a 5% fee, whereas major gift cards (Amazon, Google Play, Apple, Steam) and several cryptocurrency options (Litecoin, Bitcoin, Ethereum) often process with zero or minimal platform fees. Bank transfers via ACH or Revolut can take 3–5 business days."
+            "The current help lists US$25 as the first-withdrawal threshold, with regional differences, plus email and ID verification. Your Cashout screen is the reference for the exact amount. Later withdrawals follow the chosen method’s minimum.",
+            "Check this before earning toward a payout. Submit verification only through the official process, and do not assume a screenshot from another country establishes your eligibility."
           ],
           "source": {
             "title": "Freecash: first-withdrawal requirements",
             "url": "https://freecash.com/academy/en/support/withdrawal/issues/first-cashout-requirements"
           }
+        },
+        {
+          "heading": "PayPal: 5% plus a fixed fee on small amounts",
+          "paragraphs": [
+            "The PayPal guide lists a 5% fee, plus US$1 on the US$5, US$10 and US$20 options. Larger options do not have that additional US$1 fee. Confirm the exact charge on your own screen before submitting.",
+            "For example, if those rules apply to a US$10 option, the fees total US$1.50 and the amount after those Freecash fees is US$8.50, before any separate currency conversion. This is an arithmetic example, not a payment we received. Compare the final usable value, not only the gross amount."
+          ],
+          "source": {
+            "title": "Freecash: current PayPal withdrawal fees",
+            "url": "https://freecash.com/academy/en/support/withdrawal/cash/how-withdraw-to-paypal"
+          }
+        },
+        {
+          "heading": "Follow the request and the redemption email",
+          "paragraphs": [
+            "After requesting a withdrawal, check My Withdrawals. The current help explains that PayPal payments usually use Tremendous; follow the redemption email when your request is sent. Check the inbox you entered and its spam folder.",
+            "A security review and delivery to a bank are different waits. Use the processing guidance for the selected method and contact support if the status is Rejected or the stated window is exceeded. Do not submit a second request merely because a claim email has not appeared."
+          ],
+          "source": {
+            "title": "Freecash: pending withdrawal and delivery checks",
+            "url": "https://freecash.com/academy/en/support/withdrawal/issues/why-withdrawal-pending"
+          }
         }
       ],
       "steps": [
-        "Open Freecash via the verified invitation button below or copy referral identifier 3C7GKG during sign-up.",
-        "Follow Freecash's official social channels if you want to catch time-limited community bonus drops.",
-        "Build your balance past the $25 first-cashout threshold and complete the ID verification prompt.",
-        "Compare fees before cashing out: pick gift cards or low-fee crypto if you want to avoid PayPal's 5% fee."
+        "Read the code’s actual conditions; do not count an uncredited bonus as available balance.",
+        "Check the regional threshold and verification request in Cashout.",
+        "Compare the amount, fee, payout currency and method before confirming.",
+        "Use the correct payout email and keep the transaction reference.",
+        "Follow My Withdrawals and any required redemption email."
       ],
       "pros": [
-        "Multiple cashout routes including PayPal, crypto, bank transfer, and fee-free gift cards.",
-        "Lower withdrawal minimums unlock after completing the first verified cashout."
+        "Published instructions explain verification and the payment claim process.",
+        "The confirmation screen lets you compare the final fee before submitting."
       ],
       "cons": [
-        "PayPal withdrawals carry a 5% processing fee.",
-        "First cashout requires reaching $25 and passing an identity check."
+        "Small PayPal withdrawals can have a fixed fee in addition to 5%.",
+        "Minimums, availability, verification and processing depend on the region and method."
       ],
       "faq": [
         {
-          "q": "What is the Freecash invitation code on apps308?",
-          "a": "The verified referral identifier is 3C7GKG, linked directly in the Freecash button on this page."
+          "q": "Is the first minimum always US$25?",
+          "a": "The help lists US$25 but explicitly allows regional differences. Check your Cashout screen."
         },
         {
-          "q": "Which Freecash withdrawal method has no fees?",
-          "a": "Gift cards (such as Amazon, Google Play, and Steam) and select cryptocurrency options typically have no platform withdrawal fee, unlike PayPal's 5% fee."
+          "q": "Is the PayPal fee only 5%?",
+          "a": "The current guide adds US$1 to the US$5, US$10 and US$20 options. Confirm your exact fee before withdrawing."
         },
         {
-          "q": "How fast does Freecash pay after verification?",
-          "a": "Security checks usually take up to 30 minutes for PayPal, crypto, and gift cards, while bank transfers take 3–5 business days."
+          "q": "Is an email confirmation already the payment?",
+          "a": "Not always. Some messages confirm the request; a Tremendous redemption email may require a further claim action. Check the request status and the instructions in your account."
         }
       ],
-      "verdict": "Use code 3C7GKG at sign-up, clear the initial $25 ID-verified cashout once, and prefer gift cards or low-fee crypto for smaller, fee-free withdrawals afterward.",
-      "imageAlt": "Freecash withdrawal options and rewards screen",
-      "caption": "Freecash supports PayPal, gift cards, crypto, and bank transfers once first-cashout rules are met."
+      "verdict": "Check the regional minimum and the net amount before requesting payment. Do not choose a less suitable reward solely to avoid a fee, or assume a referral code guarantees a bonus.",
+      "imageAlt": "Freecash referral-link panel with identifier 3C7GKG",
+      "caption": "This saved screen shows a referral link, not a withdrawal receipt.",
+      "modifiedDate": "2026-11-15"
     },
     {
       "id": "freecash-games-offers",
       "app": "freecash",
       "category": "rewards",
       "slug": "freecash-games-and-offers-how-to-earn-more",
-      "title": "Best Freecash Games & Offers (2026): Milestones, Tracking & Tips",
-      "description": "How to pick profitable Freecash game offers in 2026, fix tracking issues on Android and iOS, and avoid spending more than an offer pays.",
-      "intro": "Mobile games make up the highest-paying section on Freecash, with headline rewards ranging from a few dollars to several hundred. Still, the headline number is split across progressive milestones, and a single tracking mistake can leave your progress uncredited.",
+      "title": "Freecash Game Offers (2026): How to Choose, Compare Goals & Track Progress",
+      "description": "Choose Freecash game offers by reachable milestones, deadlines and spending. Learn how to check tracking and document missing credit without chasing a headline total.",
+      "intro": "The largest advertised reward does not identify the best Freecash game for you. Catalogs vary and the total can combine several difficult or paid milestones. This is a method for evaluating the offers you actually see, not a ranking of games we have played and tested.",
       "sections": [
         {
-          "heading": "How Freecash game milestones work",
+          "heading": "Compare reachable milestones, not the maximum",
           "paragraphs": [
-            "Every game offer lists a sequence of goals—such as installing the app, reaching level 15 in 7 days, or hitting level 50 within 30 days. Early milestones pay small amounts quickly to confirm tracking, while the largest payouts sit at the deepest levels or require optional in-app bundles.",
-            "Before downloading, divide the realistic free-to-play milestones by the hours required. Skipping impossible final levels and moving on to a fresh game often yields a better hourly return."
+            "Write down each goal separately: what action counts, its deadline, reward, new-player rule and any purchase requirement. Check whether the deadline refers to starting the offer, installing the game or completing a previous milestone; use the wording on that offer.",
+            "Separate stages you expect to finish without spending from those that require a purchase or uncertain late-game progress. If the free stages alone do not interest you, a large headline total is not a good reason to install."
           ]
         },
         {
-          "heading": "How to prevent tracking failures on Android and iOS",
+          "heading": "A simple example for comparing two offers",
           "paragraphs": [
-            "Tracking only works for first-time installs: never start an offer for a game you previously downloaded on the same Google Play or Apple ID. Disable ad-blockers, Private DNS filters, and VPNs before clicking the Freecash offer link, and launch the game immediately after installation finishes.",
-            "If you want to compare which platform pays more for the same game title, check our Swagbucks vs. Freecash comparison before installing."
+            "Hypothetical example: offer A advertises US$100, but only US$2 of its goals fit your available time. Offer B advertises US$8, with US$4 of goals you expect to attempt in the same time. Compare the US$2 and US$4 reachable portions, not the US$100 and US$8 headlines. These are invented amounts for the calculation, not live offers.",
+            "Deduct any required purchase and allow for uncertainty. A goal that depends on spending is a cost you could lose if the activity does not qualify. Decide your spending and time limits before playing, rather than increasing them to recover time already spent."
+          ]
+        },
+        {
+          "heading": "Check tracking before investing more time",
+          "paragraphs": [
+            "Freecash’s checklist says to use the offer’s installation route, keep the same device, avoid previously installed games and check the required tracking settings. VPNs, ad blockers and custom DNS can disrupt reporting.",
+            "Read the permissions first. If you choose not to permit tracking, skip that offer. Do not remove protections without understanding the change, and do not assume that changing a setting after completion will recreate missing events."
           ],
           "source": {
-            "title": "Freecash: offer tracking best practices",
-            "url": "https://freecash.com/academy/en/support/offer/tracking/how-to-ensure-offer-tracks"
+            "title": "Freecash: tracking checklist",
+            "url": "https://freecash.com/academy/en/support/offer/tracking/avoid-these-mistakes-while-tracking"
+          }
+        },
+        {
+          "heading": "What to keep when an installation or goal is missing",
+          "paragraphs": [
+            "Save the original conditions, offer name, start time, deadline, player identifier and screenshots showing the completed goal. Check My Offers and the troubleshooting tool before spending more or reinstalling the game.",
+            "For a first installation that has not appeared, the official guide asks users to wait 48 hours before opening a manual ticket with the evidence. Use any waiting period or support instructions shown for your particular task. An investigation does not guarantee credit."
+          ],
+          "source": {
+            "title": "Freecash: first-install troubleshooting",
+            "url": "https://freecash.com/academy/en/support/offer/tracking/troubleshoot-first-install-tracking"
           }
         }
       ],
       "steps": [
-        "Turn off VPNs, ad-blockers, and Private DNS on your phone before opening Freecash.",
-        "Pick a game you have never installed before and read every milestone deadline.",
-        "Tap the offer inside Freecash, install directly from the official store, and play for 5–10 minutes right away.",
-        "Confirm the initial install or level-1 milestone credits before investing days into higher goals."
+        "List the goal, deadline and reward for each milestone.",
+        "Compare only the stages you expect to attempt within your limits.",
+        "Check new-player eligibility and the permissions before installing.",
+        "Start through the offer and confirm an early action registers.",
+        "Keep completion evidence and use the stated support process if credit is missing."
       ],
       "pros": [
-        "Progressive milestones pay out as you advance instead of forcing an all-or-nothing grind.",
-        "Clear offer cards show deadlines and exact level targets upfront."
+        "Comparing individual milestones makes the real commitment clearer.",
+        "Evidence saved before starting helps explain a missing-credit problem."
       ],
       "cons": [
-        "Previously installed games will not track or credit.",
-        "Top-tier milestones may be unrealistic without in-app purchases."
+        "The catalog changes, so another user’s offer may not be available to you.",
+        "Late goals, purchases and failed tracking can make the headline total impractical."
       ],
       "faq": [
         {
-          "q": "Why didn't my Freecash game offer track?",
-          "a": "Common causes include prior installation on the same device/store account, active VPNs or ad-blockers, or denying app-tracking permission on iOS."
+          "q": "Which Freecash game pays the most?",
+          "a": "There is no universal answer from the headline total. Compare the eligible milestones, deadline, costs and time on the offers shown to you."
         },
         {
-          "q": "Should I spend money on in-app purchases to finish a Freecash offer?",
-          "a": "Only if a specific purchase milestone clearly reimburses more than it costs; otherwise stick to free-to-play goals."
+          "q": "Should I buy something in a game to unlock a reward?",
+          "a": "Only consider a purchase after reading its exact conditions and accepting the possibility of no reward. A promised milestone is not a refund guarantee."
         },
         {
-          "q": "How long do I have to finish a Freecash game offer?",
-          "a": "Most featured game offers set a 14-day to 30-day window from the moment you install the app."
+          "q": "Does reinstalling a game make me a new user?",
+          "a": "No. The official tracking guide warns that previously installed games are not eligible for a new-install reward. Reinstalling does not reset that history."
         }
       ],
-      "verdict": "Focus on fresh-install games with achievable mid-tier milestones, verify the first tracking check early, and skip paywalled final levels.",
-      "imageAlt": "Freecash mobile game offers and milestone rewards",
-      "caption": "Freecash game offers split rewards across timed level milestones that require clean first-install tracking."
+      "verdict": "Choose by reachable goals and your own limits. Check the first tracking event early and keep the original offer evidence before committing more time or money.",
+      "imageAlt": "Freecash referral-link panel with identifier 3C7GKG",
+      "caption": "This saved screen shows a referral link, not a withdrawal receipt.",
+      "modifiedDate": "2026-11-15"
     }  ],
   "es": [
     {
@@ -2997,78 +3234,77 @@ export const articles:Record<Locale,Article[]>={
       "app": "freecash",
       "category": "rewards",
       "slug": "freecash-ofertas-invitaciones",
-      "title": "Freecash Opiniones (2026): Cómo Funciona, Ofertas, Invitaciones y Retiros",
-      "description": "¿Cómo funciona Freecash en 2026? Analizamos sus ofertas de juegos, programa de invitaciones, requisitos del primer retiro y tiempos de pago por PayPal.",
-      "intro": "Freecash reúne juegos, encuestas y otras ofertas que pueden generar recompensas. Cada actividad tiene objetivos y plazos propios, y las opciones cambian según el dispositivo, la región y la cuenta. Antes de empezar, conviene entender cómo se valida la oferta y cómo se retira el saldo.",
+      "title": "Cómo Funciona Freecash (2026): Primeros Pasos, Ofertas e Invitaciones",
+      "description": "Guía inicial de Freecash: cómo una oferta se convierte en recompensa, para qué sirve una invitación y qué revisar antes de empezar.",
+      "intro": "Freecash reúne juegos, encuestas y ofertas de socios con recompensas. Esta guía inicial explica el recorrido desde el registro y las invitaciones hasta una actividad elegible. Los problemas de pago, las comisiones y el seguimiento de juegos tienen sus propias guías en esta serie.",
       "sections": [
         {
-          "heading": "Cómo funcionan las ofertas",
+          "heading": "Distingue oferta, recompensa y retiro",
           "paragraphs": [
-            "Revisa el objetivo, el plazo y las acciones requeridas antes de empezar. En un juego, por ejemplo, la recompensa puede depender de alcanzar un nivel concreto. Guarda las instrucciones para seguir tu progreso.",
-            "Ten en cuenta el tiempo y cualquier compra necesaria. Elige actividades que te interesen y compara la recompensa con el esfuerzo. Si la lista está vacía, revisa más tarde: la disponibilidad puede cambiar."
+            "Una oferta es una actividad con requisitos; una recompensa acreditada es el resultado de una actividad aceptada; un retiro es una solicitud posterior para canjear saldo disponible. Instalar un juego, ver un total promocional o introducir un código no completa las tres etapas.",
+            "Empieza por comprobar si te interesan las actividades que aparecen en tu dispositivo y cuenta. No organices tu tiempo según el catálogo de otra persona ni supongas que todas las encuestas o formas de pago están disponibles en tu país."
           ]
         },
         {
-          "heading": "Cómo acceder con la invitación",
+          "heading": "Para qué sirve la invitación 3C7GKG",
           "paragraphs": [
-            "Usa el botón de abajo para abrir Freecash con la invitación. También puedes copiar 3C7GKG para guardar el identificador del enlace. Las condiciones de cada promoción aparecen en Freecash.",
-            "Las invitaciones y promociones pueden depender del país, la cuenta y las actividades elegibles. Revisa los requisitos antes de contar con un bono en tu saldo."
-          ]
+            "El botón de Freecash de apps308 utiliza nuestro identificador de referido 3C7GKG. Podemos recibir una recompensa si cumples las condiciones del programa. Es una relación de afiliación, no un cupón que garantice una cantidad fija de dinero.",
+            "La ayuda permite registrarse mediante el enlace o introducir el código antes de abrir la caja de bienvenida. La elegibilidad depende del país de la persona invitada y del programa vigente. Lee la promoción que te aparece; no abras otra cuenta para probar una invitación diferente."
+          ],
+          "source": {
+            "title": "Freecash: funcionamiento de los referidos",
+            "url": "https://freecash.com/academy/en/support/account/rewards/how-affiliate-system-works"
+          }
         },
         {
-          "heading": "Primer retiro: mínimo y verificación",
+          "heading": "Un plan para tu primera sesión",
           "paragraphs": [
-            "La ayuda de Freecash indica un mínimo inicial de 25 USD, variable por región, y verificación de correo e identidad. Cashout muestra el importe aplicable. Revisa la comisión antes de confirmar."
+            "Antes de empezar, guarda el nombre de la oferta, requisitos, plazo, metas y compras exigidas. Decide cuánto tiempo dedicarás. Si la primera acción no se registra, investiga antes de seguir.",
+            "Consulta Cashout para saber qué importe y verificación se aplicarían a tu cuenta. Es una comprobación previa, no una solicitud de retiro. Si las recompensas o los datos personales exigidos no te convienen, detente antes de acumular saldo que no querrías canjear."
           ],
           "source": {
             "title": "Freecash: requisitos del primer retiro",
             "url": "https://freecash.com/academy/en/support/withdrawal/issues/first-cashout-requirements"
-          }
-        },
-        {
-          "heading": "¿Cuánto tarda el pago?",
-          "paragraphs": [
-            "Según Freecash, las verificaciones de seguridad pueden durar hasta 30 minutos; transferencias bancarias, Stash y Revolut pueden tardar de 3 a 5 días laborables. El plazo depende del método y la revisión.",
-            "Consulta el estado en My Withdrawals. La liberación de la recompensa de una oferta ocurre antes del retiro: comprueba primero que el importe esté disponible."
-          ],
-          "source": {
-            "title": "Freecash: plazos y retiros pendientes",
-            "url": "https://freecash.com/academy/en/support/withdrawal/issues/why-withdrawal-pending"
+          },
+          "cta": {
+            "label": "Ver cómo evaluar juegos y ofertas de Freecash",
+            "url": "/es/freecash-juegos-y-ofertas-como-ganar-mas/"
           }
         }
       ],
       "steps": [
-        "Abre el sitio oficial o su ficha verificada en la tienda.",
-        "Lee los requisitos de la cuenta y las condiciones de tu país.",
-        "Elige una oferta y registra las acciones, el plazo y los gastos requeridos.",
-        "Consulta la información de retiro y verificación en tu cuenta.",
-        "Si usas una invitación, comprueba que el programa se aplique a tu región."
+        "Revisa la elegibilidad de tu país y las ofertas de tu cuenta.",
+        "Si usas nuestra invitación, lee sus condiciones antes de abrir la caja de bienvenida.",
+        "Guarda los requisitos de una oferta y fija un límite de tiempo.",
+        "Comprueba que se registra la primera acción.",
+        "Consulta la guía específica de retiros o seguimiento para el siguiente paso."
       ],
       "pros": [
-        "Puedes revisar una oferta antes de decidir participar.",
-        "La ayuda oficial explica los requisitos de las invitaciones."
+        "Puedes revisar las condiciones antes de dedicar tiempo.",
+        "La ruta de invitación documentada aclara la función del enlace."
       ],
       "cons": [
-        "La recompensa depende de acciones y elegibilidad.",
-        "Tiempo, gastos y verificación afectan el valor de la oferta."
+        "El catálogo y las promociones varían según país y cuenta.",
+        "Empezar una oferta no equivale a disponer de la recompensa."
       ],
       "faq": [
         {
-          "q": "¿Cuál es el código de invitación?",
-          "a": "El identificador del enlace es 3C7GKG. Puedes copiarlo o acceder directamente con el botón de Freecash de esta página."
+          "q": "¿3C7GKG garantiza un bono en efectivo?",
+          "a": "No. Identifica nuestra invitación; cualquier promoción depende de las condiciones que Freecash muestre a la persona nueva."
         },
         {
-          "q": "¿La invitación activa un bono inmediato?",
-          "a": "Las promociones tienen requisitos propios. Revisa las actividades elegibles y las condiciones de tu cuenta."
+          "q": "¿Conviene empezar varias ofertas a la vez?",
+          "a": "Empieza con una oferta clara para guardar sus condiciones, comprobar el registro y entender el esfuerzo."
         },
         {
-          "q": "¿Dónde sigo mi retiro?",
-          "a": "En Cashout, abre My Withdrawals para consultar el estado. Si se rechaza o supera el plazo indicado, contacta con soporte."
+          "q": "¿Dónde están los detalles de pagos y seguimiento?",
+          "a": "La serie de Freecash que aparece abajo incluye guías separadas de confiabilidad y reglas, retiros y comisiones, y selección y seguimiento de juegos."
         }
       ],
-      "verdict": "Lee cada oferta con atención. Empieza solo cuando entiendas las condiciones, el tiempo necesario y la verificación.",
-      "imageAlt": "Freecash",
-      "caption": "El área de invitaciones permite copiar el enlace para acceder o compartir Freecash."
+      "verdict": "Usa esta guía para orientarte: entiende la oferta, revisa la invitación y fija un límite antes de dedicar tiempo. Pasa a la guía específica cuando necesites resolver un retiro o el seguimiento.",
+      "imageAlt": "Panel del enlace de referido de Freecash con identificador 3C7GKG",
+      "caption": "Esta captura guardada muestra un enlace de referido, no un comprobante de retiro.",
+      "modifiedDate": "2026-11-15"
     },
     {
       "id": "dramastack",
@@ -3323,85 +3559,127 @@ export const articles:Record<Locale,Article[]>={
       "app": "swagbucks",
       "category": "rewards",
       "slug": "encuestas-pagadas-y-cashback-en-swagbucks",
-      "title": "Encuestas pagadas y cashback en Swagbucks: cómo sumar puntos SB con criterio",
-      "description": "Guía práctica sobre las encuestas de Swagbucks y el reembolso de Shop and Earn en tiendas como Walmart, eBay y Expedia, además de cómo evitar filtros de perfil.",
-      "intro": "No todos los usuarios quieren dedicar un mes a subir niveles en un juego móvil. Para quienes prefieren tareas rápidas desde el navegador o recuperar un porcentaje de las compras online que ya tenían previstas, Swagbucks ofrece dos canales directos: Answer Surveys y el portal de reembolsos Shop and Earn.",
+      "title": "Encuestas y cashback en Swagbucks: descartes, seguimiento y SB pendientes",
+      "description": "Aprende a comparar SB por minuto, distinguir encuestas descartadas de créditos faltantes y revisar el seguimiento y los puntos pendientes de tus compras.",
+      "intro": "Las encuestas de Swagbucks cambian tiempo por una posible recompensa; Shop & Earn devuelve parte de una compra válida. Son procesos distintos: en uno importan el perfil y los minutos invertidos; en el otro, las condiciones y el seguimiento. Esta guía utiliza la captura del panel facilitada y la ayuda de Swagbucks. No presenta una compra completada ni una prueba de ganancias.",
       "sections": [
         {
-          "heading": "Cómo funcionan las encuestas en Answer Surveys y por qué ocurren descartes",
+          "heading": "Descarte, crédito faltante y encuestas desactivadas no son lo mismo",
           "paragraphs": [
-            "En la pantalla de Swagbucks que capturamos, la fila Answer Surveys and Earn mostraba cada cuestionario con su duración estimada y recompensa: 5 SB por 5 minutos (Survey #201976545), 10 SB por 5 minutos y 25 SB por 20 minutos, además del bloque inicial 'Get Started! Earn 5 SB in about 5 minutes'.",
-            "Cada estudio de mercado busca un perfil demográfico específico. Las primeras preguntas sirven como filtro de clasificación; si tus respuestas no encajan con la cuota que busca la marca, la encuesta se cierra antes de terminar. Responde siempre con datos coherentes y reales, ya que contestar al azar o contradecir tu perfil puede bloquear el acceso a nuevas encuestas."
+            "Una encuesta que indica que no reúnes los requisitos ha terminado sin completarse. Swagbucks explica que el estudio puede buscar otro perfil o haber cubierto su cupo. Un descarte individual es distinto de perder el acceso a todas las encuestas de la cuenta.",
+            "Lee el mensaje final antes de concluir que falta una recompensa. Cambiar datos demográficos para superar el filtro no resuelve el problema: mantén el perfil real y responde a lo que se pregunta. Si la pantalla confirma que terminaste, utiliza las comprobaciones de crédito de abajo."
           ],
           "source": {
-            "title": "Swagbucks: información sobre encuestas remuneradas",
-            "url": "https://www.swagbucks.com/g/paid-surveys"
+            "title": "Swagbucks: motivos de descarte",
+            "url": "https://help.swagbucks.com/hc/en-us/articles/205642084-Why-did-the-survey-disqualify-me-before-I-finished"
           }
         },
         {
-          "heading": "Shop and Earn: cómo recibir puntos SB por tus compras online",
+          "heading": "Compara el tiempo con el panel, sin promesas de ingresos diarios",
           "paragraphs": [
-            "El apartado Shop and Earn funciona como un portal de cashback donde las tiendas asociadas pagan una comisión a Swagbucks y tú recibes un porcentaje de tu compra en forma de puntos SB. En nuestra captura aparecían reembolsos como Walmart (hasta 8% de cashback, o 8 SB por cada 1 USD), eBay (hasta 5%), Best Buy (hasta 6%), Kohl's (4%), Expedia (hasta 12%), Hotels.com (hasta 12%) y QVC, HSN y The Home Depot (hasta 15%, o 15 SB por cada 1 USD).",
-            "Puedes crear tu cuenta gratuita desde el enlace oficial de invitación de abajo para consultar qué tiendas y encuestas están activas en tu región. Para que el reembolso se registre sin fallos, entra a la tienda desde Swagbucks con el carrito vacío y no actives extensiones de cupones de otros sitios durante el pago."
+            "La captura que acompaña el artículo muestra ejemplos de 5 SB por 5 minutos, 10 SB por 5 minutos y 25 SB por 20 minutos. Son datos de esa pantalla, no ofertas verificadas como disponibles hoy ni en todos los países. La estimación tampoco garantiza que te acepten o que termines en ese tiempo.",
+            "En esos ejemplos, dividir SB entre minutos da 1, 2 y 1,25 SB por minuto. El premio más grande no tiene la mejor proporción. Fija un límite de tiempo e incluye los intentos descartados al valorar si te compensa; no conviertas la mejor tarjeta en una supuesta tarifa por hora."
           ],
+          "source": {
+            "title": "Swagbucks: perfil y oportunidades de encuestas",
+            "url": "https://help.swagbucks.com/hc/en-us/articles/205642024-How-can-I-earn-more-SB-by-taking-surveys"
+          }
+        },
+        {
+          "heading": "El cashback se calcula sobre la compra válida, no sobre todos los cargos",
+          "paragraphs": [
+            "Abre la tienda desde Shop & Earn y lee sus Special Terms antes de pagar. Swagbucks indica que el importe válido puede excluir impuestos, envío y otros cargos; una devolución o cancelación puede revertir los puntos. Las exclusiones de la tienda importan más que la tasa máxima del directorio.",
+            "Ejemplo ilustrativo: si una tienda ofrece 5 SB por dólar estadounidense válido y solo 40 USD de un total de 48 USD cumplen las condiciones, el cálculo es 200 SB, no 240 SB. No es una oferta vigente. Compara el precio final con otras tiendas antes de contar el cashback como ahorro."
+          ],
+          "source": {
+            "title": "Swagbucks: condiciones de Shop & Earn",
+            "url": "https://help.swagbucks.com/hc/en-us/articles/205641124-How-does-Shop-Earn-work"
+          },
           "cta": {
-            "label": "Registrarse gratis en Swagbucks para ver encuestas y cashback",
+            "label": "Consultar encuestas y ofertas de compras en Swagbucks",
             "url": "https://www.swagbucks.com/p/register?rb=NPHSOu1zhQuqNHgx&rp=1",
             "sponsored": true
           }
         },
         {
-          "heading": "Consejos prácticos para cuidar tu tiempo y tu bolsillo",
+          "heading": "Comprueba el seguimiento de la visita antes de gastar",
           "paragraphs": [
-            "En las encuestas, fíjate en la relación entre puntos SB y minutos estimados. Una encuesta de 5 minutos que paga 10 SB rinde mejor por minuto que una de 20 minutos por 25 SB, y además pierdes menos tiempo si el filtro demográfico te descarta.",
-            "En Shop and Earn, utiliza el cashback únicamente en compras que ya necesitabas hacer. Comprar un producto solo porque ofrece un 15% en puntos SB significa gastar el 85% restante de tu bolsillo; compara primero el precio final entre tiendas."
+            "La guía oficial recomienda empezar desde Swagbucks, seguir en el mismo dispositivo y evitar extensiones de compras competidoras. Esas extensiones o ajustes estrictos de privacidad pueden impedir que se atribuya el clic. Un cupón externo no es compatible automáticamente: consulta las condiciones de la tienda.",
+            "Después de abrir el enlace, comprueba la visita en Activity y conserva las condiciones y la confirmación del pedido. Si no quieres permitir el seguimiento necesario, compara precios sin dar por hecho que recibirás SB. Una captura o un recibo sirven como prueba para revisar el caso, pero no garantizan reparar la atribución."
           ],
           "source": {
-            "title": "Swagbucks: directorio de tiendas Shop and Earn",
-            "url": "https://www.swagbucks.com/shop"
+            "title": "Swagbucks: seguimiento de ofertas",
+            "url": "https://help.swagbucks.com/hc/en-us/articles/36978174310548-How-does-offer-tracking-work"
+          }
+        },
+        {
+          "heading": "Visited, Pending y Posted: cómo leer el historial Activity",
+          "paragraphs": [
+            "Visited registra un clic; no demuestra que la compra cumpla las condiciones. Pending muestra una recompensa rastreada que aún espera acreditación, con detalles y fecha estimada. Posted corresponde a la actividad ya acreditada. Una visita reconocida no equivale a puntos disponibles.",
+            "Utiliza los filtros de fecha y actividad para localizar la operación correcta. Si aparece una fecha pendiente, espera ese plazo antes de considerarla atrasada. Si falta o está vencida, usa la ayuda de esa actividad y explica la diferencia, en lugar de abrir solicitudes sin relación con ella."
+          ],
+          "source": {
+            "title": "Swagbucks: historial Activity",
+            "url": "https://help.swagbucks.com/hc/en-us/articles/360050460651-How-do-I-check-my-SB-in-the-Activity-ledger"
+          }
+        },
+        {
+          "heading": "Qué hacer si terminaste una encuesta o compra y no aparecen SB",
+          "paragraphs": [
+            "Para una encuesta, guarda el Survey ID y la confirmación final, revisa Answer en Activity y respeta cualquier plazo de crédito diferido anunciado al inicio. Si ese plazo terminó y falta el crédito, usa Get Help para esa encuesta. Un mensaje de descarte no demuestra que la completaste.",
+            "En compras, separa la espera hasta que aparezca el pedido de la espera posterior hasta acreditar los SB pendientes. Consulta la ayuda actual y las Special Terms de la tienda: no hay una promesa única para todos los comercios, reservas y pedidos. Conserva el recibo y no compres más para investigar una compra sin seguimiento."
+          ],
+          "source": {
+            "title": "Swagbucks: encuesta terminada sin SB",
+            "url": "https://help.swagbucks.com/hc/en-us/articles/205642184-I-completed-a-survey-but-did-not-receive-SB-What-can-I-do"
           }
         }
       ],
       "steps": [
-        "Crea tu cuenta gratuita en Swagbucks y completa el perfil inicial de 5 minutos en Answer Surveys.",
-        "Prioriza encuestas cortas de 5 a 10 minutos con buena relación entre puntos SB y tiempo.",
-        "Antes de comprar en tiendas como Walmart, eBay, Best Buy o Expedia, busca el comercio dentro de Shop and Earn.",
-        "Revisa las categorías excluidas de la tienda y desactiva extensiones externas de cupones antes de abrir el enlace.",
-        "Verifica en tu Activity Ledger que la visita a la tienda o la encuesta completada haya quedado registrada."
+        "Comprueba qué encuestas y tiendas de Shop & Earn puedes usar con tu cuenta y país.",
+        "En encuestas, compara SB y minutos estimados, responde con datos reales y anota el ID al terminar.",
+        "En compras, compara primero el precio final y guarda la tasa, exclusiones y plazo de la tienda.",
+        "Empieza la compra válida desde Swagbucks en el mismo dispositivo y revisa la visita en Activity.",
+        "Distingue Pending de Posted y solicita ayuda en la actividad correspondiente cuando venza su plazo."
       ],
       "pros": [
-        "Las encuestas no exigen gastar dinero y muestran el tiempo estimado antes de empezar.",
-        "El portal Shop and Earn devuelve entre 1% y 15% (1 a 15 SB por dólar) en comercios conocidos."
+        "Puedes valorar encuestas sin hacer una compra.",
+        "Activity separa visitas, recompensas pendientes y SB acreditados."
       ],
       "cons": [
-        "Es frecuente quedar descartado en encuestas si tu perfil no coincide con la muestra buscada.",
-        "Los puntos de cashback suelen tardar semanas en liberarse mientras vence el plazo de devolución de la tienda."
+        "La estimación de una encuesta no garantiza clasificación, finalización ni recompensa.",
+        "El cashback exige gasto y atribución correcta; tasas y plazos varían."
       ],
       "faq": [
         {
-          "q": "¿Por qué me descalifican de algunas encuestas en Swagbucks?",
-          "a": "Las empresas de análisis cierran el cuestionario cuando el cupo para tu edad, región o perfil de consumo ya se completó o cuando buscan un comprador específico."
+          "q": "¿Por qué me descartan de las encuestas de Swagbucks?",
+          "a": "Un estudio puede buscar otro perfil o tener el cupo completo. Lee el mensaje final: quedar descartado no es lo mismo que terminar y no recibir el crédito anunciado."
         },
         {
-          "q": "¿Qué significa ganar hasta 15 SB por cada 1 USD en Shop and Earn?",
-          "a": "Cada 1% de cashback equivale a 1 punto SB por cada dólar gastado antes de impuestos y envío en las categorías elegibles de esa tienda."
+          "q": "¿Puedo canjear los SB que aparecen en Pending?",
+          "a": "No. Pending registra una recompensa que aún espera acreditación. Revisa su fecha y comprueba que ya se acreditó antes de contar con ella para un canje."
         },
         {
-          "q": "¿Puedo usar otra extensión de cashback al mismo tiempo?",
-          "a": "No. Activar otra extensión en el navegador durante la compra suele reemplazar el enlace de afiliado de Swagbucks y anular tus puntos SB."
+          "q": "¿Puedo combinar un cupón y el cashback de Swagbucks?",
+          "a": "Solo da por hecho que son compatibles si las Special Terms de la tienda lo permiten. Las extensiones de compras y los cupones externos pueden afectar la atribución o la validez."
+        },
+        {
+          "q": "¿Siguen disponibles las tasas de la captura?",
+          "a": "Son ejemplos de la captura facilitada, no ofertas actuales comprobadas en tu cuenta. Revisa tu panel y las condiciones del comercio antes de empezar."
         }
       ],
-      "verdict": "Aprovecha Answer Surveys para sumar puntos rápidos sin gastar dinero en ratos libres y activa Shop and Earn como un descuento adicional solo en compras que ya tenías planeadas.",
+      "verdict": "Elige encuestas según el tiempo que puedes perder en filtros y usa cashback solo en una compra prevista con buen precio final. Distingue clic, recompensa pendiente y SB acreditados antes de concluir que falta un pago.",
       "imageAlt": "Tiendas con cashback en Shop and Earn y encuestas disponibles en Swagbucks",
-      "caption": "Shop and Earn indica el porcentaje de reembolso y los SB por dólar junto a la lista de encuestas rápidas.",
+      "caption": "Captura facilitada del panel: las tasas y duraciones son ejemplos de esa pantalla, no ofertas actuales para todas las cuentas.",
       "imageKey": "swagbucks-shop",
       "imageWide": true,
       "secondImage": {
         "key": "swagbucks-goals",
         "alt": "Panel de condiciones de oferta e invitaciones en Swagbucks",
-        "caption": "Cada oferta detalla el seguimiento requerido, los días en estado pendiente y las reglas de referidos.",
+        "caption": "El panel de ofertas ilustra dónde aparecen las condiciones; consulta las vigentes en tu cuenta para comprobar plazos y requisitos.",
         "wide": true
-      }
+      },
+      "modifiedDate": "2026-11-15"
     },
     {
       "id": "swagbucks-cashout",
@@ -3580,25 +3858,26 @@ export const articles:Record<Locale,Article[]>={
       "category": "rewards",
       "slug": "pawns-app-como-funciona-guia-completo",
       "title": "Pawns.app Opiniones (2026): Cómo Funciona, Encuestas, Juegos y Bono de $3",
-      "description": "¿Cómo funciona Pawns.app en 2026? Gana dinero pasivo compartiendo internet, completa encuestas y juegos, y reclama $3 de bono con el código 6823713.",
-      "intro": "Pawns.app es una plataforma global de recompensas que te permite monetizar tu conexión a internet no utilizada en segundo plano, además de ofrecer ganancias activas mediante encuestas remuneradas y ofertas de juegos móviles. Si buscas una aplicación flexible para Android, iOS, Windows o Mac con un mínimo de retiro accesible de $5, Pawns.app es una de las opciones más confiables.",
+      "description": "Opiniones sobre Pawns.app: compartir internet opcionalmente, encuestas, juegos, condiciones de retiro y promoción de referido con el código 6823713.",
+      "intro": "Pawns.app combina compartir internet de forma opcional con encuestas y ofertas de juegos. Disponibilidad, participación y recompensas reales varían. Las capturas aportadas ilustran la interfaz; esta revisión no establece una tasa de ingresos medida ni un retiro independiente completado.",
       "sections": [
         {
-          "heading": "Cómo funciona el internet compartido de forma segura",
+          "heading": "Qué revisar antes de compartir tu conexión",
           "paragraphs": [
-            "La característica principal de Pawns.app es el uso compartido de ancho de banda en segundo plano. Empresas verificadas utilizan esta red residencial para tareas legítimas como comprobación de resultados de búsqueda, estudios de mercado y comparación de precios. Tus datos personales, historial de navegación y archivos locales están protegidos y permanecen inaccesibles.",
-            "Las ganancias por compartir internet dependen de tu tiempo de conexión, velocidad de subida y demanda geográfica en tu país. Mantener la aplicación activa en tu red Wi-Fi o PC genera ingresos pasivos constantes sin ralentizar tus actividades cotidianas."
+            "La función de compartir internet permite que terceros utilicen tu conexión mediante el servicio. Lee privacidad, permisos y condiciones de uso de la red antes de decidir si quieres activarla.",
+            "No hemos auditado el programa ni medido su efecto en esta red. No des por hechos ingresos constantes, seguridad sin límites ni ausencia de impacto en datos o rendimiento. Puedes evaluar las tareas activas por separado."
           ],
           "cta": {
-            "label": "Descarga Pawns.app y activa tu bono de $3 con el código 6823713",
-            "url": "https://discoverpawns.eu/6823713"
+            "label": "Ver Pawns.app con el código de referido 6823713",
+            "url": "https://discoverpawns.eu/6823713",
+            "sponsored": true
           }
         },
         {
           "heading": "Ganancias activas: encuestas diarias y juegos móviles",
           "paragraphs": [
-            "Además del modo pasivo, Pawns.app cuenta con secciones de tareas activas para acelerar tu llegada al retiro. La pestaña de Encuestas ofrece cuestionarios que pagan normalmente entre $0.14 y $0.67 por 3 a 10 minutos de participación, con saldo acreditado en dólares reales.",
-            "Para recompensas mayores, la sección de Ofertas incluye títulos reconocidos como Clockmaker ($20.66) y Candy Crush Saga ($54.17). Cumplir las metas por niveles dentro del plazo establecido abona las recompensas directamente a tu cuenta."
+            "La captura de encuestas muestra ejemplos de $0.14 a $0.67 con tiempos estimados. Son ejemplos de esa pantalla, no una tarifa habitual, y no todos los intentos cumplen los requisitos para cobrar.",
+            "La captura de ofertas incluye Clockmaker ($20.66) y Candy Crush Saga ($54.17) como totales anunciados. Son metas condicionadas de una pantalla histórica, no un importe actual garantizado por instalar o jugar."
           ],
           "source": {
             "title": "Pawns.app: Guía oficial de funcionamiento",
@@ -3608,23 +3887,26 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "Métodos de pago y el bono de comunidad de $3",
           "paragraphs": [
-            "Pawns.app permite solicitar retiros a partir de solo $5.00 USD a través de PayPal, criptomoneda Bitcoin y tarjetas de regalo digitales. Una vez alcanzado este umbral, el pago se procesa sin trabas innecesarias.",
-            "Los nuevos usuarios que descargan la app desde el enlace oficial (discoverpawns.eu/6823713) o introducen el código de invitación 6823713 reciben un bono especial de $3 al completar su primer retiro, impulsando significativamente su ganancia inicial."
-          ]
+            "Pawns.app publica un mínimo de retiro de $5. Los métodos dependen del país; revisa comisión, verificación y cualquier paso de canje antes de confirmar. Lo solicitado puede diferir de lo recibido.",
+            "Las reglas actuales dividen el bono anunciado de $3 en $1 tras cada uno de los tres primeros retiros válidos, con plazos regionales indicados en la app. El código 6823713 no elimina esas condiciones."
+          ],
+          "source": {
+            "title": "Pawns.app: referral bonus conditions",
+            "url": "https://help.pawns.app/en/articles/8658858-how-does-your-referral-system-work"
+          }
         }
       ],
       "steps": [
         "Descarga Pawns.app en tu teléfono o PC desde el enlace oficial discoverpawns.eu/6823713.",
         "Regístrate con tu cuenta de Google o correo, asegurándote de que el código 6823713 esté aplicado.",
-        "Activa el modo de compartir internet en los ajustes y concede permisos de ejecución en segundo plano.",
+        "Revisa las condiciones de red y activa compartir internet solo si quieres usar esa función opcional.",
         "Revisa las pestañas de Encuestas y Ofertas para sumar saldo más rápido con cuestionarios y juegos.",
-        "Solicita tu retiro por PayPal, Bitcoin o tarjeta regalo al alcanzar el mínimo de $5 USD."
+        "Lee método, comisiones y verificación antes de solicitar un retiro."
       ],
       "pros": [
-        "Ingresos pasivos reales en segundo plano compartiendo internet de casa.",
-        "Mínimo de retiro bajo de $5.00 USD por PayPal, Bitcoin y tarjetas regalo.",
-        "Disponible en todo el mundo y compatible con Android, iOS, Windows y Mac.",
-        "Bono de comunidad de $3 extra al realizar tu primer retiro."
+        "Combina distintos tipos de tareas opcionales.",
+        "Mínimo de retiro publicado de $5, con métodos según el país.",
+        "Promoción de referido condicionada para cuentas nuevas válidas."
       ],
       "cons": [
         "La velocidad de ganancias pasivas depende de la ubicación y demanda de IP.",
@@ -3633,7 +3915,7 @@ export const articles:Record<Locale,Article[]>={
       "faq": [
         {
           "q": "¿Es seguro usar Pawns.app en mi red doméstica?",
-          "a": "Sí. Pawns.app opera mediante un túnel proxy cifrado. No accede a tus datos privados, contraseñas ni archivos personales."
+          "a": "No hemos auditado su seguridad. Lee privacidad, permisos, condiciones de red y tu plan de datos antes de permitir tráfico de terceros por tu conexión."
         },
         {
           "q": "¿Cuál es el mínimo para retirar dinero en Pawns.app?",
@@ -3641,101 +3923,122 @@ export const articles:Record<Locale,Article[]>={
         },
         {
           "q": "¿Cómo funciona el código de invitación 6823713?",
-          "a": "Al registrarte con el código 6823713 o desde discoverpawns.eu/6823713, se activa tu bono de $3 que se acredita al completar tu primer retiro."
+          "a": "Es un código de referido. Las reglas actuales entregan $1 tras cada uno de los tres primeros retiros válidos, sujetos a los plazos regionales de tu cuenta."
         }
       ],
-      "verdict": "Pawns.app combina ingresos pasivos con tareas rápidas y juegos de forma equilibrada. Su mínimo de $5 hace que cobrar sea un objetivo realista y alcanzable.",
+      "verdict": "Considera tareas y condiciones de retiro, y compara lo acreditado con tiempo, costes y acceso a tu conexión. Una pantalla promocional no prueba un pago.",
       "imageAlt": "Pantalla de invitación de Pawns.app con el bono de $3 y enlace oficial",
-      "caption": "Pestaña Comunidad de Pawns.app con el bono de $3 y el enlace oficial discoverpawns.eu/6823713.",
+      "caption": "Captura aportada de Comunidad con una promoción; comprueba requisitos y etapas de retiro vigentes en tu cuenta.",
       "imageKey": "pawns-referral",
       "imageWide": true,
       "secondImage": {
         "key": "pawns-surveys",
         "alt": "Panel de encuestas diarias de Pawns.app con pagos en dólares",
-        "caption": "La sección de Encuestas muestra cuestionarios diarios con pagos reales de $0.14 a $0.67.",
+        "caption": "La captura de encuestas muestra importes y tiempos históricos, no una tarifa diaria fiable.",
         "wide": true
-      }
+      },
+      "modifiedDate": "2026-11-15"
     },
     {
       "id": "pawns-surveys",
       "app": "pawns",
       "category": "rewards",
       "slug": "pawns-app-encuestas-pagadas-ganancias",
-      "title": "Encuestas de Pawns.app: cuánto pagan, consejos para calificar y ruleta diaria",
-      "description": "¿Cuánto pagan las encuestas en Pawns.app? Analizamos las tarifas reales ($0.14 a $0.67), filtros de calificación y premios diarios.",
-      "intro": "Mientras el internet compartido trabaja en segundo plano, las encuestas pagadas en Pawns.app son la forma más rápida de llegar a tu primer retiro de $5. Conocer cómo funcionan los filtros de calificación y aprovechar la ruleta de premios diaria te permitirá maximizar tus ganancias por hora.",
+      "title": "Encuestas de Pawns.app: pagos, descalificaciones y saldo",
+      "description": "Cómo elegir encuestas en Pawns.app, entender las descalificaciones y documentar una recompensa no acreditada, sin promesas de ganancias diarias.",
+      "intro": "Las encuestas de Pawns.app son cuestionarios remunerados con filtros de participación. El importe que aparece antes de empezar es una oferta condicionada a una finalización válida, no dinero ya ganado. Esta guía explica cómo elegir, interpretar un rechazo y guardar evidencia si falta el abono. Revisamos las capturas aportadas y la documentación oficial; no realizamos una prueba de ganancias por hora.",
       "sections": [
         {
-          "heading": "Tarifas reales por encuesta y tiempos de respuesta",
+          "heading": "Qué significan el importe y la duración",
           "paragraphs": [
-            "En Pawns.app las encuestas se muestran con valores claros en dólares estadounidenses y la duración estimada. Los cuestionarios cortos pagan normalmente entre $0.14 y $0.67 por 3 a 8 minutos de respuesta, sin convertir a puntos confusos.",
-            "Cada encuesta incluye una calificación por estrellas de la comunidad (por ejemplo, 3/5 o 4/5) que indica su tasa de aprobación. Elegir encuestas con buena valoración optimiza tu tiempo."
-          ],
-          "cta": {
-            "label": "Comienza a responder encuestas en Pawns.app con el código 6823713",
-            "url": "https://discoverpawns.eu/6823713"
-          }
-        },
-        {
-          "heading": "Cómo evitar descalificaciones en los filtros iniciales",
-          "paragraphs": [
-            "Las empresas investigadoras aplican preguntas filtro en los primeros 60 segundos para comprobar si encajas en el grupo objetivo del estudio. Si la cuota para tu perfil ya está completa, la encuesta finaliza.",
-            "Para evitar bloqueos de cuenta y recibir más cuestionarios, mantén respuestas coherentes y sinceras en todo momento. Responder con prisas o contradecir datos previos puede reducir tus invitaciones."
+            "La captura muestra importes y tiempos por encuesta. Son ejemplos de esa pantalla, no una tarifa habitual para todos. Pawns.app explica que la recompensa depende de la región y de la demanda de investigación.",
+            "Compara el importe anunciado con la duración estimada, pero registra también los minutos reales. Si intentas varias encuestas y solo completas una, incluye los intentos rechazados al valorar el resultado de la sesión."
           ],
           "source": {
-            "title": "Pawns.app: Guía de encuestas pagadas",
-            "url": "https://pawns.app/surveys/"
+            "title": "Pawns.app: survey rewards by region",
+            "url": "https://help.pawns.app/en/articles/8646171-how-much-do-surveys-pay"
+          },
+          "cta": {
+            "label": "Ver Pawns.app con el código de referido 6823713",
+            "url": "https://discoverpawns.eu/6823713",
+            "sponsored": true
           }
         },
         {
-          "heading": "Recompensas interactivas: ruleta diaria y sorteos de $150",
+          "heading": "Por qué una encuesta puede descalificarte",
           "paragraphs": [
-            "La pestaña de Recompensas de Pawns.app ofrece incentivos adicionales como giros gratuitos en la Ruleta de Premios, que otorgan gemas, potenciadores de ganancias (+15% de boost) y entradas para sorteos de $150.",
-            "Estas dinámicas complementan tus ganancias de encuestas y te ayudan a alcanzar el mínimo de retiro más rápidamente."
-          ]
+            "Tu perfil puede no coincidir con el público buscado. La ayuda oficial recomienda mantenerlo actualizado y responder con precisión; un rechazo aislado no demuestra un problema en la cuenta. Se prohíbe ocultar la ubicación mediante VPN o proxy.",
+            "No cambies edad, profesión o país para encajar en una oferta. Si recibes varios rechazos seguidos, termina la sesión y revisa el perfil en lugar de considerar el siguiente intento un pago seguro."
+          ],
+          "source": {
+            "title": "Pawns.app: survey disqualifications",
+            "url": "https://help.pawns.app/en/articles/8646182-why-am-i-getting-disqualified-from-surveys"
+          }
+        },
+        {
+          "heading": "Define cuánto tiempo vas a dedicar",
+          "paragraphs": [
+            "El proveedor indica que los cuestionarios pueden durar desde unos minutos hasta aproximadamente media hora. El tiempo anunciado es una estimación, no una garantía de finalización.",
+            "Elige una sesión que puedas contestar con atención. Anota identificador, recompensa ofrecida, duración estimada, minutos reales, mensaje final e importe acreditado. Así distingues los anuncios atractivos de tus propios resultados."
+          ],
+          "source": {
+            "title": "Pawns.app: survey length and estimates",
+            "url": "https://help.pawns.app/en/articles/8646112-how-long-are-the-surveys"
+          }
+        },
+        {
+          "heading": "Lista vacía o recompensa no acreditada",
+          "paragraphs": [
+            "Las oportunidades dependen de la región y la demanda de los clientes. Una lista vacía no demuestra un fallo técnico ni permite fijar una espera exacta. Las notificaciones pueden avisarte de nuevas encuestas.",
+            "Si completaste un cuestionario sin recibir el abono, guarda identificador, fecha, importe y mensaje final y contacta con el soporte oficial. Oculta las respuestas privadas. Una finalización, un rechazo y un movimiento en el saldo son evidencias diferentes: no los presentes como si todos probaran un pago."
+          ],
+          "source": {
+            "title": "Pawns.app: survey availability",
+            "url": "https://help.pawns.app/en/articles/8646179-how-often-will-i-receive-surveys"
+          }
         }
       ],
       "steps": [
-        "Abre Pawns.app y pulsa en la sección Encuestas en el menú inferior.",
-        "Completa tu perfil demográfico inicial con información precisa y consistente.",
-        "Selecciona encuestas cortas con buena puntuación de estrellas ($0.55 a $0.67 por pocos minutos).",
-        "Gira la ruleta diaria en la pestaña Recompensas para obtener gemas y potenciadores.",
-        "Observa cómo tu saldo se actualiza de inmediato tras cada encuesta completada."
+        "Lee recompensa, tiempo estimado y condiciones de participación.",
+        "Usa tu perfil y ubicación reales, sin ocultarlos con una VPN.",
+        "Anota el identificador y la hora de inicio.",
+        "Responde con atención y guarda el mensaje final si surge un problema.",
+        "Comprueba el saldo acreditado y calcula el tiempo total de la sesión."
       ],
       "pros": [
-        "Pagos transparentes en dólares reales (USD).",
-        "Cuestionarios ágiles con duraciones habituales inferiores a 10 minutos.",
-        "Ruleta de premios gratuita con potenciadores de saldo."
+        "Los importes y tiempos estimados ayudan a comparar encuestas.",
+        "Un registro facilita explicar un caso de abono pendiente."
       ],
       "cons": [
-        "Pueden producirse descalificaciones durante las preguntas de filtro inicial.",
-        "El número de encuestas varía según la demanda del mercado en tu región."
+        "Las descalificaciones consumen tiempo sin confirmar una recompensa.",
+        "La disponibilidad y los ingresos cambian; no existe una cantidad diaria fiable."
       ],
       "faq": [
         {
-          "q": "¿Por qué me descalifican de algunas encuestas en Pawns.app?",
-          "a": "Esto ocurre cuando tu perfil no coincide con los requisitos demográficos del cliente o cuando el cupo ya se ha llenado."
+          "q": "¿Cuánto se gana al día con las encuestas de Pawns.app?",
+          "a": "Esta revisión no establece una cifra diaria verificada. Compara el dinero acreditado con todo el tiempo invertido, incluidos los rechazos."
         },
         {
-          "q": "¿Cuánto tardan en acreditarse las encuestas?",
-          "a": "Las encuestas completadas con éxito se acreditan normalmente de forma instantánea en tu saldo disponible."
+          "q": "¿Una descalificación significa que mi cuenta está bloqueada?",
+          "a": "Por sí sola, no. Lee el mensaje: no cumplir el perfil de un estudio es diferente de una restricción explícita de cuenta."
         },
         {
-          "q": "¿Puedo responder encuestas desde el ordenador?",
-          "a": "Sí. Pawns.app permite completar encuestas tanto desde la app móvil en Android e iOS como desde el panel web en el navegador."
+          "q": "¿Puedo retirar el importe que aparece en una encuesta?",
+          "a": "La oferta no es saldo acreditado. Primero debe completarse y registrarse la recompensa, y luego cumplirse las condiciones de retiro."
         }
       ],
-      "verdict": "Las encuestas de Pawns.app ofrecen una vía clara y directa para acelerar tus cobros. Combinadas con la ruleta diaria, son el mejor complemento a la ganancia pasiva.",
+      "verdict": "Trata cada encuesta como una oportunidad condicionada. Prueba una sesión limitada, registra el resultado y continúa solo si te compensa. Las promociones de la ruleta no convierten las encuestas en ingresos previsibles.",
       "imageAlt": "Pestaña de encuestas de Pawns.app con pagos reales en dólares",
-      "caption": "La sección de Encuestas muestra cuestionarios disponibles con importes en dólares y tiempos estimados.",
+      "caption": "Captura aportada de las encuestas de Pawns.app: importes y tiempos ilustran esa pantalla, no una previsión actual de ingresos.",
       "imageKey": "pawns-surveys",
       "imageWide": true,
       "secondImage": {
         "key": "pawns-rewards",
-        "alt": "Pestaña de recompensas de Pawns.app con ruleta de premios y sorteo de $150",
-        "caption": "La pestaña de Recompensas incluye una ruleta diaria gratuita, gemas y participaciones en sorteos de $150.",
+        "alt": "Pantalla de recompensas de Pawns.app con ruleta y promociones",
+        "caption": "Los premios promocionales de la captura son distintos del pago por completar una encuesta y pueden cambiar.",
         "wide": true
-      }
+      },
+      "modifiedDate": "2026-11-15"
     },
     {
       "id": "pawns-games",
@@ -3743,14 +4046,14 @@ export const articles:Record<Locale,Article[]>={
       "category": "rewards",
       "slug": "pawns-app-juegos-ofertas-niveles",
       "title": "Juegos y ofertas en Pawns.app: Candy Crush, Clockmaker y seguimiento de metas",
-      "description": "Descubre las ofertas de juegos en Pawns.app. Cómo Candy Crush ($54.17) y Clockmaker ($20.66) registran niveles y plazos de recompensa.",
-      "intro": "Para quienes buscan sumar mayores cantidades de saldo, la pestaña de Ofertas en Pawns.app incluye recompensas escalonadas por jugar a títulos populares como Candy Crush Saga ($54.17), Clockmaker ($20.66) o Wood Block Jam ($8.36), pagando conforme avanzas de nivel.",
+      "description": "Ofertas de juegos de Pawns.app: metas, compras exigidas, plazos, primera instalación y cómo informar de progreso no registrado.",
+      "intro": "La captura aportada de Ofertas incluye Candy Crush Saga ($54.17), Clockmaker ($20.66) y Wood Block Jam ($8.36) como totales anunciados. Son ofertas históricas y condicionadas, no ganancias actuales garantizadas. Esta guía explica qué revisar antes de instalar y qué hacer si falta el progreso.",
       "sections": [
         {
           "heading": "Cómo funcionan los pagos por metas en juegos móviles",
           "paragraphs": [
             "A diferencia de aplicaciones antiguas que pagaban centavos por horas de juego, Pawns.app utiliza un sistema de metas por niveles. Juegos como Wood Block Jam dividen la recompensa total en pagos progresivos al alcanzar los niveles 30, 40 o 50.",
-            "Cada nivel superado libera un importe específico en dólares en tu cuenta, lo que te permite cobrar recompensas parciales sin obligación de completar el juego al 100%."
+            "Solo las metas válidas indicadas pueden generar su recompensa asignada. El total de la cabecera no se paga por instalar y superar un nivel no demuestra por sí solo que el abono se haya registrado."
           ],
           "cta": {
             "label": "Explora juegos y ofertas en Pawns.app con el código 6823713",
@@ -3760,33 +4063,32 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "Permisos de seguimiento y plazos de finalización",
           "paragraphs": [
-            "Para que tus avances queden registrados correctamente, debes instalar el juego mediante el enlace oficial de Pawns.app y activar los permisos de seguimiento de uso en Android o iOS. Usar VPN o haber instalado el juego previamente en ese dispositivo anulará el rastreo.",
-            "La mayoría de ofertas establecen un plazo límite (habitualmente de 20 a 30 días, como los 29 días mostrados en Wood Block Jam). Conviene revisar los requisitos de tiempo antes de comenzar."
+            "Pawns.app indica que debe ser la primera instalación desde su oferta. Revisa ubicación y seguimiento publicitario solicitados y mantén la VPN desactivada; en iPhone, acepta el seguimiento del juego si decides participar.",
+            "Usa el plazo de tu oferta, no un supuesto general de 14 a 30 días. La captura de Wood Block Jam muestra 29 días restantes en ese momento; no es una regla de otros juegos."
           ],
           "source": {
-            "title": "Pawns.app: Directorio de juegos y ofertas",
-            "url": "https://pawns.app/games/"
+            "title": "Pawns.app: missing game progress and tracking requirements",
+            "url": "https://help.pawns.app/en/articles/15944782-why-isn-t-my-game-progress-being-tracked"
           }
         },
         {
           "heading": "Juego gratuito frente a compras dentro de la app",
           "paragraphs": [
-            "Algunas ofertas incluyen bonificaciones adicionales si adquieres un paquete de inicio (como $0.29 por un Beginner Bundle). Estas compras son totalmente opcionales; todas las metas principales de nivel se pueden alcanzar de forma gratuita mediante habilidad y constancia.",
-            "Los juegos de tipo puzzle y combinación son los más recomendados para avanzar con regularidad sin necesidad de realizar desembolsos económicos."
+            "La captura de Wood Block Jam incluye una meta de compra de Beginner Bundle. Puede ser necesario comprar para esa recompensa aunque otras metas de nivel no mencionen gastos. Lee cada tarea en vez de tratar todas como gratuitas.",
+            "Calcula coste, recompensa y plazo antes de decidir. No hemos probado que todos los niveles anunciados puedan completarse sin gastar. Omite una etapa que no te compense."
           ]
         }
       ],
       "steps": [
-        "Abre Pawns.app y accede a la sección Ofertas en el menú inferior.",
-        "Elige un juego con buenas recompensas (como Candy Crush Saga o Clockmaker).",
-        "Toca en 'Ganhar' para abrir la ficha en Google Play Store o Apple App Store.",
-        "Instala el juego y activa los permisos de seguimiento solicitados.",
-        "Supera los niveles requeridos dentro del plazo para recibir los pagos por meta."
+        "Abre Ofertas y revisa todas las metas.",
+        "Guarda requisitos, recompensa, plazo y compras antes de empezar.",
+        "Si cumples las condiciones, instala una vez desde el enlace elegido y abre el juego.",
+        "Revisa permisos de esa oferta; no uses VPN para cambiar tu ubicación.",
+        "Comprueba el progreso registrado y usa Report a Problem del proveedor si falta una meta válida."
       ],
       "pros": [
-        "Recompensas elevadas que superan los $50 USD en juegos seleccionados.",
-        "Pagos parciales que se abonan conforme se alcanzan los niveles clave.",
-        "Gran catálogo de títulos conocidos y entretenidos."
+        "Las listas de metas permiten revisar condiciones antes de jugar.",
+        "Las etapas separadas ayudan a evaluar un objetivo pequeño frente al total anunciado."
       ],
       "cons": [
         "Los niveles avanzados requieren juego diario y dedicación constante.",
@@ -3795,20 +4097,20 @@ export const articles:Record<Locale,Article[]>={
       "faq": [
         {
           "q": "¿Es necesario pagar dentro del juego para ganar en Pawns.app?",
-          "a": "No. Las compras son voluntarias. Las metas de nivel principales se completan jugando gratis."
+          "a": "Depende de la meta. Una tarea de compra exige gastar para esa recompensa; una de nivel tiene sus condiciones. No hemos establecido que todos los niveles sean viables gratis."
         },
         {
           "q": "¿Por qué no se registró un nivel que completé?",
-          "a": "Puede deberse a permisos de seguimiento desactivados, uso de VPN o haber instalado el juego en el pasado."
+          "a": "Revisa la primera instalación y las condiciones. Pawns.app indica que puede tardar hasta 48 horas; la oferta incluye un icono de información y Report a Problem para informar de progreso ausente."
         },
         {
           "q": "¿Cuánto tiempo hay para completar las metas?",
-          "a": "La mayoría de juegos ofrecen entre 14 y 30 días desde la primera instalación."
+          "a": "Usa el plazo escrito en la oferta que elegiste. Una captura de tiempo restante de un juego no fija un límite universal."
         }
       ],
-      "verdict": "Las ofertas de juegos en Pawns.app transforman tus ratos de ocio móvil en dólares tangibles. Es la forma ideal de dar un gran impulso a tu saldo.",
+      "verdict": "Elige una meta moderada cuyas condiciones puedas cumplir. Comprueba el progreso y compara recompensa con coste y tiempo, sin interpretar el total anunciado como dinero ya ganado.",
       "imageAlt": "Pantalla de ofertas de Pawns.app con Clockmaker y Candy Crush Saga",
-      "caption": "La sección de Ofertas muestra juegos móviles populares con recompensas acumuladas de más de $50 USD.",
+      "caption": "Totales históricos de la captura aportada; disponibilidad, recompensa y requisitos pueden diferir en tu cuenta.",
       "imageKey": "pawns-offers",
       "imageWide": true,
       "secondImage": {
@@ -3816,169 +4118,229 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Metas por niveles en Wood Block Jam dentro de Pawns.app",
         "caption": "Detalle de recompensas escalonadas al alcanzar los niveles 30, 40 y 50 en un plazo de 29 días.",
         "wide": true
-      }
+      },
+      "modifiedDate": "2026-11-15"
     },
     {
       "id": "pawns-cashout",
       "app": "pawns",
       "category": "rewards",
       "slug": "pawns-app-metodos-de-pago-bono-invitacion",
-      "title": "Guía de retiros en Pawns.app: PayPal, Bitcoin, tarjetas de regalo y bono de $3",
-      "description": "Guía paso a paso para retirar en Pawns.app: mínimo de $5, plazos de pago y cómo el código 6823713 desbloquea un bono de $3.",
-      "intro": "Llegar a la meta de cobro es gratificante, pero saber cómo funciona el proceso de retiro evita dudas o demoras. Pawns.app destaca por su mínimo transparente de solo $5.00 USD, compatibilidad con PayPal, Bitcoin y tarjetas de regalo, y un sistema de invitación que premia a ambas partes.",
+      "title": "Cómo retirar de Pawns.app: mínimo, comisiones y bono de $3",
+      "description": "Guía de retiro en Pawns.app: mínimo de $5, comisiones de PayPal y Bitcoin, correo para reclamar el pago y condiciones del bono por invitación.",
+      "intro": "Pawns.app publica un mínimo de retiro de $5, pero lo solicitado no siempre coincide con lo recibido. Conviene revisar comisiones, opciones regionales y el correo para reclamar la recompensa. Esta guía corrige una confusión sobre el referido: el bono anunciado de $3 está sujeto a condiciones y se divide en tres retiros, en vez de abonarse completo con el primero.",
       "sections": [
         {
-          "heading": "Métodos de retiro disponibles: PayPal, Bitcoin y Gift Cards",
+          "heading": "Dónde solicitar el retiro",
           "paragraphs": [
-            "Pawns.app ofrece tres vías principales de pago adaptadas a usuarios de todo el mundo. Para dinero en efectivo, PayPal envía los fondos a tu correo electrónico asociado. Para aficionados a las criptomonedas, los retiros en Bitcoin se transfieren de forma directa a tu billetera personal.",
-            "También puedes canjear tu saldo por tarjetas de regalo digitales (Amazon, Google Play, Visa virtual) según tu país, todas accesibles al alcanzar los $5.00 USD."
-          ],
-          "cta": {
-            "label": "Crea tu cuenta en Pawns.app con el código 6823713 y asegura tu bono de $3",
-            "url": "https://discoverpawns.eu/6823713"
-          }
-        },
-        {
-          "heading": "Plazos de tramitación y verificación de cuenta",
-          "paragraphs": [
-            "Las solicitudes de retiro se procesan habitualmente en un plazo de 24 a 72 horas laborables. Antes del primer cobro, Pawns.app solicita verificar tu correo electrónico y configurar la autenticación en dos pasos (2FA) para proteger tu cuenta.",
-            "La plataforma no aplica comisiones ocultas abusivas; el saldo acumulado en encuestas, internet compartido y juegos se transfiere íntegramente a tu método seleccionado."
+            "Pulsa el saldo, elige Request Payout y selecciona país y método disponible. Pawns.app fija un mínimo de $5; las opciones ofrecidas dependen de tu región.",
+            "Revisa destino, método y resumen final antes de confirmar. Una tarjeta de regalo tiene restricciones de uso diferentes del dinero en una cuenta de pago. No la elijas solo porque la comisión anunciada sea menor."
           ],
           "source": {
-            "title": "Pawns.app: Métodos de pago y reglas de retiro",
-            "url": "https://pawns.app/payment-methods/"
+            "title": "Pawns.app: requesting a payout",
+            "url": "https://help.pawns.app/en/articles/8646170-how-do-i-get-paid"
+          },
+          "cta": {
+            "label": "Ver Pawns.app con el código de referido 6823713",
+            "url": "https://discoverpawns.eu/6823713",
+            "sponsored": true
           }
         },
         {
-          "heading": "Cómo funciona el bono de $3 por invitación de la comunidad",
+          "heading": "Comisiones: calcula cuánto vas a recibir",
           "paragraphs": [
-            "El programa de recomendación de Pawns.app ofrece una ventaja mutua: '$3 para ti, $3 para un amigo'. Al registrarte con el enlace discoverpawns.eu/6823713 o ingresar el código 6823713, desbloqueas un bono de $3.00 que se abona al realizar tu primer retiro.",
-            "Posteriormente, podrás compartir tu propio código con amigos para recibir un 10% continuo de lo que ellos generen y $3 cuando hagan sus propios retiros."
-          ]
+            "La ayuda oficial indica 4% en PayPal, con un mínimo de $0,25: retirar $5 deja $4,75. Publica $2 para Bitcoin y comisión de retiro cero en tarjetas virtuales. Confirma los valores vigentes en el resumen.",
+            "La conversión de divisas o el servicio receptor pueden afectar al importe utilizable. Guarda la cantidad solicitada y la recibida para no confundir una comisión con una recompensa ausente."
+          ],
+          "source": {
+            "title": "Pawns.app: payout fees",
+            "url": "https://help.pawns.app/en/articles/8658813-what-are-the-payout-fees"
+          }
+        },
+        {
+          "heading": "Retiro pendiente: busca el correo para reclamarlo",
+          "paragraphs": [
+            "Pawns.app indica normalmente hasta 72 horas de procesamiento, con posibles demoras en fines de semana. Para PayPal, tarjetas y Cash App, revisa entrada y spam por un correo de Tremendous con el enlace para reclamar.",
+            "Si ya pasó el plazo documentado, contacta con el soporte oficial indicando fecha, importe y método. No publiques direcciones de cobro, fotos de documentos ni códigos de un solo uso al pedir ayuda."
+          ],
+          "source": {
+            "title": "Pawns.app: payout not received",
+            "url": "https://help.pawns.app/en/articles/8658805-what-to-do-if-i-have-not-received-my-payout"
+          }
+        },
+        {
+          "heading": "El bono de $3 se entrega en tres partes",
+          "paragraphs": [
+            "Las reglas actuales entregan $1 después de cada uno de los tres primeros retiros válidos. Cada retiro tiene un plazo regional indicado en la aplicación. El código 6823713 no elimina esas condiciones.",
+            "La captura de Comunidad demuestra que se anunció una promoción, no que se recibió un pago ni que exista un saldo incondicional de $3. Lee las reglas de tu cuenta antes de contar con ese bono."
+          ],
+          "source": {
+            "title": "Pawns.app: referral bonus conditions",
+            "url": "https://help.pawns.app/en/articles/8658858-how-does-your-referral-system-work"
+          }
+        },
+        {
+          "heading": "Verificación y confirmación final",
+          "paragraphs": [
+            "Un socio de pagos puede solicitar verificar la identidad; Pawns.app indica que las instrucciones aparecen durante el retiro cuando corresponde. Sigue el proceso oficial, sin enviar documentos a alguien que te contacte por privado.",
+            "Guarda la confirmación y compara el estado con tu saldo y cuenta receptora. Esta revisión documenta el proceso y las reglas publicadas; no informa de un retiro independiente completado por nosotros."
+          ],
+          "source": {
+            "title": "Pawns.app: identity checks at payout",
+            "url": "https://help.pawns.app/en/articles/15943103-why-was-i-asked-for-an-id-check-when-requesting-a-payout"
+          }
         }
       ],
       "steps": [
-        "Acumula al menos $5.00 USD en tu saldo de Pawns.app.",
-        "Accede a la sección de Retiros o Recompensas y confirma tu correo electrónico.",
-        "Selecciona tu método favorito (PayPal, Bitcoin o tarjeta de regalo).",
-        "Introduce tus datos de cobro (correo de PayPal o dirección de Bitcoin).",
-        "Recibe tu pago junto con el bono de $3 activado con el código de invitación 6823713."
+        "Alcanza el mínimo indicado y abre el saldo.",
+        "Elige país y método disponible.",
+        "Revisa destino, comisión e importe neto.",
+        "Completa la verificación solicitada en el proceso oficial y confirma.",
+        "Guarda la confirmación y revisa entrada y spam por un paso para reclamar.",
+        "Si pasa el plazo indicado y no llega la recompensa, contacta con soporte."
       ],
       "pros": [
-        "Mínimo de retiro accesible de solo $5.00 USD.",
-        "Variedad de opciones: dinero en efectivo (PayPal), criptomonedas (BTC) y vales regalo.",
-        "Bono de comunidad de $3 al hacer el primer retiro."
+        "El mínimo y las comisiones publicados permiten comparar opciones.",
+        "Puede haber distintas formas de canje según el país."
       ],
       "cons": [
-        "Las transferencias en Bitcoin pueden verse afectadas por comisiones de red.",
-        "Para cobrar por PayPal, la cuenta debe estar debidamente verificada."
+        "Una comisión pesa más en un retiro pequeño.",
+        "Procesamiento, verificación y plazos promocionales son requisitos distintos."
       ],
       "faq": [
         {
-          "q": "¿Cuánto tarda en llegar un retiro de Pawns.app?",
-          "a": "La mayoría de retiros se completan entre 24 y 48 horas tras la solicitud."
+          "q": "¿Retirar de Pawns.app es gratis?",
+          "a": "No lo des por hecho. Consulta las comisiones y el resumen final del método que hayas elegido."
         },
         {
-          "q": "¿Hay comisiones por cobrar mediante PayPal?",
-          "a": "Pawns.app no cobra comisión por la orden, aunque PayPal puede aplicar conversión de moneda si tu cuenta opera en otra divisa."
+          "q": "¿El código 6823713 añade $3 al instante?",
+          "a": "No. Es una promoción de referido con etapas de retiro válidas y plazos, no dinero disponible de inmediato."
         },
         {
-          "q": "¿Cuándo se acredita el bono de $3 de invitación?",
-          "a": "El bono vinculado al código 6823713 se libera automáticamente cuando se completa tu primer retiro de fondos."
+          "q": "¿Qué guardo si no llega el pago?",
+          "a": "Fecha, importe, método, confirmación y estado. Usa el soporte oficial y oculta los datos privados de recepción."
         }
       ],
-      "verdict": "Con un límite de $5 muy fácil de conseguir, retiros directos por PayPal y Bitcoin, y el bono mutuo de $3, Pawns.app ofrece uno de los sistemas de pago más sólidos del mercado.",
+      "verdict": "Compara el importe neto, completa la verificación oficial y revisa si hay un correo para reclamar el premio. Trata el bono como una promoción condicionada. El pago se confirma en la cuenta receptora, no a partir de una pantalla promocional.",
       "imageAlt": "Pantalla de invitación de Pawns.app con el bono de $3",
-      "caption": "La pestaña Comunidad detalla el bono mutuo de $3 y el enlace oficial discoverpawns.eu/6823713.",
+      "caption": "Captura aportada de Comunidad con una promoción de referido; las condiciones actuales la dividen entre retiros válidos.",
       "imageKey": "pawns-referral",
       "imageWide": true,
       "secondImage": {
         "key": "pawns-rewards",
-        "alt": "Pestaña de recompensas y sorteos en Pawns.app",
-        "caption": "La sección de Recompensas complementa tus cobros con ruletas diarias y opciones de boost.",
+        "alt": "Pantalla de recompensas de Pawns.app con ruleta y premios",
+        "caption": "La zona de promociones es distinta de un retiro confirmado o una prueba de pago.",
         "wide": true
-      }
+      },
+      "modifiedDate": "2026-11-15"
     },
     {
       "id": "pawns-vs-freecash",
       "app": "pawns",
       "category": "guides",
       "slug": "pawns-app-vs-freecash-comparativa-recompensas",
-      "title": "Pawns.app vs Freecash: ingresos pasivos frente a muros de juegos comparados",
-      "description": "Compara Pawns.app y Freecash cara a cara: internet compartido, encuestas, juegos móviles y límites mínimos de retiro.",
-      "intro": "Pawns.app y Freecash son dos de las plataformas más populares para generar ingresos extra en el móvil, pero se adaptan a estilos de usuario distintos. Mientras Freecash se centra en muros intensivos de juegos y ofertas, Pawns.app destaca por permitir generar ingresos pasivos compartiendo internet en segundo plano, sumando además encuestas y juegos. Analizamos cuál te conviene más.",
+      "title": "Pawns.app vs Freecash: tareas, retiros y cuál elegir",
+      "description": "Compara Pawns.app y Freecash por tareas, primer retiro, comisiones y condiciones de ofertas. Decide según tu cuenta y no por el premio anunciado.",
+      "intro": "Para elegir entre Pawns.app y Freecash, revisa qué debes hacer y qué puedes retirar realmente. Pawns.app añade el uso compartido opcional de internet a encuestas y juegos; Freecash se centra en tareas remuneradas. Ninguno asegura ingresos. Comparamos reglas oficiales y las capturas aportadas de Pawns.app, sin una prueba conjunta de ganancias o velocidad de pago.",
       "sections": [
         {
-          "heading": "Formato de ganancias: modo pasivo frente a dedicación activa",
+          "heading": "Compartir internet es una decisión aparte",
           "paragraphs": [
-            "La diferencia principal radica en el esfuerzo requerido. Pawns.app te permite generar saldo sin tocar el teléfono compartiendo el ancho de banda sobrante de tu red Wi-Fi, ideal para personas con poco tiempo libre.",
-            "Por el contrario, Freecash es un panel puramente activo. Sus ofertas de juegos pueden pagar sumas importantes, pero exigen jugar a diario, superar niveles difíciles y cumplir plazos muy ajustados."
-          ],
-          "cta": {
-            "label": "Prueba Pawns.app para ingresos pasivos con el código 6823713",
-            "url": "https://discoverpawns.eu/6823713"
-          }
-        },
-        {
-          "heading": "Mínimos de retiro, métodos y opciones cripto",
-          "paragraphs": [
-            "Freecash cuenta con un mínimo de cobro muy bajo en criptomonedas específicas (desde $0.50 en Litecoin), pero para PayPal suele requerir $5.00. Pawns.app establece un umbral único y transparente de $5.00 USD para todos sus métodos principales (PayPal, Bitcoin y tarjetas regalo).",
-            "Ambas plataformas muestran sus valores en moneda real (Pawns.app directamente en dólares; Freecash en monedas donde 1.000 equivalen a $1.00 USD)."
+            "Pawns.app ofrece compartir internet además de encuestas y juegos. Antes de activarlo, valora si quieres que un tercero utilice tu conexión y revisa permisos, plan de datos y condiciones de uso de la red.",
+            "Dejar un programa funcionando no demuestra un retorno previsible. Si prefieres no compartir conexión, compara solo las tareas activas. Una función que no vas a usar no debería decidir el ganador."
           ],
           "source": {
-            "title": "Pawns.app: Información oficial del servicio",
+            "title": "Pawns.app: official product overview",
             "url": "https://pawns.app/"
+          },
+          "cta": {
+            "label": "Ver Pawns.app con el código de referido 6823713",
+            "url": "https://discoverpawns.eu/6823713",
+            "sponsored": true
           }
         },
         {
-          "heading": "¿Cuál de las dos plataformas te conviene priorizar?",
+          "heading": "Primer retiro: compara el acceso y no solo una denominación baja",
           "paragraphs": [
-            "No es necesario elegir solo una. Mantener Pawns.app activo en segundo plano en tu móvil o PC de casa genera ingresos constantes sin esfuerzo.",
-            "Cuando dispongas de tiempo libre para jugar o responder encuestas, puedes comparar las ofertas disponibles en ambas aplicaciones y elegir la que pague mejor por el mismo juego."
+            "Pawns.app publica un mínimo de $5. La guía actual de primer retiro de Freecash indica $25, sujeto a región, y verificación de correo e identidad. Revisa Cashout: los mínimos posteriores de cada método no describen el primer retiro.",
+            "Antes de empezar, confirma que hay un método utilizable en tu país y que puedes cumplir la verificación. Un saldo promocional todavía no disponible para retirar es diferente del dinero recibido."
+          ],
+          "source": {
+            "title": "Freecash: first withdrawal requirements",
+            "url": "https://freecash.com/academy/en/support/withdrawal/issues/first-cashout-requirements"
+          }
+        },
+        {
+          "heading": "Comisiones y espera: consulta el resumen final",
+          "paragraphs": [
+            "Compara el importe neto tras la comisión, no solo lo solicitado. Freecash publica comisiones para varios métodos de dinero y tarjetas sin comisión; consulta la confirmación de cada método para ver el total vigente.",
+            "No hemos cronometrado retiros equivalentes en ambas cuentas, por lo que no podemos decir cuál paga antes. La revisión, un correo de canje y el servicio receptor pueden cambiar el proceso."
+          ],
+          "source": {
+            "title": "Freecash: withdrawal limits and fees",
+            "url": "https://freecash.com/academy/en/support/withdrawal/issues/withdrawal-limits"
+          }
+        },
+        {
+          "heading": "Juegos: compara la misma meta antes de instalar",
+          "paragraphs": [
+            "Anota tarea, dispositivo válido, requisito de jugador nuevo, plazo, compras exigidas y recompensa de una misma meta en cada plataforma. Un total mayor puede sumar etapas costosas o poco viables.",
+            "No supongas que una instalación sirve para cobrar ambas ofertas. Lee los requisitos antes de elegir dónde empezar, guarda las condiciones y comprueba que aparece la primera acción registrada antes de dedicar más tiempo. Este es un método de comparación, no una afirmación de que un catálogo paga más."
           ]
+        },
+        {
+          "heading": "Qué opción encaja con tu situación",
+          "paragraphs": [
+            "Considera Pawns.app si quieres la función opcional de compartir conexión y sus métodos de pago te sirven. Considera Freecash si sus tareas y requisitos iniciales encajan mejor. Descarta una opción si la recompensa útil difícilmente compensará el tiempo o coste.",
+            "Usa tu región real. Freecash prohíbe VPN y proxies, incluido iCloud Private Relay. Una diferencia de disponibilidad no justifica ocultar la ubicación."
+          ],
+          "source": {
+            "title": "Freecash: VPN and proxy restrictions",
+            "url": "https://freecash.com/academy/en/support/account/restrictions/can-i-use-vpn-proxy"
+          }
         }
       ],
       "steps": [
-        "Instala Pawns.app desde discoverpawns.eu/6823713 y activa el modo de internet compartido.",
-        "Introduce el código de invitación 6823713 para asegurar tu bono de $3 al retirar.",
-        "Revisa las ofertas de juegos en Pawns.app como Candy Crush Saga o Clockmaker.",
-        "Compara los requisitos con Freecash para elegir la opción más rentable.",
-        "Retira tus fondos por PayPal o Bitcoin al alcanzar los $5 de saldo."
+        "Comprueba métodos y verificación disponibles en tu país.",
+        "Compara primer retiro válido, comisiones e importe neto.",
+        "Decide si quieres compartir internet.",
+        "Compara una tarea real con metas equivalentes antes de instalar.",
+        "Registra tiempo y recompensas acreditadas para decidir con tus resultados."
       ],
       "pros": [
-        "Pawns.app genera ingresos pasivos en segundo plano que Freecash no ofrece.",
-        "Ambas opciones pagan rápido por PayPal y admiten criptomonedas.",
-        "Usar las dos aplicaciones al mismo tiempo maximiza tus ingresos mensuales."
+        "Las plataformas tienen combinaciones de tareas para preferencias distintas.",
+        "Comparar condiciones evita elegir por el mayor premio anunciado."
       ],
       "cons": [
-        "Freecash cuenta con más proveedores externos de muros de ofertas.",
-        "La ganancia pasiva en Pawns.app varía según la ubicación de tu conexión."
+        "No hay una prueba conjunta de ganancias o rapidez que establezca un ganador universal.",
+        "Disponibilidad, verificación y comisiones varían por país o cuenta."
       ],
       "faq": [
         {
-          "q": "¿Puedo usar Pawns.app y Freecash en el mismo teléfono?",
-          "a": "Sí. Pawns.app puede funcionar en segundo plano compartiendo internet mientras juegas o respondes encuestas en cualquiera de las dos aplicaciones."
+          "q": "¿Cuál paga más, Pawns.app o Freecash?",
+          "a": "Esta revisión no establece un ganador en ingresos. Compara la misma tarea y mide crédito real, coste y tiempo en tu cuenta."
         },
         {
-          "q": "¿Cuál paga más rápido por PayPal?",
-          "a": "Ambas plataformas suelen procesar los pagos por PayPal en un plazo de 24 a 48 horas una vez verificada la cuenta."
+          "q": "¿Usar ambas maximiza los ingresos?",
+          "a": "No está garantizado. Añade condiciones y registros que gestionar; no intentes cobrar dos veces una oferta para nuevos usuarios salvo permiso explícito de sus reglas."
         },
         {
-          "q": "¿Cuál paga mejor en juegos móviles?",
-          "a": "Depende del juego específico. Pawns.app suele ofrecer excelentes recompensas en juegos casuales y puzzles como Candy Crush ($54+)."
+          "q": "¿Cuál permite el primer retiro más bajo?",
+          "a": "Compara los requisitos iniciales vigentes de ambas cuentas. Un canje posterior de baja denominación no demuestra acceso inicial."
         }
       ],
-      "verdict": "Para ganar dinero de forma pasiva y sin esfuerzo continuo, Pawns.app es la mejor elección. Para maximizar resultados, combina el modo pasivo de Pawns.app con las mejores ofertas de juegos de ambas plataformas.",
-      "imageAlt": "Comparativa entre Pawns.app y opciones de juegos de Freecash",
-      "caption": "Pawns.app complementa el modo pasivo de compartir internet con juegos móviles de alta remuneración.",
+      "verdict": "No hay un ganador general demostrado. Elige tareas y condiciones de cobro que puedas utilizar y compara el beneficio neto con el tiempo y coste reales. Compartir internet es opcional, no una recomendación automática.",
+      "imageAlt": "Pantalla de Comunidad de Pawns.app aportada como referencia para la comparación",
+      "caption": "La captura ilustra solo Pawns.app; no es una prueba comparativa de ingresos.",
       "imageKey": "pawns-referral",
       "imageWide": true,
       "secondImage": {
         "key": "pawns-offers",
-        "alt": "Pantalla de ofertas de juegos en Pawns.app con Candy Crush y Clockmaker",
-        "caption": "La sección de Ofertas ofrece títulos muy jugados con recompensas claras en dólares.",
+        "alt": "Ofertas de juegos de Pawns.app en la captura aportada",
+        "caption": "Los totales requieren revisar metas y condiciones; no demuestran mejor retorno que Freecash.",
         "wide": true
-      }
+      },
+      "modifiedDate": "2026-11-15"
     },
     {
       "id": "primeopinion",
@@ -4740,70 +5102,101 @@ export const articles:Record<Locale,Article[]>={
       "app": "pinedrama",
       "category": "guides",
       "slug": "descargar-pinedrama-app-pc-iniciar-sesion",
-      "title": "Cómo Descargar PineDrama en Celular o PC, Iniciar Sesión y Ver Series (2026)",
-      "description": "Guía práctica para descargar PineDrama oficial sin APK riesgosos, iniciar sesión con TikTok, usarlo en PC y explorar las mininovelas más vistas.",
-      "intro": "Al buscar cómo descargar PineDrama, iniciar sesión o abrir PineDrama en PC aparecen muchas páginas con enlaces APK dudosos. Aquí tienes los pasos seguros para instalar la versión oficial de TikTok, sincronizar tus series guardadas y explorar las mininovelas más populares sin exponer tu cuenta.",
+      "title": "PineDrama: Descargar, Iniciar Sesión y Disponibilidad en PC (2026)",
+      "description": "Descarga PineDrama oficial en Android o iPhone, conecta TikTok, recupera tus episodios y comprueba qué sabemos del acceso desde PC.",
+      "intro": "PineDrama tiene fichas oficiales para Android y iPhone enlazadas desde su portal de TikTok. No verificamos un reproductor para Windows o macOS ni una vía compatible mediante emuladores. Esta guía distingue las descargas confirmadas de las promesas para PC y explica cómo encontrar tus series. Las capturas muestran la interfaz de Android aportada para la guía; revisamos las tiendas el 15 de noviembre de 2026.",
       "sections": [
         {
-          "heading": "Dónde descargar PineDrama oficial (y por qué evitar APK externos)",
+          "heading": "Android: identificar la ficha oficial de Google Play",
           "paragraphs": [
-            "En Android, la versión oficial se descarga desde Google Play bajo el nombre PineDrama - Short Dramas y el identificador com.ss.android.ttmd.video de TikTok Pte. Ltd. También puedes verificar el acceso oficial en shortdrama.tiktok.com.",
-            "Evita descargar archivos 'PineDrama APK mod' que prometen monedas infinitas o retiros desbloqueados: los puntos se validan en servidor y los paquetes alterados pueden comprometer tu cuenta de TikTok."
+            "Abre el enlace de Google Play y comprueba PineDrama - Short Dramas, el desarrollador TikTok Pte. Ltd. y el paquete com.ss.android.ttmd.video. Un nombre o icono parecido en una web de APK no identifica por sí solo la misma aplicación. El portal shortdrama.tiktok.com también enlaza esta ficha.",
+            "Deja que Google Play compruebe la compatibilidad con tu equipo y región. Si no permite instalar, revisa el mensaje de la tienda en lugar de asumir que un APK lo resolverá. La ficha indica compras dentro de la app: descargar gratis no significa que todo el contenido esté desbloqueado."
           ],
           "source": {
-            "title": "PineDrama: Official TikTok Short Drama Portal",
+            "title": "PineDrama: ficha oficial de Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=en"
+          }
+        },
+        {
+          "heading": "iPhone y iPad: descargar desde la App Store",
+          "paragraphs": [
+            "El portal oficial enlaza PineDrama - Short Dramas en la App Store, ID 6754134922. La ficha muestra TikTok Ltd. como desarrollador y TikTok Pte. Ltd. como vendedor. Ábrela en tu región para revisar disponibilidad y requisitos del sistema antes de instalar.",
+            "La ficha incluye compras dentro de la app y describe planes de renovación automática. Lee el precio y las condiciones de tu pantalla antes de suscribirte. Esta guía no establece un precio universal ni garantiza que todas las series sean gratis."
+          ],
+          "source": {
+            "title": "PineDrama: ficha oficial de la App Store",
+            "url": "https://apps.apple.com/us/app/pinedrama-short-dramas/id6754134922"
+          }
+        },
+        {
+          "heading": "Iniciar sesión con TikTok y localizar el progreso",
+          "paragraphs": [
+            "Google Play describe la sincronización con TikTok para conservar progreso y preferencias. Utiliza el inicio de sesión de la propia app oficial. En las capturas de Android, Perfil > Dramas muestra el avance, como EP 42/74, y My List permite localizar series guardadas.",
+            "Si falta una serie, confirma primero que usaste la misma cuenta de TikTok; después busca el título y revisa la lista guardada y el episodio. Comprueba si hay actualizaciones y conexión. Si persiste, usa el contacto de soporte de la ficha oficial e indica equipo, versión y error, sin compartir contraseñas. No probamos todos los escenarios de acceso o recuperación."
+          ],
+          "source": {
+            "title": "PineDrama en Google Play: sincronización y soporte",
+            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=en"
+          }
+        },
+        {
+          "heading": "¿Se puede ver PineDrama en PC?",
+          "paragraphs": [
+            "En las fuentes oficiales revisadas, shortdrama.tiktok.com presenta la aplicación y enlaza Google Play y App Store. Esa página por sí sola no demuestra que exista un reproductor web completo. No verificamos un instalador compatible con Windows o macOS ni reproducción mediante emuladores Android.",
+            "No corresponde recomendar Google Play Games para PC como método de instalación sin confirmar soporte para PineDrama. Utiliza las tiendas oficiales móviles y consulta futuros anuncios en el portal. Una web externa que anuncie PineDrama para PC no acredita compatibilidad oficial."
+          ],
+          "source": {
+            "title": "PineDrama: portal oficial de descarga",
             "url": "https://shortdrama.tiktok.com/"
           }
         },
         {
-          "heading": "Iniciar sesión con TikTok, guardar series y ver PineDrama en PC",
+          "heading": "Encontrar la serie completa y el episodio correcto",
           "paragraphs": [
-            "Al entrar en Perfil puedes vincular tu cuenta de TikTok para sincronizar preferencias, historial y episodios guardados en My List. La pestaña Dramas muestra el progreso exacto de cada título, como EP 42/74 o EP 4/84.",
-            "Si buscas PineDrama para PC, ten en cuenta que es una app diseñada para pantallas móviles verticales. En computadora puedes consultar el portal shortdrama.tiktok.com o ejecutar la app oficial desde entornos Android compatibles vinculados a Google Play en lugar de instaladores desconocidos."
-          ]
-        },
-        {
-          "heading": "Series y mininovelas destacadas en el catálogo",
-          "paragraphs": [
-            "La sección Descubrir organiza el catálogo en Categorías, Populares y Nuevos, abarcando romance, fantasía, venganza y acción. Entre los títulos más vistos destacan O Irmão Esquecido de Thor (91.4M), O Mago Supremo é um Menino (14.2M), O Prisioneiro da Gigante (15.6M) y O Poder SSS do Aluno Humilhado (8.9M).",
-            "En el catálogo en inglés también sobresalen series de 40 a 85 episodios cortos como Resolving Crisis At 30,000 Feet, Fell Into the Giant's Arms, The Broke Fat Dad Won $500 Million, King of Wrenches y Tempest: The Last Mecha."
+            "Las capturas muestran Descubrir con búsqueda y filtros Categorías, Populares y Nuevos. Busca el título, abre la ficha de la serie y comprueba el orden de los episodios antes de continuar. Guarda la serie para no depender de encontrar otra vez el mismo clip en redes.",
+            "O Irmão Esquecido de Thor aparece en las capturas aportadas. Las imágenes documentan el catálogo al capturarlas; no representan un ranking actual ni garantizan disponibilidad en otro país. Títulos, doblaje y subtítulos pueden variar por región."
           ],
           "source": {
-            "title": "PineDrama - Short Dramas on Google Play",
+            "title": "PineDrama en Google Play: Descubrir y lista personal",
             "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=en"
           }
         }
       ],
       "steps": [
-        "Ingresa a shortdrama.tiktok.com o busca PineDrama - Short Dramas (TikTok Pte. Ltd.) en Google Play.",
-        "Instala la app oficial y concede solo los permisos básicos necesarios para reproducir video.",
-        "Accede a Perfil para iniciar sesión con TikTok si deseas sincronizar tu historial.",
-        "Explora Categorías, Populares y Nuevos en Descubrir y guarda tus series en My List.",
-        "En PC, utiliza únicamente portales oficiales o entornos compatibles con Google Play."
+        "Abre el portal oficial y elige Google Play o App Store según tu dispositivo.",
+        "Comprueba desarrollador, identidad, compatibilidad e información de compras en la tienda.",
+        "Instala y usa el acceso de TikTok dentro de la app si quieres sincronizar tu cuenta.",
+        "Busca una serie en Descubrir y abre su lista de episodios.",
+        "Guárdala y confirma el episodio en tu perfil antes de continuar.",
+        "Para PC, consulta anuncios oficiales; esta guía no ofrece un método verificado para escritorio o emuladores."
       ],
       "pros": [
-        "Sincronización rápida con TikTok para continuar mininovelas sin perder el episodio.",
-        "Interfaz limpia con barra de búsqueda y filtros por popularidad y estrenos."
+        "Los enlaces oficiales permiten identificar la app y el desarrollador.",
+        "La sincronización y las listas guardadas ayudan a localizar el progreso."
       ],
       "cons": [
-        "No cuenta con una aplicación nativa dedicada exclusivamente para Windows o Mac.",
-        "La disponibilidad de subtítulos o doblajes cambia según la serie y el idioma."
+        "No verificamos reproducción en escritorio ni compatibilidad con emuladores.",
+        "El catálogo, las compras y la disponibilidad pueden variar por región."
       ],
       "faq": [
         {
-          "q": "¿Existe PineDrama para PC?",
-          "a": "PineDrama está pensada para móviles en formato vertical. Puedes consultar shortdrama.tiktok.com o usar un entorno Android compatible con Google Play en tu computadora."
+          "q": "¿Hay una descarga verificada de PineDrama para PC?",
+          "a": "No verificamos un instalador oficial para Windows o macOS ni un emulador compatible en las fuentes revisadas. El portal oficial enlaza las tiendas móviles."
         },
         {
-          "q": "¿Es obligatorio iniciar sesión con TikTok?",
-          "a": "No siempre para explorar el catálogo inicial, pero vincular TikTok facilita guardar tu lista e historial entre dispositivos."
+          "q": "¿PineDrama está disponible para iPhone?",
+          "a": "El portal oficial enlaza la app con ID 6754134922 en App Store. Revisa disponibilidad y compatibilidad en tu región."
         },
         {
-          "q": "¿Es seguro bajar PineDrama APK?",
-          "a": "Solo es recomendable instalar la app desde Google Play o enlaces oficiales de TikTok Pte. Ltd., evitando archivos modificados de terceros."
+          "q": "¿Por qué desapareció mi historial de PineDrama?",
+          "a": "Comprueba primero que usas la misma cuenta de TikTok, las series guardadas y el episodio actual. Si actualizar y revisar la conexión no ayuda, contacta con el soporte de la ficha oficial."
+        },
+        {
+          "q": "¿Descargar gratis desbloquea todos los episodios?",
+          "a": "No necesariamente. Las dos tiendas indican compras dentro de la app. Consulta las condiciones de cada episodio y de compra en tu cuenta."
         }
       ],
-      "verdict": "Descarga PineDrama únicamente desde Google Play o shortdrama.tiktok.com para disfrutar del catálogo y la sincronización con TikTok sin riesgos de seguridad.",
+      "verdict": "Instala desde Google Play o App Store oficiales, conserva la misma cuenta y revisa el orden de episodios. La reproducción en PC sigue sin estar verificada en esta guía.",
       "imageAlt": "Pestaña Descubrir de PineDrama con buscador y filtros de series",
       "caption": "En Descubrir puedes buscar mininovelas por nombre o filtrar por Categorías, Populares y Nuevos.",
       "imageKey": "pinedrama-discover",
@@ -4813,7 +5206,8 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Biblioteca de dramas vistos en PineDrama con número de episodio",
         "caption": "Tu biblioteca en Perfil registra exactamente en qué episodio te quedaste en cada serie.",
         "wide": false
-      }
+      },
+      "modifiedDate": "2026-11-15"
     },
     {
       "id": "pinedrama-vs-dramastack",
@@ -5428,176 +5822,256 @@ export const articles:Record<Locale,Article[]>={
       "app": "freecash",
       "category": "rewards",
       "slug": "freecash-opiniones-es-confiable-si-paga",
-      "title": "Freecash Opiniones (2026): ¿Es Confiable o Estafa? Pagos Reales y Reglas",
-      "description": "¿Freecash es confiable y paga de verdad en 2026? Revisa opiniones reales, por qué los pagos quedan pendientes, motivos de bloqueo y cómo evitar errores.",
-      "intro": "Freecash es una plataforma legítima tipo GPT (ganar por tareas) que paga por probar juegos móviles, completar ofertas y responder encuestas, pero no es un ingreso automático. Saber por qué algunos usuarios cobran sin problemas y otros sufren retenciones o bloqueos evita perder tiempo.",
+      "title": "¿Freecash es Confiable? Opiniones, Recompensas Pendientes y Reglas",
+      "description": "Análisis documental de Freecash: quién lo opera, qué significan los estados del saldo, restricciones y límites de lo que verificamos sobre pagos.",
+      "intro": "Freecash tiene un operador identificable y reglas públicas de recompensas y canje. Eso acredita la existencia del servicio, pero no garantiza que una oferta concreta se registre o que cada retiro sea aprobado. Esta revisión separa esas preguntas sin prometer ingresos fáciles.",
       "sections": [
         {
-          "heading": "¿Freecash es confiable y cómo genera los pagos?",
+          "heading": "Qué verificamos y qué no comprobamos",
           "paragraphs": [
-            "Sí, Freecash es confiable y paga en dinero real, tarjetas de regalo o criptomonedas gracias a estudios de juegos y marcas que pagan por instalaciones y pruebas de usuarios. La equivalencia base es 1,000 monedas = $1.00 USD.",
-            "La mayoría de las opiniones negativas vienen de no leer los plazos de cada oferta o esperar ganancias rápidas sin esfuerzo. Las ofertas altas ($50 a $100+) suelen exigir llegar a niveles avanzados en 30 días o realizar compras opcionales."
-          ]
+            "Revisamos la ayuda y los términos oficiales el 15 de noviembre de 2026, además de imágenes guardadas previamente. Nuestra captura de Android dice que no hay ofertas; no demuestra el catálogo disponible para otras cuentas. No completamos un ciclo de ganancias ni probamos independientemente un retiro para esta revisión.",
+            "Los términos identifican a Almedia GmbH como proveedor del servicio principal y condicionan el canje a elegibilidad y verificación. Compara las reglas con el historial de tu cuenta: un total promocional o una valoración aislada no establece tu resultado probable."
+          ],
+          "source": {
+            "title": "Freecash: términos y operador",
+            "url": "https://freecash.com/en/policies/terms"
+          }
         },
         {
-          "heading": "Por qué se bloquean cuentas o quedan pagos pendientes",
+          "heading": "Sin registrar, sin reclamar y pendiente no son lo mismo",
           "paragraphs": [
-            "Freecash aplica controles antifraude estrictos: solo permite una cuenta por hogar/IP y prohíbe VPN, proxies o emuladores. Además, el primer retiro exige verificación de correo e identidad (selfie y documento) junto con un mínimo inicial de $25 en la mayoría de los países.",
-            "Puedes abrir tu cuenta desde el enlace oficial de invitación o copiar el código 3C7GKG y probar primero una oferta gratuita corta para confirmar que el seguimiento funcione en tu teléfono."
+            "Una acción sin registrar todavía no figura como completada. Una recompensa sin reclamar espera el botón Claim cuando esa función se aplica. Pending indica una revisión previa al saldo disponible. Un retiro pendiente después de solicitar un pago pertenece a otra etapa.",
+            "Identifica la etapa antes de contactar con soporte. Guarda nombre de la oferta, prueba de la meta y estado, en vez de repetir la actividad o comprar otra meta para intentar que aparezca la anterior."
+          ],
+          "source": {
+            "title": "Freecash: reclamar recompensas de ofertas",
+            "url": "https://freecash.com/academy/en/support/offer/miscellaneous/how-to-claim-offer-rewards"
+          },
+          "cta": {
+            "label": "Consultar requisitos y estado de retiros de Freecash",
+            "url": "/es/freecash-codigo-de-bono-como-retirar-dinero/"
+          }
+        },
+        {
+          "heading": "Reglas de cuenta y decisión sobre privacidad",
+          "paragraphs": [
+            "Las reglas oficiales limitan el servicio a una cuenta por hogar y prohíben las VPN, incluido iCloud Private Relay. Usa datos reales y consulta con soporte sobre una cuenta existente en vez de abrir otra.",
+            "El seguimiento utiliza datos de actividad y ciertos permisos. Lee cada solicitud antes de aceptarla. Si los datos exigidos para una oferta o verificación de identidad no te parecen adecuados, omite la actividad; la recompensa no obliga a aceptar un permiso."
+          ],
+          "source": {
+            "title": "Freecash: restricciones de cuenta",
+            "url": "https://freecash.com/academy/en/support/account/restrictions/how-can-i-ensure-that-my-freecash-account-will-not-be-banned"
+          }
+        },
+        {
+          "heading": "Cuándo continuar y cuándo detenerte",
+          "paragraphs": [
+            "Continúa solo si entiendes las condiciones, se registra una acción inicial y la posible recompensa justifica tu tiempo. Detén los gastos y el esfuerzo adicional si falla el seguimiento, el plazo es inviable o no aceptas los requisitos de retiro.",
+            "La falta de crédito no identifica por sí sola la causa. Pide que investiguen el registro concreto y conserva la respuesta. Abrir una consulta no garantiza que aprueben la recompensa."
           ]
         }
       ],
       "steps": [
-        "Crea una única cuenta en Freecash con tu ubicación real y sin VPN ni proxy activos.",
-        "Empieza por una oferta gratuita y rápida para verificar que el rastreo registre tu progreso.",
-        "Guarda capturas de las condiciones y del nivel alcanzado por si necesitas soporte.",
-        "Completa la verificación de correo e identidad antes de solicitar tu primer retiro de $25."
+        "Comprueba el operador y las reglas actuales.",
+        "Identifica si el problema es seguimiento, reclamación, revisión de recompensa o retiro.",
+        "Guarda condiciones y pruebas de la meta exacta.",
+        "Usa el soporte adecuado sin crear otra cuenta.",
+        "Reevalúa el tiempo y los datos necesarios antes de continuar."
       ],
       "pros": [
-        "Conversión clara (1,000 monedas = $1.00 USD) y retiros rápidos tras verificar la cuenta.",
-        "Gran variedad de metas en juegos móviles además de encuestas y paneles de ofertas."
+        "Operador identificable y ayuda pública para problemas de cuenta y recompensas.",
+        "Los estados permiten investigar cada retraso por separado."
       ],
       "cons": [
-        "El primer retiro suele exigir un mínimo de $25 y verificación de identidad.",
-        "Las reglas de un solo hogar y cero VPN pueden suspender cuentas si se incumplen."
+        "Esta revisión no verifica independientemente un retiro.",
+        "El seguimiento, la verificación y las condiciones pueden impedir que el saldo quede disponible."
       ],
       "faq": [
         {
-          "q": "¿Freecash paga de verdad o es estafa?",
-          "a": "Freecash es real y paga por PayPal, tarjetas regalo y cripto a usuarios verificados que cumplen las reglas de seguimiento y cuenta única."
+          "q": "¿Tener cuenta real garantiza un pago?",
+          "a": "No. La actividad debe cumplir sus condiciones, acreditarse y superar los controles de canje y verificación aplicables."
         },
         {
-          "q": "¿Por qué algunas recompensas aparecen pendientes?",
-          "a": "Los anunciantes retienen recompensas altas varios días para validar que el progreso en el juego sea legítimo."
+          "q": "¿Pendiente significa que perdí el dinero?",
+          "a": "No necesariamente. Distingue la recompensa en revisión del retiro en proceso: tienen estados y rutas de ayuda diferentes."
         },
         {
-          "q": "¿Pueden usar Freecash dos personas en la misma casa?",
-          "a": "Freecash limita las cuentas por hogar e IP compartida; revisa sus términos antes de abrir una segunda cuenta en el mismo Wi-Fi."
+          "q": "¿Pueden registrarse dos personas del mismo hogar?",
+          "a": "Las reglas publicadas limitan Freecash a una cuenta por hogar. Consulta con soporte antes de que otra persona se registre."
         }
       ],
-      "verdict": "Freecash es confiable si lo usas para probar apps y juegos sin VPN, leyendo cada meta antes de empezar y verificando el rastreo desde el primer nivel.",
-      "imageAlt": "Panel de ofertas y recompensas de Freecash en Android",
-      "caption": "Freecash reúne metas de juegos móviles, ofertas de socios y encuestas en una sola cuenta."
+      "verdict": "Freecash es un servicio de recompensas identificable; la decisión útil es si una oferta concreta compensa sus condiciones. No presentamos ganancias garantizadas ni capturas como pruebas independientes de pago.",
+      "imageAlt": "Panel del enlace de referido de Freecash con identificador 3C7GKG",
+      "caption": "Esta captura guardada muestra un enlace de referido, no un comprobante de retiro.",
+      "modifiedDate": "2026-11-15"
     },
     {
       "id": "freecash-bonus-cashout",
       "app": "freecash",
       "category": "rewards",
       "slug": "freecash-codigo-de-bono-como-retirar-dinero",
-      "title": "Código de Bono Freecash y Cómo Retirar Dinero (2026): PayPal, Cripto y Mínimos",
-      "description": "Cómo usar el código 3C7GKG en Freecash, conseguir códigos promocionales oficiales, cumplir el mínimo de $25 del primer retiro y evitar comisiones.",
-      "intro": "Entender los códigos de bono y las comisiones de retiro en Freecash te permite conservar más saldo neto. Aunque el primer retiro tiene un mínimo más alto y control de identidad, los cobros siguientes bajan el umbral y se procesan rápido.",
+      "title": "Código de Freecash y Retiros (2026): Mínimo, Comisiones de PayPal y Estado",
+      "description": "Diferencia entre referidos y bonos, mínimo regional del primer retiro, porcentaje y comisión fija de PayPal, y seguimiento de la solicitud.",
+      "intro": "Un identificador de referido, un bono promocional y el saldo disponible para retirar son cosas distintas. Esta guía explica cada paso y corrige una simplificación común: retirar por PayPal puede costar más que el 5% anunciado.",
       "sections": [
         {
-          "heading": "Cómo funcionan los códigos de invitación y bono",
+          "heading": "¿Código de referido, bono o sorteo?",
           "paragraphs": [
-            "Al registrarte puedes usar un enlace de invitación o el identificador 3C7GKG. Aparte del registro, Freecash publica códigos de bono por tiempo limitado en sus cuentas oficiales de X/Twitter, Instagram, YouTube y Discord, que se canjean dentro del panel mientras haya cupos.",
-            "Desconfía de páginas externas que prometen 'generadores de monedas': los únicos códigos válidos salen de canales oficiales de Freecash o enlaces de invitación verificados."
-          ]
+            "3C7GKG es el identificador de nuestra invitación de afiliado. No promete un bono fijo. Freecash documenta por separado los códigos de bono y de lotería: estos últimos entregan participaciones en un sorteo, no una cantidad de dinero garantizada.",
+            "Utiliza la ruta y promoción que aparezcan en tu cuenta. Un código puede caducar, agotarse o limitarse a ciertos usuarios. No pagues a terceros para desbloquearlo ni compartas tu acceso con un supuesto generador."
+          ],
+          "source": {
+            "title": "Freecash: tipos y disponibilidad de códigos",
+            "url": "https://freecash.com/academy/en/support/account/rewards/where-freecash-codes"
+          }
         },
         {
-          "heading": "Primer retiro de $25 vs. retiros siguientes y comisiones",
+          "heading": "Consulta el requisito inicial de tu región",
           "paragraphs": [
-            "La ayuda oficial indica un mínimo de $25 para el primer retiro (puede variar según el país) junto con verificación de correo e identidad. Tras completar ese primer cobro, ese tope desaparece y muchos métodos permiten retirar desde alrededor de $5.",
-            "PayPal y Venmo suelen aplicar una comisión del 5%, mientras que las tarjetas de regalo (Amazon, Google Play, Apple, Steam) y varias criptomonedas (Litecoin, Bitcoin, Ethereum) no cobran comisión de plataforma. Las transferencias bancarias o Revolut tardan de 3 a 5 días hábiles."
+            "La ayuda actual indica US$25 para el primer retiro, con variaciones regionales, además de verificar correo e identidad. Cashout muestra el importe exacto de tu cuenta. Después se aplica el mínimo del método elegido.",
+            "Compruébalo antes de acumular saldo. Envía la verificación solo mediante el proceso oficial y no uses una captura de otro país como prueba de tu elegibilidad."
           ],
           "source": {
             "title": "Freecash: requisitos del primer retiro",
             "url": "https://freecash.com/academy/en/support/withdrawal/issues/first-cashout-requirements"
           }
+        },
+        {
+          "heading": "PayPal: 5% y comisión fija en importes pequeños",
+          "paragraphs": [
+            "La guía de PayPal indica un 5%, más US$1 para las opciones de US$5, US$10 y US$20. Las opciones superiores no añaden ese dólar. Revisa el cargo exacto que muestre tu pantalla antes de confirmar.",
+            "Ejemplo: si esas reglas se aplican a una opción de US$10, la comisión total es US$1,50 y quedan US$8,50 después de esos cargos de Freecash, antes de cualquier conversión adicional. Es un ejemplo de cálculo, no un pago que recibimos. Compara el valor utilizable final."
+          ],
+          "source": {
+            "title": "Freecash: comisiones actuales de PayPal",
+            "url": "https://freecash.com/academy/en/support/withdrawal/cash/how-withdraw-to-paypal"
+          }
+        },
+        {
+          "heading": "Sigue la solicitud y el correo de canje",
+          "paragraphs": [
+            "Tras solicitar el retiro, consulta My Withdrawals. La ayuda explica que PayPal normalmente utiliza Tremendous; sigue su correo de canje cuando se envíe la solicitud. Revisa la dirección que introdujiste y la carpeta de correo no deseado.",
+            "Una revisión de seguridad y una transferencia bancaria son esperas distintas. Consulta el plazo del método elegido y acude a soporte si figura Rejected o supera la ventana indicada. No repitas la solicitud solo porque aún no llegó el correo."
+          ],
+          "source": {
+            "title": "Freecash: revisión y entrega de retiros",
+            "url": "https://freecash.com/academy/en/support/withdrawal/issues/why-withdrawal-pending"
+          }
         }
       ],
       "steps": [
-        "Accede a Freecash con el botón de invitación de esta página o copia el código 3C7GKG al crear tu cuenta.",
-        "Sigue los canales oficiales de Freecash si quieres aprovechar códigos promocionales temporales.",
-        "Acumula saldo hasta el mínimo inicial de $25 y completa la verificación de identidad.",
-        "Elige tarjetas regalo o cripto de baja comisión si quieres evitar el 5% de tarifa en PayPal."
+        "Lee las condiciones del código y no cuentes un bono sin acreditar como saldo disponible.",
+        "Comprueba mínimo regional y verificación en Cashout.",
+        "Compara importe, comisión, moneda y método antes de confirmar.",
+        "Utiliza el correo correcto y guarda la referencia de la transacción.",
+        "Sigue My Withdrawals y el correo de canje que corresponda."
       ],
       "pros": [
-        "Opciones variadas de cobro: PayPal, tarjetas regalo sin comisión, criptomonedas y transferencia bancaria.",
-        "Mínimos de retiro mucho más bajos después del primer cobro verificado."
+        "La ayuda explica la verificación y cómo reclamar el pago.",
+        "Puedes revisar la comisión final antes de enviar la solicitud."
       ],
       "cons": [
-        "PayPal cobra un 5% de comisión por retiro.",
-        "El primer cobro exige llegar a $25 y pasar verificación de identidad."
+        "Los retiros pequeños de PayPal pueden añadir una comisión fija al 5%.",
+        "Mínimos, disponibilidad y procesamiento dependen de región y método."
       ],
       "faq": [
         {
-          "q": "¿Cuál es el código de invitación de Freecash en apps308?",
-          "a": "El identificador verificado es 3C7GKG, disponible directamente en el botón de acceso de esta guía."
+          "q": "¿El mínimo inicial siempre es US$25?",
+          "a": "La ayuda indica US$25 pero admite diferencias regionales. Consulta Cashout en tu cuenta."
         },
         {
-          "q": "¿Qué método de retiro en Freecash no cobra comisión?",
-          "a": "Las tarjetas de regalo (Amazon, Google Play, Steam) y varias criptomonedas suelen procesarse sin comisión de plataforma, frente al 5% de PayPal."
+          "q": "¿PayPal cobra solo el 5%?",
+          "a": "La guía actual añade US$1 en las opciones de US$5, US$10 y US$20. Confirma la tarifa que se te aplique."
         },
         {
-          "q": "¿Cuánto tarda en pagar Freecash?",
-          "a": "La revisión de seguridad suele tardar hasta 30 minutos en PayPal, cripto y tarjetas regalo; las transferencias bancarias tardan 3–5 días hábiles."
+          "q": "¿Un correo de confirmación ya es el pago?",
+          "a": "No siempre. Algunos correos confirman la solicitud; el de canje de Tremendous puede requerir otra acción. Comprueba el estado y las instrucciones de tu cuenta."
         }
       ],
-      "verdict": "Regístrate con el código 3C7GKG, supera una vez el primer retiro verificado de $25 y luego usa tarjetas regalo o cripto para cobrar montos menores sin el 5% de PayPal.",
-      "imageAlt": "Opciones de retiro y recompensas en Freecash",
-      "caption": "Freecash ofrece retiros por PayPal, tarjetas regalo, criptomonedas y transferencia tras verificar la cuenta."
+      "verdict": "Revisa el mínimo regional y el importe neto antes de solicitar el pago. No elijas una recompensa menos útil solo por evitar una comisión ni asumas que la invitación garantiza un bono.",
+      "imageAlt": "Panel del enlace de referido de Freecash con identificador 3C7GKG",
+      "caption": "Esta captura guardada muestra un enlace de referido, no un comprobante de retiro.",
+      "modifiedDate": "2026-11-15"
     },
     {
       "id": "freecash-games-offers",
       "app": "freecash",
       "category": "rewards",
       "slug": "freecash-juegos-y-ofertas-como-ganar-mas",
-      "title": "Mejores Juegos y Ofertas en Freecash (2026): Metas, Seguimiento y Consejos",
-      "description": "Cómo elegir ofertas de juegos rentables en Freecash, evitar fallos de seguimiento en Android e iOS y no gastar más de lo que paga la meta.",
-      "intro": "Los juegos móviles concentran las recompensas más altas de Freecash, con pagos anunciados que van desde unos dólares hasta cientos. Sin embargo, el total se divide por niveles con fecha límite y un error de seguimiento deja la oferta sin acreditar.",
+      "title": "Juegos y Ofertas de Freecash (2026): Cómo Elegir y Seguir las Metas",
+      "description": "Compara juegos de Freecash por metas alcanzables, plazos y gastos. Comprueba el seguimiento y documenta créditos faltantes sin perseguir el total anunciado.",
+      "intro": "La recompensa anunciada más alta no identifica el mejor juego para ti. El catálogo cambia y el total puede juntar metas difíciles o de pago. Esta guía enseña a evaluar tus ofertas; no es un ranking de juegos que hayamos probado.",
       "sections": [
         {
-          "heading": "Cómo funcionan las metas por nivel en los juegos",
+          "heading": "Compara metas alcanzables y no el máximo",
           "paragraphs": [
-            "Cada juego divide el pago en pasos progresivos: instalar, alcanzar el nivel 15 en 7 días o llegar al nivel 50 en 30 días. Las metas iniciales pagan poco pero sirven para confirmar el rastreo, mientras que los premios más altos exigen muchas horas o compras opcionales.",
-            "Antes de descargar, calcula si los niveles gratuitos valen el tiempo invertido. Es más rentable completar metas intermedias alcanzables y pasar a otro juego que atascarse en el último nivel."
+            "Anota cada meta por separado: acción, plazo, recompensa, condición de usuario nuevo y compra exigida. Comprueba si el plazo empieza al abrir la oferta, instalar el juego o completar otra etapa; sigue el texto de esa oferta.",
+            "Separa lo que esperas conseguir sin gastar de lo que exige una compra o progreso final incierto. Si las etapas gratuitas no te interesan, un total alto no es una buena razón para instalar."
           ]
         },
         {
-          "heading": "Cómo evitar errores de seguimiento en Android e iOS",
+          "heading": "Un ejemplo sencillo para comparar dos ofertas",
           "paragraphs": [
-            "El seguimiento solo funciona si instalas el juego por primera vez en ese dispositivo y cuenta de tienda. Desactiva bloqueadores de anuncios, DNS privado y VPN antes de pulsar la oferta en Freecash, y abre el juego apenas termine la descarga.",
-            "Antes de instalar un título nuevo, conviene revisar nuestra comparativa Swagbucks vs. Freecash para ver qué plataforma paga mejor ese mismo juego."
+            "Ejemplo hipotético: la oferta A anuncia US$100, pero solo US$2 de sus metas caben en tu tiempo disponible. La oferta B anuncia US$8, con US$4 de metas que esperas intentar en ese mismo tiempo. Compara los US$2 y US$4 alcanzables, no los US$100 y US$8 del anuncio. Son cifras inventadas para explicar la cuenta, no ofertas vigentes.",
+            "Resta las compras necesarias e incluye la incertidumbre. Un objetivo que depende de gastar es un coste que podrías perder si no se valida. Fija tus límites antes de jugar, en lugar de aumentarlos para recuperar el tiempo ya invertido."
+          ]
+        },
+        {
+          "heading": "Comprueba el seguimiento antes de dedicar más tiempo",
+          "paragraphs": [
+            "La lista oficial pide usar la instalación desde la oferta, mantener el mismo dispositivo, evitar juegos instalados anteriormente y revisar los permisos de seguimiento. VPN, bloqueadores y DNS personalizado pueden interrumpir el registro.",
+            "Lee los permisos antes de aceptarlos. Si no quieres habilitar el seguimiento, omite la oferta. No retires protecciones sin comprender el cambio ni supongas que cambiar una opción después reconstruirá eventos perdidos."
           ],
           "source": {
-            "title": "Freecash: cómo asegurar el seguimiento de ofertas",
-            "url": "https://freecash.com/academy/en/support/offer/tracking/how-to-ensure-offer-tracks"
+            "title": "Freecash: comprobaciones de seguimiento",
+            "url": "https://freecash.com/academy/en/support/offer/tracking/avoid-these-mistakes-while-tracking"
+          }
+        },
+        {
+          "heading": "Qué guardar cuando falta una instalación o meta",
+          "paragraphs": [
+            "Guarda condiciones originales, nombre de oferta, hora de inicio, plazo, identificador de jugador y capturas de la meta completada. Consulta My Offers y el solucionador antes de gastar más o reinstalar.",
+            "Para una primera instalación que no aparece, la guía pide esperar 48 horas antes de abrir un caso manual con pruebas. Respeta el plazo o proceso de tu tarea concreta. Una investigación no garantiza el crédito."
+          ],
+          "source": {
+            "title": "Freecash: problemas de la primera instalación",
+            "url": "https://freecash.com/academy/en/support/offer/tracking/troubleshoot-first-install-tracking"
           }
         }
       ],
       "steps": [
-        "Desactiva VPN, bloqueadores de anuncios y DNS privado antes de abrir Freecash.",
-        "Elige un juego que nunca hayas descargado en tu teléfono ni en tu cuenta de Google Play o App Store.",
-        "Pulsa la oferta dentro de Freecash, instala desde la tienda oficial y juega 5–10 minutos al instante.",
-        "Comprueba que la instalación o primera meta se acredite antes de dedicar días a niveles altos."
+        "Anota acción, plazo y recompensa de cada meta.",
+        "Compara solo las etapas que intentarías dentro de tus límites.",
+        "Revisa elegibilidad de usuario nuevo y permisos antes de instalar.",
+        "Empieza desde la oferta y comprueba una primera acción.",
+        "Guarda pruebas y utiliza el soporte indicado si falta el crédito."
       ],
       "pros": [
-        "Pagos escalonados por nivel sin tener que completar todo el juego para cobrar algo.",
-        "Condiciones, plazos y recompensas visibles antes de descargar."
+        "Comparar metas individuales aclara el compromiso real.",
+        "Guardar pruebas desde el principio facilita explicar un crédito faltante."
       ],
       "cons": [
-        "Los juegos instalados previamente no se acreditan.",
-        "Las metas finales suelen requerir demasiado tiempo o compras dentro de la app."
+        "El catálogo cambia y una oferta ajena puede no estar disponible.",
+        "Metas finales, compras y seguimiento fallido pueden volver inviable el total anunciado."
       ],
       "faq": [
         {
-          "q": "¿Por qué no se acreditó mi juego en Freecash?",
-          "a": "Las causas habituales son haber instalado el juego antes, tener una VPN o bloqueador activo, o denegar el permiso de seguimiento en iOS."
+          "q": "¿Qué juego de Freecash paga más?",
+          "a": "El total anunciado no permite dar una respuesta universal. Compara metas elegibles, plazo, gastos y tiempo de tus ofertas."
         },
         {
-          "q": "¿Conviene comprar paquetes dentro del juego?",
-          "a": "Solo si existe una meta específica que reembolse claramente más dinero del que cuesta la compra; de lo contrario, quédate en metas gratuitas."
+          "q": "¿Conviene comprar dentro del juego para obtener una recompensa?",
+          "a": "Solo considera una compra si entiendes sus condiciones y aceptas que podría no haber recompensa. Una meta anunciada no garantiza un reembolso."
         },
         {
-          "q": "¿Cuánto plazo dan las ofertas de juegos?",
-          "a": "La mayoría fija un límite de entre 14 y 30 días desde el momento de la instalación."
+          "q": "¿Reinstalar me convierte en usuario nuevo?",
+          "a": "No. La guía advierte que un juego instalado anteriormente no cumple la condición de nueva instalación. Reinstalar no borra ese historial."
         }
       ],
-      "verdict": "Prioriza juegos nuevos en tu cuenta con metas intermedias realistas, confirma el primer registro de seguimiento y evita niveles que exijan gastar dinero.",
-      "imageAlt": "Ofertas de juegos móviles y metas en Freecash",
-      "caption": "Las ofertas de juegos en Freecash dividen las recompensas por niveles con plazos específicos."
+      "verdict": "Elige por metas alcanzables y tus propios límites. Comprueba pronto el primer registro y conserva las condiciones antes de dedicar más tiempo o dinero.",
+      "imageAlt": "Panel del enlace de referido de Freecash con identificador 3C7GKG",
+      "caption": "Esta captura guardada muestra un enlace de referido, no un comprobante de retiro.",
+      "modifiedDate": "2026-11-15"
     }  ],
   "pt": [
     {
@@ -5796,78 +6270,77 @@ export const articles:Record<Locale,Article[]>={
       "app": "freecash",
       "category": "rewards",
       "slug": "freecash-ofertas-convites",
-      "title": "Freecash Paga Mesmo em 2026? Como Funciona, Convites e Prazos de Saque",
-      "description": "O Freecash paga mesmo em 2026? Veja como funcionam as ofertas de jogos, programa de convites, regras de conta e prazos de saque via PayPal e Pix.",
-      "intro": "O Freecash reúne jogos, pesquisas e outras ofertas que podem gerar recompensas. Cada atividade tem objetivos e prazos próprios, e as opções disponíveis mudam conforme o aparelho, a região e a conta. Antes de começar, vale entender como a oferta é validada e como funciona o saque.",
+      "title": "Como Funciona o Freecash (2026): Primeiros Passos, Ofertas e Convites",
+      "description": "Começando no Freecash? Entenda o caminho da oferta até a recompensa, para que serve um convite e o que conferir antes da primeira atividade.",
+      "intro": "O Freecash reúne jogos, pesquisas e ofertas de parceiros com recompensas. Este guia inicial explica o caminho do cadastro e do convite até uma atividade elegível. Regras de pagamento, taxas e problemas de rastreamento têm guias próprios nesta série.",
       "sections": [
         {
-          "heading": "Como funcionam as ofertas",
+          "heading": "Separe oferta, recompensa e saque",
           "paragraphs": [
-            "Confira o objetivo, o prazo e as ações exigidas antes de iniciar. Em jogos, por exemplo, a recompensa pode depender de alcançar uma fase específica. Guarde as instruções da oferta para acompanhar o progresso.",
-            "Considere também o tempo e qualquer compra necessária. Priorize atividades que combinam com seu interesse e compare o valor da recompensa com o esforço exigido. Se a lista estiver vazia, confira depois: a disponibilidade pode mudar."
+            "Uma oferta é uma atividade com requisitos; a recompensa creditada resulta de uma atividade aceita; o saque é um pedido posterior para resgatar o saldo disponível. Instalar um jogo, ver um total promocional ou inserir um código não conclui essas três etapas.",
+            "Comece conferindo se as atividades da sua conta e do seu aparelho interessam a você. Não planeje seus ganhos pelo catálogo de outra pessoa nem presuma que todas as pesquisas e formas de pagamento existem no seu país."
           ]
         },
         {
-          "heading": "Como acessar pelo convite",
+          "heading": "Para que serve o convite 3C7GKG",
           "paragraphs": [
-            "Use o botão abaixo para abrir o Freecash pelo convite. Você também pode copiar o código 3C7GKG para guardar o identificador do link. As condições de uma promoção aparecem no próprio Freecash.",
-            "Convites e promoções podem depender de país, conta e atividades elegíveis. Confira os requisitos exibidos antes de contar com um bônus no saldo."
-          ]
+            "O botão do Freecash no apps308 utiliza nosso identificador de indicação 3C7GKG. Podemos receber uma recompensa se você cumprir as condições do programa. É uma relação de afiliado, não um cupom que garante um valor fixo em dinheiro.",
+            "A ajuda descreve o cadastro pelo link ou a inserção do código antes de abrir a caixa de boas-vindas. A elegibilidade depende do país da pessoa indicada e do programa vigente. Leia a promoção que aparece para você; não crie outra conta para testar um convite diferente."
+          ],
+          "source": {
+            "title": "Freecash: como funciona o sistema de indicação",
+            "url": "https://freecash.com/academy/en/support/account/rewards/how-affiliate-system-works"
+          }
         },
         {
-          "heading": "Primeiro saque: mínimo e verificação",
+          "heading": "Um plano para a primeira sessão",
           "paragraphs": [
-            "A ajuda do Freecash informa mínimo inicial de US$ 25, variável por região, e verificação de e-mail e identidade. O valor aplicável aparece em Cashout. Confira a taxa antes de confirmar."
+            "Antes de começar, guarde nome da oferta, requisitos, prazo, metas e compras exigidas. Decida quanto tempo pretende dedicar. Se a primeira ação não aparecer, investigue antes de continuar.",
+            "Consulte Cashout para saber qual valor e verificação seriam exigidos da sua conta. Essa é uma conferência prévia, não um pedido de saque. Se as recompensas ou os dados pessoais exigidos não servirem para você, pare antes de acumular um saldo que não vai querer resgatar."
           ],
           "source": {
             "title": "Freecash: requisitos do primeiro saque",
             "url": "https://freecash.com/academy/en/support/withdrawal/issues/first-cashout-requirements"
-          }
-        },
-        {
-          "heading": "Quanto tempo leva para receber?",
-          "paragraphs": [
-            "Segundo o Freecash, verificações de segurança podem levar até 30 minutos; transferências bancárias, Stash e Revolut podem levar de 3 a 5 dias úteis. O prazo depende do método e da análise do pedido.",
-            "Acompanhe o status em My Withdrawals. A liberação da recompensa de uma oferta é uma etapa anterior ao saque: confira primeiro se o valor está disponível para retirada."
-          ],
-          "source": {
-            "title": "Freecash: prazos e saques pendentes",
-            "url": "https://freecash.com/academy/en/support/withdrawal/issues/why-withdrawal-pending"
+          },
+          "cta": {
+            "label": "Veja como avaliar jogos e ofertas do Freecash",
+            "url": "/pt/freecash-jogos-e-ofertas-como-ganhar-mais/"
           }
         }
       ],
       "steps": [
-        "Abra o site oficial ou sua página verificada na loja de aplicativos.",
-        "Leia a elegibilidade da conta e as condições do seu país antes de aderir.",
-        "Escolha uma oferta e registre as ações, o prazo e os gastos exigidos.",
-        "Confira as informações de saque e verificação na sua própria conta.",
-        "Se usar um convite, verifique se o programa se aplica à sua região."
+        "Confira a elegibilidade do seu país e as ofertas da sua conta.",
+        "Se usar nosso convite, leia suas condições antes de abrir a caixa de boas-vindas.",
+        "Guarde os requisitos de uma oferta e defina seu limite de tempo.",
+        "Confira se a primeira ação foi registrada.",
+        "Consulte o guia específico de saque ou rastreamento para o próximo passo."
       ],
       "pros": [
-        "É possível revisar uma oferta antes de decidir participar.",
-        "A ajuda oficial explica os requisitos de indicação."
+        "As condições permitem avaliar a atividade antes de dedicar tempo.",
+        "A documentação da indicação esclarece a função do convite."
       ],
       "cons": [
-        "A recompensa depende de ações e elegibilidade.",
-        "Tempo, gastos e verificação afetam o valor da oferta."
+        "Catálogo e promoções variam conforme país e conta.",
+        "Iniciar uma oferta não equivale a ter uma recompensa disponível."
       ],
       "faq": [
         {
-          "q": "Qual é o código do convite?",
-          "a": "O identificador do link de convite é 3C7GKG. Você pode copiá-lo ou acessar diretamente pelo botão do Freecash nesta página."
+          "q": "O código 3C7GKG garante dinheiro de bônus?",
+          "a": "Não. Ele identifica nosso convite. Qualquer promoção depende das condições que o Freecash mostrar para a nova pessoa usuária."
         },
         {
-          "q": "O convite libera um bônus na hora?",
-          "a": "As promoções têm requisitos próprios. Confira as atividades elegíveis e as condições exibidas na sua conta."
+          "q": "Devo começar várias ofertas ao mesmo tempo?",
+          "a": "Comece com uma oferta clara para guardar as regras, verificar o registro e entender o esforço envolvido."
         },
         {
-          "q": "Onde acompanho meu saque?",
-          "a": "Na área Cashout, abra My Withdrawals para conferir o status do pedido. Se houver rejeição ou atraso fora do prazo informado, procure o suporte."
+          "q": "Onde encontro detalhes de saque e rastreamento?",
+          "a": "A série abaixo reúne guias separados de avaliações e regras, saque e taxas, e escolha e rastreamento de jogos."
         }
       ],
-      "verdict": "Leia cada oferta com atenção. Comece apenas quando entender as condições, o tempo necessário e a verificação.",
-      "imageAlt": "Freecash",
-      "caption": "A área de convites permite copiar o link para acessar ou compartilhar o Freecash."
+      "verdict": "Use esta página como ponto de partida: entenda a oferta, confira o convite e defina um limite antes de dedicar tempo. Passe ao guia específico quando precisar resolver um saque ou o rastreamento.",
+      "imageAlt": "Painel do link de indicação do Freecash com identificador 3C7GKG",
+      "caption": "Esta captura guardada mostra um link de indicação, não um comprovante de saque.",
+      "modifiedDate": "2026-11-15"
     },
     {
       "id": "dramastack",
@@ -6122,85 +6595,127 @@ export const articles:Record<Locale,Article[]>={
       "app": "swagbucks",
       "category": "rewards",
       "slug": "pesquisas-remuneradas-e-cashback-swagbucks",
-      "title": "Pesquisas remuneradas e cashback no Swagbucks: como acumular pontos SB no dia a dia",
-      "description": "Guia prático sobre as pesquisas do Swagbucks e o cashback do Shop and Earn em lojas como Walmart e eBay, explicando por que ocorrem desqualificações de perfil.",
-      "intro": "Nem todo mundo quer passar 30 dias subindo de nível em jogos de celular. Para quem prefere tarefas rápidas no navegador ou quer receber parte do dinheiro de volta em compras online que já faria, o Swagbucks oferece dois canais diretos: Answer Surveys e o portal de cashback Shop and Earn.",
+      "title": "Pesquisas e cashback no Swagbucks: desclassificação, rastreamento e SB pendentes",
+      "description": "Veja como comparar SB por minuto, distinguir pesquisas desclassificadas de créditos ausentes e conferir o rastreamento e os pontos pendentes das compras.",
+      "intro": "As pesquisas do Swagbucks trocam tempo por uma possível recompensa; o Shop & Earn devolve parte de uma compra elegível. Cada modalidade exige uma conferência: perfil e tempo gasto nas pesquisas, regras e rastreamento nas compras. Este guia usa a captura do painel fornecida e a ajuda oficial do Swagbucks. Não apresenta uma compra concluída nem um teste de rendimentos.",
       "sections": [
         {
-          "heading": "Como funcionam as pesquisas no Answer Surveys e por que há desqualificações",
+          "heading": "Desclassificação, crédito ausente e pesquisas desativadas são situações diferentes",
           "paragraphs": [
-            "No painel do Swagbucks que capturamos, a faixa Answer Surveys and Earn listava cada questionário com seu tempo estimado e recompensa: 5 SB por 5 minutos (Survey #201976545), 10 SB por 5 minutos e 25 SB por 20 minutos, além do cartão inicial 'Get Started! Earn 5 SB in about 5 minutes'.",
-            "Toda pesquisa de mercado busca um perfil específico de consumidor. As primeiras perguntas funcionam como uma triagem demográfica; se suas respostas não combinarem com a cota procurada pela empresa, a pesquisa é encerrada antes do fim. Responda sempre com atenção e consistência, pois marcar opções aleatórias ou contraditórias pode suspender seu acesso ao canal de pesquisas."
+            "Uma pesquisa que informa que você não se qualifica terminou sem conclusão. O Swagbucks explica que o estudo pode procurar outro perfil ou já ter preenchido sua cota. Uma desclassificação isolada é diferente de ter o acesso às pesquisas desativado na conta.",
+            "Leia a mensagem final antes de concluir que falta uma recompensa. Alterar dados demográficos para passar pelo filtro não resolve: mantenha o perfil verdadeiro e responda ao que foi perguntado. Se a tela confirmar a conclusão, siga a conferência de crédito mais abaixo."
           ],
           "source": {
-            "title": "Swagbucks: visão geral de pesquisas remuneradas",
-            "url": "https://www.swagbucks.com/g/paid-surveys"
+            "title": "Swagbucks: motivos de desclassificação",
+            "url": "https://help.swagbucks.com/hc/en-us/articles/205642084-Why-did-the-survey-disqualify-me-before-I-finished"
           }
         },
         {
-          "heading": "Shop and Earn: transformando compras online planejadas em pontos SB",
+          "heading": "Compare o tempo no painel, sem transformar estimativas em renda diária",
           "paragraphs": [
-            "A seção Shop and Earn funciona como um portal de cashback em que lojas parceiras pagam comissão ao Swagbucks e você recebe uma porcentagem da compra de volta em pontos SB por dólar gasto. Na tela que capturamos, apareciam taxas como Walmart (até 8% de cashback, ou 8 SB por US$ 1), eBay (até 5%), Best Buy (até 6%), Kohl's (4%), Expedia (até 12%), Hotels.com (até 12%) e QVC, HSN e The Home Depot (até 15%, ou 15 SB por US$ 1).",
-            "Você pode criar sua conta gratuita pelo link oficial de convite abaixo para verificar quais lojas e pesquisas estão disponíveis na sua região. Para garantir que o cashback seja rastreado corretamente, acesse a loja a partir do Swagbucks com o carrinho vazio e não ative extensões concorrentes de cuponagem na hora de fechar o pedido."
+            "A captura que ilustra o artigo mostra exemplos de 5 SB por 5 minutos, 10 SB por 5 minutos e 25 SB por 20 minutos. São dados daquela tela, não ofertas verificadas como disponíveis hoje ou em todos os países. A estimativa também não garante que você se qualifique ou termine naquele tempo.",
+            "Nesses exemplos, dividir SB pelos minutos resulta em 1, 2 e 1,25 SB por minuto. O prêmio maior não tem a melhor proporção. Defina um limite de tempo e inclua as tentativas sem sucesso ao avaliar se vale a pena; não transforme o melhor cartão em uma suposta remuneração por hora."
           ],
+          "source": {
+            "title": "Swagbucks: perfil e oportunidades de pesquisas",
+            "url": "https://help.swagbucks.com/hc/en-us/articles/205642024-How-can-I-earn-more-SB-by-taking-surveys"
+          }
+        },
+        {
+          "heading": "O cashback considera a compra elegível, não todos os valores cobrados",
+          "paragraphs": [
+            "Abra a loja pelo Shop & Earn e leia as Special Terms antes de pagar. Segundo o Swagbucks, o valor elegível pode excluir impostos, frete e outras cobranças; devoluções ou cancelamentos podem reverter os pontos. As exclusões da loja importam mais que a taxa máxima exibida no diretório.",
+            "Exemplo ilustrativo: se uma loja oferece 5 SB por dólar americano elegível e apenas US$40 de uma compra de US$48 atendem às regras, o cálculo é 200 SB, não 240 SB. Isso não é uma oferta vigente. Compare o preço final com outras lojas antes de considerar o cashback uma economia."
+          ],
+          "source": {
+            "title": "Swagbucks: regras do Shop & Earn",
+            "url": "https://help.swagbucks.com/hc/en-us/articles/205641124-How-does-Shop-Earn-work"
+          },
           "cta": {
-            "label": "Cadastre-se grátis no Swagbucks para acessar pesquisas e cashback",
+            "label": "Consultar pesquisas e ofertas de compras no Swagbucks",
             "url": "https://www.swagbucks.com/p/register?rb=NPHSOu1zhQuqNHgx&rp=1",
             "sponsored": true
           }
         },
         {
-          "heading": "Regras práticas para proteger seu tempo e seu orçamento",
+          "heading": "Confira o rastreamento da visita antes de gastar",
           "paragraphs": [
-            "Nas pesquisas, observe a proporção entre pontos SB e minutos. Uma pesquisa de 5 minutos que paga 10 SB rende mais por minuto do que uma de 20 minutos que paga 25 SB, além de reduzir a perda de tempo caso o filtro inicial não aprove seu perfil.",
-            "No Shop and Earn, use o cashback exclusivamente como desconto em compras que você já havia planejado. Comprar um item apenas para ganhar 15% em pontos SB significa gastar os outros 85% do próprio bolso; compare sempre o preço final da loja antes de concluir a compra."
+            "O guia oficial recomenda começar no Swagbucks, continuar no mesmo aparelho e evitar extensões de compras concorrentes. Essas extensões ou configurações restritivas de privacidade podem impedir a atribuição do clique. Um cupom externo não é automaticamente compatível: consulte as regras da loja.",
+            "Depois de abrir o link, confira a visita em Activity e guarde as condições e a confirmação do pedido. Se você não quiser permitir o rastreamento necessário, compare os preços sem contar com os SB. Captura e recibo servem como evidência para análise, mas não garantem recuperar uma atribuição perdida."
           ],
           "source": {
-            "title": "Swagbucks: diretório de lojas Shop and Earn",
-            "url": "https://www.swagbucks.com/shop"
+            "title": "Swagbucks: rastreamento de ofertas",
+            "url": "https://help.swagbucks.com/hc/en-us/articles/36978174310548-How-does-offer-tracking-work"
+          }
+        },
+        {
+          "heading": "Visited, Pending e Posted: como interpretar o histórico Activity",
+          "paragraphs": [
+            "Visited registra um clique; isso não comprova que a compra cumpriu as condições. Pending mostra uma recompensa rastreada aguardando crédito, com detalhes e data estimada. Posted corresponde à atividade já creditada. Uma visita reconhecida não equivale a pontos disponíveis.",
+            "Use os filtros de data e atividade para localizar a transação correta. Se houver uma data de liberação pendente, espere esse prazo antes de considerar o crédito atrasado. Se a atividade não aparecer ou estiver vencida, use a ajuda vinculada a ela e explique a diferença, em vez de abrir pedidos sem relação com a transação."
+          ],
+          "source": {
+            "title": "Swagbucks: histórico Activity",
+            "url": "https://help.swagbucks.com/hc/en-us/articles/360050460651-How-do-I-check-my-SB-in-the-Activity-ledger"
+          }
+        },
+        {
+          "heading": "O que fazer quando você concluiu a pesquisa ou compra e não recebeu SB",
+          "paragraphs": [
+            "Na pesquisa, guarde o Survey ID e a mensagem de conclusão, confira Answer em Activity e respeite o prazo de crédito diferido informado antes do início. Se esse prazo passou e o crédito continua ausente, use Get Help naquela pesquisa. Uma mensagem de desclassificação não comprova conclusão.",
+            "Nas compras, diferencie a espera para o pedido aparecer da espera posterior para os SB pendentes serem creditados. Consulte a ajuda atual e as Special Terms da loja para o prazo aplicável: não existe uma promessa única para todos os lojistas, reservas e pedidos. Guarde o recibo e não compre mais para investigar uma compra sem rastreamento."
+          ],
+          "source": {
+            "title": "Swagbucks: pesquisa concluída sem crédito",
+            "url": "https://help.swagbucks.com/hc/en-us/articles/205642184-I-completed-a-survey-but-did-not-receive-SB-What-can-I-do"
           }
         }
       ],
       "steps": [
-        "Crie sua conta gratuita no Swagbucks e preencha o perfil inicial de 5 minutos em Answer Surveys.",
-        "Dê preferência às pesquisas curtas de 5 a 10 minutos com boa relação entre pontos SB e tempo.",
-        "Antes de comprar em lojas parceiras como eBay, Walmart ou Expedia, busque a loja dentro do Shop and Earn.",
-        "Confira as regras de categorias elegíveis e desative extensões externas de cupons antes de abrir o link da loja.",
-        "Verifique no seu Activity Ledger se a visita à loja ou a pesquisa concluída foi registrada corretamente."
+        "Confira quais pesquisas e lojas do Shop & Earn estão disponíveis para sua conta e seu país.",
+        "Nas pesquisas, compare SB e minutos estimados, responda com dados reais e anote o ID ao concluir.",
+        "Nas compras, compare primeiro o preço final e guarde a taxa, as exclusões e o prazo da loja.",
+        "Inicie a compra elegível pelo Swagbucks no mesmo aparelho e confira a visita em Activity.",
+        "Diferencie Pending de Posted e solicite ajuda na atividade correspondente quando o prazo informado terminar."
       ],
       "pros": [
-        "As pesquisas não exigem nenhum gasto e informam a duração estimada antes do clique.",
-        "O portal Shop and Earn devolve de 1% a 15% (1 a 15 SB por dólar) em grandes varejistas internacionais."
+        "É possível avaliar as pesquisas sem fazer uma compra.",
+        "O histórico Activity separa visitas, recompensas pendentes e SB creditados."
       ],
       "cons": [
-        "A triagem de perfil frequentemente encerra pesquisas quando a cota demográfica já foi preenchida.",
-        "Pontos de cashback costumam ficar pendentes até o fim do prazo de devolução da loja."
+        "A estimativa de uma pesquisa não garante qualificação, conclusão nem recompensa.",
+        "Cashback exige gasto e atribuição correta; taxas e prazos variam."
       ],
       "faq": [
         {
-          "q": "Por que sou desqualificado de algumas pesquisas no Swagbucks?",
-          "a": "Os institutos de pesquisa fecham o questionário quando a cota para sua faixa etária, região ou hábito de consumo já atingiu o limite ou quando buscam um público específico."
+          "q": "Por que sou desclassificado das pesquisas do Swagbucks?",
+          "a": "O estudo pode procurar outro perfil ou já ter preenchido sua cota. Leia a mensagem final: a desclassificação é diferente de concluir a pesquisa e não receber o crédito anunciado."
         },
         {
-          "q": "O que significa ganhar até 15 SB por US$ 1 no Shop and Earn?",
-          "a": "Cada 1% de cashback equivale a 1 ponto SB para cada dólar gasto (antes de impostos e frete) nos produtos elegíveis daquela loja parceira."
+          "q": "Posso resgatar os SB que aparecem em Pending?",
+          "a": "Não. Pending registra uma recompensa ainda aguardando crédito. Confira sua data e verifique se já foi creditada antes de contar com ela para um resgate."
         },
         {
-          "q": "Posso usar outra extensão de cashback junto com o Swagbucks?",
-          "a": "Não. Ativar outra extensão de navegador no checkout costuma sobrescrever o cookie de afiliado do Swagbucks e cancelar seus pontos SB."
+          "q": "Posso combinar cupom e cashback do Swagbucks?",
+          "a": "Só conte com a combinação quando as Special Terms da loja permitirem. Extensões de compras e cupons externos podem afetar a atribuição ou a elegibilidade."
+        },
+        {
+          "q": "As taxas da captura continuam disponíveis?",
+          "a": "São exemplos da captura fornecida, não ofertas atuais verificadas na sua conta. Confira seu painel e as regras da loja antes de começar."
         }
       ],
-      "verdict": "Use o Answer Surveys para somar pontos rápidos sem gastar nada nos intervalos do dia e ative o Shop and Earn apenas quando for realizar compras que já estavam no seu orçamento.",
+      "verdict": "Escolha pesquisas pelo tempo que você pode perder nos filtros e use cashback apenas em uma compra planejada com preço final competitivo. Diferencie clique, recompensa pendente e SB creditados antes de concluir que um pagamento está ausente.",
       "imageAlt": "Lojas com cashback no Shop and Earn e lista de pesquisas do Swagbucks",
-      "caption": "O Shop and Earn mostra a porcentagem de cashback e os pontos SB por dólar logo acima da fila de pesquisas.",
+      "caption": "Captura fornecida do painel: taxas e durações são exemplos daquela tela, não ofertas atuais para todas as contas.",
       "imageKey": "swagbucks-shop",
       "imageWide": true,
       "secondImage": {
         "key": "swagbucks-goals",
         "alt": "Painel de regras da oferta e condições de indicação no Swagbucks",
-        "caption": "O painel de cada oferta explica o rastreamento obrigatório, os dias pendentes e as regras de indicação.",
+        "caption": "O painel de ofertas ilustra onde aparecem as condições; confira as regras atuais na sua conta para validar prazos e requisitos.",
         "wide": true
-      }
+      },
+      "modifiedDate": "2026-11-15"
     },
     {
       "id": "swagbucks-cashout",
@@ -6379,25 +6894,26 @@ export const articles:Record<Locale,Article[]>={
       "category": "rewards",
       "slug": "pawns-app-como-funciona-guia-completo",
       "title": "Pawns.app Paga Mesmo em 2026? Como Funciona, Jogos, Saque e Bônus de $3",
-      "description": "Veja como funciona o Pawns.app em 2026 para ganhar dinheiro em dólar compartilhando internet, respondendo pesquisas e ativando $3 de bônus (código 6823713).",
-      "intro": "O Pawns.app é um aplicativo global de recompensas que permite transformar a internet que você não usa em renda passiva, além de trazer pesquisas remuneradas e metas em jogos de celular. Se você busca uma alternativa confiável para Android, iPhone ou computador com saque a partir de $5 dólares, o Pawns.app se destaca pela facilidade e pagamento em dólar real.",
+      "description": "Análise do Pawns.app: internet compartilhada opcional, pesquisas, jogos, condições de saque e promoção de indicação com o código 6823713.",
+      "intro": "O Pawns.app combina compartilhamento opcional de internet com pesquisas e ofertas de jogos. Disponibilidade, elegibilidade e recompensas reais variam. As capturas fornecidas ilustram a interface; esta análise não estabelece uma taxa de ganhos medida nem um saque independente concluído.",
       "sections": [
         {
-          "heading": "Como funciona o compartilhamento passivo de internet",
+          "heading": "O que avaliar antes de compartilhar a conexão",
           "paragraphs": [
-            "O principal diferencial do Pawns.app é a monetização de banda ociosa. Empresas parceiras utilizam essa rede residencial para checar resultados de buscas, estudos de mercado e testes de desempenho global. Seus dados pessoais, fotos, conversas e histórico de navegação nunca são acessados, pois o tráfego comercial roda de forma isolada e criptografada.",
-            "Os ganhos passivos variam conforme seu tempo online, velocidade da rede Wi-Fi e demanda na sua região. Deixar o app ativo em segundo plano gera centavos de dólar constantes sem atrapalhar streaming, redes sociais ou jogos no celular."
+            "O compartilhamento de internet permite que terceiros usem sua conexão por meio do serviço. Leia privacidade, permissões e condições de uso da rede antes de decidir se quer ativar.",
+            "Não auditamos o programa nem medimos seu efeito nesta rede. Não presuma ganhos constantes, segurança sem limitações ou ausência de impacto no uso de dados e desempenho. É possível avaliar as tarefas ativas separadamente."
           ],
           "cta": {
-            "label": "Baixar Pawns.app e ativar bônus de $3 com código 6823713",
-            "url": "https://discoverpawns.eu/6823713"
+            "label": "Conhecer o Pawns.app com o código de indicação 6823713",
+            "url": "https://discoverpawns.eu/6823713",
+            "sponsored": true
           }
         },
         {
           "heading": "Ganhos ativos: pesquisas diárias e jogos de celular",
           "paragraphs": [
-            "Para quem quer acelerar o primeiro saque, o Pawns.app conta com seções de tarefas ativas. A aba Pesquisas traz questionários rápidos pagando entre $0,14 e $0,67 por 3 a 10 minutos de respostas, creditando o saldo em dólares na hora.",
-            "Já na aba Ofertas, você encontra jogos populares para Android e iPhone como Clockmaker (total de $20,66) e Candy Crush Saga ($54,17). Cumprindo os níveis estipulados no prazo, as recompensas caem direto no seu saldo."
+            "A captura de pesquisas mostra exemplos de $0,14 a $0,67 com durações estimadas. São exemplos daquela tela, não uma faixa normal, e nem toda tentativa atende aos requisitos para receber.",
+            "A captura de ofertas inclui Clockmaker ($20,66) e Candy Crush Saga ($54,17) como totais anunciados. São metas condicionadas de uma tela histórica, não valores atuais garantidos por instalar ou jogar."
           ],
           "source": {
             "title": "Pawns.app: Guia oficial de funcionamento",
@@ -6407,23 +6923,26 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "Opções de saque e o bônus de convite de $3",
           "paragraphs": [
-            "O Pawns.app permite retirar fundos a partir de $5,00 USD através do PayPal, criptomoeda Bitcoin e vales-presente virtuais. Ao contrário de sites que exigem valores altos ou pontuações confusas, o resgate pode ser feito assim que o saldo atinge cinco dólares.",
-            "Ao baixar o aplicativo pelo link oficial da comunidade (discoverpawns.eu/6823713) ou inserir o código de convite 6823713, você ativa um bônus especial de $3 ao concluir seu primeiro saque, turbinando seus ganhos iniciais."
-          ]
+            "O Pawns.app publica mínimo de saque de $5. Os métodos dependem do país; confira taxas, verificação e eventuais etapas de resgate antes de confirmar. O solicitado pode diferir do recebido.",
+            "A regra atual divide o bônus anunciado de $3 em $1 após cada um dos três primeiros saques válidos, com prazos regionais mostrados no app. O código 6823713 não dispensa essas condições."
+          ],
+          "source": {
+            "title": "Pawns.app: referral bonus conditions",
+            "url": "https://help.pawns.app/en/articles/8658858-how-does-your-referral-system-work"
+          }
         }
       ],
       "steps": [
         "Baixe o Pawns.app no seu celular ou computador pelo link oficial discoverpawns.eu/6823713.",
         "Crie sua conta gratuita com o Google ou e-mail, confirmando o código 6823713.",
-        "Ative o compartilhamento de internet nas configurações com permissão para rodar em segundo plano.",
+        "Leia as condições da rede e ative o compartilhamento apenas se quiser usar esse recurso opcional.",
         "Responda pesquisas curtas e cumpra metas em jogos nas abas Pesquisas e Ofertas para somar saldo mais rápido.",
-        "Solicite seu saque via PayPal, Bitcoin ou gift card assim que alcançar o valor mínimo de $5 USD."
+        "Confira método, taxas e verificação antes de solicitar um saque."
       ],
       "pros": [
-        "Renda passiva real em segundo plano aproveitando o Wi-Fi de casa.",
-        "Valor mínimo de saque acessível de apenas $5,00 USD via PayPal e Bitcoin.",
-        "Disponível no Brasil e no mundo, compatível com Android, iOS, Windows e Mac.",
-        "Bônus de convite de $3 garantido ao realizar seu primeiro resgate."
+        "Reúne diferentes tipos de tarefas opcionais.",
+        "Mínimo de saque publicado de $5, com métodos conforme o país.",
+        "Promoção de indicação condicionada para novas contas elegíveis."
       ],
       "cons": [
         "O ganho do compartilhamento depende da velocidade de upload e demanda por IP.",
@@ -6432,7 +6951,7 @@ export const articles:Record<Locale,Article[]>={
       "faq": [
         {
           "q": "É seguro deixar o Pawns.app rodando no Wi-Fi de casa?",
-          "a": "Sim. O Pawns.app funciona como um cliente proxy seguro e criptografado. Ele não acessa suas mensagens, senhas, fotos nem dados pessoais."
+          "a": "Não auditamos sua segurança. Leia privacidade, permissões, condições da rede e seu plano de dados antes de permitir tráfego de terceiros pela sua conexão."
         },
         {
           "q": "Qual é o valor mínimo para sacar no Pawns.app?",
@@ -6440,101 +6959,122 @@ export const articles:Record<Locale,Article[]>={
         },
         {
           "q": "Como funciona o código de convite 6823713?",
-          "a": "Cadastrando-se pelo link discoverpawns.eu/6823713 ou digitando o código 6823713, sua conta recebe o bônus de $3 quando você atinge o primeiro saque."
+          "a": "É um código de indicação. As regras atuais preveem $1 após cada um dos três primeiros saques válidos, sujeitos aos prazos regionais da sua conta."
         }
       ],
-      "verdict": "O Pawns.app entrega uma combinação prática de ganho passivo e tarefas ativas em dólar. Seu limite de saque de $5 torna o recebimento rápido e descomplicado.",
+      "verdict": "Avalie tarefas e condições de saque e compare o valor creditado com tempo, custos e acesso à sua conexão. Uma tela promocional não comprova pagamento.",
       "imageAlt": "Tela da comunidade no Pawns.app exibindo bônus de $3 e link de convite",
-      "caption": "Aba Comunidade do Pawns.app com o bônus mútuo de $3 e o link oficial discoverpawns.eu/6823713.",
+      "caption": "Tela da Comunidade fornecida com anúncio de indicação; confira requisitos e etapas de saque vigentes na conta.",
       "imageKey": "pawns-referral",
       "imageWide": true,
       "secondImage": {
         "key": "pawns-surveys",
         "alt": "Painel de pesquisas diárias do Pawns.app com valores em dólar",
-        "caption": "A aba Pesquisas traz questionários diários com valores claros em dólares de $0,14 a $0,67.",
+        "caption": "A captura de pesquisas mostra valores e durações históricos, não uma taxa diária confiável.",
         "wide": true
-      }
+      },
+      "modifiedDate": "2026-11-15"
     },
     {
       "id": "pawns-surveys",
       "app": "pawns",
       "category": "rewards",
       "slug": "pawns-app-pesquisas-remuneradas-ganhos",
-      "title": "Pesquisas remuneradas no Pawns.app: quanto pagam, dicas para aprovar e roleta diária",
-      "description": "Quanto pagam as pesquisas no Pawns.app? Analisamos ganhos reais ($0,14 a $0,67), dicas para evitar desqualificação e a roda de prêmios.",
-      "intro": "Enquanto o compartilhamento de internet roda silenciosamente no fundo, as pesquisas remuneradas do Pawns.app são o caminho mais veloz para alcançar o saque de $5 dólares. Saber escolher os questionários certos e aproveitar a roda de prêmios diária faz toda a diferença nos seus rendimentos.",
+      "title": "Pesquisas no Pawns.app: ganhos, desclassificação e saldo",
+      "description": "Como escolher pesquisas no Pawns.app, entender desclassificações e registrar uma recompensa não creditada, sem promessas de ganhos diários.",
+      "intro": "As pesquisas do Pawns.app são questionários remunerados com filtros de participação. O valor exibido antes de começar é uma oferta condicionada à conclusão válida, não dinheiro já ganho. Este guia ajuda a escolher uma pesquisa, interpretar a recusa e guardar evidências se faltar crédito. A análise usa as capturas fornecidas e a documentação oficial; não fizemos um teste de ganhos por hora.",
       "sections": [
         {
-          "heading": "Valores reais por pesquisa e tempo de resposta",
+          "heading": "O que o valor e o tempo estimado significam",
           "paragraphs": [
-            "No Pawns.app, as pesquisas informam o valor exato em dólares e o tempo estimado antes de começar. Questionários rápidos pagam entre $0,14 e $0,67 por cerca de 3 a 8 minutos de dedicação, sem moedas virtuais confusas.",
-            "Cada pesquisa conta com uma avaliação da comunidade em estrelas (como 3/5 ou 4/5) que sinaliza a facilidade de aprovação. Priorizar pesquisas curtas com boa pontuação ajuda a economizar tempo."
-          ],
-          "cta": {
-            "label": "Comece a responder pesquisas no Pawns.app com o código 6823713",
-            "url": "https://discoverpawns.eu/6823713"
-          }
-        },
-        {
-          "heading": "Como evitar desqualificações no perfil inicial",
-          "paragraphs": [
-            "As empresas contratantes usam perguntas de triagem no primeiro minuto para checar se você pertence ao público-alvo do estudo. Caso a cota da sua faixa demográfica esteja preenchida, o questionário é encerrado.",
-            "Para manter sua conta com boa reputação e receber novas oportunidades, responda sempre com atenção e honestidade. Contradições de dados básicos como idade e profissão podem diminuir a chegada de novas pesquisas."
+            "A captura mostra valores e durações por pesquisa. Esses exemplos pertencem àquela tela e não definem uma faixa normal para todos. Segundo o Pawns.app, a recompensa depende da região e da demanda por pesquisa de mercado.",
+            "Compare o valor anunciado com o tempo previsto, mas registre também os minutos realmente gastos. Se tentar vários questionários e concluir apenas um, inclua as tentativas recusadas ao avaliar o resultado da sessão."
           ],
           "source": {
-            "title": "Pawns.app: Guia de pesquisas remuneradas",
-            "url": "https://pawns.app/surveys/"
+            "title": "Pawns.app: survey rewards by region",
+            "url": "https://help.pawns.app/en/articles/8646171-how-much-do-surveys-pay"
+          },
+          "cta": {
+            "label": "Conhecer o Pawns.app com o código de indicação 6823713",
+            "url": "https://discoverpawns.eu/6823713",
+            "sponsored": true
           }
         },
         {
-          "heading": "Recompensas extras: roda de prêmios e sorteios de $150",
+          "heading": "Por que uma pesquisa pode desclassificar você",
           "paragraphs": [
-            "Na aba Recompensas do Pawns.app, você encontra incentivos diários como a Roda de Prêmios gratuita, que sorteia gemas, cupons com +15% de boost nos ganhos e bilhetes para sorteios de 150 dólares.",
-            "Esses recursos complementam seus ganhos diários e reduzem o tempo necessário para pedir o primeiro pagamento."
-          ]
+            "Seu perfil pode não corresponder ao público procurado pelo estudo. A ajuda oficial recomenda dados corretos e atualizados; uma recusa isolada não comprova problema na conta. É proibido esconder a localização com VPN ou proxy.",
+            "Não altere idade, profissão ou país para se encaixar numa oferta. Após várias recusas, encerre a sessão e confira o perfil em vez de tratar a próxima tentativa como pagamento garantido."
+          ],
+          "source": {
+            "title": "Pawns.app: survey disqualifications",
+            "url": "https://help.pawns.app/en/articles/8646182-why-am-i-getting-disqualified-from-surveys"
+          }
+        },
+        {
+          "heading": "Defina um limite de tempo antes de começar",
+          "paragraphs": [
+            "O fornecedor informa que os questionários podem levar de poucos minutos a cerca de meia hora. A duração exibida é uma estimativa, não a garantia de que você terminará naquele prazo.",
+            "Escolha uma sessão em que consiga responder com atenção. Uma anotação útil inclui identificador, valor oferecido, duração prevista, minutos reais, mensagem final e valor creditado. Isso separa uma oferta atraente do seu resultado efetivo."
+          ],
+          "source": {
+            "title": "Pawns.app: survey length and estimates",
+            "url": "https://help.pawns.app/en/articles/8646112-how-long-are-the-surveys"
+          }
+        },
+        {
+          "heading": "Lista vazia ou pesquisa concluída sem crédito",
+          "paragraphs": [
+            "As oportunidades dependem da região e da demanda dos clientes. Uma lista vazia não comprova falha técnica nem permite prever uma espera exata. As notificações podem avisar quando surgirem novas pesquisas.",
+            "Se concluiu um questionário sem crédito, guarde identificador, data, valor e mensagem final e procure o suporte oficial. Oculte respostas privadas das capturas. Tela de conclusão, recusa e lançamento de saldo são evidências diferentes; não apresente todas como comprovante de pagamento."
+          ],
+          "source": {
+            "title": "Pawns.app: survey availability",
+            "url": "https://help.pawns.app/en/articles/8646179-how-often-will-i-receive-surveys"
+          }
         }
       ],
       "steps": [
-        "Abra o Pawns.app e toque na aba Pesquisas no menu inferior.",
-        "Preencha o questionário de perfil demográfico com dados consistentes.",
-        "Escolha pesquisas de alta pontuação em estrelas ($0,55 a $0,67 com poucos minutos).",
-        "Gire a Roda de Prêmios diária na aba Recompensas para acumular gemas e boosters.",
-        "Veja o saldo em dólar subir de imediato a cada pesquisa aprovada."
+        "Leia valor, tempo estimado e condições da pesquisa.",
+        "Use seu perfil e localização reais, sem escondê-los com VPN.",
+        "Anote o identificador e o horário de início.",
+        "Responda com atenção e guarde a mensagem final se houver problema.",
+        "Confira o saldo creditado e avalie o tempo total da sessão."
       ],
       "pros": [
-        "Pagamentos em dólares reais (USD) sem conversão arbitrária de pontos.",
-        "Questionários objetivos com duração comum inferior a 10 minutos.",
-        "Roda de prêmios diária gratuita com impulsos de rendimento."
+        "Valores e durações estimadas ajudam a comparar questionários.",
+        "Um registro simples facilita explicar um caso de crédito ausente."
       ],
       "cons": [
-        "Possibilidade de desqualificação durante as perguntas de filtro.",
-        "O volume diário de pesquisas oscila conforme a demanda dos anunciantes."
+        "Desclassificações consomem tempo sem confirmar uma recompensa.",
+        "Disponibilidade e ganhos variam; não existe valor diário confiável."
       ],
       "faq": [
         {
-          "q": "Por que fui desqualificado de uma pesquisa no Pawns.app?",
-          "a": "A desqualificação acontece quando seu perfil não atende exatamente aos critérios daquele estudo ou quando o número máximo de entrevistados já foi atingido."
+          "q": "Quanto dá para ganhar por dia com pesquisas do Pawns.app?",
+          "a": "Esta análise não estabelece uma quantia diária verificada. Compare os valores creditados com todo o tempo gasto, incluindo tentativas recusadas."
         },
         {
-          "q": "Quanto tempo demora para o valor da pesquisa cair na conta?",
-          "a": "O saldo é creditado instantaneamente na sua conta do Pawns.app assim que você alcança a tela de conclusão da pesquisa."
+          "q": "Ser desclassificado significa que minha conta foi bloqueada?",
+          "a": "Por si só, não. Leia a mensagem: não se encaixar no público de um estudo é diferente de uma restrição explícita da conta."
         },
         {
-          "q": "Posso responder pesquisas no computador também?",
-          "a": "Sim. O Pawns.app permite responder questionários tanto pelo aplicativo no celular quanto pelo painel no navegador do computador."
+          "q": "O valor que aparece na pesquisa já pode ser sacado?",
+          "a": "Não. A oferta não é saldo creditado. Primeiro a recompensa precisa ser concluída e registrada; depois valem as regras de saque."
         }
       ],
-      "verdict": "As pesquisas do Pawns.app são diretas e pagam em dólar real. Utilizando a roda de prêmios diária, você atinge o valor de saque com rapidez.",
+      "verdict": "Trate a lista como oportunidades condicionadas. Teste uma sessão limitada, registre o resultado e continue apenas se o retorno real compensar seu tempo. Promoções da roleta não tornam a renda das pesquisas previsível.",
       "imageAlt": "Aba de pesquisas do Pawns.app mostrando valores em dólar e tempos",
-      "caption": "A tela de Pesquisas apresenta questionários com valores em dólares e indicador de duração.",
+      "caption": "Tela de pesquisas fornecida para a análise: valores e durações ilustram a captura, não uma previsão atual de ganhos.",
       "imageKey": "pawns-surveys",
       "imageWide": true,
       "secondImage": {
         "key": "pawns-rewards",
-        "alt": "Tela de recompensas com roda de prêmios e sorteio de 150 dólares",
-        "caption": "A seção de Recompensas inclui giro diário grátis na roda de prêmios, gemas e bilhetes para sorteios.",
+        "alt": "Tela de recompensas do Pawns.app com roleta e promoções",
+        "caption": "Os prêmios promocionais da captura são separados da remuneração por concluir uma pesquisa e podem mudar.",
         "wide": true
-      }
+      },
+      "modifiedDate": "2026-11-15"
     },
     {
       "id": "pawns-games",
@@ -6542,14 +7082,14 @@ export const articles:Record<Locale,Article[]>={
       "category": "rewards",
       "slug": "pawns-app-jogos-e-ofertas-passo-a-passo",
       "title": "Jogos e ofertas no Pawns.app: Candy Crush, Clockmaker e metas por nível",
-      "description": "Descubra as ofertas de jogos no Pawns.app. Como Candy Crush ($54,17) e Clockmaker ($20,66) rastreiam níveis e prazos de recompensa.",
-      "intro": "Para quem deseja acumular valores maiores, a aba Ofertas do Pawns.app disponibiliza recompensas em jogos móveis consagrados como Candy Crush Saga (pagando até $54,17 no total), Clockmaker ($20,66) e Wood Block Jam ($8,36), remunerando você a cada marco de nível alcançado.",
+      "description": "Ofertas de jogos no Pawns.app: metas, compras exigidas, prazos, primeira instalação e como relatar progresso não registrado.",
+      "intro": "A captura de Ofertas fornecida inclui Candy Crush Saga ($54,17), Clockmaker ($20,66) e Wood Block Jam ($8,36) como totais anunciados. São ofertas históricas e condicionadas, não ganhos atuais garantidos. Este guia explica o que conferir antes de instalar e como lidar com progresso ausente.",
       "sections": [
         {
           "heading": "Como funcionam as metas por nível em jogos de celular",
           "paragraphs": [
             "Diferente de apps que pagavam frações de centavo por minuto, o Pawns.app adota o modelo de marcos por progresso. Títulos como Wood Block Jam dividem a recompensa em metas parciais ao atingir os níveis 30, 40 e 50.",
-            "Cada meta alcançada libera um valor específico em dólares na sua conta, permitindo que você resgate ganhos mesmo se optar por não jogar até o nível final."
+            "Apenas metas elegíveis listadas na oferta podem gerar a recompensa prevista. O total do destaque não é pago por instalar, e alcançar um nível não comprova, por si só, que o crédito foi registrado."
           ],
           "cta": {
             "label": "Ver jogos disponíveis no Pawns.app com o código 6823713",
@@ -6559,33 +7099,32 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "Permissões de rastreamento e prazos de conclusão",
           "paragraphs": [
-            "Para garantir que o jogo registre suas conquistas, é obrigatório instalá-lo diretamente pelo botão do Pawns.app e permitir o acesso de uso no Android ou iPhone. Usar VPN ou já ter jogado aquele título no mesmo aparelho impede a validação da oferta.",
-            "A maioria dos jogos estipula um limite de dias (normalmente de 20 a 30 dias, como os 29 dias restantes vistos no Wood Block Jam). Vale a pena conferir o prazo antes de começar."
+            "O Pawns.app informa que deve ser a primeira instalação pelo link da oferta. Confira localização e rastreamento publicitário solicitados e mantenha a VPN desligada; no iPhone, permita o rastreamento do jogo se decidir participar.",
+            "Use o prazo específico da sua oferta, sem presumir uma regra geral de 14 a 30 dias. A captura do Wood Block Jam mostra 29 dias restantes naquele momento, não uma regra para outros títulos."
           ],
           "source": {
-            "title": "Pawns.app: Lista oficial de jogos e ofertas",
-            "url": "https://pawns.app/games/"
+            "title": "Pawns.app: missing game progress and tracking requirements",
+            "url": "https://help.pawns.app/en/articles/15944782-why-isn-t-my-game-progress-being-tracked"
           }
         },
         {
           "heading": "Jogar gratuitamente vs. compras no aplicativo",
           "paragraphs": [
-            "Muitas ofertas incluem bônus opcionais caso você compre um pacote básico de itens (como $0,29 de recompensa pelo Beginner Bundle). Essas compras são totalmente facultativas; todas as metas principais de nível podem ser alcançadas sem gastar nenhum dinheiro real.",
-            "Jogos casuais e de raciocínio são ótimos para progredir diariamente com tranquilidade enquanto aproveita seu tempo livre."
+            "A captura de Wood Block Jam inclui uma meta de compra do Beginner Bundle. A compra pode ser exigida para aquela recompensa mesmo quando outras metas de nível não mencionam gastos. Leia cada tarefa em vez de tratar todas como gratuitas.",
+            "Calcule custo, recompensa e prazo antes de decidir. Não testamos se todo nível anunciado pode ser concluído sem gastar. Pule uma etapa que não compense para você."
           ]
         }
       ],
       "steps": [
-        "Abra o Pawns.app e acesse a aba Ofertas no menu inferior.",
-        "Escolha um jogo com boas recompensas (como Candy Crush Saga ou Clockmaker).",
-        "Toque em 'Ganhar' para ser encaminhado à Google Play Store ou App Store oficial.",
-        "Instale o jogo como novo usuário e conceda as permissões de rastreamento solicitadas.",
-        "Avance pelos níveis dentro do prazo estipulado para receber os pagamentos por marco."
+        "Abra Ofertas e confira toda a lista de metas.",
+        "Guarde elegibilidade, valor, prazo e compras exigidas antes de começar.",
+        "Se for elegível, instale uma vez pelo link escolhido e abra o jogo.",
+        "Confira as permissões exigidas; não use VPN para alterar sua localização.",
+        "Verifique o progresso registrado e use Report a Problem do fornecedor se faltar uma meta válida."
       ],
       "pros": [
-        "Recompensas elevadas que ultrapassam $50 dólares em jogos selecionados.",
-        "Pagamentos parciais creditados a cada meta de nível conquistada.",
-        "Jogos populares, conhecidos e divertidos para celular."
+        "A lista de metas permite conferir condições antes de jogar.",
+        "Etapas separadas ajudam a avaliar um objetivo menor em vez do total anunciado."
       ],
       "cons": [
         "Níveis avançados exigem dedicação diária antes que o prazo expire.",
@@ -6594,20 +7133,20 @@ export const articles:Record<Locale,Article[]>={
       "faq": [
         {
           "q": "Preciso pagar alguma coisa dentro do jogo para ganhar no Pawns.app?",
-          "a": "Não. Compras dentro do jogo são opcionais. Você pode conquistar a grande maioria das metas apenas jogando gratuitamente."
+          "a": "Depende da meta. Uma tarefa de compra exige gasto para aquela recompensa; uma de nível tem condições próprias. Não comprovamos que todos os níveis sejam viáveis sem gastar."
         },
         {
           "q": "Por que um nível que completei não foi registrado?",
-          "a": "Geralmente ocorre se a permissão de rastreamento foi negada, se havia uma VPN ligada ou se o jogo já tinha sido instalado anteriormente."
+          "a": "Confira primeira instalação e regras da oferta. O Pawns.app informa que o registro pode levar até 48 horas; a oferta tem ícone de informação e Report a Problem para relatar progresso ausente."
         },
         {
           "q": "Quanto tempo eu tenho para terminar as metas?",
-          "a": "A maioria das ofertas de jogos concede de 14 a 30 dias a partir da primeira instalação para concluir os níveis."
+          "a": "Use o prazo escrito na oferta escolhida. Uma captura do tempo restante de um jogo não define um limite universal."
         }
       ],
-      "verdict": "As ofertas de jogos do Pawns.app transformam momentos casuais de jogo no celular em dólares de verdade, sendo a maneira mais rápida de dar um salto no saldo da conta.",
+      "verdict": "Escolha uma meta moderada cujas condições consiga cumprir. Confira o progresso e compare recompensa com custos e tempo, sem interpretar o total anunciado como dinheiro já ganho.",
       "imageAlt": "Aba de ofertas no Pawns.app exibindo Clockmaker e Candy Crush Saga",
-      "caption": "A seção de Ofertas reúne jogos mobile com recompensas acumuladas que superam os $50 dólares.",
+      "caption": "Totais históricos da captura fornecida; disponibilidade, recompensa e elegibilidade podem diferir na sua conta.",
       "imageKey": "pawns-offers",
       "imageWide": true,
       "secondImage": {
@@ -6615,169 +7154,229 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Metas por nível no jogo Wood Block Jam dentro do Pawns.app",
         "caption": "Tela de detalhes com pagamentos progressivos ao atingir os níveis 30, 40 e 50 dentro do prazo de 29 dias.",
         "wide": true
-      }
+      },
+      "modifiedDate": "2026-11-15"
     },
     {
       "id": "pawns-cashout",
       "app": "pawns",
       "category": "rewards",
       "slug": "pawns-app-como-sacar-metodos-bono-convite",
-      "title": "Como sacar no Pawns.app: PayPal, Bitcoin, gift cards e o bônus de $3 por convite",
-      "description": "Passo a passo para sacar no Pawns.app: valor mínimo de $5, prazos de pagamento e como o código 6823713 ativa o bônus de $3.",
-      "intro": "Acumular saldo é bom, mas ter a certeza de como receber o dinheiro na conta é essencial. O Pawns.app se destaca por manter um limite mínimo de saque baixo de apenas $5,00 USD, suporte ao PayPal, Bitcoin e vales-presente, além de um bônus mútuo de convite que recompensa quem indica e quem entra.",
+      "title": "Como sacar no Pawns.app: mínimo, taxas e bônus de $3",
+      "description": "Guia de saque do Pawns.app: mínimo de $5, taxas de PayPal e Bitcoin, e-mail para resgatar o pagamento e condições do bônus de indicação.",
+      "intro": "O Pawns.app informa saque mínimo de $5, mas o valor solicitado pode ser diferente do recebido. Taxas, métodos disponíveis no país e o e-mail para resgatar a recompensa merecem atenção. Este guia corrige uma dúvida sobre indicação: o bônus anunciado de $3 tem condições e é dividido entre três saques, em vez de cair inteiro no primeiro.",
       "sections": [
         {
-          "heading": "Formas de pagamento: PayPal, Bitcoin e Vales-Presente",
+          "heading": "Onde solicitar o saque",
           "paragraphs": [
-            "O Pawns.app atende a usuários de vários países com três opções principais de saque. Para receber em dinheiro, o PayPal envia os dólares diretamente para o seu e-mail cadastrado. Para quem prefere criptoativos, saques em Bitcoin são transferidos para a sua carteira digital.",
-            "Também é possível resgatar cartões de presente virtuais (como Amazon, Google Play e cartões Visa virtuais), todos disponíveis a partir dos mesmos $5,00 USD de saldo."
-          ],
-          "cta": {
-            "label": "Criar conta no Pawns.app com código 6823713 e garantir bônus de $3",
-            "url": "https://discoverpawns.eu/6823713"
-          }
-        },
-        {
-          "heading": "Prazos de processamento e segurança da conta",
-          "paragraphs": [
-            "Os pedidos de saque são normalmente processados dentro de 24 a 72 horas úteis. Antes de autorizar o primeiro resgate, o Pawns.app solicita a validação do seu e-mail e ativação de autenticação em dois fatores (2FA) para proteger seu saldo.",
-            "Não há cobranças abusivas de taxas de manutenção sobre o valor acumulado em pesquisas, internet compartilhada ou jogos."
+            "Toque no saldo, escolha Request Payout e selecione país e método disponível. O Pawns.app publica mínimo de $5; as opções oferecidas dependem da sua região.",
+            "Confira destino, método e resumo final antes de confirmar. Um vale-presente tem restrições de uso diferentes de dinheiro numa conta de pagamento. Não escolha apenas pela taxa anunciada menor."
           ],
           "source": {
-            "title": "Pawns.app: Formas de pagamento e regras de saque",
-            "url": "https://pawns.app/payment-methods/"
+            "title": "Pawns.app: requesting a payout",
+            "url": "https://help.pawns.app/en/articles/8646170-how-do-i-get-paid"
+          },
+          "cta": {
+            "label": "Conhecer o Pawns.app com o código de indicação 6823713",
+            "url": "https://discoverpawns.eu/6823713",
+            "sponsored": true
           }
         },
         {
-          "heading": "Como ativar o bônus de convite de $3",
+          "heading": "Taxas: compare o valor que realmente vai receber",
           "paragraphs": [
-            "O programa de indicação do Pawns.app funciona sob a regra de '$3 para você, $3 para um amigo'. Ao criar sua conta através do link discoverpawns.eu/6823713 ou informar o código de convite 6823713, o bônus de $3 é liberado assim que você faz seu primeiro saque.",
-            "Depois de cadastrado, você também pode compartilhar seu próprio código com conhecidos para receber comissão contínua de 10% sobre os ganhos deles e $3 a cada amigo que realizar um saque."
-          ]
+            "A ajuda oficial informa PayPal com taxa de 4%, mínimo de $0,25: um saque de $5 resulta em $4,75. Para Bitcoin, publica $2; para vales-presente virtuais, taxa de saque zero. Confira o resumo vigente antes de confirmar.",
+            "Conversão de moeda ou regras do serviço receptor podem afetar o valor disponível para gastar. Registre o total solicitado e o recebido para não confundir taxa com recompensa ausente."
+          ],
+          "source": {
+            "title": "Pawns.app: payout fees",
+            "url": "https://help.pawns.app/en/articles/8658813-what-are-the-payout-fees"
+          }
+        },
+        {
+          "heading": "Saque pendente: procure o e-mail de resgate",
+          "paragraphs": [
+            "O Pawns.app informa processamento normalmente em até 72 horas, podendo demorar mais nos fins de semana. Para PayPal, vales-presente e Cash App, procure na entrada e no spam um e-mail da Tremendous com o link de resgate.",
+            "Se o prazo documentado passou, procure o suporte oficial com data, valor e método. Não publique endereço de recebimento, fotos de documentos ou códigos de uso único ao pedir ajuda."
+          ],
+          "source": {
+            "title": "Pawns.app: payout not received",
+            "url": "https://help.pawns.app/en/articles/8658805-what-to-do-if-i-have-not-received-my-payout"
+          }
+        },
+        {
+          "heading": "O bônus de $3 é liberado em três partes",
+          "paragraphs": [
+            "A regra atual prevê $1 após cada um dos três primeiros saques válidos. Cada etapa tem prazo regional mostrado no aplicativo. O código 6823713 é uma indicação e não dispensa essas condições.",
+            "A captura da Comunidade comprova a divulgação de uma promoção, não o recebimento de dinheiro nem um saldo incondicional de $3. Leia as regras da sua conta antes de contar com o bônus."
+          ],
+          "source": {
+            "title": "Pawns.app: referral bonus conditions",
+            "url": "https://help.pawns.app/en/articles/8658858-how-does-your-referral-system-work"
+          }
+        },
+        {
+          "heading": "Verificação e confirmação final",
+          "paragraphs": [
+            "Um parceiro de pagamentos pode pedir verificação de identidade; o Pawns.app informa que as instruções aparecem no saque quando aplicável. Siga o fluxo oficial, sem enviar documentos a alguém que procure você por mensagem privada.",
+            "Guarde a confirmação e compare o status com o saldo e a conta que vai receber. Esta análise documenta o processo e as condições publicadas; não relata um saque independente concluído por nós."
+          ],
+          "source": {
+            "title": "Pawns.app: identity checks at payout",
+            "url": "https://help.pawns.app/en/articles/15943103-why-was-i-asked-for-an-id-check-when-requesting-a-payout"
+          }
         }
       ],
       "steps": [
-        "Acumule pelo menos $5,00 USD no saldo do Pawns.app.",
-        "Acesse a aba de Saques ou Recompensas e confirme seu e-mail cadastrado.",
-        "Escolha sua opção favorita (PayPal, Bitcoin ou vale-presente).",
-        "Digite suas informações de recebimento (e-mail do PayPal ou endereço BTC).",
-        "Receba seu pagamento e comemore o bônus de $3 desbloqueado com o código 6823713."
+        "Alcance o mínimo indicado e abra seu saldo.",
+        "Escolha país e método disponível.",
+        "Confira destino, taxa e valor líquido.",
+        "Conclua a verificação solicitada no fluxo oficial e confirme.",
+        "Guarde a confirmação e veja se há e-mail de resgate na entrada ou spam.",
+        "Após o prazo informado, procure o suporte se a recompensa continuar ausente."
       ],
       "pros": [
-        "Limite mínimo de apenas $5,00 USD facilita o resgate rápido.",
-        "Suporte a dinheiro em conta (PayPal), criptomoedas (Bitcoin) e cartões digitais.",
-        "Bônus de convite de $3 adicionado ao realizar o primeiro saque."
+        "Mínimo e taxas publicados permitem comparar opções.",
+        "Pode haver diferentes formas de resgate conforme o país."
       ],
       "cons": [
-        "Taxas de rede na blockchain podem variar para quem opta por Bitcoin.",
-        "O e-mail do PayPal deve corresponder a uma conta válida e ativa."
+        "Uma taxa pesa mais sobre um saque pequeno.",
+        "Processamento, verificação e prazos promocionais exigem atenção separada."
       ],
       "faq": [
         {
-          "q": "Quanto tempo demora para o saque do Pawns.app cair no PayPal?",
-          "a": "A maioria dos pagamentos é creditada entre 24 e 48 horas após a solicitação na plataforma."
+          "q": "Sacar no Pawns.app é grátis?",
+          "a": "Não presuma que sim. Consulte as taxas e o resumo final do método escolhido."
         },
         {
-          "q": "O Pawns.app cobra taxa para sacar?",
-          "a": "O aplicativo não cobra taxas no resgate padrão, mas o PayPal pode aplicar taxas de conversão se sua conta estiver em Reais."
+          "q": "O código 6823713 adiciona $3 na hora?",
+          "a": "Não. É uma promoção de indicação com etapas de saque e prazos, não dinheiro disponível imediatamente."
         },
         {
-          "q": "Quando o bônus de $3 do código 6823713 é liberado?",
-          "a": "O bônus de $3 é creditado automaticamente na sua conta assim que você atinge e conclui seu primeiro saque."
+          "q": "O que guardar se o pagamento não chegar?",
+          "a": "Data, valor, método, confirmação e status da solicitação. Use o suporte oficial e oculte dados privados de recebimento."
         }
       ],
-      "verdict": "Com limite de $5 muito acessível, opções práticas via PayPal e Bitcoin, e o incentivo extra do bônus de $3, o Pawns.app oferece um dos fluxos de pagamento mais confiáveis do mercado.",
+      "verdict": "Compare o valor líquido, faça a verificação pelo fluxo oficial e confira o e-mail de resgate. Trate o bônus como uma promoção condicionada. O recebimento deve ser confirmado na conta de destino, não deduzido de uma tela promocional.",
       "imageAlt": "Aba de convite do Pawns.app mostrando o bônus de 3 dólares",
-      "caption": "A tela Comunidade detalha o bônus mútuo de $3 e o link oficial de registro discoverpawns.eu/6823713.",
+      "caption": "Tela da Comunidade fornecida para análise com anúncio de indicação; as regras atuais dividem o bônus entre saques válidos.",
       "imageKey": "pawns-referral",
       "imageWide": true,
       "secondImage": {
         "key": "pawns-rewards",
-        "alt": "Painel de recompensas e roleta no Pawns.app",
-        "caption": "A área de Recompensas reúne opções de resgate, boosters e giros gratuitos na roleta de prêmios.",
+        "alt": "Tela de recompensas do Pawns.app com roleta e prêmios",
+        "caption": "A área promocional de Recompensas é diferente de um saque confirmado ou comprovante de pagamento.",
         "wide": true
-      }
+      },
+      "modifiedDate": "2026-11-15"
     },
     {
       "id": "pawns-vs-freecash",
       "app": "pawns",
       "category": "guides",
       "slug": "pawns-app-vs-freecash-qual-o-melhor-para-ganhar-dinheiro",
-      "title": "Pawns.app vs Freecash: renda passiva ou jogos e tarefas, qual o melhor?",
-      "description": "Compare o Pawns.app e o Freecash lado a lado: compartilhamento de internet, pesquisas, jogos no celular e limites mínimos de saque.",
-      "intro": "O Pawns.app e o Freecash estão entre os aplicativos de renda extra mais procurados do mundo, mas atendem a perfis diferentes. Enquanto o Freecash foca em murais de jogos e tarefas ativas, o Pawns.app tem como grande diferencial a renda passiva compartilhando internet ociosa em segundo plano, além de pesquisas e jogos. Veja qual faz mais sentido para você.",
+      "title": "Pawns.app vs Freecash: tarefas, saques e qual escolher",
+      "description": "Compare Pawns.app e Freecash por tarefas, primeiro saque, taxas e condições de ofertas. Escolha conforme sua conta, não pelo prêmio anunciado.",
+      "intro": "Para escolher entre Pawns.app e Freecash, confira o que precisa fazer e o que consegue sacar. O Pawns.app acrescenta compartilhamento opcional de internet a pesquisas e jogos; o Freecash se concentra em tarefas remuneradas. Nenhum garante renda. O comparativo usa regras oficiais e capturas fornecidas do Pawns.app, sem um teste conjunto de ganhos ou velocidade de pagamento.",
       "sections": [
         {
-          "heading": "Formato de ganhos: renda passiva vs. rotina ativa de jogos",
+          "heading": "Compartilhar internet é uma escolha separada",
           "paragraphs": [
-            "A principal diferença está no esforço exigido no dia a dia. O Pawns.app permite acumular saldo sem precisar mexer no telefone, aproveitando o Wi-Fi da sua casa em segundo plano, o que é perfeito para quem tem pouco tempo.",
-            "O Freecash, por sua vez, é uma plataforma 100% ativa. Suas ofertas de jogos pagam bem, mas exigem dedicação diária de várias horas jogando para cumprir níveis difíceis antes que os prazos terminem."
-          ],
-          "cta": {
-            "label": "Testar o Pawns.app com renda passiva e código 6823713",
-            "url": "https://discoverpawns.eu/6823713"
-          }
-        },
-        {
-          "heading": "Valores mínimos de saque e formas de recebimento",
-          "paragraphs": [
-            "O Freecash tem um valor mínimo de saque muito baixo em criptomoedas selecionadas ($0,50 em Litecoin), mas para PayPal normalmente exige $5,00. O Pawns.app adota um limite único e claro de $5,00 USD para todas as opções principais (PayPal, Bitcoin e cartões-presente).",
-            "Ambos mostram os valores em moeda real (o Pawns.app diretamente em dólares; o Freecash em moedas onde 1.000 equivalem a $1,00 USD)."
+            "O Pawns.app oferece compartilhamento de internet, além de pesquisas e jogos. Antes de ativar, avalie se quer permitir que terceiros usem sua conexão e leia permissões, plano de dados e condições de uso da rede.",
+            "Deixar um programa aberto não comprova retorno previsível. Se não quiser compartilhar conexão, compare apenas as tarefas ativas. Um recurso que você não usará não deve definir o vencedor."
           ],
           "source": {
-            "title": "Pawns.app: Visão geral e cadastro",
+            "title": "Pawns.app: official product overview",
             "url": "https://pawns.app/"
+          },
+          "cta": {
+            "label": "Conhecer o Pawns.app com o código de indicação 6823713",
+            "url": "https://discoverpawns.eu/6823713",
+            "sponsored": true
           }
         },
         {
-          "heading": "Qual dos dois aplicativos vale mais a pena priorizar?",
+          "heading": "Primeiro saque: compare o acesso, não só um valor pequeno",
           "paragraphs": [
-            "A melhor estratégia não é escolher apenas um, e sim combiná-los. Deixar o Pawns.app instalado no computador ou no celular conectado ao Wi-Fi gera receita em segundo plano sem tomar seu tempo.",
-            "Quando tiver um tempo livre para jogar ou responder pesquisas, você pode comparar as ofertas ativas no Pawns.app e no Freecash para ver qual aplicativo está pagando mais pelo mesmo título."
+            "O Pawns.app publica mínimo de $5. O guia atual de primeiro saque do Freecash informa $25, sujeito à região, além de verificação de e-mail e identidade. Confira Cashout: os mínimos posteriores de cada método não descrevem o primeiro saque.",
+            "Antes de começar, confirme se existe um método utilizável no seu país e se consegue cumprir a verificação. Saldo promocional ainda indisponível para saque é diferente de dinheiro recebido."
+          ],
+          "source": {
+            "title": "Freecash: first withdrawal requirements",
+            "url": "https://freecash.com/academy/en/support/withdrawal/issues/first-cashout-requirements"
+          }
+        },
+        {
+          "heading": "Taxas e espera: use o resumo final",
+          "paragraphs": [
+            "Compare o valor líquido após a taxa, não apenas o solicitado. O Freecash publica taxas em vários métodos de dinheiro e vales-presente sem taxa; a confirmação de cada método mostra o total vigente.",
+            "Não cronometramos saques equivalentes nas duas contas, portanto não podemos apontar quem paga mais rápido. Revisão do pedido, e-mail de resgate e serviço receptor podem alterar a experiência."
+          ],
+          "source": {
+            "title": "Freecash: withdrawal limits and fees",
+            "url": "https://freecash.com/academy/en/support/withdrawal/issues/withdrawal-limits"
+          }
+        },
+        {
+          "heading": "Jogos: compare a mesma meta antes de instalar",
+          "paragraphs": [
+            "Anote tarefa, aparelho aceito, condição de jogador novo, prazo, compras exigidas e recompensa da mesma meta em cada plataforma. Um total maior pode somar etapas caras ou pouco viáveis.",
+            "Não suponha que uma instalação serve para receber nas duas ofertas. Leia a elegibilidade antes de escolher onde começar, guarde as condições e confira se a primeira ação foi registrada antes de investir mais tempo. Este é um método de comparação, não uma alegação de que um catálogo paga mais."
           ]
+        },
+        {
+          "heading": "Qual opção combina com sua situação",
+          "paragraphs": [
+            "Considere o Pawns.app se quiser o compartilhamento opcional de conexão e os métodos de pagamento servirem para você. Considere o Freecash se as tarefas disponíveis e as exigências iniciais se encaixarem melhor. Descarte uma opção se a recompensa útil dificilmente compensar tempo ou custo.",
+            "Use sua região real. O Freecash proíbe VPN e proxies, incluindo iCloud Private Relay. Diferenças de disponibilidade não justificam esconder a localização."
+          ],
+          "source": {
+            "title": "Freecash: VPN and proxy restrictions",
+            "url": "https://freecash.com/academy/en/support/account/restrictions/can-i-use-vpn-proxy"
+          }
         }
       ],
       "steps": [
-        "Instale o Pawns.app pelo link discoverpawns.eu/6823713 e ative o compartilhamento no Wi-Fi.",
-        "Aplique o código de convite 6823713 para garantir o bônus de $3 quando sacar.",
-        "Confira a aba Ofertas no Pawns.app para jogos de destaque como Candy Crush Saga e Clockmaker.",
-        "Compare as metas com o Freecash para escolher a opção de maior retorno.",
-        "Solicite o saque via PayPal ou Bitcoin assim que atingir a meta de $5."
+        "Confira métodos e verificação disponíveis no seu país.",
+        "Compare primeiro saque válido, taxas e valor líquido.",
+        "Decida se quer compartilhar internet.",
+        "Compare uma tarefa real com metas equivalentes antes de instalar.",
+        "Registre tempo e valores creditados e decida pelos seus resultados."
       ],
       "pros": [
-        "O Pawns.app oferece renda passiva sem esforço, recurso ausente no Freecash.",
-        "Ambos pagam com rapidez via PayPal e oferecem suporte a criptomoedas.",
-        "Usar ambos simultaneamente maximiza seus ganhos mensais no celular."
+        "As plataformas têm combinações de tarefas para preferências diferentes.",
+        "Comparar condições evita escolher pelo maior prêmio anunciado."
       ],
       "cons": [
-        "O Freecash tem maior número de provedores externos de tarefas.",
-        "A taxa de ganho passivo no Pawns.app oscila de acordo com a sua região."
+        "Não há teste conjunto de ganhos ou rapidez que sustente um vencedor universal.",
+        "Disponibilidade, verificação e taxas variam por país ou conta."
       ],
       "faq": [
         {
-          "q": "Posso usar o Pawns.app e o Freecash no mesmo aparelho?",
-          "a": "Sim. O Pawns.app roda em segundo plano sem interferir enquanto você joga ou responde pesquisas no Freecash ou no próprio Pawns.app."
+          "q": "Qual paga mais: Pawns.app ou Freecash?",
+          "a": "Esta revisão não estabelece um vencedor em ganhos. Compare a mesma tarefa e meça crédito real, custo e tempo na sua conta."
         },
         {
-          "q": "Qual dos dois paga mais rápido no PayPal?",
-          "a": "Tanto o Pawns.app quanto o Freecash costumam processar saques via PayPal entre 24 e 48 horas após a verificação de segurança."
+          "q": "Usar os dois maximiza a renda?",
+          "a": "Não há garantia. Isso acrescenta regras e registros para acompanhar; não tente receber duas vezes por uma oferta de novos usuários sem permissão explícita nas condições."
         },
         {
-          "q": "Qual compensa mais para jogos?",
-          "a": "Varia conforme o título. O Pawns.app traz ótimas ofertas em jogos casuais como Candy Crush ($54+), enquanto o Freecash se destaca em jogos de estratégia pesada."
+          "q": "Qual tem o menor primeiro saque?",
+          "a": "Compare as exigências iniciais vigentes nas duas contas. Um resgate posterior de valor baixo não comprova acesso inicial."
         }
       ],
-      "verdict": "Para quem quer ganhar dinheiro sem esforço ativo, o Pawns.app é a melhor opção do mercado. Para maximizar resultados, mantenha o Pawns.app rodando no fundo e aproveite as melhores ofertas de jogos em ambos.",
-      "imageAlt": "Comparativo entre Pawns.app e opções de jogos do Freecash",
-      "caption": "O Pawns.app alia a facilidade do modo passivo com grandes ofertas em jogos como Candy Crush e Clockmaker.",
+      "verdict": "Não existe um vencedor geral demonstrado. Escolha tarefas e condições de recebimento que consiga usar e compare recompensa líquida com tempo e custos reais. Compartilhar internet é opcional, não uma recomendação automática.",
+      "imageAlt": "Tela da Comunidade do Pawns.app fornecida como referência para o comparativo",
+      "caption": "A captura ilustra apenas o Pawns.app; não é uma medição comparativa de ganhos.",
       "imageKey": "pawns-referral",
       "imageWide": true,
       "secondImage": {
         "key": "pawns-offers",
-        "alt": "Tela de ofertas de jogos no Pawns.app com Candy Crush e Clockmaker",
-        "caption": "A aba de Ofertas traz jogos conhecidos com remuneração transparente em dólares.",
+        "alt": "Ofertas de jogos do Pawns.app na captura fornecida",
+        "caption": "Os totais exigem leitura das metas e condições; não demonstram retorno melhor que o Freecash.",
         "wide": true
-      }
+      },
+      "modifiedDate": "2026-11-15"
     },
     {
       "id": "primeopinion",
@@ -7539,70 +8138,101 @@ export const articles:Record<Locale,Article[]>={
       "app": "pinedrama",
       "category": "guides",
       "slug": "como-baixar-pinedrama-pc-login-novelas",
-      "title": "Como Baixar PineDrama no Celular e PC: Login com TikTok e Catálogo (2026)",
-      "description": "Aprenda como baixar o PineDrama oficial na Play Store, fazer login com o TikTok, assistir no PC e encontrar as mininovelas mais populares do app.",
-      "intro": "Ao pesquisar como baixar o PineDrama, entrar com sua conta ou abrir o PineDrama no PC, é comum cair em sites oferecendo arquivos APK modificados. Veja o caminho oficial e seguro para instalar o aplicativo do TikTok, sincronizar suas novelas em My List e explorar o catálogo sem riscos.",
+      "title": "PineDrama: Como Baixar, Fazer Login e Disponibilidade no PC (2026)",
+      "description": "Baixe o PineDrama oficial no Android ou iPhone, conecte o TikTok, encontre seus episódios e veja o que está confirmado sobre assistir no PC.",
+      "intro": "O PineDrama tem versões oficiais para Android e iPhone, com links no portal do TikTok. Não verificamos um reprodutor para Windows ou macOS nem um método compatível por emulador. Este guia separa as opções de download confirmadas das promessas para PC e explica como reencontrar suas séries. As capturas mostram a interface Android fornecida para o guia; as lojas foram consultadas em 15 de novembro de 2026.",
       "sections": [
         {
-          "heading": "Como baixar o PineDrama oficial (e por que evitar APK pirata)",
+          "heading": "Android: como identificar o PineDrama oficial",
           "paragraphs": [
-            "No Android, o aplicativo oficial está na Google Play como PineDrama - Short Dramas (pacote com.ss.android.ttmd.video), publicado por TikTok Pte. Ltd., e o site oficial de apresentação fica em shortdrama.tiktok.com.",
-            "Evite baixar 'PineDrama APK mod' em sites desconhecidos prometendo moedas infinitas ou saque liberado: além do risco de vírus e roubo de conta do TikTok, a validação dos pontos acontece nos servidores da plataforma."
+            "Abra o link da Google Play e confira PineDrama - Short Dramas, o desenvolvedor TikTok Pte. Ltd. e o pacote com.ss.android.ttmd.video. Nome e ícone parecidos em um site de APK não bastam para identificar o mesmo aplicativo. O portal shortdrama.tiktok.com também aponta para essa ficha.",
+            "Deixe a Play Store verificar a compatibilidade com seu aparelho e a região da conta. Se a instalação estiver indisponível, leia o aviso da loja em vez de presumir que um APK resolve. A ficha informa compras no aplicativo: download grátis não significa acesso gratuito a todos os recursos e episódios."
           ],
           "source": {
-            "title": "PineDrama: Portal Oficial de Dramas Curtos do TikTok",
+            "title": "PineDrama: ficha oficial na Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=en"
+          }
+        },
+        {
+          "heading": "iPhone e iPad: baixe pela App Store",
+          "paragraphs": [
+            "O portal oficial aponta para PineDrama - Short Dramas na App Store, ID 6754134922. A ficha mostra TikTok Ltd. como desenvolvedor e TikTok Pte. Ltd. como vendedor. Abra na região da sua conta para conferir disponibilidade e requisitos do sistema antes de instalar.",
+            "A App Store informa compras no app e descreve planos com renovação automática. Confira preço e condições na sua tela antes de assinar. Este guia não estabelece um preço universal nem garante que todas as novelas estejam liberadas gratuitamente."
+          ],
+          "source": {
+            "title": "PineDrama: ficha oficial na App Store",
+            "url": "https://apps.apple.com/us/app/pinedrama-short-dramas/id6754134922"
+          }
+        },
+        {
+          "heading": "Login com TikTok e episódios que sumiram do histórico",
+          "paragraphs": [
+            "A descrição da Google Play informa sincronização com o TikTok para manter progresso e preferências. Use o login dentro do aplicativo oficial. Nas capturas Android fornecidas, Perfil > Dramas mostra o progresso, como EP 42/74, e My List ajuda a encontrar séries salvas.",
+            "Se uma novela sumir, confira primeiro se entrou na mesma conta do TikTok; depois pesquise o título e verifique a lista salva e o número do episódio. Confira atualizações e conexão. Se persistir, use o contato de suporte da ficha oficial e informe aparelho, versão do app e mensagem de erro, sem enviar senhas. Não testamos todos os cenários de login ou recuperação."
+          ],
+          "source": {
+            "title": "PineDrama na Google Play: sincronização e suporte",
+            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=en"
+          }
+        },
+        {
+          "heading": "Dá para assistir PineDrama no PC?",
+          "paragraphs": [
+            "Nas fontes oficiais consultadas, shortdrama.tiktok.com apresenta o app e oferece links da Google Play e App Store. Essa página, sozinha, não comprova a existência de um player completo no navegador. Não verificamos um instalador compatível com Windows ou macOS nem reprodução por emuladores Android.",
+            "O Google Play Games para PC não deve ser indicado como método de instalação sem suporte confirmado para o PineDrama. Use as lojas oficiais no celular e consulte futuros anúncios no portal do desenvolvedor. Uma página externa anunciando PineDrama para PC não comprova compatibilidade oficial."
+          ],
+          "source": {
+            "title": "PineDrama: portal oficial de download",
             "url": "https://shortdrama.tiktok.com/"
           }
         },
         {
-          "heading": "Login com TikTok, lista de episódios e PineDrama para PC",
+          "heading": "Como encontrar a novela e continuar no episódio certo",
           "paragraphs": [
-            "Você pode vincular sua conta do TikTok na aba Perfil para manter sincronizados os dramas salvos em My List e o histórico exato de episódios assistidos (como EP 42/74 ou EP 8/47).",
-            "Para quem procura PineDrama no PC, vale saber que o app foi criado para telas verticais de celular. No computador, acesse o portal oficial shortdrama.tiktok.com para informações de acesso ou utilize um ambiente Android compatível com a Google Play oficial, sem instalar executáveis suspeitos."
-          ]
-        },
-        {
-          "heading": "Mininovelas mais populares e categorias dentro do aplicativo",
-          "paragraphs": [
-            "Na aba Descobrir você encontra a barra de busca e três filtros principais: Categorias, Populares e Novos. Entre os destaques em português nas telas do app aparecem O Irmão Esquecido de Thor (91,4M), O Mago Supremo é um Menino (14,2M), O Prisioneiro da Gigante (15,6M) e O Poder SSS do Aluno Humilhado (8,9M).",
-            "O catálogo também reúne produções internacionais de 40 a 84 episódios curtos, como Resolving Crisis At 30,000 Feet, Fell Into the Giant's Arms, The Broke Fat Dad Won $500 Million, King of Wrenches e Tempest: The Last Mecha."
+            "As capturas mostram a aba Descobrir com busca e filtros Categorias, Populares e Novos. Pesquise o título, abra a página da série e confira a sequência de episódios antes de continuar. Salve a novela para não depender de reencontrar o mesmo corte nas redes sociais.",
+            "O Irmão Esquecido de Thor aparece nas capturas fornecidas. As imagens registram o catálogo na data da captura; não são um ranking atual nem garantia de disponibilidade em outro país. Nomes, dublagem e legendas podem mudar por região."
           ],
           "source": {
-            "title": "PineDrama - Short Dramas na Google Play",
-            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=pt_BR"
+            "title": "PineDrama na Google Play: Descobrir e lista de séries",
+            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=en"
           }
         }
       ],
       "steps": [
-        "Acesse a Google Play ou o portal oficial shortdrama.tiktok.com e confira o desenvolvedor TikTok Pte. Ltd.",
-        "Instale o app oficial evitando links de APK modificados de terceiros.",
-        "Entre na aba Perfil e conecte sua conta do TikTok para salvar seu progresso.",
-        "Use a busca e os filtros Categorias, Populares e Novos na aba Descobrir.",
-        "Adicione suas séries favoritas em My List para retomar exatamente do episódio em que parou."
+        "Abra o portal oficial do PineDrama e escolha Google Play ou App Store conforme seu aparelho.",
+        "Confira desenvolvedor, identificação, compatibilidade e informações de compras na loja.",
+        "Instale e use o login do TikTok dentro do app se quiser sincronizar sua conta.",
+        "Pesquise a novela em Descobrir e abra a lista de episódios.",
+        "Salve a série e confirme o número do episódio no perfil antes de continuar.",
+        "Para PC, acompanhe anúncios oficiais; este guia não tem um método verificado para desktop ou emulador."
       ],
       "pros": [
-        "Sincronização simples com a conta do TikTok e controle exato do episódio atual.",
-        "Filtros claros por Categorias, Populares e Novos facilitam achar mininovelas rápidas."
+        "Links oficiais permitem identificar o aplicativo e o desenvolvedor.",
+        "Sincronização e séries salvas ajudam a localizar o progresso."
       ],
       "cons": [
-        "Não existe aplicativo nativo exclusivo para Windows ou macOS.",
-        "Alguns títulos possuem legendas ou áudio adaptados de forma diferente conforme o idioma."
+        "Reprodução no computador e compatibilidade com emuladores não foram verificadas.",
+        "Disponibilidade, compras e catálogo podem variar por região."
       ],
       "faq": [
         {
-          "q": "Existe PineDrama para PC?",
-          "a": "O PineDrama foi desenvolvido para celular (Android e iOS). No PC, você pode conferir o portal oficial shortdrama.tiktok.com ou usar um ambiente Android oficial ligado à Google Play."
+          "q": "Existe download verificado do PineDrama para PC?",
+          "a": "Não verificamos instalador oficial para Windows ou macOS nem um método compatível por emulador nas fontes consultadas. O portal oficial aponta para as lojas de aplicativos móveis."
         },
         {
-          "q": "Precisa ter TikTok para usar o PineDrama?",
-          "a": "Você pode navegar pelo catálogo, mas fazer login com o TikTok é o jeito mais prático de salvar seu histórico e continuar séries vistas em cortes do TikTok."
+          "q": "Tem PineDrama para iPhone?",
+          "a": "O portal oficial oferece link para a App Store, ID 6754134922. Confira disponibilidade e compatibilidade na região da sua conta."
         },
         {
-          "q": "É seguro baixar PineDrama APK fora da Play Store?",
-          "a": "Não é recomendável. Instale sempre pela loja oficial para evitar arquivos adulterados que possam comprometer seus dados."
+          "q": "Por que meu histórico do PineDrama sumiu?",
+          "a": "Confira primeiro se entrou na mesma conta do TikTok, as séries salvas e o episódio atual. Se atualizar o app e verificar a conexão não resolver, use o suporte indicado na ficha oficial."
+        },
+        {
+          "q": "Baixar grátis libera todos os episódios?",
+          "a": "Não necessariamente. As duas lojas informam compras no app. Confira as condições de cada episódio e da compra oferecida para sua conta."
         }
       ],
-      "verdict": "Instale sempre pela Google Play ou por shortdrama.tiktok.com para aproveitar o catálogo e a sincronização com o TikTok com total segurança.",
+      "verdict": "Instale pela Google Play ou App Store oficiais, mantenha a mesma conta e confira a ordem dos episódios. Assistir pelo PC continua sem um método verificado neste guia.",
       "imageAlt": "Tela Descobrir do PineDrama com busca e capas de mininovelas",
       "caption": "Na aba Descobrir, o usuário navega por Categorias, Populares e Novos ou pesquisa títulos direto na barra superior.",
       "imageKey": "pinedrama-discover",
@@ -7612,7 +8242,8 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Grade de dramas no Perfil do PineDrama mostrando progresso de episódios",
         "caption": "Em Perfil > Dramas, o app registra exatamente o episódio assistido em cada minissérie.",
         "wide": false
-      }
+      },
+      "modifiedDate": "2026-11-15"
     },
     {
       "id": "pinedrama-vs-dramastack",
@@ -8227,176 +8858,256 @@ export const articles:Record<Locale,Article[]>={
       "app": "freecash",
       "category": "rewards",
       "slug": "freecash-e-confiavel-paga-mesmo-avaliacoes",
-      "title": "Freecash é Confiável e Paga Mesmo? Avaliações e Regras (2026)",
-      "description": "O Freecash é confiável ou golpe em 2026? Veja como os pagamentos funcionam, por que ofertas ficam pendentes, motivos de bloqueio e regras da conta.",
-      "intro": "O Freecash é uma plataforma legítima de recompensas (GPT) que paga para testar jogos de celular, concluir ofertas de parceiros e responder pesquisas — mas não é renda automática. Entender por que alguns usuários sacam sem problemas enquanto outros enfrentam travas ou bloqueios evita frustração.",
+      "title": "Freecash é Confiável? Avaliação de Pagamentos, Saldo Pendente e Regras",
+      "description": "Avaliação documental do Freecash: quem opera o serviço, o que significam os estados do saldo, restrições e limites do que verificamos sobre pagamentos.",
+      "intro": "O Freecash tem uma empresa identificável e regras públicas de recompensas e resgate. Isso demonstra a existência do serviço, mas não garante que uma oferta específica será rastreada ou que todo saque será aprovado. Esta avaliação separa essas questões sem prometer renda fácil.",
       "sections": [
         {
-          "heading": "O Freecash é confiável e de onde vem o dinheiro?",
+          "heading": "O que verificamos e o que não foi testado",
           "paragraphs": [
-            "Sim, o Freecash é confiável e paga via PayPal, cartões-presente, criptomoedas e transferência bancária conforme a região. O dinheiro vem de estúdios de jogos e empresas que pagam pela aquisição e teste de novos usuários. A conversão padrão é 1.000 moedas = US$ 1,00.",
-            "A maior parte das reclamações nasce de não ler os prazos das metas ou esperar ganhos altos sem esforço. Ofertas grandes (US$ 50 a US$ 100+) quase sempre exigem atingir níveis avançados em até 30 dias ou fazer compras opcionais dentro do jogo."
-          ]
+            "Revisamos a ajuda e os termos oficiais em 15 de novembro de 2026, além de imagens guardadas anteriormente. Nossa captura do Android informa que não há ofertas; ela não demonstra o catálogo de outras contas. Não completamos um ciclo de ganhos nem testamos um saque de forma independente para esta avaliação.",
+            "Os termos identificam a Almedia GmbH como responsável pelo serviço principal e condicionam o resgate à elegibilidade e à verificação. Compare as regras com o histórico da sua conta: um total promocional ou uma nota isolada não determina seu resultado provável."
+          ],
+          "source": {
+            "title": "Freecash: termos e empresa responsável",
+            "url": "https://freecash.com/en/policies/terms"
+          }
         },
         {
-          "heading": "Por que contas são bloqueadas ou saldos ficam pendentes",
+          "heading": "Sem registro, não reivindicada e pendente são situações diferentes",
           "paragraphs": [
-            "O Freecash aplica regras antifraude rígidas: permite apenas uma conta por residência/IP e proíbe VPN, proxy ou emuladores. Além disso, o primeiro saque exige verificação de e-mail e identidade (selfie e documento) e costuma ter mínimo inicial de US$ 25.",
-            "Você pode criar sua conta pelo link oficial de convite abaixo ou copiar o código 3C7GKG e testar primeiro uma tarefa gratuita rápida para confirmar se o rastreamento do celular está funcionando."
+            "Uma ação sem registro ainda não aparece como concluída. Uma recompensa não reivindicada (Unclaimed) espera o botão Claim quando essa função se aplica. Pending indica uma verificação antes de entrar no saldo disponível. Um saque pendente depois do pedido de pagamento pertence a outra etapa.",
+            "Identifique a etapa antes de procurar suporte. Guarde nome da oferta, prova da meta e status, em vez de repetir a atividade ou comprar outra meta na tentativa de fazer a anterior aparecer."
+          ],
+          "source": {
+            "title": "Freecash: como reivindicar recompensas de ofertas",
+            "url": "https://freecash.com/academy/en/support/offer/miscellaneous/how-to-claim-offer-rewards"
+          },
+          "cta": {
+            "label": "Confira requisitos e status do saque no Freecash",
+            "url": "/pt/freecash-codigo-bonus-como-sacar-dinheiro/"
+          }
+        },
+        {
+          "heading": "Regras de conta e escolha sobre privacidade",
+          "paragraphs": [
+            "As regras oficiais limitam o serviço a uma conta por residência e proíbem VPN, incluindo iCloud Private Relay. Use dados verdadeiros e procure suporte para resolver uma conta existente em vez de criar outra.",
+            "O rastreamento utiliza dados de atividade e determinadas permissões. Leia cada solicitação antes de aceitar. Se os dados exigidos para uma oferta ou verificação de identidade não forem adequados para você, pule a atividade; a recompensa não obriga a aceitar uma permissão."
+          ],
+          "source": {
+            "title": "Freecash: restrições de conta",
+            "url": "https://freecash.com/academy/en/support/account/restrictions/how-can-i-ensure-that-my-freecash-account-will-not-be-banned"
+          }
+        },
+        {
+          "heading": "Quando continuar e quando parar",
+          "paragraphs": [
+            "Continue apenas se entender as condições, uma primeira ação for registrada e a possível recompensa justificar seu tempo. Pare de acrescentar esforço ou compras quando o rastreamento falhar, o prazo for inviável ou você não aceitar os requisitos de saque.",
+            "A ausência de crédito, sozinha, não identifica a causa. Peça a investigação do registro específico e guarde a resposta. Abrir um chamado não garante aprovação da recompensa."
           ]
         }
       ],
       "steps": [
-        "Crie apenas uma conta no Freecash usando sua localização real, sem VPN nem proxy.",
-        "Comece por uma oferta gratuita curta para confirmar que o rastreamento contabilizou o progresso.",
-        "Guarde prints das regras da oferta e dos níveis alcançados caso precise acionar o suporte.",
-        "Conclua a verificação de e-mail e documento antes de pedir o primeiro saque de US$ 25."
+        "Confira a empresa responsável e as regras atuais.",
+        "Identifique se o problema é rastreamento, reivindicação, revisão da recompensa ou saque.",
+        "Guarde as condições e as provas da meta exata.",
+        "Use o suporte adequado sem abrir outra conta.",
+        "Reavalie tempo e dados exigidos antes de continuar."
       ],
       "pros": [
-        "Conversão transparente (1.000 moedas = US$ 1,00) e saques rápidos após a primeira verificação.",
-        "Catálogo amplo de jogos com metas progressivas, pesquisas e ofertas."
+        "Empresa identificável e ajuda pública para problemas de conta e recompensas.",
+        "Os estados permitem investigar cada atraso separadamente."
       ],
       "cons": [
-        "O primeiro saque costuma exigir mínimo de US$ 25 e verificação de identidade.",
-        "Regras rígidas contra VPN e múltiplas contas no mesmo Wi-Fi podem suspender o perfil."
+        "Esta avaliação não verifica um saque de forma independente.",
+        "Rastreamento, verificação e condições podem impedir a liberação da recompensa."
       ],
       "faq": [
         {
-          "q": "O Freecash paga mesmo ou é golpe?",
-          "a": "O Freecash paga de verdade via PayPal, gift cards e cripto para contas verificadas que seguem as regras de rastreamento e conta única."
+          "q": "Ter uma conta real no Freecash garante pagamento?",
+          "a": "Não. A atividade precisa cumprir suas regras, ser creditada e passar pelos controles de resgate e verificação aplicáveis."
         },
         {
-          "q": "Por que algumas ofertas ficam com saldo pendente?",
-          "a": "Os anunciantes seguram recompensas maiores por alguns dias para validar o progresso no jogo e evitar fraudes."
+          "q": "Saldo pendente significa que perdi o dinheiro?",
+          "a": "Não necessariamente. Diferencie a recompensa em análise do saque em processamento: os estados e os caminhos de suporte são distintos."
         },
         {
-          "q": "Duas pessoas na mesma casa podem usar o Freecash?",
-          "a": "O Freecash restringe contas por residência e IP compartilhado; confira os termos antes de abrir outro cadastro no mesmo Wi-Fi."
+          "q": "Duas pessoas na mesma casa podem criar contas?",
+          "a": "As regras publicadas limitam o Freecash a uma conta por residência. Consulte o suporte antes de outra pessoa se cadastrar."
         }
       ],
-      "verdict": "O Freecash é confiável se você usá-lo para testar jogos e apps sem VPN, conferindo as metas antes de começar e validando o rastreamento logo no início.",
-      "imageAlt": "Painel de ofertas e recompensas do Freecash no Android",
-      "caption": "O Freecash reúne metas de jogos mobile, ofertas de parceiros e pesquisas em um só painel."
+      "verdict": "O Freecash é um serviço de recompensas identificável; a decisão útil é se uma oferta concreta compensa suas condições. Não apresentamos ganhos garantidos nem capturas como provas independentes de pagamento.",
+      "imageAlt": "Painel do link de indicação do Freecash com identificador 3C7GKG",
+      "caption": "Esta captura guardada mostra um link de indicação, não um comprovante de saque.",
+      "modifiedDate": "2026-11-15"
     },
     {
       "id": "freecash-bonus-cashout",
       "app": "freecash",
       "category": "rewards",
       "slug": "freecash-codigo-bonus-como-sacar-dinheiro",
-      "title": "Código de Bônus Freecash e Como Sacar Dinheiro (2026): PayPal, Cripto e Taxas",
-      "description": "Como usar o código 3C7GKG no Freecash, achar códigos promocionais oficiais, cumprir o mínimo de US$ 25 no primeiro saque e evitar taxas no PayPal.",
-      "intro": "Entender como funcionam os códigos de bônus e as taxas de saque no Freecash ajuda você a perder menos saldo em tarifas. Embora o primeiro saque peça um valor maior e checagem de identidade, os saques seguintes liberam mínimos menores e envio rápido.",
+      "title": "Código Freecash e Como Sacar (2026): Mínimo, Taxas do PayPal e Status",
+      "description": "Diferença entre convite e bônus, mínimo regional do primeiro saque, percentual e taxa fixa do PayPal, e como acompanhar o pedido de pagamento.",
+      "intro": "Um identificador de convite, um bônus promocional e o saldo disponível para saque são coisas diferentes. Este guia explica cada etapa e corrige uma simplificação comum: sacar pelo PayPal pode custar mais que o percentual de 5%.",
       "sections": [
         {
-          "heading": "Como usar código de convite e códigos de bônus",
+          "heading": "Código de convite, bônus ou sorteio?",
           "paragraphs": [
-            "Ao criar a conta, você pode entrar por um link oficial de convite ou usar o identificador 3C7GKG. Além disso, o Freecash divulga códigos promocionais temporários em sorteios e eventos nos canais oficiais (X/Twitter, Instagram, YouTube e Discord), resgatáveis no painel enquanto houver limite disponível.",
-            "Ignore sites de terceiros prometendo 'gerador de moedas': códigos legítimos só vêm dos canais oficiais do Freecash ou de links de convite verificados."
-          ]
-        },
-        {
-          "heading": "Primeiro saque de US$ 25 vs. próximos saques e taxas",
-          "paragraphs": [
-            "A central de ajuda do Freecash informa um mínimo inicial de US$ 25 para o primeiro saque (variando conforme o país), além de verificação por e-mail e documento com selfie. Depois desse primeiro saque aprovado, a trava de US$ 25 cai e vários métodos permitem retirar a partir de cerca de US$ 5.",
-            "PayPal e Venmo costumam cobrar taxa de 5%, enquanto cartões-presente (Amazon, Google Play, Apple, Steam) e várias criptomoedas (Litecoin, Bitcoin, Ethereum) geralmente não têm taxa de plataforma. Transferências bancárias ou Revolut levam de 3 a 5 dias úteis."
+            "3C7GKG é o identificador do nosso convite de afiliado. Ele não promete um bônus fixo. O Freecash documenta separadamente códigos de bônus e de loteria: estes últimos entregam participações em sorteio, não um valor garantido em dinheiro.",
+            "Use a opção e a promoção exibidas na sua conta. Um código pode expirar, esgotar ou ser restrito a determinados perfis. Não pague terceiros para desbloquear códigos nem compartilhe seu acesso com um suposto gerador."
           ],
           "source": {
-            "title": "Freecash: requisitos para o primeiro saque",
+            "title": "Freecash: tipos e disponibilidade de códigos",
+            "url": "https://freecash.com/academy/en/support/account/rewards/where-freecash-codes"
+          }
+        },
+        {
+          "heading": "Confira o requisito inicial da sua região",
+          "paragraphs": [
+            "A ajuda atual informa US$25 como mínimo do primeiro saque, com diferenças regionais, além de verificação de e-mail e identidade. A tela Cashout mostra o valor exato da sua conta. Depois, vale o mínimo do método escolhido.",
+            "Confira isso antes de juntar saldo. Envie a verificação apenas pelo processo oficial e não use uma captura de outro país como confirmação da sua elegibilidade."
+          ],
+          "source": {
+            "title": "Freecash: requisitos do primeiro saque",
             "url": "https://freecash.com/academy/en/support/withdrawal/issues/first-cashout-requirements"
+          }
+        },
+        {
+          "heading": "PayPal: 5% e taxa fixa em valores pequenos",
+          "paragraphs": [
+            "O guia do PayPal informa 5%, mais US$1 nas opções de US$5, US$10 e US$20. As opções maiores não acrescentam esse dólar. Confira o custo exato na sua tela antes de confirmar.",
+            "Exemplo: se essas regras se aplicarem à opção de US$10, as taxas somam US$1,50 e restam US$8,50 depois desses custos do Freecash, antes de eventual conversão adicional. É um exemplo de cálculo, não um pagamento que recebemos. Compare o valor final utilizável."
+          ],
+          "source": {
+            "title": "Freecash: taxas atuais de saque pelo PayPal",
+            "url": "https://freecash.com/academy/en/support/withdrawal/cash/how-withdraw-to-paypal"
+          }
+        },
+        {
+          "heading": "Acompanhe o pedido e o e-mail de resgate",
+          "paragraphs": [
+            "Depois de pedir a retirada, consulte My Withdrawals. A ajuda explica que o PayPal normalmente usa a Tremendous; siga o e-mail de resgate quando o pedido for enviado. Confira a caixa do endereço informado e a pasta de spam.",
+            "Uma análise de segurança e uma transferência bancária têm esperas diferentes. Consulte o prazo do método escolhido e procure suporte se aparecer Rejected ou a janela informada for ultrapassada. Não repita o pedido apenas porque o e-mail ainda não chegou."
+          ],
+          "source": {
+            "title": "Freecash: análise e entrega de saques",
+            "url": "https://freecash.com/academy/en/support/withdrawal/issues/why-withdrawal-pending"
           }
         }
       ],
       "steps": [
-        "Acesse o Freecash pelo botão oficial desta página ou copie o código 3C7GKG no cadastro.",
-        "Acompanhe os perfis oficiais do Freecash se quiser aproveitar códigos temporários da comunidade.",
-        "Junte saldo acima do mínimo inicial de US$ 25 e conclua a verificação de identidade.",
-        "Compare as taxas antes de sacar: prefira gift cards ou cripto de taxa baixa se quiser fugir dos 5% do PayPal."
+        "Leia as condições do código e não conte um bônus sem crédito como saldo disponível.",
+        "Confira mínimo regional e verificação na tela Cashout.",
+        "Compare valor, taxa, moeda e método antes de confirmar.",
+        "Use o e-mail correto e guarde a referência da transação.",
+        "Acompanhe My Withdrawals e o e-mail de resgate aplicável."
       ],
       "pros": [
-        "Várias formas de saque: PayPal, gift cards sem taxa, criptomoedas e transferência bancária.",
-        "Mínimos de saque bem menores após completar a primeira retirada verificada."
+        "A ajuda explica a verificação e o processo para receber o pagamento.",
+        "A confirmação permite conferir o custo final antes de enviar o pedido."
       ],
       "cons": [
-        "Saques via PayPal têm taxa padrão de 5%.",
-        "O primeiro saque exige atingir US$ 25 e passar pela verificação de identidade."
+        "Saques pequenos no PayPal podem acrescentar taxa fixa aos 5%.",
+        "Mínimos, disponibilidade e processamento dependem da região e do método."
       ],
       "faq": [
         {
-          "q": "Qual é o código de convite do Freecash no apps308?",
-          "a": "O identificador verificado é 3C7GKG, já vinculado ao botão oficial do Freecash nesta página."
+          "q": "O primeiro mínimo é sempre US$25?",
+          "a": "A ajuda informa US$25, mas admite diferenças regionais. Confira o valor na sua tela Cashout."
         },
         {
-          "q": "Qual método de saque do Freecash não cobra taxa?",
-          "a": "Cartões-presente (Amazon, Google Play, Steam) e diversas opções de criptomoedas costumam não cobrar taxa da plataforma, ao contrário dos 5% do PayPal."
+          "q": "O PayPal cobra só 5%?",
+          "a": "O guia atual acrescenta US$1 nas opções de US$5, US$10 e US$20. Confirme a tarifa aplicável à sua conta."
         },
         {
-          "q": "Quanto tempo demora o pagamento do Freecash?",
-          "a": "A checagem de segurança leva até 30 minutos para PayPal, cripto e gift cards; transferências bancárias levam de 3 a 5 dias úteis."
+          "q": "E-mail de confirmação já é o pagamento?",
+          "a": "Nem sempre. Algumas mensagens confirmam o pedido; o e-mail de resgate da Tremendous pode exigir outra ação. Confira status e instruções na sua conta."
         }
       ],
-      "verdict": "Cadastre-se com o código 3C7GKG, vença uma vez o mínimo de US$ 25 com verificação e depois use gift cards ou cripto para sacar valores menores sem pagar os 5% do PayPal.",
-      "imageAlt": "Opções de saque e recompensas no Freecash",
-      "caption": "O Freecash permite sacar por PayPal, gift cards, criptomoedas e banco após cumprir as regras iniciais."
+      "verdict": "Confira o mínimo regional e o valor líquido antes de pedir o pagamento. Não escolha uma recompensa menos útil só para evitar taxa nem presuma que o convite garante um bônus.",
+      "imageAlt": "Painel do link de indicação do Freecash com identificador 3C7GKG",
+      "caption": "Esta captura guardada mostra um link de indicação, não um comprovante de saque.",
+      "modifiedDate": "2026-11-15"
     },
     {
       "id": "freecash-games-offers",
       "app": "freecash",
       "category": "rewards",
       "slug": "freecash-jogos-e-ofertas-como-ganhar-mais",
-      "title": "Melhores Jogos e Ofertas no Freecash (2026): Metas, Rastreamento e Dicas",
-      "description": "Como escolher jogos que pagam bem no Freecash em 2026, evitar falhas de rastreamento no Android e iOS e não gastar mais do que a recompensa.",
-      "intro": "Os jogos de celular concentram as maiores recompensas do Freecash, com ofertas que vão de alguns dólares a centenas. Porém, o valor anunciado é dividido por metas com prazo fechado, e um erro simples de rastreamento impede o crédito dos níveis.",
+      "title": "Jogos e Ofertas no Freecash (2026): Como Escolher e Acompanhar Metas",
+      "description": "Compare jogos do Freecash por metas alcançáveis, prazos e gastos. Confira o rastreamento e documente créditos ausentes sem perseguir o total anunciado.",
+      "intro": "A maior recompensa anunciada não identifica o melhor jogo do Freecash para você. O catálogo muda e o total pode juntar metas difíceis ou pagas. Este é um método para avaliar as ofertas da sua conta, não um ranking de jogos que testamos.",
       "sections": [
         {
-          "heading": "Como funcionam as metas por nível nos jogos",
+          "heading": "Compare metas alcançáveis, não o máximo",
           "paragraphs": [
-            "Cada oferta divide o prêmio total em etapas — como instalar o app, chegar ao nível 15 em 7 dias ou atingir o nível 50 em 30 dias. As primeiras metas pagam pouco, mas confirmam o rastreamento, enquanto os valores maiores ficam nos níveis finais ou exigem compras opcionais.",
-            "Antes de baixar, compare as metas gratuitas viáveis com o tempo exigido. Em geral vale mais cumprir metas intermediárias e partir para outro jogo do que insistir em um nível final quase impossível."
+            "Anote cada meta separadamente: ação exigida, prazo, recompensa, regra de novo usuário e compra necessária. Confira se o prazo começa ao abrir a oferta, instalar o jogo ou concluir outra etapa; siga a descrição daquela oferta.",
+            "Separe as etapas que espera cumprir sem gastar das que exigem compra ou progresso final incerto. Se as etapas gratuitas não interessam, um total alto não é um bom motivo para instalar."
           ]
         },
         {
-          "heading": "Como evitar falhas de rastreamento no Android e iOS",
+          "heading": "Um exemplo simples para comparar duas ofertas",
           "paragraphs": [
-            "O rastreamento só funciona na primeira instalação: nunca escolha um jogo que você já baixou antes no mesmo aparelho ou conta da Google Play/App Store. Desative bloqueadores de anúncios, DNS privado e VPN antes de clicar na oferta do Freecash e abra o jogo logo após instalar.",
-            "Para ver qual plataforma paga mais pelo mesmo jogo antes de baixar, confira também nosso comparativo Swagbucks vs. Freecash."
+            "Exemplo hipotético: a oferta A anuncia US$100, mas apenas US$2 das metas cabem no seu tempo disponível. A oferta B anuncia US$8, com US$4 de metas que você pretende tentar no mesmo período. Compare os US$2 e US$4 alcançáveis, não os US$100 e US$8 do anúncio. São valores inventados para explicar a conta, não ofertas atuais.",
+            "Desconte compras necessárias e considere a incerteza. Uma meta que depende de gasto é um custo que você pode perder se a atividade não for validada. Defina limites antes de jogar, em vez de aumentá-los para recuperar tempo já gasto."
+          ]
+        },
+        {
+          "heading": "Confira o rastreamento antes de investir mais tempo",
+          "paragraphs": [
+            "A lista oficial orienta instalar pelo caminho da oferta, manter o mesmo aparelho, evitar jogos já instalados e conferir as permissões de rastreamento. VPN, bloqueadores e DNS personalizado podem interromper o registro.",
+            "Leia as permissões primeiro. Se não quiser permitir o rastreamento, pule a oferta. Não remova proteções sem entender a mudança nem presuma que alterar uma configuração depois da conclusão recriará eventos perdidos."
           ],
           "source": {
-            "title": "Freecash: boas práticas de rastreamento de ofertas",
-            "url": "https://freecash.com/academy/en/support/offer/tracking/how-to-ensure-offer-tracks"
+            "title": "Freecash: conferências de rastreamento",
+            "url": "https://freecash.com/academy/en/support/offer/tracking/avoid-these-mistakes-while-tracking"
+          }
+        },
+        {
+          "heading": "O que guardar quando uma instalação ou meta não aparece",
+          "paragraphs": [
+            "Guarde condições originais, nome da oferta, horário de início, prazo, identificador de jogador e capturas da meta concluída. Consulte My Offers e a ferramenta de solução de problemas antes de gastar mais ou reinstalar.",
+            "Para uma primeira instalação que não aparece, o guia oficial pede esperar 48 horas antes de abrir um chamado manual com as provas. Siga o prazo ou processo específico da sua tarefa. A investigação não garante crédito."
+          ],
+          "source": {
+            "title": "Freecash: problemas da primeira instalação",
+            "url": "https://freecash.com/academy/en/support/offer/tracking/troubleshoot-first-install-tracking"
           }
         }
       ],
       "steps": [
-        "Desligue VPN, bloqueadores de anúncio e DNS privado no celular antes de abrir o Freecash.",
-        "Escolha um jogo inédito no seu aparelho e leia todos os prazos de cada meta.",
-        "Toque na oferta dentro do Freecash, baixe pela loja oficial e jogue por 5 a 10 minutos na hora.",
-        "Confirme se a instalação ou a primeira meta foi creditada antes de investir dias nos níveis seguintes."
+        "Anote ação, prazo e recompensa de cada meta.",
+        "Compare somente as etapas que tentaria dentro dos seus limites.",
+        "Confira a elegibilidade de novo usuário e as permissões antes de instalar.",
+        "Comece pela oferta e confirme o registro de uma ação inicial.",
+        "Guarde provas e use o suporte indicado se o crédito não aparecer."
       ],
       "pros": [
-        "Recompensas pagas por etapa conforme você avança nos níveis.",
-        "Prazos e metas detalhados antes mesmo de baixar o jogo."
+        "Comparar metas individuais deixa o compromisso real mais claro.",
+        "Guardar provas desde o início facilita explicar um crédito ausente."
       ],
       "cons": [
-        "Jogos já instalados anteriormente não contabilizam.",
-        "Metas finais podem exigir horas excessivas ou compras dentro do app."
+        "O catálogo muda e a oferta de outra pessoa pode não estar disponível.",
+        "Metas finais, compras e falhas de rastreamento podem tornar o total anunciado inviável."
       ],
       "faq": [
         {
-          "q": "Por que minha oferta de jogo no Freecash não contabilizou?",
-          "a": "Os motivos mais comuns são instalação prévia do jogo na mesma conta, uso de VPN ou bloqueador de anúncios, ou recusa de rastreamento no iOS."
+          "q": "Qual jogo do Freecash paga mais?",
+          "a": "O total anunciado não permite uma resposta universal. Compare metas elegíveis, prazo, gastos e tempo nas ofertas da sua conta."
         },
         {
-          "q": "Vale a pena gastar dinheiro dentro do jogo para bater uma meta?",
-          "a": "Só quando houver uma meta específica de reembolso que pague claramente mais do que o pacote custa; caso contrário, foque nas metas gratuitas."
+          "q": "Vale comprar no jogo para conseguir uma recompensa?",
+          "a": "Só considere uma compra depois de entender as regras e aceitar que pode não haver recompensa. Uma meta anunciada não garante reembolso."
         },
         {
-          "q": "Qual o prazo comum das ofertas de jogos?",
-          "a": "A maioria das ofertas em destaque define janela de 14 a 30 dias a partir da instalação."
+          "q": "Reinstalar o jogo me torna um novo usuário?",
+          "a": "Não. O guia alerta que jogos já instalados não cumprem a condição de nova instalação. Reinstalar não apaga esse histórico."
         }
       ],
-      "verdict": "Foque em jogos inéditos na sua conta com metas intermediárias alcançáveis, valide o primeiro registro de rastreamento cedo e pule níveis que exijam gastar.",
-      "imageAlt": "Ofertas de jogos mobile e metas de recompensas no Freecash",
-      "caption": "As ofertas de jogos no Freecash dividem os ganhos em metas por nível que dependem de rastreamento limpo."
+      "verdict": "Escolha pelas metas alcançáveis e pelos seus limites. Confira o primeiro registro cedo e guarde as condições originais antes de dedicar mais tempo ou dinheiro.",
+      "imageAlt": "Painel do link de indicação do Freecash com identificador 3C7GKG",
+      "caption": "Esta captura guardada mostra um link de indicação, não um comprovante de saque.",
+      "modifiedDate": "2026-11-15"
     }  ]
 };
 export const apps:Record<string,{name:string;url:string;os:string;sources:{title:string;url:string}[]}>= {
@@ -8592,4 +9303,9 @@ export const apps:Record<string,{name:string;url:string;os:string;sources:{title
     ]
   }
 };
-export const sourcesFor=(article:Article)=>article.id==='compare'?[...apps.opinion.sources.slice(0,1),...apps.microsoft.sources.slice(0,1),...apps.freecash.sources.slice(0,1),...apps.swagbucks.sources.slice(0,1)]:article.id==='nordvpn-vs-surfshark'?[...apps.nordvpn.sources,...apps.surfshark.sources]:article.id==='swagbucks-vs-freecash'?[...apps.swagbucks.sources.slice(0,3),...apps.freecash.sources.slice(0,2)]:article.id==='pawns-vs-freecash'?[...apps.pawns.sources.slice(0,3),...apps.freecash.sources.slice(0,2)]:article.id==='primeopinion-vs-swagbucks'?[...apps.primeopinion.sources.slice(0,3),...apps.swagbucks.sources.slice(0,2)]:article.id==='pinedrama-vs-dramastack'?[...apps.pinedrama.sources,...apps.dramastack.sources.slice(0,2)]:article.id==='cashdrama-proofs'?[...apps.cashdrama.sources,...apps.dramastack.sources.slice(0,2)]:apps[article.app].sources;
+const defaultSourcesFor=(article:Article)=>article.id==='compare'?[...apps.opinion.sources.slice(0,1),...apps.microsoft.sources.slice(0,1),...apps.freecash.sources.slice(0,1),...apps.swagbucks.sources.slice(0,1)]:article.id==='nordvpn-vs-surfshark'?[...apps.nordvpn.sources,...apps.surfshark.sources]:article.id==='swagbucks-vs-freecash'?[...apps.swagbucks.sources.slice(0,3),...apps.freecash.sources.slice(0,2)]:article.id==='pawns-vs-freecash'?[...apps.pawns.sources.slice(0,3),...apps.freecash.sources.slice(0,2)]:article.id==='primeopinion-vs-swagbucks'?[...apps.primeopinion.sources.slice(0,3),...apps.swagbucks.sources.slice(0,2)]:article.id==='pinedrama-vs-dramastack'?[...apps.pinedrama.sources,...apps.dramastack.sources.slice(0,2)]:article.id==='cashdrama-proofs'?[...apps.cashdrama.sources,...apps.dramastack.sources.slice(0,2)]:apps[article.app].sources;
+
+export const sourcesFor=(article:Article)=>{
+ const all=[...defaultSourcesFor(article),...article.sections.flatMap(section=>section.source?[section.source]:[])];
+ return all.filter((source,index)=>all.findIndex(item=>item.url===source.url)===index);
+};

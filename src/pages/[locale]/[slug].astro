@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';import Icon from '../../components/Icon.astro';import AppCover from '../../components/AppCover.astro';import AffiliateBox from '../../components/AffiliateBox.astro';import Card from '../../components/Card.astro';import {Image} from 'astro:assets';import {locales,text,href,category,type Locale} from '../../data/i18n';import {articles,apps,sourcesFor,type Article} from '../../data/articles';
+import {articleDates} from '../../data/articleDates';
 export function getStaticPaths(){return locales.flatMap(locale=>articles[locale].map(article=>({params:{locale,slug:article.slug},props:{article}})));}
 const locale=Astro.params.locale as Locale;const {article}=Astro.props as {article:Article};const t=text[locale];
 const alternates=Object.fromEntries(locales.map(l=>[l,href(l,articles[l].find(a=>a.id===article.id)!.slug)]));
@@ -10,8 +11,7 @@ const screenshot=imageFiles[`../../assets/screenshots/${locale}-${imageKey}.webp
 const extraScreenshot=article.secondImage?imageFiles[`../../assets/screenshots/${locale}-${article.secondImage.key}.webp`]?.default:article.app==='freecash'?imageFiles[`../../assets/screenshots/${locale}-freecash-main.webp`]?.default:article.app==='dramastack'?imageFiles[`../../assets/screenshots/${locale}-dramastack-payout.webp`]?.default:null;
 const extraCaption={en:'This Android screen has no offers available. Offer availability depends on your device and region.',es:'Esta pantalla de Android no tiene ofertas disponibles. Las ofertas dependen del dispositivo y la región.',pt:'Nesta tela do Android, não há ofertas disponíveis. A lista varia conforme o aparelho e a região.'};
 const payoutCaption={en:'The app displays a R$300 cashout threshold and higher reward levels.',es:'La app muestra un mínimo de retiro de R$300 y niveles superiores.',pt:'O app exibe saque a partir de R$ 300 e níveis de recompensa mais altos.'};
-const publishedDate=(article.app==='cashdrama'||article.app==='dramabox'||['nordvpn-vs-surfshark','freecash-reviews','freecash-bonus-cashout','freecash-games-offers'].includes(article.id))?'2026-11-14':article.app==='pinedrama'?'2026-11-13':['nordvpn','surfshark','kaspersky'].includes(article.app)?'2026-11-12':article.app==='primeopinion'?'2026-11-08':article.app==='pawns'?'2026-11-08':article.app==='swagbucks'?'2026-11-07':'2026-11-05';
-const modifiedDate=publishedDate>'2026-11-11'?publishedDate:'2026-11-11';
+const {publishedDate,modifiedDate}=articleDates(article);
 const schema:any[]=[
   {'@context':'https://schema.org','@type':'Article',headline:article.title,description:article.description,inLanguage:locale,datePublished:publishedDate,dateModified:modifiedDate,mainEntityOfPage:url,author:{'@type':'Organization',name:'apps308',url:`https://www.apps308.com${href(locale,'about')}`},publisher:{'@type':'Organization',name:'apps308',url:'https://www.apps308.com'},...(screenshot?{image:new URL(screenshot.src,'https://www.apps308.com').href}:{}),citation:source.map(s=>s.url)},
   {'@context':'https://schema.org','@type':'FAQPage',inLanguage:locale,mainEntity:article.faq.map(f=>({'@type':'Question',name:f.q,acceptedAnswer:{'@type':'Answer',text:f.a}}))},
@@ -22,7 +22,7 @@ const schema:any[]=[
   ]}
 ];
 if(article.app!=='compare')schema.push({'@context':'https://schema.org','@type':'SoftwareApplication',name:apps[article.app].name,url:apps[article.app].url,operatingSystem:apps[article.app].os,applicationCategory:article.app==='lens'?'UtilitiesApplication':(article.app==='dramastack'||article.app==='pinedrama'||article.app==='cashdrama'||article.app==='dramabox')?'EntertainmentApplication':'LifestyleApplication',...(article.app==='lens'?{offers:{'@type':'Offer',price:'0',priceCurrency:'USD'}}:{})});
-const date=new Intl.DateTimeFormat(locale,{dateStyle:'medium',timeZone:'UTC'}).format(new Date(`${publishedDate}T12:00:00Z`));
+const date=new Intl.DateTimeFormat(locale,{dateStyle:'medium',timeZone:'UTC'}).format(new Date(`${modifiedDate}T12:00:00Z`));
 const readTime=Math.max(2,Math.ceil([article.intro,...article.sections.flatMap(s=>s.paragraphs),...article.steps,...article.faq.map(f=>f.a)].join(' ').split(/\s+/).length/180));
 const isCluster=['freecash','swagbucks','pawns','primeopinion','pinedrama','cashdrama','dramabox'].includes(article.app);
 const clusterSeries=articles[locale].filter(a=>a.app===article.app&&a.id!==article.id);
@@ -32,7 +32,7 @@ const relatedArticles=isCluster
   :[...articles[locale].filter(a=>['primeopinion','pawns','swagbucks'].includes(a.id)),...articles[locale].filter(a=>a.id!==article.id).slice(0,2)];
 ---
 <Layout locale={locale} title={`${article.title} | apps308`} description={article.description} alternates={alternates} schema={schema}>
-<div class="wrap"><div class="breadcrumb"><a href={href(locale)}>{t.back}</a><Icon name="chevron" size={10}/><span>{category(locale,article.category)}</span></div><header class="article-header"><span class="eyebrow">{category(locale,article.category)}</span><h1>{article.title}</h1><p class="article-description">{article.description}</p><div class="article-meta"><span>{t.author}</span><span>{t.updated}: <time datetime={publishedDate}>{date}</time></span><span><Icon name="clock" size={13}/>{readTime} {t.minutes}</span></div></header>
+<div class="wrap"><div class="breadcrumb"><a href={href(locale)}>{t.back}</a><Icon name="chevron" size={10}/><span>{category(locale,article.category)}</span></div><header class="article-header"><span class="eyebrow">{category(locale,article.category)}</span><h1>{article.title}</h1><p class="article-description">{article.description}</p><div class="article-meta"><a href={href(locale,'about')}>{t.author}</a><span>{t.updated}: <time datetime={modifiedDate}>{date}</time></span><span><Icon name="clock" size={13}/>{readTime} {t.minutes}</span></div></header>
 <div class="article-layout"><article class="article-body"><div class="article-art"><AppCover app={article.app} variant={article.id} locale={locale} large/></div><p class="intro">{article.intro}</p>
 {article.sections.map((section,i)=><section id={`section-${i}`}><h2>{section.heading}</h2>{section.paragraphs.map(p=><p>{p}</p>)}{section.cta&&<p class="section-cta"><a href={section.cta.url} rel={section.cta.sponsored?'sponsored noopener':'noopener'}>{section.cta.label}<Icon name="arrow" size={13}/></a></p>}{section.source&&<p class="section-source"><a href={section.source.url} rel="noopener">{section.source.title}<Icon name="arrow" size={12}/></a></p>}
 {i===0&&['swagbucks','pawns','primeopinion','pinedrama','cashdrama','dramabox'].includes(article.app)&&screenshot&&<figure class:list={['article-figure',{'figure-wide':article.imageWide!==false}]}><Image src={screenshot} alt={article.imageAlt} width={article.imageWide===false?320:640} loading="lazy" format="webp"/><figcaption>{article.caption}</figcaption></figure>}

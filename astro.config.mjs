@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import {articles} from './src/data/articles.ts';
+import {articleDates} from './src/data/articleDates.ts';
 const site='https://www.apps308.com';
 const languages=['en','es','pt'];
 export default defineConfig({
@@ -20,7 +21,7 @@ export default defineConfig({
    const article=articles[locale].find(a=>a.slug===slug);
    const links=languages.map(lang=>({lang,url:`${site}/${lang}/${article?articles[lang].find(a=>a.id===article.id).slug+'/':slug?slug+'/':''}`}));
    links.push({lang:'x-default',url:links.find(l=>l.lang==='en').url});
-   return {...item,links};
+   return {...item,...(article?{lastmod:articleDates(article).modifiedDate}:{}),links};
   }
  })],
  build:{inlineStylesheets:'auto'},devToolbar:{enabled:false}
