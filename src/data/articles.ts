@@ -279,17 +279,68 @@ export const articles:Record<Locale,Article[]>={
       "description": "Does DramaStack pay real money or is it a scam? We tested DramaStack's video rewards, R$300 withdrawal rules, Play Store listing and terms of use.",
       "intro": "DramaStack is primarily a short-drama streaming app, but its Benefits tab also advertises tasks, a cash balance and withdrawals. The screen looks like a way to earn money. The app's own rules describe the rewards differently, so read those terms before spending time on the tasks.",
       "sections": [
-        {"heading":"A cashout screen with a high threshold","paragraphs":["On the Android version we opened, Benefits showed a zero balance, daily tasks and a separate cashout page. That page displayed withdrawal levels beginning at R$1,510 and said the official cash withdrawal starts at R$300. A congratulatory message showed another user's name and a successful R$300 withdrawal, but the screen did not provide evidence that this payment was independently verified.","The numbers and “Sacar” button are claims inside the interface. We did not complete tasks, reach the minimum, or submit a withdrawal, so we cannot confirm that a user receives money."]},
-        {"heading":"What the app's own rules say","paragraphs":["The Rules panel in Benefits says daily check-in bonuses can be used to unlock episodes; when a bonus is insufficient, coins are used to complete the payment. Separately, DramaStack's privacy policy says unspent virtual coins cannot be converted into any currency. Those statements describe in-app viewing value, not cash you can freely withdraw.","The Google Play listing presents DramaStack as an ad-supported entertainment app and mentions optional ad rewards. It does not explain a cash withdrawal program or its terms. Taken together, the marketing-style cashout screen and the written rules do not establish a reliable way to earn cash."],"source":{"title":"DramaStack: privacy policy","url":"https://www.dramastack.video/privacypolicy.html"}},
-        {"heading":"Does DramaStack pay?","paragraphs":["We found a cashout page with a R$300 threshold, but did not test a withdrawal. The written policy says virtual coins cannot be converted into money, and the in-app rules tie bonuses to unlocking episodes. Based on what we could verify, do not count the displayed balance or task values as income.","If you install the app for its short dramas, treat the rewards as app features with conditions. Do not spend money or invest hours based on the cashout screen alone; first look for current, written withdrawal terms that explain eligibility, method and proof of payment."],"source":{"title":"DramaStack on Google Play","url":"https://play.google.com/store/apps/details?id=com.reeltime.dramastack&hl=en"}}
+        {
+          "heading": "A cashout screen with a high threshold",
+          "paragraphs": [
+            "On the Android version we opened, Benefits showed a zero balance, daily tasks and a separate cashout page. That page displayed withdrawal levels beginning at R$1,510 and said the official cash withdrawal starts at R$300. A congratulatory message showed another user's name and a successful R$300 withdrawal, but the screen did not provide evidence that this payment was independently verified.",
+            "The numbers and “Sacar” button are claims inside the interface. We did not complete tasks, reach the minimum, or submit a withdrawal, so we cannot confirm that a user receives money."
+          ]
+        },
+        {
+          "heading": "What the app's own rules say",
+          "paragraphs": [
+            "The Rules panel in Benefits says daily check-in bonuses can be used to unlock episodes; when a bonus is insufficient, coins are used to complete the payment. Separately, DramaStack's privacy policy says unspent virtual coins cannot be converted into any currency. Those statements describe in-app viewing value, not cash you can freely withdraw.",
+            "The Google Play listing presents DramaStack as an ad-supported entertainment app and mentions optional ad rewards. It does not explain a cash withdrawal program or its terms. Taken together, the marketing-style cashout screen and the written rules do not establish a reliable way to earn cash."
+          ],
+          "source": {
+            "title": "DramaStack: privacy policy",
+            "url": "https://www.dramastack.video/privacypolicy.html"
+          }
+        },
+        {
+          "heading": "Does DramaStack pay?",
+          "paragraphs": [
+            "We found a cashout page with a R$300 threshold, but did not test a withdrawal. The written policy says virtual coins cannot be converted into money, and the in-app rules tie bonuses to unlocking episodes. Based on what we could verify, do not count the displayed balance or task values as income.",
+            "If you install the app for its short dramas, treat the rewards as app features with conditions. Do not spend money or invest hours based on the cashout screen alone; first look for current, written withdrawal terms that explain eligibility, method and proof of payment."
+          ],
+          "source": {
+            "title": "DramaStack on Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.reeltime.dramastack&hl=en"
+          }
+        }
       ],
-      "steps":["Check that the developer in Google Play is HK Reel Time Technology Limited.","Read the Rules panel and the current user agreement and privacy policy.","Separate episode bonuses and virtual coins from money that can be withdrawn.","Before doing tasks, check whether the app provides written withdrawal eligibility and a payment method.","Do not treat an on-screen success message or balance as proof of a completed payment."],
-      "pros":["Short dramas and episodes are available in the app.","The Benefits tab shows its task and bonus conditions."],
-      "cons":["The app's rules describe bonuses and coins as value for unlocking episodes.","The cashout screen shows a high threshold, but we did not verify a payout."],
-      "faq":[{"q":"Does DramaStack pay real money?","a":"We did not confirm a real-money payment. Its withdrawal screen shows a R$300 threshold, while its privacy policy says virtual coins cannot be converted into currency."},{"q":"Can I withdraw the coins I earn?","a":"The privacy policy says unspent virtual coins cannot be converted into any currency. The in-app rules say bonuses are used to unlock episodes."},{"q":"Did you test a withdrawal?","a":"No. The account had no balance, and we did not complete tasks, buy anything or submit a withdrawal."}],
-      "verdict":"We would not recommend DramaStack as an income app. Its cashout screen makes a strong claim, but the written rules describe in-app episode rewards and the policy says virtual coins are not convertible to cash. We could not verify a payment.",
-      "imageAlt":"DramaStack Benefits tab in Portuguese, with daily tasks and app rewards",
-      "caption":"The Benefits tab lists daily tasks and bonuses alongside a zero balance."
+      "steps": [
+        "Check that the developer in Google Play is HK Reel Time Technology Limited.",
+        "Read the Rules panel and the current user agreement and privacy policy.",
+        "Separate episode bonuses and virtual coins from money that can be withdrawn.",
+        "Before doing tasks, check whether the app provides written withdrawal eligibility and a payment method.",
+        "Do not treat an on-screen success message or balance as proof of a completed payment."
+      ],
+      "pros": [
+        "Short dramas and episodes are available in the app.",
+        "The Benefits tab shows its task and bonus conditions."
+      ],
+      "cons": [
+        "The app's rules describe bonuses and coins as value for unlocking episodes.",
+        "The cashout screen shows a high threshold, but we did not verify a payout."
+      ],
+      "faq": [
+        {
+          "q": "Does DramaStack pay real money?",
+          "a": "We did not confirm a real-money payment. Its withdrawal screen shows a R$300 threshold, while its privacy policy says virtual coins cannot be converted into currency."
+        },
+        {
+          "q": "Can I withdraw the coins I earn?",
+          "a": "The privacy policy says unspent virtual coins cannot be converted into any currency. The in-app rules say bonuses are used to unlock episodes."
+        },
+        {
+          "q": "Did you test a withdrawal?",
+          "a": "No. The account had no balance, and we did not complete tasks, buy anything or submit a withdrawal."
+        }
+      ],
+      "verdict": "We would not recommend DramaStack as an income app. Its cashout screen makes a strong claim, but the written rules describe in-app episode rewards and the policy says virtual coins are not convertible to cash. We could not verify a payment.",
+      "imageAlt": "DramaStack Benefits tab in Portuguese, with daily tasks and app rewards",
+      "caption": "The Benefits tab lists daily tasks and bonuses alongside a zero balance."
     },
     {
       "id": "compare",
@@ -814,8 +865,7 @@ export const articles:Record<Locale,Article[]>={
         "caption": "Unlike pure offerwall sites, Swagbucks includes a retail cashback portal paying up to 15 SB per $1 at partner stores.",
         "wide": true
       }
-    }
-,
+    },
     {
       "id": "pawns",
       "app": "pawns",
@@ -3870,6 +3920,855 @@ export const articles:Record<Locale,Article[]>={
           "afterSectionIndex": 1
         }
       ]
+    },
+    {
+      "id": "tiktoklite-convite",
+      "app": "tiktoklite",
+      "category": "rewards",
+      "slug": "tiktok-lite-invite-code",
+      "title": "TikTok Lite Invite Code 2026 (DL70959891): How to Enter & Claim Rewards",
+      "description": "Enter TikTok Lite invite code DL70959891 (#DL70959891), download via the official invite link, and see eligibility rules and fixes if the referral box is missing.",
+      "intro": "If you are setting up TikTok Lite for the first time, you can start through the invitation link below or enter invite code DL70959891 (often shared as #DL70959891 — enter DL70959891 without the # symbol in the app). Referral rewards are strictly limited to eligible new accounts and devices, and the reward rules vary by country and active campaign.",
+      "sections": [
+        {
+          "heading": "TikTok Lite invite code DL70959891 and how to apply it",
+          "paragraphs": [
+            "When you open the invitation link https://www.tiktok.com/d/4/ZS9fcGCx9xhYn-v2KXS/ on a mobile phone, TikTok routes you to the TikTok Lite referral landing page carrying invite_code=DL70959891 and prompts you to install or open the app. Using the link first is the simplest route when the referral attaches automatically.",
+            "If the app asks you to type the code manually after signing up, open the Rewards tab (gold coin icon) or tap Profile and select the Rewards banner. Look for the field labeled Invitation Code or Enter Referral Code, paste DL70959891 without the hash symbol, and confirm."
+          ],
+          "cta": {
+            "label": "Download TikTok Lite with code DL70959891",
+            "url": "https://www.tiktok.com/d/4/ZS9fcGCx9xhYn-v2KXS/",
+            "sponsored": true
+          },
+          "sources": [
+            {
+              "title": "TikTok Support: Referral Program",
+              "url": "https://support.tiktok.com/en/using-tiktok/growing-your-audience/tiktok-referral-program"
+            },
+            {
+              "title": "TikTok Lite on Google Play",
+              "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically.go&hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "What the invite screen shows vs. real new-user eligibility",
+          "paragraphs": [
+            "In the Brazilian TikTok Lite screenshot captured on 16 November 2026, the Invite Friends card displays +R$ 145,93 for the inviter and +R$ 5,6 for the invited friend. Those figures are campaign-specific examples in Brazilian Reais on that date, not a global guaranteed payout.",
+            "To qualify for any referral reward, TikTok generally requires you to be at least 18 years old, create a brand-new account on a device that has never installed TikTok or TikTok Lite before, and enter the code within the campaign window (typically within 24 hours of registration). Full referral bonuses are often unlocked gradually as the new user watches videos or checks in for consecutive days."
+          ],
+          "sources": [
+            {
+              "title": "TikTok Terms of Service",
+              "url": "https://www.tiktok.com/legal/page/row/terms-of-service/en"
+            }
+          ]
+        },
+        {
+          "heading": "Why the invite code box is missing or shows an error",
+          "paragraphs": [
+            "The most common reason the code box never appears is device history: if TikTok or TikTok Lite was previously installed on the same smartphone, anti-fraud checks usually disable new-user invite fields even if you register with a new email address. Missing the initial 24-hour entry window or setting an underage birth date also hides the field.",
+            "Connection errors and validation blocks can also happen when using a VPN, shared public Wi-Fi, or cross-region accounts. Switch to mobile data, disable any VPN, update TikTok Lite on Google Play, and check that the Rewards tab is active in your country (note that TikTok Lite rewards are discontinued in the European Union)."
+          ],
+          "sources": [
+            {
+              "title": "TikTok Support: Referral Program",
+              "url": "https://support.tiktok.com/en/using-tiktok/growing-your-audience/tiktok-referral-program"
+            }
+          ]
+        }
+      ],
+      "tables": [
+        {
+          "heading": "Common outcomes when entering TikTok Lite code DL70959891",
+          "columns": [
+            "Situation",
+            "What happens in the app",
+            "Recommended check"
+          ],
+          "rows": [
+            [
+              "New user on a new device (18+)",
+              "Invite link or manual box binds DL70959891",
+              "Complete daily check-in and watch tasks shown in Rewards"
+            ],
+            [
+              "Phone had TikTok or TikTok Lite before",
+              "Code box is hidden or rejected as ineligible",
+              "Only one new-user referral is allowed per device"
+            ],
+            [
+              "Account older than 24 hours",
+              "Manual invite input option disappears",
+              "Check Rewards tab for regular daily tasks instead"
+            ],
+            [
+              "VPN active or cross-country invite",
+              "Network error or unsupported region notice",
+              "Turn off VPN and verify local campaign availability"
+            ]
+          ],
+          "afterSectionIndex": 2
+        }
+      ],
+      "steps": [
+        "Open the TikTok Lite invite link on your smartphone before installing the app.",
+        "Confirm you are downloading the official TikTok Lite app by TikTok Pte. Ltd. on Google Play.",
+        "Create a brand-new account using an email or phone number not previously linked to TikTok and confirm you meet the age requirement.",
+        "Open the Rewards (coin) tab within 24 hours; if prompted for an invite code, enter DL70959891 (without #) and confirm.",
+        "Review the active campaign checklist in your Rewards page and complete any required daily watch or check-in steps."
+      ],
+      "stepsSectionIndex": 0,
+      "pros": [
+        "Works either through the direct invite link or by pasting DL70959891 manually when eligible",
+        "Official Google Play distribution (package com.zhiliaoapp.musically.go by TikTok Pte. Ltd.)"
+      ],
+      "cons": [
+        "Strictly restricted to new accounts on devices with no prior TikTok Lite install",
+        "Reward amounts, currencies, and task rules change by country and campaign"
+      ],
+      "faq": [
+        {
+          "q": "Should I type #DL70959891 or DL70959891 in TikTok Lite?",
+          "a": "Type DL70959891 without the # symbol. When shared in posts, people often write #DL70959891, but the invite link parameter uses invite_code=DL70959891."
+        },
+        {
+          "q": "Can I use a TikTok Lite invite code on an existing account?",
+          "a": "Usually no. Referral code entry is restricted to brand-new accounts within a short window after sign-up on an eligible device."
+        },
+        {
+          "q": "Why does the invite code field not show up on my phone?",
+          "a": "Most often because the phone already had TikTok or TikTok Lite installed previously, the sign-up window expired, the account is under 18, or reward campaigns are not active in your region."
+        },
+        {
+          "q": "Do I get the reward immediately after entering DL70959891?",
+          "a": "Campaigns typically require new users to complete verification steps such as daily check-ins or watching videos for several days before full bonus tiers unlock."
+        }
+      ],
+      "verdict": "If you have never installed TikTok Lite on your phone, using the invite link and code DL70959891 is the cleanest way to tie a referral to your new account. Always check the local terms inside the Rewards tab before expecting a specific payout.",
+      "imageKey": "tiktoklite-convite",
+      "imageAlt": "TikTok Lite Rewards screen showing the Invite New Friends card and video tasks in Portuguese",
+      "caption": "TikTok Lite Rewards tab captured on 16 November 2026: the Invite section displays promotional amounts in BRL for that Brazilian account.",
+      "imageWide": false,
+      "secondImage": {
+        "key": "tiktoklite-tarefas",
+        "alt": "TikTok Lite daily check-in and ad task screen showing 264 redeemed points",
+        "caption": "Daily tasks screen showing 7-day check-in milestones and ad viewing rewards.",
+        "wide": false
+      },
+      "sources": [
+        {
+          "title": "TikTok Support: Referral Program",
+          "url": "https://support.tiktok.com/en/using-tiktok/growing-your-audience/tiktok-referral-program"
+        },
+        {
+          "title": "TikTok Lite on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically.go&hl=en"
+        },
+        {
+          "title": "TikTok Terms of Service",
+          "url": "https://www.tiktok.com/legal/page/row/terms-of-service/en"
+        }
+      ],
+      "relatedIds": [
+        "tiktoklite-baixar",
+        "tiktoklite"
+      ]
+    },
+    {
+      "id": "tiktoklite-baixar",
+      "app": "tiktoklite",
+      "category": "guides",
+      "slug": "download-tiktok-lite",
+      "title": "Download TikTok Lite 2026: Official Android Link, iOS Info & Code DL70959891",
+      "description": "How to download TikTok Lite safely on Android (com.zhiliaoapp.musically.go), check iOS regional availability, and start with invite link and code DL70959891.",
+      "intro": "TikTok Lite is the official lightweight edition of TikTok built for phones with tighter storage, slower mobile networks, or limited data plans. Downloading it through an official store listing — or via an official invite link if you plan to join the rewards event — keeps your device safe from modified third-party APKs.",
+      "sections": [
+        {
+          "heading": "Official TikTok Lite download options for Android and iPhone",
+          "paragraphs": [
+            "On Android, the official app published by TikTok Pte. Ltd. appears on Google Play under package com.zhiliaoapp.musically.go (and in some markets under com.ss.android.ugc.tiktok.lite). Always verify the developer name TikTok Pte. Ltd. before tapping Install, and avoid unofficial APK mirror sites.",
+            "If you also want to participate in a referral campaign as a new user, you can start directly from the official TikTok Lite invitation link below, which carries invite code DL70959891 (#DL70959891) and redirects to the app setup flow."
+          ],
+          "cta": {
+            "label": "Download TikTok Lite via official invite link",
+            "url": "https://www.tiktok.com/d/4/ZS9fcGCx9xhYn-v2KXS/",
+            "sponsored": true
+          },
+          "sources": [
+            {
+              "title": "TikTok Lite on Google Play (com.zhiliaoapp.musically.go)",
+              "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically.go&hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Is TikTok Lite available on iPhone (iOS)?",
+          "paragraphs": [
+            "Unlike Android, TikTok Lite on the Apple App Store is only distributed in select regions and is not listed in every country's storefront (for example, several App Store country pages return unavailable/404). If TikTok Lite does not appear when you search your local App Store, only the standard TikTok app is supported for your Apple ID region.",
+            "Do not install third-party enterprise profiles or sideloaded iOS files claiming to unlock TikTok Lite rewards, as those violate platform security rules and can compromise your account."
+          ],
+          "sources": [
+            {
+              "title": "TikTok Terms of Service",
+              "url": "https://www.tiktok.com/legal/page/row/terms-of-service/en"
+            },
+            {
+              "title": "TikTok Privacy Policy",
+              "url": "https://www.tiktok.com/legal/page/row/privacy-policy/en"
+            }
+          ]
+        },
+        {
+          "heading": "TikTok Lite vs. standard TikTok: what changes after installing",
+          "paragraphs": [
+            "TikTok Lite focuses on fast video playback, short dramas, and lower storage and mobile data usage. In eligible regions like Brazil, it also displays a dedicated Rewards tab with daily check-ins, ad-watching tasks, and friend referrals where new eligible users can apply code DL70959891.",
+            "Creator tools, advanced video effects, and certain live-streaming features remain more complete in the main TikTok app, so choose Lite if you prioritize lighter storage or regional rewards."
+          ],
+          "sources": [
+            {
+              "title": "TikTok Support: Referral Program",
+              "url": "https://support.tiktok.com/en/using-tiktok/growing-your-audience/tiktok-referral-program"
+            }
+          ]
+        }
+      ],
+      "tables": [
+        {
+          "heading": "TikTok Lite vs. Standard TikTok overview",
+          "columns": [
+            "Feature",
+            "TikTok Lite",
+            "Standard TikTok"
+          ],
+          "rows": [
+            [
+              "Primary focus",
+              "Lightweight video viewing and lower data use",
+              "Full viewing, editing, effects, and live tools"
+            ],
+            [
+              "Android package",
+              "com.zhiliaoapp.musically.go (TikTok Pte. Ltd.)",
+              "com.zhiliaoapp.musically"
+            ],
+            [
+              "iOS availability",
+              "Limited to selected App Store regions",
+              "Widely available on App Store"
+            ],
+            [
+              "Invite code DL70959891",
+              "Supported in eligible reward regions for new users",
+              "Different campaign rules apply by region"
+            ]
+          ],
+          "afterSectionIndex": 2
+        }
+      ],
+      "steps": [
+        "Open the invitation link on your phone or go directly to Google Play and search for TikTok Lite by TikTok Pte. Ltd.",
+        "Confirm the official package com.zhiliaoapp.musically.go and tap Install.",
+        "Open the app and create a new account if you have never registered on that device.",
+        "Tap the Rewards icon within 24 hours and check whether invite code DL70959891 was linked automatically or needs manual entry."
+      ],
+      "stepsSectionIndex": 0,
+      "pros": [
+        "Smaller footprint and faster loading on entry-level Android phones",
+        "Available directly through Google Play and official TikTok invite links"
+      ],
+      "cons": [
+        "Not listed on the Apple App Store in all countries",
+        "Fewer video editing effects than the full TikTok app"
+      ],
+      "faq": [
+        {
+          "q": "Is TikTok Lite free and safe to download?",
+          "a": "Yes, when downloaded from Google Play (published by TikTok Pte. Ltd.) or via an official TikTok referral link. Avoid unknown third-party APK sites."
+        },
+        {
+          "q": "What is the invite link and code to use after downloading?",
+          "a": "You can download via https://www.tiktok.com/d/4/ZS9fcGCx9xhYn-v2KXS/ and, if prompted for a manual code on a new eligible account, enter DL70959891."
+        },
+        {
+          "q": "Why can I not find TikTok Lite on my iPhone App Store?",
+          "a": "TikTok Lite on iOS is only published in selected App Store regions. If it is absent in your country, use the standard TikTok app."
+        }
+      ],
+      "verdict": "Download TikTok Lite exclusively from Google Play or the official TikTok invite link to avoid modified APKs. If you are a brand-new Android user in a supported rewards country, starting through the invite link with code DL70959891 keeps setup simple.",
+      "imageKey": "tiktoklite-tarefas",
+      "imageAlt": "TikTok Lite Rewards and daily tasks screen on Android",
+      "caption": "TikTok Lite interface on Android (com.zhiliaoapp.musically.go) showing daily tasks and rewards.",
+      "imageWide": false,
+      "secondImage": {
+        "key": "tiktoklite-convite",
+        "alt": "TikTok Lite Invite Friends and video watching progress screen",
+        "caption": "Invite New Friends and watch-time tracker inside TikTok Lite.",
+        "wide": false
+      },
+      "sources": [
+        {
+          "title": "TikTok Lite on Google Play (com.zhiliaoapp.musically.go)",
+          "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically.go&hl=en"
+        },
+        {
+          "title": "TikTok Support: Referral Program",
+          "url": "https://support.tiktok.com/en/using-tiktok/growing-your-audience/tiktok-referral-program"
+        },
+        {
+          "title": "TikTok Terms of Service",
+          "url": "https://www.tiktok.com/legal/page/row/terms-of-service/en"
+        }
+      ],
+      "relatedIds": [
+        "tiktoklite-convite",
+        "tiktoklite"
+      ]
+    },
+    {
+      "id": "tiktoklite",
+      "app": "tiktoklite",
+      "category": "rewards",
+      "slug": "tiktok-lite-rewards-cashout",
+      "title": "TikTok Lite Rewards 2026: Points, Daily Tasks, Cashout & Code DL70959891",
+      "description": "See how TikTok Lite rewards work in 2026: daily check-ins, ad tasks, video watch time, regional withdrawal minimums, point expiration, and invite code DL70959891.",
+      "intro": "TikTok Lite includes a regional Rewards tab where users collect points from daily check-ins, short video viewing, ad tasks, and friend invitations. Looking at actual app screens helps separate realistic pocket change from exaggerated social media claims.",
+      "sections": [
+        {
+          "heading": "How TikTok Lite points convert and what daily tasks pay",
+          "paragraphs": [
+            "In the Brazilian TikTok Lite screens captured on 16 November 2026, a balance of 240,769 points equals R$ 8.02 — roughly 30,000 points per R$ 1.00. Because point values and payout rates are set per country and campaign, your local conversion rate may differ.",
+            "On that same Rewards screen, daily tasks include a 7-day check-in streak totaling 4,557 points (315 on Day 1 up to 1,428 on Day 7), watching up to 30 daily ads at 200 points per 15 seconds (up to 6,000 points), and watching regular videos for up to 120 minutes to earn up to 1,500 points. New eligible users can also link invite code DL70959891 via the official referral link."
+          ],
+          "cta": {
+            "label": "Start on TikTok Lite with code DL70959891",
+            "url": "https://www.tiktok.com/d/4/ZS9fcGCx9xhYn-v2KXS/",
+            "sponsored": true
+          },
+          "sources": [
+            {
+              "title": "TikTok Support: Referral Program",
+              "url": "https://support.tiktok.com/en/using-tiktok/growing-your-audience/tiktok-referral-program"
+            }
+          ]
+        },
+        {
+          "heading": "Withdrawal options, minimum cashout, and point expiration",
+          "paragraphs": [
+            "The Redeem Rewards screen captured in Brazil lists bank transfer, Pix, and PagBank cashouts starting at R$ 0.50 (with preset buttons for R$ 0.50, R$ 1, R$ 15, and R$ 30) alongside mobile top-ups starting at R$ 10 for Claro, Vivo, and TIM. The in-app notice states that individual and monthly withdrawal limits vary by country or region.",
+            "A banner at the top of the Rewards screen also warns that 576 points are scheduled to expire on 10 January at 23:59. Points do not stay valid indefinitely, so redeem eligible balances before expiration deadlines."
+          ],
+          "sources": [
+            {
+              "title": "TikTok Terms of Service",
+              "url": "https://www.tiktok.com/legal/page/row/terms-of-service/en"
+            }
+          ]
+        },
+        {
+          "heading": "Limits to keep in mind before spending time on tasks",
+          "paragraphs": [
+            "Task rewards by themselves accumulate slowly: even completing all 30 daily ads (6,000 points) equals roughly R$ 0.20 at the 30,000-points-per-real rate observed in the Brazilian screenshots. Referral campaigns and promotional mini-games carry higher headline numbers, but they depend on strict new-user eligibility and multi-day retention rules.",
+            "Use TikTok Lite primarily if you already enjoy short videos on a lighter app and treat rewards as a small extra bonus rather than predictable income."
+          ],
+          "sources": [
+            {
+              "title": "TikTok Lite on Google Play",
+              "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically.go&hl=en"
+            }
+          ]
+        }
+      ],
+      "tables": [
+        {
+          "heading": "TikTok Lite Rewards observed in Brazil (16 November 2026)",
+          "columns": [
+            "Activity or option",
+            "Observed figure on screen",
+            "Notes"
+          ],
+          "rows": [
+            [
+              "Balance conversion",
+              "240,769 points = R$ 8.02",
+              "Approx. 30,000 points per R$ 1.00"
+            ],
+            [
+              "7-day check-in streak",
+              "4,557 points total",
+              "315 pts Day 1, scaling to 1,428 pts on Day 7"
+            ],
+            [
+              "Watch daily ads (0/30)",
+              "Up to 6,000 points",
+              "200 points for each 15 seconds watched"
+            ],
+            [
+              "Watch videos (120 min)",
+              "Up to 1,500 points",
+              "Example shows 264 pts claimed at 52 min"
+            ],
+            [
+              "Cashout & top-up",
+              "From R$ 0.50 (cash) / R$ 10 (top-up)",
+              "Pix, PagBank, bank transfer; limits vary by region"
+            ]
+          ],
+          "afterSectionIndex": 1
+        }
+      ],
+      "steps": [
+        "Install TikTok Lite from Google Play or the invite link (code DL70959891 for new eligible users).",
+        "Tap the Rewards coin tab to view your country's active point tasks and conversion rate.",
+        "Claim daily check-ins and watch eligible videos or ads if you want to build points.",
+        "Open Redeem Rewards to check minimum cashout methods and any point expiration dates."
+      ],
+      "stepsSectionIndex": 0,
+      "pros": [
+        "Very low minimum withdrawal (R$ 0.50 observed in Brazil via Pix/PagBank/bank transfer)",
+        "Clear point counter and explicit expiration warnings inside the Rewards tab"
+      ],
+      "cons": [
+        "Solo viewing and ad tasks pay modest amounts per day",
+        "Points expire if left unredeemed and rewards are unavailable in some regions such as the EU"
+      ],
+      "faq": [
+        {
+          "q": "How many TikTok Lite points equal R$ 1 in the observed screens?",
+          "a": "The 16 November 2026 Brazilian screenshot shows 240,769 points equal to R$ 8.02, which works out to roughly 30,000 points per R$ 1.00. Rates vary by country and campaign."
+        },
+        {
+          "q": "What is the minimum withdrawal in TikTok Lite?",
+          "a": "In the captured Brazilian cashout screen, bank transfer, Pix, and PagBank withdrawals start at R$ 0.50, while mobile top-up requires R$ 10. Thresholds depend on your country."
+        },
+        {
+          "q": "Do TikTok Lite points expire?",
+          "a": "Yes. The Rewards screen displays explicit expiration notices (for example, 576 points expiring on 10 January at 23:59), so check your balance regularly."
+        }
+      ],
+      "verdict": "TikTok Lite pays real small rewards in supported countries with low cashout minimums, but solo ad and video tasks earn slowly. Treat it as a lighter video app with an occasional bonus, and use code DL70959891 only if you meet new-user eligibility.",
+      "imageKey": "tiktoklite-saque",
+      "imageAlt": "TikTok Lite Redeem Rewards screen showing R$ 8.02 balance and cashout buttons",
+      "caption": "TikTok Lite cashout screen captured on 16 November 2026 showing R$ 8.02 (240,769 points), R$ 0.50 minimum withdrawal, and point expiration notice.",
+      "imageWide": false,
+      "secondImage": {
+        "key": "tiktoklite-tarefas",
+        "alt": "TikTok Lite daily check-in and ad rewards screen",
+        "caption": "Daily check-in streak and ad-watching tasks inside the Rewards tab.",
+        "wide": false
+      },
+      "sources": [
+        {
+          "title": "TikTok Support: Referral Program",
+          "url": "https://support.tiktok.com/en/using-tiktok/growing-your-audience/tiktok-referral-program"
+        },
+        {
+          "title": "TikTok Lite on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically.go&hl=en"
+        },
+        {
+          "title": "TikTok Terms of Service",
+          "url": "https://www.tiktok.com/legal/page/row/terms-of-service/en"
+        }
+      ],
+      "relatedIds": [
+        "tiktoklite-convite",
+        "tiktoklite-baixar"
+      ]
+    },
+    {
+      "id": "dramagood",
+      "app": "dramagood",
+      "category": "rewards",
+      "slug": "dramagood-app-review",
+      "title": "DramaGood app review: does it pay? Real test says no (2026)",
+      "description": "We tested DramaGood: balance stuck at R$ 106.60 with a R$ 240 minimum withdrawal. Why this short-drama app doesn't pay and what Play Store says.",
+      "intro": "DramaGood promises money for watching short vertical dramas: banners celebrating withdrawals of R$ 240 to R$ 1,000 cross the screen, the tasks tab dangles R$ 7,777 prizes and the wallet shows R$ 106.60 from the first session. We tested the app on November 16, 2026, and the answer is direct: it doesn't pay. The balance climbs fast at the start and stalls short of the required minimum, and no official document from the developer mentions cash payouts. Amounts below are in Brazilian reais because we tested the app's Portuguese version in Brazil.",
+      "sections": [
+        {
+          "heading": "What is DramaGood, and what does Google Play say?",
+          "paragraphs": [
+            "DramaGood is an Android app for vertical short dramas, published on Google Play by the developer Short Drama Workgroup under the package com.drama.good.shortplay.atsab. The catalog follows the microdrama pattern: a few minutes per episode in vertical format, organized in tabs such as Topo, Popular, Novo, Homens and Mulheres. The home screen in our test showed popular titles such as O Segredo da Minha Esposa and A Filha Perdida da Família Bilionária, plus releases like A Herdeira Esperada and Pesadelo no Campus — the titles appear in Portuguese because that is the version we tested.",
+            "The telling detail is what the official listing does not say. The Play Store description covers watching short dramas and collecting in-app items and viewing benefits — it never mentions Pix, withdrawals or real money. The Privacy Policy published at drama-good.com/privacy.html, effective January 12, 2026, describes the service as streaming and lists the collection of device identifiers (IMEI, Android ID), IP address, approximate location and viewing history, but does not mention any cash reward program."
+          ],
+          "source": {
+            "title": "DramaGood on Google Play (com.drama.good.shortplay.atsab)",
+            "url": "https://play.google.com/store/apps/details?id=com.drama.good.shortplay.atsab&hl=en"
+          }
+        },
+        {
+          "heading": "What the screen shows: a high balance and higher promises",
+          "paragraphs": [
+            "When you open the app, the R$ 106.60 balance sits fixed at the top with the notice 'Ganhe mais R$ 133,40, pode sacar R$ 240,00' (earn R$ 133.40 more and you can withdraw R$ 240.00) next to card icons. The wallet displays five withdrawal options — R$ 240.00 (labeled 'Assistir & Sacar'), R$ 400.00, R$ 650.00, R$ 1,000.00 and R$ 1,600.00 — alongside Pix, Visa, Mastercard, Hipercard and Amex icons, and explains that 'the minimum withdrawal is R$ 240' per the requirements of a 'partner payment platform' that no developer page identifies.",
+            "Meanwhile, floating banners cross the player announcing 'Parabéns! ... sacou com sucesso R$ 240' (congratulations, successfully withdrew R$ 240), R$ 650 and R$ 1,000, always with Brazilian names. The Ganhe Mais tab completes the picture: 'Assistir vídeo -> dinheiro. R$ 7777 Top Prêmio' with six chests to claim, 'Tempo de assistir R$ 7777 Top Prêmio' every 10 minutes and 'Assistir episódios R$ 3333 Top Prêmio' every 3 episodes. In our test, with the 'five-star rating' and 'enable notifications' tasks already completed, the balance sat at R$ 106.60 — R$ 133.40 short of the minimum."
+          ]
+        },
+        {
+          "heading": "Why DramaGood doesn't pay: the math doesn't work",
+          "paragraphs": [
+            "A free app runs on ads, and each ad view earns a few cents. To deliver what it promises, DramaGood would have to pay R$ 240 to every user who watches a few minutes — while also funding R$ 7,777 prizes and R$ 1,600 withdrawals. No ad ecosystem pays that: that is why the balance inflates early and the required minimum keeps moving ahead, as the R$ 133.40 shortfall in our test shows.",
+            "The official documents close the case. Neither the Play Store listing nor the Privacy Policy mentions a withdrawal program, bank transfers or cash payments; if a 'partner payment platform' existed, it would have to appear in the service's rules — and it doesn't. The table below contrasts what the app shows on screen with what the developer states officially. The 'Parabéns!' banners are the only 'proof' of payouts, with no external verification."
+          ],
+          "source": {
+            "title": "DramaGood Privacy Policy (drama-good.com)",
+            "url": "https://www.drama-good.com/privacy.html"
+          }
+        }
+      ],
+      "steps": [
+        "Compare the promise with the official listing: if Google Play only mentions in-app items and viewing perks, distrust the withdrawal banners.",
+        "Read the Privacy Policy: an app that genuinely pays names its reward program and payment method; DramaGood names neither.",
+        "Run the minimum math: a R$ 240 payout would require ad revenue no user generates by watching a few minutes a day.",
+        "Never pay to unlock a withdrawal or hand over bank details to 'confirm' an amount.",
+        "Demand external proof: a bank statement or a receipt from the financial institution, not banners inside the app itself."
+      ],
+      "stepsSectionIndex": 0,
+      "tables": [
+        {
+          "heading": "On-screen promise vs. official documents",
+          "columns": [
+            "What the app shows on screen",
+            "What the official documents say"
+          ],
+          "rows": [
+            [
+              "R$ 106.60 balance and withdrawal from R$ 240",
+              "No mention of withdrawals or real money on the Play Store listing"
+            ],
+            [
+              "Banners of 'successfully withdrew R$ 240 / R$ 650 / R$ 1,000'",
+              "The Privacy Policy describes only a streaming service"
+            ],
+            [
+              "Pix, Visa, Mastercard, Hipercard and Amex icons",
+              "No documented payment or transfer program"
+            ],
+            [
+              "R$ 7,777 and R$ 3,333 prizes for watching",
+              "The official description cites only in-app items and benefits"
+            ]
+          ],
+          "afterSectionIndex": 1
+        }
+      ],
+      "pros": [
+        "A real catalog of vertical mini-dramas: episodes open, play in HD and follow the standard microdrama format.",
+        "It is published on the official Google Play, with an accessible listing and Privacy Policy — no third-party APK sites needed."
+      ],
+      "cons": [
+        "Promises impossible amounts: withdrawals from R$ 240 to R$ 1,600 and R$ 7,777 prizes no ad-supported app can sustain.",
+        "In our test, the balance stayed at R$ 106.60, always R$ 133.40 short of the R$ 240 minimum.",
+        "Withdrawal banners with Brazilian names and Pix and PicPay icons, without any external verification."
+      ],
+      "faq": [
+        {
+          "q": "Is DramaGood legit?",
+          "a": "As a short-drama player, it works; as a money-making app, no. The Play Store listing only mentions in-app perks, and the Privacy Policy describes a streaming service."
+        },
+        {
+          "q": "Does DramaGood actually pay?",
+          "a": "No. In our November 16, 2026 test, the balance stayed at R$ 106.60 while the withdrawal minimum is R$ 240, and no official document mentions cash payouts."
+        },
+        {
+          "q": "Is DramaGood a scam?",
+          "a": "It promises payouts it cannot sustain and simulates withdrawals with banners that have no verifiable proof. The real product is the drama catalog; the money is bait for ad views."
+        }
+      ],
+      "verdict": "DramaGood does not pay. The app does deliver a short-drama catalog, but the money side is a facade: a balance that climbs to R$ 106.60 and stalls, a R$ 240 minimum that is never reached, withdrawal banners without proof, and no payment program cited on Google Play or in the Privacy Policy. Treat it as free entertainment — never as a source of income.",
+      "imageKey": "dramagood-home",
+      "imageAlt": "DramaGood home screen showing a R$ 106.60 balance, a mini-drama catalog and a R$ 240 withdrawal notice",
+      "caption": "Home screen from the November 16, 2026 test: R$ 106.60 balance and a notice that R$ 133.40 is still missing to unlock the R$ 240 withdrawal.",
+      "imageWide": false,
+      "secondImage": {
+        "key": "dramagood-player",
+        "alt": "DramaGood player showing the mini-drama Três Pequenos Anjinhos do Céu with a coin timer and the balance fixed on top",
+        "caption": "Player with floating banners simulating R$ 240 to R$ 1,000 withdrawals over the video, captured on November 16, 2026.",
+        "wide": false
+      },
+      "sources": [
+        {
+          "title": "DramaGood on Google Play (com.drama.good.shortplay.atsab)",
+          "url": "https://play.google.com/store/apps/details?id=com.drama.good.shortplay.atsab&hl=en"
+        },
+        {
+          "title": "DramaGood Privacy Policy (drama-good.com)",
+          "url": "https://www.drama-good.com/privacy.html"
+        }
+      ],
+      "relatedIds": [
+        "dramagood-saque",
+        "dramagood-tarefas",
+        "cashdrama",
+        "dramastack",
+        "pinedrama",
+        "dramabox"
+      ]
+    },
+    {
+      "id": "dramagood-saque",
+      "app": "dramagood",
+      "category": "rewards",
+      "slug": "dramagood-minimum-withdrawal",
+      "title": "DramaGood cash out: why R$ 240 never unlocks (2026)",
+      "description": "The DramaGood wallet climbs to R$ 106.60, then stalls: withdrawal starts at R$ 240, with options up to R$ 1,600. Here is why it never pays.",
+      "intro": "The wallet is the heart of DramaGood's promise: a balance that climbs to R$ 106.60 in the first session and must reach R$ 240 before you can 'cash out'. We tested the app on November 16, 2026, and logged the five withdrawal amounts on screen (from R$ 240 to R$ 1,600), the Pix and card icons, the line about a 'partner payment platform' and the notice that R$ 133.40 was still missing. None of it became money. This article opens the wallet screen and explains, with numbers, why a DramaGood cash out never happens. Amounts are in Brazilian reais because we tested the app's Portuguese version.",
+      "sections": [
+        {
+          "heading": "How the balance reaches R$ 106.60 — and no further",
+          "paragraphs": [
+            "DramaGood credits 'money' for almost everything: minutes watched, episodes completed, finished tasks and chests in the rewards tab. In the first session, that early pace took the wallet to R$ 106.60 — a number that impresses until you read the notice beside it: 'Ganhe mais R$ 133,40, pode sacar R$ 240,00' (earn R$ 133.40 more and you can withdraw R$ 240.00). In other words, the app displays a high balance to hold your attention, while the value that actually matters, the withdrawal, stays farther away than everything credited so far.",
+            "The tasks feed the expectation of getting there: 'Tempo de assistir R$ 7777 Top Prêmio' promises bonuses every 10 minutes and 'Assistir episódios R$ 3333 Top Prêmio' every 3 episodes, while the 'Tarefas e Dinheiro' list also asks for a 'five-star rating' and 'enable notifications' — both completed in our test, with the 'Resgatar' (claim) button available. Even with everything active, the displayed wallet stayed at R$ 106.60, and the R$ 240 target remained out of reach."
+          ],
+          "source": {
+            "title": "DramaGood on Google Play (com.drama.good.shortplay.atsab)",
+            "url": "https://play.google.com/store/apps/details?id=com.drama.good.shortplay.atsab&hl=en"
+          }
+        },
+        {
+          "heading": "The withdrawal amounts on screen: from R$ 240 to R$ 1,600",
+          "paragraphs": [
+            "The wallet screen presents five options: R$ 240.00 (labeled 'Assistir & Sacar'), R$ 400.00, R$ 650.00, R$ 1,000.00 and R$ 1,600.00. The withdrawal instructions state that, according to the requirements of DramaGood's partner payment platform, the minimum withdrawal is R$ 240. Pix, Visa, Mastercard, Hipercard and Amex icons complete the payment scenery — but that 'partner platform' appears in no public document from the developer, neither on the store listing nor in the Privacy Policy.",
+            "The central notice summarizes the block: 'Para sacar R$ 240,00, ainda faltam R$ 133,40' (to withdraw R$ 240.00, R$ 133.40 is still missing), with a progress bar and a 'Sacar R$ para Conta' button. In practice: even with tasks completed and minutes watched, the amount cleared for withdrawal is zero, because the minimum is never met. The table below shows each option and what it means against the observed balance."
+          ]
+        },
+        {
+          "heading": "Why the R$ 240 minimum is never reached",
+          "paragraphs": [
+            "Do the math: a rewarded ad earns the app a few cents per view, and few users watch hours of video a day. To pay R$ 240 to every person who watched 10 minutes, DramaGood would need to bill hundreds of reais in advertising per user — dozens of times what the ad market pays. That is why the wallet lives in 'almost there': the design pushes you to keep watching and completing tasks, without ever releasing the amount.",
+            "The official documents settle the question. The Play Store listing describes DramaGood only as a short-drama app with in-app items and benefits, and the Privacy Policy (drama-good.com/privacy.html) covers streaming, identifier collection and ad SDKs — without a single line about withdrawals, transfers or a cash reward program. A service that truly paid R$ 240 per user would have to explain that in its rules; the official silence is the answer."
+          ],
+          "source": {
+            "title": "DramaGood Privacy Policy (drama-good.com)",
+            "url": "https://www.drama-good.com/privacy.html"
+          }
+        }
+      ],
+      "steps": [
+        "Never pay a fee, an 'unlock charge' or an upfront transfer to release a withdrawal: a legitimate app doesn't charge you to pay you.",
+        "Don't hand over bank or card details to 'confirm' an amount — on DramaGood, the Pix and card icons appear with no real payment flow.",
+        "Compare the promise with the revenue: ad-based apps earn cents per watched minute; a R$ 240 withdrawal doesn't add up.",
+        "Check the official documents (store listing and Privacy Policy): a real payout must be described in the rules.",
+        "Distrust the names and amounts parading in banners: 'Eloá Martins Carvalho withdrew R$ 240' is not proof — a bank statement is."
+      ],
+      "stepsSectionIndex": 0,
+      "tables": [
+        {
+          "heading": "Withdrawal options shown in the wallet",
+          "columns": [
+            "On-screen option",
+            "What it means with a R$ 106.60 balance"
+          ],
+          "rows": [
+            [
+              "R$ 240.00 — 'Assistir & Sacar'",
+              "The required minimum; R$ 133.40 was still missing"
+            ],
+            [
+              "R$ 400.00",
+              "Would require R$ 293.40 more than the current balance"
+            ],
+            [
+              "R$ 650.00",
+              "The balance covered less than 17% of the amount"
+            ],
+            [
+              "R$ 1,000.00 and R$ 1,600.00",
+              "Tiers displayed with no real path to reach them"
+            ]
+          ],
+          "afterSectionIndex": 1
+        }
+      ],
+      "pros": [
+        "The wallet screen is transparent about the minimum and the shortfall, which helps you spot the mechanism within minutes.",
+        "The app is free, and our test required no deposit to start watching."
+      ],
+      "cons": [
+        "The R$ 240 minimum stays out of reach: in our test, the balance stopped at R$ 106.60 with R$ 133.40 missing.",
+        "The 'partner payment platform' cited on screen appears in no official document from the developer.",
+        "Pix, Visa, Mastercard, Hipercard and Amex icons suggest payments with no evidence they ever happen."
+      ],
+      "faq": [
+        {
+          "q": "How do you cash out from DramaGood?",
+          "a": "The screen requires a minimum balance of R$ 240, and in our November 16, 2026 test the wallet sat at R$ 106.60 with R$ 133.40 missing. Without reaching the minimum, no withdrawal is released."
+        },
+        {
+          "q": "What is DramaGood's minimum withdrawal?",
+          "a": "R$ 240.00, per the app's own withdrawal instructions, which attribute the requirement to an unnamed 'partner payment platform' with no public documentation."
+        },
+        {
+          "q": "Does DramaGood really pay?",
+          "a": "There is no verified payout: the official documents mention no withdrawal program, and the observed balance never reaches the required minimum."
+        }
+      ],
+      "verdict": "The DramaGood cash out is bait: the balance climbs fast to R$ 106.60, stops R$ 133.40 short of the R$ 240 minimum, and the tiers from R$ 400 to R$ 1,600 exist to keep the illusion alive. Pix and card icons and an unnamed 'partner platform' are not payment rules — which don't exist in the official documents. Don't invest time waiting for a payout the app has no way to make.",
+      "imageKey": "dramagood-carteira",
+      "imageAlt": "DramaGood wallet screen showing a R$ 106.60 balance, withdrawal options from R$ 240 to R$ 1,600 and Pix and card icons",
+      "caption": "Wallet from the November 16, 2026 test: the central notice shows R$ 133.40 still missing to unlock the R$ 240.00 minimum withdrawal.",
+      "imageWide": false,
+      "secondImage": {
+        "key": "dramagood-tarefas",
+        "alt": "DramaGood Ganhe Mais tab showing R$ 7777 prizes, 10-minute and 3-episode tasks and the five-star rating task",
+        "caption": "The Ganhe Mais tab promises 'R$ 7777 Top Prêmio' for videos and episodes, with rewards that never reach the wallet as money.",
+        "wide": false
+      },
+      "sources": [
+        {
+          "title": "DramaGood on Google Play (com.drama.good.shortplay.atsab)",
+          "url": "https://play.google.com/store/apps/details?id=com.drama.good.shortplay.atsab&hl=en"
+        },
+        {
+          "title": "DramaGood Privacy Policy (drama-good.com)",
+          "url": "https://www.drama-good.com/privacy.html"
+        }
+      ],
+      "relatedIds": [
+        "dramagood",
+        "dramagood-tarefas",
+        "cashdrama-withdraw",
+        "cashdrama-proofs",
+        "freecash-bonus-cashout"
+      ]
+    },
+    {
+      "id": "dramagood-tarefas",
+      "app": "dramagood",
+      "category": "rewards",
+      "slug": "dramagood-tasks-and-rewards",
+      "title": "DramaGood tasks and rewards: are the R$ 7,777 prizes real?",
+      "description": "DramaGood dangles R$ 7,777 prizes and rewards 5-star ratings. What its task list really asks for and why the money never reaches an account.",
+      "intro": "The Ganhe Mais tab in DramaGood looks like a prize store: six chests promise R$ 7,777 for watching videos, the 10-minute tasks announce the same amount, episodes promise R$ 3,333, and a ticker congratulates 'Daniele A.' on a R$ 240 withdrawal. In our November 16, 2026 test, none of those rewards became money — and one task gives away a lot about the app: it offers a reward for a five-star store rating. This article covers what each task asks for, how the withdrawal notices work, and what to use instead. Amounts are in Brazilian reais because we tested the app's Portuguese version.",
+      "sections": [
+        {
+          "heading": "DramaGood tasks and rewards: promises in layers",
+          "paragraphs": [
+            "The 'Ganhe Mais' tab organizes the promises in blocks: 'Assistir vídeo -> dinheiro. R$ 7777 Top Prêmio', with six chests numbered 1 to 6 and a 'Resgatar' (claim) button; 'Tempo de assistir R$ 7777 Top Prêmio', which asks for 10 minutes of video (block '0/10Minutos'); and 'Assistir episódios R$ 3333 Top Prêmio', which asks for 3 episodes (block '0/3Episódios'). The 'Tarefas e Dinheiro' list completes the picture with 'Avaliação cinco estrelas' (five-star rating) and 'Ativar notificações' (enable notifications), both marked completed in our test, with a reward 'available' to claim.",
+            "The problem is where those rewards end up. The R$ 7,777 and R$ 3,333 prizes never reach the wallet as withdrawable money: in our test, the observed balance stayed at R$ 106.60, R$ 133.40 short of the R$ 240 minimum. And the numbers don't add up: R$ 7,777 for 10 minutes of video is thousands of times what advertising pays for that screen time. A reward that exists but never in the form and amount that unlock a withdrawal is the standard mechanism of apps that don't pay."
+          ]
+        },
+        {
+          "heading": "The 'five-star rating' task: why the app's score inflates",
+          "paragraphs": [
+            "One task gives the game away: 'Avaliação cinco estrelas', displayed as 'Concluído Avaliação cinco estrelas, Recompensas disponível' with a 'Resgatar' button. In plain terms, DramaGood offers a virtual reward in exchange for 5 stars on the store. That is how apps of this type pile up high ratings that reassure whoever arrives next — the same ratings that make many people believe the withdrawal banners.",
+            "The 'Ativar notificações' task follows the same retention logic: with alerts on, the user receives constant 'rewards available' notices and returns to the app. Add the floating banners — 'Parabéns! Eloá Martins Carvalho sacou...', 'Maria Fernanda Vieira...', 'Cintia Ramos Teixeira...', with amounts of R$ 240, R$ 650 and R$ 1,000 and Pix and PicPay icons — and the impression is that everyone is getting paid. There is no evidence anyone is: the 'receipts' are banners from the app itself."
+          ],
+          "source": {
+            "title": "DramaGood on Google Play (com.drama.good.shortplay.atsab)",
+            "url": "https://play.google.com/store/apps/details?id=com.drama.good.shortplay.atsab&hl=en"
+          }
+        },
+        {
+          "heading": "What to use instead: sibling apps and auditable platforms",
+          "paragraphs": [
+            "DramaGood's pattern is not unique. Apps from the same niche already reviewed on the site — CashDrama, DramaStack, PineDrama and DramaBox — show how the drama ecosystem works: real catalogs, their own coin or subscription rules and, in some cases, reward promises that deserve the same skepticism. Before investing time in any of them, read the specific review, because the behavior changes from app to app.",
+            "If the goal is to earn something on your phone, auditable platforms make more sense: TikTok Lite pays for in-app activities, AttaPoll and Prime Opinion pay for surveys, Freecash aggregates partner tasks, Pawns.app combines surveys with internet sharing, and Swagbucks works as a points-based rewards program. None of them promises R$ 7,777 for 10 minutes — and it is precisely the modest amounts, with an external payment track record, that separate apps that pay from apps that pretend."
+          ],
+          "source": {
+            "title": "DramaGood Privacy Policy (drama-good.com)",
+            "url": "https://www.drama-good.com/privacy.html"
+          }
+        }
+      ],
+      "steps": [
+        "Rate the app on the store only after you know it: giving 5 stars for a reward inflates the ranking and misleads other people's research.",
+        "Treat withdrawal banners as advertising: names and amounts in 'Parabéns!' notices are not receipts.",
+        "Check whether the reward becomes money in the wallet or only internal 'coins' — in our test, the balance stayed at R$ 106.60.",
+        "Compare with auditable platforms, which show an external payment history and realistic amounts.",
+        "Cap your test time: if the balance doesn't approach the minimum in one session, save the screenshots and move on."
+      ],
+      "stepsSectionIndex": 0,
+      "tables": [
+        {
+          "heading": "DramaGood tasks: what they ask and what they promise",
+          "columns": [
+            "On-screen task",
+            "What it asks",
+            "What it promises"
+          ],
+          "rows": [
+            [
+              "Assistir vídeo -> dinheiro",
+              "Watch videos with chests 1 to 6",
+              "R$ 7777 'Top Prêmio'"
+            ],
+            [
+              "Tempo de assistir",
+              "10 minutes of video ('0/10Minutos')",
+              "R$ 7777 'Top Prêmio'"
+            ],
+            [
+              "Assistir episódios",
+              "3 episodes ('0/3Episódios')",
+              "R$ 3333 'Top Prêmio'"
+            ],
+            [
+              "Avaliação cinco estrelas",
+              "Give the app 5 stars on the store",
+              "Virtual reward with 'Resgatar'"
+            ],
+            [
+              "Ativar notificações",
+              "Allow app notifications",
+              "Virtual reward with 'Resgatar'"
+            ]
+          ],
+          "afterSectionIndex": 0
+        }
+      ],
+      "pros": [
+        "The tasks are simple, and the app is upfront about what each block asks, which makes the mechanism easy to recognize.",
+        "The mini-drama catalog stays open and free, with or without the tasks."
+      ],
+      "cons": [
+        "R$ 7,777 and R$ 3,333 prizes with nothing behind them: no official document mentions cash payouts.",
+        "The five-star rating task inflates the store score and steers new users into a mistake.",
+        "'Parabéns! sacou...' banners with names and amounts and no external verification."
+      ],
+      "faq": [
+        {
+          "q": "Do DramaGood tasks and rewards work?",
+          "a": "They work as retention: you watch, enable notifications and rate the app, but the rewards never become a withdrawal — the balance stayed at R$ 106.60 in our test."
+        },
+        {
+          "q": "Are DramaGood's 5-star ratings trustworthy?",
+          "a": "Not entirely: the app itself offers a reward for the 'five-star rating' task, which explains high scores with no relation to payouts."
+        },
+        {
+          "q": "Is there an app like DramaGood that pays?",
+          "a": "Auditable platforms — TikTok Lite, AttaPoll, Freecash, Prime Opinion, Pawns.app and Swagbucks — pay for surveys and tasks at realistic amounts, nothing like R$ 7,777 for 10 minutes."
+        }
+      ],
+      "verdict": "DramaGood's tasks are the engine of the illusion: R$ 7,777 and R$ 3,333 prizes keep you watching, the five-star rating task inflates the store score, and the withdrawal banners sell a reality with no proof. No official document from the developer mentions cash payouts. If you want to earn something on your phone, choose auditable platforms; if you just want to watch, treat the app as entertainment — and ignore the money.",
+      "imageKey": "dramagood-tarefas",
+      "imageAlt": "DramaGood Ganhe Mais tab showing a R$ 7777 prize, chests 1 to 6, 10-minute and 3-episode tasks and the five-star rating task",
+      "caption": "Ganhe Mais tab from the November 16, 2026 test: R$ 7777 and R$ 3,333 prizes on top, with the 'five-star rating' and 'enable notifications' tasks already completed.",
+      "imageWide": false,
+      "secondImage": {
+        "key": "dramagood-player",
+        "alt": "DramaGood player with floating banners of R$ 240, R$ 650 and R$ 1,000 withdrawals over the mini-drama on screen",
+        "caption": "Floating banners in the player announce other users' withdrawals with Pix and PicPay icons, without external verification.",
+        "wide": false
+      },
+      "sources": [
+        {
+          "title": "DramaGood on Google Play (com.drama.good.shortplay.atsab)",
+          "url": "https://play.google.com/store/apps/details?id=com.drama.good.shortplay.atsab&hl=en"
+        },
+        {
+          "title": "DramaGood Privacy Policy (drama-good.com)",
+          "url": "https://www.drama-good.com/privacy.html"
+        }
+      ],
+      "relatedIds": [
+        "dramagood",
+        "dramagood-saque",
+        "cashdrama",
+        "pinedrama",
+        "attapoll",
+        "tiktoklite"
+      ]
     }
   ],
   "es": [
@@ -4150,17 +5049,68 @@ export const articles:Record<Locale,Article[]>={
       "description": "¿DramaStack paga por ver videos o es engaño? Revisamos su mínimo de retiro de R$300, las condiciones ocultas y la ficha de Google Play en 2026.",
       "intro": "DramaStack es una app para ver dramas cortos, pero la pestaña Beneficios también muestra tareas, saldo y retiros. La pantalla parece ofrecer dinero. Sin embargo, las reglas de la propia aplicación describen las recompensas de otra forma; conviene leerlas antes de dedicar tiempo a las tareas.",
       "sections": [
-        {"heading":"Una pantalla de retiro con un mínimo alto","paragraphs":["En la versión Android que abrimos, Beneficios mostraba saldo cero, tareas diarias y una página de retiro. Allí aparecían niveles desde R$1.510 y el texto indicaba que el retiro oficial en efectivo empieza en R$300. También había un mensaje de felicitación con el nombre de otra persona y un supuesto retiro de R$300, pero la pantalla no ofrecía una prueba independiente de ese pago.","Los importes y el botón “Sacar” son afirmaciones dentro de la interfaz. No completamos tareas, alcanzamos el mínimo ni solicitamos un retiro; por eso no podemos confirmar que el usuario reciba dinero."]},
-        {"heading":"Lo que dicen las reglas de la app","paragraphs":["El panel Reglas de Beneficios indica que los bonos diarios sirven para desbloquear episodios y que, si el bono no alcanza, se usan monedas para completar el pago. Por separado, la política de privacidad de DramaStack dice que las monedas virtuales sin gastar no pueden convertirse en ninguna moneda. Eso describe valor para ver contenido dentro de la app, no dinero disponible para retirar.","La ficha de Google Play presenta DramaStack como una app de entretenimiento gratuita con anuncios y menciona recompensas opcionales por anuncios. No explica un programa de retiros en efectivo ni sus condiciones. En conjunto, la pantalla promocional de retiro y las reglas escritas no demuestran una forma fiable de ganar dinero."],"source":{"title":"DramaStack: política de privacidad","url":"https://www.dramastack.video/privacypolicy.html"}},
-        {"heading":"¿DramaStack paga?","paragraphs":["Encontramos una página de retiro con un mínimo de R$300, pero no probamos un pago. La política escrita dice que las monedas virtuales no pueden convertirse en dinero y las reglas de la app vinculan los bonos al desbloqueo de episodios. Con lo que pudimos verificar, no cuentes el saldo ni las tareas como ingresos.","Si instalas la app para ver sus dramas cortos, considera las recompensas como funciones sujetas a condiciones. No gastes dinero ni muchas horas basándote solo en la pantalla de retiro: primero busca condiciones actuales y escritas que expliquen la elegibilidad, el método y una prueba de pago."],"source":{"title":"DramaStack en Google Play","url":"https://play.google.com/store/apps/details?id=com.reeltime.dramastack&hl=es"}}
+        {
+          "heading": "Una pantalla de retiro con un mínimo alto",
+          "paragraphs": [
+            "En la versión Android que abrimos, Beneficios mostraba saldo cero, tareas diarias y una página de retiro. Allí aparecían niveles desde R$1.510 y el texto indicaba que el retiro oficial en efectivo empieza en R$300. También había un mensaje de felicitación con el nombre de otra persona y un supuesto retiro de R$300, pero la pantalla no ofrecía una prueba independiente de ese pago.",
+            "Los importes y el botón “Sacar” son afirmaciones dentro de la interfaz. No completamos tareas, alcanzamos el mínimo ni solicitamos un retiro; por eso no podemos confirmar que el usuario reciba dinero."
+          ]
+        },
+        {
+          "heading": "Lo que dicen las reglas de la app",
+          "paragraphs": [
+            "El panel Reglas de Beneficios indica que los bonos diarios sirven para desbloquear episodios y que, si el bono no alcanza, se usan monedas para completar el pago. Por separado, la política de privacidad de DramaStack dice que las monedas virtuales sin gastar no pueden convertirse en ninguna moneda. Eso describe valor para ver contenido dentro de la app, no dinero disponible para retirar.",
+            "La ficha de Google Play presenta DramaStack como una app de entretenimiento gratuita con anuncios y menciona recompensas opcionales por anuncios. No explica un programa de retiros en efectivo ni sus condiciones. En conjunto, la pantalla promocional de retiro y las reglas escritas no demuestran una forma fiable de ganar dinero."
+          ],
+          "source": {
+            "title": "DramaStack: política de privacidad",
+            "url": "https://www.dramastack.video/privacypolicy.html"
+          }
+        },
+        {
+          "heading": "¿DramaStack paga?",
+          "paragraphs": [
+            "Encontramos una página de retiro con un mínimo de R$300, pero no probamos un pago. La política escrita dice que las monedas virtuales no pueden convertirse en dinero y las reglas de la app vinculan los bonos al desbloqueo de episodios. Con lo que pudimos verificar, no cuentes el saldo ni las tareas como ingresos.",
+            "Si instalas la app para ver sus dramas cortos, considera las recompensas como funciones sujetas a condiciones. No gastes dinero ni muchas horas basándote solo en la pantalla de retiro: primero busca condiciones actuales y escritas que expliquen la elegibilidad, el método y una prueba de pago."
+          ],
+          "source": {
+            "title": "DramaStack en Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.reeltime.dramastack&hl=es"
+          }
+        }
       ],
-      "steps":["Comprueba que el desarrollador en Google Play sea HK Reel Time Technology Limited.","Lee el panel Reglas y las condiciones y política de privacidad vigentes.","Distingue los bonos para episodios y las monedas virtuales del dinero retirable.","Antes de hacer tareas, busca condiciones por escrito sobre elegibilidad y método de retiro.","No tomes un mensaje de éxito o un saldo en pantalla como prueba de un pago."],
-      "pros":["La app ofrece dramas cortos y episodios.","La pestaña Beneficios muestra condiciones para tareas y bonos."],
-      "cons":["Las reglas describen bonos y monedas como valor para desbloquear episodios.","La pantalla muestra un mínimo elevado, pero no verificamos un pago."],
-      "faq":[{"q":"¿DramaStack paga dinero real?","a":"No confirmamos un pago en efectivo. La pantalla de retiro muestra un mínimo de R$300, mientras que la política dice que las monedas virtuales no pueden convertirse en dinero."},{"q":"¿Puedo retirar las monedas que gano?","a":"La política de privacidad dice que las monedas virtuales no gastadas no pueden convertirse en ninguna moneda. Las reglas indican que los bonos se usan para desbloquear episodios."},{"q":"¿Probaron un retiro?","a":"No. La cuenta no tenía saldo y no completamos tareas, compras ni solicitudes de retiro."}],
-      "verdict":"No recomendamos DramaStack como app para generar ingresos. La pantalla de retiro hace una promesa llamativa, pero las reglas escritas describen recompensas dentro de la app y la política dice que las monedas virtuales no se convierten en efectivo. No pudimos verificar un pago.",
-      "imageAlt":"Pestaña Beneficios de DramaStack en portugués con tareas y recompensas",
-      "caption":"La pestaña Beneficios muestra tareas diarias y bonos junto a un saldo cero."
+      "steps": [
+        "Comprueba que el desarrollador en Google Play sea HK Reel Time Technology Limited.",
+        "Lee el panel Reglas y las condiciones y política de privacidad vigentes.",
+        "Distingue los bonos para episodios y las monedas virtuales del dinero retirable.",
+        "Antes de hacer tareas, busca condiciones por escrito sobre elegibilidad y método de retiro.",
+        "No tomes un mensaje de éxito o un saldo en pantalla como prueba de un pago."
+      ],
+      "pros": [
+        "La app ofrece dramas cortos y episodios.",
+        "La pestaña Beneficios muestra condiciones para tareas y bonos."
+      ],
+      "cons": [
+        "Las reglas describen bonos y monedas como valor para desbloquear episodios.",
+        "La pantalla muestra un mínimo elevado, pero no verificamos un pago."
+      ],
+      "faq": [
+        {
+          "q": "¿DramaStack paga dinero real?",
+          "a": "No confirmamos un pago en efectivo. La pantalla de retiro muestra un mínimo de R$300, mientras que la política dice que las monedas virtuales no pueden convertirse en dinero."
+        },
+        {
+          "q": "¿Puedo retirar las monedas que gano?",
+          "a": "La política de privacidad dice que las monedas virtuales no gastadas no pueden convertirse en ninguna moneda. Las reglas indican que los bonos se usan para desbloquear episodios."
+        },
+        {
+          "q": "¿Probaron un retiro?",
+          "a": "No. La cuenta no tenía saldo y no completamos tareas, compras ni solicitudes de retiro."
+        }
+      ],
+      "verdict": "No recomendamos DramaStack como app para generar ingresos. La pantalla de retiro hace una promesa llamativa, pero las reglas escritas describen recompensas dentro de la app y la política dice que las monedas virtuales no se convierten en efectivo. No pudimos verificar un pago.",
+      "imageAlt": "Pestaña Beneficios de DramaStack en portugués con tareas y recompensas",
+      "caption": "La pestaña Beneficios muestra tareas diarias y bonos junto a un saldo cero."
     },
     {
       "id": "compare",
@@ -4685,8 +5635,7 @@ export const articles:Record<Locale,Article[]>={
         "caption": "A diferencia de los sitios centrados solo en muros de ofertas, Swagbucks integra un portal de reembolsos que paga hasta 15 SB por dólar.",
         "wide": true
       }
-    }
-,
+    },
     {
       "id": "pawns",
       "app": "pawns",
@@ -7759,6 +8708,851 @@ export const articles:Record<Locale,Article[]>={
           "afterSectionIndex": 1
         }
       ]
+    },
+    {
+      "id": "tiktoklite-convite",
+      "app": "tiktoklite",
+      "category": "rewards",
+      "slug": "codigo-invitacion-tiktok-lite",
+      "title": "Código de invitación TikTok Lite 2026 (DL70959891): cómo ponerlo y activarlo",
+      "description": "Usa el código de invitación de TikTok Lite DL70959891 (#DL70959891), descarga con el enlace oficial y aprende dónde ingresarlo en la app en 2026.",
+      "intro": "Si vas a crear una cuenta nueva en TikTok Lite, puedes empezar directamente desde el enlace de invitación o ingresar el código DL70959891 (compartido a menudo como #DL70959891; dentro de la aplicación se escribe DL70959891 sin el símbolo #). Las recompensas aplican solo a cuentas y dispositivos nuevos elegibles según las reglas vigentes en tu país.",
+      "sections": [
+        {
+          "heading": "Cómo usar el código de invitación DL70959891 en TikTok Lite",
+          "paragraphs": [
+            "Al abrir el enlace https://www.tiktok.com/d/4/ZS9fcGCx9xhYn-v2KXS/ desde el móvil, TikTok redirige a la página de campaña con el parámetro invite_code=DL70959891 para descargar e instalar la app. Entrar primero por el enlace es la forma más directa para que la invitación quede vinculada al registrarte.",
+            "Si la aplicación te muestra el cuadro manual después del registro, toca el icono de la moneda dorada o ve a Perfil > Recompensas, busca la opción para ingresar código de invitación, escribe DL70959891 sin el numeral (#) y pulsa Confirmar."
+          ],
+          "cta": {
+            "label": "Descargar TikTok Lite con el código DL70959891",
+            "url": "https://www.tiktok.com/d/4/ZS9fcGCx9xhYn-v2KXS/",
+            "sponsored": true
+          },
+          "sources": [
+            {
+              "title": "Soporte de TikTok: Programa de referidos",
+              "url": "https://support.tiktok.com/es/using-tiktok/growing-your-audience/tiktok-referral-program"
+            },
+            {
+              "title": "TikTok Lite en Google Play",
+              "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically.go&hl=es"
+            }
+          ]
+        },
+        {
+          "heading": "Qué muestra la pantalla de invitación y qué requisitos pide TikTok",
+          "paragraphs": [
+            "En la captura de TikTok Lite en Brasil tomada el 16 de noviembre de 2026, el bloque Invita a nuevos amigos muestra +R$ 145,93 para quien invita y +R$ 5,6 para el amigo invitado. Esos importes son ejemplos específicos de esa campaña y moneda local, no un bono garantizado en todos los países.",
+            "Para que el código sea válido, la plataforma exige ser mayor de 18 años, usar una cuenta recién creada en un teléfono donde nunca se haya instalado TikTok ni TikTok Lite y aplicar el código dentro del plazo inicial (generalmente las primeras 24 horas). Además, parte del bono suele liberarse al completar días consecutivos de check-in o visualización de videos."
+          ],
+          "sources": [
+            {
+              "title": "Términos de servicio de TikTok",
+              "url": "https://www.tiktok.com/legal/page/row/terms-of-service/es"
+            }
+          ]
+        },
+        {
+          "heading": "Por qué no aparece el campo del código o da error",
+          "paragraphs": [
+            "El motivo más frecuente por el que no aparece la casilla es el historial del dispositivo: si ya instalaste TikTok o TikTok Lite anteriormente en ese celular, el sistema antifraude suele ocultar la opción de referido aunque uses otro correo. También desaparece si pasaron más de 24 horas desde el registro o si la fecha de nacimiento es menor de 18 años.",
+            "Si ves errores de conexión o bloqueo al validar, desactiva cualquier VPN, cambia de Wi-Fi público a datos móviles, actualiza la app desde Google Play y verifica que la campaña de recompensas esté activa en tu región (en la Unión Europea las recompensas de TikTok Lite fueron suspendidas)."
+          ],
+          "sources": [
+            {
+              "title": "Soporte de TikTok: Programa de referidos",
+              "url": "https://support.tiktok.com/es/using-tiktok/growing-your-audience/tiktok-referral-program"
+            }
+          ]
+        }
+      ],
+      "tables": [
+        {
+          "heading": "Casos comunes al poner el código DL70959891 en TikTok Lite",
+          "columns": [
+            "Situación",
+            "Qué ocurre en la app",
+            "Qué conviene revisar"
+          ],
+          "rows": [
+            [
+              "Usuario nuevo en celular nuevo (18+)",
+              "El enlace o la casilla vincula DL70959891",
+              "Cumple el check-in y minutos de video de la campaña"
+            ],
+            [
+              "El teléfono ya tuvo TikTok antes",
+              "No sale el campo o rechaza el código",
+              "Solo se permite una invitación de nuevo usuario por equipo"
+            ],
+            [
+              "Cuenta creada hace más de 24 horas",
+              "Se oculta la opción manual de código",
+              "Usa las tareas diarias de Recompensas disponibles"
+            ],
+            [
+              "VPN activa o país no elegible",
+              "Error de red o campaña no disponible",
+              "Desactiva la VPN y revisa las bases locales en la app"
+            ]
+          ],
+          "afterSectionIndex": 2
+        }
+      ],
+      "steps": [
+        "Abre el enlace de invitación en tu teléfono antes de instalar TikTok Lite.",
+        "Verifica en Google Play que el desarrollador sea TikTok Pte. Ltd. e instala la aplicación oficial.",
+        "Registra una cuenta nueva con un correo o número nunca usado en TikTok y confirma que eres mayor de 18 años.",
+        "Entra en la pestaña de Recompensas dentro de las primeras 24 horas y, si aparece el campo manual, ingresa DL70959891 (sin #).",
+        "Revisa las tareas diarias requeridas en la pantalla del evento para liberar los puntos correspondientes."
+      ],
+      "stepsSectionIndex": 0,
+      "pros": [
+        "Permite empezar desde el enlace oficial o ingresando DL70959891 manualmente cuando eres elegible",
+        "Aplicación oficial verificada en Google Play (com.zhiliaoapp.musically.go)"
+      ],
+      "cons": [
+        "Limitado a usuarios nuevos y teléfonos sin instalaciones previas",
+        "Los bonos, divisas y plazos cambian según el país y la promoción activa"
+      ],
+      "faq": [
+        {
+          "q": "¿Se escribe #DL70959891 o DL70959891 en la app?",
+          "a": "Escribe DL70959891 sin el símbolo #. Aunque en redes se comparta con numeral (#DL70959891), el enlace oficial utiliza invite_code=DL70959891."
+        },
+        {
+          "q": "¿Puedo poner el código de invitación si ya tenía cuenta?",
+          "a": "Por regla general no. El campo de código de invitación se reserva para cuentas nuevas durante las primeras horas tras el registro."
+        },
+        {
+          "q": "¿Por qué no me sale la opción para ingresar código en TikTok Lite?",
+          "a": "Suele ocurrir cuando el dispositivo ya tuvo TikTok instalado antes, venció el plazo de 24 horas, la cuenta es de menor de edad o la promoción no está activa en tu país."
+        },
+        {
+          "q": "¿El bono se acredita al instante tras poner DL70959891?",
+          "a": "Normalmente no todo de golpe: las campañas piden ver videos o hacer check-in varios días seguidos para desbloquear el premio completo."
+        }
+      ],
+      "verdict": "Si cumples los requisitos de usuario y dispositivo nuevos, descargar desde el enlace oficial e ingresar DL70959891 es la vía correcta para vincular la invitación. Revisa siempre las condiciones que muestra tu propia pestaña de Recompensas.",
+      "imageKey": "tiktoklite-convite",
+      "imageAlt": "Pantalla de Recompensas de TikTok Lite mostrando la sección de invitar amigos y tareas de video",
+      "caption": "Captura de TikTok Lite del 16 de noviembre de 2026: la tarjeta de invitación muestra montos promocionales en reales para esa cuenta brasileña.",
+      "imageWide": false,
+      "secondImage": {
+        "key": "tiktoklite-tarefas",
+        "alt": "Pantalla de tareas diarias y check-in de TikTok Lite con 264 puntos canjeados",
+        "caption": "Pantalla de tareas diarias con check-in de 7 días y recompensa por anuncios.",
+        "wide": false
+      },
+      "sources": [
+        {
+          "title": "Soporte de TikTok: Programa de referidos",
+          "url": "https://support.tiktok.com/es/using-tiktok/growing-your-audience/tiktok-referral-program"
+        },
+        {
+          "title": "TikTok Lite en Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically.go&hl=es"
+        },
+        {
+          "title": "Términos de servicio de TikTok",
+          "url": "https://www.tiktok.com/legal/page/row/terms-of-service/es"
+        }
+      ],
+      "relatedIds": [
+        "tiktoklite-baixar",
+        "tiktoklite"
+      ]
+    },
+    {
+      "id": "tiktoklite-baixar",
+      "app": "tiktoklite",
+      "category": "guides",
+      "slug": "descargar-tiktok-lite",
+      "title": "Descargar TikTok Lite 2026: enlace oficial, Android, iPhone y código DL70959891",
+      "description": "Aprende cómo descargar TikTok Lite gratis y seguro en Android (com.zhiliaoapp.musically.go), su disponibilidad en iPhone y cómo empezar con el código DL70959891.",
+      "intro": "TikTok Lite es la versión oficial y ligera de TikTok pensada para teléfonos con poco almacenamiento, redes móviles lentas o planes de datos reducidos. Descargarlo desde la tienda oficial o mediante el enlace de invitación evita archivos APK alterados y te permite aprovechar las campañas locales si eres usuario nuevo.",
+      "sections": [
+        {
+          "heading": "Cómo descargar TikTok Lite oficial en Android de forma segura",
+          "paragraphs": [
+            "En Android, la aplicación oficial publicada por TikTok Pte. Ltd. figura en Google Play con el paquete com.zhiliaoapp.musically.go (y en ciertas regiones como com.ss.android.ugc.tiktok.lite). Comprueba siempre que el desarrollador sea TikTok Pte. Ltd. y evita páginas desconocidas de APK modificados.",
+            "Si quieres registrarte dentro del programa de invitación como nuevo usuario, puedes iniciar la descarga desde el enlace oficial de abajo, que incluye el código DL70959891 (#DL70959891)."
+          ],
+          "cta": {
+            "label": "Descargar TikTok Lite por el enlace oficial",
+            "url": "https://www.tiktok.com/d/4/ZS9fcGCx9xhYn-v2KXS/",
+            "sponsored": true
+          },
+          "sources": [
+            {
+              "title": "TikTok Lite en Google Play (com.zhiliaoapp.musically.go)",
+              "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically.go&hl=es"
+            }
+          ]
+        },
+        {
+          "heading": "Disponibilidad de TikTok Lite en iPhone (iOS)",
+          "paragraphs": [
+            "A diferencia de Android, TikTok Lite en la App Store de Apple solo está disponible en países seleccionados y no aparece en todas las tiendas regionales (en varias regiones el enlace directo devuelve error 404). Si no figura al buscarlo en tu App Store, deberás usar la aplicación estándar de TikTok.",
+            "No instales perfiles externos ni archivos fuera de la App Store que prometan desbloquear TikTok Lite con dinero extra, ya que ponen en riesgo tu cuenta y tu teléfono."
+          ],
+          "sources": [
+            {
+              "title": "Términos de servicio de TikTok",
+              "url": "https://www.tiktok.com/legal/page/row/terms-of-service/es"
+            }
+          ]
+        },
+        {
+          "heading": "Diferencias entre TikTok Lite y TikTok normal",
+          "paragraphs": [
+            "TikTok Lite prioriza la reproducción fluida de videos cortos y miniseries con menor consumo de memoria y datos. En mercados elegibles también integra la pestaña de Recompensas con check-in diario, anuncios y el campo para código de invitación como DL70959891.",
+            "La versión estándar conserva herramientas avanzadas de edición, efectos y transmisiones en vivo más completas. Si buscas ligereza o promociones regionales en Android, Lite es la opción indicada."
+          ],
+          "sources": [
+            {
+              "title": "Soporte de TikTok: Programa de referidos",
+              "url": "https://support.tiktok.com/es/using-tiktok/growing-your-audience/tiktok-referral-program"
+            }
+          ]
+        }
+      ],
+      "tables": [
+        {
+          "heading": "Comparativa entre TikTok Lite y TikTok estándar",
+          "columns": [
+            "Aspecto",
+            "TikTok Lite",
+            "TikTok estándar"
+          ],
+          "rows": [
+            [
+              "Objetivo",
+              "Ahorrar espacio, batería y datos móviles",
+              "Experiencia completa de grabación, efectos y lives"
+            ],
+            [
+              "Paquete Android",
+              "com.zhiliaoapp.musically.go (TikTok Pte. Ltd.)",
+              "com.zhiliaoapp.musically"
+            ],
+            [
+              "iPhone / App Store",
+              "Solo disponible en regiones seleccionadas",
+              "Disponible de forma general"
+            ],
+            [
+              "Código DL70959891",
+              "Para cuentas y equipos nuevos en regiones con campaña",
+              "Sujeto a promociones distintas por país"
+            ]
+          ],
+          "afterSectionIndex": 2
+        }
+      ],
+      "steps": [
+        "Pulsa el enlace oficial de invitación en tu móvil o busca TikTok Lite en Google Play.",
+        "Confirma el desarrollador TikTok Pte. Ltd. (paquete com.zhiliaoapp.musically.go) e instala la app.",
+        "Abre TikTok Lite y crea una cuenta nueva si ese dispositivo nunca tuvo la aplicación.",
+        "Entra al icono de moneda en las primeras 24 horas para confirmar la vinculación del código DL70959891."
+      ],
+      "stepsSectionIndex": 0,
+      "pros": [
+        "Ocupa menos espacio y funciona mejor en teléfonos Android modestos",
+        "Descarga directa y verificada desde Google Play o enlace oficial de TikTok"
+      ],
+      "cons": [
+        "No está publicado en la App Store de todos los países",
+        "Tiene menos filtros y funciones de edición que TikTok normal"
+      ],
+      "faq": [
+        {
+          "q": "¿Es gratis y seguro descargar TikTok Lite?",
+          "a": "Sí, siempre que lo bajes desde Google Play (TikTok Pte. Ltd.) o desde el enlace oficial de TikTok. Evita sitios de APK de terceros."
+        },
+        {
+          "q": "¿Qué código puedo usar al descargar TikTok Lite?",
+          "a": "Al entrar por https://www.tiktok.com/d/4/ZS9fcGCx9xhYn-v2KXS/ o en la casilla manual de cuentas nuevas elegibles puedes usar el código DL70959891."
+        },
+        {
+          "q": "¿Por qué no me aparece TikTok Lite en el iPhone?",
+          "a": "TikTok Lite para iOS solo se distribuye en países específicos de la App Store. Si no sale en tu región, utiliza la app principal de TikTok."
+        }
+      ],
+      "verdict": "Descarga TikTok Lite únicamente desde Google Play o el enlace oficial de invitación para evitar archivos alterados. Si estrenas cuenta en un Android elegible, iniciar por el enlace con el código DL70959891 facilita el registro.",
+      "imageKey": "tiktoklite-tarefas",
+      "imageAlt": "Interfaz de TikTok Lite en Android con tareas diarias y recompensas",
+      "caption": "Pantalla de TikTok Lite en Android (com.zhiliaoapp.musically.go) con check-in y tareas diarias.",
+      "imageWide": false,
+      "secondImage": {
+        "key": "tiktoklite-convite",
+        "alt": "Pantalla de TikTok Lite con sección de invitar amigos y progreso de video",
+        "caption": "Sección de invitar amigos y barra de minutos vistos en TikTok Lite.",
+        "wide": false
+      },
+      "sources": [
+        {
+          "title": "TikTok Lite en Google Play (com.zhiliaoapp.musically.go)",
+          "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically.go&hl=es"
+        },
+        {
+          "title": "Soporte de TikTok: Programa de referidos",
+          "url": "https://support.tiktok.com/es/using-tiktok/growing-your-audience/tiktok-referral-program"
+        },
+        {
+          "title": "Términos de servicio de TikTok",
+          "url": "https://www.tiktok.com/legal/page/row/terms-of-service/es"
+        }
+      ],
+      "relatedIds": [
+        "tiktoklite-convite",
+        "tiktoklite"
+      ]
+    },
+    {
+      "id": "tiktoklite",
+      "app": "tiktoklite",
+      "category": "rewards",
+      "slug": "tiktok-lite-recompensas-retiro",
+      "title": "TikTok Lite recompensas 2026: puntos, tareas diarias, retiro y código DL70959891",
+      "description": "Cómo funcionan las recompensas de TikTok Lite en 2026: check-in diario, anuncios, videos, retiros desde mínimos regionales, caducidad de puntos y código DL70959891.",
+      "intro": "TikTok Lite ofrece una pestaña de Recompensas donde se acumulan puntos por registro diario, anuncios, tiempo de visualización e invitaciones. Revisar capturas reales ayuda a entender cuánto vale cada tarea, cómo se retira y por qué los puntos pueden caducar.",
+      "sections": [
+        {
+          "heading": "Cómo se calculan los puntos y qué pagan las tareas diarias",
+          "paragraphs": [
+            "En las capturas de TikTok Lite en Brasil del 16 de noviembre de 2026, un saldo de 240.769 puntos equivale a R$ 8,02 — aproximadamente 30.000 puntos por cada R$ 1,00. La tasa exacta y la moneda dependen siempre del país y de la campaña activa.",
+            "Esa misma pantalla muestra una racha de check-in de 7 días de hasta 4.557 puntos (315 el día 1 hasta 1.428 el día 7), hasta 6.000 puntos viendo 30 anuncios diarios (200 puntos por cada 15 segundos) y hasta 1.500 puntos por ver videos hasta 120 minutos. Si vas a abrir una cuenta nueva elegible, puedes usar el enlace con el código DL70959891."
+          ],
+          "cta": {
+            "label": "Entrar a TikTok Lite con el código DL70959891",
+            "url": "https://www.tiktok.com/d/4/ZS9fcGCx9xhYn-v2KXS/",
+            "sponsored": true
+          },
+          "sources": [
+            {
+              "title": "Soporte de TikTok: Programa de referidos",
+              "url": "https://support.tiktok.com/es/using-tiktok/growing-your-audience/tiktok-referral-program"
+            }
+          ]
+        },
+        {
+          "heading": "Métodos de retiro, saldo mínimo y caducidad de puntos",
+          "paragraphs": [
+            "En la pantalla Canjear recompensas de la cuenta brasileña aparecen retiros por PagBank, Pix y transferencia bancaria desde un mínimo de R$ 0,50 (con botones de R$ 0,5, R$ 1, R$ 15 y R$ 30), además de recarga móvil desde R$ 10 para operadores locales. La app aclara que los límites individuales y mensuales varían según el país o la región.",
+            "También destaca un aviso superior indicando que 576 puntos caducan el 10 de enero a las 23:59. Como los puntos tienen vencimiento, conviene canjear el saldo disponible antes de la fecha límite."
+          ],
+          "sources": [
+            {
+              "title": "Términos de servicio de TikTok",
+              "url": "https://www.tiktok.com/legal/page/row/terms-of-service/es"
+            }
+          ]
+        },
+        {
+          "heading": "Qué esperar realmente antes de dedicar tiempo",
+          "paragraphs": [
+            "Las tareas individuales generan montos pequeños: completar los 30 anuncios diarios (6.000 puntos) equivale a cerca de R$ 0,20 con la conversión observada en Brasil. Los bonos más altos mostrados en banners promocionales o eventos de referidos dependen de invitar usuarios nuevos válidos que cumplan varios días de actividad.",
+            "Conviene usar TikTok Lite si ya disfrutas ver videos cortos en una app ligera, tomando los puntos como un incentivo adicional y no como un ingreso fijo."
+          ],
+          "sources": [
+            {
+              "title": "TikTok Lite en Google Play",
+              "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically.go&hl=es"
+            }
+          ]
+        }
+      ],
+      "tables": [
+        {
+          "heading": "Recompensas observadas en TikTok Lite Brasil (16 de noviembre de 2026)",
+          "columns": [
+            "Tarea o retiro",
+            "Dato observado en pantalla",
+            "Detalle"
+          ],
+          "rows": [
+            [
+              "Conversión de saldo",
+              "240.769 puntos = R$ 8,02",
+              "Aprox. 30.000 puntos = R$ 1,00"
+            ],
+            [
+              "Check-in 7 días",
+              "4.557 puntos en total",
+              "315 pts Día 1 hasta 1.428 pts Día 7"
+            ],
+            [
+              "Anuncios diarios (0/30)",
+              "Hasta 6.000 puntos",
+              "200 puntos por cada 15 segundos vistos"
+            ],
+            [
+              "Ver videos (120 min)",
+              "Hasta 1.500 puntos",
+              "Ejemplo: 264 pts canjeados a los 52 min"
+            ],
+            [
+              "Retiros y recargas",
+              "Desde R$ 0,50 / R$ 10 recarga",
+              "PagBank, Pix, banco; límites varían por país"
+            ]
+          ],
+          "afterSectionIndex": 1
+        }
+      ],
+      "steps": [
+        "Descarga TikTok Lite desde Google Play o mediante el enlace oficial con el código DL70959891 si eres usuario nuevo.",
+        "Abre el icono de moneda para revisar las tareas activas y la tasa de conversión de tu país.",
+        "Completa el check-in diario y las metas de video o anuncios si deseas sumar puntos.",
+        "Entra a Canjear recompensas para ver métodos de retiro disponibles y fechas de vencimiento."
+      ],
+      "stepsSectionIndex": 0,
+      "pros": [
+        "Mínimo de retiro muy accesible en mercados habilitados (desde R$ 0,50 en Brasil)",
+        "Reglas visibles de conversión, historial y fecha de caducidad de puntos"
+      ],
+      "cons": [
+        "Los puntos por anuncios y videos suman importes bajos al día",
+        "Los puntos caducan si no se usan y las recompensas no existen en todas las regiones"
+      ],
+      "faq": [
+        {
+          "q": "¿Cuántos puntos de TikTok Lite equivalen a dinero real en las capturas?",
+          "a": "En la pantalla brasileña del 16 de noviembre de 2026, 240.769 puntos equivalen a R$ 8,02 (alrededor de 30.000 puntos por R$ 1,00). El valor cambia según país y campaña."
+        },
+        {
+          "q": "¿Cuál es el retiro mínimo en TikTok Lite?",
+          "a": "En la captura de Brasil el retiro en efectivo (Pix, PagBank o transferencia bancaria) parte de R$ 0,50 y la recarga móvil requiere R$ 10. Cada región define sus propios límites."
+        },
+        {
+          "q": "¿Los puntos de TikTok Lite caducan?",
+          "a": "Sí. La app muestra avisos con fecha y hora exacta de expiración (por ejemplo, 576 puntos por vencer el 10 de enero a las 23:59)."
+        }
+      ],
+      "verdict": "TikTok Lite sí ofrece retiros reales con mínimos bajos en los países donde el programa está activo, pero las tareas diarias rinden montos modestos. Úsalo como app ligera de entretenimiento y aprovecha el código DL70959891 solo si cumples las reglas de cuenta nueva.",
+      "imageKey": "tiktoklite-saque",
+      "imageAlt": "Pantalla Canjear recompensas de TikTok Lite con saldo de R$ 8,02 y botones de retiro",
+      "caption": "Pantalla de retiro de TikTok Lite del 16 de noviembre de 2026 con R$ 8,02 (240.769 puntos), mínimo de R$ 0,50 y aviso de caducidad.",
+      "imageWide": false,
+      "secondImage": {
+        "key": "tiktoklite-tarefas",
+        "alt": "Pantalla de tareas diarias y check-in de TikTok Lite",
+        "caption": "Check-in consecutivo de 7 días y tareas de anuncios en la pestaña de Recompensas.",
+        "wide": false
+      },
+      "sources": [
+        {
+          "title": "Soporte de TikTok: Programa de referidos",
+          "url": "https://support.tiktok.com/es/using-tiktok/growing-your-audience/tiktok-referral-program"
+        },
+        {
+          "title": "TikTok Lite en Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically.go&hl=es"
+        },
+        {
+          "title": "Términos de servicio de TikTok",
+          "url": "https://www.tiktok.com/legal/page/row/terms-of-service/es"
+        }
+      ],
+      "relatedIds": [
+        "tiktoklite-convite",
+        "tiktoklite-baixar"
+      ]
+    },
+    {
+      "id": "dramagood",
+      "app": "dramagood",
+      "category": "rewards",
+      "slug": "dramagood-paga-de-verdad",
+      "title": "¿DramaGood paga de verdad? Nuestro testeo dice que no (2026)",
+      "description": "Probamos DramaGood: saldo de R$ 106,60, retiro mínimo de R$ 240 y premios de R$ 7.777. Te contamos por qué esta app de dramas no paga.",
+      "intro": "DramaGood promete dinero por ver mininovelas cortas: banners de retiros de R$ 240 a R$ 1.000 cruzan la pantalla, la pestaña de tareas anuncia premios de R$ 7.777 y la cartera marca R$ 106,60 desde la primera sesión. Lo probamos el 16 de noviembre de 2026 y la respuesta es directa: no paga. El saldo sube rápido al inicio y se frena antes del mínimo exigido, y ningún documento oficial del desarrollador menciona retiros en efectivo. Los valores aparecen en reales brasileños (R$) porque el testeo se hizo en la versión en portugués de la app, en Brasil.",
+      "sections": [
+        {
+          "heading": "Qué es DramaGood y qué dice Google Play",
+          "paragraphs": [
+            "DramaGood es una aplicación Android de dramas cortos verticales, publicada en Google Play por el desarrollador Short Drama Workgroup bajo el paquete com.drama.good.shortplay.atsab. El catálogo sigue el patrón de las apps de microdrama: episodios de pocos minutos en formato vertical, con pestañas como Topo, Popular, Novo, Homens y Mulheres. En la pantalla inicial del testeo aparecían dramas populares como O Segredo da Minha Esposa y A Filha Perdida da Família Bilionária, además de estrenos como A Herdeira Esperada y Pesadelo no Campus — los títulos se muestran en portugués porque así estaba la app durante la prueba.",
+            "El detalle importante está en lo que la ficha oficial no dice. La descripción en Google Play habla de ver dramas cortos y coleccionar artículos y ventajas de visualización dentro de la aplicación — no menciona Pix, retiros ni dinero real en ningún momento. La Política de Privacidad publicada en drama-good.com/privacy.html, con vigencia de 12 de enero de 2026, describe el servicio como streaming y enumera la recolección de identificadores del dispositivo (IMEI, Android ID), dirección IP, ubicación aproximada e historial de visualización, pero no cita ningún programa de recompensas en dinero."
+          ],
+          "source": {
+            "title": "DramaGood en Google Play (com.drama.good.shortplay.atsab)",
+            "url": "https://play.google.com/store/apps/details?id=com.drama.good.shortplay.atsab&hl=es"
+          }
+        },
+        {
+          "heading": "Lo que aparece en pantalla: saldo alto y promesas mayores",
+          "paragraphs": [
+            "Al abrir la app, el saldo de R$ 106,60 queda fijo en la parte superior, con el aviso 'Ganhe mais R$ 133,40, pode sacar R$ 240,00' (Gana R$ 133,40 más y puedes retirar R$ 240,00) junto a íconos de tarjetas. La cartera muestra cinco montos de retiro — R$ 240,00 (marcado como 'Assistir & Sacar'), R$ 400,00, R$ 650,00, R$ 1.000,00 y R$ 1.600,00 — con íconos de Pix, Visa, Mastercard, Hipercard y Amex, y explica que 'el monto mínimo de retiro es R$ 240' según los requisitos de una 'plataforma asociada de pagos' que ninguna página del desarrollador identifica.",
+            "Mientras tanto, cintas flotantes cruzan el reproductor anunciando 'Parabéns! ... sacou com sucesso R$ 240' (Felicitaciones, retiró con éxito R$ 240), R$ 650 y R$ 1.000, siempre con nombres brasileños. La pestaña Ganhe Mais completa el cuadro: 'Assistir vídeo -> dinheiro. R$ 7777 Top Prêmio' con seis cofres por reclamar, 'Tempo de assistir R$ 7777 Top Prêmio' cada 10 minutos y 'Assistir episódios R$ 3333 Top Prêmio' cada 3 episodios. En el testeo, con las tareas de 'Avaliação cinco estrelas' y 'Ativar notificações' ya completadas, el saldo seguía en R$ 106,60, a R$ 133,40 del mínimo."
+          ]
+        },
+        {
+          "heading": "Por qué DramaGood no paga: las cuentas no cierran",
+          "paragraphs": [
+            "Una app gratuita se sostiene con publicidad, y cada anuncio visto deja centavos. Para cumplir lo que promete, DramaGood tendría que pagar R$ 240 a cada usuario que ve unos minutos de video — y además sostener premios de R$ 7.777 y retiros de R$ 1.600. Ningún ecosistema publicitario paga eso: por eso el saldo se infla al inicio y el mínimo exigido queda siempre más adelante, como muestran los R$ 133,40 que faltaban en la prueba.",
+            "Los documentos oficiales refuerzan la conclusión. Ni la ficha de Google Play ni la Política de Privacidad mencionan un programa de retiros, transferencias bancarias ni pagos en dinero; si esa 'plataforma asociada de pagos' existiera, tendría que aparecer en las reglas del servicio — y no aparece. El cuadro siguiente contrasta lo que la app muestra en pantalla con lo que el desarrollador declara oficialmente. Los banners de 'Parabéns!' son la única 'prueba' de pagos, sin respaldo externo verificable."
+          ],
+          "source": {
+            "title": "Política de Privacidad de DramaGood (drama-good.com)",
+            "url": "https://www.drama-good.com/privacy.html"
+          }
+        }
+      ],
+      "steps": [
+        "Compara la promesa con la ficha oficial: si Google Play solo habla de artículos y ventajas de visualización, desconfía de los banners de retiro.",
+        "Lee la Política de Privacidad: una app que de verdad paga menciona su programa de recompensas y su forma de pago; DramaGood no lo hace.",
+        "Haz la cuenta del mínimo: R$ 240 de retiro exigiría una publicidad que ningún usuario genera viendo unos minutos al día.",
+        "Nunca pagues para desbloquear un retiro ni entregues datos bancarios para 'confirmar' un monto.",
+        "Exige comprobante externo: estado de cuenta o recibo de la entidad financiera, no banners dentro de la propia app."
+      ],
+      "stepsSectionIndex": 0,
+      "tables": [
+        {
+          "heading": "Promesa en pantalla x documento oficial",
+          "columns": [
+            "Lo que la app muestra",
+            "Lo que dicen los documentos oficiales"
+          ],
+          "rows": [
+            [
+              "Saldo de R$ 106,60 y retiro desde R$ 240",
+              "Ninguna mención a retiros ni dinero real en la ficha de Google Play"
+            ],
+            [
+              "Banners de 'retiró con éxito R$ 240 / R$ 650 / R$ 1.000'",
+              "La Política de Privacidad describe solo un servicio de streaming"
+            ],
+            [
+              "Íconos de Pix, Visa, Mastercard, Hipercard y Amex",
+              "Ningún programa de pago o transferencia documentado"
+            ],
+            [
+              "Premios de R$ 7.777 y R$ 3.333 por ver videos",
+              "La descripción oficial cita solo artículos y ventajas dentro de la app"
+            ]
+          ],
+          "afterSectionIndex": 1
+        }
+      ],
+      "pros": [
+        "Catálogo real de mininovelas verticales: los episodios abren, se reproducen en HD y siguen el patrón de las apps de microdrama.",
+        "Está publicado en Google Play oficial, con ficha y Política de Privacidad accesibles — sin necesidad de APK de sitios terceros."
+      ],
+      "cons": [
+        "Promete montos imposibles: retiros de R$ 240 a R$ 1.600 y premios de R$ 7.777 que ninguna app de anuncios puede sostener.",
+        "En la prueba, el saldo se detuvo en R$ 106,60, siempre a R$ 133,40 del mínimo de R$ 240.",
+        "Banners de retiros con nombres brasileños e íconos de Pix y PicPay sin ningún respaldo externo."
+      ],
+      "faq": [
+        {
+          "q": "¿DramaGood paga de verdad?",
+          "a": "No. En el testeo del 16/11/2026 el saldo quedó en R$ 106,60, el retiro exige R$ 240 y ningún documento oficial del desarrollador menciona pagos en dinero."
+        },
+        {
+          "q": "¿DramaGood es confiable?",
+          "a": "Como app de dramas, funciona; como fuente de dinero, no. La ficha de Google Play solo menciona ventajas dentro de la app, y la Política de Privacidad describe un servicio de streaming."
+        },
+        {
+          "q": "¿DramaGood es estafa?",
+          "a": "Promete pagos que no puede sostener y simula retiros con banners sin respaldo. Lo real es el catálogo de mininovelas; el dinero es señuelo para que veas anuncios."
+        }
+      ],
+      "verdict": "DramaGood no paga. La app sí entrega el catálogo de mininovelas, pero la parte del dinero es fachada: un saldo que sube hasta R$ 106,60 y se detiene, un mínimo de R$ 240 que nunca se alcanza, banners de retiros sin respaldo y ningún programa de pagos citado en Google Play ni en la Política de Privacidad. Úsala solo como entretenimiento gratuito — nunca como fuente de ingresos.",
+      "imageKey": "dramagood-home",
+      "imageAlt": "Pantalla inicial de DramaGood con saldo de R$ 106,60, catálogo de mininovelas y aviso de retiro de R$ 240,00",
+      "caption": "Pantalla inicial en el testeo del 16/11/2026: saldo de R$ 106,60 y aviso de que faltan R$ 133,40 para liberar el retiro de R$ 240,00.",
+      "imageWide": false,
+      "secondImage": {
+        "key": "dramagood-player",
+        "alt": "Reproductor de DramaGood mostrando la mininovela Três Pequenos Anjinhos do Céu con temporizador de monedas y saldo fijo arriba",
+        "caption": "Reproductor con cintas flotantes que simulan retiros de R$ 240 a R$ 1.000 sobre el video, capturado el 16/11/2026.",
+        "wide": false
+      },
+      "sources": [
+        {
+          "title": "DramaGood en Google Play (com.drama.good.shortplay.atsab)",
+          "url": "https://play.google.com/store/apps/details?id=com.drama.good.shortplay.atsab&hl=es"
+        },
+        {
+          "title": "Política de Privacidad de DramaGood (drama-good.com)",
+          "url": "https://www.drama-good.com/privacy.html"
+        }
+      ],
+      "relatedIds": [
+        "dramagood-saque",
+        "dramagood-tarefas",
+        "cashdrama",
+        "dramastack",
+        "pinedrama",
+        "dramabox"
+      ]
+    },
+    {
+      "id": "dramagood-saque",
+      "app": "dramagood",
+      "category": "rewards",
+      "slug": "como-retirar-dinero-de-dramagood",
+      "title": "¿DramaGood realmente paga? El retiro mínimo imposible (2026)",
+      "description": "Probamos DramaGood: el saldo llega a R$ 106,60 y el retiro pide R$ 240 como mínimo. Opciones hasta R$ 1.600 y ninguna prueba de pago real.",
+      "intro": "La cartera es el corazón de la promesa de DramaGood: un saldo que sube hasta R$ 106,60 en la primera sesión y necesita llegar a R$ 240 para que 'puedas retirar'. Lo probamos el 16/11/2026 y registramos los cinco montos de retiro mostrados (de R$ 240 a R$ 1.600), los íconos de Pix y tarjetas, la frase sobre una 'plataforma asociada de pagos' y el aviso de que faltaban R$ 133,40. Nada de eso se convirtió en dinero. Este artículo abre la pantalla de la cartera y explica, con números, por qué el retiro de DramaGood no ocurre. Los montos están en reales brasileños porque la app se probó en su versión en portugués.",
+      "sections": [
+        {
+          "heading": "Cómo el saldo llega a R$ 106,60 — y no pasa de ahí",
+          "paragraphs": [
+            "DramaGood acredita 'dinero' por casi todo: minutos de video, episodios vistos, tareas completadas y cofres de la pestaña de premios. En la primera sesión, ese ritmo inicial llevó la cartera a R$ 106,60 — una cifra que impresiona hasta que lees el aviso al lado: 'Ganhe mais R$ 133,40, pode sacar R$ 240,00' (Gana R$ 133,40 más y puedes retirar R$ 240,00). Es decir, la app muestra un saldo alto para captar la atención, pero el valor que de verdad importa, el retiro, sigue más lejos que todo lo acreditado hasta entonces.",
+            "Las tareas alimentan la expectativa de llegar: 'Tempo de assistir R$ 7777 Top Prêmio' promete bonos cada 10 minutos y 'Assistir episódios R$ 3333 Top Prêmio' cada 3 episodios, y la lista 'Tarefas e Dinheiro' aún pide 'Avaliação cinco estrelas' y 'Ativar notificações', ambas completadas en la prueba, con botón 'Resgatar' (Reclamar) disponible. Aun con todo activo, la cartera seguía en R$ 106,60 — y la meta de R$ 240 quedaba fuera de alcance."
+          ],
+          "source": {
+            "title": "DramaGood en Google Play (com.drama.good.shortplay.atsab)",
+            "url": "https://play.google.com/store/apps/details?id=com.drama.good.shortplay.atsab&hl=es"
+          }
+        },
+        {
+          "heading": "Los montos de retiro mostrados: de R$ 240 a R$ 1.600",
+          "paragraphs": [
+            "La pantalla de la cartera presenta cinco opciones: R$ 240,00 (marcado como 'Assistir & Sacar'), R$ 400,00, R$ 650,00, R$ 1.000,00 y R$ 1.600,00. Las 'Instruções de Saque' (Instrucciones de retiro) afirman que, de acuerdo con los requisitos de la plataforma asociada de pagos DramaGood, el monto mínimo de retiro es R$ 240. Los íconos de Pix, Visa, Mastercard, Hipercard y Amex completan la escenografía, pero esa 'plataforma asociada' no aparece en ningún documento público del desarrollador.",
+            "El aviso central resume el bloqueo: 'Para sacar R$ 240,00, ainda faltam R$ 133,40' (para retirar R$ 240,00 aún faltan R$ 133,40), con barra de progreso y botón 'Sacar R$ para Conta' (Retirar R$ a la cuenta). En otras palabras: aun con tareas completadas y minutos vistos, el monto liberado para retiro es cero, porque el mínimo nunca se alcanza. El cuadro siguiente muestra cada opción y qué significa frente al saldo observado."
+          ]
+        },
+        {
+          "heading": "Por qué el mínimo de R$ 240 nunca se alcanza",
+          "paragraphs": [
+            "Haz la cuenta: un anuncio con recompensa deja algunos centavos por visualización, y pocos usuarios ven horas de video al día. Para pagar R$ 240 a cada persona que vio 10 minutos, DramaGood tendría que facturar cientos de reales de publicidad por usuario — decenas de veces lo que el mercado publicitario paga. Por eso la cartera vive en el 'casi': el diseño invita a seguir viendo y completando tareas, sin liberar nunca el monto.",
+            "Los documentos oficiales cierran el tema. La ficha de Google Play describe DramaGood solo como una app de dramas con artículos y ventajas dentro de la aplicación, y la Política de Privacidad (drama-good.com/privacy.html) habla de streaming, recolección de identificadores y SDKs de anuncios — sin una sola línea sobre retiros, transferencias ni programas de recompensas en dinero. Un servicio que realmente pagara R$ 240 por usuario tendría que explicarlo en sus reglas; el silencio oficial es la respuesta."
+          ],
+          "source": {
+            "title": "Política de Privacidad de DramaGood (drama-good.com)",
+            "url": "https://www.drama-good.com/privacy.html"
+          }
+        }
+      ],
+      "steps": [
+        "Nunca pagues una comisión, 'desbloqueo' o envío anticipado para liberar un retiro: una app legítima no cobra por pagar.",
+        "No entregues datos bancarios ni de tarjeta para 'confirmar' el monto — en DramaGood, los íconos de Pix y tarjetas aparecen sin ningún flujo real de pago.",
+        "Compara la promesa con los ingresos: las apps de anuncios dejan centavos por minuto visto; un retiro de R$ 240 no cierra en la cuenta.",
+        "Revisa los documentos oficiales (ficha de la tienda y Política de Privacidad): un retiro verdadero debe estar descrito en las reglas.",
+        "Desconfía de los nombres y montos que pasan en los banners: 'Eloá Martins Carvalho sacou R$ 240' no es un comprobante — un estado de cuenta sí."
+      ],
+      "stepsSectionIndex": 0,
+      "tables": [
+        {
+          "heading": "Opciones de retiro mostradas en la cartera",
+          "columns": [
+            "Opción en pantalla",
+            "Qué significa con un saldo de R$ 106,60"
+          ],
+          "rows": [
+            [
+              "R$ 240,00 — 'Assistir & Sacar'",
+              "Mínimo exigido; faltaban R$ 133,40 para liberarlo"
+            ],
+            [
+              "R$ 400,00",
+              "Requeriría R$ 293,40 más que el saldo actual"
+            ],
+            [
+              "R$ 650,00",
+              "El saldo cubría menos del 17% del monto"
+            ],
+            [
+              "R$ 1.000,00 y R$ 1.600,00",
+              "Escalones mostrados sin camino real para alcanzarlos"
+            ]
+          ],
+          "afterSectionIndex": 1
+        }
+      ],
+      "pros": [
+        "La cartera es transparente sobre el mínimo y lo que falta, lo que ayuda a identificar el mecanismo en minutos.",
+        "La app es gratuita y la prueba no exigió ningún depósito para empezar a ver."
+      ],
+      "cons": [
+        "El mínimo de R$ 240 resulta inalcanzable: en la prueba, el saldo se detuvo en R$ 106,60 con R$ 133,40 en falta.",
+        "La 'plataforma asociada de pagos' citada en pantalla no aparece en ningún documento oficial del desarrollador.",
+        "Los íconos de Pix, Visa, Mastercard, Hipercard y Amex sugieren pagos sin ninguna evidencia de que ocurran."
+      ],
+      "faq": [
+        {
+          "q": "¿Cómo retirar dinero de DramaGood?",
+          "a": "La app exige un saldo mínimo de R$ 240, y en el testeo del 16/11/2026 la cartera marcaba R$ 106,60, con R$ 133,40 en falta. Sin llegar al mínimo, el retiro no se libera."
+        },
+        {
+          "q": "¿Cuál es el retiro mínimo de DramaGood?",
+          "a": "R$ 240,00, según las 'Instruções de Saque' de la propia app, que atribuyen el requisito a una 'plataforma asociada de pagos' sin nombre ni documento público."
+        },
+        {
+          "q": "¿DramaGood realmente paga?",
+          "a": "No hay ningún pago comprobado: los documentos oficiales no citan programa de retiros y el saldo observado no llega al mínimo exigido."
+        }
+      ],
+      "verdict": "El retiro de DramaGood es carnada: el saldo sube rápido hasta R$ 106,60, se detiene a R$ 133,40 del mínimo de R$ 240 y los escalones de R$ 400 a R$ 1.600 existen para mantener la ilusión. Los íconos de Pix y tarjetas y una 'plataforma asociada' sin nombre no reemplazan reglas de pago — que no existen en los documentos oficiales. No inviertas tiempo esperando un pago que la app no tiene cómo hacer.",
+      "imageKey": "dramagood-carteira",
+      "imageAlt": "Pantalla de cartera de DramaGood con saldo de R$ 106,60, opciones de retiro de R$ 240 a R$ 1.600 e íconos de Pix y tarjetas",
+      "caption": "Cartera en el testeo del 16/11/2026: el aviso central indica que faltan R$ 133,40 para el retiro mínimo de R$ 240,00.",
+      "imageWide": false,
+      "secondImage": {
+        "key": "dramagood-tarefas",
+        "alt": "Pestaña Ganhe Mais de DramaGood con premios de R$ 7777, tareas de ver 10 minutos y 3 episodios y la tarea de reseña de 5 estrellas",
+        "caption": "La pestaña Ganhe Mais promete 'R$ 7777 Top Prêmio' por videos y episodios, con recompensas que nunca llegan a la cartera como dinero.",
+        "wide": false
+      },
+      "sources": [
+        {
+          "title": "DramaGood en Google Play (com.drama.good.shortplay.atsab)",
+          "url": "https://play.google.com/store/apps/details?id=com.drama.good.shortplay.atsab&hl=es"
+        },
+        {
+          "title": "Política de Privacidad de DramaGood (drama-good.com)",
+          "url": "https://www.drama-good.com/privacy.html"
+        }
+      ],
+      "relatedIds": [
+        "dramagood",
+        "dramagood-tarefas",
+        "cashdrama-withdraw",
+        "cashdrama-proofs",
+        "freecash-bonus-cashout"
+      ]
+    },
+    {
+      "id": "dramagood-tarefas",
+      "app": "dramagood",
+      "category": "rewards",
+      "slug": "dramagood-tareas-y-dinero",
+      "title": "DramaGood tareas y dinero: ¿el premio de R$ 7.777 es real?",
+      "description": "Tareas de R$ 7.777, cofres y reseñas de 5 estrellas: lo que DramaGood pide y por qué esos premios nunca llegan a tu cuenta.",
+      "intro": "La pestaña Ganhe Mais de DramaGood parece una tienda de premios: seis cofres prometen R$ 7.777 por ver videos, las tareas de 10 minutos anuncian el mismo monto, los episodios prometen R$ 3.333 y un letrero felicita a 'Daniele A.' por un retiro de R$ 240. En la prueba del 16/11/2026, ninguna de esas recompensas se convirtió en dinero — y una de las tareas revela mucho sobre la app: ofrece recompensa por la reseña de 5 estrellas en la tienda. Este artículo muestra qué pide cada tarea, cómo funcionan los avisos de retiro y qué usar en su lugar. Los montos están en reales brasileños porque la app se probó en su versión en portugués.",
+      "sections": [
+        {
+          "heading": "Las tareas y el dinero de DramaGood: promesas por capas",
+          "paragraphs": [
+            "La pestaña 'Ganhe Mais' organiza las promesas en bloques: 'Assistir vídeo -> dinheiro. R$ 7777 Top Prêmio', con seis cofres numerados del 1 al 6 y botón 'Resgatar' (Reclamar); 'Tempo de assistir R$ 7777 Top Prêmio', que pide 10 minutos de video (bloque '0/10Minutos'); y 'Assistir episódios R$ 3333 Top Prêmio', que pide 3 episodios (bloque '0/3Episódios'). La lista 'Tarefas e Dinheiro' completa el cuadro con 'Avaliação cinco estrelas' y 'Ativar notificações', marcadas como completadas en la prueba, con recompensa 'disponible' para reclamar.",
+            "El problema es el destino de esas recompensas. Los premios de R$ 7.777 y R$ 3.333 no llegan a la cartera como dinero retirable: en la prueba, el saldo observado quedó en R$ 106,60, con R$ 133,40 en falta para el mínimo de R$ 240. Y los números no cierran: R$ 7.777 por 10 minutos de video son miles de veces lo que la publicidad paga por ese tiempo en pantalla. Una recompensa que existe pero nunca en la forma y el monto que liberan un retiro es el mecanismo típico de las apps que no pagan."
+          ]
+        },
+        {
+          "heading": "La tarea 'Avaliação cinco estrelas': por qué se infla la nota",
+          "paragraphs": [
+            "Entre las tareas, una entrega el juego: 'Avaliação cinco estrelas', mostrada como 'Concluído Avaliação cinco estrelas, Recompensas disponível' con botón 'Resgatar'. En traducción directa, DramaGood ofrece una recompensa virtual a cambio de 5 estrellas en la tienda. Así acumulan este tipo de apps calificaciones altas que transmiten confianza a quien llega después — las mismas que hacen creer a mucha gente en los banners de retiro.",
+            "La tarea 'Ativar notificações' sigue la misma lógica de retención: con las alertas activas, el usuario recibe avisos constantes de 'recompensas disponibles' y vuelve a la app. Sumadas a las cintas flotantes — 'Parabéns! Eloá Martins Carvalho sacou...', 'Maria Fernanda Vieira...', 'Cintia Ramos Teixeira...', con montos de R$ 240, R$ 650 y R$ 1.000 e íconos de Pix y PicPay —, esos mensajes crean la impresión de que todo el mundo cobra. No hay evidencia de que alguien cobre: los 'comprobantes' son banners de la propia app."
+          ],
+          "source": {
+            "title": "DramaGood en Google Play (com.drama.good.shortplay.atsab)",
+            "url": "https://play.google.com/store/apps/details?id=com.drama.good.shortplay.atsab&hl=es"
+          }
+        },
+        {
+          "heading": "Qué usar en su lugar: apps hermanas y plataformas auditables",
+          "paragraphs": [
+            "El patrón de DramaGood no es exclusivo. Apps del mismo nicho ya reseñadas en el sitio — CashDrama, DramaStack, PineDrama y DramaBox — muestran cómo funciona el ecosistema de dramas: catálogos reales, reglas propias de monedas o suscripción y, en algunos casos, promesas de recompensas que merecen la misma desconfianza. Antes de dedicar tiempo a cualquiera, conviene leer la reseña específica, porque el comportamiento cambia de app a app.",
+            "Si el objetivo es ganar algo con el celular, las plataformas auditables tienen más sentido: TikTok Lite remunera actividades dentro de la app, AttaPoll y Prime Opinion pagan por encuestas, Freecash reúne tareas de socios, Pawns.app combina encuestas con compartir internet y Swagbucks funciona como programa de recompensas en puntos. Ninguno promete R$ 7.777 por 10 minutos — y justamente la modestia de los montos, con historial externo de pagos, separa a quien paga de quien simula."
+          ],
+          "source": {
+            "title": "Política de Privacidad de DramaGood (drama-good.com)",
+            "url": "https://www.drama-good.com/privacy.html"
+          }
+        }
+      ],
+      "steps": [
+        "Califica la app en la tienda solo después de conocerla: dar 5 estrellas a cambio de recompensa infla el ranking y confunde a quien investiga.",
+        "Trata los banners de retiro como publicidad: nombres y montos en avisos de 'Parabéns!' no son comprobantes.",
+        "Verifica si la recompensa se convierte en dinero en la cartera o solo en 'monedas' internas — en la prueba, el saldo quedó en R$ 106,60.",
+        "Compara con plataformas auditables, que muestran historial externo de pagos y montos realistas.",
+        "Limita el tiempo de prueba: si el saldo no se acerca al mínimo en una sesión, guarda las capturas y sigue adelante."
+      ],
+      "stepsSectionIndex": 0,
+      "tables": [
+        {
+          "heading": "Tareas de DramaGood: qué piden y qué prometen",
+          "columns": [
+            "Tarea en pantalla",
+            "Qué pide",
+            "Qué promete"
+          ],
+          "rows": [
+            [
+              "Assistir vídeo -> dinheiro",
+              "Ver videos con los cofres 1 a 6",
+              "R$ 7777 'Top Prêmio'"
+            ],
+            [
+              "Tempo de assistir",
+              "10 minutos de video ('0/10Minutos')",
+              "R$ 7777 'Top Prêmio'"
+            ],
+            [
+              "Assistir episódios",
+              "3 episodios ('0/3Episódios')",
+              "R$ 3333 'Top Prêmio'"
+            ],
+            [
+              "Avaliação cinco estrelas",
+              "Dar 5 estrellas en la tienda",
+              "Recompensa virtual con 'Resgatar'"
+            ],
+            [
+              "Ativar notificações",
+              "Permitir avisos de la app",
+              "Recompensa virtual con 'Resgatar'"
+            ]
+          ],
+          "afterSectionIndex": 0
+        }
+      ],
+      "pros": [
+        "Las tareas son simples y la app deja claro qué pide en cada bloque, lo que facilita reconocer el mecanismo.",
+        "El catálogo de mininovelas sigue abierto y gratuito, con o sin tareas."
+      ],
+      "cons": [
+        "Premios de R$ 7.777 y R$ 3.333 sin respaldo: ningún documento oficial menciona pagos en dinero.",
+        "La tarea de reseña de 5 estrellas infla las notas de la tienda e induce a error a nuevos usuarios.",
+        "Banners de 'Parabéns! sacou...' con nombres y montos sin ningún respaldo externo."
+      ],
+      "faq": [
+        {
+          "q": "¿DramaGood tareas y dinero funciona?",
+          "a": "Las tareas funcionan como retención: ves videos, activas notificaciones y calificas la app, pero las recompensas no se convierten en retiro — el saldo quedó en R$ 106,60 en la prueba."
+        },
+        {
+          "q": "¿Son confiables las reseñas de 5 estrellas de DramaGood?",
+          "a": "No del todo: la propia app ofrece recompensa por la tarea 'Avaliação cinco estrelas', lo que explica notas altas sin relación con pagos."
+        },
+        {
+          "q": "¿Hay una app como DramaGood que sí pague?",
+          "a": "Plataformas con historial auditable — TikTok Lite, AttaPoll, Freecash, Prime Opinion, Pawns.app y Swagbucks — remuneran encuestas y tareas con montos realistas; nada de R$ 7.777 por 10 minutos."
+        }
+      ],
+      "verdict": "Las tareas de DramaGood son el motor de la ilusión: los premios de R$ 7.777 y R$ 3.333 mantienen al usuario viendo, la tarea de reseña de 5 estrellas infla la nota de la tienda y los banners de retiro venden una realidad sin respaldo. Ningún documento oficial del desarrollador menciona pagos en dinero. Si quieres ganar algo con el celular, elige plataformas auditables; si solo quieres ver dramas, trata la app como entretenimiento — e ignora el dinero.",
+      "imageKey": "dramagood-tarefas",
+      "imageAlt": "Pestaña Ganhe Mais de DramaGood con premio de R$ 7777, cofres del 1 al 6, tareas de 10 minutos y 3 episodios y la tarea de reseña de 5 estrellas",
+      "caption": "Pestaña Ganhe Mais en la prueba del 16/11/2026: premios de R$ 7777 y R$ 3333 arriba y tareas de 'Avaliação cinco estrelas' y 'Ativar notificações' ya completadas.",
+      "imageWide": false,
+      "secondImage": {
+        "key": "dramagood-player",
+        "alt": "Reproductor de DramaGood con cintas flotantes de retiros de R$ 240, R$ 650 y R$ 1.000 sobre la mininovela en reproducción",
+        "caption": "Las cintas flotantes del reproductor anuncian retiros de otros usuarios con íconos de Pix y PicPay, sin respaldo externo.",
+        "wide": false
+      },
+      "sources": [
+        {
+          "title": "DramaGood en Google Play (com.drama.good.shortplay.atsab)",
+          "url": "https://play.google.com/store/apps/details?id=com.drama.good.shortplay.atsab&hl=es"
+        },
+        {
+          "title": "Política de Privacidad de DramaGood (drama-good.com)",
+          "url": "https://www.drama-good.com/privacy.html"
+        }
+      ],
+      "relatedIds": [
+        "dramagood",
+        "dramagood-saque",
+        "cashdrama",
+        "pinedrama",
+        "attapoll",
+        "tiktoklite"
+      ]
     }
   ],
   "pt": [
@@ -8039,17 +9833,68 @@ export const articles:Record<Locale,Article[]>={
       "description": "O app DramaStack paga mesmo por assistir vídeos ou é golpe? Analisamos o limite de saque de R$ 300, as regras de anúncios e os termos na Play Store.",
       "intro": "O DramaStack é um app de dramas curtos, mas a aba Benefícios também exibe tarefas, saldo e opções de saque. A tela parece oferecer dinheiro. As regras do próprio aplicativo descrevem as recompensas de outro jeito, então vale conferir os termos antes de gastar tempo nas tarefas.",
       "sections": [
-        {"heading":"Uma tela de saque com valor mínimo alto","paragraphs":["Na versão Android que abrimos, Benefícios mostrava saldo zerado, tarefas diárias e uma página de saque. Nela, os níveis começavam em R$ 1,51 mil e o texto dizia que o saque oficial em dinheiro começa em R$ 300. Também aparecia uma mensagem parabenizando outra pessoa por um suposto saque de R$ 300, mas a tela não apresentava comprovação independente desse pagamento.","Os valores e o botão “Sacar” são afirmações exibidas na interface. Não concluímos tarefas, atingimos o mínimo nem solicitamos um saque; portanto, não confirmamos que o usuário receba dinheiro."]},
-        {"heading":"O que as regras do próprio app dizem","paragraphs":["O painel Regras da aba Benefícios diz que os bônus diários podem ser usados para desbloquear episódios; se o bônus não for suficiente, moedas são usadas para completar o pagamento. Separadamente, a política de privacidade do DramaStack diz que moedas virtuais não gastas não podem ser convertidas em nenhuma moeda. Isso descreve valor para assistir a conteúdo dentro do app, não dinheiro livre para sacar.","A ficha da Play Store apresenta o DramaStack como entretenimento gratuito com anúncios e menciona recompensas opcionais por anúncios. Ela não explica um programa de saque em dinheiro nem suas condições. Juntas, a tela de saque promocional e as regras escritas não comprovam uma forma confiável de ganhar dinheiro."],"source":{"title":"DramaStack: política de privacidade","url":"https://www.dramastack.video/privacypolicy.html"}},
-        {"heading":"Afinal, o DramaStack paga?","paragraphs":["Encontramos uma tela de saque com mínimo de R$ 300, mas não testamos um pagamento. A política escrita diz que moedas virtuais não podem ser convertidas em dinheiro, e as regras do app vinculam os bônus ao desbloqueio de episódios. Pelo que foi possível conferir, não conte o saldo ou as tarefas como renda.","Se você instalar para assistir aos dramas curtos, trate as recompensas como recursos do app sujeitos a condições. Não gaste dinheiro nem muitas horas com base apenas na tela de saque; antes, procure regras atuais e escritas que expliquem elegibilidade, método e comprovante de pagamento."],"source":{"title":"DramaStack na Google Play","url":"https://play.google.com/store/apps/details?id=com.reeltime.dramastack&hl=pt_BR"}}
+        {
+          "heading": "Uma tela de saque com valor mínimo alto",
+          "paragraphs": [
+            "Na versão Android que abrimos, Benefícios mostrava saldo zerado, tarefas diárias e uma página de saque. Nela, os níveis começavam em R$ 1,51 mil e o texto dizia que o saque oficial em dinheiro começa em R$ 300. Também aparecia uma mensagem parabenizando outra pessoa por um suposto saque de R$ 300, mas a tela não apresentava comprovação independente desse pagamento.",
+            "Os valores e o botão “Sacar” são afirmações exibidas na interface. Não concluímos tarefas, atingimos o mínimo nem solicitamos um saque; portanto, não confirmamos que o usuário receba dinheiro."
+          ]
+        },
+        {
+          "heading": "O que as regras do próprio app dizem",
+          "paragraphs": [
+            "O painel Regras da aba Benefícios diz que os bônus diários podem ser usados para desbloquear episódios; se o bônus não for suficiente, moedas são usadas para completar o pagamento. Separadamente, a política de privacidade do DramaStack diz que moedas virtuais não gastas não podem ser convertidas em nenhuma moeda. Isso descreve valor para assistir a conteúdo dentro do app, não dinheiro livre para sacar.",
+            "A ficha da Play Store apresenta o DramaStack como entretenimento gratuito com anúncios e menciona recompensas opcionais por anúncios. Ela não explica um programa de saque em dinheiro nem suas condições. Juntas, a tela de saque promocional e as regras escritas não comprovam uma forma confiável de ganhar dinheiro."
+          ],
+          "source": {
+            "title": "DramaStack: política de privacidade",
+            "url": "https://www.dramastack.video/privacypolicy.html"
+          }
+        },
+        {
+          "heading": "Afinal, o DramaStack paga?",
+          "paragraphs": [
+            "Encontramos uma tela de saque com mínimo de R$ 300, mas não testamos um pagamento. A política escrita diz que moedas virtuais não podem ser convertidas em dinheiro, e as regras do app vinculam os bônus ao desbloqueio de episódios. Pelo que foi possível conferir, não conte o saldo ou as tarefas como renda.",
+            "Se você instalar para assistir aos dramas curtos, trate as recompensas como recursos do app sujeitos a condições. Não gaste dinheiro nem muitas horas com base apenas na tela de saque; antes, procure regras atuais e escritas que expliquem elegibilidade, método e comprovante de pagamento."
+          ],
+          "source": {
+            "title": "DramaStack na Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.reeltime.dramastack&hl=pt_BR"
+          }
+        }
       ],
-      "steps":["Confira se a desenvolvedora na Play Store é HK Reel Time Technology Limited.","Leia o painel Regras, o contrato do usuário e a política de privacidade atuais.","Separe bônus para episódios e moedas virtuais de dinheiro que pode ser sacado.","Antes de fazer tarefas, procure regras escritas sobre elegibilidade e método de saque.","Não trate mensagem de sucesso ou saldo na tela como comprovante de pagamento."],
-      "pros":["O app oferece dramas curtos e episódios.","A aba Benefícios mostra condições de tarefas e bônus."],
-      "cons":["As regras descrevem bônus e moedas como valor para desbloquear episódios.","A tela mostra um mínimo alto, mas não verificamos um pagamento."],
-      "faq":[{"q":"O DramaStack paga dinheiro de verdade?","a":"Não confirmamos um pagamento em dinheiro. A tela de saque mostra mínimo de R$ 300, enquanto a política diz que moedas virtuais não podem ser convertidas em dinheiro."},{"q":"Posso sacar as moedas que ganhar?","a":"A política de privacidade diz que moedas virtuais não gastas não podem ser convertidas em nenhuma moeda. As regras dizem que os bônus são usados para desbloquear episódios."},{"q":"Vocês testaram um saque?","a":"Não. A conta estava sem saldo e não fizemos tarefas, compras nem pedidos de retirada."}],
-      "verdict":"Não recomendamos o DramaStack como app de renda. A tela de saque faz uma promessa chamativa, mas as regras escritas descrevem recompensas dentro do app e a política diz que moedas virtuais não viram dinheiro. Não conseguimos confirmar um pagamento.",
-      "imageAlt":"Aba Benefícios do DramaStack em português, com tarefas diárias e recompensas",
-      "caption":"A aba Benefícios lista tarefas e bônus diários junto de um saldo zerado."
+      "steps": [
+        "Confira se a desenvolvedora na Play Store é HK Reel Time Technology Limited.",
+        "Leia o painel Regras, o contrato do usuário e a política de privacidade atuais.",
+        "Separe bônus para episódios e moedas virtuais de dinheiro que pode ser sacado.",
+        "Antes de fazer tarefas, procure regras escritas sobre elegibilidade e método de saque.",
+        "Não trate mensagem de sucesso ou saldo na tela como comprovante de pagamento."
+      ],
+      "pros": [
+        "O app oferece dramas curtos e episódios.",
+        "A aba Benefícios mostra condições de tarefas e bônus."
+      ],
+      "cons": [
+        "As regras descrevem bônus e moedas como valor para desbloquear episódios.",
+        "A tela mostra um mínimo alto, mas não verificamos um pagamento."
+      ],
+      "faq": [
+        {
+          "q": "O DramaStack paga dinheiro de verdade?",
+          "a": "Não confirmamos um pagamento em dinheiro. A tela de saque mostra mínimo de R$ 300, enquanto a política diz que moedas virtuais não podem ser convertidas em dinheiro."
+        },
+        {
+          "q": "Posso sacar as moedas que ganhar?",
+          "a": "A política de privacidade diz que moedas virtuais não gastas não podem ser convertidas em nenhuma moeda. As regras dizem que os bônus são usados para desbloquear episódios."
+        },
+        {
+          "q": "Vocês testaram um saque?",
+          "a": "Não. A conta estava sem saldo e não fizemos tarefas, compras nem pedidos de retirada."
+        }
+      ],
+      "verdict": "Não recomendamos o DramaStack como app de renda. A tela de saque faz uma promessa chamativa, mas as regras escritas descrevem recompensas dentro do app e a política diz que moedas virtuais não viram dinheiro. Não conseguimos confirmar um pagamento.",
+      "imageAlt": "Aba Benefícios do DramaStack em português, com tarefas diárias e recompensas",
+      "caption": "A aba Benefícios lista tarefas e bônus diários junto de um saldo zerado."
     },
     {
       "id": "compare",
@@ -8574,8 +10419,7 @@ export const articles:Record<Locale,Article[]>={
         "caption": "Diferente de sites focados apenas em offerwalls, o Swagbucks traz um portal de cashback que devolve até 15 SB por dólar em lojas parceiras.",
         "wide": true
       }
-    }
-,
+    },
     {
       "id": "pawns",
       "app": "pawns",
@@ -11477,6 +13321,851 @@ export const articles:Record<Locale,Article[]>={
       ],
       "stepsSectionIndex": 0,
       "imageWide": false
+    },
+    {
+      "id": "tiktoklite-convite",
+      "app": "tiktoklite",
+      "category": "rewards",
+      "slug": "codigo-convite-tiktok-lite",
+      "title": "Código de convite TikTok Lite 2026 (DL70959891): como colocar e ativar",
+      "description": "Use o código de convite do TikTok Lite DL70959891 (#DL70959891), baixe pelo link oficial e veja onde inserir no app para liberar recompensas de novos usuários em 2026.",
+      "intro": "Se você está criando uma conta nova no TikTok Lite e procura um código de convite para o TikTok Lite em 2026, pode começar pelo link de convite abaixo ou digitar o código DL70959891 (também compartilhado como #DL70959891 — no campo do aplicativo, digite DL70959891 sem o símbolo #). A bonificação vale apenas para contas e aparelhos novos elegíveis, conforme as regras da campanha vigente no país.",
+      "sections": [
+        {
+          "heading": "Código de convite TikTok Lite DL70959891 e onde inserir no app",
+          "paragraphs": [
+            "Ao abrir o link https://www.tiktok.com/d/4/ZS9fcGCx9xhYn-v2KXS/ no celular, você vai direto para a página oficial da campanha com o parâmetro invite_code=DL70959891 para baixar ou abrir o TikTok Lite já vinculado ao convite. Começar pelo link costuma ser o caminho mais prático.",
+            "Se após o cadastro o aplicativo exibir o campo manual de indicação, toque no ícone da moeda dourada (Recompensas) ou vá em Eu > ícone de bônus no topo da tela. Procure a opção para inserir código de convite, cole DL70959891 sem a hashtag e toque em Confirmar."
+          ],
+          "cta": {
+            "label": "Baixar o TikTok Lite e usar o código DL70959891",
+            "url": "https://www.tiktok.com/d/4/ZS9fcGCx9xhYn-v2KXS/",
+            "sponsored": true
+          },
+          "sources": [
+            {
+              "title": "Suporte do TikTok: Programa de indicação",
+              "url": "https://support.tiktok.com/pt/using-tiktok/growing-your-audience/tiktok-referral-program"
+            },
+            {
+              "title": "TikTok Lite na Google Play",
+              "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically.go&hl=pt_BR"
+            }
+          ]
+        },
+        {
+          "heading": "O que aparece na tela de convite e quem tem direito ao bônus",
+          "paragraphs": [
+            "Na captura do TikTok Lite feita em 16 de novembro de 2026, a seção Convide novos amigos para entrarem no TikTok exibe Você +R$ 145,93 e Seu amigo +R$ 5,6. Esse valor é um exemplo real exibido na campanha brasileira dessa conta específica naquela data — os valores mudam com frequência e dependem das regras da sua região.",
+            "Para receber a recompensa do TikTok Lite, a plataforma exige ter 18 anos ou mais, criar uma conta totalmente nova em um celular que nunca tenha instalado o TikTok ou o TikTok Lite antes e vincular o código dentro do prazo inicial (em geral nas primeiras 24 horas). Além disso, boa parte dos bônus é liberada aos poucos conforme o novo usuário faz check-in e assiste a vídeos por dias seguidos."
+          ],
+          "sources": [
+            {
+              "title": "Termos de Serviço do TikTok",
+              "url": "https://www.tiktok.com/legal/page/row/terms-of-service/pt"
+            }
+          ]
+        },
+        {
+          "heading": "Por que o campo de código não aparece ou dá erro ao confirmar",
+          "paragraphs": [
+            "O motivo mais comum para o campo de código de convite não aparecer é o histórico do aparelho: se o celular já teve TikTok ou TikTok Lite instalado antes, o sistema antifraude costuma bloquear a opção de novo usuário mesmo com outro e-mail. Passar do prazo de 24 horas após o cadastro ou informar data de nascimento abaixo de 18 anos também oculta a caixa.",
+            "Se surgir erro de internet ou falha de validação, desative VPN ou proxy, alterne entre Wi-Fi e dados móveis (4G/5G), atualize o TikTok Lite na Google Play e evite criar múltiplas contas no mesmo aparelho."
+          ],
+          "sources": [
+            {
+              "title": "Suporte do TikTok: Programa de indicação",
+              "url": "https://support.tiktok.com/pt/using-tiktok/growing-your-audience/tiktok-referral-program"
+            }
+          ]
+        }
+      ],
+      "tables": [
+        {
+          "heading": "Cenários comuns ao colocar o código DL70959891 no TikTok Lite",
+          "columns": [
+            "Situação",
+            "O que acontece no app",
+            "O que verificar"
+          ],
+          "rows": [
+            [
+              "Usuário novo em aparelho novo (18+)",
+              "Link ou campo manual aceita DL70959891",
+              "Complete check-in e minutos assistidos na aba Recompensas"
+            ],
+            [
+              "Celular já teve TikTok antes",
+              "Campo some ou acusa usuário inelegível",
+              "A promoção permite apenas uma conta nova por dispositivo"
+            ],
+            [
+              "Conta criada há mais de 24 horas",
+              "Caixa de código desaparece do perfil",
+              "Participe das tarefas diárias de check-in, anúncios e vídeos"
+            ],
+            [
+              "VPN ligada ou falha de rede",
+              "Erro de internet ao confirmar código",
+              "Desligue a VPN, use dados móveis e atualize o app"
+            ]
+          ],
+          "afterSectionIndex": 2
+        }
+      ],
+      "steps": [
+        "Abra o link oficial do convite no celular antes de instalar o aplicativo.",
+        "Confira na Google Play se o app é o TikTok Lite oficial da TikTok Pte. Ltd. e faça a instalação.",
+        "Crie uma conta nova com e-mail ou telefone nunca vinculado ao TikTok e informe uma data de nascimento de maior de 18 anos.",
+        "Toque no ícone de moeda (Recompensas) nas primeiras 24 horas e, se houver campo manual, digite DL70959891 (sem o #).",
+        "Acompanhe na própria aba Recompensas os dias de check-in e minutos de vídeo exigidos para liberar o saldo."
+      ],
+      "stepsSectionIndex": 0,
+      "pros": [
+        "Permite iniciar direto pelo link de convite ou digitar DL70959891 manualmente quando elegível",
+        "Aplicativo oficial leve da TikTok Pte. Ltd. disponível na Google Play"
+      ],
+      "cons": [
+        "Restrito a contas novas em celulares que nunca tiveram o aplicativo",
+        "Valores de bônus para quem indica e para o convidado variam por campanha"
+      ],
+      "faq": [
+        {
+          "q": "Devo digitar #DL70959891 ou DL70959891 no TikTok Lite?",
+          "a": "Digite apenas DL70959891, sem o símbolo #. O # costuma ser usado em postagens, mas o link oficial envia invite_code=DL70959891."
+        },
+        {
+          "q": "Posso colocar o código de convite em uma conta antiga do TikTok Lite?",
+          "a": "Não costuma ser permitido. A opção de inserir código de convite fica disponível apenas para usuários novos logo após o cadastro."
+        },
+        {
+          "q": "Por que o campo para colocar o código não aparece no meu TikTok Lite?",
+          "a": "Geralmente ocorre quando o aparelho já teve TikTok ou TikTok Lite instalado anteriormente, quando o prazo inicial de 24 horas já passou ou quando a conta é menor de 18 anos."
+        },
+        {
+          "q": "O saldo cai na hora depois que coloco o código DL70959891?",
+          "a": "Em muitas campanhas, apenas parte do bônus ou o vínculo inicial aparece na hora, enquanto o restante depende de assistir a vídeos e fazer check-in por dias consecutivos."
+        }
+      ],
+      "verdict": "Se o seu celular ainda não teve o TikTok Lite instalado, entrar pelo link de convite e usar o código DL70959891 garante a vinculação correta logo no cadastro. Confira sempre as metas exibidas na aba Recompensas da sua conta.",
+      "imageKey": "tiktoklite-convite",
+      "imageAlt": "Tela de Recompensas do TikTok Lite exibindo Convide novos amigos com +R$ 145,93 e +R$ 5,6",
+      "caption": "Captura do TikTok Lite em 16 de novembro de 2026 mostrando o card Convide novos amigos (+R$ 145,93 para quem convida e +R$ 5,6 para o amigo) e tarefas de vídeo.",
+      "imageWide": false,
+      "secondImage": {
+        "key": "tiktoklite-tarefas",
+        "alt": "Tela de tarefas diárias e check-in do TikTok Lite mostrando 264 pontos resgatados",
+        "caption": "Tela de tarefas diárias com check-in de 7 dias e anúncios de 200 pontos.",
+        "wide": false
+      },
+      "sources": [
+        {
+          "title": "Suporte do TikTok: Programa de indicação",
+          "url": "https://support.tiktok.com/pt/using-tiktok/growing-your-audience/tiktok-referral-program"
+        },
+        {
+          "title": "TikTok Lite na Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically.go&hl=pt_BR"
+        },
+        {
+          "title": "Termos de Serviço do TikTok",
+          "url": "https://www.tiktok.com/legal/page/row/terms-of-service/pt"
+        }
+      ],
+      "relatedIds": [
+        "tiktoklite-baixar",
+        "tiktoklite"
+      ]
+    },
+    {
+      "id": "tiktoklite-baixar",
+      "app": "tiktoklite",
+      "category": "guides",
+      "slug": "baixar-tiktok-lite",
+      "title": "Baixar TikTok Lite 2026: link oficial, Android, iPhone e código DL70959891",
+      "description": "Veja como baixar o TikTok Lite grátis e seguro no Android (com.zhiliaoapp.musically.go), o que observar no iPhone e como começar usando o link de convite e o código DL70959891.",
+      "intro": "O TikTok Lite é a versão oficial mais leve e rápida do TikTok, pensada para economizar espaço na memória do celular e gastar menos internet móvel. Baixar pelo link oficial de convite ou diretamente pela Google Play Store protege seu aparelho contra arquivos APK adulterados.",
+      "sections": [
+        {
+          "heading": "Onde baixar o TikTok Lite oficial no Android com segurança",
+          "paragraphs": [
+            "No Android, o aplicativo oficial publicado pela TikTok Pte. Ltd. aparece na Google Play Store com o pacote com.zhiliaoapp.musically.go (e, em alguns mercados, com.ss.android.ugc.tiktok.lite). Confira sempre o nome da desenvolvedora TikTok Pte. Ltd. antes de instalar e evite baixar APKs de sites desconhecidos.",
+            "Se você também quer aproveitar a campanha de indicação como novo usuário, pode iniciar o download diretamente pelo link de convite abaixo, que já leva o código DL70959891 (#DL70959891)."
+          ],
+          "cta": {
+            "label": "Baixar TikTok Lite pelo link de convite oficial",
+            "url": "https://www.tiktok.com/d/4/ZS9fcGCx9xhYn-v2KXS/",
+            "sponsored": true
+          },
+          "sources": [
+            {
+              "title": "TikTok Lite na Google Play (com.zhiliaoapp.musically.go)",
+              "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically.go&hl=pt_BR"
+            }
+          ]
+        },
+        {
+          "heading": "Tem como baixar TikTok Lite no iPhone (iOS)?",
+          "paragraphs": [
+            "Diferente do Android, o TikTok Lite na Apple App Store é liberado apenas em países selecionados e não aparece em todas as lojas regionais (diversos links regionais da App Store retornam página indisponível/404). Se o TikTok Lite não aparecer na busca da sua App Store no Brasil, a alternativa oficial para iOS é o aplicativo padrão do TikTok.",
+            "Nunca instale perfis corporativos de terceiros ou aplicativos fora da loja oficial prometendo versão Lite com bônus dobrado, pois isso compromete a segurança da sua conta."
+          ],
+          "sources": [
+            {
+              "title": "Termos de Serviço do TikTok",
+              "url": "https://www.tiktok.com/legal/page/row/terms-of-service/pt"
+            }
+          ]
+        },
+        {
+          "heading": "Diferença entre TikTok Lite e TikTok tradicional",
+          "paragraphs": [
+            "O TikTok Lite prioriza o carregamento rápido de vídeos curtos e minidramas ocupando menos espaço e consumindo menos dados. No Brasil, ele também traz a aba Recompensas com check-in diário, anúncios remunerados em pontos e convite com o código DL70959891 para novas contas.",
+            "Já o TikTok tradicional concentra recursos avançados de edição, filtros pesados e transmissões ao vivo completas. Se o foco for leveza no Android ou participar do programa de pontos, o Lite faz mais sentido."
+          ],
+          "sources": [
+            {
+              "title": "Suporte do TikTok: Programa de indicação",
+              "url": "https://support.tiktok.com/pt/using-tiktok/growing-your-audience/tiktok-referral-program"
+            }
+          ]
+        }
+      ],
+      "tables": [
+        {
+          "heading": "TikTok Lite x TikTok tradicional: o que muda",
+          "columns": [
+            "Critério",
+            "TikTok Lite",
+            "TikTok tradicional"
+          ],
+          "rows": [
+            [
+              "Proposta principal",
+              "App leve, rápido e com menor gasto de dados",
+              "App completo para assistir, gravar, editar e fazer lives"
+            ],
+            [
+              "Pacote na Google Play",
+              "com.zhiliaoapp.musically.go (TikTok Pte. Ltd.)",
+              "com.zhiliaoapp.musically"
+            ],
+            [
+              "Disponibilidade no iPhone",
+              "Apenas em regiões selecionadas da App Store",
+              "Disponível amplamente na App Store"
+            ],
+            [
+              "Código DL70959891",
+              "Aceito em contas e aparelhos novos elegíveis",
+              "Campanhas próprias conforme a região"
+            ]
+          ],
+          "afterSectionIndex": 2
+        }
+      ],
+      "steps": [
+        "Toque no link de convite oficial deste guia pelo navegador do seu celular ou abra a Google Play Store.",
+        "Confirme o aplicativo TikTok Lite da desenvolvedora TikTok Pte. Ltd. (com.zhiliaoapp.musically.go) e instale.",
+        "Crie uma conta nova (caso o celular nunca tenha tido o app) confirmando idade acima de 18 anos.",
+        "Acesse o ícone de moeda na tela inicial nas primeiras 24 horas e verifique se o código DL70959891 já foi aplicado ou insira manualmente."
+      ],
+      "stepsSectionIndex": 0,
+      "pros": [
+        "Mais leve para celulares com pouca memória e conexões lentas",
+        "Instalação segura pela Google Play ou link oficial de convite"
+      ],
+      "cons": [
+        "Disponibilidade restrita na App Store de iPhone dependendo do país",
+        "Menos ferramentas de edição de vídeo do que no TikTok principal"
+      ],
+      "faq": [
+        {
+          "q": "Baixar o TikTok Lite é grátis e seguro?",
+          "a": "Sim, desde que você baixe pela Google Play oficial (TikTok Pte. Ltd.) ou pelo link oficial de convite do TikTok. Evite arquivos APK de terceiros."
+        },
+        {
+          "q": "Qual link e código usar ao baixar o TikTok Lite?",
+          "a": "Você pode baixar pelo link https://www.tiktok.com/d/4/ZS9fcGCx9xhYn-v2KXS/ e, se o app pedir código manual em conta nova elegível, inserir DL70959891."
+        },
+        {
+          "q": "Por que não encontro o TikTok Lite na App Store do iPhone?",
+          "a": "A versão Lite para iOS só é distribuída em algumas regiões. Quando não aparece na loja do seu país, o aplicativo oficial disponível para iPhone é o TikTok padrão."
+        }
+      ],
+      "verdict": "Prefira sempre baixar o TikTok Lite pela Google Play Store ou pelo link oficial de convite para evitar APKs modificados. Em celulares Android elegíveis, começar pelo link com o código DL70959891 já deixa o cadastro pronto para as recompensas.",
+      "imageKey": "tiktoklite-tarefas",
+      "imageAlt": "Tela do TikTok Lite no Android com tarefas diárias e 264 pontos resgatados",
+      "caption": "Tela de tarefas do TikTok Lite no Android (pacote com.zhiliaoapp.musically.go) capturada em 16 de novembro de 2026.",
+      "imageWide": false,
+      "secondImage": {
+        "key": "tiktoklite-convite",
+        "alt": "Tela do TikTok Lite com área de convidar amigos e tarefas de vídeo",
+        "caption": "Aba Recompensas com acompanhamento de minutos assistidos e convite de amigos.",
+        "wide": false
+      },
+      "sources": [
+        {
+          "title": "TikTok Lite na Google Play (com.zhiliaoapp.musically.go)",
+          "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically.go&hl=pt_BR"
+        },
+        {
+          "title": "Suporte do TikTok: Programa de indicação",
+          "url": "https://support.tiktok.com/pt/using-tiktok/growing-your-audience/tiktok-referral-program"
+        },
+        {
+          "title": "Termos de Serviço do TikTok",
+          "url": "https://www.tiktok.com/legal/page/row/terms-of-service/pt"
+        }
+      ],
+      "relatedIds": [
+        "tiktoklite-convite",
+        "tiktoklite"
+      ]
+    },
+    {
+      "id": "tiktoklite",
+      "app": "tiktoklite",
+      "category": "rewards",
+      "slug": "tiktok-lite-recompensas-saque",
+      "title": "TikTok Lite recompensas 2026: pontos, tarefas diárias, saque e código DL70959891",
+      "description": "Entenda como funcionam os pontos do TikTok Lite na prática: check-in diário, anúncios, vídeos, saque mínimo de R$ 0,50, validade dos pontos e código DL70959891.",
+      "intro": "O TikTok Lite mantém no Brasil uma aba de Recompensas em que você junta pontos com check-in diário, anúncios, tempo assistindo a vídeos e indicação de amigos. Analisar telas reais do aplicativo mostra quanto os pontos realmente valem, como funciona o saque via Pix e quando o saldo expira.",
+      "sections": [
+        {
+          "heading": "Quanto valem os pontos e o que pagam as tarefas diárias",
+          "paragraphs": [
+            "Nas capturas do TikTok Lite feitas no Brasil em 16 de novembro de 2026, o saldo de 240.769 pontos aparece convertido em R$ 8,02 — uma proporção próxima de 30.000 pontos para cada R$ 1,00. Essa conversão varia conforme o país e a campanha ativa.",
+            "Na lista de Tarefas diárias da mesma tela, aparecem: check-in consecutivo por 7 dias somando 4.557 pontos (315 no dia 1 até 1.428 no dia 7), até 6.000 pontos assistindo a 30 anúncios diários (200 pontos a cada 15 segundos) e até 1.500 pontos assistindo a vídeos por até 120 minutos. Novos usuários elegíveis também podem vincular o código DL70959891 pelo link de convite."
+          ],
+          "cta": {
+            "label": "Baixar TikTok Lite e usar o código DL70959891",
+            "url": "https://www.tiktok.com/d/4/ZS9fcGCx9xhYn-v2KXS/",
+            "sponsored": true
+          },
+          "sources": [
+            {
+              "title": "Suporte do TikTok: Programa de indicação",
+              "url": "https://support.tiktok.com/pt/using-tiktok/growing-your-audience/tiktok-referral-program"
+            }
+          ]
+        },
+        {
+          "heading": "Saque mínimo via Pix, PagBank, recarga e expiração de pontos",
+          "paragraphs": [
+            "Na tela Resgatar recompensas observada em 16 de novembro de 2026, o botão Sacar dinheiro oferece PagBank, Pix e transferência bancária com valores pré-definidos de R$ 0,5, R$ 1, R$ 15 e R$ 30. O aviso na tela informa que é necessário saldo mínimo de R$ 0,50 e que os limites individuais e mensais variam por país ou região. Abaixo, há também Recarga móvel (Claro, Vivo e TIM) com mínimo de R$ 10.",
+            "Um alerta fixo no topo avisa que 576 pontos vão expirar em 10 de janeiro, às 23:59. Como os pontos têm prazo de validade, vale acompanhar o vencimento para não perder saldo acumulado."
+          ],
+          "sources": [
+            {
+              "title": "Termos de Serviço do TikTok",
+              "url": "https://www.tiktok.com/legal/page/row/terms-of-service/pt"
+            }
+          ]
+        },
+        {
+          "heading": "Expectativa realista: renda extra leve, não salário",
+          "paragraphs": [
+            "Sem convites, o ganho diário é modesto: assistir a todos os 30 anúncios (6.000 pontos) rende cerca de R$ 0,20 na proporção de 30.000 pontos por real observada nas capturas. Campanhas como Gol de Prêmios (até R$ 107) e FuteBônus (até R$ 103) ou convites dependem de metas e indicações válidas de usuários novos.",
+            "Use o TikTok Lite se você já gosta de assistir a vídeos curtos em um app mais leve e encare as recompensas como um trocado extra ocasional."
+          ],
+          "sources": [
+            {
+              "title": "TikTok Lite na Google Play",
+              "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically.go&hl=pt_BR"
+            }
+          ]
+        }
+      ],
+      "tables": [
+        {
+          "heading": "Resumo da aba Recompensas do TikTok Lite (captura de 16/11/2026)",
+          "columns": [
+            "Item na tela",
+            "Valor observado",
+            "Observação"
+          ],
+          "rows": [
+            [
+              "Conversão de saldo",
+              "240.769 pontos = R$ 8,02",
+              "Cerca de 30.000 pontos = R$ 1,00"
+            ],
+            [
+              "Check-in de 7 dias",
+              "4.557 pontos no total",
+              "315 pts hoje (Dia 1) até 1.428 pts no Dia 7"
+            ],
+            [
+              "Anúncios diários (0/30)",
+              "Até 6.000 pontos",
+              "200 pontos para cada 15 segundos assistidos"
+            ],
+            [
+              "Assistir a vídeos (120 min)",
+              "Até 1.500 pontos",
+              "Exemplo na tela: 264 pts resgatados com 52 min"
+            ],
+            [
+              "Saque e recarga",
+              "A partir de R$ 0,50 / R$ 10 recarga",
+              "PagBank, Pix e transferência; limites variam por região"
+            ]
+          ],
+          "afterSectionIndex": 1
+        }
+      ],
+      "steps": [
+        "Instale o TikTok Lite pela Google Play ou pelo link de convite oficial (código DL70959891 para novas contas elegíveis).",
+        "Toque na aba Recompensas (moeda dourada) para ver as tarefas disponíveis na sua conta.",
+        "Faça o check-in diário e acumule pontos assistindo a vídeos ou anúncios elegíveis.",
+        "Acesse Resgatar recompensas para sacar via Pix, PagBank ou transferência a partir de R$ 0,50 antes que os pontos expirem."
+      ],
+      "stepsSectionIndex": 0,
+      "pros": [
+        "Saque mínimo acessível de R$ 0,50 via Pix, PagBank ou transferência bancária no Brasil",
+        "Conversão transparente entre pontos e reais com aviso claro de expiração"
+      ],
+      "cons": [
+        "Tarefas individuais de vídeo e anúncios pagam centavos por dia",
+        "Pontos não resgatados têm data de expiração e campanhas mudam sem aviso"
+      ],
+      "faq": [
+        {
+          "q": "Quantos pontos do TikTok Lite valem R$ 1?",
+          "a": "Nas telas capturadas em 16 de novembro de 2026 no Brasil, 240.769 pontos equivalem a R$ 8,02, o que dá aproximadamente 30.000 pontos por R$ 1,00."
+        },
+        {
+          "q": "Qual é o valor mínimo de saque no TikTok Lite?",
+          "a": "Na tela Resgatar recompensas observada no Brasil, o saque em dinheiro via Pix, PagBank ou transferência bancária começa em R$ 0,50, e a recarga de celular exige mínimo de R$ 10."
+        },
+        {
+          "q": "Os pontos do TikTok Lite expiram?",
+          "a": "Sim. A própria aba Recompensas exibe um aviso com a quantidade de pontos e a data limite (por exemplo, 576 pontos expirando em 10 de janeiro, às 23:59)."
+        }
+      ],
+      "verdict": "O TikTok Lite paga de verdade valores baixos via Pix e PagBank a partir de R$ 0,50 no Brasil, mas exige paciência nas tarefas diárias. Vale como complemento leve para quem já assiste a vídeos e pode usar o código DL70959891 em uma conta nova elegível.",
+      "imageKey": "tiktoklite-saque",
+      "imageAlt": "Tela Resgatar recompensas do TikTok Lite mostrando R$ 8,02 e saque mínimo de R$ 0,5",
+      "caption": "Tela de saque do TikTok Lite em 16 de novembro de 2026: saldo de R$ 8,02 (240.769 pontos), opções a partir de R$ 0,50 e aviso de expiração de 576 pontos.",
+      "imageWide": false,
+      "secondImage": {
+        "key": "tiktoklite-tarefas",
+        "alt": "Tela de tarefas diárias e check-in do TikTok Lite",
+        "caption": "Check-in consecutivo de 7 dias e anúncios diários na aba Recompensas.",
+        "wide": false
+      },
+      "sources": [
+        {
+          "title": "Suporte do TikTok: Programa de indicação",
+          "url": "https://support.tiktok.com/pt/using-tiktok/growing-your-audience/tiktok-referral-program"
+        },
+        {
+          "title": "TikTok Lite na Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically.go&hl=pt_BR"
+        },
+        {
+          "title": "Termos de Serviço do TikTok",
+          "url": "https://www.tiktok.com/legal/page/row/terms-of-service/pt"
+        }
+      ],
+      "relatedIds": [
+        "tiktoklite-convite",
+        "tiktoklite-baixar"
+      ]
+    },
+    {
+      "id": "dramagood",
+      "app": "dramagood",
+      "category": "rewards",
+      "slug": "dramagood-paga-mesmo",
+      "title": "DramaGood paga mesmo? Teste real mostra que não (2026)",
+      "description": "Testamos o DramaGood: saldo R$ 106,60 e saque mínimo de R$ 240. Veja por que o app de dramas não paga e o que a Play Store realmente diz.",
+      "intro": "O DramaGood promete dinheiro por assistir a mininovelas curtas: banners de saques de R$ 240 a R$ 1.000 desfilam sobre os vídeos, a aba de tarefas anuncia prêmios de R$ 7.777 e a carteira marca R$ 106,60 já na primeira sessão. Testamos o app em 16 de novembro de 2026 e a resposta é direta: ele não paga. O saldo sobe rápido no começo e fica antes do mínimo exigido, e nenhum documento oficial do desenvolvedor menciona saque em dinheiro. Este artigo mostra o que o app faz, o que a ficha da Google Play e a Política de Privacidade dizem dele e por que as contas não fecham.",
+      "sections": [
+        {
+          "heading": "O que é o DramaGood e o que a Google Play diz dele",
+          "paragraphs": [
+            "DramaGood é um aplicativo Android de dramas curtos verticais, publicado na Google Play pelo desenvolvedor Short Drama Workgroup sob o pacote com.drama.good.shortplay.atsab. O catálogo segue o padrão dos apps de microdrama: episódios de poucos minutos em formato vertical, organizados em abas como Topo, Popular, Novo, Homens e Mulheres. Na tela inicial do teste apareciam Dramas Pop como O Segredo da Minha Esposa e A Filha Perdida da Família Bilionária, além de lançamentos como A Herdeira Esperada e Pesadelo no Campus.",
+            "O detalhe importante está no que a ficha oficial não diz. A descrição do app na Google Play fala em assistir a dramas curtos e coletar itens e benefícios de visualização dentro do aplicativo — não menciona Pix, saque nem dinheiro real em nenhum momento. A Política de Privacidade publicada em drama-good.com/privacy.html, com vigência de 12 de janeiro de 2026, descreve o serviço como streaming e lista a coleta de identificadores do aparelho (IMEI, Android ID), endereço IP, localização aproximada e histórico de visualização, mas não cita nenhum programa de recompensa em dinheiro."
+          ],
+          "source": {
+            "title": "DramaGood na Google Play (com.drama.good.shortplay.atsab)",
+            "url": "https://play.google.com/store/apps/details?id=com.drama.good.shortplay.atsab&hl=pt_BR"
+          }
+        },
+        {
+          "heading": "O que aparece na tela: saldo alto e promessas maiores",
+          "paragraphs": [
+            "Ao abrir o app, o saldo de R$ 106,60 fica fixo no topo, com o aviso 'Ganhe mais R$ 133,40, pode sacar R$ 240,00' acompanhado de ícones de cartões. A carteira exibe cinco valores de saque — R$ 240,00 (marcado como 'Assistir & Sacar'), R$ 400,00, R$ 650,00, R$ 1.000,00 e R$ 1.600,00 — junto de ícones de Pix, Visa, Mastercard, Hipercard e Amex, e explica que 'o valor mínimo de saque é R$ 240' segundo os requisitos de uma 'plataforma parceira de pagamentos' que nenhuma página do desenvolvedor identifica.",
+            "Enquanto isso, faixas flutuantes cruzam o player anunciando 'Parabéns! ... sacou com sucesso R$ 240', 'R$ 650' e 'R$ 1.000', sempre com nomes brasileiros. A aba Ganhe Mais completa o quadro: 'Assistir vídeo -> dinheiro. R$ 7777 Top Prêmio' com seis baús para resgatar, 'Tempo de assistir R$ 7777 Top Prêmio' a cada 10 minutos e 'Assistir episódios R$ 3333 Top Prêmio' a cada 3 episódios. No teste, com as tarefas de 'Avaliação cinco estrelas' e 'Ativar notificações' já concluídas, o saldo seguia em R$ 106,60, a R$ 133,40 do mínimo."
+          ]
+        },
+        {
+          "heading": "Por que o DramaGood não paga: as contas não fecham",
+          "paragraphs": [
+            "Um app gratuito se sustenta com anúncios, e cada exibição rende alguns centavos. Para cumprir o que promete, o DramaGood precisaria pagar R$ 240 para cada usuário que assiste a alguns minutos — e ainda manter prêmios de R$ 7.777 e saques de R$ 1.600. Nenhum ecossistema de publicidade paga isso: por isso o saldo é inflado no início e o mínimo exigido fica sempre adiante, como mostram os R$ 133,40 que faltavam no teste.",
+            "Os documentos oficiais reforçam a conclusão. Nem a ficha da Google Play nem a Política de Privacidade mencionam programa de saque, transferência bancária ou pagamento em dinheiro; se uma 'plataforma parceira de pagamentos' existisse, ela precisaria aparecer nas regras do serviço — e não aparece. O quadro abaixo contrasta o que o app mostra na tela com o que o desenvolvedor declara oficialmente. Os banners de 'Parabéns!' são a única 'prova' de pagamento, sem qualquer comprovação externa."
+          ],
+          "source": {
+            "title": "Política de Privacidade do DramaGood (drama-good.com)",
+            "url": "https://www.drama-good.com/privacy.html"
+          }
+        }
+      ],
+      "steps": [
+        "Compare a promessa com a ficha oficial: se a Google Play só fala em itens e benefícios de visualização, desconfie dos banners de saque.",
+        "Leia a Política de Privacidade: um app que realmente paga cita programa de recompensas e forma de pagamento; o DramaGood não cita.",
+        "Faça a conta do mínimo: R$ 240 de saque exigiria uma receita de anúncios que nenhum usuário gera assistindo a alguns minutos por dia.",
+        "Nunca pague para liberar saque nem informe dados bancários para 'confirmar' um valor.",
+        "Exija comprovante externo: extrato ou recibo da instituição financeira, não banners exibidos dentro do próprio app."
+      ],
+      "stepsSectionIndex": 0,
+      "tables": [
+        {
+          "heading": "Promessa na tela x documento oficial",
+          "columns": [
+            "O que o app mostra na tela",
+            "O que os documentos oficiais dizem"
+          ],
+          "rows": [
+            [
+              "Saldo de R$ 106,60 e saque a partir de R$ 240",
+              "Nenhuma menção a saque ou dinheiro real na ficha da Google Play"
+            ],
+            [
+              "Banners de 'sacou com sucesso R$ 240 / R$ 650 / R$ 1.000'",
+              "Política de Privacidade descreve apenas um serviço de streaming"
+            ],
+            [
+              "Ícones de Pix, Visa, Mastercard, Hipercard e Amex",
+              "Nenhum programa de pagamento ou transferência documentado"
+            ],
+            [
+              "Prêmios de R$ 7.777 e R$ 3.333 por assistir",
+              "A descrição oficial cita apenas itens e benefícios dentro do app"
+            ]
+          ],
+          "afterSectionIndex": 1
+        }
+      ],
+      "pros": [
+        "Catálogo real de mininovelas verticais: os episódios abrem, rodam em HD e seguem o padrão dos apps de microdrama.",
+        "Está publicado na Google Play oficial, com ficha e Política de Privacidade acessíveis — sem necessidade de APK de sites terceiros."
+      ],
+      "cons": [
+        "Promete valores impossíveis: saques de R$ 240 a R$ 1.600 e prêmios de R$ 7.777 que nenhum app de anúncios sustenta.",
+        "No teste, o saldo ficou em R$ 106,60, sempre a R$ 133,40 do mínimo de R$ 240.",
+        "Banners de saques com nomes brasileiros e ícones de Pix e PicPay sem qualquer comprovação externa."
+      ],
+      "faq": [
+        {
+          "q": "DramaGood paga mesmo?",
+          "a": "Não. No teste de 16/11/2026 o saldo ficou em R$ 106,60, o saque exige R$ 240 e nenhum documento oficial do desenvolvedor menciona pagamento em dinheiro."
+        },
+        {
+          "q": "O DramaGood é confiável?",
+          "a": "Como app de dramas, funciona; como fonte de dinheiro, não. A ficha da Google Play só menciona benefícios dentro do app, e a Política de Privacidade descreve apenas um serviço de streaming."
+        },
+        {
+          "q": "O aplicativo DramaGood funciona?",
+          "a": "Os vídeos rodam normalmente, com catálogo de mininovelas e player em HD. O que não funciona é a promessa de saque: o mínimo de R$ 240 não é alcançado."
+        }
+      ],
+      "verdict": "O DramaGood não paga. O app entrega o catálogo de mininovelas, mas a parte do dinheiro é fachada: saldo que sobe até R$ 106,60 e para, mínimo de R$ 240 que não é alcançado, banners de saques sem comprovação e nenhum programa de pagamento citado na Google Play ou na Política de Privacidade. Use o app apenas como entretenimento gratuito — nunca como fonte de renda.",
+      "imageKey": "dramagood-home",
+      "imageAlt": "Tela inicial do DramaGood com saldo de R$ 106,60, catálogo de mininovelas e aviso de saque de R$ 240,00",
+      "caption": "Tela inicial no teste de 16/11/2026: saldo de R$ 106,60 e aviso de que faltam R$ 133,40 para liberar o saque de R$ 240,00.",
+      "imageWide": false,
+      "secondImage": {
+        "key": "dramagood-player",
+        "alt": "Player do DramaGood exibindo a mininovela Três Pequenos Anjinhos do Céu com cronômetro de moedas e saldo fixo no topo",
+        "caption": "Player com faixas flutuantes simulando saques de R$ 240 a R$ 1.000 sobre o vídeo, capturado em 16/11/2026.",
+        "wide": false
+      },
+      "sources": [
+        {
+          "title": "DramaGood na Google Play (com.drama.good.shortplay.atsab)",
+          "url": "https://play.google.com/store/apps/details?id=com.drama.good.shortplay.atsab&hl=pt_BR"
+        },
+        {
+          "title": "Política de Privacidade do DramaGood (drama-good.com)",
+          "url": "https://www.drama-good.com/privacy.html"
+        }
+      ],
+      "relatedIds": [
+        "dramagood-saque",
+        "dramagood-tarefas",
+        "cashdrama",
+        "dramastack",
+        "pinedrama",
+        "dramabox"
+      ]
+    },
+    {
+      "id": "dramagood-saque",
+      "app": "dramagood",
+      "category": "rewards",
+      "slug": "dramagood-saque-minimo",
+      "title": "DramaGood realmente paga? Saque trava nos R$ 240 (2026)",
+      "description": "A carteira do DramaGood sobe até R$ 106,60 e para: mínimo de R$ 240. Veja as opções de R$ 400 a R$ 1.600 e por que o saque não acontece.",
+      "intro": "A carteira é o coração da promessa do DramaGood: um saldo que sobe até R$ 106,60 na primeira sessão e precisa chegar a R$ 240 para você 'poder sacar'. Testamos o app em 16/11/2026 e registramos os cinco valores de saque exibidos (de R$ 240 a R$ 1.600), os ícones de Pix e cartões, a frase sobre uma 'plataforma parceira de pagamentos' e o aviso de que faltavam R$ 133,40. Nada disso virou dinheiro. Este artigo abre a tela Minha Carteira e explica, com números, por que o saque do DramaGood não acontece.",
+      "sections": [
+        {
+          "heading": "Como o saldo chega a R$ 106,60 — e não passa disso",
+          "paragraphs": [
+            "O DramaGood credita 'dinheiro' por quase tudo: minutos de vídeo, episódios assistidos, tarefas concluídas e baús da aba de prêmios. Na primeira sessão, esse ritmo inicial levou a carteira a R$ 106,60 — um número que impressiona até você ler o aviso ao lado: 'Ganhe mais R$ 133,40, pode sacar R$ 240,00'. Ou seja, o app exibe um saldo alto para prender a atenção, mas o valor que realmente interessa, o saque, continua mais distante do que tudo que o app creditou até ali.",
+            "As tarefas sustentam a expectativa de chegar lá: 'Tempo de assistir R$ 7777 Top Prêmio' promete bônus a cada 10 minutos, 'Assistir episódios R$ 3333 Top Prêmio' a cada 3 episódios, e a lista 'Tarefas e Dinheiro' ainda pede 'Avaliação cinco estrelas' e 'Ativar notificações', ambas concluídas no teste, com botão 'Resgatar' disponível. Mesmo com tudo ativo, a carteira exibida seguia em R$ 106,60 — e a meta de R$ 240 permanecia fora de alcance."
+          ],
+          "source": {
+            "title": "DramaGood na Google Play (com.drama.good.shortplay.atsab)",
+            "url": "https://play.google.com/store/apps/details?id=com.drama.good.shortplay.atsab&hl=pt_BR"
+          }
+        },
+        {
+          "heading": "Os valores de saque exibidos: de R$ 240 a R$ 1.600",
+          "paragraphs": [
+            "A tela Minha Carteira apresenta cinco opções: R$ 240,00 (marcado como 'Assistir & Sacar'), R$ 400,00, R$ 650,00, R$ 1.000,00 e R$ 1.600,00. As 'Instruções de Saque' afirmam: 'De acordo com os requisitos da plataforma parceira de pagamentos DramaGood, o valor mínimo de saque é R$ 240'. Ícones de Pix, Visa, Mastercard, Hipercard e Amex completam a cenografia de pagamento — mas a 'plataforma parceira' não aparece em nenhum documento público do desenvolvedor, nem na ficha da loja nem na Política de Privacidade.",
+            "O aviso central resume o bloqueio: 'Para sacar R$ 240,00, ainda faltam R$ 133,40', com barra de progresso e o botão 'Sacar R$ para Conta'. Em outras palavras: mesmo com tarefas concluídas e minutos assistidos, o valor liberado para saque é zero, porque o mínimo nunca é atingido. O quadro abaixo mostra cada opção exibida e o que ela significa diante do saldo observado."
+          ]
+        },
+        {
+          "heading": "Por que o mínimo de R$ 240 nunca é alcançado",
+          "paragraphs": [
+            "Faça a conta: um anúncio de recompensa rende alguns centavos por visualização, e poucos usuários assistem a horas de vídeo por dia. Para pagar R$ 240 a cada pessoa que viu 10 minutos, o DramaGood precisaria faturar centenas de reais de publicidade por usuário — dezenas de vezes o que o mercado de anúncios paga. É por isso que a carteira vive no 'quase lá': o design incentiva a continuar assistindo e cumprindo mais tarefas, sem nunca liberar o valor.",
+            "Os documentos oficiais fecham a questão. A ficha da Google Play descreve o DramaGood apenas como app de dramas com itens e benefícios dentro do aplicativo, e a Política de Privacidade (drama-good.com/privacy.html) fala em streaming, coleta de identificadores e SDKs de anúncios — sem uma única linha sobre saque, transferência ou programa de recompensas em dinheiro. Um serviço que realmente pagasse R$ 240 por usuário precisaria explicar isso nas regras; o silêncio oficial é a resposta."
+          ],
+          "source": {
+            "title": "Política de Privacidade do DramaGood (drama-good.com)",
+            "url": "https://www.drama-good.com/privacy.html"
+          }
+        }
+      ],
+      "steps": [
+        "Nunca pague taxa, 'desbloqueio' ou envio antecipado para liberar um saque: app legítimo não cobra para pagar.",
+        "Não informe dados bancários ou de cartão para 'confirmar' o valor — no DramaGood, os ícones de Pix e cartões aparecem sem qualquer fluxo real de pagamento.",
+        "Compare a promessa com a receita: apps de anúncios rendem centavos por minuto assistido; um saque de R$ 240 não fecha na conta.",
+        "Confira os documentos oficiais (ficha da loja e Política de Privacidade): saque verdadeiro precisa estar descrito nas regras.",
+        "Desconfie dos nomes e valores que desfilam em banners: 'Eloá Martins Carvalho sacou R$ 240' não é comprovante — extrato bancário é."
+      ],
+      "stepsSectionIndex": 0,
+      "tables": [
+        {
+          "heading": "Opções de saque exibidas na Minha Carteira",
+          "columns": [
+            "Opção na tela",
+            "O que significa com saldo de R$ 106,60"
+          ],
+          "rows": [
+            [
+              "R$ 240,00 — 'Assistir & Sacar'",
+              "Mínimo exigido; faltavam R$ 133,40 para liberar"
+            ],
+            [
+              "R$ 400,00",
+              "Exigiria mais R$ 293,40 além do saldo atual"
+            ],
+            [
+              "R$ 650,00",
+              "O saldo cobria menos de 17% do valor"
+            ],
+            [
+              "R$ 1.000,00 e R$ 1.600,00",
+              "Degraus exibidos sem caminho real para alcançá-los"
+            ]
+          ],
+          "afterSectionIndex": 1
+        }
+      ],
+      "pros": [
+        "A tela de carteira é transparente sobre o mínimo e o que falta, o que ajuda a identificar o mecanismo em minutos.",
+        "O app é gratuito e o teste não exigiu depósito para começar a assistir."
+      ],
+      "cons": [
+        "O mínimo de R$ 240 fica inalcançável: no teste, o saldo ficou em R$ 106,60 com R$ 133,40 em falta.",
+        "A 'plataforma parceira de pagamentos' citada na tela não aparece em nenhum documento oficial do desenvolvedor.",
+        "Ícones de Pix, Visa, Mastercard, Hipercard e Amex sugerem pagamentos sem nenhuma evidência de que ocorram."
+      ],
+      "faq": [
+        {
+          "q": "Como sacar no DramaGood?",
+          "a": "A tela exige saldo mínimo de R$ 240, e no teste de 16/11/2026 a carteira ficava em R$ 106,60, com R$ 133,40 em falta. Sem atingir o mínimo, o saque não é liberado."
+        },
+        {
+          "q": "Qual é o saque mínimo do DramaGood?",
+          "a": "R$ 240,00, segundo as 'Instruções de Saque' do próprio app, que atribuem o requisito a uma 'plataforma parceira de pagamentos' sem nome nem documento público."
+        },
+        {
+          "q": "DramaGood realmente paga?",
+          "a": "Não há pagamento comprovado: os documentos oficiais não citam programa de saque e o saldo observado não chega ao mínimo exigido."
+        }
+      ],
+      "verdict": "O saque do DramaGood é isca: o saldo sobe rápido até R$ 106,60, para a R$ 133,40 do mínimo de R$ 240 e os degraus de R$ 400 a R$ 1.600 existem para manter a ilusão. Ícones de Pix e cartões e uma 'plataforma parceira' sem nome não substituem regras de pagamento — que não existem nos documentos oficiais. Não invista tempo esperando um pagamento que o app não tem como fazer.",
+      "imageKey": "dramagood-carteira",
+      "imageAlt": "Tela Minha Carteira do DramaGood com saldo de R$ 106,60, opções de saque de R$ 240 a R$ 1.600 e ícones de Pix e cartões",
+      "caption": "Minha Carteira no teste de 16/11/2026: o aviso central mostra que faltam R$ 133,40 para o saque mínimo de R$ 240,00.",
+      "imageWide": false,
+      "secondImage": {
+        "key": "dramagood-tarefas",
+        "alt": "Aba Ganhe Mais do DramaGood com prêmios de R$ 7777, tarefas de assistir a 10 minutos e 3 episódios e tarefa de avaliação 5 estrelas",
+        "caption": "A aba Ganhe Mais promete 'R$ 7777 Top Prêmio' por vídeos e episódios, com recompensas que nunca chegam à carteira como dinheiro.",
+        "wide": false
+      },
+      "sources": [
+        {
+          "title": "DramaGood na Google Play (com.drama.good.shortplay.atsab)",
+          "url": "https://play.google.com/store/apps/details?id=com.drama.good.shortplay.atsab&hl=pt_BR"
+        },
+        {
+          "title": "Política de Privacidade do DramaGood (drama-good.com)",
+          "url": "https://www.drama-good.com/privacy.html"
+        }
+      ],
+      "relatedIds": [
+        "dramagood",
+        "dramagood-tarefas",
+        "cashdrama-withdraw",
+        "cashdrama-proofs",
+        "freecash-bonus-cashout"
+      ]
+    },
+    {
+      "id": "dramagood-tarefas",
+      "app": "dramagood",
+      "category": "rewards",
+      "slug": "dramagood-tarefas-e-dinheiro",
+      "title": "DramaGood tarefas e dinheiro: R$ 7.777 caem? (2026)",
+      "description": "O app promete R$ 7.777 por assistir e pede avaliação 5 estrelas. Veja o que as tarefas do DramaGood revelam e por que os prêmios não saem.",
+      "intro": "A aba Ganhe Mais do DramaGood parece uma loja de prêmios: seis baús prometem R$ 7.777 por assistir a vídeos, tarefas de 10 minutos anunciam o mesmo valor, episódios prometem R$ 3.333 e um letreiro parabeniza 'Daniele A.' com um saque de R$ 240. No teste de 16/11/2026, nenhuma dessas recompensas virou dinheiro — e uma das tarefas entrega muito sobre o app: oferecer recompensa por avaliação de 5 estrelas na loja. Este artigo mostra o que cada tarefa pede, como funcionam os avisos de saque e o que usar no lugar.",
+      "sections": [
+        {
+          "heading": "As tarefas e o dinheiro do DramaGood: promessas em camadas",
+          "paragraphs": [
+            "A aba 'Ganhe Mais' organiza as promessas em blocos: 'Assistir vídeo -> dinheiro. R$ 7777 Top Prêmio', com seis baús numerados de 1 a 6 e botão 'Resgatar'; 'Tempo de assistir R$ 7777 Top Prêmio', que pede 10 minutos de vídeo (bloco '0/10Minutos'); e 'Assistir episódios R$ 3333 Top Prêmio', que pede 3 episódios (bloco '0/3Episódios'). A lista 'Tarefas e Dinheiro' completa o quadro com 'Avaliação cinco estrelas' e 'Ativar notificações', marcadas como concluídas no teste, com recompensa 'disponível' para resgatar.",
+            "O problema é o destino dessas recompensas. Os prêmios de R$ 7.777 e R$ 3.333 não chegam à carteira como dinheiro sacável: no teste, o saldo observado ficou em R$ 106,60, com R$ 133,40 em falta para o mínimo de R$ 240. E os números não fecham: R$ 7.777 por 10 minutos de vídeo é milhares de vezes o que a publicidade paga por esse tempo de tela. Recompensa que existe, mas nunca na forma e no valor que liberam um saque, é o mecanismo padrão dos apps que não pagam."
+          ]
+        },
+        {
+          "heading": "A tarefa 'Avaliação cinco estrelas': por que a nota do app infla",
+          "paragraphs": [
+            "Entre as tarefas, uma entrega o jogo: 'Avaliação cinco estrelas', exibida como 'Concluído Avaliação cinco estrelas, Recompensas disponível' com botão 'Resgatar'. Em tradução direta, o DramaGood oferece recompensa virtual em troca de 5 estrelas na loja. É assim que apps desse tipo acumulam notas altas que passam confiança para quem chega depois — as mesmas notas que fazem muita gente acreditar nos banners de saque.",
+            "A tarefa 'Ativar notificações' segue a mesma lógica de retenção: com o alerta ativo, o usuário recebe avisos constantes de 'recompensas disponíveis' e volta ao app. Somadas às faixas flutuantes — 'Parabéns! Eloá Martins Carvalho sacou...', 'Maria Fernanda Vieira...', 'Cintia Ramos Teixeira...', com valores de R$ 240, R$ 650 e R$ 1.000 e ícones de Pix e PicPay —, essas mensagens criam a impressão de que todo mundo recebe. Não há evidência de que alguém esteja: os 'comprovantes' são banners do próprio app."
+          ],
+          "source": {
+            "title": "DramaGood na Google Play (com.drama.good.shortplay.atsab)",
+            "url": "https://play.google.com/store/apps/details?id=com.drama.good.shortplay.atsab&hl=pt_BR"
+          }
+        },
+        {
+          "heading": "O que fazer no lugar: apps irmãos e plataformas auditáveis",
+          "paragraphs": [
+            "O padrão do DramaGood não é exclusivo. Apps do mesmo nicho já avaliados no site — CashDrama, DramaStack, PineDrama e o DramaBox — mostram como o ecossistema de dramas funciona: catálogos reais, regras próprias de moedas ou assinatura e, em alguns casos, promessas de recompensas que merecem a mesma desconfiança. Antes de dedicar tempo a qualquer um deles, vale ler a avaliação específica, porque o comportamento muda de app para app.",
+            "Se o objetivo é ganhar algo com o celular, plataformas auditáveis fazem mais sentido: o TikTok Lite remunera atividades dentro do app, o AttaPoll e o Prime Opinion pagam por pesquisas, o Freecash reúne tarefas de parceiros, o Pawns.app combina pesquisas com compartilhamento de internet e o Swagbucks funciona como programa de recompensas em pontos. Nenhum promete R$ 7.777 por 10 minutos — e é justamente a modéstia dos valores, com histórico externo de pagamento, que separa quem paga de quem simula."
+          ],
+          "source": {
+            "title": "Política de Privacidade do DramaGood (drama-good.com)",
+            "url": "https://www.drama-good.com/privacy.html"
+          }
+        }
+      ],
+      "steps": [
+        "Só avalie o app na loja depois de conhecê-lo: dar 5 estrelas em troca de recompensa infla o ranking e confunde quem pesquisa.",
+        "Trate banners de saque como publicidade: nomes e valores em avisos de 'Parabéns!' não são comprovantes.",
+        "Verifique se a recompensa vira dinheiro na carteira ou apenas 'moedas' internas — no teste, o saldo ficou em R$ 106,60.",
+        "Compare com plataformas auditáveis, que mostram histórico de pagamento externo e valores realistas.",
+        "Limite o tempo de teste: se o saldo não se aproxima do mínimo em uma sessão, registre as telas e siga adiante."
+      ],
+      "stepsSectionIndex": 0,
+      "tables": [
+        {
+          "heading": "Tarefas do DramaGood: o que pedem e o que prometem",
+          "columns": [
+            "Tarefa na tela",
+            "O que pede",
+            "O que promete"
+          ],
+          "rows": [
+            [
+              "Assistir vídeo -> dinheiro",
+              "Ver vídeos com os baús 1 a 6",
+              "R$ 7777 'Top Prêmio'"
+            ],
+            [
+              "Tempo de assistir",
+              "10 minutos de vídeo ('0/10Minutos')",
+              "R$ 7777 'Top Prêmio'"
+            ],
+            [
+              "Assistir episódios",
+              "3 episódios ('0/3Episódios')",
+              "R$ 3333 'Top Prêmio'"
+            ],
+            [
+              "Avaliação cinco estrelas",
+              "Dar 5 estrelas na loja",
+              "Recompensa virtual com 'Resgatar'"
+            ],
+            [
+              "Ativar notificações",
+              "Permitir avisos do app",
+              "Recompensa virtual com 'Resgatar'"
+            ]
+          ],
+          "afterSectionIndex": 0
+        }
+      ],
+      "pros": [
+        "As tarefas são simples e o app deixa claro o que pede em cada bloco, o que facilita reconhecer o mecanismo.",
+        "O catálogo de mininovelas continua aberto e gratuito, independentemente das tarefas."
+      ],
+      "cons": [
+        "Prêmios de R$ 7.777 e R$ 3.333 sem lastro: nenhum documento oficial menciona pagamento em dinheiro.",
+        "A tarefa de avaliação 5 estrelas infla as notas da loja e induz novos usuários ao erro.",
+        "Banners de 'Parabéns! sacou...' com nomes e valores sem qualquer comprovação externa."
+      ],
+      "faq": [
+        {
+          "q": "DramaGood tarefas e dinheiro funciona?",
+          "a": "As tarefas funcionam como retenção: você assiste, ativa notificações e avalia o app, mas as recompensas não viram saque — o saldo ficou em R$ 106,60 no teste."
+        },
+        {
+          "q": "As notas 5 estrelas do DramaGood são confiáveis?",
+          "a": "Não totalmente: o próprio app oferece recompensa pela tarefa 'Avaliação cinco estrelas', o que explica notas altas sem relação com pagamento."
+        },
+        {
+          "q": "Existe app parecido com o DramaGood que pague?",
+          "a": "Plataformas com histórico auditável — TikTok Lite, AttaPoll, Freecash, Prime Opinion, Pawns.app e Swagbucks — remuneram pesquisas e tarefas com valores realistas, nada de R$ 7.777 por 10 minutos."
+        }
+      ],
+      "verdict": "As tarefas do DramaGood são o motor da ilusão: prêmios de R$ 7.777 e R$ 3.333 mantêm o usuário assistindo, a tarefa de avaliação 5 estrelas infla a nota da loja e os banners de saque vendem uma realidade sem comprovação. Nenhum documento oficial do desenvolvedor cita pagamento em dinheiro. Se você quer ganhar algo com o celular, escolha plataformas auditáveis; se quer apenas assistir, trate o app como entretenimento — e ignore o dinheiro.",
+      "imageKey": "dramagood-tarefas",
+      "imageAlt": "Aba Ganhe Mais do DramaGood com prêmio de R$ 7777, baús de 1 a 6, tarefas de 10 minutos e 3 episódios e tarefa de avaliação 5 estrelas",
+      "caption": "Aba Ganhe Mais no teste de 16/11/2026: prêmios de R$ 7777 e R$ 3333 no topo e tarefas de 'Avaliação cinco estrelas' e 'Ativar notificações' já concluídas.",
+      "imageWide": false,
+      "secondImage": {
+        "key": "dramagood-player",
+        "alt": "Player do DramaGood com faixas flutuantes de saques de R$ 240, R$ 650 e R$ 1.000 sobre a mininovela em exibição",
+        "caption": "Faixas flutuantes no player anunciam saques de outros usuários com ícones de Pix e PicPay, sem comprovação externa.",
+        "wide": false
+      },
+      "sources": [
+        {
+          "title": "DramaGood na Google Play (com.drama.good.shortplay.atsab)",
+          "url": "https://play.google.com/store/apps/details?id=com.drama.good.shortplay.atsab&hl=pt_BR"
+        },
+        {
+          "title": "Política de Privacidade do DramaGood (drama-good.com)",
+          "url": "https://www.drama-good.com/privacy.html"
+        }
+      ],
+      "relatedIds": [
+        "dramagood",
+        "dramagood-saque",
+        "cashdrama",
+        "pinedrama",
+        "attapoll",
+        "tiktoklite"
+      ]
     }
   ]
 };
@@ -11662,6 +14351,17 @@ export const apps:Record<string,{name:string;url:string;os:string;sources:{title
       {"title":"CashDrama on Google Play (Português)","url":"https://play.google.com/store/apps/details?id=com.reward.drama.earn.watch.tool&hl=pt_BR"}
     ]
   },
+  "dramagood": {
+    "name": "DramaGood",
+    "url": "https://play.google.com/store/apps/details?id=com.drama.good.shortplay.atsab&hl=en",
+    "os": "Android",
+    "sources": [
+      {"title":"DramaGood on Google Play (com.drama.good.shortplay.atsab)","url":"https://play.google.com/store/apps/details?id=com.drama.good.shortplay.atsab&hl=en"},
+      {"title":"DramaGood en Google Play (com.drama.good.shortplay.atsab)","url":"https://play.google.com/store/apps/details?id=com.drama.good.shortplay.atsab&hl=es"},
+      {"title":"DramaGood na Google Play (com.drama.good.shortplay.atsab)","url":"https://play.google.com/store/apps/details?id=com.drama.good.shortplay.atsab&hl=pt_BR"},
+      {"title":"DramaGood Privacy Policy (drama-good.com)","url":"https://www.drama-good.com/privacy.html"}
+    ]
+  },
   "dramabox": {
     "name": "DramaBox",
     "url": "https://play.google.com/store/apps/details?id=com.storymatrix.drama&hl=en",
@@ -11683,9 +14383,19 @@ export const apps:Record<string,{name:string;url:string;os:string;sources:{title
       {"title":"AttaPoll: Get Paid to Test and Play Games","url":"https://attapoll.com/en-us/get-paid-to-test-and-play-games-with-attapoll/"},
       {"title":"AttaPoll: Referral Program","url":"https://attapoll.com/en-us/ambassadors/"}
     ]
+  },
+  "tiktoklite": {
+    "name": "TikTok Lite",
+    "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically.go&hl=en",
+    "os": "Android, iOS (select regions)",
+    "sources": [
+      {"title":"TikTok Lite on Google Play","url":"https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically.go&hl=en"},
+      {"title":"TikTok Support: Referral Program","url":"https://support.tiktok.com/en/using-tiktok/growing-your-audience/tiktok-referral-program"},
+      {"title":"TikTok Terms of Service","url":"https://www.tiktok.com/legal/page/row/terms-of-service/en"}
+    ]
   }
 };
-const defaultSourcesFor=(article:Article)=>article.id==='compare'?[...apps.opinion.sources.slice(0,1),...apps.microsoft.sources.slice(0,1),...apps.freecash.sources.slice(0,1),...apps.swagbucks.sources.slice(0,1)]:article.id==='nordvpn-vs-surfshark'?[...apps.nordvpn.sources,...apps.surfshark.sources]:article.id==='swagbucks-vs-freecash'?[...apps.swagbucks.sources.slice(0,3),...apps.freecash.sources.slice(0,2)]:article.id==='pawns-vs-freecash'?[...apps.pawns.sources.slice(0,3),...apps.freecash.sources.slice(0,2)]:article.id==='primeopinion-vs-swagbucks'?[...apps.primeopinion.sources.slice(0,3),...apps.swagbucks.sources.slice(0,2)]:article.id==='pinedrama-vs-dramastack'?[...apps.pinedrama.sources,...apps.dramastack.sources.slice(0,2)]:article.id==='cashdrama-proofs'?[...apps.cashdrama.sources,...apps.dramastack.sources.slice(0,2)]:article.app==='attapoll'&&article.sources?.length?[]:apps[article.app].sources;
+const defaultSourcesFor=(article:Article)=>article.id==='compare'?[...apps.opinion.sources.slice(0,1),...apps.microsoft.sources.slice(0,1),...apps.freecash.sources.slice(0,1),...apps.swagbucks.sources.slice(0,1)]:article.id==='nordvpn-vs-surfshark'?[...apps.nordvpn.sources,...apps.surfshark.sources]:article.id==='swagbucks-vs-freecash'?[...apps.swagbucks.sources.slice(0,3),...apps.freecash.sources.slice(0,2)]:article.id==='pawns-vs-freecash'?[...apps.pawns.sources.slice(0,3),...apps.freecash.sources.slice(0,2)]:article.id==='primeopinion-vs-swagbucks'?[...apps.primeopinion.sources.slice(0,3),...apps.swagbucks.sources.slice(0,2)]:article.id==='pinedrama-vs-dramastack'?[...apps.pinedrama.sources,...apps.dramastack.sources.slice(0,2)]:article.id==='cashdrama-proofs'?[...apps.cashdrama.sources,...apps.dramastack.sources.slice(0,2)]:(article.app==='attapoll'||article.app==='tiktoklite'||article.app==='dramagood')&&article.sources?.length?[]:apps[article.app].sources;
 
 export const sourcesFor=(article:Article)=>{
  const all=[...(article.sources||[]),...defaultSourcesFor(article),...article.sections.flatMap(section=>[...(section.source?[section.source]:[]),...(section.sources||[])])];

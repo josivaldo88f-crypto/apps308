@@ -89,6 +89,14 @@
       "verifiedAt": "2026-11-15",
       "codeType": "referral-registration-link",
       "evidence": "Official AttaPoll invitation link https://attapoll.app/join/cgfky with code cgfky (shown as CGFKY in the Convidar & Ganhar screen)."
+    },
+    "tiktoklite": {
+      "status": "verified",
+      "code": "DL70959891",
+      "referralUrl": "https://www.tiktok.com/d/4/ZS9fcGCx9xhYn-v2KXS/",
+      "verifiedAt": "2026-11-16",
+      "codeType": "referral-registration-link",
+      "evidence": "Official TikTok Lite referral link https://www.tiktok.com/d/4/ZS9fcGCx9xhYn-v2KXS/ resolving to invite_code=DL70959891 and reward/cashout screens from com.zhiliaoapp.musically.go captured on 2026-11-16."
     }
   }
 }

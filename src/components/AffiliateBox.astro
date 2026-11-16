@@ -8,7 +8,7 @@ const t=text[locale];
 const program=data.programs[app as keyof typeof data.programs] as {status?:string;code?:string|null;referralUrl?:string|null;localeUrls?:Record<string,string>}|undefined;
 const targetUrl=program?.localeUrls?.[locale]||program?.referralUrl;
 const hasInvite=program?.status==='verified'&&Boolean(targetUrl);
-const hasCodeCopy=(app==='freecash'||app==='pawns'||app==='primeopinion'||app==='attapoll')&&Boolean(program?.code);
+const hasCodeCopy=(app==='freecash'||app==='pawns'||app==='primeopinion'||app==='attapoll'||app==='tiktoklite')&&Boolean(program?.code);
 const open:Record<string,Record<Locale,string>>={
   freecash:{en:'Open Freecash',es:'Acceder a Freecash',pt:'Acessar o Freecash'},
   swagbucks:{en:'Sign up on Swagbucks',es:'Registrarse en Swagbucks',pt:'Criar conta no Swagbucks'},
@@ -17,7 +17,8 @@ const open:Record<string,Record<Locale,string>>={
   nordvpn:{en:'View NordVPN official offer',es:'Ver oferta oficial de NordVPN',pt:'Ver oferta oficial da NordVPN'},
   surfshark:{en:'View Surfshark official offer',es:'Ver oferta oficial de Surfshark',pt:'Ver oferta oficial do Surfshark'},
   kaspersky:{en:'View Kaspersky official offer',es:'Ver oferta oficial de Kaspersky',pt:'Ver oferta oficial do Kaspersky'},
-  attapoll:{en:'Download AttaPoll via invite',es:'Descargar AttaPoll con invitación',pt:'Baixar o AttaPoll pelo convite'}
+  attapoll:{en:'Download AttaPoll via invite',es:'Descargar AttaPoll con invitación',pt:'Baixar o AttaPoll pelo convite'},
+  tiktoklite:{en:'Download TikTok Lite via invite',es:'Descargar TikTok Lite con invitación',pt:'Baixar o TikTok Lite pelo convite'}
 };
 const subtext:Record<string,Record<Locale,string>>={
   swagbucks:{
@@ -65,21 +66,31 @@ const subtext:Record<string,Record<Locale,string>>={
     es:'Ficha oficial en Google Play (StoryMatrix) — mira episodios gratis, gana monedas con anuncios y tareas o revisa los planes antes de suscribirte.',
     pt:'Página oficial na Google Play (StoryMatrix) — assista aos primeiros episódios grátis, ganhe moedas com anúncios e tarefas ou confira os planos antes de assinar.'
   },
+  dramagood:{
+    en:'Official Google Play listing (Short Drama Workgroup) — review the app description and privacy policy before spending time on its tasks.',
+    es:'Ficha oficial en Google Play (Short Drama Workgroup) — revisa la descripción y la política de privacidad antes de invertir tiempo en sus tareas.',
+    pt:'Página oficial na Google Play (Short Drama Workgroup) — confira a descrição e a política de privacidade antes de gastar tempo com as tarefas.'
+  },
   attapoll:{
     en:'Invitation code cgfky — review program rules and the seven-day manual registration window in the app.',
     es:'Código de invitación cgfky — revisa las condiciones del programa y el plazo de siete días en la app.',
     pt:'Código de convite cgfky — confira as condições do programa e o prazo de sete dias para indicação manual diretamente no aplicativo.'
+  },
+  tiktoklite:{
+    en:'Invite code DL70959891 (#DL70959891) — available for eligible new accounts and devices; check local campaign rules in the Rewards tab.',
+    es:'Código de invitación DL70959891 (#DL70959891) — válido para cuentas y dispositivos nuevos elegibles; revisa las reglas locales en la pestaña de Recompensas.',
+    pt:'Código de convite DL70959891 (#DL70959891) — válido para contas e aparelhos novos elegíveis; confira as regras da campanha na aba Recompensas.'
   }
 };
 const store={en:'Get it on Google Play',es:'Descargar en Google Play',pt:'Baixar na Google Play'};
 ---
-<aside class:list={['app-access',{'has-invite':hasInvite,'access-swagbucks':app==='swagbucks','access-pawns':app==='pawns','access-primeopinion':app==='primeopinion','access-attapoll':app==='attapoll'}]} aria-label={apps[app].name}>
+<aside class:list={['app-access',{'has-invite':hasInvite,'access-swagbucks':app==='swagbucks','access-pawns':app==='pawns','access-primeopinion':app==='primeopinion','access-attapoll':app==='attapoll','access-tiktoklite':app==='tiktoklite'}]} aria-label={apps[app].name}>
   <div class="access-heading">
     <strong>{apps[app].name}</strong>
     {subtext[app]&&<p class="access-sub">{subtext[app][locale]}</p>}
   </div>
   {hasCodeCopy&&<div class="copy-row"><code>{program?.code}</code><button type="button" data-copy={program?.code} data-success={t.copied} data-failure={t.copyFail}>{t.copy}</button><span role="status" aria-live="polite"></span></div>}
-  <a class="access-button" href={hasInvite?targetUrl!:apps[app].url} rel={hasInvite?'sponsored noopener':'noopener'}>{hasInvite?(open[app]?.[locale]||t.visit):(app==='dramastack'||app==='cashdrama'||app==='dramabox')?store[locale]:t.visit}<Icon name="arrow" size={17}/></a>
+  <a class="access-button" href={hasInvite?targetUrl!:apps[app].url} rel={hasInvite?'sponsored noopener':'noopener'}>{hasInvite?(open[app]?.[locale]||t.visit):(app==='dramastack'||app==='cashdrama'||app==='dramabox'||app==='dramagood')?store[locale]:t.visit}<Icon name="arrow" size={17}/></a>
 </aside>
 {hasCodeCopy&&<script is:inline>
  document.querySelectorAll('[data-copy]').forEach(button=>{button.addEventListener('click',async()=>{const status=button.parentElement?.querySelector('[role=status]');try{await navigator.clipboard.writeText(button.dataset.copy||'');if(status)status.textContent=button.dataset.success||'Copied';}catch{if(status)status.textContent=button.dataset.failure||'Copy manually';}});});

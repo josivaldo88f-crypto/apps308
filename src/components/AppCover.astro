@@ -36,10 +36,16 @@ const names=
   variant==='dramabox-coins'?['dramabox-coins','dramabox-catalog']:
   variant==='dramabox-subscription'?['dramabox-membership','dramabox-subscription']:
   app==='dramabox'?['dramabox-catalog','dramabox-profile']:
+  variant==='dramagood-saque'?['dramagood-carteira','dramagood-tarefas']:
+  variant==='dramagood-tarefas'?['dramagood-tarefas','dramagood-player']:
+  app==='dramagood'?['dramagood-home','dramagood-player']:
   variant==='attapoll-saque'?['attapoll-carteira','attapoll-metodos']:
   variant==='attapoll-jogos'?['attapoll-jogos','attapoll-jogo-metas']:
   variant==='attapoll-convite'?['attapoll-convite','attapoll-pesquisas']:
   app==='attapoll'?['attapoll-pesquisas','attapoll-carteira']:
+  variant==='tiktoklite-convite'?['tiktoklite-convite','tiktoklite-tarefas']:
+  variant==='tiktoklite-baixar'?['tiktoklite-tarefas','tiktoklite-convite']:
+  app==='tiktoklite'?['tiktoklite-saque','tiktoklite-tarefas']:
   app==='dramastack'?['dramastack-payout','dramastack']:[app];
 const photos=names.map(name=>({name,image:files[`../assets/screenshots/${locale}-${name}.webp`]?.default}));
 const label=
@@ -71,6 +77,9 @@ const tag:Record<Locale,Record<string,string>>={
     dramabox:'16,000+ short dramas · Free vs. paid',
     'dramabox-coins':'Free coins · Daily check-in · Watch ads',
     'dramabox-subscription':'Weekly & annual plans · How to cancel',
+    dramagood:'Short dramas · Does it pay?',
+    'dramagood-saque':'R$ 240 minimum · Cash out test',
+    'dramagood-tarefas':'R$ 7,777 tasks · 5-star review trap',
     compare:'Cash · Points · Credit',
     swagbucks:'Surveys · Games · Cashback',
     'swagbucks-games':'Mobile games · Milestones · Tracking',
@@ -94,7 +103,10 @@ const tag:Record<Locale,Record<string,string>>={
     attapoll:'Surveys · Games · Wallet',
     'attapoll-saque':'PayPal · Revolut · Gift cards',
     'attapoll-jogos':'Milestones · Deadlines · Rewards',
-    'attapoll-convite':'Code cgfky · How to use'
+    'attapoll-convite':'Code cgfky · How to use',
+    tiktoklite:'Rewards · Points · Cashout',
+    'tiktoklite-convite':'Code DL70959891 · How to enter',
+    'tiktoklite-baixar':'Official download · Android & iOS'
   },
   es:{
     lens:'Busca · Copia · Traduce',
@@ -115,6 +127,9 @@ const tag:Record<Locale,Record<string,string>>={
     dramabox:'16.000+ mininovelas · ¿Gratis o de paga?',
     'dramabox-coins':'Monedas gratis · Check-in y anuncios',
     'dramabox-subscription':'Precios · Cómo cancelar suscripción',
+    dramagood:'Dramas cortos · ¿Paga de verdad?',
+    'dramagood-saque':'Mínimo R$ 240 · Prueba de retiro',
+    'dramagood-tarefas':'Tareas de R$ 7.777 · Reseña 5 estrellas',
     compare:'Dinero · Puntos · Crédito',
     swagbucks:'Encuestas · Juegos · Cashback',
     'swagbucks-games':'Juegos móviles · Niveles · Seguimiento',
@@ -138,7 +153,10 @@ const tag:Record<Locale,Record<string,string>>={
     attapoll:'Encuestas · Juegos · Saldo',
     'attapoll-saque':'PayPal · Revolut · Tarjetas regalo',
     'attapoll-jogos':'Metas · Plazos · Recompensas',
-    'attapoll-convite':'Código cgfky · Cómo usar'
+    'attapoll-convite':'Código cgfky · Cómo usar',
+    tiktoklite:'Recompensas · Puntos · Retiro',
+    'tiktoklite-convite':'Código DL70959891 · Cómo usar',
+    'tiktoklite-baixar':'Descarga oficial · Android e iOS'
   },
   pt:{
     lens:'Busque · Copie · Traduza',
@@ -159,6 +177,9 @@ const tag:Record<Locale,Record<string,string>>={
     dramabox:'16 mil+ doramas · Grátis ou pago?',
     'dramabox-coins':'Moedas grátis · Tarefas e anúncios',
     'dramabox-subscription':'Preços · Como cancelar assinatura',
+    dramagood:'Mininovelas · Paga mesmo?',
+    'dramagood-saque':'Mínimo R$ 240 · Saque na prática',
+    'dramagood-tarefas':'Tarefas R$ 7.777 · Avaliação 5 estrelas',
     compare:'Dinheiro · Pontos · Crédito',
     swagbucks:'Pesquisas · Jogos · Cashback',
     'swagbucks-games':'Jogos mobile · Metas · Rastreamento',
@@ -182,14 +203,17 @@ const tag:Record<Locale,Record<string,string>>={
     attapoll:'Pesquisas · Jogos · Carteira',
     'attapoll-saque':'PayPal · Revolut · Cartões-presente',
     'attapoll-jogos':'Metas · Prazos · Recompensas',
-    'attapoll-convite':'Código cgfky · Como usar'
+    'attapoll-convite':'Código cgfky · Como usar',
+    tiktoklite:'Recompensas · Pontos · Saque',
+    'tiktoklite-convite':'Código DL70959891 · Como colocar',
+    'tiktoklite-baixar':'Baixar oficial · Android e iOS'
   }
 };
 ---
 <div class:list={['app-cover',`cover-${app}`,`variant-${variant}`,{large}]}>
   <div class="cover-copy">
     <div class:list={['cover-mark',`mark-${app}`]} aria-hidden="true">
-      {app==='microsoft'?<><i></i><i></i><i></i><i></i></>:app==='lens'?<svg viewBox="0 0 64 64"><path d="M8 24V16a8 8 0 0 1 8-8h8" stroke="#ea4335"/><path d="M40 8h8a8 8 0 0 1 8 8v8" stroke="#4285f4"/><path d="M8 40v8a8 8 0 0 0 8 8h8" stroke="#fbbc04"/><circle cx="32" cy="32" r="11" stroke="#4285f4"/><circle cx="51" cy="51" r="7" fill="#34a853" stroke="none"/></svg>:app==='opinion'?<svg viewBox="0 0 64 64"><path d="M17 12h30v24L32 52 17 36Z" fill="#4285f4"/><path d="M23 32l6 6 13-15" fill="none" stroke="white" stroke-width="5"/></svg>:app==='freecash'?<span>F<span>✦</span></span>:app==='dramastack'?<span class="drama-logo">D<span>▶</span></span>:app==='dramabox'?<span class="dramabox-logo">DB<span>▶</span></span>:app==='cashdrama'?<span class="cashdrama-logo">CD<span>$</span></span>:app==='pinedrama'?<span class="pine-logo">P<span>▶</span></span>:app==='swagbucks'?<span class="sb-logo">SB<span>◈</span></span>:app==='pawns'?<span class="pawns-logo">P<span>♟</span></span>:app==='primeopinion'?<span class="po-logo">PO<span>★</span></span>:app==='attapoll'?<span class="attapoll-logo">A<span>$</span></span>:<span>↗</span>}
+      {app==='microsoft'?<><i></i><i></i><i></i><i></i></>:app==='lens'?<svg viewBox="0 0 64 64"><path d="M8 24V16a8 8 0 0 1 8-8h8" stroke="#ea4335"/><path d="M40 8h8a8 8 0 0 1 8 8v8" stroke="#4285f4"/><path d="M8 40v8a8 8 0 0 0 8 8h8" stroke="#fbbc04"/><circle cx="32" cy="32" r="11" stroke="#4285f4"/><circle cx="51" cy="51" r="7" fill="#34a853" stroke="none"/></svg>:app==='opinion'?<svg viewBox="0 0 64 64"><path d="M17 12h30v24L32 52 17 36Z" fill="#4285f4"/><path d="M23 32l6 6 13-15" fill="none" stroke="white" stroke-width="5"/></svg>:app==='freecash'?<span>F<span>✦</span></span>:app==='dramastack'?<span class="drama-logo">D<span>▶</span></span>:app==='dramabox'?<span class="dramabox-logo">DB<span>▶</span></span>:app==='dramagood'?<span class="dramagood-logo">DG<span>▶</span></span>:app==='cashdrama'?<span class="cashdrama-logo">CD<span>$</span></span>:app==='pinedrama'?<span class="pine-logo">P<span>▶</span></span>:app==='swagbucks'?<span class="sb-logo">SB<span>◈</span></span>:app==='pawns'?<span class="pawns-logo">P<span>♟</span></span>:app==='primeopinion'?<span class="po-logo">PO<span>★</span></span>:app==='attapoll'?<span class="attapoll-logo">A<span>$</span></span>:app==='tiktoklite'?<span class="tiktoklite-logo">TT<span>⚡</span></span>:<span>↗</span>}
     </div>
     <strong>{label}</strong><span class="cover-tagline">{tag[locale][variant]||tag[locale][app]}</span>
     <span class="cover-credit">apps308<span>✳</span></span>
