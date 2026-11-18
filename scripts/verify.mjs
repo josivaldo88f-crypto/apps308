@@ -32,7 +32,7 @@ for(const [file,html] of htmls){
  for(const m of html.matchAll(/<img\b[^>]*>/g)){assert(attr(m[0],'alt'),relative+' alt');assert(attr(m[0],'width')&&attr(m[0],'height'),relative+' dimensions');assert(attr(m[0],'loading')==='lazy',relative+' lazy image');imageCount++;}
  for(const schema of schemas)assert(!schema.aggregateRating,relative+' no invented ratings');
 }
-assert.equal(articleCount,144,'144 localized articles');
+assert.equal(articleCount,159,'159 localized articles');
 const sitemap=await readFile(path.join(root,'sitemap-0.xml'),'utf8');assert(sitemap.includes('x-default'),'sitemap x-default');for(const lang of ['en','es','pt'])assert(sitemap.includes(`hreflang="${lang}"`),'sitemap '+lang);
 const sitemapEntries=new Map([...sitemap.matchAll(/<url>(.*?)<\/url>/gs)].map(match=>[match[1].match(/<loc>(.*?)<\/loc>/)?.[1],match[1]]));
 for(const [url,date] of articleDates){const entry=sitemapEntries.get(url);assert(entry,url+' sitemap entry');assert.equal(entry.match(/<lastmod>(.*?)<\/lastmod>/)?.[1]?.slice(0,10),date,url+' sitemap modification date');}

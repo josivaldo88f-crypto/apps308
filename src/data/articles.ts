@@ -1,5 +1,7 @@
 import type { Locale } from './i18n';
-export interface Article { id:string;app:string;category:string;slug:string;title:string;description:string;intro:string;modifiedDate?:string;sections:{heading:string;paragraphs:string[];source?:{title:string;url:string};sources?:{title:string;url:string}[];cta?:{label:string;url:string;sponsored?:boolean}}[];steps:string[];stepsSectionIndex?:number;tables?:{heading:string;columns:string[];rows:string[][];afterSectionIndex:number}[];pros:string[];cons:string[];faq:{q:string;a:string}[];verdict:string;imageAlt:string;caption:string;imageKey?:string;imageWide?:boolean;secondImage?:{key:string;alt:string;caption:string;wide?:boolean};sources?:{title:string;url:string}[];relatedIds?:string[]; }
+export interface ArticleCallout { title:string;text?:string;links:{label:string;url:string;sponsored?:boolean}[]; }
+export interface ArticleImage { key:string;alt:string;caption:string;wide?:boolean; }
+export interface Article { id:string;app:string;category:string;slug:string;title:string;description:string;intro:string;modifiedDate?:string;topCallout?:ArticleCallout;sections:{heading:string;callout?:ArticleCallout;paragraphs:string[];image?:ArticleImage;source?:{title:string;url:string};sources?:{title:string;url:string}[];cta?:{label:string;url:string;sponsored?:boolean}}[];steps:string[];stepsSectionIndex?:number;tables?:{heading:string;columns:string[];rows:string[][];afterSectionIndex:number}[];pros:string[];cons:string[];faq:{q:string;a:string}[];verdict:string;imageAlt:string;caption:string;imageKey?:string;imageWide?:boolean;secondImage?:ArticleImage;sources?:{title:string;url:string}[];relatedIds?:string[]; }
 export const articles:Record<Locale,Article[]>={
   "en": [
     {
@@ -10,6 +12,7 @@ export const articles:Record<Locale,Article[]>={
       "title": "What Is Google Lens & How to Use the Google Lens App (2026 Guide)",
       "description": "What is Google Lens and how does it work? Learn how to use the free Google Lens app for online image search, homework help, copying text and translation.",
       "intro": "Google Lens turns an image into a starting point for a search. Instead of guessing the name of a plant, typing a long passage or describing an object, you can start with a photo. The useful part is knowing which result to trust and when a visual match needs another check.",
+      "modifiedDate": "2026-11-18",
       "sections": [
         {
           "heading": "What Google Lens can help you do",
@@ -24,6 +27,39 @@ export const articles:Record<Locale,Article[]>={
             "Frame a clear, well-lit passage and select the text Lens recognizes. Check line breaks, numbers and unfamiliar names before pasting it elsewhere. For translation, compare the result with the original and keep context in mind.",
             "Avoid uploading confidential documents just to save a little typing. Use a non-sensitive example while learning the controls. Google explains visual search history options in its help documentation; review those settings if you want to understand how searches may be saved."
           ]
+        }
+      ],
+      "tables": [
+        {
+          "heading": "Google Lens modes at a glance",
+          "columns": [
+            "Google Lens mode",
+            "What it does best",
+            "What to check before trusting it"
+          ],
+          "rows": [
+            [
+              "Image & photo search (Google Image Lens)",
+              "Find visually similar objects, products, or source pages from a camera frame or saved screenshot",
+              "Open the original source page and compare details instead of relying on the first visual match"
+            ],
+            [
+              "Online text scanner & copy (OCR)",
+              "Recognize, select, and copy printed or screen text from signs, notes, or documents",
+              "Verify numbers, proper names, and line breaks before pasting elsewhere"
+            ],
+            [
+              "Live translation",
+              "Translate text in signs, menus, and labels directly from a photo or camera view",
+              "Check full context and verify critical wording when accuracy matters"
+            ],
+            [
+              "Object, plant & homework identification",
+              "Identify everyday items, plants, or study questions from a photo (What is this?)",
+              "Cross-check species, model names, or study steps with reliable references"
+            ]
+          ],
+          "afterSectionIndex": 0
         }
       ],
       "steps": [
@@ -41,6 +77,10 @@ export const articles:Record<Locale,Article[]>={
         "Features and controls differ across devices."
       ],
       "faq": [
+        {
+          "q": "How do I use Google Lens online on PC (Chrome desktop) vs. Android and iPhone?",
+          "a": "On Android and iPhone, open the Google app and tap the Lens camera icon in the search bar to scan with your camera or upload a saved photo. On PC or Mac using Chrome desktop, you can use Google Lens online right in the browser—via the camera icon in Google Search or by right-clicking any webpage image and choosing Search image with Google—without installing a separate app."
+        },
         {
           "q": "Do I have to pay to use Google Lens?",
           "a": "Google Lens is free. You can access it from the Google app on supported devices."
@@ -84,7 +124,7 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "When credit arrives and how to use it",
           "paragraphs": [
-            "Google says credits can take a few days to appear. On Android, spend them on eligible Play Store purchases using the same account; each credit expires after one year."
+            "Google says credits can take a few days to appear. On Android, spend them on eligible Play Store purchases using the same account; each credit expires after one year. If you prefer withdrawable PayPal cash instead of store credit, see our [Google Opinion Rewards vs. Prime Opinion and AttaPoll comparison](/en/google-opinion-rewards-vs-prime-opinion-cash-surveys/)."
           ],
           "source": {
             "title": "Google: redeem rewards",
@@ -92,6 +132,7 @@ export const articles:Record<Locale,Article[]>={
           }
         }
       ],
+      "modifiedDate": "2026-11-18",
       "steps": [
         "Find Google Opinion Rewards in the official app store and confirm the developer is Google LLC.",
         "Check the supported countries and age requirements for your platform.",
@@ -123,7 +164,12 @@ export const articles:Record<Locale,Article[]>={
       ],
       "verdict": "Consider it if you already use Google Play credit. If you need cash for everyday expenses, do not treat this Android reward as a substitute.",
       "imageAlt": "Google Opinion Rewards",
-      "caption": "The task area brings together available surveys and options to complete your profile."
+      "caption": "The task area brings together available surveys and options to complete your profile.",
+      "relatedIds": [
+        "opinion-vs-primeopinion-attapoll",
+        "primeopinion",
+        "attapoll"
+      ]
     },
     {
       "id": "microsoft",
@@ -138,7 +184,7 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Start with the reward, then consider the effort",
           "paragraphs": [
             "Microsoft documents several ways to earn points, including eligible activities associated with its services. The available activities and catalogs differ by region. A screenshot from another country is not a guarantee of the same offer in your account.",
-            "Check the number of points needed for an item you actually want. Then compare that with the activities you would normally do. Spending money purely to obtain points can cost more than the benefit you receive."
+            "Check the number of points needed for an item you actually want in our dedicated [Microsoft Rewards catalog, points value, and stamps guide](/en/microsoft-rewards-catalog-points-value-stamps-guide/). Then compare that with the activities you would normally do. Spending money purely to obtain points can cost more than the benefit you receive."
           ]
         },
         {
@@ -158,6 +204,35 @@ export const articles:Record<Locale,Article[]>={
             "title": "Microsoft: track Rewards orders",
             "url": "https://support.microsoft.com/en-us/accounts-billing/rewards/track-my-microsoft-rewards-orders"
           }
+        }
+      ],
+      "modifiedDate": "2026-11-18",
+      "tables": [
+        {
+          "heading": "Microsoft Rewards Approximate Points Reference (Varies by Region & Level)",
+          "columns": [
+            "Catalog Item / Factor",
+            "Typical Referential Range",
+            "What Determines Your Exact Rate"
+          ],
+          "rows": [
+            [
+              "Microsoft & Xbox Gift Cards",
+              "~1,000 points ≈ $1.00 USD (referential US benchmark)",
+              "Lower point cost per dollar than third-party brands; Level 2 accounts often see better rates"
+            ],
+            [
+              "Third-Party Partner Gift Cards",
+              "~5,000–6,500+ points for $5-tier cards (regional example)",
+              "Higher point requirement than Microsoft/Xbox cards; availability varies by country and Level 1 vs. Level 2"
+            ],
+            [
+              "Daily Streaks & Stamps / Punch Cards",
+              "Bonus points after consecutive days or task sets",
+              "Depends on active dashboard promotions in your region; missing a day resets streaks"
+            ]
+          ],
+          "afterSectionIndex": 0
         }
       ],
       "steps": [
@@ -185,13 +260,23 @@ export const articles:Record<Locale,Article[]>={
           "a": "No. Microsoft says offers and redemption catalogs vary by region."
         },
         {
+          "q": "How do you get stamps and daily streak bonuses in the Microsoft Rewards catalog?",
+          "a": "Stamps, puzzle pieces, and daily streak bonuses appear inside eligible promotional cards on your official Microsoft Rewards dashboard. Complete each listed daily activity or search requirement consecutively—missing a day resets streak progress—and check your Redeem catalog to see how many points Level 1 vs. Level 2 rewards require in your country."
+        },
+        {
           "q": "Where can I find my reward code?",
           "a": "Open Redeem > Order history and select the reward details. You can find the available code or link there and resend the confirmation email."
         }
       ],
       "verdict": "Review your own catalog first. The program makes more sense when useful rewards fit activities you already want to do.",
       "imageAlt": "Microsoft Rewards",
-      "caption": "Microsoft Rewards brings together points and rewards linked to a Microsoft account."
+      "caption": "Microsoft Rewards brings together points and rewards linked to a Microsoft account.",
+      "relatedIds": [
+        "microsoft-catalog",
+        "opinion-vs-primeopinion-attapoll",
+        "primeopinion",
+        "attapoll"
+      ]
     },
     {
       "id": "freecash",
@@ -275,22 +360,23 @@ export const articles:Record<Locale,Article[]>={
       "app": "dramastack",
       "category": "rewards",
       "slug": "dramastack-pays-or-not",
-      "title": "DramaStack Review (2026): Does It Really Pay Money or Is It Legit?",
-      "description": "Does DramaStack pay real money or is it a scam? We tested DramaStack's video rewards, R$300 withdrawal rules, Play Store listing and terms of use.",
-      "intro": "DramaStack is primarily a short-drama streaming app, but its Benefits tab also advertises tasks, a cash balance and withdrawals. The screen looks like a way to earn money. The app's own rules describe the rewards differently, so read those terms before spending time on the tasks.",
+      "title": "Does DramaStack Pay Real Money? (2026 Review & Cashout Limit Proof)",
+      "description": "Is DramaStack legit for earning money or a scam? See our real test of DramaStack's high cashout threshold ($60 / R$300), ad requirements, and Play Store rules.",
+      "modifiedDate": "2026-11-18",
+      "intro": "DramaStack (also searched as Drama Stack) is primarily a short-drama streaming app, but its Benefits tab also advertises tasks, a cash balance and withdrawals. The screen looks like a way to earn money. The app's own rules describe the rewards differently, so read those terms before spending time on the tasks.",
       "sections": [
         {
           "heading": "A cashout screen with a high threshold",
           "paragraphs": [
-            "On the Android version we opened, Benefits showed a zero balance, daily tasks and a separate cashout page. That page displayed withdrawal levels beginning at R$1,510 and said the official cash withdrawal starts at R$300. A congratulatory message showed another user's name and a successful R$300 withdrawal, but the screen did not provide evidence that this payment was independently verified.",
-            "The numbers and “Sacar” button are claims inside the interface. We did not complete tasks, reach the minimum, or submit a withdrawal, so we cannot confirm that a user receives money."
+            "On the Android version we opened, Benefits showed a zero balance, daily tasks and a separate cashout page. That page displayed withdrawal levels beginning at R$1,510 and said the official cash withdrawal starts at R$300 (~$60 USD). A congratulatory message showed another user's name and a successful R$300 withdrawal, but the screen did not provide evidence that this payment was independently verified.",
+            "The numbers and “Sacar” button are claims inside the interface, echoing high-threshold patterns we also inspected in our [DramaGood app review](/en/dramagood-app-review/) and [CashDrama legit or scam review](/en/cashdrama-review-is-it-legit-or-scam/). We did not complete tasks, reach the minimum, or submit a withdrawal, so we cannot confirm that a user receives money."
           ]
         },
         {
           "heading": "What the app's own rules say",
           "paragraphs": [
             "The Rules panel in Benefits says daily check-in bonuses can be used to unlock episodes; when a bonus is insufficient, coins are used to complete the payment. Separately, DramaStack's privacy policy says unspent virtual coins cannot be converted into any currency. Those statements describe in-app viewing value, not cash you can freely withdraw.",
-            "The Google Play listing presents DramaStack as an ad-supported entertainment app and mentions optional ad rewards. It does not explain a cash withdrawal program or its terms. Taken together, the marketing-style cashout screen and the written rules do not establish a reliable way to earn cash."
+            "The Google Play listing presents DramaStack as an ad-supported entertainment app and mentions optional ad rewards. It does not explain a cash withdrawal program or its terms—a sharp contrast with the transparent regional terms documented in our [PineDrama rewards and cash withdrawal guide](/en/pinedrama-rewards-does-it-pay-cash-withdrawal/). Taken together, the marketing-style cashout screen and the written rules do not establish a reliable way to earn cash."
           ],
           "source": {
             "title": "DramaStack: privacy policy",
@@ -298,10 +384,21 @@ export const articles:Record<Locale,Article[]>={
           }
         },
         {
-          "heading": "Does DramaStack pay?",
+          "heading": "DramaStack withdrawal & coin freeze: why virtual coins do not convert to cash",
+          "paragraphs": [
+            "Users searching for DramaStack withdrawal rules or a coin freeze before cashout run into a clear contradiction between the interface and the legal terms. While the Benefits cashout page advertises levels starting at R$1,510 and an official cash withdrawal floor at R$300 (~$60 USD), we found no independent payout proof and no written withdrawal eligibility schedule.",
+            "Because DramaStack's privacy policy explicitly states that unspent virtual coins cannot be converted into any currency and the Rules panel ties bonuses to unlocking episodes, accumulated coins do not function as guaranteed withdrawable cash. If you prefer transparent mobile reward programs with documented payout terms, compare our [TikTok Lite invite code guide](/en/tiktok-lite-invite-code/) instead of grinding high-threshold drama tasks."
+          ],
+          "source": {
+            "title": "DramaStack: privacy policy",
+            "url": "https://www.dramastack.video/privacypolicy.html"
+          }
+        },
+        {
+          "heading": "Does Drama Stack pay real money or is it legit to earn money?",
           "paragraphs": [
             "We found a cashout page with a R$300 threshold, but did not test a withdrawal. The written policy says virtual coins cannot be converted into money, and the in-app rules tie bonuses to unlocking episodes. Based on what we could verify, do not count the displayed balance or task values as income.",
-            "If you install the app for its short dramas, treat the rewards as app features with conditions. Do not spend money or invest hours based on the cashout screen alone; first look for current, written withdrawal terms that explain eligibility, method and proof of payment."
+            "If you install the app for its short dramas, treat the rewards as app features with conditions. Do not spend money or invest hours based on the cashout screen alone; first look for current, written withdrawal terms that explain eligibility, method and proof of payment, or see our [2026 short drama apps comparison](/en/short-drama-apps-that-claim-to-pay-real-money-compared/) to compare DramaStack against verified alternatives."
           ],
           "source": {
             "title": "DramaStack on Google Play",
@@ -327,7 +424,11 @@ export const articles:Record<Locale,Article[]>={
       "faq": [
         {
           "q": "Does DramaStack pay real money?",
-          "a": "We did not confirm a real-money payment. Its withdrawal screen shows a R$300 threshold, while its privacy policy says virtual coins cannot be converted into currency."
+          "a": "We did not confirm a real-money payment from DramaStack (also searched as Drama Stack). Its withdrawal screen shows a R$300 threshold, while its privacy policy says virtual coins cannot be converted into currency."
+        },
+        {
+          "q": "How does DramaStack withdrawal work and why do coins fail to cash out?",
+          "a": "The cashout screen lists R$300 (~$60 USD) as the starting withdrawal and tiers from R$1,510, but the privacy policy says unspent virtual coins cannot be converted into any currency and the Rules panel ties daily bonuses to unlocking episodes."
         },
         {
           "q": "Can I withdraw the coins I earn?",
@@ -340,7 +441,14 @@ export const articles:Record<Locale,Article[]>={
       ],
       "verdict": "We would not recommend DramaStack as an income app. Its cashout screen makes a strong claim, but the written rules describe in-app episode rewards and the policy says virtual coins are not convertible to cash. We could not verify a payment.",
       "imageAlt": "DramaStack Benefits tab in Portuguese, with daily tasks and app rewards",
-      "caption": "The Benefits tab lists daily tasks and bonuses alongside a zero balance."
+      "caption": "The Benefits tab lists daily tasks and bonuses alongside a zero balance.",
+      "relatedIds": [
+        "dramagood",
+        "cashdrama",
+        "pinedrama-rewards",
+        "tiktoklite-convite",
+        "short-drama-apps-compared"
+      ]
     },
     {
       "id": "compare",
@@ -1071,7 +1179,8 @@ export const articles:Record<Locale,Article[]>={
           ],
           "cta": {
             "label": "Browse gaming offers on Pawns.app using invite code 6823713",
-            "url": "https://discoverpawns.eu/6823713"
+            "url": "https://discoverpawns.eu/6823713",
+            "sponsored": true
           }
         },
         {
@@ -1373,7 +1482,8 @@ export const articles:Record<Locale,Article[]>={
           ],
           "cta": {
             "label": "Sign up on Prime Opinion & activate +10% bonus with code ALNTFL",
-            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d"
+            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d",
+            "sponsored": true
           }
         },
         {
@@ -1391,10 +1501,11 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Withdrawal options and the 24-hour bonus booster code",
           "paragraphs": [
             "Prime Opinion supports fast redemptions starting from $5.25 USD through PayPal, Venmo, direct bank transfers, and digital gift cards like Google Play. Payout requests are verified quickly, with digital codes and cash transfers arriving in your account promptly.",
-            "New members who register through the official invitation link or enter bonus code ALNTFL within 24 hours of creating their account receive a +10% earnings bonus on all completed surveys for their first 24 hours, giving them an immediate edge toward their first redemption."
+            "New members who register through the official invitation link or enter bonus code ALNTFL within 24 hours of creating their account receive a +10% earnings bonus on all completed surveys for their first 24 hours, giving them an immediate edge toward their first redemption. For a side-by-side look at PayPal cash vs. Google Play store credit, see our [Google Opinion Rewards vs. Prime Opinion and AttaPoll comparison](/en/google-opinion-rewards-vs-prime-opinion-cash-surveys/)."
           ]
         }
       ],
+      "modifiedDate": "2026-11-18",
       "steps": [
         "Open the official registration page via primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d.",
         "Create your free account using your Google account or email address.",
@@ -1436,7 +1547,13 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Prime Opinion reward selection menu with PayPal, Venmo, and Google Play",
         "caption": "Cashout screen displaying transfer methods starting from $5.25 USD via PayPal and Venmo.",
         "wide": true
-      }
+      },
+      "relatedIds": [
+        "opinion-vs-primeopinion-attapoll",
+        "primeopinion-cashout",
+        "primeopinion-surveys",
+        "attapoll"
+      ]
     },
     {
       "id": "primeopinion-surveys",
@@ -1455,7 +1572,8 @@ export const articles:Record<Locale,Article[]>={
           ],
           "cta": {
             "label": "Start completing 2-minute surveys on Prime Opinion with code ALNTFL",
-            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d"
+            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d",
+            "sponsored": true
           }
         },
         {
@@ -1536,7 +1654,8 @@ export const articles:Record<Locale,Article[]>={
           ],
           "cta": {
             "label": "Browse gaming offers on Prime Opinion with code ALNTFL",
-            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d"
+            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d",
+            "sponsored": true
           }
         },
         {
@@ -1617,7 +1736,8 @@ export const articles:Record<Locale,Article[]>={
           ],
           "cta": {
             "label": "Register on Prime Opinion & activate code ALNTFL for +10% bonus",
-            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d"
+            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d",
+            "sponsored": true
           }
         },
         {
@@ -1698,7 +1818,8 @@ export const articles:Record<Locale,Article[]>={
           ],
           "cta": {
             "label": "Experience clean dollar payouts on Prime Opinion with code ALNTFL",
-            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d"
+            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d",
+            "sponsored": true
           }
         },
         {
@@ -2062,7 +2183,7 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "Why some regions see no Rewards tab at all",
           "paragraphs": [
-            "Outside promotional markets, PineDrama functions purely as a free or ad-supported micro-drama viewer without cash tasks, which is why US and European users often report zero money-making features. Even where the Rewards tab exists, point values and minimum cashout rules are governed by in-app Terms and Conditions that can change without notice."
+            "Outside promotional markets, PineDrama functions purely as a free or ad-supported micro-drama viewer without cash tasks, which is why US and European users often report zero money-making features. Even where the Rewards tab exists, point values and minimum cashout rules are governed by in-app Terms and Conditions that can change without notice. For a side-by-side look at how PineDrama compares with non-paying drama apps and real payout platforms, check our [2026 short drama apps comparison](/en/short-drama-apps-that-claim-to-pay-real-money-compared/)."
           ],
           "source": {
             "title": "TikTok Privacy Policy (PineDrama Developer)",
@@ -2109,7 +2230,15 @@ export const articles:Record<Locale,Article[]>={
         "alt": "PineDrama daily ad tasks, timed rewards, and full-series bonus milestones",
         "caption": "Daily missions include up to 30 ads (12,000 pts), timed rewards (up to 2,880 pts), and full-series milestones (1,800 pts).",
         "wide": false
-      }
+      },
+      "modifiedDate": "2026-11-18",
+      "relatedIds": [
+        "short-drama-apps-compared",
+        "dramastack",
+        "cashdrama",
+        "primeopinion",
+        "tiktoklite"
+      ]
     },
     {
       "id": "pinedrama-guide",
@@ -2157,7 +2286,7 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Can you watch PineDrama on a PC?",
           "paragraphs": [
             "In the official sources checked, shortdrama.tiktok.com presents the app and links to Google Play and the App Store. That page alone is not evidence of a complete browser player. We did not verify a supported Windows or macOS installer or playback through an Android emulator.",
-            "Google Play Games on PC should not be recommended as a PineDrama installation method without confirmed support for this app. Use the official mobile listings, and check the publisher portal for future desktop information. A third-party page advertising PineDrama for PC does not establish official compatibility."
+            "There is no confirmed official desktop installer for PineDrama in the sources reviewed. Use the official Google Play and App Store mobile listings linked from shortdrama.tiktok.com, and check the publisher portal for future desktop information. A third-party page advertising PineDrama for PC does not establish official compatibility."
           ],
           "source": {
             "title": "PineDrama: official download portal",
@@ -2221,7 +2350,7 @@ export const articles:Record<Locale,Article[]>={
         "caption": "The Profile > Dramas tab tracks exact episode progress (such as EP 42/74) across series you started.",
         "wide": false
       },
-      "modifiedDate": "2026-11-15"
+      "modifiedDate": "2026-11-18"
     },
     {
       "id": "pinedrama-vs-dramastack",
@@ -2333,7 +2462,7 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Is CashDrama legit or a scam for making money?",
           "paragraphs": [
             "While CashDrama is distributed through the official Google Play Store, independent user reports and our own inspection of its locked withdrawal flow strongly indicate it does not function as a reliable real-money app. Even after passing $100, users face multi-step hurdles before any payout button activates.",
-            "If you only want free vertical dramas, treat the dollar counter as decorative. If your goal is actual withdrawable cash, avoid investing hours chasing the $100–$1K tiers shown in the app."
+            "If you only want free vertical dramas, treat the dollar counter as decorative. If your goal is actual withdrawable cash, avoid investing hours chasing the $100–$1K tiers shown in the app. We also documented the same pattern in our [Cash Fortune Drama review and $500 withdrawal test](/en/cash-fortune-drama-review-does-it-pay-legit/) and our [2026 short drama apps comparison](/en/short-drama-apps-that-claim-to-pay-real-money-compared/)."
           ]
         }
       ],
@@ -2377,7 +2506,15 @@ export const articles:Record<Locale,Article[]>={
         "alt": "CashDrama Discover screen with $106.84 balance and 'Watch 12 more episodes to cash out' banner",
         "caption": "Even with a $106.84 balance, Discover displays the 'Watch 12 more episodes to cash out' gate.",
         "wide": false
-      }
+      },
+      "modifiedDate": "2026-11-18",
+      "relatedIds": [
+        "short-drama-apps-compared",
+        "cashdrama-withdraw",
+        "cashfortunedrama",
+        "dramastack",
+        "primeopinion"
+      ]
     },
     {
       "id": "cashdrama-withdraw",
@@ -2543,7 +2680,22 @@ export const articles:Record<Locale,Article[]>={
       "slug": "dramabox-app-review-free-or-paid-safe",
       "title": "DramaBox App Review (2026): Is It Free, Safe & Legit to Watch Short Dramas?",
       "description": "Honest DramaBox app review (StoryMatrix): how many episodes are free, how locked episodes work with ads and coins, membership pricing, and whether it is safe.",
+      "modifiedDate": "2026-11-18",
       "intro": "DramaBox (published by StoryMatrix Pte. Ltd. on Google Play and the Apple App Store) is one of the largest vertical short-drama streaming apps, advertising more than 16,000 series across romance, CEO, werewolf, fantasy, and anime categories. It is free to install and lets you watch the opening episodes of a series for free—before locking later episodes behind reward coins, video ads, or a recurring membership.",
+      "topCallout": {
+        "title": "Quick DramaBox Shortcuts: Free Coins or Membership Billing",
+        "text": "Skip straight to our step-by-step guides on unlocking episodes without paying or stopping auto-renewal.",
+        "links": [
+          {
+            "label": "How to get free DramaBox coins (+10 to +60 tasks)",
+            "url": "/en/how-to-get-free-dramabox-coins-unlock-episodes/"
+          },
+          {
+            "label": "DramaBox subscription cost & how to cancel",
+            "url": "/en/dramabox-subscription-cost-how-to-cancel/"
+          }
+        ]
+      },
       "sections": [
         {
           "heading": "What DramaBox is and how its catalog works",
@@ -2560,19 +2712,52 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Is DramaBox free or paid? How locked episodes work",
           "paragraphs": [
             "DramaBox uses a freemium coin-and-subscription model. You can start any series without paying, because the opening episodes are unlocked for free. Once you reach the paywall, remaining episodes require Reward Coins or an active Membership.",
-            "You do not have to buy a subscription right away: the Earn Rewards screen lets you collect coins by watching video ads (10 to 30 coins per ad), checking in daily, and completing one-time account tasks. However, unlocking a full 60-to-100 episode series purely with free coins takes patience and daily ad viewing."
+            "You do not have to buy a subscription right away: our guide on [how to get free DramaBox coins](/en/how-to-get-free-dramabox-coins-unlock-episodes/) shows how the Earn Rewards screen lets you collect coins by watching video ads (+10 to +30 coins per ad), claiming the 7-day check-in (+10 to +50 coins), and completing one-time account tasks (+190 coins total). However, unlocking a full 60-to-100 episode series purely with free coins takes patience and daily ad viewing, so check our [DramaBox recharge vs. VIP subscription cost guide](/en/dramabox-recharge-coin-prices-vs-vip-subscription/) and the [DramaBox subscription pricing and cancellation rules](/en/dramabox-subscription-cost-how-to-cancel/) before paying."
           ]
         },
         {
           "heading": "Is DramaBox safe and legit?",
           "paragraphs": [
-            "Yes—DramaBox is a legitimate, widely distributed app on Google Play (package com.storymatrix.drama) and the Apple App Store, not a cash-out scam. The main catch is billing awareness: its Join Membership screen highlights auto-renewing weekly and annual plans, so users who only want free dramas should stick to Guest mode or free coin tasks and avoid starting a trial unless they intend to keep it.",
-            "Avoid unofficial 'DramaBox mod APK' or 'free coins generator' downloads, as modified APKs bypass store security checks and carry malware or account-ban risks."
+            "Yes—DramaBox is a legitimate, widely distributed app on Google Play (package com.storymatrix.drama) and the Apple App Store, not a cash-out scam. The main catch is billing awareness: its Join Membership screen highlights auto-renewing weekly and annual plans that charge within 24 hours before renewal, so users who only want free dramas should stick to Guest mode or [free DramaBox coin tasks](/en/how-to-get-free-dramabox-coins-unlock-episodes/) and read our [how to cancel DramaBox subscription guide](/en/dramabox-subscription-cost-how-to-cancel/) before starting a plan.",
+            "Avoid unofficial 'DramaBox mod APK' or 'free coins generator' downloads, as modified APKs bypass store security checks and carry malware or account-ban risks. If you want to compare another major vertical drama platform, see our [PineDrama app review](/en/pinedrama-reviews-tiktok-short-dramas-app/)."
           ],
           "source": {
             "title": "DramaBox - Stream Drama Shorts on Google Play",
             "url": "https://play.google.com/store/apps/details?id=com.storymatrix.drama&hl=en"
           }
+        }
+      ],
+      "tables": [
+        {
+          "heading": "DramaBox Quick Facts (2026): Free Episodes, Coins & Membership",
+          "columns": [
+            "Feature",
+            "Verified Details",
+            "What to Know"
+          ],
+          "rows": [
+            [
+              "Free episodes per series",
+              "Opening episodes are free; full series typically run 60–100 episodes",
+              "16,000+ series advertised (~1–2 min vertical 1080p episodes); later episodes lock behind coins or VIP"
+            ],
+            [
+              "Verified free coin rewards",
+              "+10 to +30 coins per video ad; +10 to +50 daily check-in; +190 one-time bonuses",
+              "Up to 30 daily 10-coin ads, Watch Ad for 30 coins, plus +60 login, +60 notifications, +30 Telegram, +20 FB/YT"
+            ],
+            [
+              "Coin Top Up & VIP Membership",
+              "Weekly or Annual VIP plans and coin packs (prices localized by store/country)",
+              "Auto-renewal is enabled by default and bills within 24h before renewal (e.g., Brazil Play Store: R$ 34.99–45.99/wk or R$ 459.99/yr)"
+            ],
+            [
+              "Real-money payouts",
+              "No cash withdrawals",
+              "DramaBox (StoryMatrix Pte. Ltd.) is strictly a streaming app; Reward Coins only unlock episodes inside the app"
+            ]
+          ],
+          "afterSectionIndex": 0
         }
       ],
       "steps": [
@@ -2614,7 +2799,13 @@ export const articles:Record<Locale,Article[]>={
         "alt": "DramaBox Profile tab showing Guest wallet, Earn Rewards, Top Up, and Join Membership banner",
         "caption": "Inside Profile, users can access My Wallet, Earn Rewards (+60), Top Up, and Join Membership.",
         "wide": false
-      }
+      },
+      "relatedIds": [
+        "dramabox-coins",
+        "dramabox-recharge",
+        "dramabox-subscription",
+        "pinedrama"
+      ]
     },
     {
       "id": "dramabox-coins",
@@ -2623,6 +2814,7 @@ export const articles:Record<Locale,Article[]>={
       "slug": "how-to-get-free-dramabox-coins-unlock-episodes",
       "title": "How to Get Free DramaBox Coins (2026): Unlock Episodes Without Paying",
       "description": "Step-by-step guide to earning free DramaBox Reward Coins: daily check-ins (+10 to +50), Watch Ad for 30 coins, account tasks, and safe ways to watch free episodes.",
+      "modifiedDate": "2026-11-18",
       "intro": "Once the free opening episodes of a DramaBox series end, each new episode locks behind a coin paywall. Fortunately, you do not need to buy coins or pay for a weekly plan right away—DramaBox includes an Earn Rewards center that hands out free Reward Coins for daily check-ins, short video ads, and simple profile tasks.",
       "sections": [
         {
@@ -2635,8 +2827,8 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "How far free coins go—and avoiding fake generators",
           "paragraphs": [
-            "Combining the Day 1 check-in, one-time social/login tasks (+190 coins), and daily ad watches can quickly unlock several episodes without spending money. Still, because a single mini-series often runs 60 to 100 episodes, free-only viewers usually pace their watching across several days.",
-            "Never trust websites or YouTube videos claiming 'unlimited DramaBox coins generator' or modified APKs. Reward Coins are tracked server-side on StoryMatrix accounts, and modded apps risk malware or account suspension. For genuinely ad-free or alternate short dramas, check our guide on PineDrama as well."
+            "Combining the Day 1 check-in, one-time social/login tasks (+190 coins), and daily ad watches can quickly unlock several episodes without spending money. Still, because a single mini-series often runs 60 to 100 episodes, free-only viewers usually pace their watching across several days—or compare one-time coin packs against a weekly pass in our [DramaBox recharge and VIP pricing breakdown](/en/dramabox-recharge-coin-prices-vs-vip-subscription/).",
+            "Never trust websites or YouTube videos claiming 'unlimited DramaBox coins generator' or modified APKs. Reward Coins are tracked server-side on StoryMatrix accounts, and modded apps risk malware or account suspension. For genuinely alternate short dramas, check our [PineDrama app review](/en/pinedrama-reviews-tiktok-short-dramas-app/) as well."
           ],
           "source": {
             "title": "DramaBox - Stream Drama Shorts on Google Play",
@@ -2683,7 +2875,13 @@ export const articles:Record<Locale,Article[]>={
         "alt": "DramaBox Popular and New series catalog",
         "caption": "Use earned Reward Coins to unlock later episodes across DramaBox's Popular, New, and Rankings feeds.",
         "wide": false
-      }
+      },
+      "relatedIds": [
+        "dramabox",
+        "dramabox-recharge",
+        "dramabox-subscription",
+        "pinedrama"
+      ]
     },
     {
       "id": "dramabox-subscription",
@@ -2692,12 +2890,13 @@ export const articles:Record<Locale,Article[]>={
       "slug": "dramabox-subscription-cost-how-to-cancel",
       "title": "DramaBox Subscription Cost & How to Cancel Membership (Android & iPhone)",
       "description": "DramaBox membership pricing (weekly vs. annual plans), auto-renewal rules, and exact steps to cancel your DramaBox subscription on Google Play and iPhone.",
+      "modifiedDate": "2026-11-18",
       "intro": "DramaBox's Join Membership screen offers unlimited access to 16,000+ series, 1080p quality, offline downloads, and daily member points—but its default billing cycle is a recurring weekly or annual plan with auto-renewal enabled. Knowing the real cost and how to cancel before the 24-hour renewal window prevents surprise charges.",
       "sections": [
         {
-          "heading": "DramaBox subscription plans and pricing",
+          "heading": "DramaBox Recharge & Coin Pack Prices vs. Weekly VIP Subscription Cost",
           "paragraphs": [
-            "Pricing is localized by app store region. In our Brazil Google Play inspection, DramaBox displayed a Weekly Membership promo at R$ 34.99/week for the first 3 weeks (rising to R$ 45.99/week afterward) and an Annual Membership at R$ 459.99/year (about R$ 8.83/week). In the US and other regions, store tiers typically follow similar introductory-discount weekly and annual structures.",
+            "Pricing is localized by app store region, and the inspected Join Membership screen lists Weekly and Annual VIP plans rather than a standard monthly tier. In our Brazil Google Play inspection, DramaBox displayed a Weekly Membership promo at R$ 34.99/week for the first 3 weeks (rising to R$ 45.99/week afterward) and an Annual Membership at R$ 459.99/year (about R$ 8.83/week). In the US and other regions, store tiers typically follow similar introductory-discount weekly and annual structures. If you only want to finish one series through a one-time coin recharge without recurring billing, compare [DramaBox Top Up coin packs vs. VIP membership](/en/dramabox-recharge-coin-prices-vs-vip-subscription/) first.",
             "The Subscription Deals rules explicitly state: 'Users who successfully subscribe through this activity will have auto-renewal enabled by default' and renewal is charged automatically within 24 hours before the end of the current period."
           ],
           "source": {
@@ -2733,8 +2932,8 @@ export const articles:Record<Locale,Article[]>={
           "a": "Do not just uninstall the app. Cancel in Google Play Store (Profile -> Payments & subscriptions -> Subscriptions -> DramaBox) on Android, or in iPhone Settings -> Apple ID -> Subscriptions -> DramaBox at least 24 hours before renewal."
         },
         {
-          "q": "How much does DramaBox cost per week or year?",
-          "a": "Prices vary by country and promo. On our inspected Android screen (Brazil), the Weekly Membership started at R$ 34.99/week for 3 weeks (then R$ 45.99/week) and the Annual Membership was R$ 459.99/year."
+          "q": "How much is DramaBox per week, month, or coin recharge?",
+          "a": "Prices vary by country, app store, and active promos. On our inspected Android screen (Brazil), Join Membership offered a Weekly plan at R$ 34.99/week for 3 weeks (then R$ 45.99/week) and an Annual plan at R$ 459.99/year (~R$ 8.83/week), with no standard monthly VIP plan displayed on that screen. One-time Top Up coin recharge bundles also show localized pricing directly inside the app's Wallet/Top Up tab before checkout."
         },
         {
           "q": "Is DramaBox membership worth it?",
@@ -2751,7 +2950,186 @@ export const articles:Record<Locale,Article[]>={
         "alt": "DramaBox Subscription Deals rules showing auto-renewal enabled by default and 24-hour Google Play cancellation terms",
         "caption": "The Subscription Deals rules confirm auto-renewal is enabled by default and billed via Google Play within 24 hours of renewal.",
         "wide": false
-      }
+      },
+      "relatedIds": [
+        "dramabox",
+        "dramabox-recharge",
+        "dramabox-coins",
+        "pinedrama"
+      ]
+    },
+    {
+      "id": "dramabox-recharge",
+      "app": "dramabox",
+      "category": "rewards",
+      "slug": "dramabox-recharge-coin-prices-vs-vip-subscription",
+      "title": "DramaBox Recharge & Coin Prices vs. VIP Subscription (2026 Cost Guide)",
+      "description": "Should you buy DramaBox coin packs (Top Up), pay for a Weekly/Annual VIP membership, or unlock episodes with free ad coins? Compare real costs and renewal rules.",
+      "intro": "When a DramaBox series locks after its free opening episodes, the Profile screen gives you three distinct paths forward: buy one-time coin packs under Top Up (DramaBox recharge), unlock everything with a Weekly or Annual Join Membership plan, or collect free Reward Coins through ads and daily check-ins. Understanding how each option prices out—and which one triggers auto-renewal—keeps you from overspending on a 60-to-100 episode mini-series.",
+      "topCallout": {
+        "title": "Compare DramaBox free coins & cancellation rules before paying",
+        "text": "Need to finish episodes without a credit card, or already subscribed and want to stop weekly billing?",
+        "links": [
+          {
+            "label": "How to get free DramaBox coins (+10 to +60 tasks)",
+            "url": "/en/how-to-get-free-dramabox-coins-unlock-episodes/"
+          },
+          {
+            "label": "DramaBox subscription cost & how to cancel",
+            "url": "/en/dramabox-subscription-cost-how-to-cancel/"
+          }
+        ]
+      },
+      "sections": [
+        {
+          "heading": "How DramaBox Top Up (Recharge) works vs. Join Membership",
+          "paragraphs": [
+            "Inside the Profile tab (shown below), DramaBox separates one-time coin purchases from recurring plans. Tapping Top Up opens localized in-app coin packs—often paired with promo bonus coins—that add credit to My Wallet to unlock individual locked episodes on demand without starting a recurring subscription. Because StoryMatrix localizes coin bundle prices by country, currency, device store (Google Play vs. Apple App Store), and active account promos, DramaBox does not use a single global dollar chart—you must check the live bundle rate shown on your own Top Up screen before confirming checkout.",
+            "Tapping Join Membership, by contrast, switches you to unlimited VIP access across 16,000+ advertised series (with 100+ fresh dramas every week), 1080p quality, offline downloads, members-only dramas, daily member points, and AI character interactions (200 chats/day and 3 image generations). The trade-off is that Membership activates recurring billing automatically until you cancel."
+          ],
+          "source": {
+            "title": "DramaBox - Stream Drama Shorts on Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.storymatrix.drama&hl=en"
+          }
+        },
+        {
+          "heading": "DramaBox Recharge & Coin Pack Prices vs. Weekly VIP Subscription Cost",
+          "paragraphs": [
+            "In our verified Brazil Google Play inspection, DramaBox priced Weekly Membership at R$ 34.99/week for the first 3 weeks (a 24%–25% intro discount off the standard R$ 45.99/week tier) and Annual Membership at R$ 459.99/year (about R$ 8.83/week). While exact currency figures differ by country, the math pattern stays consistent worldwide: Weekly VIP looks like the steepest recurring bill if left running, Annual VIP drops the weekly rate sharply only if you watch year-round, and Top Up coin packs sit in between for targeted unlocks.",
+            "Matching the model to your watching pace avoids wasted money. If you only want to finish one 60-to-100 episode series over a few days, start by draining free [Earn Rewards coin tasks](/en/how-to-get-free-dramabox-coins-unlock-episodes/) and check whether a small Top Up covers the final chapters without auto-renewal. If you plan to binge several full series in a single week, Weekly VIP unlocks the entire catalog immediately—provided you cancel before the next cycle—whereas casual viewers do best sticking to daily free ad coins."
+          ],
+          "image": {
+            "key": "dramabox-membership",
+            "alt": "DramaBox Join Membership screen showing Weekly Membership (R$ 34.99 intro then R$ 45.99/week) and Annual Membership (R$ 459.99/year)",
+            "caption": "Join Membership in our Brazil Google Play capture: Weekly VIP (R$ 34.99/week for 3 weeks, then R$ 45.99/week) vs. Annual VIP (R$ 459.99/year, or R$ 8.83/week).",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Billing differences by store, 24-hour cancellation window & fake recharge scams",
+          "paragraphs": [
+            "DramaBox pricing can look different on two phones even in the same city because Google Play (Android) and the Apple App Store (iOS) apply regional taxes, local currency tiers, and timed promo countdowns (like the 24-hour Join Membership discount banner). Always verify the final Google Play or Apple checkout sheet before tapping confirm. If you choose a Weekly or Annual plan, DramaBox's Subscription Deals rules state that auto-renewal is enabled by default and bills automatically within 24 hours before the current period expires—and deleting the app does not stop charges, so follow our [DramaBox cancellation steps](/en/dramabox-subscription-cost-how-to-cancel/) immediately after subscribing.",
+            "Just as important, ignore third-party websites, social ads, or Telegram bots advertising 'cheap DramaBox recharge,' 'unlimited coin generators,' or 'DramaBox mod APK' files. Reward Coins and VIP access are validated server-side on StoryMatrix accounts, so unofficial sites and modified APKs cannot add real coins and expose your device or login to theft."
+          ],
+          "image": {
+            "key": "dramabox-subscription",
+            "alt": "DramaBox Subscription Deals rules confirming auto-renewal enabled by default and 24-hour Google Play billing",
+            "caption": "Subscription Deals rules confirm auto-renewal is enabled by default and charged via Google Play within 24 hours before renewal.",
+            "wide": false
+          },
+          "source": {
+            "title": "DramaBox on Apple App Store (StoryMatrix)",
+            "url": "https://apps.apple.com/us/app/dramabox-stream-drama-shorts/id6445905219"
+          }
+        },
+        {
+          "heading": "Free coins math vs. alternatives without an expensive VIP plan",
+          "paragraphs": [
+            "Before spending money on Top Up or VIP, squeeze all free in-app options in Profile -> Earn Rewards: the 7-day check-in (+10 to +50 coins per day), the 'Watch Ad to earn 30 coins' button, up to 30 repeatable 10-coin video ads per cycle, and +190 one-time bonuses (+60 account login, +60 push notifications, +30 Telegram, +20 Facebook, +20 YouTube). You can review all limits in our [DramaBox overview review](/en/dramabox-app-review-free-or-paid-safe/).",
+            "If you want vertical mini-series without buying coin packs or managing an expensive weekly pass, compare TikTok's official free short-drama platform in our [PineDrama app review](/en/pinedrama-reviews-tiktok-short-dramas-app/), or see how legitimate streaming apps stack up against cash-bait clones in our [short drama apps comparison](/en/short-drama-apps-that-claim-to-pay-real-money-compared/)."
+          ],
+          "image": {
+            "key": "dramabox-coins",
+            "alt": "DramaBox Reward coins screen showing 7-day check-in (+10 to +50), Watch Ad for 30 coins, and +20 to +60 bonus tasks",
+            "caption": "Earn Rewards lets you stack 7-day check-ins (+10 to +50), 30-coin and 10-coin ads, and +190 one-time tasks before paying.",
+            "wide": false
+          }
+        }
+      ],
+      "tables": [
+        {
+          "heading": "DramaBox Cost Comparison: Free Coins vs. Top Up Recharge vs. VIP Plans",
+          "columns": [
+            "Option",
+            "Cost & Billing Type",
+            "Auto-Renewal Risk",
+            "Unlock Speed",
+            "Best For"
+          ],
+          "rows": [
+            [
+              "Free Coins (Earn Rewards)",
+              "$0 (ad-supported; +10 to +30 per ad, +10 to +50 check-in, +190 one-time)",
+              "None (no card required)",
+              "Slow — pace 60–100 episode series over days",
+              "Patient viewers watching for free"
+            ],
+            [
+              "Coin Recharge (Top Up)",
+              "One-time in-app packs (varies by country, currency & Android/iOS store)",
+              "None — single purchase per pack",
+              "Instant for selected episodes until wallet runs out",
+              "Finishing 1 occasional series without recurring billing"
+            ],
+            [
+              "Weekly VIP Membership",
+              "Recurring weekly (Brazil Play Store: R$ 34.99/wk x 3, then R$ 45.99/wk)",
+              "High — enabled by default; bills 24h before renewal",
+              "Instant unlimited access to 16,000+ series (1080p + downloads)",
+              "Weekend or 1-week binge of multiple series (cancel early)"
+            ],
+            [
+              "Annual VIP Membership",
+              "Upfront yearly (Brazil Play Store: R$ 459.99/yr, ~R$ 8.83/wk)",
+              "Yes — renews yearly unless canceled 24h ahead",
+              "Instant unlimited access all year + member perks",
+              "Heavy year-round DramaBox viewers only"
+            ]
+          ],
+          "afterSectionIndex": 1
+        }
+      ],
+      "steps": [
+        "Start any DramaBox drama using the free opening episodes before opening Top Up or Join Membership.",
+        "Open Profile -> Earn Rewards to claim one-time bonuses (+190 coins total), daily check-ins, and 10–30 coin ad tasks first.",
+        "Compare the local Top Up coin pack cost on your device against the Weekly Membership price shown in your Google Play or App Store sheet.",
+        "If you buy Weekly VIP for a short binge, cancel immediately in Google Play or Apple Subscriptions so it does not auto-renew 24 hours before expiry.",
+        "Purchase coins or plans only inside the official Google Play or Apple App Store app—never through third-party recharge websites."
+      ],
+      "pros": [
+        "Top Up lets you unlock extra episodes on demand with zero recurring subscription commitment.",
+        "VIP Membership removes all episode locks across 16,000+ titles with 1080p playback and offline downloads.",
+        "Earn Rewards lets casual viewers unlock episodes for $0 by stacking check-ins and video ads."
+      ],
+      "cons": [
+        "Top Up pack pricing is localized inside the app without a transparent global price list beforehand.",
+        "Weekly VIP becomes expensive after the 3-week intro promo and auto-renews within 24 hours before period end.",
+        "Full series run 60–100 episodes, making pure coin unlocking slow for marathon viewers."
+      ],
+      "faq": [
+        {
+          "q": "How much is DramaBox?",
+          "a": "DramaBox is free to download with free opening episodes on every series. Paid pricing depends on your country and store: in our verified Brazil Google Play capture, Weekly VIP started at R$ 34.99/week for 3 weeks (then R$ 45.99/week) and Annual VIP was R$ 459.99/year (~R$ 8.83/week), while one-time Top Up coin pack prices appear dynamically inside Profile -> Top Up."
+        },
+        {
+          "q": "Is DramaBox recharge (Top Up) better than VIP Membership?",
+          "a": "Top Up is safer if you only want to finish one occasional series and avoid auto-renewal. Weekly VIP gives better per-episode value only if you binge multiple 60-to-100 episode series within one week and cancel at least 24 hours before renewal."
+        },
+        {
+          "q": "Does DramaBox Top Up trigger auto-renewal?",
+          "a": "No. Buying a coin bundle under Profile -> Top Up is a one-time store purchase. Only Weekly and Annual Join Membership plans enable auto-renewal by default."
+        },
+        {
+          "q": "Why do DramaBox coin and VIP prices vary between Android and iPhone?",
+          "a": "StoryMatrix localizes in-app tiers across countries, currencies, store fees (Google Play vs. Apple App Store), and limited-time promotional banners, so exact numbers can differ by account and region."
+        },
+        {
+          "q": "Are third-party DramaBox cheap recharge sites or free coin generators safe?",
+          "a": "No. DramaBox balances and memberships are verified on StoryMatrix servers. External recharge resellers, generators, and modded APKs risk scams, stolen accounts, or malware."
+        }
+      ],
+      "verdict": "Use free Earn Rewards coins first, choose a one-time Top Up only if you need a few extra episodes without recurring charges, and reserve Weekly VIP for planned multi-series binges where you cancel auto-renewal immediately in Google Play or Apple Subscriptions.",
+      "imageAlt": "DramaBox Profile screen showing Top Up, My Wallet, Earn Rewards, and the Join Membership banner",
+      "caption": "DramaBox's Profile screen separates Top Up (one-time coin packs), Earn Rewards (free coins), and Join Membership (recurring VIP).",
+      "imageKey": "dramabox-profile",
+      "imageWide": false,
+      "relatedIds": [
+        "dramabox",
+        "dramabox-coins",
+        "dramabox-subscription",
+        "pinedrama",
+        "short-drama-apps-compared"
+      ]
     },
     {
       "id": "nordvpn-vs-surfshark",
@@ -2760,7 +3138,8 @@ export const articles:Record<Locale,Article[]>={
       "slug": "nordvpn-vs-surfshark-2026-comparison",
       "title": "NordVPN vs. Surfshark (2026): Speed, Price, Devices & Which VPN Wins?",
       "description": "Compare NordVPN vs. Surfshark in 2026 across 2-year pricing, simultaneous device limits (10 vs. unlimited), NordLynx vs. WireGuard speed, and security tools.",
-      "intro": "NordVPN and Surfshark operate under the same parent group, Nord Security, yet they target different budgets and households. NordVPN focuses on raw long-distance speed, a massive server fleet, and advanced networking tools, while Surfshark leads on multi-year pricing and unlimited simultaneous device connections.",
+      "modifiedDate": "2026-11-18",
+      "intro": "When deciding between Surfshark or NordVPN (Surfshark vs NordVPN), it helps to know both providers operate under the same parent group, Nord Security, yet target different budgets and households. NordVPN focuses on raw long-distance speed, a massive server fleet, and advanced networking tools, while Surfshark leads on multi-year pricing and unlimited simultaneous device connections.",
       "sections": [
         {
           "heading": "Price and simultaneous device limits: 10 devices vs. unlimited",
@@ -2787,7 +3166,7 @@ export const articles:Record<Locale,Article[]>={
           }
         },
         {
-          "heading": "Which VPN fits your routine better?",
+          "heading": "Surfshark vs NordVPN: Should you choose Surfshark or NordVPN?",
           "paragraphs": [
             "Pick NordVPN if you travel internationally, rely on distant servers for work or streaming, or want Meshnet and Double VPN built in. Pick Surfshark if you want the lowest 2-year cost or need one subscription for more than 10 phones, laptops, and smart TVs at home."
           ],
@@ -2795,6 +3174,49 @@ export const articles:Record<Locale,Article[]>={
             "title": "NordVPN: What Is NordLynx?",
             "url": "https://nordvpn.com/features/nordlynx/"
           }
+        }
+      ],
+      "tables": [
+        {
+          "heading": "NordVPN vs. Surfshark (2026): Side-by-Side Comparison",
+          "columns": [
+            "Feature",
+            "NordVPN",
+            "Surfshark"
+          ],
+          "rows": [
+            [
+              "Simultaneous devices",
+              "10 devices",
+              "Unlimited devices"
+            ],
+            [
+              "WireGuard-based protocol",
+              "NordLynx",
+              "WireGuard"
+            ],
+            [
+              "Ad, tracker & malware blocker",
+              "Threat Protection Pro",
+              "CleanWeb"
+            ],
+            [
+              "Server network",
+              "8,400+ servers in 111+ countries",
+              "4,500+ servers in 100 countries"
+            ],
+            [
+              "Extra networking tools",
+              "Double VPN & Meshnet",
+              "Bypasser split tunneling & Surfshark One option"
+            ],
+            [
+              "2-year starter promo range",
+              "~$2.99–$3.49/month",
+              "~$2.39–$2.49/month"
+            ]
+          ],
+          "afterSectionIndex": 0
         }
       ],
       "steps": [
@@ -2829,7 +3251,11 @@ export const articles:Record<Locale,Article[]>={
       "imageAlt": "NordVPN vs. Surfshark 2026 comparison of speed, price, and device limits",
       "caption": "NordVPN vs. Surfshark compared across 2-year pricing, WireGuard/NordLynx speed, and simultaneous device limits.",
       "imageKey": "nordvpn",
-      "imageWide": true
+      "imageWide": true,
+      "relatedIds": [
+        "nordvpn",
+        "surfshark"
+      ]
     },
     {
       "id": "freecash-reviews",
@@ -3094,12 +3520,27 @@ export const articles:Record<Locale,Article[]>={
       "slug": "attapoll-how-it-works",
       "title": "AttaPoll: How It Works, Surveys and Star Ratings",
       "description": "Learn how AttaPoll surveys work, what star ratings mean and why surveys may disappear. See real screen examples and the limits before you start.",
+      "modifiedDate": "2026-11-18",
       "intro": "AttaPoll offers rewards for surveys that the provider accepts as complete, alongside games and tasks. Survey listings can show a reward, an estimated duration and a star rating to help you choose. Here is how to read those details, understand an empty list or a disqualification, and get started with realistic expectations.",
+      "topCallout": {
+        "title": "AttaPoll Essential Guides: Cash Out Minimums & Invite Code",
+        "text": "Check how PayPal withdrawals work in your region and how to apply code cgfky within the 7-day window.",
+        "links": [
+          {
+            "label": "AttaPoll cash out: PayPal, minimums & 72h timing",
+            "url": "/en/attapoll-cash-out-paypal/"
+          },
+          {
+            "label": "AttaPoll referral code cgfky (how & when to enter)",
+            "url": "/en/attapoll-referral-code/"
+          }
+        ]
+      },
       "sections": [
         {
           "heading": "What AttaPoll does and what your screen can tell you",
           "paragraphs": [
-            "ATTAPOLL LTD publishes AttaPoll, which is listed on Google Play as a paid-surveys app. Companies use surveys to reach specific audiences, and the app matches studies with your profile. It also offers games and tasks, each with its own conditions. This guide focuses on surveys; the related guides cover games, payments and invitations.",
+            "ATTAPOLL LTD publishes AttaPoll, which is listed on Google Play as a paid-surveys app. Companies use surveys to reach specific audiences, and the app matches studies with your profile. It also offers games and tasks, each with its own conditions. This guide focuses on surveys; our related guides cover [AttaPoll games](/en/attapoll-games-rewards/), [PayPal cash-outs and minimums](/en/attapoll-cash-out-paypal/), and [referral code cgfky](/en/attapoll-referral-code/).",
             "The supplied screenshots show an example account with a Portuguese interface and USD amounts. The language, currency and offers in your account may differ. Payment methods and withdrawal minimums also vary by country and account. Use these screens to understand the layout, then check the values shown in your own app."
           ],
           "sources": [
@@ -3143,7 +3584,7 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "Getting started without assuming a daily income",
           "paragraphs": [
-            "Start by checking the app's terms, your profile and the offers available to you. If you want to use referral code cgfky, the official help places the entry field in Settings and gives you seven days after registration to enter a code. An existing referral cannot be replaced. Any incentive depends on the program's eligibility rules and the offer applicable to your account."
+            "Start by checking the app's terms, your profile and the offers available to you. If you want to use [referral code cgfky](/en/attapoll-referral-code/), the official help places the entry field in Settings and gives you seven days after registration to enter a code. An existing referral cannot be replaced. Any incentive depends on the program's eligibility rules and the offer applicable to your account."
           ],
           "sources": [
             {
@@ -3164,7 +3605,7 @@ export const articles:Record<Locale,Article[]>={
           "heading": "When a completed survey has no reward",
           "paragraphs": [
             "A finished survey is not automatically a paid survey. The reward depends on validation: the study's provider checks that your completion met the rules, and that check decides the credit. When one specific survey finishes without a reward, the route is Settings > Help > Surveys, with the survey's name and details ready.",
-            "For the next step, the cash-out guide explains minimums and payment statuses, the games guide covers milestones, and the referral guide explains how to use cgfky. If you decide to install AttaPoll, you can use the invitation link below. Check the developer and current terms on the official app-store page before downloading."
+            "For the next step, [the cash-out guide](/en/attapoll-cash-out-paypal/) explains minimums and payment statuses, [the games guide](/en/attapoll-games-rewards/) covers milestones, and [the referral guide](/en/attapoll-referral-code/) explains how to use cgfky. If you are weighing Play credit against PayPal surveys, check our [Google Opinion Rewards vs. Prime Opinion and AttaPoll comparison](/en/google-opinion-rewards-vs-prime-opinion-cash-surveys/). If you decide to install AttaPoll, you can use the invitation link below. Check the developer and current terms on the official app-store page before downloading."
           ],
           "sources": [
             {
@@ -3242,11 +3683,53 @@ export const articles:Record<Locale,Article[]>={
         }
       ],
       "relatedIds": [
+        "opinion-vs-primeopinion-attapoll",
         "attapoll-saque",
-        "attapoll-jogos",
-        "attapoll-convite"
+        "attapoll-convite",
+        "attapoll-jogos"
       ],
       "tables": [
+        {
+          "heading": "AttaPoll 2026 Quick Verdict: Surveys, Stars & Cash-Out Facts",
+          "columns": [
+            "Item",
+            "Verified Details",
+            "What to Check in Your Account"
+          ],
+          "rows": [
+            [
+              "Ways to earn",
+              "Paid surveys, games, and tasks (ATTAPOLL LTD)",
+              "Availability varies by profile; survey rewards depend on provider validation"
+            ],
+            [
+              "Example survey rewards",
+              "$0.02 to $0.39 in our inspected screen examples",
+              "Cards showed USD 0.02 (11 questions), USD 0.12 (12 min, 2 stars), and USD 0.39 (8 min, 3 stars); individual offers only"
+            ],
+            [
+              "Star ratings meaning",
+              "Relative likelihood of finishing that survey",
+              "3 stars suggest a higher completion chance than 1 star—not a quality or user rating"
+            ],
+            [
+              "Cash-out methods & minimums",
+              "Varies by country and account (e.g., PayPal, Revolut, gift cards)",
+              "Google Play mentions $3 in English and €2.50 in Spanish depending on the account; verify your live minimum in Balance"
+            ],
+            [
+              "Official payout timing",
+              "Up to 72 hours to send a payment",
+              "Covers the send window per AttaPoll Help; downstream PayPal-to-bank transfers follow PayPal's own timing"
+            ],
+            [
+              "Invite code (cgfky)",
+              "Enter in Settings within 7 days of registration",
+              "Only one code can be applied per account and cannot be replaced; check eligible country/account terms"
+            ]
+          ],
+          "afterSectionIndex": 0
+        },
         {
           "heading": "Survey cards in the supplied example account",
           "columns": [
@@ -4408,7 +4891,7 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Why DramaGood doesn't pay: the math doesn't work",
           "paragraphs": [
             "A free app runs on ads, and each ad view earns a few cents. To deliver what it promises, DramaGood would have to pay R$ 240 to every user who watches a few minutes — while also funding R$ 7,777 prizes and R$ 1,600 withdrawals. No ad ecosystem pays that: that is why the balance inflates early and the required minimum keeps moving ahead, as the R$ 133.40 shortfall in our test shows.",
-            "The official documents close the case. Neither the Play Store listing nor the Privacy Policy mentions a withdrawal program, bank transfers or cash payments; if a 'partner payment platform' existed, it would have to appear in the service's rules — and it doesn't. The table below contrasts what the app shows on screen with what the developer states officially. The 'Parabéns!' banners are the only 'proof' of payouts, with no external verification."
+            "The official documents close the case. Neither the Play Store listing nor the Privacy Policy mentions a withdrawal program, bank transfers or cash payments; if a 'partner payment platform' existed, it would have to appear in the service's rules — and it doesn't. The table below contrasts what the app shows on screen with what the developer states officially. The 'Parabéns!' banners are the only 'proof' of payouts, with no external verification, a pattern we also dissect in our [2026 short drama apps comparison](/en/short-drama-apps-that-claim-to-pay-real-money-compared/)."
           ],
           "source": {
             "title": "DramaGood Privacy Policy (drama-good.com)",
@@ -4496,7 +4979,9 @@ export const articles:Record<Locale,Article[]>={
           "url": "https://www.drama-good.com/privacy.html"
         }
       ],
+      "modifiedDate": "2026-11-18",
       "relatedIds": [
+        "short-drama-apps-compared",
         "dramagood-saque",
         "dramagood-tarefas",
         "cashdrama",
@@ -4769,6 +5254,828 @@ export const articles:Record<Locale,Article[]>={
         "attapoll",
         "tiktoklite"
       ]
+    },
+    {
+      "id": "cashfortunedrama",
+      "app": "cashfortunedrama",
+      "category": "rewards",
+      "slug": "cash-fortune-drama-review-does-it-pay-legit",
+      "title": "Does Cash Fortune Drama Pay Real Money? (2026 Review & Payout Test)",
+      "description": "Is Cash Fortune Drama legit or a scam? See our real screenshots: $500 cashout minimum, $200 vs. $10 ad popup, iPhone giveaway bait, and legit alternatives.",
+      "intro": "Cash Fortune Drama promises up to $500–$3,000 payouts and even a free iPhone 17 Pro MAX just for watching short vertical dramas. After inspecting the app screen by screen, our verdict is direct: Cash Fortune Drama does not pay. Below we break down the five real captures from our test—from the $0 to $35 artificial balance jump to the $500 minimum cashout wall and ad-driven popups.",
+      "topCallout": {
+        "title": "Looking for apps that actually pay via PayPal or gift cards?",
+        "text": "Skip $500 short-drama cashout walls. These verified platforms pay out starting at $3–$5 USD:",
+        "links": [
+          {
+            "label": "Prime Opinion (+10% code ALNTFL)",
+            "url": "/en/prime-opinion-review-how-it-works-is-it-legit/"
+          },
+          {
+            "label": "Pawns.app ($3 invite bonus)",
+            "url": "/en/pawns-app-review-how-it-works/"
+          },
+          {
+            "label": "Freecash (offers & games)",
+            "url": "/en/freecash-offers-referrals-guide/"
+          }
+        ]
+      },
+      "sections": [
+        {
+          "heading": "What Cash Fortune Drama is and why it mirrors CashDrama and DramaStack",
+          "paragraphs": [
+            "Cash Fortune Drama is a vertical short-drama app organized into four bottom tabs: Shorts, Main, Bonus, and User. Like [CashDrama](/en/cashdrama-review-is-it-legit-or-scam/) and [DramaStack](/en/dramastack-pays-or-not/), it pairs free mini-series episodes with a persistent dollar counter at the top of the screen.",
+            "On the Bonus tab, a new account starts at $0 right next to the message 'Get another $500 and withdraw $500.' Underneath, the screen stacks a 7-day check-in (+50 to +100), a 'Watch videos to earn 81' chest bar, and Daily Tasks advertising unrealistic top prizes of 1,000 (play 5 min), 1,400 (watch 1 episode), and 2,000 (watch 1 AD video)."
+          ]
+        },
+        {
+          "heading": "Artificial balance jump ($0 to $15 to $35) and player reward icons",
+          "paragraphs": [
+            "Once you open an episode in the Shorts feed—such as System: Bargain to Godhood (Ep. 2, listed at 40 episodes)—the top balance quickly jumps from $0 to $15, shifting the banner to 'Get another $485 and withdraw $500.'",
+            "Along the right side of the video player, three floating trackers compete for attention: an AirPods icon (0/20 videos), a golden piggy bank (2/3), and an iPhone icon (0%). Rapid initial jumps from $0 to $15 and $35 are a classic retention hook designed to make a $500 cashout look achievable before rewards slow down."
+          ]
+        },
+        {
+          "heading": "The misleading +$200 vs. 'Only $10' ad popup",
+          "paragraphs": [
+            "When the golden piggy bank triggers, a 'Congratulations!' popup fills the screen with '+$ 200' above a large purple 'Claim $200' button marked with an AD TV icon. Directly below it sits a tiny underlined link reading 'Only $10.'",
+            "This dark-pattern layout nudges users into watching forced video ads for the big number while hiding the small fallback. Even after reaching $35, the progress bar at the bottom of the popup confirms the real gap: 'Earn $465 more to unlock the $500 withdrawal!'"
+          ],
+          "image": {
+            "key": "cashfortunedrama-popup",
+            "alt": "Cash Fortune Drama Congratulations popup showing +$200 Claim button with AD icon and smaller Only $10 link",
+            "caption": "The Congratulations! popup pairs a large AD-tagged Claim $200 button with a tiny 'Only $10' link, while still requiring $465 more to unlock $500.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "The 'WIN iPhone 17 Pro MAX ($1,199)' bait and shipping address request",
+          "paragraphs": [
+            "Another promotional overlay promises 'Watch Bonus Drama — WIN iPhone 17 Pro MAX ($ 1,199),' claiming the phone is 'Shipped from the official Apple website, delivered to your home.'",
+            "The three-step instructions tell users to watch all episodes of a reward short drama in their entirety and then 'Fill in the shipping address.' No ad-supported short-drama app can buy a $1,199 iPhone for every viewer who finishes a series, and handing over your home address for an unverified giveaway carries privacy risks."
+          ],
+          "image": {
+            "key": "cashfortunedrama-iphone",
+            "alt": "Cash Fortune Drama promotional popup promising a free $1,199 iPhone 17 Pro MAX and asking for shipping address",
+            "caption": "Promotional popup claiming you can win a $1,199 iPhone 17 Pro MAX shipped from Apple's official site after watching all episodes and entering your shipping address.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Withdraw screen ($500 to $3,000), fake-style ticker, and why it does not pay",
+          "paragraphs": [
+            "Opening the Withdraw screen with a $35 balance reveals four regional payment tabs—PIX, PicPay, Mercado Libre, and Nubank—and four astronomical payout tiers: $500 ($35/$500), $1,000, $1,500, and $3,000 (all marked Locked except the $500 Cash Out target).",
+            "At the top, rotating banners announce 'Congratulation to Br****ra withdraw $1,500,' 'Ra****ta withdraw $500,' and 'An****ra withdraw $500'—completely unverifiable claims with no transaction IDs or external proof. Because ad impressions pay fractions of a cent, no app can sustain $500–$3,000 cashouts per viewer. Our verdict is clear: Cash Fortune Drama does not pay real money."
+          ],
+          "image": {
+            "key": "cashfortunedrama-withdraw",
+            "alt": "Cash Fortune Drama Withdraw screen with $35 balance, $500-$3,000 minimums, PIX/PicPay/Mercado Libre/Nubank tabs, and winner ticker",
+            "caption": "Withdraw screen showing BALANCE: $35, unverifiable $500–$1,500 winner banners, PIX/PicPay/Mercado Libre/Nubank options, and $500 to $3,000 minimums.",
+            "wide": false
+          },
+          "cta": {
+            "label": "Compare with verified apps that pay from $3–$5 USD (Prime Opinion)",
+            "url": "/en/prime-opinion-review-how-it-works-is-it-legit/"
+          }
+        },
+        {
+          "heading": "Legit alternatives that actually pay (PayPal, PIX & gift cards)",
+          "paragraphs": [
+            "Unlike short-drama reward apps with $100–$500 traps, established survey and offer platforms publish transparent cent-to-dollar rates and low withdrawal minimums. You can test [Prime Opinion](/en/prime-opinion-review-how-it-works-is-it-legit/) for paid surveys, [Pawns.app](/en/pawns-app-review-how-it-works/) for internet sharing plus surveys, or [Freecash](/en/freecash-offers-referrals-guide/) for tracked mobile game milestones.",
+            "For fast mobile-first payouts, [AttaPoll](/en/attapoll-how-it-works/) offers low PayPal thresholds depending on your country, while [TikTok Lite](/en/tiktok-lite-rewards-cashout/) runs official regional check-in and referral campaigns in supported markets. None of them promise $500 overnight—which is exactly why their payouts actually clear. You can also compare all five short-drama apps side by side in our [2026 short drama apps comparison](/en/short-drama-apps-that-claim-to-pay-real-money-compared/)."
+          ]
+        }
+      ],
+      "steps": [
+        "Open the Withdraw tab before watching episodes to check the real cashout minimum ($500 to $3,000).",
+        "Treat fast $0 to $15 and $35 jumps—and +$200 AD popups—as engagement hooks, not withdrawable cash.",
+        "Do not submit your home shipping address for the unverified iPhone 17 Pro MAX ($1,199) popup.",
+        "Ignore the top winner ticker ($500 and $1,500 banners), as it provides no verifiable payout proof.",
+        "Switch to transparent platforms with low $3–$5 minimums like Prime Opinion, Pawns.app, Freecash, or AttaPoll."
+      ],
+      "stepsSectionIndex": 4,
+      "tables": [
+        {
+          "heading": "Cash Fortune Drama vs. CashDrama vs. DramaStack vs. Apps That Actually Pay",
+          "columns": [
+            "App",
+            "Minimum Cashout",
+            "Real Mechanics Observed",
+            "Verdict"
+          ],
+          "rows": [
+            [
+              "Cash Fortune Drama",
+              "$500 (up to $3,000)",
+              "Fast $0 -> $15 -> $35 jump, +$200 AD vs. Only $10 popup, $1,199 iPhone address bait",
+              "Does not pay"
+            ],
+            [
+              "CashDrama",
+              "$1 / $100 to $1K",
+              "Balance reaches $99.86–$106.84 on Day 1, blocked by Day 2 Unlock & 12-ep rule",
+              "Does not pay reliably"
+            ],
+            [
+              "DramaStack",
+              "R$ 300 (~$55–$60 USD)",
+              "High cashout threshold with restrictive rules blocking coin conversion",
+              "Unlikely to pay"
+            ],
+            [
+              "Prime Opinion / Pawns.app / Freecash / AttaPoll / TikTok Lite",
+              "Low ($1–$5 depending on app/region)",
+              "Transparent survey/game/task payouts via PayPal, PIX, or gift cards",
+              "Legit (verified payouts)"
+            ]
+          ],
+          "afterSectionIndex": 4
+        }
+      ],
+      "pros": [
+        "Streams vertical short dramas such as System: Bargain to Godhood without requiring an upfront paid subscription.",
+        "Easy-to-spot interface cues quickly expose the $500 minimum before users invest days watching."
+      ],
+      "cons": [
+        "Does not pay: sets unrealistic $500, $1,000, $1,500, and $3,000 withdrawal minimums.",
+        "Uses a dark-pattern +$200 Claim button tied to ads (AD) alongside a tiny 'Only $10' link.",
+        "Collects shipping addresses under an unverified 'WIN iPhone 17 Pro MAX ($1,199)' promise.",
+        "Displays unverifiable winner tickers ($500 and $1,500) above PIX, PicPay, Mercado Libre, and Nubank tabs."
+      ],
+      "faq": [
+        {
+          "q": "Does Cash Fortune Drama really pay real money?",
+          "a": "No. Based on our inspection of all five screens, Cash Fortune Drama does not pay. Its balance jumps artificially from $0 to $35 while blocking cashouts behind a $500 minimum (up to $3,000), ad-gated +$200 popups, and unverifiable winner banners."
+        },
+        {
+          "q": "What is the minimum withdrawal on Cash Fortune Drama?",
+          "a": "The Withdraw screen sets the lowest tier at $500, followed by locked tiers at $1,000, $1,500, and $3,000 across PIX, PicPay, Mercado Libre, and Nubank options."
+        },
+        {
+          "q": "Is the Cash Fortune Drama iPhone 17 Pro Max giveaway real?",
+          "a": "No verifiable evidence supports it. The popup claims it ships a $1,199 iPhone 17 Pro MAX from Apple's official website once you watch all episodes and enter your shipping address—a major red flag for data collection."
+        },
+        {
+          "q": "Is Cash Fortune Drama the same as CashDrama?",
+          "a": "They are separate apps using the exact same short-drama retention playbook: inflated early balances, ad-heavy reward popups, and unreachable or locked cashout tiers."
+        },
+        {
+          "q": "Which apps actually pay instead of Cash Fortune Drama?",
+          "a": "Legitimate options with low, realistic thresholds include Prime Opinion, Pawns.app, Freecash, AttaPoll, and official regional TikTok Lite campaigns."
+        }
+      ],
+      "verdict": "Cash Fortune Drama does not pay. The $0 -> $15 -> $35 balance jump, the ad-gated +$200 vs. 'Only $10' popup, the $1,199 iPhone shipping-address bait, and the $500–$3,000 withdrawal minimums all follow the classic non-paying drama app pattern. Watch dramas only if you ignore the cash counter, or switch to verified apps like Prime Opinion, Pawns.app, and Freecash.",
+      "imageKey": "cashfortunedrama-bonus",
+      "imageAlt": "Cash Fortune Drama Bonus tab showing $0 balance, $500 withdrawal goal, 7-day check-in, and Daily Tasks up to 2,000",
+      "caption": "Bonus tab at $0: displays a 7-day check-in (+50/+100), 'Watch videos to earn 81,' Daily Tasks (1,000 to 2,000 Top Prize), and a $500 cashout target.",
+      "imageWide": false,
+      "secondImage": {
+        "key": "cashfortunedrama-player",
+        "alt": "Cash Fortune Drama Shorts player showing System: Bargain to Godhood Ep. 2 with $15 balance and floating reward icons",
+        "caption": "Shorts player (System: Bargain to Godhood, Ep. 2) showing the balance jumped to $15 alongside floating AirPods (0/20), piggy bank (2/3), and iPhone (0%) icons.",
+        "wide": false
+      },
+      "sources": [
+        {
+          "title": "apps308: CashDrama Review & $100 Lock Analysis",
+          "url": "https://www.apps308.com/en/cashdrama-review-is-it-legit-or-scam/"
+        },
+        {
+          "title": "apps308: DramaStack Review & Cashout Proof",
+          "url": "https://www.apps308.com/en/dramastack-pays-or-not/"
+        },
+        {
+          "title": "apps308: DramaGood Review (Does It Pay?)",
+          "url": "https://www.apps308.com/en/dramagood-app-review/"
+        },
+        {
+          "title": "CashDrama on Google Play (com.reward.drama.earn.watch.tool)",
+          "url": "https://play.google.com/store/apps/details?id=com.reward.drama.earn.watch.tool&hl=en"
+        }
+      ],
+      "relatedIds": [
+        "short-drama-apps-compared",
+        "cashdrama",
+        "dramastack",
+        "dramagood",
+        "primeopinion",
+        "pawns",
+        "freecash"
+      ]
+    },
+    {
+      "id": "short-drama-apps-compared",
+      "app": "compare",
+      "category": "rewards",
+      "slug": "short-drama-apps-that-claim-to-pay-real-money-compared",
+      "title": "Short Drama Apps Claiming to Pay Money (2026): DramaStack, CashDrama & More",
+      "description": "We compared short drama apps promising cash rewards (DramaStack, CashDrama, Cash Fortune Drama, DramaGood, PineDrama). See payout locks, screenshots, and real alternatives.",
+      "modifiedDate": "2026-11-18",
+      "intro": "Short vertical drama apps flooding social ads promise $100 to $3,000 payouts—or instant PIX and PayPal cash—just for watching mini-series. After inspecting DramaStack, CashDrama, Cash Fortune Drama, DramaGood, PineDrama, and DramaBox screen by screen, the gap is clear: four do not pay at all, DramaBox is strictly freemium streaming, and only PineDrama offers a limited regional program that pays symbolic cents (30,000 points = R$ 1, roughly ~$0.18 USD).",
+      "topCallout": {
+        "title": "Skip $100–$500 short-drama cashout locks: verified apps that actually pay",
+        "text": "If you want real PayPal, PIX, or gift-card cashouts with transparent rules and low minimums, compare our tested alternatives:",
+        "links": [
+          {
+            "label": "TikTok Lite (code DL70959891)",
+            "url": "/en/tiktok-lite-rewards-cashout/"
+          },
+          {
+            "label": "Prime Opinion (+10% code ALNTFL)",
+            "url": "/en/prime-opinion-review-how-it-works-is-it-legit/"
+          },
+          {
+            "label": "Pawns.app ($3 invite bonus)",
+            "url": "/en/pawns-app-review-how-it-works/"
+          },
+          {
+            "label": "Freecash (games & offers)",
+            "url": "/en/freecash-offers-referrals-guide/"
+          }
+        ]
+      },
+      "sections": [
+        {
+          "heading": "2026 Verdict: which short drama apps do not pay vs. PineDrama and DramaBox",
+          "paragraphs": [
+            "Across our 2026 hands-on reviews, four vertical-drama apps follow a non-paying ad-retention pattern: [DramaStack](/en/dramastack-pays-or-not/) (R$ 300 / ~$55–$60 USD cashout screen contradicted by a privacy policy stating virtual coins cannot convert to currency), [CashDrama](/en/cashdrama-review-is-it-legit-or-scam/) (locks $1 and $100+ balances behind 12-episode gates and Day 2 Unlock), [Cash Fortune Drama](/en/cash-fortune-drama-review-does-it-pay-legit/) ($500–$3,000 minimums and iPhone bait), and [DramaGood](/en/dramagood-app-review/) (R$ 240 floor with zero cash-payout terms in Google Play or its privacy policy).",
+            "By contrast, [PineDrama](/en/pinedrama-rewards-does-it-pay-cash-withdrawal/)—TikTok's official short-drama app—does not appear with a Rewards tab in most English- or Spanish-speaking countries, and where the regional campaign is active (such as Brazil), it pays only symbolic pocket-change cents at 30,000 points per R$ 1 (~$0.18 USD). Meanwhile, [DramaBox](/en/dramabox-app-review-free-or-paid-safe/) is a legitimate freemium streaming app (16,000+ series) whose Reward Coins only unlock episodes inside the app with no cash withdrawal."
+          ]
+        },
+        {
+          "heading": "Repeating traps and payout locks across non-paying drama apps",
+          "paragraphs": [
+            "Even though these apps use different logos, their monetization playbook is nearly identical: inflate the wallet immediately so a huge goal feels close, then stall progress behind ad-heavy gates. In our [CashDrama withdrawal test](/en/cashdrama-how-to-withdraw-money-payment-proof/), the balance jumped to $99.86 and $106.84 on Day 1—hitting '$0 to go' on the $100 card—yet Withdraw Now stayed greyed out under 'Day 2 Unlock' and '12 ep. left.'",
+            "DramaStack displays R$ 300 (~$55–$60 USD) and tiers from R$ 1,510 while its written rules tie bonuses to unlocking episodes. Across all four non-paying apps, floating 'Congratulations' tickers announce R$ 240, R$ 300, $500, or $800 payouts that cannot be audited outside the interface."
+          ],
+          "image": {
+            "key": "cashdrama-withdraw-1",
+            "alt": "CashDrama Withdraw screen showing $99.86 balance, $1 locked behind 12 episodes, and $100 locked behind Day 2 Unlock",
+            "caption": "CashDrama at $99.86: even the $1 card requires 12 episode claims, while $100 sits behind Day 2 Unlock.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Inside Cash Fortune Drama ($500 floor, AD popups, and iPhone bait)",
+          "paragraphs": [
+            "Cash Fortune Drama pushes the same formula even further. A new account jumps from $0 to $15 and $35 within minutes in the Shorts player, while the Withdraw screen sets minimums at $500, $1,000, $1,500, and $3,000 across PIX, PicPay, Mercado Libre, and Nubank tabs—accompanied by an unverifiable top ticker claiming $500 and $1,500 payouts.",
+            "When a golden piggy bank fills, a 'Congratulations!' popup pairs a huge purple 'Claim $200' button tagged with an AD icon against a tiny 'Only $10' link, while another popup asks users to finish a bonus drama and submit a home shipping address to win a $1,199 iPhone 17 Pro MAX. Ad views generate cents, making $500 payouts and free flagship phones mathematically impossible."
+          ],
+          "image": {
+            "key": "cashfortunedrama-withdraw",
+            "alt": "Cash Fortune Drama Withdraw screen with $35 balance, $500 to $3,000 cashout tiers, and unverifiable winner ticker",
+            "caption": "Cash Fortune Drama Withdraw screen: BALANCE $35 against $500–$3,000 cashout walls and an unverifiable ticker.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Why DramaGood stalls at R$ 106.60 below a R$ 240 minimum",
+          "paragraphs": [
+            "Our November 16, 2026 test of DramaGood (com.drama.good.shortplay.atsab) revealed a R$ 106.60 starting balance stuck R$ 133.40 short of a R$ 240 minimum (with locked tiers up to R$ 1,600 and daily task headlines of R$ 7,777 and R$ 3,333). Completing the five-star rating and notification tasks did not bridge the gap.",
+            "Crucially, neither DramaGood's Google Play description nor its Privacy Policy (drama-good.com/privacy.html) mentions PIX, bank transfers, or any cash reward program—they describe only a streaming app with in-app viewing perks."
+          ],
+          "image": {
+            "key": "dramagood-carteira",
+            "alt": "DramaGood wallet screen showing R$ 106.60 balance and R$ 240 to R$ 1,600 withdrawal tiers",
+            "caption": "DramaGood wallet: R$ 106.60 balance held R$ 133.40 below the R$ 240 threshold alongside PIX and card icons.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "PineDrama vs. DramaBox: symbolic regional cents vs. pure streaming",
+          "paragraphs": [
+            "Unlike those clones, [PineDrama](/en/pinedrama-reviews-tiktok-short-dramas-app/) (com.ss.android.ttmd.video) is an official TikTok product and publishes its math openly where the promotional tab exists: in Brazil, 30,000 points equal R$ 1 (~$0.18 USD), with PIX cashout tiers of R$ 0.10 (one-time), R$ 0.50, R$ 1.00, and R$ 2.00. However, watching 30 daily 30-second ads (15 minutes of commercials) yields at most 12,000 points (~R$ 0.40), and the Rewards tab is absent in most US, European, and Spanish-speaking markets.",
+            "DramaBox (com.storymatrix.drama), meanwhile, never pretends to pay cash. Its Reward Coins (+10 to +30 per ad) exist solely to unlock locked episodes inside a freemium catalog of 16,000+ dramas, with optional coin packs or weekly/annual plans compared in our [DramaBox recharge vs. VIP pricing guide](/en/dramabox-recharge-coin-prices-vs-vip-subscription/)."
+          ],
+          "image": {
+            "key": "pinedrama-cashout",
+            "alt": "PineDrama Redemption Center showing 920 points converted to R$ 0.03 and R$ 0.10 to R$ 2.00 PIX tiers",
+            "caption": "PineDrama Redemption Center in Brazil: transparent 30,000 points = R$ 1 rate, paying symbolic cents rather than side income.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Short-video alternative with real regional rewards: TikTok Lite",
+          "paragraphs": [
+            "If you want a short-video app with documented point rules in supported regions, [TikTok Lite](/en/tiktok-lite-rewards-cashout/) (com.zhiliaoapp.musically.go) operates under clear terms and low regional minimums. In our November 16, 2026 Brazilian captures, 240,769 points equaled R$ 8.02 (~30,000 points per R$ 1), with Pix, PagBank, and bank cashouts starting at R$ 0.50 (R$ 0.50, R$ 1, R$ 15, R$ 30) and mobile top-ups from R$ 10.",
+            "Even on TikTok Lite, daily ad tasks (30 ads = 6,000 points, or ~R$ 0.20) only provide light pocket change and points carry expiration dates—so treat it as a casual bonus alongside regular video viewing, or check eligible new-user invite rules for code DL70959891."
+          ],
+          "image": {
+            "key": "tiktoklite-saque",
+            "alt": "TikTok Lite Redeem Rewards screen showing Pix, PagBank, and bank transfer options starting at R$ 0.50",
+            "caption": "TikTok Lite Redeem Rewards screen: low R$ 0.50 starter tier via Pix and PagBank where campaigns are active.",
+            "wide": false
+          },
+          "cta": {
+            "label": "Download TikTok Lite via official invite link (code DL70959891)",
+            "url": "https://www.tiktok.com/d/4/ZS9fcGCx9xhYn-v2KXS/",
+            "sponsored": true
+          }
+        },
+        {
+          "heading": "Side-by-side: verified apps that pay via PayPal, PIX & gift cards",
+          "paragraphs": [
+            "When your goal is withdrawable cash rather than entertainment, dedicated survey and task platforms replace fake $500 counters with realistic thresholds. [Prime Opinion](/en/prime-opinion-review-how-it-works-is-it-legit/) shows exact USD values before each survey (such as $0.27 for 2 minutes), supports PayPal, Venmo, bank transfer, and gift cards from $5.25 USD, and adds a +10% 24-hour bonus with code ALNTFL. [AttaPoll](/en/attapoll-how-it-works/) pairs short mobile surveys with star completion ratings and low regional PayPal minimums ($3 on English Google Play / €2.50 on Spanish Google Play).",
+            "For mixed earning channels, [Pawns.app](/en/pawns-app-review-how-it-works/) combines optional internet sharing with surveys and mobile game milestones from a $5.00 USD PayPal or Bitcoin minimum (plus code 6823713 for a $3 bonus split into $1 across your first three eligible cashouts). [Freecash](/en/freecash-offers-referrals-guide/) focuses on higher-value mobile game milestones and offers operated by Almedia GmbH, though users should check regional first-cashout minimums (such as $25 in help docs) and PayPal fees (5% plus $1 on $5–$20 tiers) in our [Freecash legitimacy and rules review](/en/freecash-reviews-is-it-legit-or-scam/)."
+          ],
+          "image": {
+            "key": "primeopinion-rewards",
+            "alt": "Prime Opinion cashout menu showing PayPal and Venmo payouts starting at $5.25 USD",
+            "caption": "Prime Opinion cashout screen: transparent USD thresholds from $5.25 via PayPal and Venmo instead of locked $100–$500 counters.",
+            "wide": true
+          },
+          "cta": {
+            "label": "Try Prime Opinion with +10% survey bonus (code ALNTFL)",
+            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d",
+            "sponsored": true
+          }
+        }
+      ],
+      "tables": [
+        {
+          "heading": "Short Drama Apps vs. Verified Reward Platforms (2026 Comparison)",
+          "columns": [
+            "App",
+            "Claim / Minimum Shown",
+            "Reality Observed in Testing",
+            "2026 Status"
+          ],
+          "rows": [
+            [
+              "DramaStack",
+              "R$ 300 (~$55–$60 USD) to R$ 1,510+",
+              "Privacy policy says unspent virtual coins cannot convert to currency; bonuses unlock episodes",
+              "Does not pay in practice"
+            ],
+            [
+              "CashDrama",
+              "$1 (12 ep.) / $100 to $1K",
+              "Balance hits $99.86–$106.84 on Day 1, but Withdraw Now stays locked behind Day 2 Unlock & 12-ep gates",
+              "Does not pay reliably"
+            ],
+            [
+              "Cash Fortune Drama",
+              "$500 to $3,000 + iPhone 17 Pro MAX",
+              "Fast $0 -> $35 jump, +$200 AD popup vs. Only $10, address-collecting iPhone bait, unverifiable ticker",
+              "Does not pay"
+            ],
+            [
+              "DramaGood",
+              "R$ 240 to R$ 1,600 / R$ 7,777 tasks",
+              "Stuck at R$ 106.60 (R$ 133.40 short); Play Store & Privacy Policy omit cash payouts",
+              "Does not pay"
+            ],
+            [
+              "PineDrama",
+              "R$ 0.10–R$ 2.00 PIX (30,000 pts = R$ 1)",
+              "Official TikTok app; Rewards tab limited to select markets (absent in most ES/EN regions) and pays symbolic cents",
+              "Limited regional cents only"
+            ],
+            [
+              "DramaBox",
+              "Reward Coins (+10 to +30 per ad)",
+              "Freemium streaming (16,000+ dramas); coins only unlock episodes inside the app",
+              "Streaming only (no cashout)"
+            ],
+            [
+              "TikTok Lite",
+              "From R$ 0.50 PIX/PagBank (regional)",
+              "30,000 pts = R$ 1.00 observed in Brazil; 30 daily ads = ~R$ 0.20; points expire; code DL70959891",
+              "Pays light regional rewards"
+            ],
+            [
+              "Prime Opinion",
+              "From $5.25 USD (PayPal, Venmo, cards)",
+              "Exact USD per survey ($0.27+ for 2 min), community star ratings, +10% 24h code ALNTFL",
+              "Verified & pays"
+            ],
+            [
+              "Pawns.app",
+              "From $5.00 USD (PayPal, Bitcoin, cards)",
+              "Surveys, game offers, optional internet sharing; $3 bonus (code 6823713) split across first 3 cashouts",
+              "Verified & pays"
+            ],
+            [
+              "Freecash",
+              "Offer-dependent ($25 first-cashout rule in regions)",
+              "Almedia GmbH platform for game milestones & offers; 5% + $1 PayPal fee on $5–$20 tiers; code 3C7GKG",
+              "Legit GPT (tracking/KYC rules apply)"
+            ],
+            [
+              "AttaPoll",
+              "Low regional PayPal ($3 / €2.50 in Play Store)",
+              "Mobile surveys & games with star ratings; payouts sent within up to 72h; code cgfky",
+              "Verified & pays"
+            ]
+          ],
+          "afterSectionIndex": 0
+        }
+      ],
+      "steps": [
+        "Open the withdrawal screen first in any short-drama app to check for $100–$3,000 or R$ 240–R$ 300 walls.",
+        "Check Google Play and the Privacy Policy: if cash payouts are missing (as in DramaStack and DramaGood), treat coins as decorative.",
+        "Never enter your home shipping address or payment details for popups promising free phones like an iPhone 17 Pro MAX.",
+        "If you watch short dramas for fun, use official streaming apps like PineDrama or DramaBox without expecting income.",
+        "Use transparent survey or task platforms (Prime Opinion, Pawns.app, AttaPoll, Freecash, or regional TikTok Lite) when you want real payouts."
+      ],
+      "pros": [
+        "Separates non-paying ad traps from legitimate free drama streaming apps (PineDrama, DramaBox) and real reward platforms.",
+        "Side-by-side evidence backed by real in-app screenshots, minimum thresholds, and official store/policy rules."
+      ],
+      "cons": [
+        "Most short-drama apps claiming cash rewards lock withdrawals behind unrealistic thresholds or shifting rules.",
+        "Even legitimate video reward programs (PineDrama, TikTok Lite) yield only modest cents per day without referrals."
+      ],
+      "faq": [
+        {
+          "q": "Which short drama app actually pays real money?",
+          "a": "None of the high-paying drama apps pay out the big amounts they advertise. Among short-drama apps, only TikTok's official PineDrama includes a regional Rewards tab in select markets (such as Brazil at 30,000 points = R$ 1 / ~$0.18 USD, paying a few cents), while DramaBox is strictly for streaming."
+        },
+        {
+          "q": "Do DramaStack, CashDrama, Cash Fortune Drama, or DramaGood pay?",
+          "a": "No. Our inspections found blocking thresholds or non-convertible coin rules in all four: DramaStack shows R$ 300 while barring coin conversion, CashDrama locks $100+ behind Day 2 Unlock and 12-episode gates, Cash Fortune Drama demands $500–$3,000 with iPhone bait, and DramaGood stalls at R$ 106.60 below a R$ 240 wall."
+        },
+        {
+          "q": "Does PineDrama still pay to watch short dramas?",
+          "a": "In most English- and Spanish-speaking countries, PineDrama has no cash Rewards tab at all. Where the regional promotion is active (like Brazil), it lists PIX cashouts from R$ 0.10 to R$ 2.00 at 30,000 points per R$ 1 (~$0.18 USD), meaning 30 daily ads yield roughly R$ 0.40."
+        },
+        {
+          "q": "What legitimate alternatives actually pay via PayPal or PIX?",
+          "a": "Verified platforms with transparent, low minimums include Prime Opinion ($5.25 USD PayPal, code ALNTFL), Pawns.app ($5.00 USD PayPal/Bitcoin, code 6823713), AttaPoll (regional PayPal from ~$3/€2.50, code cgfky), Freecash (game offers, code 3C7GKG), and TikTok Lite in supported regions (from R$ 0.50 PIX in Brazil, code DL70959891)."
+        }
+      ],
+      "verdict": "DramaStack, CashDrama, Cash Fortune Drama, and DramaGood do not deliver reliable real-money payouts—their inflated balances and $100–$3,000 or R$ 240–R$ 300 cashout walls exist to drive ad views. Watch DramaBox or PineDrama strictly for entertainment, and switch to Prime Opinion, Pawns.app, AttaPoll, Freecash, or regional TikTok Lite when you want real cashouts.",
+      "imageAlt": "DramaStack withdrawal screen showing R$ 300 cashout minimum and higher tiers",
+      "caption": "DramaStack displays a R$ 300 (~$55–$60 USD) cashout floor and R$ 1,510+ tiers, while its privacy policy states virtual coins cannot convert to currency.",
+      "imageKey": "dramastack-payout",
+      "imageWide": false,
+      "relatedIds": [
+        "dramastack",
+        "cashdrama",
+        "cashfortunedrama",
+        "dramagood",
+        "pinedrama-rewards",
+        "primeopinion",
+        "pawns",
+        "tiktoklite"
+      ]
+    },
+    {
+      "id": "opinion-vs-primeopinion-attapoll",
+      "app": "compare",
+      "category": "rewards",
+      "slug": "google-opinion-rewards-vs-prime-opinion-cash-surveys",
+      "title": "Google Opinion Rewards vs Prime Opinion (2026): Play Credit vs PayPal Cash",
+      "description": "Compare Google Opinion Rewards vs. Prime Opinion and AttaPoll: Android Google Play credit (1-year expiry) vs. real PayPal cash, survey availability, and bonuses.",
+      "modifiedDate": "2026-11-18",
+      "intro": "Google Opinion Rewards is one of the best-known survey apps on Android, yet many users discover only after answering questionnaires that Android rewards arrive as Google Play Store credit—not withdrawable PayPal or bank money. Comparing [Google Opinion Rewards](/en/google-opinion-rewards-how-it-works/) side by side against [Prime Opinion](/en/prime-opinion-review-how-it-works-is-it-legit/) and [AttaPoll](/en/attapoll-how-it-works/) shows when Play credit makes sense and when cash-focused survey platforms fit better.",
+      "topCallout": {
+        "title": "Read the full individual reviews before choosing",
+        "text": "Explore payout screenshots, survey rules, and official terms in our dedicated guides:",
+        "links": [
+          {
+            "label": "Google Opinion Rewards guide (Play credit & expiry)",
+            "url": "/en/google-opinion-rewards-how-it-works/"
+          },
+          {
+            "label": "Prime Opinion review (+10% code ALNTFL)",
+            "url": "/en/prime-opinion-review-how-it-works-is-it-legit/"
+          },
+          {
+            "label": "AttaPoll guide (star ratings & code cgfky)",
+            "url": "/en/attapoll-how-it-works/"
+          }
+        ]
+      },
+      "sections": [
+        {
+          "heading": "Reward type and expiration: Google Play credit vs. PayPal cash",
+          "paragraphs": [
+            "The biggest divide among these three apps is what your balance can actually buy. According to Google's official documentation, [Google Opinion Rewards on Android](/en/google-opinion-rewards-how-it-works/) pays in Google Play credit rather than bank transfers or PayPal cash, and each Android credit expires one year after it is issued. On iOS, availability and payment rules differ by market, so platform documentation matters before you start.",
+            "By contrast, [Prime Opinion](/en/prime-opinion-payout-methods-paypal-bonus-code/) displays balances directly in US dollars and supports PayPal, Venmo (where eligible), bank transfers, and digital gift cards (including Google Play) starting from $5.25 USD. [AttaPoll](/en/attapoll-cash-out-paypal/) also pays out to cash wallets such as PayPal and Revolut alongside regional gift cards—without locking your rewards inside a single app store."
+          ]
+        },
+        {
+          "heading": "Survey availability and user control: Prime Opinion (ALNTFL) vs. passive alerts",
+          "paragraphs": [
+            "In Google Opinion Rewards, surveys arrive passively based on your profile and service eligibility; there is no browsable wall of questionnaires, and some invitations expire within 24 hours while credits can take a few days to appear. That makes it impossible to plan a steady survey session.",
+            "Prime Opinion puts an active list on your home dashboard with three sorting filters—Best Match, Short Surveys (under 5 minutes), and Highest Payout—plus community star ratings (such as 5 stars across 110 reviews) and upfront USD amounts (for example, $0.27 USD for a 2-minute survey) alongside mobile game offers. New members who sign up with the official invite link or enter code ALNTFL within 24 hours receive a +10% bonus on all completed surveys for their first 24 hours."
+          ],
+          "image": {
+            "key": "primeopinion-home",
+            "alt": "Prime Opinion home dashboard displaying live USD balance, short surveys, and +25% promotional boosters",
+            "caption": "Prime Opinion lets users filter Best Match and Short Surveys with upfront dollar rewards and +10% 24h boost via code ALNTFL.",
+            "wide": false
+          },
+          "cta": {
+            "label": "Join Prime Opinion & activate +10% bonus (code ALNTFL)",
+            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d",
+            "sponsored": true
+          }
+        },
+        {
+          "heading": "AttaPoll survey cards, star ratings, and 7-day code cgfky",
+          "paragraphs": [
+            "[AttaPoll](/en/attapoll-how-it-works/) also gives you an active feed of surveys, mobile games, and tasks instead of waiting solely on random push alerts. Each survey card lists the advertised reward, estimated duration, and a star rating—which AttaPoll's help center defines as the relative likelihood of finishing that survey (for instance, our captured account showed $0.12 for 12 minutes with 2 stars and $0.39 for 8 minutes with 3 stars, plus a $0.02 11-question unlock card).",
+            "Like Prime Opinion, AttaPoll remains subject to demographic screening, filled quotas, and provider validation, so starting a survey never guarantees credit. New users who want to apply [AttaPoll referral code cgfky](/en/attapoll-referral-code/) can enter it in Settings within seven days of registration, provided no referral has already been linked."
+          ],
+          "image": {
+            "key": "attapoll-pesquisas",
+            "alt": "AttaPoll survey list showing dollar rewards, estimated minutes, and star completion ratings",
+            "caption": "AttaPoll survey feed: each card displays reward, estimated duration, and star rating indicating relative completion likelihood.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Minimum cashouts, processing times, and regional rules",
+          "paragraphs": [
+            "Withdrawal rules depend heavily on your country and account. Google Opinion Rewards has no cashout threshold on Android because Play credit goes straight to your Google account (spendable only on eligible Play Store items within one year). [Prime Opinion's cashout menu](/en/prime-opinion-payout-methods-paypal-bonus-code/) starts at $5.25 USD across PayPal, Venmo, and digital gift cards; gift card codes often issue almost immediately, while PayPal transfers typically arrive within minutes to 24 hours (note that some methods can carry small third-party fees and only one verified account is allowed).",
+            "For [AttaPoll withdrawals](/en/attapoll-cash-out-paypal/), there is no single global minimum: your Balance screen sets the exact floor by country and method. As reference points, the English Google Play listing mentions $3 and the Spanish listing mentions €2.50, while our captured Portuguese-interface account displayed a $2.52 USD balance alongside PayPal, Revolut, and local retail gift cards. Official AttaPoll help states that sending a payment can take up to 72 hours."
+          ],
+          "image": {
+            "key": "primeopinion-rewards",
+            "alt": "Prime Opinion cashout menu showing PayPal, Venmo, and gift cards starting at $5.25 USD",
+            "caption": "Prime Opinion redemption menu: PayPal, Venmo, and digital gift cards starting from $5.25 USD.",
+            "wide": false
+          },
+          "cta": {
+            "label": "Download AttaPoll with invite code cgfky",
+            "url": "https://attapoll.app/join/cgfky",
+            "sponsored": true
+          }
+        },
+        {
+          "heading": "Can you use all three survey apps together?",
+          "paragraphs": [
+            "Yes—because Google Opinion Rewards runs passively while Prime Opinion and AttaPoll offer active survey lists, using them together fits different goals without conflict. Keep Google Opinion Rewards installed solely to offset apps, games, or subscriptions inside the Google Play Store before its 1-year expiration window runs out.",
+            "When you want real cash you can spend anywhere via PayPal or regional transfers, prioritize Prime Opinion (especially during the 24-hour +10% window from code ALNTFL) and keep AttaPoll open as a secondary mobile feed with [code cgfky](/en/attapoll-referral-code/) and a low regional cashout floor."
+          ],
+          "image": {
+            "key": "attapoll-carteira",
+            "alt": "AttaPoll wallet screen showing accumulated USD 2.52 balance and withdrawal button",
+            "caption": "AttaPoll Balance screen ($2.52 USD example): actual withdrawal minimums and supported methods depend on your country and account.",
+            "wide": false
+          }
+        }
+      ],
+      "tables": [
+        {
+          "heading": "Google Opinion Rewards vs. Prime Opinion vs. AttaPoll (2026 Comparison)",
+          "columns": [
+            "Feature",
+            "Google Opinion Rewards",
+            "Prime Opinion",
+            "AttaPoll"
+          ],
+          "rows": [
+            [
+              "Reward type",
+              "Google Play credit on Android (iOS rules vary)",
+              "USD cash (PayPal, Venmo, bank transfer) & gift cards",
+              "Cash wallets (PayPal, Revolut) & regional gift cards"
+            ],
+            [
+              "Expiry / Cashout floor",
+              "Android Play credit expires in 1 year; no bank/PayPal withdrawal",
+              "From $5.25 USD (minutes to 24h for PayPal; instant cards)",
+              "Varies by country/method ($3 EN / €2.50 ES Play Store notes; up to 72h send)"
+            ],
+            [
+              "Survey control",
+              "Passive notifications; unpredictable frequency; 24h survey expiry",
+              "Active list with Best Match, Short (<5 min) & Highest Payout filters + games",
+              "Active list with reward, duration, star completion odds + games/tasks"
+            ],
+            [
+              "Invite / Bonus code",
+              "Generic share link only (no rewarded referral bonus)",
+              "Code ALNTFL (+10% survey bonus for 24h after registration)",
+              "Code cgfky (enter in Settings within 7 days of sign-up)"
+            ],
+            [
+              "Best practical use",
+              "Offsetting occasional Play Store apps, books, or subscriptions",
+              "Fastest structured cashouts via PayPal & transparent USD pricing",
+              "Quick mobile surveys with low regional minimums alongside Prime Opinion"
+            ]
+          ],
+          "afterSectionIndex": 0
+        }
+      ],
+      "steps": [
+        "Decide your goal first: Google Play Store credit (Google Opinion Rewards) or withdrawable cash (Prime Opinion and AttaPoll).",
+        "Keep Google Opinion Rewards on Android only for Play Store spending, and track its 1-year credit expiration.",
+        "Register on Prime Opinion via the official link and activate code ALNTFL within 24 hours to claim the +10% survey boost.",
+        "Install AttaPoll, apply code cgfky in Settings within 7 days, and prioritize 3-star or higher-likelihood surveys.",
+        "Always check your own account's regional withdrawal methods and minimums before requesting a PayPal or gift-card payout."
+      ],
+      "pros": [
+        "Explains the core difference between locked Android Google Play credit and withdrawable PayPal/wallet cash.",
+        "Verified bonus windows and real in-app screenshots for all three platforms with zero inflated earnings promises."
+      ],
+      "cons": [
+        "None of the three apps provide guaranteed daily survey volume or full-time income.",
+        "Available payout methods, currencies, and cashout minimums vary by country and account verification."
+      ],
+      "faq": [
+        {
+          "q": "Can I withdraw Google Opinion Rewards money to PayPal or a bank account?",
+          "a": "On Android, no. Google documents Android rewards strictly as Google Play credit for eligible Play Store purchases, with a 1-year expiration date and no bank or PayPal withdrawal. iOS availability and payment rules differ by country."
+        },
+        {
+          "q": "Which pays faster in real cash: Prime Opinion or AttaPoll?",
+          "a": "Prime Opinion starts at $5.25 USD for PayPal, Venmo, and gift cards and typically clears PayPal payouts within minutes to 24 hours. AttaPoll features lower regional minimums in many markets (such as $3 or €2.50 noted in Google Play descriptions, depending on country and method) with official payment sending up to 72 hours."
+        },
+        {
+          "q": "Is it worth using Google Opinion Rewards, Prime Opinion, and AttaPoll together?",
+          "a": "Yes. Because Google Opinion Rewards sends occasional passive alerts for Play Store credit while Prime Opinion and AttaPoll provide active survey dashboards for PayPal cash, running them side by side covers both Play purchases and withdrawable rewards."
+        },
+        {
+          "q": "How do I activate bonus codes ALNTFL and cgfky?",
+          "a": "For Prime Opinion, sign up through the referral link or enter code ALNTFL in Refer a Friend within 24 hours of registration for a +10% survey boost for 24 hours. For AttaPoll, enter code cgfky in Settings within 7 days of creating your account (if no referral is already applied)."
+        },
+        {
+          "q": "Do rewards expire on Prime Opinion or AttaPoll like on Google Opinion Rewards?",
+          "a": "Google explicitly states Android Google Opinion Rewards credits expire 1 year after being issued. Prime Opinion and AttaPoll do not apply that 1-year Play Store credit rule, though accounts remain subject to each platform's terms of service and regional rules."
+        }
+      ],
+      "verdict": "Choose Google Opinion Rewards only if you want Google Play credit for apps and subscriptions. When your goal is real cash via PayPal, bank transfer, or flexible gift cards, Prime Opinion (with +10% code ALNTFL) and AttaPoll (with low regional thresholds and code cgfky) are far more versatile—and combining all three lets you capture Play perks without giving up cash payouts.",
+      "imageAlt": "Google Opinion Rewards task screen showing available survey prompt and profile options",
+      "caption": "Google Opinion Rewards Android interface: short surveys pay Play Store credit (1-year expiry), not withdrawable cash.",
+      "imageKey": "opinion",
+      "imageWide": false,
+      "relatedIds": [
+        "opinion",
+        "primeopinion",
+        "primeopinion-cashout",
+        "attapoll",
+        "attapoll-saque",
+        "attapoll-convite"
+      ]
+    },
+    {
+      "id": "microsoft-catalog",
+      "app": "microsoft",
+      "category": "rewards",
+      "slug": "microsoft-rewards-catalog-points-value-stamps-guide",
+      "title": "Microsoft Rewards Catalog (2026): Points Value, Gift Cards & Stamps Guide",
+      "description": "Explore the Microsoft Rewards catalog in 2026: how Level 1 vs. Level 2 point values work, gift card redemptions, daily streaks, and how stamps/punch cards work.",
+      "intro": "Before spending weeks collecting Microsoft Rewards points, open the Redeem tab inside your own Microsoft account. Because Microsoft points have no fixed global cash value, the exact number of points required for Microsoft/Xbox gift cards, partner retail cards, or sweepstakes entries depends on your country catalog, your Level 1 vs. Level 2 status, and whether promotional stamps or daily streaks are active on your dashboard. If you are new to the program, pair this breakdown with our [Microsoft Rewards starter points guide](/en/microsoft-rewards-points-guide/).",
+      "topCallout": {
+        "title": "Start with your regional rules or compare cash-paying alternatives",
+        "text": "Review official Microsoft account basics first, or compare survey apps if you want direct PayPal cash instead of gift cards:",
+        "links": [
+          {
+            "label": "Microsoft Rewards points & redemption basics",
+            "url": "/en/microsoft-rewards-points-guide/"
+          },
+          {
+            "label": "Google Opinion Rewards vs. Prime Opinion & AttaPoll (PayPal cash)",
+            "url": "/en/google-opinion-rewards-vs-prime-opinion-cash-surveys/"
+          }
+        ]
+      },
+      "sections": [
+        {
+          "heading": "How the Microsoft Rewards regional catalog works and why point value varies",
+          "paragraphs": [
+            "Microsoft explicitly states that Rewards points have no cash value and can only be redeemed for eligible items shown in your account's regional catalog. Depending on your country, the Redeem menu may include Microsoft and Xbox gift cards, Microsoft Store credit, third-party partner gift cards, charitable donations, or sweepstakes entries—and some items appear or rotate out over time.",
+            "Because each reward category prices points differently, there is no single universal exchange rate. As a referential US-style catalog example, Microsoft and Xbox gift cards often sit near ~1,000 points per $1 USD, whereas third-party partner gift cards typically cost noticeably more points per dollar (such as ~5,000 to 6,500+ points for a $5-tier card depending on your tier and country). Treat any online chart as a regional example only and verify the exact point price inside your own dashboard."
+          ],
+          "source": {
+            "title": "Microsoft: supported Rewards regions",
+            "url": "https://support.microsoft.com/en-us/accounts-billing/rewards/microsoft-rewards-regions"
+          }
+        },
+        {
+          "heading": "Level 1 vs. Level 2: earning caps, discounts, and checking your Redeem rate",
+          "paragraphs": [
+            "Microsoft Rewards splits members into Level 1 and Level 2 tiers based on monthly point activity shown on your Status page. Moving from Level 1 to Level 2 raises daily search and activity earning caps in supported markets and can lower the point requirement on select Microsoft-owned rewards compared with Level 1.",
+            "Before committing to a long-term points goal, always click into the specific gift card or account credit in the Redeem tab to see its live Level 1 vs. Level 2 cost and minimum denomination in your local currency. Also check delivery rules and expiration terms on promotional Microsoft account credit versus standard partner gift card codes, which Microsoft delivers via Order history and confirmation emails."
+          ],
+          "source": {
+            "title": "Microsoft: how to redeem Rewards points",
+            "url": "https://support.microsoft.com/en-us/accounts-billing/rewards/how-to-redeem-microsoft-rewards-points"
+          }
+        },
+        {
+          "heading": "Daily streaks, stamps, and puzzle pieces: how to earn without risking a ban",
+          "paragraphs": [
+            "Alongside regular Bing searches and quizzes, many regional dashboards show Daily Sets, streak counters, and promotional stamp cards (punch cards) or puzzle-piece trackers. Completing the listed daily tasks or multi-step card objectives consecutively unlocks bonus points—but missing a single day resets a daily streak back to zero, and promotional punch cards only count tasks finished within their active window.",
+            "Never try to speed up streaks or stamps with VPNs, location spoofing, scripts, browser extensions, or automated searches. Microsoft warns that automated activity and misleading location data violate program rules, and redeeming rewards may require verification with a real mobile or landline phone number (VoIP numbers are rejected) in the same region as your account."
+          ],
+          "source": {
+            "title": "Microsoft: how to earn Rewards points",
+            "url": "https://support.microsoft.com/en-us/accounts-billing/rewards/how-to-earn-microsoft-rewards-points"
+          }
+        },
+        {
+          "heading": "When to use Microsoft Rewards vs. cash-paying survey apps",
+          "paragraphs": [
+            "Microsoft Rewards works best when you already use Bing, Edge, or Xbox and want to offset games, subscriptions, or retail gift cards—not if you need cash for bills. Because Microsoft points never convert into PayPal or bank deposits, expectations stay realistic when you treat it strictly as a store-credit perk.",
+            "If your main goal is withdrawable PayPal money or bank payouts alongside gift cards, pair Microsoft Rewards with active survey platforms such as [Prime Opinion](/en/prime-opinion-review-how-it-works-is-it-legit/) (cashouts starting from $5.25 USD and +10% 24h boost with code ALNTFL) or [AttaPoll](/en/attapoll-how-it-works/) (low regional thresholds and invite code cgfky). You can compare how cash survey apps differ from store-locked credit in our [survey rewards comparison guide](/en/google-opinion-rewards-vs-prime-opinion-cash-surveys/)."
+          ],
+          "image": {
+            "key": "primeopinion-rewards",
+            "alt": "Prime Opinion cashout menu showing PayPal, Venmo, and gift cards starting at $5.25 USD",
+            "caption": "Unlike Microsoft Rewards gift-card redemptions, survey platforms like Prime Opinion support direct PayPal cashouts starting at $5.25 USD.",
+            "wide": false
+          }
+        }
+      ],
+      "tables": [
+        {
+          "heading": "Microsoft Rewards Catalog Factors: Gift Cards, Levels & Stamps (2026)",
+          "columns": [
+            "Catalog Factor",
+            "How It Works",
+            "Regional & Level Variation",
+            "What to Check Before Redeeming"
+          ],
+          "rows": [
+            [
+              "Microsoft & Xbox Gift Cards",
+              "Store credit or Xbox balance redeemed directly to your Microsoft account",
+              "Often the lowest points-per-dollar tier (e.g., ~1,000 pts ≈ $1 USD in US-style reference catalogs); Level 2 may unlock better rates",
+              "Check credit expiration terms and exact denomination in your country's Redeem tab"
+            ],
+            [
+              "Third-Party Partner Gift Cards",
+              "Digital codes for retail, dining, or entertainment partners where supported",
+              "Usually require more points per unit (e.g., ~5,000–6,500+ pts for $5-tier cards in referential markets) and vary heavily by country",
+              "Confirm the brand is still in stock in your local catalog before saving toward it"
+            ],
+            [
+              "Level 1 vs. Level 2 Status",
+              "Account tier updated based on monthly point progress on the Status dashboard",
+              "Level 2 raises daily earning caps and reduces point prices on eligible Microsoft rewards in supported regions",
+              "Verify your current tier and remaining monthly points needed to keep Level 2"
+            ],
+            [
+              "Daily Streaks & Stamps / Puzzle Cards",
+              "Consecutive Daily Sets, punch cards, or puzzle trackers awarding bonus points",
+              "Promotional card availability and bonus sizes differ by account and country; missing a day resets streak counts",
+              "Check task deadlines and complete all listed steps in your own region without shortcuts"
+            ],
+            [
+              "Redemption & Phone Verification",
+              "Final checkout step in Redeem > Order history",
+              "Requires matching account region; may require mobile or landline SMS/call verification",
+              "Never use a VPN, VoIP number, or automated search script during earning or checkout"
+            ]
+          ],
+          "afterSectionIndex": 0
+        }
+      ],
+      "steps": [
+        "Sign in to your official Microsoft Rewards dashboard and open the Redeem tab to inspect your country's live catalog.",
+        "Pick a realistic target reward (such as a Microsoft/Xbox gift card or a partner card) and note its Level 1 vs. Level 2 point cost.",
+        "Check your Status page to see how many monthly points keep Level 2 active for higher daily search caps.",
+        "Complete Daily Sets and any active stamp/punch cards on your dashboard consecutively so streaks do not reset.",
+        "When redeeming, turn off any VPN, verify with a standard mobile or landline number if prompted, and track delivery under Redeem > Order history."
+      ],
+      "pros": [
+        "Clear official catalog tracking and Level 1 vs. Level 2 visibility inside your Microsoft account.",
+        "Microsoft and Xbox gift cards typically offer stronger point value than third-party partner cards."
+      ],
+      "cons": [
+        "Points have no cash value and cannot be withdrawn to PayPal or a bank account.",
+        "Catalog brands, stamp/punch-card promos, and exact point rates vary significantly by country."
+      ],
+      "faq": [
+        {
+          "q": "How much are Microsoft Rewards points worth in the 2026 catalog?",
+          "a": "Microsoft states points have no cash value, so their effective value depends on your regional catalog, reward brand, and Level 1 vs. Level 2 status. As a referential example in markets like the US, Microsoft and Xbox gift cards often average around ~1,000 points per $1 USD, while third-party gift cards require more points (often ~5,000–6,500+ points for a $5-tier card); always check the live rate in your own Redeem tab."
+        },
+        {
+          "q": "How do you get stamps and daily streak bonuses in the Microsoft Rewards catalog?",
+          "a": "Stamps, punch cards, puzzle pieces, and daily streak bonuses appear directly on eligible promotional tiles in your official Microsoft Rewards dashboard. Complete the listed daily set or punch-card steps consecutively within the active window—missing a day resets streak progress—without using VPNs or automated scripts."
+        },
+        {
+          "q": "What is the difference between Level 1 and Level 2 in Microsoft Rewards?",
+          "a": "Level 2 unlocks higher daily point earning caps on eligible searches/activities and can reduce the number of points needed to redeem select Microsoft-owned rewards compared with Level 1. Exact thresholds and benefits vary by region and appear on your Rewards Status page."
+        },
+        {
+          "q": "Can I redeem Microsoft Rewards points for PayPal cash or a bank transfer?",
+          "a": "No. Microsoft Rewards points have no cash value and redeem only for items shown in your regional catalog—such as gift cards, account credit, sweepstakes, or donations. For direct PayPal payouts, consider survey apps like Prime Opinion or AttaPoll instead."
+        },
+        {
+          "q": "Why does Microsoft Rewards ask for a phone number or block a redemption?",
+          "a": "Microsoft may require confirmation using an eligible mobile or landline number and strictly blocks VoIP numbers, VPNs, mismatched regions, and automated search behavior. Make sure your account region matches your physical location and check Redeem > Order history for order status."
+        }
+      ],
+      "verdict": "Microsoft Rewards is worth using when your regional catalog includes Microsoft, Xbox, or retail gift cards you would actually spend—especially at Level 2 with consistent daily streaks and dashboard stamp promos. Just remember points are never cash, rates vary by country, and PayPal cash seekers are better served pairing it with Prime Opinion or AttaPoll.",
+      "imageAlt": "Official Microsoft Rewards portal showing Earn, Redeem, and account benefits tabs",
+      "caption": "Official Microsoft Rewards portal: check your own Earn and Redeem tabs before planning around regional catalog rates or stamps.",
+      "imageKey": "microsoft",
+      "imageWide": false,
+      "relatedIds": [
+        "microsoft",
+        "opinion-vs-primeopinion-attapoll",
+        "primeopinion",
+        "attapoll"
+      ]
     }
   ],
   "es": [
@@ -4780,6 +6087,7 @@ export const articles:Record<Locale,Article[]>={
       "title": "Qué es Google Lens y Cómo Usar la App Gratis en el Móvil (Guía 2026)",
       "description": "Descubre qué es Google Lens gratis y cómo usar la app en Android y iPhone para buscar por foto, copiar texto de imágenes y traducir al instante.",
       "intro": "Google Lens permite iniciar una búsqueda a partir de una imagen. Puede ayudarte a explorar un objeto que no sabes nombrar, copiar un texto o entender un cartel. La clave es revisar la fuente detrás de cada resultado y reconocer los límites de una coincidencia visual.",
+      "modifiedDate": "2026-11-18",
       "sections": [
         {
           "heading": "Qué puedes hacer con una imagen",
@@ -4794,6 +6102,39 @@ export const articles:Record<Locale,Article[]>={
             "Selecciona un texto nítido y revisa números, nombres y saltos de línea antes de pegarlo. Una traducción necesita contexto; si el resultado afecta una decisión importante, compruébalo por otra vía.",
             "Para aprender, usa una imagen sin información privada. Consulta la ayuda de Google sobre el historial de búsquedas visuales para entender cómo pueden guardarse las imágenes."
           ]
+        }
+      ],
+      "tables": [
+        {
+          "heading": "Modos principales de Google Lens en la práctica",
+          "columns": [
+            "Modo de Google Lens",
+            "Para qué sirve",
+            "Qué revisar antes de confiar"
+          ],
+          "rows": [
+            [
+              "Búsqueda por imagen / foto (Google Image Lens)",
+              "Encontrar objetos, productos, lugares o páginas similares desde la cámara o una foto guardada",
+              "Abre la fuente original y compara detalles en lugar de quedarte con la primera miniatura"
+            ],
+            [
+              "Escáner y copia de texto online (OCR)",
+              "Detectar, seleccionar y copiar texto de carteles, recibos, apuntes o pantallas",
+              "Verifica números, nombres propios y saltos de línea antes de pegar el texto"
+            ],
+            [
+              "Traducción en vivo",
+              "Traducir carteles, menús o etiquetas directamente sobre la imagen",
+              "Comprueba el contexto y términos clave si el texto afecta una decisión importante"
+            ],
+            [
+              "Identificación de objetos, plantas y tareas",
+              "Identificar artículos cotidianos, plantas o preguntas de estudio desde una foto (¿Qué es esto?)",
+              "Contrasta especies, modelos o pasos de estudio con fuentes fiables"
+            ]
+          ],
+          "afterSectionIndex": 0
         }
       ],
       "steps": [
@@ -4811,6 +6152,10 @@ export const articles:Record<Locale,Article[]>={
         "Los controles y funciones varían entre dispositivos."
       ],
       "faq": [
+        {
+          "q": "¿Cómo usar Google Lens online en PC (Chrome de escritorio) vs. Android y iPhone?",
+          "a": "En Android y iPhone puedes abrir la app de Google y tocar el icono de cámara de Lens en la barra de búsqueda para usar la cámara o elegir una foto guardada. En PC o Mac con Chrome de escritorio puedes usar Google Lens online directamente desde el navegador —mediante el icono de Lens en el buscador de Google o haciendo clic derecho sobre una imagen y eligiendo Buscar imagen con Google— sin instalar otra aplicación."
+        },
         {
           "q": "¿Tengo que pagar para usar Google Lens?",
           "a": "Google Lens es gratuito. Puedes acceder desde la app de Google en los dispositivos compatibles."
@@ -4854,7 +6199,7 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "Cuándo llega el saldo y dónde usarlo",
           "paragraphs": [
-            "Google indica que el crédito puede tardar unos días en aparecer. En Android, úsalo en compras elegibles de Play Store con la misma cuenta; cada abono caduca al año."
+            "Google indica que el crédito puede tardar unos días en aparecer. En Android, úsalo en compras elegibles de Play Store con la misma cuenta; cada abono caduca al año. Si buscas dinero retirable por PayPal en lugar de saldo para la tienda, revisa nuestra [comparativa entre Google Opinion Rewards, Prime Opinion y AttaPoll](/es/google-opinion-rewards-vs-prime-opinion-cual-paga-mejor/)."
           ],
           "source": {
             "title": "Google: canjear recompensas",
@@ -4862,6 +6207,7 @@ export const articles:Record<Locale,Article[]>={
           }
         }
       ],
+      "modifiedDate": "2026-11-18",
       "steps": [
         "Busca la app oficial y comprueba que el desarrollador sea Google LLC.",
         "Revisa los países disponibles y el requisito de edad de tu plataforma.",
@@ -4893,7 +6239,12 @@ export const articles:Record<Locale,Article[]>={
       ],
       "verdict": "Puede tener sentido si ya utilizas crédito de Google Play. No lo consideres un sustituto de dinero para gastos cotidianos.",
       "imageAlt": "Google Opinion Rewards",
-      "caption": "El área de tareas reúne encuestas disponibles y opciones para completar el perfil."
+      "caption": "El área de tareas reúne encuestas disponibles y opciones para completar el perfil.",
+      "relatedIds": [
+        "opinion-vs-primeopinion-attapoll",
+        "primeopinion",
+        "attapoll"
+      ]
     },
     {
       "id": "microsoft",
@@ -4908,7 +6259,7 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Empieza por el catálogo",
           "paragraphs": [
             "Microsoft explica distintas formas de obtener puntos mediante actividades elegibles en sus servicios. Las actividades y los catálogos varían por región. Una oferta de otro país no garantiza las mismas condiciones en tu cuenta.",
-            "Busca una recompensa que realmente quieras y revisa cuántos puntos exige. Después considera las actividades que ya realizarías. Comprar solo para sumar puntos puede costar más que el beneficio obtenido."
+            "Busca una recompensa que realmente quieras y revisa cuántos puntos exige en nuestra [guía del catálogo de Microsoft Rewards, valor de puntos y sellos](/es/catalogo-microsoft-rewards-valor-puntos-tarjetas-regalo/). Después considera las actividades que ya realizarías. Comprar solo para sumar puntos puede costar más que el beneficio obtenido."
           ]
         },
         {
@@ -4930,6 +6281,7 @@ export const articles:Record<Locale,Article[]>={
           }
         }
       ],
+      "modifiedDate": "2026-11-18",
       "steps": [
         "Abre Microsoft Rewards y consulta la información de tu región.",
         "Si decides participar, accede con tu propia cuenta de Microsoft.",
@@ -4955,13 +6307,23 @@ export const articles:Record<Locale,Article[]>={
           "a": "No. Las ofertas y los catálogos dependen de la región."
         },
         {
+          "q": "¿Cómo funcionan los sellos (stamps), rachas y el catálogo de Microsoft Rewards?",
+          "a": "Los sellos, tarjetas de progreso y rachas diarias aparecen en las actividades promocionales del panel oficial de Microsoft Rewards según tu cuenta y región. Debes completar los pasos consecutivos sin perder días para no reiniciar la racha, y consultar el catálogo en Canjear para ver la diferencia de puntos entre Nivel 1 y Nivel 2."
+        },
+        {
           "q": "¿Dónde encuentro el código de una recompensa?",
           "a": "Abre Canjear > Historial de pedidos y selecciona los detalles de la recompensa. Ahí encontrarás el código o enlace disponible y podrás reenviar la confirmación por correo."
         }
       ],
       "verdict": "Consulta primero tu catálogo. El programa tiene más sentido si ofrece algo útil por actividades que ya quieres hacer.",
       "imageAlt": "Microsoft Rewards",
-      "caption": "Microsoft Rewards reúne puntos y recompensas vinculados a la cuenta Microsoft."
+      "caption": "Microsoft Rewards reúne puntos y recompensas vinculados a la cuenta Microsoft.",
+      "relatedIds": [
+        "microsoft-catalog",
+        "opinion-vs-primeopinion-attapoll",
+        "primeopinion",
+        "attapoll"
+      ]
     },
     {
       "id": "freecash",
@@ -5047,13 +6409,36 @@ export const articles:Record<Locale,Article[]>={
       "slug": "dramastack-paga-o-no",
       "title": "DramaStack (2026): ¿Paga de Verdad por Ver Videos o es Estafa?",
       "description": "¿DramaStack paga por ver videos o es engaño? Revisamos su mínimo de retiro de R$300, las condiciones ocultas y la ficha de Google Play en 2026.",
-      "intro": "DramaStack es una app para ver dramas cortos, pero la pestaña Beneficios también muestra tareas, saldo y retiros. La pantalla parece ofrecer dinero. Sin embargo, las reglas de la propia aplicación describen las recompensas de otra forma; conviene leerlas antes de dedicar tiempo a las tareas.",
+      "modifiedDate": "2026-11-18",
+      "intro": "DramaStack (también buscada como Drama Stack) es una app para ver dramas cortos cuya pestaña Beneficios muestra tareas, saldo y un retiro mínimo de R$ 300 (equivalente aproximado a $55–$60 USD, ~50 € o ~$1.050 MXN). Aunque la pantalla parece ofrecer dinero real por ver videos, las reglas escritas y la política de privacidad de la propia aplicación describen las recompensas de otra forma; conviene revisarlas antes de dedicar tiempo a las tareas.",
       "sections": [
         {
           "heading": "Una pantalla de retiro con un mínimo alto",
           "paragraphs": [
-            "En la versión Android que abrimos, Beneficios mostraba saldo cero, tareas diarias y una página de retiro. Allí aparecían niveles desde R$1.510 y el texto indicaba que el retiro oficial en efectivo empieza en R$300. También había un mensaje de felicitación con el nombre de otra persona y un supuesto retiro de R$300, pero la pantalla no ofrecía una prueba independiente de ese pago.",
-            "Los importes y el botón “Sacar” son afirmaciones dentro de la interfaz. No completamos tareas, alcanzamos el mínimo ni solicitamos un retiro; por eso no podemos confirmar que el usuario reciba dinero."
+            "En la versión Android que abrimos, Beneficios mostraba saldo cero, tareas diarias y una página de retiro. Allí aparecían niveles desde R$1.510 y el texto indicaba que el retiro oficial en efectivo empieza en R$300 (alrededor de $55–$60 USD, ~50 € en España o ~$1.050 MXN en México). También había un mensaje de felicitación con el nombre de otra persona y un supuesto retiro de R$300, pero la pantalla no ofrecía una prueba independiente de ese pago.",
+            "Los importes y el botón “Sacar” son afirmaciones dentro de la interfaz, un patrón de umbral alto similar al que observamos en otras apps de novelas cortas en nuestras pruebas de [si CashDrama es confiable y paga](/es/cashdrama-es-confiable-si-paga-opiniones/) y [si DramaGood paga de verdad](/es/dramagood-paga-de-verdad/). No completamos tareas, alcanzamos el mínimo ni solicitamos un retiro en Drama Stack; por eso no podemos confirmar que el usuario reciba dinero. Si buscas pagos reales por PayPal desde $3–$5 USD, revisa [cómo funciona Prime Opinion y opiniones reales](/es/prime-opinion-opiniones-como-funciona-paga/), además de alternativas como AttaPoll y Pawns.app."
+          ],
+          "cta": {
+            "label": "¿Buscas apps que sí paguen en PayPal desde $3–$5 USD? Ver Prime Opinion (+10% código ALNTFL)",
+            "url": "/es/prime-opinion-opiniones-como-funciona-paga/"
+          },
+          "sources": [
+            {
+              "title": "Alternativa verificada desde $3 USD PayPal: AttaPoll — cómo funciona",
+              "url": "/es/attapoll-como-funciona-encuestas/"
+            },
+            {
+              "title": "Alternativa verificada desde $5 USD PayPal: guía completa de Pawns.app",
+              "url": "/es/pawns-app-como-funciona-guia-completo/"
+            },
+            {
+              "title": "Análisis relacionado del mismo nicho: ¿CashDrama es confiable y sí paga?",
+              "url": "/es/cashdrama-es-confiable-si-paga-opiniones/"
+            },
+            {
+              "title": "Prueba relacionada de dramas cortos: ¿DramaGood paga de verdad?",
+              "url": "/es/dramagood-paga-de-verdad/"
+            }
           ]
         },
         {
@@ -5062,21 +6447,73 @@ export const articles:Record<Locale,Article[]>={
             "El panel Reglas de Beneficios indica que los bonos diarios sirven para desbloquear episodios y que, si el bono no alcanza, se usan monedas para completar el pago. Por separado, la política de privacidad de DramaStack dice que las monedas virtuales sin gastar no pueden convertirse en ninguna moneda. Eso describe valor para ver contenido dentro de la app, no dinero disponible para retirar.",
             "La ficha de Google Play presenta DramaStack como una app de entretenimiento gratuita con anuncios y menciona recompensas opcionales por anuncios. No explica un programa de retiros en efectivo ni sus condiciones. En conjunto, la pantalla promocional de retiro y las reglas escritas no demuestran una forma fiable de ganar dinero."
           ],
+          "cta": {
+            "label": "Alternativa verificada con retiros desde $3 USD por PayPal: ver AttaPoll",
+            "url": "/es/attapoll-como-funciona-encuestas/"
+          },
           "source": {
             "title": "DramaStack: política de privacidad",
             "url": "https://www.dramastack.video/privacypolicy.html"
           }
         },
         {
-          "heading": "¿DramaStack paga?",
+          "heading": "¿DramaStack paga dinero real por ver videos o es una estafa?",
           "paragraphs": [
-            "Encontramos una página de retiro con un mínimo de R$300, pero no probamos un pago. La política escrita dice que las monedas virtuales no pueden convertirse en dinero y las reglas de la app vinculan los bonos al desbloqueo de episodios. Con lo que pudimos verificar, no cuentes el saldo ni las tareas como ingresos.",
-            "Si instalas la app para ver sus dramas cortos, considera las recompensas como funciones sujetas a condiciones. No gastes dinero ni muchas horas basándote solo en la pantalla de retiro: primero busca condiciones actuales y escritas que expliquen la elegibilidad, el método y una prueba de pago."
+            "Encontramos una página de retiro en DramaStack (Drama Stack) con un mínimo de R$300 (~$55–$60 USD, ~50 € o ~$1.050 MXN), pero no probamos un pago. La política escrita dice que las monedas virtuales no pueden convertirse en dinero y las reglas de la app vinculan los bonos al desbloqueo de episodios. Con lo que pudimos verificar, no cuentes el saldo ni las tareas como ingresos.",
+            "Si instalas la app para ver sus dramas cortos, considera las recompensas como funciones sujetas a condiciones, al igual que ocurre en [DramaGood](/es/dramagood-paga-de-verdad/) y [CashDrama](/es/cashdrama-es-confiable-si-paga-opiniones/), o en nuestro análisis sobre [si PineDrama paga dinero real por ver videos](/es/pinedrama-paga-dinero-real-como-retirar/) y la [comparativa de apps de novelas cortas 2026](/es/apps-de-novelas-cortas-que-pagan-por-ver-videos/). No gastes dinero ni muchas horas basándote solo en la pantalla de retiro; si quieres recompensas transparentes en móvil o PayPal, prioriza opciones como el [código de invitación TikTok Lite](/es/codigo-invitacion-tiktok-lite/), AttaPoll, Pawns.app o consulta [cómo funciona Prime Opinion y opiniones reales](/es/prime-opinion-opiniones-como-funciona-paga/)."
           ],
-          "source": {
-            "title": "DramaStack en Google Play",
-            "url": "https://play.google.com/store/apps/details?id=com.reeltime.dramastack&hl=es"
-          }
+          "cta": {
+            "label": "Ver alternativa verificada desde $5 USD por PayPal: guía de Pawns.app",
+            "url": "/es/pawns-app-como-funciona-guia-completo/"
+          },
+          "sources": [
+            {
+              "title": "DramaStack en Google Play",
+              "url": "https://play.google.com/store/apps/details?id=com.reeltime.dramastack&hl=es"
+            },
+            {
+              "title": "Otro testeo de apps de dramas cortos: ¿DramaGood paga de verdad?",
+              "url": "/es/dramagood-paga-de-verdad/"
+            }
+          ]
+        }
+      ],
+      "tables": [
+        {
+          "heading": "Equivalencia internacional del mínimo de retiro en DramaStack (R$ 300)",
+          "columns": [
+            "Moneda / Región",
+            "Mínimo mostrado en la app",
+            "Equivalencia aproximada",
+            "Situación en las reglas de DramaStack"
+          ],
+          "rows": [
+            [
+              "Dólares estadounidenses (USD)",
+              "R$ 300",
+              "~$55–$60 USD",
+              "Sin prueba independiente de pago; monedas virtuales no convertibles"
+            ],
+            [
+              "Euros (EUR — España)",
+              "R$ 300",
+              "~50 €",
+              "Sin prueba independiente de pago; monedas virtuales no convertibles"
+            ],
+            [
+              "Pesos mexicanos (MXN)",
+              "R$ 300",
+              "~$1.050 MXN",
+              "Los bonos diarios sirven para desbloquear episodios internos"
+            ],
+            [
+              "Reales brasileños (BRL)",
+              "R$ 300",
+              "Moneda original de la pantalla",
+              "La pantalla muestra niveles de R$ 300 a R$ 1.510 sin comprobante verificado"
+            ]
+          ],
+          "afterSectionIndex": 0
         }
       ],
       "steps": [
@@ -5092,12 +6529,16 @@ export const articles:Record<Locale,Article[]>={
       ],
       "cons": [
         "Las reglas describen bonos y monedas como valor para desbloquear episodios.",
-        "La pantalla muestra un mínimo elevado, pero no verificamos un pago."
+        "La pantalla muestra un mínimo elevado (R$300 / ~$55–$60 USD), pero no verificamos un pago."
       ],
       "faq": [
         {
+          "q": "¿La aplicación DramaStack (Drama Stack) es confiable y paga por ver videos?",
+          "a": "No pudimos confirmar que DramaStack (Drama Stack) pague por ver videos: el mínimo mostrado de R$ 300 equivale a ~$55–$60 USD, ~50 € o ~$1.050 MXN, pero no verificamos ningún retiro. Además, su política de privacidad señala que las monedas virtuales sin gastar no se pueden convertir en dinero."
+        },
+        {
           "q": "¿DramaStack paga dinero real?",
-          "a": "No confirmamos un pago en efectivo. La pantalla de retiro muestra un mínimo de R$300, mientras que la política dice que las monedas virtuales no pueden convertirse en dinero."
+          "a": "No confirmamos un pago en efectivo. La pantalla de retiro muestra un mínimo de R$300 (~$55–$60 USD / ~50 € / ~$1.050 MXN), mientras que la política dice que las monedas virtuales no pueden convertirse en dinero."
         },
         {
           "q": "¿Puedo retirar las monedas que gano?",
@@ -5108,9 +6549,19 @@ export const articles:Record<Locale,Article[]>={
           "a": "No. La cuenta no tenía saldo y no completamos tareas, compras ni solicitudes de retiro."
         }
       ],
-      "verdict": "No recomendamos DramaStack como app para generar ingresos. La pantalla de retiro hace una promesa llamativa, pero las reglas escritas describen recompensas dentro de la app y la política dice que las monedas virtuales no se convierten en efectivo. No pudimos verificar un pago.",
+      "verdict": "No recomendamos DramaStack como app para generar ingresos. La pantalla de retiro hace una promesa llamativa de R$ 300 (~$55–$60 USD / ~50 € / ~$1.050 MXN), pero las reglas escritas describen recompensas dentro de la app y la política dice que las monedas virtuales no se convierten en efectivo. No pudimos verificar un pago.",
       "imageAlt": "Pestaña Beneficios de DramaStack en portugués con tareas y recompensas",
-      "caption": "La pestaña Beneficios muestra tareas diarias y bonos junto a un saldo cero."
+      "caption": "La pestaña Beneficios muestra tareas diarias y bonos junto a un saldo cero.",
+      "relatedIds": [
+        "short-drama-apps-compared",
+        "primeopinion",
+        "attapoll",
+        "pawns",
+        "dramagood",
+        "cashdrama",
+        "pinedrama-rewards",
+        "tiktoklite-convite"
+      ]
     },
     {
       "id": "compare",
@@ -5841,7 +7292,8 @@ export const articles:Record<Locale,Article[]>={
           ],
           "cta": {
             "label": "Explora juegos y ofertas en Pawns.app con el código 6823713",
-            "url": "https://discoverpawns.eu/6823713"
+            "url": "https://discoverpawns.eu/6823713",
+            "sponsored": true
           }
         },
         {
@@ -6143,7 +7595,8 @@ export const articles:Record<Locale,Article[]>={
           ],
           "cta": {
             "label": "Regístrate en Prime Opinion y activa tu bono del +10% con el código ALNTFL",
-            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d"
+            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d",
+            "sponsored": true
           }
         },
         {
@@ -6161,10 +7614,11 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Opciones de cobro y código de bono para las primeras 24 horas",
           "paragraphs": [
             "Prime Opinion permite retirar fondos a partir de solo $5.25 USD a través de PayPal, Venmo, transferencias bancarias y tarjetas de regalo digitales como Google Play. Las solicitudes se procesan con gran agilidad.",
-            "Los nuevos usuarios que se registran desde el enlace oficial o ingresan el código de bono ALNTFL en las primeras 24 horas tras el registro disfrutan de un bono adicional del +10% en todas las encuestas durante un día completo."
+            "Los nuevos usuarios que se registran desde el enlace oficial o ingresan el código de bono ALNTFL en las primeras 24 horas tras el registro disfrutan de un bono adicional del +10% en todas las encuestas durante un día completo. Si quieres comparar pagos en efectivo frente al crédito de Google Play, consulta nuestra [comparativa entre Google Opinion Rewards, Prime Opinion y AttaPoll](/es/google-opinion-rewards-vs-prime-opinion-cual-paga-mejor/)."
           ]
         }
       ],
+      "modifiedDate": "2026-11-18",
       "steps": [
         "Accede a la página oficial de registro: primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d.",
         "Crea tu cuenta gratuita con tu correo electrónico o cuenta de Google.",
@@ -6206,7 +7660,13 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Menú de retiro de Prime Opinion con PayPal, Venmo y Google Play",
         "caption": "Pantalla de retiros con métodos de cobro a partir de $5.25 USD por PayPal y Venmo.",
         "wide": true
-      }
+      },
+      "relatedIds": [
+        "opinion-vs-primeopinion-attapoll",
+        "primeopinion-cashout",
+        "primeopinion-surveys",
+        "attapoll"
+      ]
     },
     {
       "id": "primeopinion-surveys",
@@ -6220,12 +7680,13 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "Filtros inteligentes: Mejor Coincidencia frente a Encuestas Cortas",
           "paragraphs": [
-            "El panel de encuestas ofrece vistas organizadas: 'Mejor Coincidencia', 'Encuestas Cortas' y 'Mayor Pago'. Seleccionar la vista de encuestas cortas muestra estudios que toman solo 2 minutos y pagan $0.27 USD.",
+            "Como explicamos en nuestra guía principal sobre [cómo funciona Prime Opinion y opiniones reales](/es/prime-opinion-opiniones-como-funciona-paga/), el panel de encuestas ofrece vistas organizadas: 'Mejor Coincidencia', 'Encuestas Cortas' y 'Mayor Pago'. Seleccionar la vista de encuestas cortas muestra estudios que toman solo 2 minutos y pagan $0.27 USD.",
             "Estas encuestas rápidas resultan ideales en trayectos o descansos cortos, minimizando el riesgo de perder tiempo en cuestionarios extensos."
           ],
           "cta": {
             "label": "Empieza a responder encuestas cortas en Prime Opinion con el código ALNTFL",
-            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d"
+            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d",
+            "sponsored": true
           }
         },
         {
@@ -6287,7 +7748,8 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Pantalla principal de Prime Opinion con saldo actualizado",
         "caption": "El panel principal muestra encuestas rápidas destacadas y alertas de saldo actualizado.",
         "wide": true
-      }
+      },
+      "modifiedDate": "2026-11-18"
     },
     {
       "id": "primeopinion-games",
@@ -6301,12 +7763,13 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "Pagos escalonados por metas en juegos de estrategia",
           "paragraphs": [
-            "El catálogo de juegos de Prime Opinion incluye algunas de las campañas mejor pagadas del sector. En Rise of Kingdoms: Lost Crusade puedes alcanzar hasta $575.56 USD en recompensas acumuladas conforme subes el nivel de tu ayuntamiento.",
+            "Además de lo detallado sobre [cómo funciona Prime Opinion y opiniones reales](/es/prime-opinion-opiniones-como-funciona-paga/), el catálogo de juegos incluye algunas de las campañas mejor pagadas del sector. En Rise of Kingdoms: Lost Crusade puedes alcanzar hasta $575.56 USD en recompensas acumuladas conforme subes el nivel de tu ayuntamiento.",
             "Cada meta superada abona saldo de forma progresiva en tu cuenta, lo que te permite cobrar etapas intermedias sin necesidad de finalizar todo el juego."
           ],
           "cta": {
             "label": "Descubre ofertas de juegos en Prime Opinion con el código ALNTFL",
-            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d"
+            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d",
+            "sponsored": true
           }
         },
         {
@@ -6368,7 +7831,8 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Panel de Prime Opinion con accesos directos a juegos",
         "caption": "Las ofertas destacadas de juegos se pueden iniciar directamente desde el menú principal.",
         "wide": true
-      }
+      },
+      "modifiedDate": "2026-11-18"
     },
     {
       "id": "primeopinion-cashout",
@@ -6382,12 +7846,13 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "Métodos de pago disponibles: PayPal, Venmo y Google Play",
           "paragraphs": [
-            "Al tocar 'Claim Reward' se despliega el menú de pagos. Para dinero en efectivo, las opciones de PayPal y Venmo están disponibles desde solo $5.25 USD, enviando el dinero directamente a tu cuenta asociada.",
+            "Si ya revisaste [cómo funciona Prime Opinion y opiniones reales](/es/prime-opinion-opiniones-como-funciona-paga/), al tocar 'Claim Reward' se despliega el menú de pagos. Para dinero en efectivo, las opciones de PayPal y Venmo están disponibles desde solo $5.25 USD, enviando el dinero directamente a tu cuenta asociada.",
             "Si prefieres tarjetas de regalo digitales, puedes elegir entre vales para Google Play, Apple, comida a domicilio y plataformas de videojuegos en diversos importes."
           ],
           "cta": {
             "label": "Regístrate en Prime Opinion con el código ALNTFL y asegura tu bono del +10%",
-            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d"
+            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d",
+            "sponsored": true
           }
         },
         {
@@ -6449,7 +7914,8 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Pantalla de invitación con código de bono en Prime Opinion",
         "caption": "La sección de invitación explica el plazo de 24 horas para canjear el código ALNTFL y el 10% de comisión.",
         "wide": true
-      }
+      },
+      "modifiedDate": "2026-11-18"
     },
     {
       "id": "primeopinion-vs-swagbucks",
@@ -6463,12 +7929,13 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "Claridad de saldo: dólares reales frente a puntos virtuales SB",
           "paragraphs": [
-            "La ventaja más notable de Prime Opinion es la claridad de su saldo. Cada encuesta indica su valor exacto en dólares ($0.27, $0.65, etc.), eliminando cálculos mentales y mostrando tu saldo real en todo momento.",
+            "Como detallamos en [cómo funciona Prime Opinion y opiniones reales](/es/prime-opinion-opiniones-como-funciona-paga/), la ventaja más notable de la plataforma es la claridad de su saldo. Cada encuesta indica su valor exacto en dólares ($0.27, $0.65, etc.), eliminando cálculos mentales y mostrando tu saldo real en todo momento.",
             "Swagbucks, en cambio, utiliza puntos SB (donde 100 SB equivalen a $1.00 USD). Aunque funciona bien, añade una capa innecesaria de conversión respecto al formato en dólares de Prime Opinion."
           ],
           "cta": {
             "label": "Prueba la claridad en dólares de Prime Opinion con el código ALNTFL",
-            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d"
+            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d",
+            "sponsored": true
           }
         },
         {
@@ -6530,16 +7997,18 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Menú de retiro de Prime Opinion con transferencias por PayPal y Venmo",
         "caption": "Sus vías de retiro directo por PayPal y Venmo permiten recibir el dinero ganado sin demoras innecesarias.",
         "wide": true
-      }
+      },
+      "modifiedDate": "2026-11-18"
     },
     {
       "id": "nordvpn",
       "app": "nordvpn",
       "category": "tools",
       "slug": "nordvpn-como-funciona-guia-wifi-publico",
-      "title": "NordVPN (Guía 2026): Cómo funciona, protección en Wi-Fi público y configuración",
-      "description": "Aprende cómo NordVPN cifra tu conexión en redes Wi-Fi públicas, qué bloquea Protección contra amenazas y cómo configurarlo en móvil y PC.",
+      "title": "NordVPN en 2026: ¿Qué Es, Cómo Funciona y Vale la Pena? (Opiniones)",
+      "description": "¿Para qué sirve NordVPN y es seguro en 2026? Analizamos su velocidad con NordLynx, hasta 10 dispositivos, Protección contra amenazas y uso en móvil y PC.",
       "intro": "Las redes Wi-Fi públicas de aeropuertos, hoteles y cafeterías pueden exponer el tráfico sin cifrar a otros dispositivos conectados a la misma red. NordVPN crea un túnel cifrado entre tu equipo y un servidor remoto para proteger tu navegación y tus inicios de sesión.",
+      "modifiedDate": "2026-11-18",
       "sections": [
         {
           "heading": "Cómo protege NordVPN tus conexiones diarias",
@@ -6556,9 +8025,45 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "Dispositivos, velocidad y puntos a considerar",
           "paragraphs": [
-            "Una sola suscripción cubre varios dispositivos en Android, iOS, Windows, macOS y televisores inteligentes. Elegir un servidor cercano suele mantener la latencia baja para videollamadas y uso cotidiano.",
+            "Una sola suscripción cubre hasta 10 dispositivos simultáneos en Android, iOS, Windows, macOS, Linux y televisores inteligentes. Elegir un servidor cercano suele mantener la latencia baja para videollamadas y uso cotidiano.",
             "Ten presente que una VPN no sustituye contraseñas seguras ni la verificación en dos pasos, y conectarte a servidores muy lejanos puede aumentar ligeramente el ping."
           ]
+        }
+      ],
+      "tables": [
+        {
+          "heading": "Resumen de características de NordVPN (2026)",
+          "columns": [
+            "Característica",
+            "Detalle verificado en NordVPN"
+          ],
+          "rows": [
+            [
+              "Dispositivos simultáneos",
+              "Hasta 10 dispositivos conectados a la vez con una cuenta"
+            ],
+            [
+              "Protocolos VPN",
+              "NordLynx (basado en WireGuard) y OpenVPN"
+            ],
+            [
+              "Corte de emergencia",
+              "Kill Switch para bloquear tráfico si la VPN se interrumpe"
+            ],
+            [
+              "Filtrado de seguridad",
+              "Protección contra amenazas (Threat Protection Pro) contra dominios maliciosos y rastreadores"
+            ],
+            [
+              "Funciones avanzadas de red",
+              "Red Meshnet (enlaces privados entre tus equipos) y Double VPN"
+            ],
+            [
+              "Plataformas compatibles",
+              "Android, iOS, Windows, macOS, Linux y Smart TV"
+            ]
+          ],
+          "afterSectionIndex": 0
         }
       ],
       "steps": [
@@ -6577,6 +8082,10 @@ export const articles:Record<Locale,Article[]>={
       ],
       "faq": [
         {
+          "q": "¿Qué es NordVPN, cómo funciona y vale la pena?",
+          "a": "NordVPN es un servicio VPN que cifra tu conexión a través de un túnel seguro usando protocolos como NordLynx u OpenVPN. Vale la pena si usas redes Wi-Fi públicas en cafeterías, hoteles o aeropuertos y buscas proteger hasta 10 dispositivos simultáneos con Kill Switch, Protección contra amenazas, Double VPN y Meshnet."
+        },
+        {
           "q": "¿NordVPN funciona en Android y iPhone?",
           "a": "Sí. Cuenta con aplicaciones oficiales para Android, iOS, Windows, macOS y Linux bajo la misma cuenta."
         },
@@ -6593,16 +8102,21 @@ export const articles:Record<Locale,Article[]>={
       "imageAlt": "Resumen de túnel cifrado y protección Wi-Fi con NordVPN",
       "caption": "NordVPN protege el tráfico móvil y de escritorio mediante un túnel cifrado en redes compartidas.",
       "imageKey": "nordvpn",
-      "imageWide": true
+      "imageWide": true,
+      "relatedIds": [
+        "nordvpn-vs-surfshark",
+        "surfshark"
+      ]
     },
     {
       "id": "surfshark",
       "app": "surfshark",
       "category": "tools",
       "slug": "surfshark-vpn-como-funciona-dispositivos-guia",
-      "title": "Surfshark VPN (Guía 2026): Dispositivos ilimitados, CleanWeb y configuración",
-      "description": "Descubre cómo funciona Surfshark VPN en dispositivos simultáneos ilimitados, qué bloquea CleanWeb y cómo configurarlo paso a paso.",
+      "title": "Surfshark VPN Opiniones (2026): ¿Cómo Funciona y Vale la Pena?",
+      "description": "¿Qué es Surfshark VPN y cómo funciona en 2026? Analizamos sus dispositivos ilimitados, bloqueo CleanWeb, velocidad real y cómo configurarlo en móvil y PC.",
       "intro": "La mayoría de los servicios VPN limitan cuántos teléfonos o computadoras puedes conectar al mismo tiempo. Surfshark destaca por permitir conexiones simultáneas ilimitadas con una sola cuenta, algo muy útil si usas varios equipos o compartes en casa.",
+      "modifiedDate": "2026-11-18",
       "sections": [
         {
           "heading": "Dispositivos ilimitados y bloqueo CleanWeb",
@@ -6624,6 +8138,42 @@ export const articles:Record<Locale,Article[]>={
           ]
         }
       ],
+      "tables": [
+        {
+          "heading": "Resumen de recursos de Surfshark VPN (2026)",
+          "columns": [
+            "Característica",
+            "Detalle verificado en Surfshark"
+          ],
+          "rows": [
+            [
+              "Conexiones simultáneas",
+              "Ilimitadas con una sola suscripción"
+            ],
+            [
+              "Bloqueador integrado",
+              "CleanWeb (bloquea anuncios intrusivos, rastreadores, phishing y malware)"
+            ],
+            [
+              "Protocolos compatibles",
+              "WireGuard, OpenVPN e IKEv2"
+            ],
+            [
+              "Kill Switch",
+              "Incluido para cortar el tráfico si se interrumpe la conexión VPN"
+            ],
+            [
+              "Túnel dividido",
+              "Bypasser (permite dejar fuera del túnel VPN ciertas apps o sitios)"
+            ],
+            [
+              "Plataformas compatibles",
+              "Móviles, tabletas, portátiles, televisores y routers"
+            ]
+          ],
+          "afterSectionIndex": 0
+        }
+      ],
       "steps": [
         "Accede a la página oficial de Surfshark y selecciona tu plan.",
         "Instala la app oficial en tu teléfono, tableta o computadora.",
@@ -6639,6 +8189,10 @@ export const articles:Record<Locale,Article[]>={
         "Algunas funciones extra pertenecen a paquetes superiores."
       ],
       "faq": [
+        {
+          "q": "¿Qué es Surfshark VPN, para qué sirve y vale la pena en 2026?",
+          "a": "Surfshark VPN es un servicio de red privada virtual que cifra tu tráfico de internet mediante WireGuard, OpenVPN o IKEv2. Sirve para proteger tus conexiones en Wi-Fi compartidas, filtrar rastreadores y sitios maliciosos con CleanWeb y excluir apps concretas mediante Bypasser. Vale la pena en 2026 especialmente si buscas cubrir conexiones simultáneas ilimitadas en todos los dispositivos del hogar con una sola cuenta."
+        },
         {
           "q": "¿Puedo usar Surfshark en todos mis dispositivos a la vez?",
           "a": "Sí. Surfshark permite conexiones simultáneas ilimitadas en una misma cuenta."
@@ -6656,7 +8210,11 @@ export const articles:Record<Locale,Article[]>={
       "imageAlt": "Resumen de dispositivos ilimitados y CleanWeb en Surfshark VPN",
       "caption": "Surfshark cubre dispositivos ilimitados con filtrado CleanWeb integrado.",
       "imageKey": "surfshark",
-      "imageWide": true
+      "imageWide": true,
+      "relatedIds": [
+        "nordvpn-vs-surfshark",
+        "nordvpn"
+      ]
     },
     {
       "id": "kaspersky",
@@ -6726,9 +8284,10 @@ export const articles:Record<Locale,Article[]>={
       "app": "pinedrama",
       "category": "rewards",
       "slug": "pinedrama-opiniones-es-confiable-que-es",
-      "title": "PineDrama Opiniones (2026): ¿Qué Es, Es Confiable y Gratis la App de TikTok?",
-      "description": "¿Qué es PineDrama y es confiable en 2026? Conoce cómo funciona la app oficial de mininovelas de TikTok, catálogo gratis, anuncios y opiniones reales.",
+      "title": "¿PineDrama Es Seguro y Confiable? Opiniones de la App de TikTok 2026",
+      "description": "¿La app PineDrama es segura y gratis? Descubre quién está detrás de la plataforma oficial de mininovelas de TikTok, opiniones reales y permisos en móvil.",
       "intro": "PineDrama (también buscada como Pine Drama) es la aplicación oficial de mininovelas y dramas cortos verticales publicada por TikTok Pte. Ltd. Pensada para episodios rápidos de 1 a 3 minutos, se sincroniza con tu cuenta de TikTok y, en mercados como Brasil, incluye además una pestaña de recompensas. Antes de instalarla conviene distinguir entre su función real de entretenimiento y los videos virales sobre dinero fácil.",
+      "modifiedDate": "2026-11-18",
       "sections": [
         {
           "heading": "Qué es PineDrama y quién está detrás de la app",
@@ -6753,9 +8312,9 @@ export const articles:Record<Locale,Article[]>={
           }
         },
         {
-          "heading": "¿PineDrama es seguro y gratis?",
+          "heading": "¿La app Pine Drama es segura y gratis para descargar?",
           "paragraphs": [
-            "Si descargas PineDrama desde Google Play o el portal oficial shortdrama.tiktok.com, la aplicación es segura y se rige por la política de privacidad de TikTok. Evita instalar archivos APK modificados de sitios desconocidos que prometen monedas infinitas, ya que ponen en riesgo tu cuenta.",
+            "Si descargas PineDrama (Pine Drama) desde Google Play o el portal oficial shortdrama.tiktok.com, la aplicación es segura y se rige por la política de privacidad de TikTok. Evita instalar archivos APK modificados de sitios desconocidos que prometen monedas infinitas, ya que ponen en riesgo tu cuenta.",
             "Usarla para ver episodios gratuitos con publicidad no tiene costo obligatorio. Si aparece la pestaña de recompensas en tu país, tómala solo como un extra simbólico."
           ]
         }
@@ -6779,11 +8338,11 @@ export const articles:Record<Locale,Article[]>={
       "faq": [
         {
           "q": "¿PineDrama es confiable o es una estafa?",
-          "a": "PineDrama es una aplicación legítima publicada por TikTok Pte. Ltd. para ver dramas cortos. No es una estafa, aunque tampoco sirve como fuente de ingresos significativos."
+          "a": "PineDrama (también buscada como Pine Drama) es una aplicación legítima publicada por TikTok Pte. Ltd. para ver dramas cortos. No es una estafa, aunque tampoco sirve como fuente de ingresos significativos."
         },
         {
           "q": "¿PineDrama es gratis?",
-          "a": "Sí, descargar la app y ver episodios con anuncios es gratuito. La disponibilidad de funciones adicionales varía según el país."
+          "a": "Sí, descargar la app Pine Drama (PineDrama) desde tiendas oficiales y ver episodios con anuncios es gratuito. La disponibilidad de funciones adicionales varía según el país."
         },
         {
           "q": "¿Por qué algunas opiniones hablan de recompensas y retiros?",
@@ -6807,16 +8366,21 @@ export const articles:Record<Locale,Article[]>={
       "app": "pinedrama",
       "category": "rewards",
       "slug": "pinedrama-paga-dinero-real-como-retirar",
-      "title": "¿PineDrama Paga Dinero Real por Ver Videos? Cómo Funcionan las Recompensas (2026)",
-      "description": "¿PineDrama te paga por ver mininovelas y anuncios? Analizamos las tareas diarias, check-in de 7 días, conversión de monedas y requisitos reales de retiro.",
-      "intro": "Quienes llegan a PineDrama buscando 'apps que te pagan por ver videos' suelen encontrarse con dos respuestas opuestas: algunos dicen que tiene centro de retiros y otros aseguran que no paga nada. La diferencia depende de la región: en países donde la pestaña Recompensas está activa, el sistema existe, pero su tasa de conversión deja ganancias mínimas.",
+      "title": "¿PineDrama Paga por Ver Videos? Valor Real de las Monedas y Retiro",
+      "description": "¿PineDrama te paga dinero real en dólares o moneda local? Calculamos cuánto valen 30.000 puntos ($0.20 USD), el límite diario de anuncios y cómo retirar.",
+      "modifiedDate": "2026-11-18",
+      "intro": "En la mayoría de países de habla hispana (España, México, Argentina, Colombia), PineDrama funciona solo como app gratuita de mininovelas sin pestaña de retiro; donde el programa promocional está activo (como Brasil), 30.000 puntos equivalen a solo ~$0,18 USD (R$ 1). Por eso quienes buscan si Pine Drama te paga por ver videos encuentran respuestas opuestas: la función existe en mercados concretos, pero su tasa de conversión deja ganancias mínimas.",
       "sections": [
         {
           "heading": "Cuánto valen los puntos de PineDrama y cómo son los retiros",
           "paragraphs": [
-            "En la versión de Android probada en Brasil, la propia app muestra la conversión debajo del saldo: 30.000 puntos equivalen a R$ 1. En el Centro de Canje (Central de resgate), un saldo de 920 puntos equivale a R$ 0,03.",
+            "En la versión de Android probada en Brasil, la propia app muestra la conversión debajo del saldo: 30.000 puntos equivalen a R$ 1 BRL (aproximadamente ~$0,18 USD, ~$3,60 MXN o ~$750 COP). En el Centro de Canje (Central de resgate), un saldo de 920 puntos equivale a R$ 0,03.",
             "Los niveles de retiro visibles en moneda local comienzan con un retiro único de R$ 0,10 y continúan con R$ 0,50, R$ 1,00 y R$ 2,00 mediante PIX instantáneo al vincular una cuenta. Verificamos estas pantallas directamente dentro de la app, aunque no acumulamos saldo suficiente para ejecutar una prueba de cobro real."
           ],
+          "cta": {
+            "label": "¿Buscas pagos reales en PayPal desde $3–$5 USD? Ver Prime Opinion (+10% código ALNTFL)",
+            "url": "/es/prime-opinion-opiniones-como-funciona-paga/"
+          },
           "source": {
             "title": "PineDrama - Short Dramas on Google Play",
             "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=en"
@@ -6827,23 +8391,76 @@ export const articles:Record<Locale,Article[]>={
           "paragraphs": [
             "Las misiones se reinician todos los días a las 00:00 y sus montos pueden cambiar. En capturas de noviembre de 2026, ver novelas hasta 60 minutos otorgaba entre 790 y 1.580 puntos, ver hasta 30 anuncios diarios pagaba 6.000 puntos (200 cada 30s) o 12.000 puntos (399 cada 30s), las recompensas cronometradas llegaban a 2.880 puntos y completar una serie entera sumaba hasta 1.800 puntos (60 por 3 episodios, 240 por 15 y 1.500 al finalizar).",
             "Incluso completando los 30 anuncios diarios de 30 segundos (15 minutos viendo publicidad sin parar) con la cuota más alta de 12.000 puntos, el valor generado equivale apenas a unos R$ 0,40. El bono de check-in de 7 días promete hasta 19.758 puntos (~R$ 0,66 en toda la semana)."
-          ]
+          ],
+          "cta": {
+            "label": "Alternativa con retiros desde $3 USD por PayPal: cómo funciona AttaPoll",
+            "url": "/es/attapoll-como-funciona-encuestas/"
+          }
         },
         {
           "heading": "Por qué en muchos países no aparece la pestaña de dinero",
           "paragraphs": [
-            "Fuera de los mercados con campañas promocionales activas, PineDrama funciona únicamente como plataforma de mininovelas sin recompensas en efectivo. Además, todas las actividades de puntos están sujetas a los Términos y Condiciones dentro de la app, que pueden modificar valores o límites en cualquier momento."
+            "Fuera de los mercados con campañas promocionales activas —como ocurre habitualmente en España, México, Argentina y Colombia—, PineDrama funciona únicamente como plataforma gratuita de mininovelas sin pestaña de retiro ni recompensas en efectivo. Además, todas las actividades de puntos están sujetas a los Términos y Condiciones dentro de la app, que pueden modificar valores o límites en cualquier momento.",
+            "Si tu objetivo es cobrar dinero real en PayPal desde tu país sin depender de campañas regionales en reales, conviene revisar [cómo funciona Prime Opinion y opiniones reales](/es/prime-opinion-opiniones-como-funciona-paga/), consultar nuestra [comparativa de apps de novelas cortas 2026](/es/apps-de-novelas-cortas-que-pagan-por-ver-videos/) u optar por aplicaciones dedicadas como AttaPoll o Pawns.app."
           ],
+          "cta": {
+            "label": "Ver otra alternativa verificada desde $5 USD por PayPal: guía de Pawns.app",
+            "url": "/es/pawns-app-como-funciona-guia-completo/"
+          },
           "source": {
             "title": "TikTok Privacy Policy (PineDrama Developer)",
             "url": "https://www.tiktok.com/legal/privacy-policy/"
           }
         }
       ],
+      "tables": [
+        {
+          "heading": "Disponibilidad regional de PineDrama y equivalencia de 30.000 puntos",
+          "columns": [
+            "País / Moneda",
+            "Pestaña Recompensas",
+            "Valor aprox. de 30.000 puntos",
+            "Detalle práctico"
+          ],
+          "rows": [
+            [
+              "Brasil (BRL — PIX)",
+              "Activa en cuentas elegibles",
+              "R$ 1,00 BRL",
+              "Retiros de R$ 0,10 a R$ 2,00 vía PIX; 30 anuncios (12.000 pts) rinden ~R$ 0,40"
+            ],
+            [
+              "Referencia internacional (USD)",
+              "Solo mercados con campaña",
+              "~$0,18 USD",
+              "Equivalencia aproximada de R$ 1; no paga directamente en dólares"
+            ],
+            [
+              "México (MXN)",
+              "No disponible de forma general",
+              "~$3,60 MXN (referencia)",
+              "Funciona habitualmente solo como app gratuita de mininovelas sin retiros"
+            ],
+            [
+              "Colombia (COP)",
+              "No disponible de forma general",
+              "~$750 COP (referencia)",
+              "Sin centro de canje activo en la mayoría de cuentas hispanas"
+            ],
+            [
+              "España / Argentina",
+              "No disponible de forma general",
+              "~$0,18 USD (referencia)",
+              "Catálogo vertical gratuito sin pestaña de cobro habilitada"
+            ]
+          ],
+          "afterSectionIndex": 0
+        }
+      ],
       "steps": [
         "Abre la barra inferior y revisa si la pestaña Recompensas está habilitada en tu país.",
         "Usa primero el check-in diario de 7 días, que entrega puntos rápidos sin ver decenas de anuncios.",
-        "Divide los puntos ofrecidos entre la tasa real (30.000 puntos = R$ 1 en Brasil) antes de dedicar minutos a anuncios.",
+        "Divide los puntos ofrecidos entre la tasa real (30.000 puntos = R$ 1 o ~$0,18 USD) antes de dedicar minutos a anuncios.",
         "Consulta en el centro de canje los métodos y montos vigentes en tu cuenta.",
         "Desconfía de cualquier sitio externo que pida depósitos o datos personales para liberar pagos."
       ],
@@ -6852,24 +8469,24 @@ export const articles:Record<Locale,Article[]>={
         "Umbrales iniciales muy bajos (desde R$ 0,10) en mercados con PIX habilitado."
       ],
       "cons": [
-        "El pago por hora es mínimo: 30 anuncios diarios apenas suman centavos.",
-        "Las recompensas no están disponibles en todos los países y cambian de valor."
+        "El pago por hora es mínimo: 30.000 puntos equivalen a ~$0,18 USD (R$ 1) y 30 anuncios suman centavos.",
+        "Las recompensas no aparecen en la mayoría de países hispanos y cambian de valor."
       ],
       "faq": [
         {
           "q": "¿PineDrama realmente paga dinero real?",
-          "a": "En la versión brasileña inspeccionada existen opciones reales de retiro en reales vía PIX desde R$ 0,10 hasta R$ 2,00 (a razón de 30.000 puntos por R$ 1), aunque no realizamos un retiro en vivo y las cifras son solo de centavos."
+          "a": "En la versión brasileña inspeccionada existen opciones reales de retiro en reales vía PIX desde R$ 0,10 hasta R$ 2,00 (a razón de 30.000 puntos por R$ 1, unos ~$0,18 USD), aunque no realizamos un retiro en vivo y las cifras son solo de centavos."
         },
         {
           "q": "¿PineDrama paga por ver videos o novelas?",
           "a": "Sí otorga puntos en regiones compatibles por minutos vistos y anuncios, pero ver 60 minutos de novelas da entre 790 y 1.580 puntos (menos de R$ 0,06)."
         },
         {
-          "q": "¿Paga en dólares o en moneda local?",
-          "a": "En los países donde está habilitado, el centro de canje opera en moneda local (como reales brasileños por PIX); en gran parte del resto del mundo ni siquiera tiene recompensas."
+          "q": "¿PineDrama te paga por ver videos en pesos o dólares?",
+          "a": "En la mayoría de países de habla hispana (España, México, Argentina y Colombia), PineDrama no tiene pestaña de retiro y no paga en pesos ni en dólares. Donde el programa promocional está activo —como en Brasil vía PIX—, los pagos son en moneda local y 30.000 puntos equivalen a R$ 1 BRL (~$0,18 USD, ~$3,60 MXN o ~$750 COP)."
         }
       ],
-      "verdict": "PineDrama incluye recompensas regionales y montos bajos de canje en Brasil, pero con 30.000 puntos por R$ 1 solo rinde centavos simbólicos y no sustituye un ingreso real.",
+      "verdict": "PineDrama incluye recompensas regionales en Brasil, pero en la mayoría de países hispanos no tiene pestaña de retiro y 30.000 puntos equivalen apenas a ~$0,18 USD (R$ 1), por lo que no sustituye un ingreso real.",
       "imageAlt": "Centro de canje de PineDrama mostrando saldo y opciones de retiro",
       "caption": "Centro de canje con saldo equivalente (920 puntos = R$ 0,03) y montos desde R$ 0,10 hasta R$ 2,00 vía PIX.",
       "imageKey": "pinedrama-cashout",
@@ -6879,7 +8496,15 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Misiones diarias de anuncios y recompensas cronometradas en PineDrama",
         "caption": "Tareas diarias de hasta 30 anuncios (12.000 pts), recompensas cronometradas (2.880 pts) y serie completa (1.800 pts).",
         "wide": false
-      }
+      },
+      "relatedIds": [
+        "short-drama-apps-compared",
+        "primeopinion",
+        "attapoll",
+        "pawns",
+        "pinedrama",
+        "pinedrama-vs-dramastack"
+      ]
     },
     {
       "id": "pinedrama-guide",
@@ -6927,7 +8552,7 @@ export const articles:Record<Locale,Article[]>={
           "heading": "¿Se puede ver PineDrama en PC?",
           "paragraphs": [
             "En las fuentes oficiales revisadas, shortdrama.tiktok.com presenta la aplicación y enlaza Google Play y App Store. Esa página por sí sola no demuestra que exista un reproductor web completo. No verificamos un instalador compatible con Windows o macOS ni reproducción mediante emuladores Android.",
-            "No corresponde recomendar Google Play Games para PC como método de instalación sin confirmar soporte para PineDrama. Utiliza las tiendas oficiales móviles y consulta futuros anuncios en el portal. Una web externa que anuncie PineDrama para PC no acredita compatibilidad oficial."
+            "No existe un instalador oficial para escritorio confirmado para PineDrama en las fuentes revisadas. Utiliza las tiendas oficiales móviles (Google Play y App Store) enlazadas desde shortdrama.tiktok.com y consulta futuros anuncios en el portal. Una web externa que anuncie PineDrama para PC no acredita compatibilidad oficial."
           ],
           "source": {
             "title": "PineDrama: portal oficial de descarga",
@@ -6991,7 +8616,7 @@ export const articles:Record<Locale,Article[]>={
         "caption": "Tu biblioteca en Perfil registra exactamente en qué episodio te quedaste en cada serie.",
         "wide": false
       },
-      "modifiedDate": "2026-11-15"
+      "modifiedDate": "2026-11-18"
     },
     {
       "id": "pinedrama-vs-dramastack",
@@ -7027,7 +8652,7 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "Catálogo y cuál conviene elegir en 2026",
           "paragraphs": [
-            "Si buscas ver mininovelas verticales con mejor integración y soporte oficial, PineDrama es superior a DramaStack. Si tu prioridad es ganar recompensas reales en tu tiempo libre, conviene recurrir a plataformas dedicadas de encuestas y ofertas como Prime Opinion o Pawns.app, en lugar de apps de entretenimiento con anuncios."
+            "Si buscas ver mininovelas verticales con mejor integración y soporte oficial, PineDrama es superior a DramaStack. Si tu prioridad es ganar recompensas reales en tu tiempo libre, conviene revisar [cómo funciona Prime Opinion y opiniones reales](/es/prime-opinion-opiniones-como-funciona-paga/) o probar Pawns.app, en lugar de apps de entretenimiento con anuncios."
           ]
         }
       ],
@@ -7070,7 +8695,8 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Pantalla de retiro de DramaStack con mínimo de R$300",
         "caption": "En contraste, DramaStack exhibe un mínimo de R$300 junto a reglas que impiden convertir monedas.",
         "wide": false
-      }
+      },
+      "modifiedDate": "2026-11-18"
     },
     {
       "id": "cashdrama",
@@ -7103,7 +8729,7 @@ export const articles:Record<Locale,Article[]>={
           "heading": "¿CashDrama es confiable o es estafa para ganar dinero?",
           "paragraphs": [
             "Aunque la app está publicada en Google Play, tanto las reseñas de usuarios como nuestra inspección del sistema de retiro muestran que no funciona como una fuente confiable de dinero real. Incluso al superar los $100, el botón de retiro permanece bloqueado.",
-            "Si solo buscas entretenimiento gratuito en formato vertical, ignora el contador de dólares. Si buscas ingresos reales, no inviertas horas intentando desbloquear los niveles de $100 a $1K."
+            "Si solo buscas entretenimiento gratuito en formato vertical, ignora el contador de dólares. Si buscas ingresos reales, no inviertas horas intentando desbloquear los niveles de $100 a $1K. Documentamos una mecánica prácticamente idéntica en nuestro análisis de [Cash Fortune Drama y su retiro mínimo de $500](/es/cash-fortune-drama-paga-es-confiable/) y en la [comparativa de apps de novelas cortas 2026](/es/apps-de-novelas-cortas-que-pagan-por-ver-videos/)."
           ]
         }
       ],
@@ -7147,7 +8773,15 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Pantalla Discover de CashDrama con $106.84 y el aviso 'Watch 12 more episodes to cash out'",
         "caption": "Incluso con $106.84 en cuenta, Discover mantiene el bloqueo de ver 12 episodios más para retirar.",
         "wide": false
-      }
+      },
+      "modifiedDate": "2026-11-18",
+      "relatedIds": [
+        "short-drama-apps-compared",
+        "cashdrama-withdraw",
+        "cashfortunedrama",
+        "dramastack",
+        "primeopinion"
+      ]
     },
     {
       "id": "cashdrama-withdraw",
@@ -7260,7 +8894,7 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Alternativas reales si buscas recompensas verificables",
           "paragraphs": [
             "Si te gustan las mininovelas verticales sin promesas infladas de cientos de dólares, la app oficial de TikTok (PineDrama) muestra tasas transparentes y modestas cuando habilita recompensas regionales.",
-            "Si tu objetivo es ganar dinero real por PayPal o tarjetas regalo, usa plataformas consolidadas como Prime Opinion, Freecash, Pawns.app o Swagbucks, con mínimos claros desde $1–$5."
+            "Si tu objetivo es ganar dinero real por PayPal o tarjetas regalo, revisa [cómo funciona Prime Opinion y opiniones reales](/es/prime-opinion-opiniones-como-funciona-paga/) o usa plataformas consolidadas como Freecash, Pawns.app o Swagbucks, con mínimos claros desde $1–$5."
           ]
         }
       ],
@@ -7304,7 +8938,8 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Reproductor vertical For u de CashDrama mostrando Rejected Luna is His Fated Mate",
         "caption": "Debajo de la capa de premios, CashDrama es un reproductor vertical de miniseries románticas y de fantasía.",
         "wide": false
-      }
+      },
+      "modifiedDate": "2026-11-18"
     },
     {
       "id": "dramabox",
@@ -7313,6 +8948,7 @@ export const articles:Record<Locale,Article[]>={
       "slug": "dramabox-es-confiable-gratis-o-de-paga",
       "title": "DramaBox: ¿Es Confiable, Gratis o de Paga? Opiniones y Guía (2026)",
       "description": "Análisis completo de DramaBox (StoryMatrix): cuántos episodios son gratis, cómo funcionan las monedas y anuncios para desbloquear capítulos, precios y seguridad.",
+      "modifiedDate": "2026-11-18",
       "intro": "DramaBox (publicada por StoryMatrix Pte. Ltd. en Google Play y App Store) es una de las aplicaciones más populares de dramas cortos en formato vertical, con un catálogo que supera las 16.000 series de romance, fantasía, suspenso y anime. La descarga es gratuita y permite ver los primeros episodios sin pagar, pero después bloquea la continuación detrás de monedas de recompensa, anuncios o una suscripción.",
       "sections": [
         {
@@ -7330,7 +8966,7 @@ export const articles:Record<Locale,Article[]>={
           "heading": "¿DramaBox es gratis o de paga? Así funcionan los episodios bloqueados",
           "paragraphs": [
             "DramaBox funciona bajo un modelo freemium. Puedes empezar cualquier serie gratis porque los primeros episodios vienen desbloqueados. Al llegar al límite gratuito, los capítulos siguientes requieren Reward Coins (monedas) o una membresía activa.",
-            "No es obligatorio pagar de inmediato: en Earn Rewards puedes juntar monedas gratis viendo anuncios de video (entre 10 y 30 monedas por anuncio), haciendo check-in diario y completando tareas de cuenta. Eso sí, desbloquear una serie completa de 60 a 100 episodios solo con anuncios exige varios días de constancia."
+            "No es obligatorio pagar de inmediato: en nuestra guía para [conseguir monedas gratis en DramaBox](/es/como-ver-dramabox-gratis-conseguir-monedas/) mostramos cómo reunir Reward Coins viendo anuncios de video (10 a 30 monedas por anuncio), haciendo check-in diario y completando tareas. Eso sí, desbloquear una serie de 60 a 100 episodios solo con anuncios exige constancia, por lo que conviene comparar primero [el precio de las monedas vs. la suscripción VIP](/es/dramabox-precio-monedas-recarga-vs-suscripcion-vip/) y revisar [cuánto cuesta y cómo cancelar DramaBox](/es/dramabox-cuanto-cuesta-como-cancelar-suscripcion/)."
           ]
         },
         {
@@ -7384,7 +9020,13 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Perfil de DramaBox mostrando billetera, Earn Rewards, Top Up y banner Join Membership",
         "caption": "Desde Profile accedes a My Wallet, Earn Rewards (+60), Top Up y al banner de membresía.",
         "wide": false
-      }
+      },
+      "relatedIds": [
+        "dramabox-coins",
+        "dramabox-recharge",
+        "dramabox-subscription",
+        "pinedrama"
+      ]
     },
     {
       "id": "dramabox-coins",
@@ -7393,6 +9035,7 @@ export const articles:Record<Locale,Article[]>={
       "slug": "como-ver-dramabox-gratis-conseguir-monedas",
       "title": "Cómo Ver DramaBox Gratis (2026): Conseguir Monedas, Anuncios y Tareas",
       "description": "Guía paso a paso para conseguir monedas gratis en DramaBox: check-in de 7 días (+10 a +50), anuncios de 30 y 10 monedas, y tareas diarias sin pagar.",
+      "modifiedDate": "2026-11-18",
       "intro": "Cuando terminan los primeros capítulos gratuitos de una serie en DramaBox, los siguientes episodios quedan bloqueados. Aun así, puedes seguir viendo dramas sin gastar dinero aprovechando la sección Earn Rewards, donde la app entrega monedas por iniciar sesión a diario, ver anuncios cortos y completar tareas simples.",
       "sections": [
         {
@@ -7405,8 +9048,8 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "Cuántos capítulos desbloquean y por qué evitar APKs modificados",
           "paragraphs": [
-            "Sumando el check-in inicial, las tareas únicas (+190 monedas en total) y los anuncios diarios puedes desbloquear varios capítulos sin pagar. Como muchas series tienen entre 60 y 100 episodios cortos, quienes ven gratis suelen avanzar algunos capítulos al día.",
-            "Desconfía de supuestos generadores de monedas o APKs modificados de DramaBox: el saldo de monedas se valida en los servidores de StoryMatrix y los archivos fuera de Google Play exponen tu teléfono a virus o robo de datos. Si buscas alternativas de dramas cortos, también puedes revisar nuestra guía de PineDrama."
+            "Sumando el check-in inicial, las tareas únicas (+190 monedas en total) y los anuncios diarios puedes desbloquear varios capítulos sin pagar. Como muchas series tienen entre 60 y 100 episodios cortos, quienes ven gratis suelen avanzar algunos capítulos al día—o comparar si conviene una recarga puntual frente a la membresía en nuestra guía sobre [precio de monedas vs. suscripción VIP en DramaBox](/es/dramabox-precio-monedas-recarga-vs-suscripcion-vip/).",
+            "Desconfía de supuestos generadores de monedas o APKs modificados de DramaBox: el saldo de monedas se valida en los servidores de StoryMatrix y los archivos fuera de Google Play exponen tu teléfono a virus o robo de datos. Si buscas alternativas de dramas cortos, también puedes revisar nuestra guía de [PineDrama y opiniones reales](/es/pinedrama-opiniones-es-confiable-que-es/)."
           ],
           "source": {
             "title": "DramaBox en Google Play (StoryMatrix)",
@@ -7453,7 +9096,13 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Catálogo de series en DramaBox",
         "caption": "Las monedas acumuladas sirven para desbloquear episodios en cualquier serie del catálogo.",
         "wide": false
-      }
+      },
+      "relatedIds": [
+        "dramabox",
+        "dramabox-recharge",
+        "dramabox-subscription",
+        "pinedrama"
+      ]
     },
     {
       "id": "dramabox-subscription",
@@ -7462,12 +9111,13 @@ export const articles:Record<Locale,Article[]>={
       "slug": "dramabox-cuanto-cuesta-como-cancelar-suscripcion",
       "title": "DramaBox: Cuánto Cuesta y Cómo Cancelar la Suscripción (Android y iPhone)",
       "description": "Precios de membresía de DramaBox (plan semanal y anual), reglas de renovación automática y pasos exactos para cancelar tu suscripción en Google Play y iPhone.",
+      "modifiedDate": "2026-11-18",
       "intro": "La membresía de DramaBox promete acceso ilimitado a más de 16.000 series en calidad 1080p y descargas offline, pero su cobro funciona con renovación automática activada por defecto. Conocer el precio real de los planes y saber cómo cancelar en Google Play o App Store evita cargos semanales inesperados.",
       "sections": [
         {
           "heading": "Cuánto cuesta la suscripción de DramaBox (semanal y anual)",
           "paragraphs": [
-            "Los precios se muestran en la moneda local de tu tienda. En nuestra inspección en Android (Brasil), la pantalla Join Membership ofreció el Plan Semanal en promoción por R$ 34,99/semana durante las primeras 3 semanas (subiendo luego a R$ 45,99/semana) y el Plan Anual por R$ 459,99/año. En México, España y EE. UU. las tarifas siguen la misma estructura semanal con descuento inicial y anual.",
+            "Los precios se muestran en la moneda local de tu tienda. En nuestra inspección en Android (Brasil), la pantalla Join Membership ofreció el Plan Semanal en promoción por R$ 34,99/semana durante las primeras 3 semanas (subiendo luego a R$ 45,99/semana) y el Plan Anual por R$ 459,99/año. En México, España y EE. UU. las tarifas siguen la misma estructura semanal con descuento inicial y anual. Si prefieres pagar solo por capítulos concretos sin cobros recurrentes, compara antes la [recarga de monedas en DramaBox vs. la suscripción VIP](/es/dramabox-precio-monedas-recarga-vs-suscripcion-vip/).",
             "Las reglas de la pantalla Subscription Deals indican explícitamente que la renovación automática queda activada por defecto al suscribirse y que el nuevo cobro se procesa dentro de las 24 horas previas al vencimiento del período."
           ],
           "source": {
@@ -7521,7 +9171,186 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Reglas de Subscription Deals de DramaBox sobre renovación automática y cancelación en Google Play",
         "caption": "Las reglas confirman que la renovación automática está activada por defecto y se cobra en las 24 horas previas al vencimiento.",
         "wide": false
-      }
+      },
+      "relatedIds": [
+        "dramabox",
+        "dramabox-recharge",
+        "dramabox-coins",
+        "pinedrama"
+      ]
+    },
+    {
+      "id": "dramabox-recharge",
+      "app": "dramabox",
+      "category": "rewards",
+      "slug": "dramabox-precio-monedas-recarga-vs-suscripcion-vip",
+      "title": "Precio de Monedas en DramaBox vs. Suscripción VIP (Guía de Costos 2026)",
+      "description": "¿Conviene recargar monedas en DramaBox (Top Up) o pagar la suscripción VIP semanal/anual? Comparamos costos reales, renovación automática y monedas gratis.",
+      "intro": "Cuando se acaban los capítulos gratuitos de una serie en DramaBox, la pantalla Profile te pone frente a tres caminos: comprar paquetes puntuales en Top Up (recarga de monedas), activar el plan VIP semanal o anual en Join Membership, o juntar monedas gratis con anuncios y check-in. Entender los números reales y qué opción activa cobros recurrentes evita pagar de más en una miniserie de 60 a 100 episodios.",
+      "topCallout": {
+        "title": "Revisa antes las monedas gratis y las reglas de cancelación de DramaBox",
+        "text": "¿Quieres avanzar capítulos sin gastar dinero o ya activaste un plan y necesitas frenar el cobro semanal?",
+        "links": [
+          {
+            "label": "Cómo conseguir monedas gratis en DramaBox (+10 a +60)",
+            "url": "/es/como-ver-dramabox-gratis-conseguir-monedas/"
+          },
+          {
+            "label": "Cuánto cuesta DramaBox y cómo cancelar la suscripción",
+            "url": "/es/dramabox-cuanto-cuesta-como-cancelar-suscripcion/"
+          }
+        ]
+      },
+      "sections": [
+        {
+          "heading": "Cómo funciona la recarga de monedas (Top Up) frente a Join Membership",
+          "paragraphs": [
+            "Dentro de Profile (captura inferior), DramaBox separa las compras puntuales de la suscripción recurrente. Al tocar Top Up accedes a paquetes de monedas en la tienda interna —a veces acompañados de monedas extra de bonificación— que cargan saldo en My Wallet para desbloquear capítulos bloqueados uno a uno, sin activar renovación automática. Como StoryMatrix ajusta los paquetes por país, moneda local, tienda (Google Play en Android vs. App Store en iPhone) y promociones de cuenta, no existe una lista única universal en dólares: debes revisar los montos exactos dentro de Profile -> Top Up en tu teléfono antes de confirmar el pago.",
+            "En cambio, tocar Join Membership te pasa al acceso VIP ilimitado para más de 16.000 series anunciadas (con 100+ estrenos semanales), calidad 1080p, descargas offline, dramas exclusivos para miembros, puntos diarios e interacción IA con personajes (200 chats/día y 3 generaciones de imagen). La diferencia crítica es que la membresía sí activa cobros recurrentes automáticos."
+          ],
+          "source": {
+            "title": "DramaBox en Google Play (StoryMatrix)",
+            "url": "https://play.google.com/store/apps/details?id=com.storymatrix.drama&hl=es"
+          }
+        },
+        {
+          "heading": "Recarga de monedas vs. suscripción VIP semanal y anual: cuándo conviene cada una",
+          "paragraphs": [
+            "En nuestra inspección verificada de Google Play Brasil, DramaBox mostró la Membresía Semanal en promoción por R$ 34,99/semana durante las 3 primeras semanas (24%–25% de descuento frente al precio regular de R$ 45,99/semana) y la Membresía Anual en R$ 459,99/año (equivalente a R$ 8,83/semana). Aunque los importes cambian según tu país, la lógica económica se repite: el VIP semanal es el cargo más alto por semana si se deja renovando, el plan anual solo amortiza si ves mininovelas todo el año y la recarga Top Up sirve para completar episodios puntuales sin compromiso.",
+            "Elegir según tu ritmo evita gastos innecesarios. Si solo quieres terminar una serie de 60 a 100 episodios, agota primero las misiones gratis de [monedas en Earn Rewards](/es/como-ver-dramabox-gratis-conseguir-monedas/) y evalúa si un paquete puntual de Top Up te alcanza sin riesgo de renovación automática. Si vas a maratonear varias series completas en 7 días, el VIP semanal libera todo el catálogo al instante (cancelando antes de la renovación), mientras que quien mira de forma casual ahorra más avanzando con anuncios diarios."
+          ],
+          "image": {
+            "key": "dramabox-membership",
+            "alt": "Pantalla Join Membership de DramaBox con Membresía Semanal (R$ 34,99 luego R$ 45,99/semana) y Anual (R$ 459,99/año)",
+            "caption": "Captura verificada de Join Membership en Android (Brasil): plan semanal (R$ 34,99 por 3 semanas y luego R$ 45,99) frente al anual (R$ 459,99/año).",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Diferencias de precio por país o tienda, ventana de 24h y estafas de recarga barata",
+          "paragraphs": [
+            "Dos usuarios pueden ver precios o descuentos distintos en DramaBox porque Google Play y Apple App Store aplican impuestos locales, tipos de cambio y temporizadores promocionales (como la cuenta regresiva de 24 horas en Join Membership). Revisa siempre el resumen final de Google Play o Apple antes de pagar. Si activas un plan VIP, las reglas de Subscription Deals confirman que la renovación automática viene activada por defecto y cobra dentro de las 24 horas previas al vencimiento; borrar la app no cancela el plan, así que sigue nuestra guía sobre [cómo cancelar la suscripción de DramaBox](/es/dramabox-cuanto-cuesta-como-cancelar-suscripcion/) apenas termines tu maratón.",
+            "Además, desconfía de páginas web, anuncios en redes o bots que prometen 'recarga barata de monedas en DramaBox', 'generador de monedas gratis' o archivos 'DramaBox mod APK'. Las monedas y el estado VIP se validan en los servidores de StoryMatrix, por lo que los sitios externos y APKs modificados no acreditan saldo real y ponen en riesgo tu cuenta o tu dispositivo."
+          ],
+          "image": {
+            "key": "dramabox-subscription",
+            "alt": "Reglas de Subscription Deals en DramaBox confirmando renovación automática activada por defecto y cobro 24h antes",
+            "caption": "Las reglas de Subscription Deals confirman renovación automática por defecto y cobro vía Google Play dentro de las 24 horas previas al fin del ciclo.",
+            "wide": false
+          },
+          "source": {
+            "title": "DramaBox en Apple App Store (StoryMatrix)",
+            "url": "https://apps.apple.com/us/app/dramabox-stream-drama-shorts/id6445905219"
+          }
+        },
+        {
+          "heading": "Matemática de monedas gratis y alternativas para ver mininovelas sin pagar",
+          "paragraphs": [
+            "Antes de gastar en Top Up o VIP, aprovecha las recompensas internas de Profile -> Earn Rewards: check-in de 7 días (+10 a +50 monedas según el día), el botón 'Watch Ad to earn 30 coins', hasta 30 videos repetibles de 10 monedas por ciclo y +190 monedas únicas (+60 por iniciar sesión, +60 notificaciones push, +30 Telegram, +20 Facebook y +20 YouTube). Puedes consultar todos los detalles en nuestro [análisis completo de DramaBox](/es/dramabox-es-confiable-gratis-o-de-paga/).",
+            "Si prefieres ver dramas verticales sin recargas ni membresías semanales costosas, conoce la plataforma oficial gratuita de TikTok en nuestra reseña de [PineDrama y si es confiable](/es/pinedrama-opiniones-es-confiable-que-es/), o revisa nuestra [comparativa de apps de novelas cortas](/es/apps-de-novelas-cortas-que-pagan-por-ver-videos/) para distinguir plataformas legítimas de apps con bloqueos."
+          ],
+          "image": {
+            "key": "dramabox-coins",
+            "alt": "Pantalla Reward coins de DramaBox con check-in de 7 días (+10 a +50), anuncios de 30 y 10 monedas y tareas de +20 a +60",
+            "caption": "En Earn Rewards puedes sumar el check-in de 7 días, anuncios de 30 y 10 monedas y +190 monedas de tareas únicas antes de recargar.",
+            "wide": false
+          }
+        }
+      ],
+      "tables": [
+        {
+          "heading": "Comparativa de costos en DramaBox: Monedas Gratis vs. Recarga Top Up vs. Planes VIP",
+          "columns": [
+            "Modalidad",
+            "Costo y tipo de cobro",
+            "Riesgo de renovación automática",
+            "Velocidad de desbloqueo",
+            "Para quién conviene"
+          ],
+          "rows": [
+            [
+              "Monedas Gratis (Earn Rewards)",
+              "$0 (con anuncios; +10 a +30 por anuncio, +10 a +50 check-in, +190 únicas)",
+              "Ninguno (sin tarjeta)",
+              "Lenta — requiere varios días para series de 60–100 capítulos",
+              "Quien no tiene prisa y quiere ver sin pagar"
+            ],
+            [
+              "Recarga de Monedas (Top Up)",
+              "Paquetes únicos dentro de la app (varía por país, moneda y tienda)",
+              "Ninguno — compra única por paquete",
+              "Inmediata para los capítulos que cubra tu saldo",
+              "Terminar 1 serie puntual sin suscripción recurrente"
+            ],
+            [
+              "VIP Semanal (Weekly Membership)",
+              "Recurrente semanal (Brasil Play Store: R$ 34,99/sem x 3, luego R$ 45,99/sem)",
+              "Alto — activada por defecto; cobra 24h antes del cierre",
+              "Acceso ilimitado inmediato a 16.000+ series (1080p y descargas)",
+              "Maratón intensiva de varias series en 1 semana (cancelando antes)"
+            ],
+            [
+              "VIP Anual (Annual Membership)",
+              "Pago anual (Brasil Play Store: R$ 459,99/año, ~R$ 8,83/semana)",
+              "Sí — renueva cada año salvo cancelación 24h antes",
+              "Acceso ilimitado todo el año + ventajas VIP",
+              "Solo usuarios habituales durante todo el año"
+            ]
+          ],
+          "afterSectionIndex": 1
+        }
+      ],
+      "steps": [
+        "Ve primero los capítulos iniciales gratuitos de tu serie antes de entrar en Top Up o Join Membership.",
+        "Abre Profile -> Earn Rewards para cobrar los bonos únicos (+190 monedas), el check-in diario y los anuncios de 10 y 30 monedas.",
+        "Compara el precio local del paquete Top Up en tu dispositivo frente al costo semanal del plan VIP en Google Play o App Store.",
+        "Si activas el VIP semanal para una maratón, cancela enseguida en Google Play o Apple Suscripciones para evitar el cobro automático 24 horas antes del vencimiento.",
+        "Realiza pagos únicamente dentro de la app oficial en Google Play o App Store y nunca en webs externas de recarga."
+      ],
+      "pros": [
+        "Top Up permite comprar monedas puntuales sin quedar atado a una renovación semanal.",
+        "La membresía VIP elimina anuncios y bloqueos en más de 16.000 series con 1080p y descargas.",
+        "Earn Rewards posibilita avanzar gratis acumulando monedas con check-in y videos publicitarios."
+      ],
+      "cons": [
+        "DramaBox no publica una tabla fija global para Top Up; los precios dependen de cada país y tienda.",
+        "El VIP semanal sube tras las 3 primeras semanas de descuento y cobra por defecto 24 horas antes de vencer.",
+        "Las series de 60 a 100 episodios exigen bastantes monedas si avanzas solo con anuncios."
+      ],
+      "faq": [
+        {
+          "q": "¿Cuánto cuesta DramaBox y cuánto valen sus monedas?",
+          "a": "Descargarla y ver los primeros capítulos es gratis. En nuestra captura oficial en Android (Brasil), la suscripción semanal costó R$ 34,99/semana por 3 semanas (luego R$ 45,99/semana) y la anual R$ 459,99/año (~R$ 8,83/semana), mientras que los paquetes de monedas en Profile -> Top Up cambian según país, moneda y tienda."
+        },
+        {
+          "q": "¿Conviene más recargar monedas (Top Up) o pagar el VIP semanal en DramaBox?",
+          "a": "Top Up conviene si solo quieres completar una serie puntual sin riesgo de cargos recurrentes. El VIP semanal solo sale a cuenta si planeas ver varias series completas en pocos días y cancelas al menos 24 horas antes de la renovación."
+        },
+        {
+          "q": "¿La recarga Top Up de DramaBox activa renovación automática?",
+          "a": "No. Comprar un paquete de monedas en Profile -> Top Up es un pago único. Solo las membresías semanal y anual de Join Membership activan renovación automática."
+        },
+        {
+          "q": "¿Por qué cambian los precios de DramaBox entre Android y iPhone o por país?",
+          "a": "StoryMatrix localiza las tarifas según moneda, impuestos de Google Play o Apple App Store y promociones temporales visibles en cada cuenta."
+        },
+        {
+          "q": "¿Son seguros los sitios de recarga barata o generadores de monedas de DramaBox?",
+          "a": "No. Las monedas y suscripciones se validan en los servidores oficiales de StoryMatrix; los revendedores no autorizados, generadores y APKs modificados conllevan riesgo de fraude o malware."
+        }
+      ],
+      "verdict": "Usa primero las monedas gratis de Earn Rewards, opta por Top Up solo si te faltan pocos capítulos sin querer suscripción y reserva el VIP semanal únicamente para maratones puntuales cancelando la renovación automática al instante.",
+      "imageAlt": "Pantalla Profile de DramaBox con Top Up, My Wallet, Earn Rewards y banner Join Membership",
+      "caption": "La pestaña Profile muestra las tres vías de DramaBox: Top Up (recarga puntual), Earn Rewards (monedas gratis) y Join Membership (VIP).",
+      "imageKey": "dramabox-profile",
+      "imageWide": false,
+      "relatedIds": [
+        "dramabox",
+        "dramabox-coins",
+        "dramabox-subscription",
+        "pinedrama",
+        "short-drama-apps-compared"
+      ]
     },
     {
       "id": "nordvpn-vs-surfshark",
@@ -7940,7 +9769,7 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Qué hacer si una encuesta terminada no se acredita",
           "paragraphs": [
             "Terminar una encuesta no equivale a cobrarla. La recompensa depende de la validación: el proveedor del estudio comprueba que tu participación cumplió las reglas, y esa comprobación decide el abono. Cuando una encuesta concreta termina sin recompensa, la ruta es Ajustes > Ayuda > Encuestas, con el nombre de la encuesta y los detalles a mano.",
-            "La guía de retiro explica los mínimos y los estados del pago; la de juegos, las metas; y la de invitación, cómo usar cgfky. Si decides instalar AttaPoll, puedes usar el enlace de invitación de abajo. Comprueba el desarrollador y las condiciones vigentes en la tienda oficial antes de descargar."
+            "La guía de retiro explica los mínimos y los estados del pago; la de juegos, las metas; y la de invitación, cómo usar cgfky. Si estás comparando saldo de Play Store frente a dinero por PayPal, revisa nuestra [comparativa entre Google Opinion Rewards, Prime Opinion y AttaPoll](/es/google-opinion-rewards-vs-prime-opinion-cual-paga-mejor/). Si decides instalar AttaPoll, puedes usar el enlace de invitación de abajo. Comprueba el desarrollador y las condiciones vigentes en la tienda oficial antes de descargar."
           ],
           "sources": [
             {
@@ -8021,7 +9850,9 @@ export const articles:Record<Locale,Article[]>={
           "url": "https://attapoll.com/es-mx/ayuda/"
         }
       ],
+      "modifiedDate": "2026-11-18",
       "relatedIds": [
+        "opinion-vs-primeopinion-attapoll",
         "attapoll-saque",
         "attapoll-jogos",
         "attapoll-convite"
@@ -9192,7 +11023,7 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Por qué DramaGood no paga: las cuentas no cierran",
           "paragraphs": [
             "Una app gratuita se sostiene con publicidad, y cada anuncio visto deja centavos. Para cumplir lo que promete, DramaGood tendría que pagar R$ 240 a cada usuario que ve unos minutos de video — y además sostener premios de R$ 7.777 y retiros de R$ 1.600. Ningún ecosistema publicitario paga eso: por eso el saldo se infla al inicio y el mínimo exigido queda siempre más adelante, como muestran los R$ 133,40 que faltaban en la prueba.",
-            "Los documentos oficiales refuerzan la conclusión. Ni la ficha de Google Play ni la Política de Privacidad mencionan un programa de retiros, transferencias bancarias ni pagos en dinero; si esa 'plataforma asociada de pagos' existiera, tendría que aparecer en las reglas del servicio — y no aparece. El cuadro siguiente contrasta lo que la app muestra en pantalla con lo que el desarrollador declara oficialmente. Los banners de 'Parabéns!' son la única 'prueba' de pagos, sin respaldo externo verificable."
+            "Los documentos oficiales refuerzan la conclusión. Ni la ficha de Google Play ni la Política de Privacidad mencionan un programa de retiros, transferencias bancarias ni pagos en dinero; si esa 'plataforma asociada de pagos' existiera, tendría que aparecer en las reglas del servicio — y no aparece. El cuadro siguiente contrasta lo que la app muestra en pantalla con lo que el desarrollador declara oficialmente. Los banners de 'Parabéns!' son la única 'prueba' de pagos, sin respaldo externo verificable, como detallamos en nuestra [comparativa de apps de novelas cortas 2026](/es/apps-de-novelas-cortas-que-pagan-por-ver-videos/)."
           ],
           "source": {
             "title": "Política de Privacidad de DramaGood (drama-good.com)",
@@ -9280,7 +11111,9 @@ export const articles:Record<Locale,Article[]>={
           "url": "https://www.drama-good.com/privacy.html"
         }
       ],
+      "modifiedDate": "2026-11-18",
       "relatedIds": [
+        "short-drama-apps-compared",
         "dramagood-saque",
         "dramagood-tarefas",
         "cashdrama",
@@ -9447,7 +11280,7 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Qué usar en su lugar: apps hermanas y plataformas auditables",
           "paragraphs": [
             "El patrón de DramaGood no es exclusivo. Apps del mismo nicho ya reseñadas en el sitio — CashDrama, DramaStack, PineDrama y DramaBox — muestran cómo funciona el ecosistema de dramas: catálogos reales, reglas propias de monedas o suscripción y, en algunos casos, promesas de recompensas que merecen la misma desconfianza. Antes de dedicar tiempo a cualquiera, conviene leer la reseña específica, porque el comportamiento cambia de app a app.",
-            "Si el objetivo es ganar algo con el celular, las plataformas auditables tienen más sentido: TikTok Lite remunera actividades dentro de la app, AttaPoll y Prime Opinion pagan por encuestas, Freecash reúne tareas de socios, Pawns.app combina encuestas con compartir internet y Swagbucks funciona como programa de recompensas en puntos. Ninguno promete R$ 7.777 por 10 minutos — y justamente la modestia de los montos, con historial externo de pagos, separa a quien paga de quien simula."
+            "Si el objetivo es ganar algo con el celular, las plataformas auditables tienen más sentido: TikTok Lite remunera actividades dentro de la app, AttaPoll paga por encuestas, puedes consultar [cómo funciona Prime Opinion y opiniones reales](/es/prime-opinion-opiniones-como-funciona-paga/), Freecash reúne tareas de socios, Pawns.app combina encuestas con compartir internet y Swagbucks funciona como programa de recompensas en puntos. Ninguno promete R$ 7.777 por 10 minutos — y justamente la modestia de los montos, con historial externo de pagos, separa a quien paga de quien simula."
           ],
           "source": {
             "title": "Política de Privacidad de DramaGood (drama-good.com)",
@@ -9552,6 +11385,829 @@ export const articles:Record<Locale,Article[]>={
         "pinedrama",
         "attapoll",
         "tiktoklite"
+      ],
+      "modifiedDate": "2026-11-18"
+    },
+    {
+      "id": "cashfortunedrama",
+      "app": "cashfortunedrama",
+      "category": "rewards",
+      "slug": "cash-fortune-drama-paga-es-confiable",
+      "title": "¿Cash Fortune Drama Paga de Verdad o Es Estafa? Opiniones (2026)",
+      "description": "¿La app Cash Fortune Drama paga dinero real por ver novelas cortas? Analizamos los mínimos de $500, el cebo del iPhone, anuncios reales y alternativas.",
+      "intro": "Cash Fortune Drama promete retiros de entre $500 y $3,000 e incluso un iPhone 17 Pro MAX gratis por ver mininovelas verticales. Tras analizar cinco capturas reales de la aplicación paso a paso, nuestro veredicto es directo: Cash Fortune Drama no paga. Aquí te mostramos las pruebas: salto artificial de saldo ($0 a $35), ventanas emergentes con anuncios de +$200 frente a Only $10, el cebo del iPhone y un mínimo de retiro imposible de alcanzar.",
+      "topCallout": {
+        "title": "¿Buscas apps que sí paguen por PayPal o tarjetas regalo?",
+        "text": "Evita mínimos irreales de $500 en apps de dramas cortos. Estas plataformas verificadas permiten retirar desde $3 a $5 USD:",
+        "links": [
+          {
+            "label": "Prime Opinion (+10% código ALNTFL)",
+            "url": "/es/prime-opinion-opiniones-como-funciona-paga/"
+          },
+          {
+            "label": "Pawns.app (bono de $3)",
+            "url": "/es/pawns-app-como-funciona-guia-completo/"
+          },
+          {
+            "label": "Freecash (ofertas y juegos)",
+            "url": "/es/freecash-ofertas-invitaciones/"
+          }
+        ]
+      },
+      "sections": [
+        {
+          "heading": "Qué es Cash Fortune Drama y por qué repite el patrón de CashDrama y DramaStack",
+          "paragraphs": [
+            "Cash Fortune Drama es una aplicación de mininovelas verticales organizada en cuatro pestañas inferiores: Shorts, Main, Bonus y User. Al igual que [CashDrama](/es/cashdrama-es-confiable-si-paga-opiniones/) y [DramaStack](/es/dramastack-paga-o-no/), mezcla episodios cortos gratuitos con un contador de dólares permanente en la parte superior.",
+            "En la pestaña Bonus, una cuenta nueva empieza en $0 junto al aviso 'Get another $500 and withdraw $500'. Debajo acumula un check-in de 7 días (+50 a +100), la barra 'Watch videos to earn 81' con seis cofres y 'Daily Tasks' con premios inflados de 1,000 (ver 5 min), 1,400 (ver 1 episodio) y 2,000 Top Prize (ver 1 video de anuncio AD)."
+          ]
+        },
+        {
+          "heading": "Salto artificial de saldo ($0 -> $15 -> $35) e íconos en el reproductor",
+          "paragraphs": [
+            "Al abrir un capítulo en el reproductor Shorts —como el episodio 2 de System: Bargain to Godhood (serie de 40 episodios)— el saldo sube rápidamente de $0 a $15 y el aviso superior cambia a 'Get another $485 and withdraw $500'.",
+            "En el lateral derecho del video flotan tres contadores paralelos: unos AirPods (0/20), un cochinito dorado (2/3) y un iPhone (0%). Este salto inicial de $0 a $15 y luego a $35 busca crear la ilusión de que llegar a $500 es rápido antes de frenar las recompensas."
+          ]
+        },
+        {
+          "heading": "El pop-up engañoso de +$200 frente al enlace 'Only $10' vinculado a anuncios (AD)",
+          "paragraphs": [
+            "Al completarse el icono del cochinito dorado, aparece una ventana emergente de 'Congratulations!' que muestra '+$ 200' y un botón morado gigante que dice 'Claim $200' con el icono de anuncio (AD). Justo debajo, en texto pequeño subrayado, figura la alternativa 'Only $10'.",
+            "Este diseño empuja al usuario a ver anuncios forzados tras la cifra grande mientras esconde la opción menor. Además, la barra inferior revela la brecha real: 'Earn $465 more to unlock the $500 withdrawal!', confirmando que la cuenta sigue estancada en $35 frente a la meta de $500."
+          ],
+          "image": {
+            "key": "cashfortunedrama-popup",
+            "alt": "Pop-up Congratulations de Cash Fortune Drama con +$200, botón Claim $200 con icono AD y enlace menor Only $10",
+            "caption": "Ventana Congratulations!: botón destacado Claim $200 con etiqueta AD, enlace pequeño 'Only $10' y barra avisando que faltan $465 para llegar a $500.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "El cebo del iPhone 17 Pro MAX ($1,199) y la solicitud de dirección de envío",
+          "paragraphs": [
+            "Otra ventana promocional promete 'Watch Bonus Drama — WIN iPhone 17 Pro MAX ($ 1,199)', asegurando que el teléfono será enviado desde el sitio oficial de Apple hasta tu domicilio ('Shipped from the official Apple website, delivered to your home').",
+            "Los tres pasos del anuncio piden empezar a ver un drama de recompensa, reproducir todos los episodios completos y luego rellenar tu dirección de envío ('Fill in the shipping address'). Ninguna app gratuita financiada con anuncios regala teléfonos de $1,199 a cada usuario que termina una serie, y entregar tu dirección personal sin garantías reales supone un riesgo innecesario de privacidad."
+          ],
+          "image": {
+            "key": "cashfortunedrama-iphone",
+            "alt": "Pop-up promocional de Cash Fortune Drama que promete un iPhone 17 Pro MAX gratis de $1,199 y pide dirección de envío",
+            "caption": "Anuncio interno que promete un iPhone 17 Pro MAX de $1,199 enviado desde la tienda oficial de Apple tras ver todos los episodios y enviar tu dirección.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Pantalla Withdraw ($500 a $3,000), ticker no verificable y por qué no paga",
+          "paragraphs": [
+            "Al entrar en la pantalla Withdraw con $35 de saldo (BALANCE: $35), la app muestra cuatro botones regionales —PIX, PicPay, Mercado Libre y Nubank— y cuatro niveles de retiro desorbitados: $500 ($35/$500), $1,000, $1,500 y $3,000 (todos marcados como Locked salvo la tarjeta inicial de $500).",
+            "En la franja superior circulan mensajes como 'Congratulation to Br****ra withdraw $1,500', 'Ra****ta withdraw $500' y 'An****ra withdraw $500', cifras imposibles de auditar y sin ningún comprobante externo. Con ingresos publicitarios de centavos por visualización, es matemáticamente inviable pagar $500 o $3,000 por usuario. Conclusión: Cash Fortune Drama no paga dinero real."
+          ],
+          "image": {
+            "key": "cashfortunedrama-withdraw",
+            "alt": "Pantalla Withdraw de Cash Fortune Drama con saldo de $35, mínimos de $500 a $3,000, opciones PIX, PicPay, Mercado Libre y Nubank, y ticker superior",
+            "caption": "Pantalla Withdraw con BALANCE: $35, avisos superiores no verificables de $500 y $1,500, pestañas PIX/PicPay/Mercado Libre/Nubank y mínimos de $500 a $3,000.",
+            "wide": false
+          },
+          "cta": {
+            "label": "Ver alternativa verificada con retiros reales desde $5 USD (Prime Opinion)",
+            "url": "/es/prime-opinion-opiniones-como-funciona-paga/"
+          }
+        },
+        {
+          "heading": "Alternativas verificadas que sí pagan por PayPal y tarjetas regalo",
+          "paragraphs": [
+            "A diferencia de las apps de mininovelas con mínimos de $100 a $500, las plataformas consolidadas de encuestas y ofertas pagan montos realistas desde pocos dólares. Puedes probar [Prime Opinion](/es/prime-opinion-opiniones-como-funciona-paga/) para encuestas pagadas, [Pawns.app](/es/pawns-app-como-funciona-guia-completo/) para compartir internet y encuestas, o [Freecash](/es/freecash-ofertas-invitaciones/) para metas en juegos móviles.",
+            "También existen opciones móviles rápidas como [AttaPoll](/es/attapoll-como-funciona-encuestas/) con retiros bajos en PayPal según el país y [TikTok Lite](/es/tiktok-lite-recompensas-retiro/) en las regiones donde su programa de recompensas está activo. Ninguna promete $500 mágicos, pero sí procesan pagos reales; revisa además la [comparativa completa de apps de novelas cortas 2026](/es/apps-de-novelas-cortas-que-pagan-por-ver-videos/)."
+          ]
+        }
+      ],
+      "steps": [
+        "Abre primero la pestaña Withdraw antes de ver capítulos para comprobar el mínimo real ($500 a $3,000).",
+        "No tomes el salto inicial de $0 a $15 y $35 —ni el pop-up de +$200 con icono AD— como saldo retirable.",
+        "Evita ingresar tu dirección física en el pop-up del iPhone 17 Pro MAX ($1,199).",
+        "Desconfía del ticker superior con supuestos ganadores de $500 y $1,500 sin comprobantes externos.",
+        "Usa plataformas verificadas con mínimos bajos ($3–$5 USD) como Prime Opinion, Pawns.app, Freecash o AttaPoll."
+      ],
+      "stepsSectionIndex": 4,
+      "tables": [
+        {
+          "heading": "Cash Fortune Drama vs. CashDrama vs. DramaStack vs. Apps que sí pagan",
+          "columns": [
+            "App",
+            "Mínimo de retiro",
+            "Mecánica observada",
+            "Veredicto"
+          ],
+          "rows": [
+            [
+              "Cash Fortune Drama",
+              "$500 (hasta $3,000)",
+              "Salto rápido $0 -> $15 -> $35, pop-up +$200 AD vs. Only $10, cebo iPhone $1,199",
+              "No paga"
+            ],
+            [
+              "CashDrama",
+              "$1 / $100 a $1K",
+              "Sube a $99.86–$106.84 el día 1, bloqueado por Day 2 Unlock y regla de 12 episodios",
+              "No paga de forma confiable"
+            ],
+            [
+              "DramaStack",
+              "R$ 300 (~$55–$60 USD)",
+              "Umbral alto con reglas restrictivas que impiden convertir monedas",
+              "No paga en la práctica"
+            ],
+            [
+              "Prime Opinion / Pawns.app / Freecash / AttaPoll / TikTok Lite",
+              "Bajo ($1–$5 según app y país)",
+              "Encuestas, juegos y tareas con pagos reales por PayPal o tarjetas regalo",
+              "Sí pagan (verificadas)"
+            ]
+          ],
+          "afterSectionIndex": 4
+        }
+      ],
+      "pros": [
+        "Permite reproducir mininovelas verticales como System: Bargain to Godhood sin suscripción previa.",
+        "La pantalla Withdraw deja ver el mínimo de $500 desde el inicio si revisas antes de invertir horas."
+      ],
+      "cons": [
+        "No paga: exige mínimos imposibles de $500, $1,000, $1,500 y $3,000.",
+        "Pop-up engañoso de +$200 con botón Claim $200 atado a anuncios (AD) junto a un enlace pequeño 'Only $10'.",
+        "Pide dirección física bajo la promesa no verificable de regalar un iPhone 17 Pro MAX de $1,199.",
+        "Muestra avisos de supuestos retiros de $500 y $1,500 junto a PIX, PicPay, Mercado Libre y Nubank sin pruebas."
+      ],
+      "faq": [
+        {
+          "q": "¿Cash Fortune Drama paga dinero real o es estafa?",
+          "a": "No paga. Nuestras cinco capturas reales prueban que el saldo salta artificialmente de $0 a $35 mientras el retiro queda bloqueado tras un mínimo de $500 (hasta $3,000), pop-ups con anuncios AD y promesas no verificables."
+        },
+        {
+          "q": "¿Cuál es el mínimo de retiro en Cash Fortune Drama?",
+          "a": "El mínimo más bajo que muestra la pantalla Withdraw es de $500, seguido de opciones bloqueadas de $1,000, $1,500 y $3,000 para PIX, PicPay, Mercado Libre y Nubank."
+        },
+        {
+          "q": "¿Es real el sorteo del iPhone 17 Pro Max de Cash Fortune Drama?",
+          "a": "No hay pruebas reales de entrega. El anuncio promete enviar un iPhone 17 Pro MAX ($1,199) desde la tienda oficial de Apple tras ver toda una serie y rellenar tu dirección física, una señal de alerta clara para tus datos."
+        },
+        {
+          "q": "¿Cash Fortune Drama es lo mismo que CashDrama?",
+          "a": "Son aplicaciones distintas pero replican exactamente la misma táctica: saldos iniciales inflados, ventanas con anuncios para multiplicar premios y metas de retiro diseñadas para no liberarse."
+        },
+        {
+          "q": "¿Qué apps sí pagan dinero real en lugar de Cash Fortune Drama?",
+          "a": "Alternativas confiables con retiros bajos verificados son Prime Opinion, Pawns.app, Freecash, AttaPoll y campañas oficiales regionales de TikTok Lite."
+        }
+      ],
+      "verdict": "Cash Fortune Drama no paga. El salto artificial de $0 -> $15 -> $35, el pop-up de +$200 AD frente a 'Only $10', el cebo del iPhone 17 Pro MAX ($1,199) pidiendo tu dirección y los mínimos de $500 a $3,000 demuestran que es una app diseñada para generar visualizaciones de anuncios sin pagar al usuario. Si buscas ingresos reales, elige plataformas verificadas como Prime Opinion, Pawns.app o Freecash.",
+      "imageKey": "cashfortunedrama-bonus",
+      "imageAlt": "Pestaña Bonus de Cash Fortune Drama con saldo $0, meta de $500, check-in de 7 días y Daily Tasks hasta 2,000",
+      "caption": "Pantalla Bonus en $0: muestra check-in de 7 días (+50/+100), 'Watch videos to earn 81', Daily Tasks (1,000 a 2,000 Top Prize) y meta de $500.",
+      "imageWide": false,
+      "secondImage": {
+        "key": "cashfortunedrama-player",
+        "alt": "Reproductor Shorts de Cash Fortune Drama en System: Bargain to Godhood Ep. 2 con saldo de $15 e íconos flotantes",
+        "caption": "Reproductor Shorts (System: Bargain to Godhood, Ep. 2) con el saldo en $15 y los íconos flotantes de AirPods (0/20), cochinito (2/3) e iPhone (0%).",
+        "wide": false
+      },
+      "sources": [
+        {
+          "title": "apps308: Análisis de CashDrama y bloqueo de $100",
+          "url": "https://www.apps308.com/es/cashdrama-es-confiable-si-paga-opiniones/"
+        },
+        {
+          "title": "apps308: Análisis de DramaStack y prueba de retiro",
+          "url": "https://www.apps308.com/es/dramastack-paga-o-no/"
+        },
+        {
+          "title": "apps308: Análisis de DramaGood (¿paga de verdad?)",
+          "url": "https://www.apps308.com/es/dramagood-paga-de-verdad/"
+        },
+        {
+          "title": "CashDrama en Google Play (com.reward.drama.earn.watch.tool)",
+          "url": "https://play.google.com/store/apps/details?id=com.reward.drama.earn.watch.tool&hl=es"
+        }
+      ],
+      "relatedIds": [
+        "short-drama-apps-compared",
+        "cashdrama",
+        "dramastack",
+        "dramagood",
+        "primeopinion",
+        "pawns",
+        "freecash"
+      ]
+    },
+    {
+      "id": "short-drama-apps-compared",
+      "app": "compare",
+      "category": "rewards",
+      "slug": "apps-de-novelas-cortas-que-pagan-por-ver-videos",
+      "title": "Apps que Prometen Pagar por Ver Novelas y Videos (2026): ¿Cuáles Sí Pagan?",
+      "description": "Comparamos DramaStack, CashDrama, Cash Fortune Drama, DramaGood y PineDrama: qué apps de mininovelas bloquean el retiro y cuáles sí pagan dinero real en 2026.",
+      "modifiedDate": "2026-11-18",
+      "intro": "Decenas de apps de novelas cortas verticales prometen entre $100 y $3,000 USD —o retiros instantáneos por PIX y PayPal— solo por ver capítulos cortos. Tras revisar pantalla por pantalla DramaStack, CashDrama, Cash Fortune Drama, DramaGood, PineDrama y DramaBox en 2026, el resultado es claro: cuatro no pagan dinero real, DramaBox es solo streaming freemium y únicamente PineDrama ofrece centavos simbólicos en mercados promocionales concretos (30.000 puntos = R$ 1 / ~$0,18 USD), sin pestaña de cobro en la mayoría de países hispanos.",
+      "topCallout": {
+        "title": "Evita mínimos imposibles de $100–$500 en apps de novelas: alternativas que sí pagan",
+        "text": "Si buscas retiros reales por PayPal, tarjetas regalo o incentivos transparentes con mínimos bajos, revisa nuestras opciones verificadas:",
+        "links": [
+          {
+            "label": "TikTok Lite (código DL70959891)",
+            "url": "/es/tiktok-lite-recompensas-retiro/"
+          },
+          {
+            "label": "Prime Opinion (+10% código ALNTFL)",
+            "url": "/es/prime-opinion-opiniones-como-funciona-paga/"
+          },
+          {
+            "label": "Pawns.app (bono de $3)",
+            "url": "/es/pawns-app-como-funciona-guia-completo/"
+          },
+          {
+            "label": "Freecash (ofertas y juegos)",
+            "url": "/es/freecash-ofertas-invitaciones/"
+          }
+        ]
+      },
+      "sections": [
+        {
+          "heading": "Panorama 2026: qué apps de mininovelas no pagan vs. PineDrama y DramaBox",
+          "paragraphs": [
+            "En nuestras pruebas de 2026, cuatro aplicaciones de dramas cortos repiten el mismo patrón que impide cobrar: [DramaStack](/es/dramastack-paga-o-no/) (muestra retiro de R$ 300 / ~$55–$60 USD, ~50 € o ~$1.050 MXN, pero su política dice que las monedas virtuales no se convierten en dinero), [CashDrama](/es/cashdrama-es-confiable-si-paga-opiniones/) (bloquea tarjetas de $1 y $100+ tras reglas de 12 episodios y Day 2 Unlock), [Cash Fortune Drama](/es/cash-fortune-drama-paga-es-confiable/) (exige $500–$3,000 y usa el cebo de un iPhone) y [DramaGood](/es/dramagood-paga-de-verdad/) (frena en R$ 106,60 frente a un mínimo de R$ 240 sin mención a pagos en Google Play ni en su Política de Privacidad).",
+            "Por otro lado, [PineDrama](/es/pinedrama-paga-dinero-real-como-retirar/) —la app oficial de mininovelas de TikTok— funciona sin pestaña de retiro en la mayoría de países de habla hispana (España, México, Argentina, Colombia), y donde la campaña está activa (como Brasil) paga apenas centavos simbólicos a razón de 30.000 puntos = R$ 1 (~$0,18 USD). Mientras tanto, [DramaBox](/es/dramabox-es-confiable-gratis-o-de-paga/) es únicamente streaming freemium con más de 16.000 series cuyas monedas solo desbloquean episodios internos."
+          ]
+        },
+        {
+          "heading": "Candados y patrones repetidos en las apps que no pagan",
+          "paragraphs": [
+            "Aunque cambien de nombre y colores, estas apps usan el mismo guion: inflar el saldo al principio para que la meta parezca cercana y luego frenar el cobro con requisitos de anuncios. En nuestra prueba de [retiro en CashDrama](/es/cashdrama-como-retirar-dinero-paga-por-ver-videos/), la cuenta subió a $99.86 y $106.84 en el Día 1 —marcando '$0 to go' en la tarjeta de $100—, pero el botón 'Withdraw Now' siguió gris bajo los bloqueos 'Day 2 Unlock' y '12 ep. left'.",
+            "DramaStack muestra niveles desde R$ 1.510 y mínimo oficial de R$ 300 (~$55–$60 USD), pero sus reglas internas indican que los bonos sirven para desbloquear episodios. En todas ellas aparecen cintas flotantes de supuestos ganadores ($240, R$ 300, $500 o $800) imposibles de auditar externamente."
+          ],
+          "image": {
+            "key": "cashdrama-withdraw-1",
+            "alt": "Pantalla Withdraw de CashDrama con saldo de $99.86, $1 bloqueado por 12 episodios y $100 bloqueado por Day 2 Unlock",
+            "caption": "CashDrama con $99.86: incluso el intento de $1 exige 12 episodios con recompensas y el de $100 mantiene 'Day 2 Unlock'.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Cash Fortune Drama: mínimo de $500, pop-ups AD y cebo del iPhone",
+          "paragraphs": [
+            "Cash Fortune Drama lleva esa fórmula al extremo: el saldo salta rápido de $0 a $15 y $35 en el reproductor Shorts, mientras la pantalla Withdraw fija mínimos imposibles de $500, $1,000, $1,500 y $3,000 sobre pestañas de PIX, PicPay, Mercado Libre y Nubank junto a un ticker superior no verificable con supuestos retiros de $500 y $1,500.",
+            "Al llenarse el cochinito dorado, el pop-up 'Congratulations!' enfrenta un botón gigante 'Claim $200' con etiqueta de anuncio (AD) contra un enlace minúsculo 'Only $10'. Otra ventana promete un iPhone 17 Pro MAX ($1,199) enviado desde Apple si ves una serie entera y envías tu dirección física: un riesgo claro para tus datos, ya que la publicidad en video deja centavos por vista."
+          ],
+          "image": {
+            "key": "cashfortunedrama-withdraw",
+            "alt": "Pantalla Withdraw de Cash Fortune Drama con saldo de $35, mínimos de $500 a $3,000 y ticker superior",
+            "caption": "Pantalla Withdraw de Cash Fortune Drama: BALANCE $35 frente a metas de $500 a $3,000 y avisos superiores sin respaldo.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "DramaGood: saldo estancado en R$ 106,60 frente al mínimo de R$ 240",
+          "paragraphs": [
+            "En nuestra prueba del 16 de noviembre de 2026 con DramaGood (com.drama.good.shortplay.atsab), la cartera arrancó en R$ 106,60 —a R$ 133,40 del mínimo de R$ 240, con opciones de hasta R$ 1.600— y la pestaña de tareas prometía premios de R$ 7.777 y R$ 3.333. Completar la reseña de 5 estrellas y activar notificaciones no movió la barrera real.",
+            "Además, ni la ficha oficial en Google Play ni la Política de Privacidad (drama-good.com/privacy.html) mencionan pagos en efectivo ni transferencias: describen únicamente un servicio de streaming con beneficios internos."
+          ],
+          "image": {
+            "key": "dramagood-carteira",
+            "alt": "Cartera de DramaGood mostrando saldo de R$ 106,60 y opciones de retiro de R$ 240 a R$ 1.600",
+            "caption": "Cartera de DramaGood: saldo de R$ 106,60 estancado a R$ 133,40 del mínimo de R$ 240 junto a íconos de tarjetas y Pix.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "PineDrama vs. DramaBox: centavos regionales vs. streaming puro",
+          "paragraphs": [
+            "A diferencia de esas apps, [PineDrama](/es/pinedrama-opiniones-es-confiable-que-es/) (com.ss.android.ttmd.video) pertenece a TikTok y muestra la conversión real donde el programa existe: en Brasil, 30.000 puntos equivalen a R$ 1 BRL (~$0,18 USD, ~$3,60 MXN o ~$750 COP), con retiros por PIX desde R$ 0,10 hasta R$ 2,00. Aun así, ver 30 anuncios diarios de 30 segundos (15 minutos de publicidad) deja como máximo 12.000 puntos (~R$ 0,40), y la pestaña de dinero no aparece en la mayoría de países hispanos.",
+            "DramaBox (com.storymatrix.drama), por su parte, nunca promete efectivo: sus monedas (+10 a +30 por anuncio) sirven solo para desbloquear episodios dentro de su catálogo freemium de más de 16.000 dramas, con opciones analizadas en nuestra guía de [precio de monedas y recarga vs. VIP en DramaBox](/es/dramabox-precio-monedas-recarga-vs-suscripcion-vip/)."
+          ],
+          "image": {
+            "key": "pinedrama-cashout",
+            "alt": "Centro de canje de PineDrama mostrando 920 puntos equivalentes a R$ 0,03 y opciones PIX de R$ 0,10 a R$ 2,00",
+            "caption": "Centro de canje de PineDrama en Brasil: tasa transparente de 30.000 puntos = R$ 1 (~$0,18 USD), pensada solo para centavos simbólicos.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Alternativa de videos cortos con reglas claras: TikTok Lite",
+          "paragraphs": [
+            "Si prefieres una app de videos cortos con reglas documentadas en mercados compatibles, [TikTok Lite](/es/tiktok-lite-recompensas-retiro/) (com.zhiliaoapp.musically.go) detalla sus puntos y vencimientos dentro de la propia pestaña Recompensas. En las capturas de Brasil del 16 de noviembre de 2026, 240.769 puntos equivalían a R$ 8,02 (~30.000 puntos por R$ 1,00), con retiros desde R$ 0,50 vía Pix, PagBank o transferencia y recargas móviles desde R$ 10.",
+            "Sin referidos, completar los 30 anuncios diarios (6.000 puntos) rinde cerca de R$ 0,20, así que conviene verlo como un extra ligero mientras ves videos y revisar las condiciones del código de invitación DL70959891 para cuentas nuevas elegibles."
+          ],
+          "image": {
+            "key": "tiktoklite-saque",
+            "alt": "Pantalla Canjear recompensas de TikTok Lite con opciones Pix, PagBank y transferencia desde R$ 0,50",
+            "caption": "Pantalla Canjear recompensas de TikTok Lite: montos bajos desde R$ 0,50 en regiones con campaña activa.",
+            "wide": false
+          },
+          "cta": {
+            "label": "Entrar a TikTok Lite con el enlace oficial (código DL70959891)",
+            "url": "https://www.tiktok.com/d/4/ZS9fcGCx9xhYn-v2KXS/",
+            "sponsored": true
+          }
+        },
+        {
+          "heading": "Comparativa con alternativas verificadas en PayPal y tarjetas regalo",
+          "paragraphs": [
+            "Para cobrar dinero real en PayPal desde cualquier país compatible sin depender de apps de novelas, las plataformas de encuestas y tareas tienen mínimos alcanzables. [Prime Opinion](/es/prime-opinion-opiniones-como-funciona-paga/) muestra el pago exacto en dólares antes de empezar (como $0.27 USD por 2 minutos), paga por PayPal, Venmo, transferencia o tarjetas desde $5.25 USD y ofrece +10% durante 24 horas con el código ALNTFL. [AttaPoll](/es/attapoll-como-funciona-encuestas/) reúne encuestas rápidas con calificación en estrellas y retiros bajos por PayPal según el país ($3 USD en Google Play en inglés / €2,50 en español).",
+            "También destacan [Pawns.app](/es/pawns-app-como-funciona-guia-completo/), que combina compartir internet opcional con encuestas y juegos desde $5.00 USD por PayPal o Bitcoin (código 6823713 para el bono de $3 dividido en $1 tras tus tres primeros retiros válidos), y [Freecash](/es/freecash-ofertas-invitaciones/) (Almedia GmbH, código 3C7GKG), orientado a metas de juegos móviles —revisando siempre los requisitos del primer retiro (como $25 USD en regiones aplicables) y las comisiones de PayPal (5% + $1 USD en montos de $5 a $20) en nuestro análisis sobre si [Freecash es confiable y paga](/es/freecash-opiniones-es-confiable-si-paga/)."
+          ],
+          "image": {
+            "key": "primeopinion-rewards",
+            "alt": "Menú de retiro de Prime Opinion con opciones PayPal y Venmo desde $5.25 USD",
+            "caption": "Pantalla de retiro de Prime Opinion: pagos desde $5.25 USD por PayPal y Venmo frente a bloqueos de $100–$500.",
+            "wide": true
+          },
+          "cta": {
+            "label": "Probar Prime Opinion con +10% de bono (código ALNTFL)",
+            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d",
+            "sponsored": true
+          }
+        }
+      ],
+      "tables": [
+        {
+          "heading": "Apps de Novelas Cortas vs. Alternativas Reales que Pagan (2026)",
+          "columns": [
+            "App",
+            "Promesa / Mínimo mostrado",
+            "Realidad observada en las pruebas",
+            "Estado en 2026"
+          ],
+          "rows": [
+            [
+              "DramaStack",
+              "R$ 300 (~$55–$60 USD / ~50 € / ~$1.050 MXN) a R$ 1.510+",
+              "Su política dice que las monedas virtuales no se convierten en dinero; bonos solo desbloquean episodios",
+              "No paga en la práctica"
+            ],
+            [
+              "CashDrama",
+              "$1 (12 ep.) / $100 a $1K",
+              "Sube a $99.86–$106.84 el día 1, pero Withdraw Now sigue bloqueado por Day 2 Unlock y 12 episodios",
+              "No paga de forma confiable"
+            ],
+            [
+              "Cash Fortune Drama",
+              "$500 a $3,000 + iPhone 17 Pro MAX",
+              "Salto rápido $0 -> $35, pop-up +$200 AD vs. Only $10, cebo iPhone $1,199 pidiendo dirección",
+              "No paga"
+            ],
+            [
+              "DramaGood",
+              "R$ 240 a R$ 1.600 / tareas R$ 7.777",
+              "Estancada en R$ 106,60 (faltan R$ 133,40); Google Play y Privacidad no citan pagos en efectivo",
+              "No paga"
+            ],
+            [
+              "PineDrama",
+              "R$ 0,10–R$ 2,00 PIX (30.000 pts = R$ 1)",
+              "App oficial de TikTok; sin pestaña de retiro en la mayoría de países hispanos; paga centavos (~$0,18 USD) en Brasil",
+              "Solo centavos en regiones activas"
+            ],
+            [
+              "DramaBox",
+              "Reward Coins (+10 a +30 por anuncio)",
+              "Streaming freemium (16.000+ dramas); monedas solo para desbloquear capítulos internos",
+              "Solo streaming (sin retiro)"
+            ],
+            [
+              "TikTok Lite",
+              "Desde R$ 0,50 PIX/PagBank (regional)",
+              "30.000 pts = R$ 1,00 observado en Brasil; 30 anuncios = ~R$ 0,20; puntos caducan; código DL70959891",
+              "Paga montos bajos según región"
+            ],
+            [
+              "Prime Opinion",
+              "Desde $5.25 USD (PayPal, Venmo, tarjetas)",
+              "Pago exacto en USD por encuesta ($0.27+ en 2 min), estrellas comunitarias y +10% código ALNTFL",
+              "Verificada y paga"
+            ],
+            [
+              "Pawns.app",
+              "Desde $5.00 USD (PayPal, Bitcoin, tarjetas)",
+              "Encuestas, juegos e internet compartido opcional; bono $3 (código 6823713) en los primeros 3 retiros",
+              "Verificada y paga"
+            ],
+            [
+              "Freecash",
+              "Según método ($25 primer retiro en regiones)",
+              "Plataforma de Almedia GmbH para metas de juegos y ofertas; comisión PayPal 5% + $1 en $5–$20; código 3C7GKG",
+              "Legítima (sujeta a seguimiento/KYC)"
+            ],
+            [
+              "AttaPoll",
+              "Mínimo bajo regional PayPal ($3 / €2,50 en Play)",
+              "Encuestas y juegos móviles con estrellas; envío en hasta 72h; código cgfky",
+              "Verificada y paga"
+            ]
+          ],
+          "afterSectionIndex": 0
+        }
+      ],
+      "steps": [
+        "Abre primero la pestaña de retiro en cualquier app de novelas para detectar mínimos irreales de $100–$3,000 o R$ 240–R$ 300.",
+        "Revisa Google Play y la Política de Privacidad: si no mencionan retiros en efectivo (como DramaStack y DramaGood), las monedas no son dinero.",
+        "Nunca entregues tu dirección física ni datos personales en pop-ups que prometen teléfonos gratis como el iPhone 17 Pro MAX.",
+        "Si solo quieres ver mininovelas gratis, usa apps oficiales como PineDrama o DramaBox sin esperar ingresos.",
+        "Para ganar dinero real por PayPal o tarjetas regalo, usa alternativas verificadas como Prime Opinion, Pawns.app, AttaPoll, Freecash o TikTok Lite regional."
+      ],
+      "pros": [
+        "Distingue con pruebas visuales qué apps de novelas bloquean pagos, cuáles son solo streaming y qué plataformas sí pagan.",
+        "Reúne mínimos reales, tasas de conversión verificadas y enlaces a las reseñas completas de cada app."
+      ],
+      "cons": [
+        "La mayoría de las apps de novelas cortas con promesas de dinero bloquean el retiro tras anuncios y candados.",
+        "Incluso las apps legítimas de videos cortos (PineDrama y TikTok Lite) solo entregan centavos diarios sin referidos."
+      ],
+      "faq": [
+        {
+          "q": "¿Cuál app de novelas cortas paga de verdad?",
+          "a": "Ninguna paga las cifras altas que anuncian. Entre las apps de mininovelas, solo PineDrama (de TikTok) tiene una pestaña regional en mercados específicos como Brasil (30.000 puntos = R$ 1 / ~$0,18 USD, es decir, pocos centavos), mientras que DramaBox es únicamente streaming y DramaStack, CashDrama, Cash Fortune Drama y DramaGood bloquean o no respaldan pagos."
+        },
+        {
+          "q": "¿DramaStack, CashDrama, Cash Fortune Drama o DramaGood pagan?",
+          "a": "No de forma confiable ni comprobada. DramaStack fija R$ 300 (~$55–$60 USD) pero su política prohíbe convertir monedas en dinero; CashDrama traba el retiro tras 12 episodios y Day 2 Unlock; Cash Fortune Drama exige $500–$3,000 con cebo de iPhone; y DramaGood frena en R$ 106,60 bajo un mínimo de R$ 240."
+        },
+        {
+          "q": "¿PineDrama sigue pagando por ver novelas en 2026?",
+          "a": "En la mayoría de países hispanos (España, México, Argentina, Colombia) PineDrama no incluye pestaña de retiro y es solo para ver series gratis. Donde el programa promocional está activo (como en Brasil), paga centavos simbólicos a razón de 30.000 puntos = R$ 1 (~$0,18 USD)."
+        },
+        {
+          "q": "¿Qué alternativas sí pagan dinero real por PayPal o moneda local?",
+          "a": "Opciones verificadas con retiros bajos son Prime Opinion (PayPal desde $5.25 USD, código ALNTFL), Pawns.app (PayPal/Bitcoin desde $5.00 USD, código 6823713), AttaPoll (PayPal regional desde $3 USD / €2,50, código cgfky), Freecash (juegos y ofertas, código 3C7GKG) y TikTok Lite en países con campaña activa (código DL70959891)."
+        }
+      ],
+      "verdict": "DramaStack, CashDrama, Cash Fortune Drama y DramaGood no sirven para ganar dinero: sus saldos inflados y mínimos de $100–$3,000 o R$ 240–R$ 300 solo buscan retenerte viendo anuncios. Usa DramaBox o PineDrama únicamente para entretenerte y elige Prime Opinion, Pawns.app, AttaPoll, Freecash o TikTok Lite regional si quieres retiros reales.",
+      "imageAlt": "Pantalla de retiro de DramaStack mostrando mínimo de R$ 300 y niveles superiores",
+      "caption": "DramaStack exhibe un mínimo de R$ 300 (~$55–$60 USD) y niveles desde R$ 1.510, mientras su política prohíbe convertir monedas virtuales en dinero.",
+      "imageKey": "dramastack-payout",
+      "imageWide": false,
+      "relatedIds": [
+        "dramastack",
+        "cashdrama",
+        "cashfortunedrama",
+        "dramagood",
+        "pinedrama-rewards",
+        "primeopinion",
+        "pawns",
+        "tiktoklite"
+      ]
+    },
+    {
+      "id": "opinion-vs-primeopinion-attapoll",
+      "app": "compare",
+      "category": "rewards",
+      "slug": "google-opinion-rewards-vs-prime-opinion-cual-paga-mejor",
+      "title": "Google Opinion Rewards vs Prime Opinion (2026): ¿Crédito Play o Dinero PayPal?",
+      "description": "Comparamos Google Opinion Rewards frente a Prime Opinion y AttaPoll: crédito en Google Play (con vencimiento de 1 año) vs. dinero real en PayPal y tarjetas regalo.",
+      "modifiedDate": "2026-11-18",
+      "intro": "Google Opinion Rewards es una de las apps de encuestas más populares en Android, pero muchos usuarios descubren tarde que sus recompensas se acreditan como saldo de Google Play Store y no como dinero retirable a PayPal o cuenta bancaria. Comparar [Google Opinion Rewards](/es/google-opinion-rewards-como-funciona/) frente a [Prime Opinion](/es/prime-opinion-opiniones-como-funciona-paga/) y [AttaPoll](/es/attapoll-como-funciona-encuestas/) deja claro cuándo conviene cada plataforma.",
+      "topCallout": {
+        "title": "Consulta los análisis completos de cada app",
+        "text": "Revisa capturas reales, reglas de retiro y códigos oficiales antes de empezar:",
+        "links": [
+          {
+            "label": "Guía de Google Opinion Rewards (saldo Play y caducidad)",
+            "url": "/es/google-opinion-rewards-como-funciona/"
+          },
+          {
+            "label": "Opiniones de Prime Opinion (+10% código ALNTFL)",
+            "url": "/es/prime-opinion-opiniones-como-funciona-paga/"
+          },
+          {
+            "label": "Cómo funciona AttaPoll (estrellas y código cgfky)",
+            "url": "/es/attapoll-como-funciona-encuestas/"
+          }
+        ]
+      },
+      "sections": [
+        {
+          "heading": "Tipo de recompensa y caducidad: crédito en Google Play vs. dinero PayPal",
+          "paragraphs": [
+            "La diferencia principal está en dónde puedes gastar lo acumulado. Según la documentación oficial de Google, [Google Opinion Rewards en Android](/es/google-opinion-rewards-como-funciona/) entrega crédito de Google Play Store —sin retiro bancario ni PayPal— y cada abono caduca un año después de recibirse. En iOS, la disponibilidad y las reglas de pago cambian según el país, por lo que conviene revisar la ficha de cada sistema.",
+            "Por el contrario, [Prime Opinion](/es/como-cobrar-en-prime-opinion-paypal-codigo-bono/) muestra el saldo directamente en dólares estadounidenses y permite cobrar por PayPal, Venmo (donde esté disponible), transferencia bancaria y tarjetas de regalo digitales (como Google Play o Apple) desde $5.25 USD. [AttaPoll](/es/como-retirar-dinero-attapoll/) también ofrece carteras en efectivo como PayPal y Revolut, además de tarjetas regalo según tu país."
+          ]
+        },
+        {
+          "heading": "Disponibilidad de encuestas y control: Prime Opinion (ALNTFL) vs. avisos pasivos",
+          "paragraphs": [
+            "En Google Opinion Rewards no existe un muro continuo de cuestionarios: recibes invitaciones pasivas según tu perfil y elegibilidad, algunas caducan en 24 horas y el crédito puede tardar unos días en reflejarse, lo que impide planificar ganancias diarias.",
+            "Prime Opinion ofrece un panel activo con filtros de 'Mejor Coincidencia', 'Encuestas Cortas' (menos de 5 minutos) y 'Mayor Pago', junto con valoraciones de la comunidad en estrellas (como 5 estrellas sobre 110 opiniones), precios claros en dólares (por ejemplo, $0.27 USD por una encuesta de 2 minutos) y ofertas de juegos móviles. Quienes se registran mediante el enlace oficial o ingresan el código ALNTFL dentro de las primeras 24 horas reciben un bono del +10% en todas las encuestas completadas durante su primer día."
+          ],
+          "image": {
+            "key": "primeopinion-home",
+            "alt": "Panel principal de Prime Opinion con saldo en dólares, encuestas cortas y bonos del +25%",
+            "caption": "Prime Opinion permite filtrar encuestas cortas y mejor pagadas en dólares, con +10% adicional durante 24h usando el código ALNTFL.",
+            "wide": false
+          },
+          "cta": {
+            "label": "Regístrate en Prime Opinion con +10% de bono (código ALNTFL)",
+            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d",
+            "sponsored": true
+          }
+        },
+        {
+          "heading": "Encuestas en AttaPoll, estrellas de probabilidad y código cgfky (7 días)",
+          "paragraphs": [
+            "[AttaPoll](/es/attapoll-como-funciona-encuestas/) también ofrece un listado activo de encuestas, juegos y tareas en el móvil. Cada tarjeta muestra el importe anunciado, la duración estimada y estrellas que, según la ayuda oficial de AttaPoll, indican la probabilidad relativa de terminar esa encuesta (en la cuenta de ejemplo se veían USD 0,12 en 12 minutos con 2 estrellas y USD 0,39 en 8 minutos con 3 estrellas, además de una tarjeta de USD 0,02 y 11 preguntas para desbloquear encuestas).",
+            "Al igual que en Prime Opinion, el abono depende de la validación del proveedor y pueden producirse descalificaciones o cuotas llenas. Si deseas aplicar el [código de invitación cgfky en AttaPoll](/es/codigo-invitacion-attapoll/), la ayuda oficial permite introducirlo en Configuración durante los siete días posteriores al registro, siempre que no exista otra invitación previa."
+          ],
+          "image": {
+            "key": "attapoll-pesquisas",
+            "alt": "Lista de encuestas en AttaPoll con importes, duración estimada y estrellas",
+            "caption": "Listado de AttaPoll: cada oferta muestra recompensa, minutos estimados y estrellas de probabilidad relativa de cierre.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Mínimos de retiro, plazos de envío y reglas por país",
+          "paragraphs": [
+            "Los requisitos de cobro varían según la región y la cuenta. Google Opinion Rewards no tiene mínimo de retiro en Android porque el saldo va directo a Google Play (con vencimiento de 1 año). En [Prime Opinion](/es/como-cobrar-en-prime-opinion-paypal-codigo-bono/), los retiros arrancan desde $5.25 USD en PayPal, Venmo y tarjetas regalo; los vales digitales suelen entregarse casi al instante y los envíos por PayPal llegan en minutos o hasta 24 horas (pueden aplicarse comisiones de terceros y solo se admite una cuenta verificada).",
+            "En [los retiros de AttaPoll](/es/como-retirar-dinero-attapoll/), no existe un único mínimo global: la propia app muestra el límite exacto según tu país y método. Como referencia de tienda, la ficha de Google Play en inglés cita $3 y la ficha en español cita €2,50, mientras la cuenta de ejemplo mostraba un saldo acumulado de USD 2,52 junto a PayPal, Revolut y tarjetas locales. La ayuda oficial indica que el envío del pago puede tardar hasta 72 horas."
+          ],
+          "image": {
+            "key": "primeopinion-rewards",
+            "alt": "Menú de retiros de Prime Opinion con PayPal, Venmo y tarjetas regalo desde $5.25 USD",
+            "caption": "Pantalla de cobro de Prime Opinion: PayPal, Venmo y tarjetas de regalo digitales a partir de $5.25 USD.",
+            "wide": false
+          },
+          "cta": {
+            "label": "Descargar AttaPoll con el código cgfky",
+            "url": "https://attapoll.app/join/cgfky",
+            "sponsored": true
+          }
+        },
+        {
+          "heading": "¿Conviene usar las tres aplicaciones al mismo tiempo?",
+          "paragraphs": [
+            "Sí, porque cumplen papeles distintos y no compiten por tu saldo. Mantén Google Opinion Rewards en Android si quieres pagar apps, libros o suscripciones dentro de Google Play Store antes de que cada crédito caduque al año.",
+            "Cuando prefieras dinero real en PayPal o métodos flexibles, prioriza Prime Opinion (aprovechando el +10% de las primeras 24h con ALNTFL) y combina AttaPoll en el móvil con el [código cgfky](/es/codigo-invitacion-attapoll/) para aprovechar encuestas cortas con mínimos regionales bajos."
+          ],
+          "image": {
+            "key": "attapoll-carteira",
+            "alt": "Cartera de AttaPoll mostrando saldo acumulado de USD 2,52 y botón de retiro",
+            "caption": "Pantalla de saldo en AttaPoll (ejemplo con USD 2,52): métodos disponibles y mínimos dependen de tu país y cuenta.",
+            "wide": false
+          }
+        }
+      ],
+      "tables": [
+        {
+          "heading": "Google Opinion Rewards vs. Prime Opinion vs. AttaPoll (Comparativa 2026)",
+          "columns": [
+            "Criterio",
+            "Google Opinion Rewards",
+            "Prime Opinion",
+            "AttaPoll"
+          ],
+          "rows": [
+            [
+              "Tipo de pago",
+              "Crédito en Google Play en Android (reglas distintas en iOS)",
+              "Dinero en USD (PayPal, Venmo, banco) y tarjetas regalo",
+              "Carteras (PayPal, Revolut) y tarjetas regalo regionales"
+            ],
+            [
+              "Caducidad / Mínimo",
+              "El crédito Play de Android caduca en 1 año; sin retiro a PayPal/banco",
+              "Desde $5.25 USD (minutos a 24h en PayPal; vales casi al instante)",
+              "Varía por país/método ($3 EN / €2,50 ES en Play Store; hasta 72h de envío)"
+            ],
+            [
+              "Control de encuestas",
+              "Notificaciones pasivas; frecuencia imprevisible; encuestas expiran en 24h",
+              "Panel activo con filtros (Mejor Coincidencia, Cortas <5 min, Mayor Pago) y juegos",
+              "Listado activo con importe, duración, estrellas de probabilidad, juegos y tareas"
+            ],
+            [
+              "Bono o código",
+              "Solo enlace genérico para compartir (sin bono de referido)",
+              "Código ALNTFL (+10% extra en encuestas durante 24h tras el registro)",
+              "Código cgfky (introducir en Configuración dentro de los primeros 7 días)"
+            ],
+            [
+              "Mejor uso práctico",
+              "Descontar compras puntuales dentro de Google Play Store",
+              "Cobros rápidos por PayPal con valores transparentes en dólares",
+              "Encuestas breves desde el móvil con mínimos regionales bajos"
+            ]
+          ],
+          "afterSectionIndex": 0
+        }
+      ],
+      "steps": [
+        "Define si buscas saldo para Google Play (Google Opinion Rewards) o dinero real retirable (Prime Opinion y AttaPoll).",
+        "Usa Google Opinion Rewards en Android solo para compras de Play Store y vigila la caducidad de 1 año de cada crédito.",
+        "Regístrate en Prime Opinion desde el enlace oficial e introduce el código ALNTFL en las primeras 24 horas para activar el +10%.",
+        "Instala AttaPoll, aplica el código cgfky en Configuración dentro de 7 días y prioriza encuestas con mejor calificación en estrellas.",
+        "Revisa siempre los métodos y mínimos reales mostrados en tu cuenta antes de solicitar un retiro por PayPal o tarjeta regalo."
+      ],
+      "pros": [
+        "Aclara la diferencia real entre saldo cerrado de Google Play (con caducidad) y dinero retirable por PayPal.",
+        "Incluye capturas verificadas, ventanas oficiales de códigos (ALNTFL y cgfky) y límites reales por región."
+      ],
+      "cons": [
+        "Ninguna de las tres apps garantiza un flujo diario fijo de encuestas ni sustituye un salario.",
+        "Los métodos, divisas y mínimos exactos cambian según el país y la verificación de cada cuenta."
+      ],
+      "faq": [
+        {
+          "q": "¿Se puede retirar el dinero de Google Opinion Rewards a PayPal o al banco?",
+          "a": "En Android, no. Google indica que las recompensas de Android son crédito para compras elegibles en Google Play Store, sin retiro bancario ni a PayPal, y con caducidad de un año. En iOS la disponibilidad y reglas de pago varían según el país."
+        },
+        {
+          "q": "¿Cuál paga más rápido dinero real: Prime Opinion o AttaPoll?",
+          "a": "Prime Opinion permite retirar desde $5.25 USD por PayPal, Venmo o tarjetas regalo y suele procesar PayPal en minutos hasta 24 horas. AttaPoll ofrece mínimos regionales bajos en varios mercados ($3 o €2,50 citados en Google Play según el país) con un plazo oficial de envío de hasta 72 horas."
+        },
+        {
+          "q": "¿Vale la pena usar Google Opinion Rewards, Prime Opinion y AttaPoll juntos?",
+          "a": "Sí. Como Google Opinion Rewards envía avisos pasivos de vez en cuando para Play Store y Prime Opinion junto con AttaPoll ofrecen listados activos para cobrar en PayPal, usarlos en paralelo cubre ambos objetivos."
+        },
+        {
+          "q": "¿Cómo se activan los códigos ALNTFL y cgfky?",
+          "a": "En Prime Opinion, regístrate con el enlace oficial o introduce ALNTFL en 'Refer a Friend' dentro de las primeras 24 horas para sumar +10% durante un día. En AttaPoll, ingresa cgfky en Configuración dentro de los 7 días posteriores al registro si aún no tienes otra invitación aplicada."
+        },
+        {
+          "q": "¿Los saldos de Prime Opinion o AttaPoll caducan en 1 año como en Google Opinion Rewards?",
+          "a": "La regla de caducidad de 1 año aplica al crédito promocional de Google Play obtenido en Android con Google Opinion Rewards. Prime Opinion y AttaPoll no aplican esa regla de Play Store, aunque las cuentas siguen sujetas a las condiciones vigentes de cada servicio."
+        }
+      ],
+      "verdict": "Elige Google Opinion Rewards únicamente si ya consumes apps, juegos o suscripciones en Google Play. Si buscas dinero real en PayPal, transferencias o tarjetas más flexibles, Prime Opinion (+10% con ALNTFL) y AttaPoll (mínimos regionales bajos con cgfky) ofrecen control activo y cobros retirables—y usar los tres juntos maximiza ambos beneficios.",
+      "imageAlt": "Pantalla de tareas de Google Opinion Rewards con encuesta disponible y opciones de perfil",
+      "caption": "Interfaz de Google Opinion Rewards en Android: paga crédito para Play Store (caducidad de 1 año), no dinero retirable.",
+      "imageKey": "opinion",
+      "imageWide": false,
+      "relatedIds": [
+        "opinion",
+        "primeopinion",
+        "primeopinion-cashout",
+        "attapoll",
+        "attapoll-saque",
+        "attapoll-convite"
+      ]
+    },
+    {
+      "id": "microsoft-catalog",
+      "app": "microsoft",
+      "category": "rewards",
+      "slug": "catalogo-microsoft-rewards-valor-puntos-tarjetas-regalo",
+      "title": "Catálogo Microsoft Rewards (2026): Cuánto Valen los Puntos y Cómo Canjear",
+      "description": "Guía del catálogo Microsoft Rewards 2026: cómo funcionan los puntos, diferencias entre Nivel 1 y Nivel 2, tarjetas regalo, rachas diarias y sellos (stamps).",
+      "intro": "Antes de pasar semanas acumulando puntos en Microsoft Rewards, abre la pestaña Canjear dentro de tu propia cuenta de Microsoft. Como los puntos no tienen un valor universal en efectivo, la cantidad exacta necesaria para tarjetas Microsoft/Xbox, tarjetas regalo de comercios o sorteos depende del catálogo de tu país, de tu Nivel 1 vs. Nivel 2 y de los sellos o rachas activas en tu panel. Si recién empiezas, revisa primero nuestra [guía básica de puntos Microsoft Rewards](/es/guia-puntos-microsoft-rewards/).",
+      "topCallout": {
+        "title": "Consulta las bases del programa o compara apps que pagan dinero en PayPal",
+        "text": "Repasa la guía inicial de Microsoft Rewards o compara plataformas de encuestas si buscas dinero retirable:",
+        "links": [
+          {
+            "label": "Cómo ganar y seguir pedidos en Microsoft Rewards",
+            "url": "/es/guia-puntos-microsoft-rewards/"
+          },
+          {
+            "label": "Google Opinion Rewards vs. Prime Opinion y AttaPoll (PayPal)",
+            "url": "/es/google-opinion-rewards-vs-prime-opinion-cual-paga-mejor/"
+          }
+        ]
+      },
+      "sections": [
+        {
+          "heading": "Cómo funciona el catálogo regional de Microsoft Rewards y por qué cambia el valor del punto",
+          "paragraphs": [
+            "Microsoft indica expresamente que los puntos de Rewards no tienen valor en efectivo y solo pueden usarse dentro del catálogo disponible en tu región. Según el país, la sección Canjear ofrece tarjetas regalo de Microsoft y Xbox, saldo para Microsoft Store, tarjetas de tiendas asociadas, donaciones benéficas o participaciones en sorteos, y la disponibilidad puede rotar.",
+            "Al no existir una tasa fija mundial, dos recompensas del mismo monto pueden pedir puntos distintos. Como ejemplo referencial en mercados como EE. UU., las tarjetas Microsoft/Xbox suelen rondar ~1.000 puntos por cada $1 USD, mientras que las tarjetas de terceros exigen más puntos (por ejemplo, ~5.000 a 6.500+ puntos en tarjetas equivalentes a $5 según nivel y país). Toma estas cifras solo como referencia orientativa y confirma el costo real dentro de tu propio panel."
+          ],
+          "source": {
+            "title": "Microsoft: regiones compatibles con Rewards",
+            "url": "https://support.microsoft.com/en-us/accounts-billing/rewards/microsoft-rewards-regions"
+          }
+        },
+        {
+          "heading": "Nivel 1 vs. Nivel 2: límites diarios, descuentos y cómo revisar tu tasa en Canjear",
+          "paragraphs": [
+            "El programa divide las cuentas entre Nivel 1 y Nivel 2 según los puntos acumulados cada mes en la pestaña Estado. Al subir a Nivel 2 en países compatibles, aumentan los límites diarios de puntos por búsquedas/actividades y pueden reducirse los puntos exigidos en determinados premios propios de Microsoft frente al Nivel 1.",
+            "Antes de ahorrar durante semanas para una meta, entra en el artículo específico dentro de Canjear para comprobar el precio exacto de Nivel 1 vs. Nivel 2 y los importes disponibles en tu moneda local. Revisa también si se trata de saldo promocional con fecha de caducidad o de un código de tarjeta regalo enviado al correo e historial de pedidos."
+          ],
+          "source": {
+            "title": "Microsoft: cómo canjear puntos de Rewards",
+            "url": "https://support.microsoft.com/en-us/accounts-billing/rewards/how-to-redeem-microsoft-rewards-points"
+          }
+        },
+        {
+          "heading": "Rachas diarias, sellos (stamps) y piezas: cómo sumarlos sin riesgo de bloqueo",
+          "paragraphs": [
+            "Además de las búsquedas en Bing y cuestionarios, el panel oficial suele mostrar conjuntos diarios (Daily Sets), contadores de racha y tarjetas promocionales de sellos (stamps / punch cards) o rompecabezas según la cuenta y el país. Completar los días consecutivos o los pasos de la tarjeta dentro del plazo desbloquea bonos extra; si fallas un solo día, la racha diaria vuelve a cero.",
+            "Nunca intentes acelerar sellos o búsquedas usando VPN, cambio engañoso de ubicación, scripts ni extensiones automáticas. Microsoft prohíbe la automatización y, al momento de canjear, puede exigir verificación con un número móvil o fijo real (no acepta números VoIP) en la misma región de la cuenta."
+          ],
+          "source": {
+            "title": "Microsoft: cómo ganar puntos de Rewards",
+            "url": "https://support.microsoft.com/en-us/accounts-billing/rewards/how-to-earn-microsoft-rewards-points"
+          }
+        },
+        {
+          "heading": "Cuándo conviene Microsoft Rewards vs. encuestas que pagan en efectivo",
+          "paragraphs": [
+            "Microsoft Rewards tiene sentido si ya utilizas Bing, Edge o Xbox y quieres ahorrar en juegos, suscripciones o tarjetas de tiendas participantes—no si necesitas dinero en efectivo. Sus puntos jamás se transfieren a PayPal ni a una cuenta bancaria.",
+            "Si prefieres ingresos retirables en dinero real junto con tarjetas regalo, puedes complementar el programa con plataformas activas de encuestas como [Prime Opinion](/es/prime-opinion-opiniones-como-funciona-paga/) (retiros desde $5.25 USD y bono +10% en las primeras 24 horas con el código ALNTFL) o [AttaPoll](/es/attapoll-como-funciona-encuestas/) (mínimos regionales bajos y código cgfky). Revisa nuestra [comparativa entre saldo de tienda y dinero en PayPal](/es/google-opinion-rewards-vs-prime-opinion-cual-paga-mejor/) para elegir según tu meta."
+          ],
+          "image": {
+            "key": "primeopinion-rewards",
+            "alt": "Menú de retiro de Prime Opinion con PayPal, Venmo y tarjetas regalo desde $5.25 USD",
+            "caption": "A diferencia del catálogo de tarjetas de Microsoft Rewards, apps como Prime Opinion permiten retirar dinero a PayPal desde $5.25 USD.",
+            "wide": false
+          }
+        }
+      ],
+      "tables": [
+        {
+          "heading": "Factores del Catálogo Microsoft Rewards: Tarjetas, Niveles y Sellos (2026)",
+          "columns": [
+            "Factor del Catálogo",
+            "Cómo Funciona",
+            "Variación por País y Nivel",
+            "Qué Revisar Antes de Canjear"
+          ],
+          "rows": [
+            [
+              "Tarjetas Microsoft y Xbox",
+              "Saldo o códigos para Microsoft Store y ecosistema Xbox",
+              "Suelen tener mejor relación punto/valor (p. ej., referencia ~1.000 pts ≈ $1 USD en EE. UU.); Nivel 2 puede bajar el costo",
+              "Comprueba la caducidad del saldo promocional y el valor exacto en tu pestaña Canjear"
+            ],
+            [
+              "Tarjetas Regalo de Terceros",
+              "Códigos digitales para comercios, supermercados o marcas asociadas",
+              "Requieren más puntos (p. ej., ~5.000–6.500+ pts en niveles de $5 en ejemplos de catálogo regional) y cambian según país",
+              "Confirma que el comercio siga disponible en el catálogo local de tu cuenta"
+            ],
+            [
+              "Nivel 1 vs. Nivel 2",
+              "Categoría mensual basada en los puntos ganados en tu panel Estado",
+              "Nivel 2 amplía topes diarios de búsquedas y ofrece mejores tasas en premios Microsoft en regiones elegibles",
+              "Revisa cuántos puntos faltan en el mes para mantener el Nivel 2 activo"
+            ],
+            [
+              "Rachas Diarias y Sellos (Stamps)",
+              "Actividades consecutivas o tarjetas de tareas con bono de puntos",
+              "Su presencia y puntaje varían por país y cuenta; perder un día reinicia la racha",
+              "Lee los pasos y plazos de cada tarjeta promocional antes de empezar"
+            ],
+            [
+              "Canje y Verificación Telefónica",
+              "Solicitud final revisable en Canjear > Historial de pedidos",
+              "Exige coincidir con la región de la cuenta y puede pedir teléfono móvil o fijo",
+              "No uses VPN, números VoIP ni búsquedas automatizadas"
+            ]
+          ],
+          "afterSectionIndex": 0
+        }
+      ],
+      "steps": [
+        "Accede al panel oficial de Microsoft Rewards y abre Canjear para ver las tarjetas disponibles en tu país.",
+        "Elige una recompensa que realmente uses (Microsoft/Xbox o comercio asociado) y anota su costo en Nivel 1 y Nivel 2.",
+        "Consulta la pestaña Estado para confirmar si alcanzaste el Nivel 2 y aprovechar mayores límites diarios.",
+        "Completa los conjuntos diarios y tarjetas de sellos (stamps) disponibles de forma consecutiva sin romper la racha.",
+        "Al canjear, desactiva cualquier VPN, usa un teléfono móvil o fijo válido si se solicita y revisa Canjear > Historial de pedidos."
+      ],
+      "pros": [
+        "Catálogo oficial transparente con diferencias claras entre Nivel 1 y Nivel 2 en tu panel.",
+        "Las tarjetas Microsoft y Xbox suelen ofrecer mejor rendimiento por punto que las marcas externas."
+      ],
+      "cons": [
+        "Los puntos no tienen valor en efectivo ni permiten retiros por PayPal o transferencia bancaria.",
+        "Las marcas disponibles, los sellos promocionales y el costo exacto en puntos cambian mucho por país."
+      ],
+      "faq": [
+        {
+          "q": "¿Cuánto valen los puntos de Microsoft Rewards en el catálogo 2026?",
+          "a": "Microsoft indica que los puntos no tienen valor en efectivo; su equivalencia depende del catálogo de tu país, la recompensa elegida y tu Nivel 1 o Nivel 2. Como referencia orientativa en mercados como EE. UU., las tarjetas Microsoft/Xbox suelen rondar ~1.000 puntos por $1 USD, frente a ~5.000–6.500+ puntos en tarjetas de terceros de $5; verifica siempre el dato exacto en tu pestaña Canjear."
+        },
+        {
+          "q": "¿Cómo se consiguen los sellos (stamps) y bonos de racha diaria en Microsoft Rewards?",
+          "a": "Los sellos, tarjetas de progreso, piezas y rachas diarias aparecen en las tarjetas promocionales de tu panel oficial de Microsoft Rewards cuando están activos en tu región. Completa cada actividad o racha consecutiva dentro del plazo sin usar VPN ni automatizaciones; perder un día reinicia el contador de racha."
+        },
+        {
+          "q": "¿Qué diferencia hay entre Nivel 1 y Nivel 2 en Microsoft Rewards?",
+          "a": "El Nivel 2 aumenta el límite diario de puntos por búsquedas y actividades elegibles y puede ofrecer descuentos en puntos al canjear tarjetas propias de Microsoft en regiones compatibles. Los requisitos mensuales aparecen en la sección Estado de tu cuenta."
+        },
+        {
+          "q": "¿Se pueden canjear puntos de Microsoft Rewards por dinero en PayPal?",
+          "a": "No. Microsoft Rewards no ofrece retiros a PayPal ni cuentas bancarias; los puntos solo sirven para recompensas dentro del catálogo oficial. Si buscas dinero retirable, conviene usar apps de encuestas como Prime Opinion o AttaPoll."
+        },
+        {
+          "q": "¿Por qué puede fallar un canje o pedir verificación por teléfono?",
+          "a": "Microsoft puede solicitar verificación con un teléfono móvil o fijo real y rechaza números VoIP, conexiones VPN, ubicaciones distintas a la de la cuenta o patrones de búsqueda automatizada. Revisa el estado del envío en Canjear > Historial de pedidos."
+        }
+      ],
+      "verdict": "Microsoft Rewards vale la pena si en el catálogo de tu país hay tarjetas de Microsoft, Xbox o tiendas que ya pensabas usar—sobre todo manteniendo el Nivel 2 y completando rachas o sellos disponibles sin atajos prohibidos. Como no entrega dinero en efectivo, quienes buscan cobros por PayPal obtienen mayor flexibilidad combinándolo con Prime Opinion o AttaPoll.",
+      "imageAlt": "Portal oficial de Microsoft Rewards con pestañas de Ganar, Canjear y beneficios de la cuenta",
+      "caption": "Portal oficial de Microsoft Rewards: revisa siempre tus pestañas Ganar y Canjear para confirmar tasas regionales y sellos activos.",
+      "imageKey": "microsoft",
+      "imageWide": false,
+      "relatedIds": [
+        "microsoft",
+        "opinion-vs-primeopinion-attapoll",
+        "primeopinion",
+        "attapoll"
       ]
     }
   ],
@@ -9638,7 +12294,7 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "Quando o crédito aparece e onde usar",
           "paragraphs": [
-            "O Google informa que os créditos podem levar alguns dias para entrar. No Android, use o saldo em compras elegíveis na Play Store com a mesma conta; cada crédito vence após um ano."
+            "O Google informa que os créditos podem levar alguns dias para entrar. No Android, use o saldo em compras elegíveis na Play Store com a mesma conta; cada crédito vence após um ano. Se você procura saque em dinheiro no PayPal em vez de saldo na loja, veja nosso [comparativo entre Google Opinion Rewards, Prime Opinion e AttaPoll](/pt/google-opinion-rewards-vs-prime-opinion-qual-paga-mais/)."
           ],
           "source": {
             "title": "Google: resgatar recompensas",
@@ -9646,6 +12302,7 @@ export const articles:Record<Locale,Article[]>={
           }
         }
       ],
+      "modifiedDate": "2026-11-18",
       "steps": [
         "Encontre o app na loja oficial e confirme que o desenvolvedor é Google LLC.",
         "Confira os países disponíveis e a idade mínima da sua plataforma.",
@@ -9677,7 +12334,12 @@ export const articles:Record<Locale,Article[]>={
       ],
       "verdict": "Pode fazer sentido para quem já usa crédito na Google Play. Para despesas que exigem dinheiro, não trate essa recompensa do Android como substituto.",
       "imageAlt": "Google Opinion Rewards",
-      "caption": "A área de tarefas reúne pesquisas disponíveis e opções para completar o perfil."
+      "caption": "A área de tarefas reúne pesquisas disponíveis e opções para completar o perfil.",
+      "relatedIds": [
+        "opinion-vs-primeopinion-attapoll",
+        "primeopinion",
+        "attapoll"
+      ]
     },
     {
       "id": "microsoft",
@@ -9692,7 +12354,7 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Comece pelo catálogo de recompensas",
           "paragraphs": [
             "A Microsoft descreve formas de ganhar pontos com atividades elegíveis em seus serviços. As atividades e os catálogos variam conforme a região. Uma oferta mostrada em outro país não garante as mesmas condições na sua conta.",
-            "Escolha uma recompensa que você realmente usaria e confira os pontos necessários. Depois considere as atividades que já faria. Comprar apenas para acumular pontos pode custar mais do que o benefício recebido."
+            "Escolha uma recompensa que você realmente usaria e confira os pontos necessários no nosso [guia do catálogo Microsoft Rewards, valor dos pontos e selos](/pt/catalogo-microsoft-rewards-quanto-valem-os-pontos-resgate/). Depois considere as atividades que já faria. Comprar apenas para acumular pontos pode custar mais do que o benefício recebido."
           ]
         },
         {
@@ -9714,6 +12376,7 @@ export const articles:Record<Locale,Article[]>={
           }
         }
       ],
+      "modifiedDate": "2026-11-18",
       "steps": [
         "Abra o Microsoft Rewards e leia a informação da sua região.",
         "Se decidir participar, entre com sua própria conta Microsoft.",
@@ -9739,13 +12402,23 @@ export const articles:Record<Locale,Article[]>={
           "a": "Não. As ofertas e os catálogos de resgate variam conforme a região."
         },
         {
+          "q": "Como funcionam os selos (stamps), sequências e o catálogo do Microsoft Rewards?",
+          "a": "Os selos, cartões promocionais e sequências diárias aparecem no painel oficial do Microsoft Rewards conforme a disponibilidade da sua conta e região. Você precisa cumprir as tarefas seguidas sem falhar um dia para não zerar a sequência e deve conferir no menu Resgatar quantos pontos cada prêmio exige no Nível 1 ou Nível 2."
+        },
+        {
           "q": "Como encontro o código de uma recompensa?",
           "a": "Abra Resgatar > Histórico de pedidos e selecione os detalhes da recompensa. Ali você encontra o código ou link disponível e pode reenviar o e-mail de confirmação."
         }
       ],
       "verdict": "Consulte primeiro seu catálogo. O programa faz mais sentido se oferecer algo útil por atividades que você já quer fazer.",
       "imageAlt": "Microsoft Rewards",
-      "caption": "O Microsoft Rewards reúne pontos e recompensas vinculados à conta Microsoft."
+      "caption": "O Microsoft Rewards reúne pontos e recompensas vinculados à conta Microsoft.",
+      "relatedIds": [
+        "microsoft-catalog",
+        "opinion-vs-primeopinion-attapoll",
+        "primeopinion",
+        "attapoll"
+      ]
     },
     {
       "id": "freecash",
@@ -9831,20 +12504,21 @@ export const articles:Record<Locale,Article[]>={
       "slug": "dramastack-paga-mesmo",
       "title": "DramaStack Paga Mesmo em 2026? A Verdade Sobre o Saque de R$ 300",
       "description": "O app DramaStack paga mesmo por assistir vídeos ou é golpe? Analisamos o limite de saque de R$ 300, as regras de anúncios e os termos na Play Store.",
-      "intro": "O DramaStack é um app de dramas curtos, mas a aba Benefícios também exibe tarefas, saldo e opções de saque. A tela parece oferecer dinheiro. As regras do próprio aplicativo descrevem as recompensas de outro jeito, então vale conferir os termos antes de gastar tempo nas tarefas.",
+      "modifiedDate": "2026-11-18",
+      "intro": "O DramaStack (também buscado como Drama Stack e, por variação de digitação, Drama Stark) é um app de dramas curtos, mas a aba Benefícios também exibe tarefas, saldo e opções de saque. A tela parece oferecer dinheiro. As regras do próprio aplicativo descrevem as recompensas de outro jeito, então vale conferir os termos antes de gastar tempo nas tarefas.",
       "sections": [
         {
           "heading": "Uma tela de saque com valor mínimo alto",
           "paragraphs": [
             "Na versão Android que abrimos, Benefícios mostrava saldo zerado, tarefas diárias e uma página de saque. Nela, os níveis começavam em R$ 1,51 mil e o texto dizia que o saque oficial em dinheiro começa em R$ 300. Também aparecia uma mensagem parabenizando outra pessoa por um suposto saque de R$ 300, mas a tela não apresentava comprovação independente desse pagamento.",
-            "Os valores e o botão “Sacar” são afirmações exibidas na interface. Não concluímos tarefas, atingimos o mínimo nem solicitamos um saque; portanto, não confirmamos que o usuário receba dinheiro."
+            "Os valores e o botão “Sacar” são afirmações exibidas na interface, repetindo um padrão de meta elevada visto também em nossas análises sobre se o [DramaGood paga mesmo ou trava nos R$ 240](/pt/dramagood-paga-mesmo/) e se o [CashDrama é confiável e libera o saque de $100](/pt/cashdrama-e-confiavel-paga-mesmo-review/). Não concluímos tarefas, atingimos o mínimo nem solicitamos um saque; portanto, não confirmamos que o usuário receba dinheiro."
           ]
         },
         {
           "heading": "O que as regras do próprio app dizem",
           "paragraphs": [
             "O painel Regras da aba Benefícios diz que os bônus diários podem ser usados para desbloquear episódios; se o bônus não for suficiente, moedas são usadas para completar o pagamento. Separadamente, a política de privacidade do DramaStack diz que moedas virtuais não gastas não podem ser convertidas em nenhuma moeda. Isso descreve valor para assistir a conteúdo dentro do app, não dinheiro livre para sacar.",
-            "A ficha da Play Store apresenta o DramaStack como entretenimento gratuito com anúncios e menciona recompensas opcionais por anúncios. Ela não explica um programa de saque em dinheiro nem suas condições. Juntas, a tela de saque promocional e as regras escritas não comprovam uma forma confiável de ganhar dinheiro."
+            "A ficha da Play Store apresenta o DramaStack como entretenimento gratuito com anúncios e menciona recompensas opcionais por anúncios. Ela não explica um programa de saque em dinheiro nem suas condições — um contraste direto com o que vimos ao verificar se o [PineDrama paga mesmo no PIX](/pt/pinedrama-paga-mesmo-como-sacar-pix/), em que a taxa de 30.000 pontos por R$ 1 aparece escrita na tela do app. Juntas, a tela de saque promocional e as regras escritas do DramaStack não comprovam uma forma confiável de ganhar dinheiro."
           ],
           "source": {
             "title": "DramaStack: política de privacidade",
@@ -9855,7 +12529,7 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Afinal, o DramaStack paga?",
           "paragraphs": [
             "Encontramos uma tela de saque com mínimo de R$ 300, mas não testamos um pagamento. A política escrita diz que moedas virtuais não podem ser convertidas em dinheiro, e as regras do app vinculam os bônus ao desbloqueio de episódios. Pelo que foi possível conferir, não conte o saldo ou as tarefas como renda.",
-            "Se você instalar para assistir aos dramas curtos, trate as recompensas como recursos do app sujeitos a condições. Não gaste dinheiro nem muitas horas com base apenas na tela de saque; antes, procure regras atuais e escritas que expliquem elegibilidade, método e comprovante de pagamento."
+            "Se você instalar para assistir aos dramas curtos, trate as recompensas como recursos do app sujeitos a condições. Não gaste dinheiro nem muitas horas com base apenas na tela de saque; antes, procure regras atuais e escritas que expliquem elegibilidade, método e comprovante de pagamento. Para alternativas com regras transparentes no celular, veja como ativar o [código de convite TikTok Lite](/pt/codigo-convite-tiktok-lite/), confira como funcionam as [pesquisas remuneradas no Pawns.app](/pt/pawns-app-pesquisas-remuneradas-ganhos/), compare [pesquisas e cashback no Swagbucks](/pt/pesquisas-remuneradas-e-cashback-swagbucks/) ou acesse o [comparativo completo de apps de novelas curtas 2026](/pt/apps-de-novelas-curtas-que-pagam-comparativo/)."
           ],
           "source": {
             "title": "DramaStack na Google Play",
@@ -9880,6 +12554,10 @@ export const articles:Record<Locale,Article[]>={
       ],
       "faq": [
         {
+          "q": "O aplicativo Drama Stack é confiável e paga por ver vídeos?",
+          "a": "Não há comprovação de pagamento em dinheiro no DramaStack (também pesquisado como Drama Stack ou Drama Stark). Embora a aba Benefícios mostre missões por vídeos e saque mínimo de R$ 300, a política de privacidade informa que moedas virtuais não podem ser convertidas em dinheiro e as regras ligam os bônus ao desbloqueio de episódios."
+        },
+        {
           "q": "O DramaStack paga dinheiro de verdade?",
           "a": "Não confirmamos um pagamento em dinheiro. A tela de saque mostra mínimo de R$ 300, enquanto a política diz que moedas virtuais não podem ser convertidas em dinheiro."
         },
@@ -9894,7 +12572,16 @@ export const articles:Record<Locale,Article[]>={
       ],
       "verdict": "Não recomendamos o DramaStack como app de renda. A tela de saque faz uma promessa chamativa, mas as regras escritas descrevem recompensas dentro do app e a política diz que moedas virtuais não viram dinheiro. Não conseguimos confirmar um pagamento.",
       "imageAlt": "Aba Benefícios do DramaStack em português, com tarefas diárias e recompensas",
-      "caption": "A aba Benefícios lista tarefas e bônus diários junto de um saldo zerado."
+      "caption": "A aba Benefícios lista tarefas e bônus diários junto de um saldo zerado.",
+      "relatedIds": [
+        "short-drama-apps-compared",
+        "dramagood",
+        "cashdrama",
+        "pinedrama-rewards",
+        "tiktoklite-convite",
+        "pawns-surveys",
+        "swagbucks-surveys"
+      ]
     },
     {
       "id": "compare",
@@ -10204,6 +12891,39 @@ export const articles:Record<Locale,Article[]>={
           }
         }
       ],
+      "tables": [
+        {
+          "heading": "Exemplos do painel e status de crédito no Swagbucks",
+          "columns": [
+            "Categoria / Status",
+            "Dado verificado no guia",
+            "O que significa na prática"
+          ],
+          "rows": [
+            [
+              "Pesquisa curta (captura)",
+              "5 SB / 5 min (1 SB/min) e 10 SB / 5 min (2 SB/min)",
+              "Proporção por minuto supera ofertas mais longas da mesma tela"
+            ],
+            [
+              "Pesquisa média (captura)",
+              "25 SB / 20 min (1,25 SB/min)",
+              "Prêmio total maior não garante melhor retorno por minuto"
+            ],
+            [
+              "Shop & Earn (cálculo)",
+              "Exclui impostos, frete e taxas (ex.: US$ 40 elegíveis em US$ 48 = 200 SB)",
+              "Confira as Special Terms da loja antes de finalizar a compra"
+            ],
+            [
+              "Visited / Pending / Posted",
+              "Clique registrado → Aguardando prazo → Creditado",
+              "Apenas os SB em Posted estão disponíveis; Pending aguarda a data estimada"
+            ]
+          ],
+          "afterSectionIndex": 1
+        }
+      ],
       "steps": [
         "Confira quais pesquisas e lojas do Shop & Earn estão disponíveis para sua conta e seu país.",
         "Nas pesquisas, compare SB e minutos estimados, responda com dados reais e anote o ID ao concluir.",
@@ -10248,7 +12968,7 @@ export const articles:Record<Locale,Article[]>={
         "caption": "O painel de ofertas ilustra onde aparecem as condições; confira as regras atuais na sua conta para validar prazos e requisitos.",
         "wide": true
       },
-      "modifiedDate": "2026-11-15"
+      "modifiedDate": "2026-11-18"
     },
     {
       "id": "swagbucks-cashout",
@@ -10566,6 +13286,39 @@ export const articles:Record<Locale,Article[]>={
           }
         }
       ],
+      "tables": [
+        {
+          "heading": "O que avaliar antes de responder pesquisas no Pawns.app",
+          "columns": [
+            "Situação na aba Pesquisas",
+            "Como funciona na prática",
+            "O que fazer segundo as regras"
+          ],
+          "rows": [
+            [
+              "Valor e duração na lista",
+              "Estimativa condicionada (poucos minutos a cerca de meia hora)",
+              "Compare o valor com o tempo total da sessão, incluindo recusas"
+            ],
+            [
+              "Desclassificação no filtro",
+              "Perfil fora do público-alvo do estudo; sem crédito",
+              "Mantenha dados e localização reais (VPN ou proxy são proibidos)"
+            ],
+            [
+              "Lista vazia de questionários",
+              "Depende da região e da demanda dos clientes",
+              "Ative notificações e aguarde novas oportunidades no painel"
+            ],
+            [
+              "Concluída sem crédito",
+              "Oferta não lançada automaticamente no saldo",
+              "Guarde identificador, data, valor e mensagem final e contate o suporte"
+            ]
+          ],
+          "afterSectionIndex": 1
+        }
+      ],
       "steps": [
         "Leia valor, tempo estimado e condições da pesquisa.",
         "Use seu perfil e localização reais, sem escondê-los com VPN.",
@@ -10606,7 +13359,7 @@ export const articles:Record<Locale,Article[]>={
         "caption": "Os prêmios promocionais da captura são separados da remuneração por concluir uma pesquisa e podem mudar.",
         "wide": true
       },
-      "modifiedDate": "2026-11-15"
+      "modifiedDate": "2026-11-18"
     },
     {
       "id": "pawns-games",
@@ -10625,7 +13378,8 @@ export const articles:Record<Locale,Article[]>={
           ],
           "cta": {
             "label": "Ver jogos disponíveis no Pawns.app com o código 6823713",
-            "url": "https://discoverpawns.eu/6823713"
+            "url": "https://discoverpawns.eu/6823713",
+            "sponsored": true
           }
         },
         {
@@ -10759,6 +13513,39 @@ export const articles:Record<Locale,Article[]>={
           }
         }
       ],
+      "tables": [
+        {
+          "heading": "Resumo de métodos, taxas e bônus de saque no Pawns.app",
+          "columns": [
+            "Item / Método",
+            "Taxa ou regra publicada",
+            "Impacto em saque de $5 ou condição"
+          ],
+          "rows": [
+            [
+              "PayPal",
+              "Taxa de 4% (mínimo de $0,25)",
+              "Saque de $5 resulta em $4,75; resgate via e-mail da Tremendous em até 72h"
+            ],
+            [
+              "Bitcoin",
+              "Taxa publicada de $2",
+              "Taxa fixa pesa mais em saques baixos; conferir resumo antes de confirmar"
+            ],
+            [
+              "Vales-presente virtuais",
+              "Taxa de saque zero",
+              "Link via Tremendous; uso restrito às regras do cartão escolhido"
+            ],
+            [
+              "Bônus de indicação (6823713)",
+              "$3 divididos em três saques",
+              "Libera $1 após cada um dos 3 primeiros saques válidos no prazo regional"
+            ]
+          ],
+          "afterSectionIndex": 1
+        }
+      ],
       "steps": [
         "Alcance o mínimo indicado e abra seu saldo.",
         "Escolha país e método disponível.",
@@ -10800,7 +13587,7 @@ export const articles:Record<Locale,Article[]>={
         "caption": "A área promocional de Recompensas é diferente de um saque confirmado ou comprovante de pagamento.",
         "wide": true
       },
-      "modifiedDate": "2026-11-15"
+      "modifiedDate": "2026-11-18"
     },
     {
       "id": "pawns-vs-freecash",
@@ -10868,6 +13655,39 @@ export const articles:Record<Locale,Article[]>={
           }
         }
       ],
+      "tables": [
+        {
+          "heading": "Comparativo prático: Pawns.app vs Freecash",
+          "columns": [
+            "Critério",
+            "Pawns.app",
+            "Freecash"
+          ],
+          "rows": [
+            [
+              "Primeiro saque publicado",
+              "Mínimo de $5 (varia por método e região)",
+              "Guia atual informa $25, com variação regional e verificação"
+            ],
+            [
+              "Compartilhamento de internet",
+              "Opcional, além de pesquisas e jogos",
+              "Não oferece; foco em tarefas, jogos e pesquisas"
+            ],
+            [
+              "Taxas de retirada",
+              "Variam conforme o método (ex.: PayPal ou cripto)",
+              "Taxas em vários métodos em dinheiro; vales sem taxa"
+            ],
+            [
+              "VPN, proxy e elegibilidade",
+              "Proibido ocultar localização; exige conta única",
+              "Proíbe VPN/proxy, incluindo iCloud Private Relay"
+            ]
+          ],
+          "afterSectionIndex": 1
+        }
+      ],
       "steps": [
         "Confira métodos e verificação disponíveis no seu país.",
         "Compare primeiro saque válido, taxas e valor líquido.",
@@ -10908,7 +13728,7 @@ export const articles:Record<Locale,Article[]>={
         "caption": "Os totais exigem leitura das metas e condições; não demonstram retorno melhor que o Freecash.",
         "wide": true
       },
-      "modifiedDate": "2026-11-15"
+      "modifiedDate": "2026-11-18"
     },
     {
       "id": "primeopinion",
@@ -10927,7 +13747,8 @@ export const articles:Record<Locale,Article[]>={
           ],
           "cta": {
             "label": "Cadastre-se no Prime Opinion e ative +10% de bônus com o código ALNTFL",
-            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d"
+            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d",
+            "sponsored": true
           }
         },
         {
@@ -10945,10 +13766,11 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Formas de saque e o código de bônus para as primeiras 24 horas",
           "paragraphs": [
             "O Prime Opinion permite resgatar fundos a partir de apenas $5,25 USD através do PayPal, Venmo, transferências bancárias e cartões-presente virtuais como Google Play. Os resgates são processados com rapidez após a validação.",
-            "Novos membros que criam a conta pelo link oficial ou ativam o código de convite ALNTFL nas primeiras 24 horas após o cadastro ganham um bônus adicional de +10% em todas as pesquisas respondidas durante um dia inteiro."
+            "Novos membros que criam a conta pelo link oficial ou ativam o código de convite ALNTFL nas primeiras 24 horas após o cadastro ganham um bônus adicional de +10% em todas as pesquisas respondidas durante um dia inteiro. Se quiser comparar saques no PayPal com o saldo da Play Store, confira nosso [comparativo entre Google Opinion Rewards, Prime Opinion e AttaPoll](/pt/google-opinion-rewards-vs-prime-opinion-qual-paga-mais/)."
           ]
         }
       ],
+      "modifiedDate": "2026-11-18",
       "steps": [
         "Acesse a página oficial de cadastro: primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d.",
         "Crie sua conta gratuitamente com sua conta Google ou e-mail.",
@@ -10990,7 +13812,13 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Tela de resgate do Prime Opinion com opções PayPal e Venmo",
         "caption": "Menu de saque exibindo opções de transferência a partir de $5,25 USD no PayPal e Venmo.",
         "wide": true
-      }
+      },
+      "relatedIds": [
+        "opinion-vs-primeopinion-attapoll",
+        "primeopinion-cashout",
+        "primeopinion-surveys",
+        "attapoll"
+      ]
     },
     {
       "id": "primeopinion-surveys",
@@ -11009,7 +13837,8 @@ export const articles:Record<Locale,Article[]>={
           ],
           "cta": {
             "label": "Comece a responder pesquisas de 2 minutos no Prime Opinion com código ALNTFL",
-            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d"
+            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d",
+            "sponsored": true
           }
         },
         {
@@ -11090,7 +13919,8 @@ export const articles:Record<Locale,Article[]>={
           ],
           "cta": {
             "label": "Ver jogos disponíveis no Prime Opinion com o código ALNTFL",
-            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d"
+            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d",
+            "sponsored": true
           }
         },
         {
@@ -11171,7 +14001,8 @@ export const articles:Record<Locale,Article[]>={
           ],
           "cta": {
             "label": "Criar conta no Prime Opinion com o código ALNTFL e garantir bônus de +10%",
-            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d"
+            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d",
+            "sponsored": true
           }
         },
         {
@@ -11252,7 +14083,8 @@ export const articles:Record<Locale,Article[]>={
           ],
           "cta": {
             "label": "Experimente a facilidade de receber em dólares no Prime Opinion com o código ALNTFL",
-            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d"
+            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d",
+            "sponsored": true
           }
         },
         {
@@ -11591,12 +14423,12 @@ export const articles:Record<Locale,Article[]>={
       "app": "pinedrama",
       "category": "rewards",
       "slug": "pinedrama-paga-mesmo-como-sacar-pix",
-      "title": "PineDrama Paga Mesmo? Como Funciona a Aba Recompensas e Saque via PIX (2026)",
-      "description": "O PineDrama paga mesmo para assistir novelas e anúncios? Veja os valores reais no app (30.000 pontos = R$ 1), mínimo de saque no PIX e quanto rende na prática.",
-      "intro": "Muita gente pergunta se o PineDrama paga mesmo depois de ver vídeos falando em saque no PIX. Diferente de outros países onde o app exibe apenas dramas, no Brasil o PineDrama mostra sim uma aba Recompensas e uma Central de resgate via PIX — mas os números reais dentro do aplicativo mostram que o retorno é de poucos centavos.",
+      "title": "PineDrama Paga Mesmo no PIX? Valor dos Pontos e Saque Real (2026)",
+      "description": "O PineDrama dá dinheiro de verdade? Fizemos a conta real: 30.000 pontos valem R$ 1 no PIX. Veja quanto tempo leva para sacar e o limite diário de vídeos.",
+      "intro": "Muita gente pergunta se o PineDrama (também pesquisado como Pine Drama ou, por variação fonética, Painel Drama) paga mesmo depois de ver vídeos falando em saque no PIX. Diferente de outros países onde o app exibe apenas dramas, no Brasil o PineDrama mostra sim uma aba Recompensas e uma Central de resgate via PIX — mas os números reais dentro do aplicativo mostram que o retorno é de poucos centavos.",
       "sections": [
         {
-          "heading": "Quanto valem os pontos e quais são os valores de saque no PIX",
+          "heading": "PineDrama dá dinheiro? Valor dos pontos (30.000 moedas = R$ 1) e saque no PIX",
           "paragraphs": [
             "Nas telas reais analisadas no Android no Brasil, o próprio PineDrama informa logo abaixo do saldo: 30.000 pontos equivalem a R$ 1. Na Central de resgate, um saldo de 920 pontos aparece convertido como R$ 0,03.",
             "As opções de saque em Dinheiro listam R$ 0,10 (apenas uma vez), R$ 0,50, R$ 1,00 e R$ 2,00 com recebimento via PIX ao vincular a conta. Conferimos todas essas telas diretamente no app instalado, embora não tenhamos acumulado saldo suficiente para concluir um resgate ao vivo."
@@ -11616,7 +14448,7 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "O que observar antes de tentar juntar moedas no PineDrama",
           "paragraphs": [
-            "Os valores de cada missão mudam dinamicamente conforme a conta e o período promocional, e toda participação fica sujeita aos Termos e Condições do app. Por isso, não vale gastar horas assistindo a anúncios esperando renda mensal: os valores existem como incentivo simbólico para manter você dentro do catálogo."
+            "Os valores de cada missão mudam dinamicamente conforme a conta e o período promocional, e toda participação fica sujeita aos Termos e Condições do app. Por isso, não vale gastar horas assistindo a anúncios esperando renda mensal: os valores existem como incentivo simbólico para manter você dentro do catálogo. Veja também nosso [comparativo de apps de novelas curtas 2026](/pt/apps-de-novelas-curtas-que-pagam-comparativo/) para comparar o PineDrama com outros aplicativos e alternativas que pagam mais."
           ],
           "source": {
             "title": "Política de Privacidade do TikTok (Desenvolvedor do PineDrama)",
@@ -11641,6 +14473,10 @@ export const articles:Record<Locale,Article[]>={
       ],
       "faq": [
         {
+          "q": "O app Pine Drama (Painel Drama) dá dinheiro de verdade no PIX?",
+          "a": "O aplicativo oficial PineDrama (também buscado como Pine Drama ou Painel Drama) exibe saques reais via PIX a partir de R$ 0,10 no Brasil, mas o retorno é simbólico: 30.000 pontos ou moedas valem R$ 1, e a cota máxima de 30 anúncios diários rende cerca de R$ 0,40."
+        },
+        {
           "q": "Quantos pontos no PineDrama valem R$ 1?",
           "a": "Conforme exibido na tela do aplicativo no Brasil, 30.000 pontos equivalem a R$ 1 (e 920 pontos equivalem a R$ 0,03)."
         },
@@ -11663,7 +14499,15 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Tarefas diárias do PineDrama com anúncios, recompensas cronometradas e série completa",
         "caption": "Missões diárias incluem até 30 anúncios (12.000 pts), recompensas cronometradas (2.880 pts) e série completa (1.800 pts).",
         "wide": false
-      }
+      },
+      "modifiedDate": "2026-11-18",
+      "relatedIds": [
+        "short-drama-apps-compared",
+        "dramastack",
+        "cashdrama",
+        "primeopinion",
+        "tiktoklite"
+      ]
     },
     {
       "id": "pinedrama-guide",
@@ -11711,7 +14555,7 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Dá para assistir PineDrama no PC?",
           "paragraphs": [
             "Nas fontes oficiais consultadas, shortdrama.tiktok.com apresenta o app e oferece links da Google Play e App Store. Essa página, sozinha, não comprova a existência de um player completo no navegador. Não verificamos um instalador compatível com Windows ou macOS nem reprodução por emuladores Android.",
-            "O Google Play Games para PC não deve ser indicado como método de instalação sem suporte confirmado para o PineDrama. Use as lojas oficiais no celular e consulte futuros anúncios no portal do desenvolvedor. Uma página externa anunciando PineDrama para PC não comprova compatibilidade oficial."
+            "Não há instalador oficial confirmado para computador do PineDrama nas fontes consultadas. Use as lojas oficiais no celular (Google Play e App Store) indicadas em shortdrama.tiktok.com e consulte futuros anúncios no portal do desenvolvedor. Uma página externa anunciando PineDrama para PC não comprova compatibilidade oficial."
           ],
           "source": {
             "title": "PineDrama: portal oficial de download",
@@ -11775,7 +14619,7 @@ export const articles:Record<Locale,Article[]>={
         "caption": "Em Perfil > Dramas, o app registra exatamente o episódio assistido em cada minissérie.",
         "wide": false
       },
-      "modifiedDate": "2026-11-15"
+      "modifiedDate": "2026-11-18"
     },
     {
       "id": "pinedrama-vs-dramastack",
@@ -11861,9 +14705,9 @@ export const articles:Record<Locale,Article[]>={
       "app": "cashdrama",
       "category": "rewards",
       "slug": "cashdrama-e-confiavel-paga-mesmo-review",
-      "title": "CashDrama é Confiável? Review Completo e Análise (2026)",
-      "description": "Análise real do app CashDrama (com.reward.drama.earn.watch.tool): por que o saldo sobe para $99,86–$106,84 tão rápido, travas de saque e se paga mesmo.",
-      "intro": "O CashDrama (pacote com.reward.drama.earn.watch.tool na Google Play) promete pagar em dólar para assistir a mininovelas verticais. Na nossa inspeção real no Android, o saldo saltou para $99,86 e passou de $106,84 já no Dia 1 — mas o botão 'Withdraw Now' continuou bloqueado por travas de episódios e de dias.",
+      "title": "CashDrama Paga Mesmo e é Confiável? A Trava dos $100 no Saque (2026)",
+      "description": "O app CashDrama (e clones como Cash Fortune Drama) paga mesmo ou é golpe? Veja por que o saldo trava em $99,86 e o que acontece na fila de saque de $100.",
+      "intro": "O CashDrama (também pesquisado como Cash Drama; pacote com.reward.drama.earn.watch.tool na Google Play) promete pagar em dólar para assistir a mininovelas verticais. Na nossa inspeção real no Android, o saldo saltou para $99,86 e passou de $106,84 já no Dia 1 — mas o botão 'Withdraw Now' continuou bloqueado por travas de episódios e de dias.",
       "sections": [
         {
           "heading": "O que é o CashDrama e como o aplicativo funciona",
@@ -11887,7 +14731,7 @@ export const articles:Record<Locale,Article[]>={
           "heading": "CashDrama é confiável ou é golpe para ganhar dinheiro?",
           "paragraphs": [
             "Embora esteja hospedado na loja oficial da Google Play, a combinação de valores irreais por tarefa, travas que não liberam mesmo após bater $100 e reclamações recorrentes de usuários aponta que o CashDrama não funciona como um app confiável de renda extra.",
-            "Se você quiser apenas assistir às séries curtas gratuitamente, ignore o saldo em dólar. Se o seu objetivo for sacar dinheiro de verdade, não perca horas tentando liberar os níveis de $100 a $1K."
+            "Se você quiser apenas assistir às séries curtas gratuitamente, ignore o saldo em dólar. Se o seu objetivo for sacar dinheiro de verdade, não perca horas tentando liberar os níveis de $100 a $1K. Veja também nossa investigação completa sobre o [Cash Fortune Drama e o saque mínimo de $500](/pt/cash-fortune-drama-paga-mesmo-e-confiavel/), que repete a mesma tática de saldo artificial, e o [comparativo de apps de novelas curtas 2026](/pt/apps-de-novelas-curtas-que-pagam-comparativo/)."
           ]
         }
       ],
@@ -11908,6 +14752,10 @@ export const articles:Record<Locale,Article[]>={
         "Mostra supostas provas de pagamento de $100 a $800 sem possibilidade de auditoria externa."
       ],
       "faq": [
+        {
+          "q": "CashDrama (Cash Drama) e Cash Fortune Drama pagam mesmo ou são o mesmo app?",
+          "a": "Nenhum dos dois comprovou pagamento em nossas inspeções, mas são apps separados com travas próprias nas telas reais: o CashDrama (Cash Drama, pacote com.reward.drama.earn.watch.tool) sobe rápido para $99,86–$106,84 e trava os saques de $1 e $100+ atrás da exigência de 12 episódios e 'Day 2 Unlock'; já o Cash Fortune Drama exige mínimos ainda mais altos, de $500 a $3.000, além de pop-up com isca de iPhone."
+        },
         {
           "q": "O aplicativo CashDrama é confiável?",
           "a": "O app existe na Google Play para assistir a dramas curtos, mas suas promessas de saque em dólar são travadas por várias barreiras. Mesmo com $106,84 de saldo, o botão de saque permaneceu bloqueado."
@@ -11931,7 +14779,15 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Tela Discover do CashDrama com saldo de $106,84 e aviso de assistir a mais 12 episódios para sacar",
         "caption": "Mesmo com $106,84 na tela, a aba Discover mantém o bloqueio de assistir a mais 12 episódios para sacar.",
         "wide": false
-      }
+      },
+      "modifiedDate": "2026-11-18",
+      "relatedIds": [
+        "short-drama-apps-compared",
+        "cashdrama-withdraw",
+        "cashfortunedrama",
+        "dramastack",
+        "primeopinion"
+      ]
     },
     {
       "id": "cashdrama-withdraw",
@@ -12097,6 +14953,7 @@ export const articles:Record<Locale,Article[]>={
       "slug": "dramabox-e-pago-ou-gratuito-confiavel-review",
       "title": "DramaBox é Pago ou Gratuito? É Confiável? Review Completo (2026)",
       "description": "Entenda como funciona o DramaBox (StoryMatrix): quantos episódios são grátis, como desbloquear capítulos com moedas e anúncios, preços da assinatura e se o app é seguro.",
+      "modifiedDate": "2026-11-18",
       "intro": "O DramaBox (publicado pela StoryMatrix Pte. Ltd. na Google Play e na App Store) é um dos principais aplicativos de dramas curtos e mininovelas verticais, com mais de 16 mil séries no catálogo. Ele é gratuito para baixar e libera os primeiros episódios de graça, mas bloqueia a continuação da história exigindo moedas de recompensa, visualização de anúncios ou assinatura paga.",
       "sections": [
         {
@@ -12114,7 +14971,7 @@ export const articles:Record<Locale,Article[]>={
           "heading": "DramaBox é pago ou gratuito? Como funcionam os episódios bloqueados",
           "paragraphs": [
             "O DramaBox usa o modelo freemium (misto de acesso grátis e pago). Os primeiros capítulos de qualquer série vêm liberados sem custo para você testar a história; depois disso, os episódios seguintes ficam bloqueados.",
-            "Para continuar assistindo sem pagar em dinheiro, você pode entrar em Earn Rewards, assistir a anúncios em vídeo (ganhando 10 a 30 moedas por anúncio), fazer check-in diário e cumprir tarefas simples. Quem quiser liberar tudo na hora sem anúncios precisa comprar pacotes de moedas (Top Up) ou assinar um plano."
+            "Para continuar assistindo sem pagar em dinheiro, você pode seguir nosso guia de [como ganhar moedas grátis no DramaBox](/pt/como-assistir-dramabox-gratis-ganhar-moedas/) via Earn Rewards (10 a 30 moedas por anúncio, check-in diário e tarefas). Quem quiser liberar tudo na hora precisa comprar pacotes de moedas (Top Up) ou assinar um plano — confira nosso comparativo de [preço das moedas no DramaBox vs. assinatura VIP](/pt/dramabox-preco-moedas-recarga-vs-assinatura-vip/) e as regras de [quanto custa e como cancelar a assinatura](/pt/dramabox-quanto-custa-como-cancelar-assinatura/)."
           ]
         },
         {
@@ -12168,7 +15025,13 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Aba Profile do DramaBox com carteira de moedas, Earn Rewards, Top Up e banner de assinatura",
         "caption": "Na aba Profile ficam My Wallet, Earn Rewards (+60), Top Up e o atalho Join Membership.",
         "wide": false
-      }
+      },
+      "relatedIds": [
+        "dramabox-coins",
+        "dramabox-recharge",
+        "dramabox-subscription",
+        "pinedrama"
+      ]
     },
     {
       "id": "dramabox-coins",
@@ -12177,6 +15040,7 @@ export const articles:Record<Locale,Article[]>={
       "slug": "como-assistir-dramabox-gratis-ganhar-moedas",
       "title": "Como Assistir DramaBox Grátis (2026): Ganhar Moedas, Anúncios e Tarefas",
       "description": "Veja como conseguir moedas grátis no DramaBox para desbloquear episódios bloqueados: check-in de 7 dias (+10 a +50), anúncios de 30 e 10 moedas e bônus de tarefas.",
+      "modifiedDate": "2026-11-18",
       "intro": "Depois dos primeiros episódios gratuitos no DramaBox, o restante da série fica bloqueado por moedas. Mesmo assim, você não precisa assinar nem gastar dinheiro: o aplicativo oferece a central Earn Rewards, onde é possível acumular Reward Coins assistindo anúncios, fazendo check-in diário e concluindo tarefas simples.",
       "sections": [
         {
@@ -12189,8 +15053,8 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "Quantos episódios dá para liberar e por que evitar APK mod",
           "paragraphs": [
-            "Juntando o check-in inicial, as tarefas únicas (+190 moedas somadas) e os anúncios diários de 10 a 30 moedas, você já consegue destravar vários capítulos sem pagar nada. Como muitas mininovelas passam de 60 episódios, quem assiste só no modo gratuito costuma liberar alguns capítulos por dia.",
-            "Evite sites que prometem 'gerador de moedas grátis no DramaBox' ou 'DramaBox APK infinito'. O controle das moedas fica nos servidores da StoryMatrix e APKs modificados podem roubar dados do celular. Se quiser conhecer outra opção de dramas curtos gratuita, confira também nosso guia do PineDrama."
+            "Juntando o check-in inicial, as tarefas únicas (+190 moedas somadas) e os anúncios diários de 10 a 30 moedas, você já consegue destravar vários capítulos sem pagar nada. Como muitas mininovelas passam de 60 episódios, quem assiste só no modo gratuito costuma liberar alguns capítulos por dia — ou avaliar se vale mais comprar um pacote avulso frente ao plano VIP em nosso guia de [preço das moedas no DramaBox vs. assinatura VIP](/pt/dramabox-preco-moedas-recarga-vs-assinatura-vip/).",
+            "Evite sites que prometem 'gerador de moedas grátis no DramaBox' ou 'DramaBox APK infinito'. O controle das moedas fica nos servidores da StoryMatrix e APKs modificados podem roubar dados do celular. Se quiser conhecer outra opção de dramas curtos gratuita, confira também nosso [review completo do PineDrama](/pt/pinedrama-e-confiavel-review-completo/)."
           ],
           "source": {
             "title": "DramaBox na Google Play (StoryMatrix)",
@@ -12237,7 +15101,13 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Catálogo de mininovelas do DramaBox",
         "caption": "As Reward Coins acumuladas servem para desbloquear capítulos em qualquer série do catálogo.",
         "wide": false
-      }
+      },
+      "relatedIds": [
+        "dramabox",
+        "dramabox-recharge",
+        "dramabox-subscription",
+        "pinedrama"
+      ]
     },
     {
       "id": "dramabox-subscription",
@@ -12246,12 +15116,13 @@ export const articles:Record<Locale,Article[]>={
       "slug": "dramabox-quanto-custa-como-cancelar-assinatura",
       "title": "DramaBox: Quanto Custa a Assinatura e Como Cancelar (Android e iPhone)",
       "description": "Preços oficiais do DramaBox no Brasil (plano semanal e anual), regras de renovação automática e passo a passo para cancelar a assinatura na Google Play e iPhone.",
+      "modifiedDate": "2026-11-18",
       "intro": "A assinatura do DramaBox libera acesso ilimitado a mais de 16 mil séries em 1080p e downloads offline, mas funciona com cobrança recorrente e renovação automática ativada por padrão. Saber os valores exatos e onde cancelar evita ser cobrado novamente após a primeira semana.",
       "sections": [
         {
           "heading": "Quanto custa a assinatura do DramaBox (semanal e anual)",
           "paragraphs": [
-            "Na tela Join Membership verificada no Android no Brasil, o DramaBox exibe o Plano Semanal promocional por R$ 34,99/semana nas 3 primeiras semanas (passando para R$ 45,99/semana depois) e o Plano Anual por R$ 459,99/ano (equivalente a R$ 8,83/semana).",
+            "Na tela Join Membership verificada no Android no Brasil, o DramaBox exibe o Plano Semanal promocional por R$ 34,99/semana nas 3 primeiras semanas (passando para R$ 45,99/semana depois) e o Plano Anual por R$ 459,99/ano (equivalente a R$ 8,83/semana). Se você só quer finalizar uma história sem cobrança recorrente, compare antes a [recarga de moedas no DramaBox vs. assinatura VIP](/pt/dramabox-preco-moedas-recarga-vs-assinatura-vip/).",
             "As regras da tela Subscription Deals deixam claro que a renovação automática é ativada por padrão no momento da compra e que a cobrança do próximo ciclo acontece automaticamente nas 24 horas anteriores ao fim do período atual."
           ],
           "source": {
@@ -12305,7 +15176,186 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Regras de Subscription Deals do DramaBox sobre renovação automática e cancelamento na Google Play",
         "caption": "As regras de Subscription Deals confirmam que a renovação automática vem ativada e é cobrada em até 24h antes do vencimento.",
         "wide": false
-      }
+      },
+      "relatedIds": [
+        "dramabox",
+        "dramabox-recharge",
+        "dramabox-coins",
+        "pinedrama"
+      ]
+    },
+    {
+      "id": "dramabox-recharge",
+      "app": "dramabox",
+      "category": "rewards",
+      "slug": "dramabox-preco-moedas-recarga-vs-assinatura-vip",
+      "title": "Preço das Moedas no DramaBox vs. Assinatura VIP: O Que Compensa em 2026?",
+      "description": "Vale mais a pena recarregar moedas no DramaBox (Top Up), assinar o plano VIP semanal/anual ou usar moedas grátis? Veja custos verificados e regras de renovação.",
+      "intro": "Quando acabam os primeiros episódios gratuitos de um dorama no DramaBox, a aba Profile mostra três caminhos: comprar pacotes avulsos em Top Up (recarga de moedas), assinar o plano VIP semanal ou anual em Join Membership, ou juntar moedas grátis com anúncios e check-in. Entender essa conta — e saber qual opção ativa cobrança automática — evita gastar dinheiro à toa em séries de 60 a 100 episódios.",
+      "topCallout": {
+        "title": "Confira moedas grátis e regras de cancelamento do DramaBox antes de pagar",
+        "text": "Quer liberar capítulos sem cartão de crédito ou já assinou e precisa desativar a cobrança semanal?",
+        "links": [
+          {
+            "label": "Como ganhar moedas grátis no DramaBox (+10 a +60)",
+            "url": "/pt/como-assistir-dramabox-gratis-ganhar-moedas/"
+          },
+          {
+            "label": "Quanto custa o DramaBox e como cancelar a assinatura",
+            "url": "/pt/dramabox-quanto-custa-como-cancelar-assinatura/"
+          }
+        ]
+      },
+      "sections": [
+        {
+          "heading": "Como funciona a recarga avulsa (Top Up) vs. Join Membership",
+          "paragraphs": [
+            "Na aba Profile (tela exibida abaixo), o DramaBox separa a compra avulsa de moedas da assinatura recorrente. Ao tocar em Top Up, o aplicativo abre pacotes de moedas com eventuais bônus promocionais que entram direto na carteira (My Wallet) para destravar capítulos individuais, sem gerar mensalidade nem renovação semanal. Como a StoryMatrix ajusta os valores por país, moeda local, loja (Google Play no Android vs. App Store no iPhone) e promoções da conta, não existe uma tabela global fixa em dólar — você precisa conferir o preço atualizado dentro de Profile -> Top Up no seu aparelho antes de confirmar.",
+            "Já o botão Join Membership ativa o plano VIP com acesso ilimitado às mais de 16.000 séries anunciadas (com 100+ novos dramas por semana), qualidade 1080p, downloads offline, dramas exclusivos para membros, pontos diários e interação de IA com personagens (200 chats/dia e 3 gerações de imagem). O detalhe crucial é que a assinatura vem com cobrança recorrente automática."
+          ],
+          "source": {
+            "title": "DramaBox na Google Play (StoryMatrix)",
+            "url": "https://play.google.com/store/apps/details?id=com.storymatrix.drama&hl=pt_BR"
+          }
+        },
+        {
+          "heading": "Preço das moedas (Top Up) vs. plano VIP semanal e anual: o que compensa",
+          "paragraphs": [
+            "Na nossa inspeção verificada na Google Play Brasil, o DramaBox exibiu o Plano Semanal promocional a R$ 34,99/semana nas 3 primeiras semanas (24%–25% de desconto sobre o valor cheio de R$ 45,99/semana) e o Plano Anual por R$ 459,99/ano (equivalente a R$ 8,83/semana). Embora o valor mude fora do Brasil, a lógica financeira é a mesma: o VIP semanal pesa bastante se ficar renovando, o plano anual só compensa para quem assiste o ano inteiro e a recarga Top Up serve para destravar capítulos pontuais sem compromisso recorrente.",
+            "A melhor escolha depende do seu ritmo de consumo. Se você quer apenas concluir uma série eventual de 60 a 100 episódios, use primeiro todas as missões grátis de [moedas no Earn Rewards](/pt/como-assistir-dramabox-gratis-ganhar-moedas/) e avalie se uma recarga pontual em Top Up fecha a conta sem risco de renovação. Se vai maratonar várias séries completas dentro de poucos dias, o VIP semanal libera tudo na hora (desde que você cancele logo em seguida), enquanto quem assiste sem pressa economiza usando apenas anúncios diários."
+          ],
+          "image": {
+            "key": "dramabox-membership",
+            "alt": "Tela Join Membership do DramaBox com Plano Semanal (R$ 34,99 depois R$ 45,99/semana) e Plano Anual (R$ 459,99/ano)",
+            "caption": "Captura verificada na Google Play Brasil: VIP Semanal (R$ 34,99 por 3 semanas, depois R$ 45,99) vs. VIP Anual (R$ 459,99/ano).",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Variação por loja/país, janela de 24h e alerta contra sites de recarga barata",
+          "paragraphs": [
+            "Os preços dentro do DramaBox variam entre países, moedas locais, taxas de cada loja (Google Play no Android vs. App Store no iPhone) e contadores promocionais por tempo limitado (como o banner de 24 horas no Join Membership). Confira sempre a tela oficial de confirmação do Google ou da Apple antes de aprovar qualquer compra. Caso assine o VIP, as regras de Subscription Deals informam que a renovação automática vem ativada por padrão e cobra em até 24 horas antes do fim do ciclo; desinstalar o app não cancela, então siga o passo a passo de [como cancelar a assinatura do DramaBox](/pt/dramabox-quanto-custa-como-cancelar-assinatura/) imediatamente.",
+            "Também nunca use sites externos, anúncios em redes sociais ou bots prometendo 'recarga barata no DramaBox', 'gerador de moedas grátis' ou arquivos 'DramaBox mod APK'. O saldo de Reward Coins e a assinatura VIP são validados nos servidores da StoryMatrix, portanto sites paralelos e APKs adulterados não liberam moedas reais e trazem risco de golpe ou roubo de conta."
+          ],
+          "image": {
+            "key": "dramabox-subscription",
+            "alt": "Regras de Subscription Deals do DramaBox confirmando renovação automática ativada por padrão e cobrança 24h antes",
+            "caption": "As regras de Subscription Deals confirmam renovação automática ligada por padrão e cobrança via Google Play até 24 horas antes do vencimento.",
+            "wide": false
+          },
+          "source": {
+            "title": "DramaBox na Apple App Store (StoryMatrix)",
+            "url": "https://apps.apple.com/us/app/dramabox-stream-drama-shorts/id6445905219"
+          }
+        },
+        {
+          "heading": "Conta das moedas grátis e alternativas para assistir mininovelas sem assinatura cara",
+          "paragraphs": [
+            "Antes de gastar em Top Up ou VIP, esgote o saldo gratuito em Profile -> Earn Rewards: check-in de 7 dias (+10 a +50 moedas por dia), botão 'Watch Ad to earn 30 coins', até 30 vídeos repetíveis de 10 moedas por ciclo e +190 moedas únicas (+60 ao vincular conta, +60 notificações push, +30 Telegram, +20 Facebook e +20 YouTube). Veja o panorama completo em nosso [review geral do DramaBox](/pt/dramabox-e-pago-ou-gratuito-confiavel-review/).",
+            "Se você prefere assistir a mininovelas verticais sem comprar pacotes de moedas nem pagar assinatura semanal cara, conheça o aplicativo oficial gratuito do TikTok no nosso [review do PineDrama](/pt/pinedrama-e-confiavel-review-completo/), ou confira nosso [comparativo de apps de novelas curtas](/pt/apps-de-novelas-curtas-que-pagam-comparativo/) para separar streaming legítimo de apps com travas enganosas."
+          ],
+          "image": {
+            "key": "dramabox-coins",
+            "alt": "Tela Reward coins do DramaBox com check-in de 7 dias (+10 a +50), anúncios de 30 e 10 moedas e bônus de +20 a +60",
+            "caption": "Em Earn Rewards você acumula check-in de 7 dias, anúncios de 30 e 10 moedas e +190 moedas únicas antes de gastar.",
+            "wide": false
+          }
+        }
+      ],
+      "tables": [
+        {
+          "heading": "Comparativo DramaBox: Moedas Grátis vs. Recarga (Top Up) vs. VIP Semanal vs. VIP Anual",
+          "columns": [
+            "Modalidade",
+            "Custo e cobrança",
+            "Risco de renovação automática",
+            "Velocidade de desbloqueio",
+            "Perfil indicado"
+          ],
+          "rows": [
+            [
+              "Moedas Grátis (Earn Rewards)",
+              "R$ 0 (anúncios; +10 a +30 por vídeo, +10 a +50 check-in, +190 únicas)",
+              "Nenhum (não pede cartão)",
+              "Lenta — exige vários dias para séries de 60–100 episódios",
+              "Quem assiste sem pressa e não quer pagar"
+            ],
+            [
+              "Recarga de Moedas (Top Up)",
+              "Pacotes avulsos no app (preço varia por país, moeda e loja Android/iOS)",
+              "Nenhum — compra única por pacote",
+              "Imediata nos capítulos cobertos pelo saldo",
+              "Concluir 1 série eventual sem assinatura recorrente"
+            ],
+            [
+              "VIP Semanal (Weekly Membership)",
+              "Recorrente semanal (Play Brasil: R$ 34,99/sem x 3, depois R$ 45,99/sem)",
+              "Alto — ligada por padrão; cobra 24h antes do vencimento",
+              "Acesso ilimitado imediato a 16.000+ séries (1080p e downloads)",
+              "Maratonar várias séries em 1 semana (cancelando logo após)"
+            ],
+            [
+              "VIP Anual (Annual Membership)",
+              "Cobrança anual (Play Brasil: R$ 459,99/ano, ~R$ 8,83/semana)",
+              "Sim — renova anualmente salvo cancelamento 24h antes",
+              "Acesso ilimitado o ano todo + benefícios VIP",
+              "Apenas quem assiste DramaBox o ano inteiro"
+            ]
+          ],
+          "afterSectionIndex": 1
+        }
+      ],
+      "steps": [
+        "Assista aos primeiros capítulos gratuitos da série antes de abrir Top Up ou Join Membership.",
+        "Acesse Profile -> Earn Rewards para resgatar as tarefas únicas (+190 moedas), o check-in diário e os anúncios de 10 e 30 moedas.",
+        "Compare o valor local do pacote em Top Up com o preço do plano semanal exibido na Google Play ou App Store.",
+        "Se optar pelo VIP semanal para maratonar, cancele na hora em Google Play ou Assinaturas do iPhone para evitar a cobrança 24 horas antes da renovação.",
+        "Compre moedas ou assinaturas exclusivamente dentro do app oficial — nunca em sites de terceiros."
+      ],
+      "pros": [
+        "O Top Up permite comprar moedas pontuais sem assumir assinatura semanal recorrente.",
+        "O plano VIP desbloqueia mais de 16 mil títulos em 1080p sem anúncios e com download offline.",
+        "A aba Earn Rewards possibilita destravar episódios de graça com check-ins e vídeos curtos."
+      ],
+      "cons": [
+        "Os pacotes de Top Up variam por região e loja sem tabela fixa global divulgada fora do app.",
+        "O VIP semanal fica caro após as 3 semanas promocionais e renova automaticamente 24 horas antes do término.",
+        "Séries de 60 a 100 episódios exigem muitas moedas para quem depende só de anúncios."
+      ],
+      "faq": [
+        {
+          "q": "Quanto custa o DramaBox e quanto custam as moedas?",
+          "a": "Baixar o app e ver os primeiros episódios é gratuito. Na tela oficial verificada no Android no Brasil, o VIP Semanal custava R$ 34,99/semana nas 3 primeiras semanas (depois R$ 45,99/semana) e o VIP Anual saía por R$ 459,99/ano (~R$ 8,83/semana). Já os pacotes avulsos de moedas em Profile -> Top Up mudam conforme país, moeda e loja."
+        },
+        {
+          "q": "Vale mais a pena recarregar moedas (Top Up) ou assinar o VIP no DramaBox?",
+          "a": "A recarga Top Up é mais segura se você quer apenas terminar uma série específica sem correr risco de renovação automática. O VIP semanal só compensa para maratonar várias séries completas em poucos dias, cancelando pelo menos 24 horas antes de vencer."
+        },
+        {
+          "q": "Comprar moedas no Top Up do DramaBox gera cobrança automática?",
+          "a": "Não. A recarga em Profile -> Top Up é uma compra única na Google Play ou App Store. Apenas as assinaturas semanal e anual de Join Membership ativam renovação automática."
+        },
+        {
+          "q": "Por que os preços do DramaBox mudam entre Android, iPhone e outros países?",
+          "a": "A StoryMatrix localiza os pacotes conforme moeda, impostos da Google Play ou App Store e promoções temporárias exibidas para cada conta."
+        },
+        {
+          "q": "Sites de recarga barata ou gerador de moedas do DramaBox são confiáveis?",
+          "a": "Não. O saldo e a assinatura são validados nos servidores oficiais da StoryMatrix; revendedores externos, geradores e APKs modificados trazem risco de golpe, banimento ou vírus."
+        }
+      ],
+      "verdict": "Aproveite primeiro as moedas grátis de Earn Rewards, use a recarga Top Up apenas se precisar concluir uma série sem cobrança recorrente e deixe o VIP semanal só para maratonas curtas com cancelamento imediato na Google Play ou App Store.",
+      "imageAlt": "Aba Profile do DramaBox mostrando Top Up, My Wallet, Earn Rewards e banner Join Membership",
+      "caption": "Na aba Profile ficam separadas as três opções do DramaBox: Top Up (recarga avulsa), Earn Rewards (moedas grátis) e Join Membership (VIP).",
+      "imageKey": "dramabox-profile",
+      "imageWide": false,
+      "relatedIds": [
+        "dramabox",
+        "dramabox-coins",
+        "dramabox-subscription",
+        "pinedrama",
+        "short-drama-apps-compared"
+      ]
     },
     {
       "id": "nordvpn-vs-surfshark",
@@ -12485,7 +15535,7 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "Código de convite, bônus ou sorteio?",
           "paragraphs": [
-            "3C7GKG é o identificador do nosso convite de afiliado. Ele não promete um bônus fixo. O Freecash documenta separadamente códigos de bônus e de loteria: estes últimos entregam participações em sorteio, não um valor garantido em dinheiro.",
+            "3C7GKG é o identificador do nosso [guia de ofertas e convite do Freecash](/pt/freecash-ofertas-convites/). Ele não promete um bônus fixo. O Freecash documenta separadamente códigos de bônus e de loteria: estes últimos entregam participações em sorteio, não um valor garantido em dinheiro.",
             "Use a opção e a promoção exibidas na sua conta. Um código pode expirar, esgotar ou ser restrito a determinados perfis. Não pague terceiros para desbloquear códigos nem compartilhe seu acesso com um suposto gerador."
           ],
           "source": {
@@ -12496,8 +15546,8 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "Confira o requisito inicial da sua região",
           "paragraphs": [
-            "A ajuda atual informa US$25 como mínimo do primeiro saque, com diferenças regionais, além de verificação de e-mail e identidade. A tela Cashout mostra o valor exato da sua conta. Depois, vale o mínimo do método escolhido.",
-            "Confira isso antes de juntar saldo. Envie a verificação apenas pelo processo oficial e não use uma captura de outro país como confirmação da sua elegibilidade."
+            "A ajuda atual informa US$25 como mínimo do primeiro saque, com diferenças regionais, além de verificação de e-mail e identidade. A tela Cashout mostra o valor exato da sua conta. Depois, vale o mínimo do método escolhido. Para entender o funcionamento geral e as avaliações da plataforma, veja também nossa análise sobre se o [Freecash é confiável e paga mesmo](/pt/freecash-e-confiavel-paga-mesmo-avaliacoes/).",
+            "Confira isso antes de juntar saldo — especialmente ao escolher metas no nosso guia de [jogos e ofertas do Freecash](/pt/freecash-jogos-e-ofertas-como-ganhar-mais/). Envie a verificação apenas pelo processo oficial e não use uma captura de outro país como confirmação da sua elegibilidade."
           ],
           "source": {
             "title": "Freecash: requisitos do primeiro saque",
@@ -12507,7 +15557,7 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "PayPal: 5% e taxa fixa em valores pequenos",
           "paragraphs": [
-            "O guia do PayPal informa 5%, mais US$1 nas opções de US$5, US$10 e US$20. As opções maiores não acrescentam esse dólar. Confira o custo exato na sua tela antes de confirmar.",
+            "O guia do PayPal informa 5%, mais US$1 nas opções de US$5, US$10 e US$20. As opções maiores não acrescentam esse dólar. Confira o custo exato na sua tela antes de confirmar ou compare com alternativas nos guias [Pawns.app vs Freecash](/pt/pawns-app-vs-freecash-qual-o-melhor-para-ganhar-dinheiro/) e [Swagbucks ou Freecash](/pt/swagbucks-ou-freecash-comparativo-sites-recompensas/).",
             "Exemplo: se essas regras se aplicarem à opção de US$10, as taxas somam US$1,50 e restam US$8,50 depois desses custos do Freecash, antes de eventual conversão adicional. É um exemplo de cálculo, não um pagamento que recebemos. Compare o valor final utilizável."
           ],
           "source": {
@@ -12518,7 +15568,7 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "Acompanhe o pedido e o e-mail de resgate",
           "paragraphs": [
-            "Depois de pedir a retirada, consulte My Withdrawals. A ajuda explica que o PayPal normalmente usa a Tremendous; siga o e-mail de resgate quando o pedido for enviado. Confira a caixa do endereço informado e a pasta de spam.",
+            "Depois de pedir a retirada, consulte My Withdrawals. A ajuda explica que o PayPal normalmente usa a Tremendous — fluxo semelhante ao detalhado em nosso guia sobre [como sacar no Pawns.app e taxas por método](/pt/pawns-app-como-sacar-metodos-bono-convite/); siga o e-mail de resgate quando o pedido for enviado. Confira a caixa do endereço informado e a pasta de spam.",
             "Uma análise de segurança e uma transferência bancária têm esperas diferentes. Consulte o prazo do método escolhido e procure suporte se aparecer Rejected ou a janela informada for ultrapassada. Não repita o pedido apenas porque o e-mail ainda não chegou."
           ],
           "source": {
@@ -12559,7 +15609,14 @@ export const articles:Record<Locale,Article[]>={
       "verdict": "Confira o mínimo regional e o valor líquido antes de pedir o pagamento. Não escolha uma recompensa menos útil só para evitar taxa nem presuma que o convite garante um bônus.",
       "imageAlt": "Painel do link de indicação do Freecash com identificador 3C7GKG",
       "caption": "Esta captura guardada mostra um link de indicação, não um comprovante de saque.",
-      "modifiedDate": "2026-11-15"
+      "relatedIds": [
+        "freecash",
+        "freecash-reviews",
+        "freecash-games-offers",
+        "pawns-vs-freecash",
+        "swagbucks-vs-freecash"
+      ],
+      "modifiedDate": "2026-11-18"
     },
     {
       "id": "freecash-games-offers",
@@ -12712,7 +15769,7 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Como avaliar se vale seu tempo",
           "paragraphs": [
             "Para avaliar se o app vale seu tempo, observe o que aconteceu nas suas próprias participações. Anote o tempo realmente gasto e confira o saldo que foi confirmado. Esse registro pode incluir tentativas sem recompensa; olhar só para pesquisas aprovadas daria uma impressão incompleta.",
-            "O tempo estimado na lista ajuda a escolher uma oferta, mas não basta para projetar renda por hora ou por mês. Defina quanto tempo pretende dedicar ao aplicativo e reavalie conforme a sua experiência, sem assumir que o resultado de uma pesquisa se repetirá."
+            "O tempo estimado na lista ajuda a escolher uma oferta, mas não basta para projetar renda por hora ou por mês. Defina quanto tempo pretende dedicar ao aplicativo e reavalie conforme a sua experiência, sem assumir que o resultado de uma pesquisa se repetirá. Se estiver decidindo entre crédito da Play Store e saque em dinheiro, veja nosso [comparativo entre Google Opinion Rewards, Prime Opinion e AttaPoll](/pt/google-opinion-rewards-vs-prime-opinion-qual-paga-mais/)."
           ]
         }
       ],
@@ -12770,7 +15827,9 @@ export const articles:Record<Locale,Article[]>={
           "url": "https://play.google.com/store/apps/details?id=com.requapp.requ"
         }
       ],
+      "modifiedDate": "2026-11-18",
       "relatedIds": [
+        "opinion-vs-primeopinion-attapoll",
         "attapoll-saque",
         "attapoll-jogos"
       ],
@@ -13779,12 +16838,12 @@ export const articles:Record<Locale,Article[]>={
       "app": "dramagood",
       "category": "rewards",
       "slug": "dramagood-paga-mesmo",
-      "title": "DramaGood paga mesmo? Teste real mostra que não (2026)",
-      "description": "Testamos o DramaGood: saldo R$ 106,60 e saque mínimo de R$ 240. Veja por que o app de dramas não paga e o que a Play Store realmente diz.",
-      "intro": "O DramaGood promete dinheiro por assistir a mininovelas curtas: banners de saques de R$ 240 a R$ 1.000 desfilam sobre os vídeos, a aba de tarefas anuncia prêmios de R$ 7.777 e a carteira marca R$ 106,60 já na primeira sessão. Testamos o app em 16 de novembro de 2026 e a resposta é direta: ele não paga. O saldo sobe rápido no começo e fica antes do mínimo exigido, e nenhum documento oficial do desenvolvedor menciona saque em dinheiro. Este artigo mostra o que o app faz, o que a ficha da Google Play e a Política de Privacidade dizem dele e por que as contas não fecham.",
+      "title": "DramaGood Paga Mesmo ou é Golpe? A Verdade Sobre o Saque de R$ 240",
+      "description": "O app DramaGood é confiável e paga mesmo em 2026? Testamos o saldo de R$ 106,60, a trava do saque mínimo de R$ 240 e o aviso oculto na Google Play Store.",
+      "intro": "O DramaGood (também buscado como Drama Good) promete dinheiro por assistir a mininovelas curtas: banners de saques de R$ 240 a R$ 1.000 desfilam sobre os vídeos, a aba de tarefas anuncia prêmios de R$ 7.777 e a carteira marca R$ 106,60 já na primeira sessão. Testamos o app em 16 de novembro de 2026 e a resposta é direta: ele não paga. O saldo sobe rápido no começo e fica antes do mínimo exigido, e nenhum documento oficial do desenvolvedor menciona saque em dinheiro. Este artigo mostra o que o app faz, o que a ficha da Google Play e a Política de Privacidade dizem dele e por que as contas não fecham.",
       "sections": [
         {
-          "heading": "O que é o DramaGood e o que a Google Play diz dele",
+          "heading": "O que é o aplicativo Drama Good (DramaGood) e se é confiável",
           "paragraphs": [
             "DramaGood é um aplicativo Android de dramas curtos verticais, publicado na Google Play pelo desenvolvedor Short Drama Workgroup sob o pacote com.drama.good.shortplay.atsab. O catálogo segue o padrão dos apps de microdrama: episódios de poucos minutos em formato vertical, organizados em abas como Topo, Popular, Novo, Homens e Mulheres. Na tela inicial do teste apareciam Dramas Pop como O Segredo da Minha Esposa e A Filha Perdida da Família Bilionária, além de lançamentos como A Herdeira Esperada e Pesadelo no Campus.",
             "O detalhe importante está no que a ficha oficial não diz. A descrição do app na Google Play fala em assistir a dramas curtos e coletar itens e benefícios de visualização dentro do aplicativo — não menciona Pix, saque nem dinheiro real em nenhum momento. A Política de Privacidade publicada em drama-good.com/privacy.html, com vigência de 12 de janeiro de 2026, descreve o serviço como streaming e lista a coleta de identificadores do aparelho (IMEI, Android ID), endereço IP, localização aproximada e histórico de visualização, mas não cita nenhum programa de recompensa em dinheiro."
@@ -13805,7 +16864,7 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Por que o DramaGood não paga: as contas não fecham",
           "paragraphs": [
             "Um app gratuito se sustenta com anúncios, e cada exibição rende alguns centavos. Para cumprir o que promete, o DramaGood precisaria pagar R$ 240 para cada usuário que assiste a alguns minutos — e ainda manter prêmios de R$ 7.777 e saques de R$ 1.600. Nenhum ecossistema de publicidade paga isso: por isso o saldo é inflado no início e o mínimo exigido fica sempre adiante, como mostram os R$ 133,40 que faltavam no teste.",
-            "Os documentos oficiais reforçam a conclusão. Nem a ficha da Google Play nem a Política de Privacidade mencionam programa de saque, transferência bancária ou pagamento em dinheiro; se uma 'plataforma parceira de pagamentos' existisse, ela precisaria aparecer nas regras do serviço — e não aparece. O quadro abaixo contrasta o que o app mostra na tela com o que o desenvolvedor declara oficialmente. Os banners de 'Parabéns!' são a única 'prova' de pagamento, sem qualquer comprovação externa."
+            "Os documentos oficiais reforçam a conclusão. Nem a ficha da Google Play nem a Política de Privacidade mencionam programa de saque, transferência bancária ou pagamento em dinheiro; se uma 'plataforma parceira de pagamentos' existisse, ela precisaria aparecer nas regras do serviço — e não aparece. O quadro abaixo contrasta o que o app mostra na tela com o que o desenvolvedor declara oficialmente. Os banners de 'Parabéns!' são a única 'prova' de pagamento, sem qualquer comprovação externa, como mostramos no [comparativo de apps de novelas curtas 2026](/pt/apps-de-novelas-curtas-que-pagam-comparativo/)."
           ],
           "source": {
             "title": "Política de Privacidade do DramaGood (drama-good.com)",
@@ -13860,6 +16919,10 @@ export const articles:Record<Locale,Article[]>={
       ],
       "faq": [
         {
+          "q": "O app Drama Good paga mesmo os R$ 240 via PIX ou é golpe?",
+          "a": "Não paga. No teste de 16/11/2026, o saldo do Drama Good (DramaGood) parou em R$ 106,60 diante do saque mínimo de R$ 240 via PIX, e nem a ficha oficial da Google Play nem a Política de Privacidade citam pagamento em dinheiro."
+        },
+        {
           "q": "DramaGood paga mesmo?",
           "a": "Não. No teste de 16/11/2026 o saldo ficou em R$ 106,60, o saque exige R$ 240 e nenhum documento oficial do desenvolvedor menciona pagamento em dinheiro."
         },
@@ -13893,7 +16956,9 @@ export const articles:Record<Locale,Article[]>={
           "url": "https://www.drama-good.com/privacy.html"
         }
       ],
+      "modifiedDate": "2026-11-18",
       "relatedIds": [
+        "short-drama-apps-compared",
         "dramagood-saque",
         "dramagood-tarefas",
         "cashdrama",
@@ -14166,6 +17231,828 @@ export const articles:Record<Locale,Article[]>={
         "attapoll",
         "tiktoklite"
       ]
+    },
+    {
+      "id": "cashfortunedrama",
+      "app": "cashfortunedrama",
+      "category": "rewards",
+      "slug": "cash-fortune-drama-paga-mesmo-e-confiavel",
+      "title": "Cash Fortune Drama Paga Mesmo ou é Golpe? Teste do Saque (2026)",
+      "description": "O app Cash Fortune Drama é confiável e paga mesmo por assistir novelas? Veja as provas reais: saque mínimo de $500, isca de iPhone, anúncios e veredito.",
+      "intro": "O aplicativo Cash Fortune Drama promete saques de $500 até $3.000 via PIX, PicPay, Mercado Libre e Nubank — além de um iPhone 17 Pro MAX grátis — apenas para assistir a mininovelas verticais. Depois de analisar cinco prints reais do aplicativo tela por tela, o veredito é direto: o Cash Fortune Drama não paga. Abaixo mostramos todas as provas coletadas: salto artificial de saldo ($0 -> $15 -> $35), pop-up enganoso com anúncio, isca de prêmio físico e meta de saque irreal.",
+      "topCallout": {
+        "title": "Quer aplicativos que realmente pagam no PIX ou PayPal?",
+        "text": "Não perca tempo tentando bater metas impossíveis de $500 em apps de mininovelas. Confira plataformas verificadas com saque baixo:",
+        "links": [
+          {
+            "label": "Prime Opinion (+10% código ALNTFL)",
+            "url": "/pt/prime-opinion-como-funciona-e-confiavel-paga-mesmo/"
+          },
+          {
+            "label": "Pawns.app (bônus de $3)",
+            "url": "/pt/pawns-app-como-funciona-guia-completo/"
+          },
+          {
+            "label": "Freecash (jogos e ofertas)",
+            "url": "/pt/freecash-ofertas-convites/"
+          }
+        ]
+      },
+      "sections": [
+        {
+          "heading": "O que é o Cash Fortune Drama e a semelhança com CashDrama e DramaStack",
+          "paragraphs": [
+            "O Cash Fortune Drama é um aplicativo de dramas curtos verticais dividido em quatro abas inferiores: Shorts, Main, Bonus e User. Assim como o [CashDrama](/pt/cashdrama-e-confiavel-paga-mesmo-review/) e o [DramaStack](/pt/dramastack-paga-mesmo/), ele exibe episódios gratuitos cobertos por promessas de dinheiro em dólar no topo da tela.",
+            "Na aba Bonus, a conta inicia com saldo $0 ao lado do aviso 'Get another $500 and withdraw $500'. Logo abaixo, o app empilha um check-in de 7 dias (+50 a +100), a barra 'Watch videos to earn 81' com seis baús e a seção 'Daily Tasks' exibindo metas irreais de 1.000 (jogar/assistir 5 min), 1.400 (assistir 1 episódio) e 2.000 Top Prize (assistir 1 vídeo de anúncio AD)."
+          ]
+        },
+        {
+          "heading": "Salto artificial de saldo ($0 -> $15 -> $35) no player de novelas",
+          "paragraphs": [
+            "Ao abrir um episódio no feed Shorts — como o capítulo 2 da série System: Bargain to Godhood (listada com 40 episódios) — o saldo salta rapidamente de $0 para $15 e o balão no topo muda para 'Get another $485 and withdraw $500'.",
+            "Na lateral direita do player ficam três ícones flutuantes paralelos: AirPods (0/20), cofrinho dourado (2/3) e iPhone (0%). Esse avanço acelerado de $0 para $15 e $35 nas primeiras interações é a isca clássica para fazer a meta de $500 parecer próxima antes de os ganhos travarem."
+          ]
+        },
+        {
+          "heading": "O pop-up enganoso de +$200 vs. 'Only $10' vinculado a anúncio (AD)",
+          "paragraphs": [
+            "Quando o cofrinho dourado é acionado, surge o pop-up 'Congratulations!' exibindo '+$ 200' e um botão roxo enorme 'Claim $200' com o ícone de televisão 'AD'. Logo abaixo, quase escondido em texto pequeno sublinhado, aparece o link 'Only $10'.",
+            "Esse padrão visual (dark pattern) induz o usuário a clicar para assistir a anúncios forçados atrás do valor maior enquanto reduz o caminho alternativo. Mesmo com o saldo já em $35, a barra inferior entrega a distância real: 'Earn $465 more to unlock the $500 withdrawal!'."
+          ],
+          "image": {
+            "key": "cashfortunedrama-popup",
+            "alt": "Pop-up Congratulations do Cash Fortune Drama com +$200, botão Claim $200 com ícone AD e link menor Only $10",
+            "caption": "Pop-up Congratulations!: botão roxo Claim $200 marcado com AD, link discreto 'Only $10' e barra avisando que faltam $465 para liberar os $500.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "A isca do iPhone 17 Pro MAX ($1,199) pedindo endereço de entrega",
+          "paragraphs": [
+            "Outro pop-up promocional anuncia 'Watch Bonus Drama — WIN iPhone 17 Pro MAX ($ 1,199)', alegando envio direto da Apple até a sua casa ('Shipped from the official Apple website, delivered to your home').",
+            "O passo a passo instrui a assistir a todos os episódios de um drama premiado na íntegra e depois preencher seu endereço ('Fill in the shipping address'). Nenhum aplicativo gratuito mantido por anúncios compra um iPhone de $1.199 para cada pessoa que assiste a uma novela curta — e enviar seu endereço residencial para um sorteio sem comprovação traz risco desnecessário de exposição de dados."
+          ],
+          "image": {
+            "key": "cashfortunedrama-iphone",
+            "alt": "Pop-up promocional do Cash Fortune Drama prometendo iPhone 17 Pro MAX de $1,199 e pedindo endereço de entrega",
+            "caption": "Isca física no app: promete enviar um iPhone 17 Pro MAX de $1.199 do site oficial da Apple após assistir a todos os episódios e informar o endereço.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Tela Withdraw ($500 a $3.000), ticker de saques e o veredito: não paga",
+          "paragraphs": [
+            "Na tela Withdraw, com o saldo em $35 (BALANCE: $35), aparecem quatro botões brasileiros e latino-americanos — PIX, PicPay, Mercado Libre e Nubank — e quatro faixas irreais de retirada: $500 ($35/$500 no botão Cash Out), $1.000, $1.500 e $3.000 (todas marcadas como Locked).",
+            "No topo, um ticker exibe avisos rotativos como 'Congratulation to Br****ra withdraw $1,500', 'Ra****ta withdraw $500' e 'An****ra withdraw $500', sem nenhum comprovante bancário ou auditoria externa. Como anúncios em vídeo rendem centavos por exibição, é impossível pagar $500 ou $3.000 por usuário. O veredito é definitivo: o Cash Fortune Drama não paga."
+          ],
+          "image": {
+            "key": "cashfortunedrama-withdraw",
+            "alt": "Tela Withdraw do Cash Fortune Drama com BALANCE $35, botões PIX, PicPay, Mercado Libre e Nubank, ticker de ganhadores e mínimos de $500 a $3.000",
+            "caption": "Tela Withdraw com BALANCE: $35, ticker não verificável de saques de $500 e $1.500, abas PIX/PicPay/Mercado Libre/Nubank e mínimos de $500 a $3.000.",
+            "wide": false
+          },
+          "cta": {
+            "label": "Ver alternativa verificada que paga de verdade (Prime Opinion)",
+            "url": "/pt/prime-opinion-como-funciona-e-confiavel-paga-mesmo/"
+          }
+        },
+        {
+          "heading": "Alternativas verificadas que realmente pagam via PIX e PayPal",
+          "paragraphs": [
+            "Enquanto apps como Cash Fortune Drama e [DramaGood](/pt/dramagood-paga-mesmo/) usam metas inatingíveis de $500 ou R$ 240, plataformas consolidadas de pesquisas e tarefas trabalham com valores realistas e saques baixos. Você pode testar o [Prime Opinion](/pt/prime-opinion-como-funciona-e-confiavel-paga-mesmo/) para pesquisas remuneradas, o [Pawns.app](/pt/pawns-app-como-funciona-guia-completo/) para internet compartilhada e pesquisas, ou o [Freecash](/pt/freecash-ofertas-convites/) para metas em jogos de celular.",
+            "Outras opções com regras transparentes são o [AttaPoll](/pt/attapoll-como-funciona/), com pesquisas rápidas no celular e saque baixo no PayPal, e o [TikTok Lite](/pt/tiktok-lite-recompensas-saque/), quando há campanha oficial ativa no seu aparelho e região. Nenhuma delas promete $500 em um dia — e justamente por isso os pagamentos caem de verdade. Confira também os cinco apps lado a lado no nosso [comparativo de apps de novelas curtas 2026](/pt/apps-de-novelas-curtas-que-pagam-comparativo/)."
+          ]
+        }
+      ],
+      "steps": [
+        "Abra a aba Withdraw antes de assistir a episódios para conferir o mínimo real de $500 até $3.000.",
+        "Não confie no salto rápido de $0 para $15 e $35 nem no pop-up de +$200 ligado a anúncio (AD).",
+        "Não informe seu endereço residencial na tela promocional do iPhone 17 Pro MAX ($1.199).",
+        "Desconsidere o ticker de supostos saques de $500 e $1.500 no topo da carteira, pois não são verificáveis.",
+        "Prefira plataformas verificadas com saque baixo via PIX ou PayPal, como Prime Opinion, Pawns.app, Freecash, AttaPoll e TikTok Lite."
+      ],
+      "stepsSectionIndex": 4,
+      "tables": [
+        {
+          "heading": "Cash Fortune Drama vs. CashDrama vs. DramaStack vs. Apps que realmente pagam",
+          "columns": [
+            "Aplicativo",
+            "Saque Mínimo",
+            "Mecânica Observada nos Testes",
+            "Veredito"
+          ],
+          "rows": [
+            [
+              "Cash Fortune Drama",
+              "$500 (até $3.000)",
+              "Salto rápido $0 -> $15 -> $35, pop-up +$200 AD vs. Only $10, isca de iPhone $1.199",
+              "Não paga"
+            ],
+            [
+              "CashDrama",
+              "$1 / $100 a $1K",
+              "Saldo vai a $99,86–$106,84 no Dia 1, mas trava em Day 2 Unlock e regra de 12 ep.",
+              "Não paga de forma confiável"
+            ],
+            [
+              "DramaStack",
+              "R$ 300 (~$55–$60 USD)",
+              "Meta alta com regras restritivas que impedem a conversão das moedas",
+              "Não paga na prática"
+            ],
+            [
+              "Pawns.app / Prime Opinion / Freecash / AttaPoll / TikTok Lite",
+              "Baixo ($1–$5 conforme app/região)",
+              "Pesquisas, jogos e tarefas com saques transparentes via PIX, PayPal ou gift cards",
+              "Pagam de verdade (verificados)"
+            ]
+          ],
+          "afterSectionIndex": 4
+        }
+      ],
+      "pros": [
+        "Permite assistir a mininovelas verticais como System: Bargain to Godhood sem assinatura paga.",
+        "A própria tela Withdraw escancara o mínimo irreal de $500 logo no primeiro acesso."
+      ],
+      "cons": [
+        "Não paga: impõe saque mínimo irreal de $500 até $3.000 mesmo exibindo ícones de PIX, PicPay, Mercado Libre e Nubank.",
+        "Pop-up enganoso de +$200 com botão Claim $200 vinculado a anúncio (AD) e opção minúscula 'Only $10'.",
+        "Pede endereço de entrega com a promessa não verificável de enviar um iPhone 17 Pro MAX de $1.199.",
+        "Exibe ticker superior com supostos ganhadores de $500 e $1.500 sem nenhuma comprovação externa."
+      ],
+      "faq": [
+        {
+          "q": "O aplicativo Cash Fortune Drama paga mesmo?",
+          "a": "Não. Os cinco prints reais analisados comprovam que o Cash Fortune Drama não paga: o saldo sobe artificialmente de $0 para $35, mas o saque exige no mínimo $500 (até $3.000), usa pop-ups atrelados a anúncios (AD) e exibe um ticker de ganhadores sem verificação."
+        },
+        {
+          "q": "Qual é o saque mínimo do Cash Fortune Drama?",
+          "a": "Na tela Withdraw, o menor valor exibido para saque é $500, acompanhado de opções travadas em $1.000, $1.500 e $3.000 nas abas PIX, PicPay, Mercado Libre e Nubank."
+        },
+        {
+          "q": "O sorteio do iPhone 17 Pro Max no Cash Fortune Drama é verdadeiro?",
+          "a": "Não há qualquer comprovação de entrega. O pop-up promete enviar um iPhone 17 Pro MAX de $1.199 diretamente do site oficial da Apple após assistir a todos os episódios e preencher seu endereço de entrega — um sinal claro de alerta para privacidade."
+        },
+        {
+          "q": "Cash Fortune Drama e CashDrama são o mesmo aplicativo?",
+          "a": "São apps diferentes que seguem exatamente o mesmo roteiro de retenção: saldo inicial inflado, tarefas com prêmios irreais, enxurrada de anúncios e barreiras que impedem um saque real."
+        },
+        {
+          "q": "Quais apps realmente pagam no lugar do Cash Fortune Drama?",
+          "a": "Alternativas confiáveis e com saques baixos incluem Prime Opinion, Pawns.app, Freecash, AttaPoll e campanhas oficiais do TikTok Lite."
+        }
+      ],
+      "verdict": "O Cash Fortune Drama não paga. O salto artificial de saldo ($0 -> $15 -> $35), o pop-up de +$200 AD contra 'Only $10', a isca de iPhone 17 Pro MAX ($1.199) pedindo endereço e os mínimos de $500 a $3.000 confirmam o padrão clássico de app feito apenas para gerar visualizações de anúncios. Se você quer dinheiro de verdade no PIX ou PayPal, use opções verificadas como Prime Opinion, Pawns.app e Freecash.",
+      "imageKey": "cashfortunedrama-bonus",
+      "imageAlt": "Tela Bonus do Cash Fortune Drama com saldo $0, meta de $500, check-in de 7 dias e Daily Tasks de 1.000 a 2.000",
+      "caption": "Tela Bonus com saldo $0: mostra check-in de 7 dias (+50/+100), 'Watch videos to earn 81', Daily Tasks (1.000 a 2.000 Top Prize) e meta de $500.",
+      "imageWide": false,
+      "secondImage": {
+        "key": "cashfortunedrama-player",
+        "alt": "Player Shorts do Cash Fortune Drama em System: Bargain to Godhood Ep. 2 com saldo $15 e ícones flutuantes",
+        "caption": "Player Shorts (System: Bargain to Godhood, Ep. 2) já com saldo em $15 e ícones flutuantes de AirPods (0/20), cofrinho (2/3) e iPhone (0%).",
+        "wide": false
+      },
+      "sources": [
+        {
+          "title": "apps308: Análise do CashDrama e trava dos $100",
+          "url": "https://www.apps308.com/pt/cashdrama-e-confiavel-paga-mesmo-review/"
+        },
+        {
+          "title": "apps308: Análise do DramaStack e regra dos R$ 300",
+          "url": "https://www.apps308.com/pt/dramastack-paga-mesmo/"
+        },
+        {
+          "title": "apps308: Análise do DramaGood (paga mesmo ou é golpe?)",
+          "url": "https://www.apps308.com/pt/dramagood-paga-mesmo/"
+        },
+        {
+          "title": "CashDrama na Google Play (com.reward.drama.earn.watch.tool)",
+          "url": "https://play.google.com/store/apps/details?id=com.reward.drama.earn.watch.tool&hl=pt_BR"
+        }
+      ],
+      "relatedIds": [
+        "short-drama-apps-compared",
+        "cashdrama",
+        "dramastack",
+        "dramagood",
+        "primeopinion",
+        "pawns",
+        "freecash"
+      ]
+    },
+    {
+      "id": "short-drama-apps-compared",
+      "app": "compare",
+      "category": "rewards",
+      "slug": "apps-de-novelas-curtas-que-pagam-comparativo",
+      "title": "Apps de Novelas que Prometem Pagar (2026): DramaStack, CashDrama ou PineDrama?",
+      "description": "Comparativo real dos apps de novelas curtas que dizem pagar no PIX (DramaStack, CashDrama, Cash Fortune Drama, DramaGood e PineDrama) vs. apps que realmente pagam.",
+      "modifiedDate": "2026-11-18",
+      "intro": "Os anúncios de aplicativos de novelas curtas verticais prometem saques fáceis de R$ 240 a $3.000 no PIX e no PayPal apenas para assistir a episódios rápidos. Depois de testar e inspecionar tela por tela DramaStack, CashDrama, Cash Fortune Drama, DramaGood, PineDrama e DramaBox em 2026, o resultado é objetivo: quatro não pagam, o DramaBox é apenas streaming freemium sem saque e só o PineDrama tem programa promocional limitado pagando centavos (30.000 pontos = R$ 1 / ~$0,18 USD).",
+      "topCallout": {
+        "title": "Fuja das travas de R$ 240 a $3.000: apps verificados que realmente pagam no PIX e PayPal",
+        "text": "Se você quer saque baixo e regras transparentes em vez de saldos fictícios em novelas, confira nossas alternativas testadas:",
+        "links": [
+          {
+            "label": "TikTok Lite (PIX desde R$ 0,50 · código DL70959891)",
+            "url": "/pt/tiktok-lite-recompensas-saque/"
+          },
+          {
+            "label": "Prime Opinion (+10% código ALNTFL)",
+            "url": "/pt/prime-opinion-como-funciona-e-confiavel-paga-mesmo/"
+          },
+          {
+            "label": "Pawns.app (bônus de $3)",
+            "url": "/pt/pawns-app-como-funciona-guia-completo/"
+          },
+          {
+            "label": "Freecash (jogos e ofertas)",
+            "url": "/pt/freecash-ofertas-convites/"
+          }
+        ]
+      },
+      "sections": [
+        {
+          "heading": "Panorama 2026: quais apps de novelas não pagam vs. PineDrama e DramaBox",
+          "paragraphs": [
+            "Nos testes publicados no apps308 em 2026, quatro apps de mininovelas seguem um roteiro de retenção por anúncios que trava o pagamento: [DramaStack](/pt/dramastack-paga-mesmo/) (exibe saque mínimo de R$ 300, mas a política de privacidade diz que moedas virtuais não se convertem em dinheiro), [CashDrama](/pt/cashdrama-e-confiavel-paga-mesmo-review/) (trava saques de $1 e $100+ atrás de 12 episódios e 'Day 2 Unlock'), [Cash Fortune Drama](/pt/cash-fortune-drama-paga-mesmo-e-confiavel/) (exige $500 a $3.000 e usa isca de iPhone) e [DramaGood](/pt/dramagood-paga-mesmo/) (trava nos R$ 106,60 diante de um mínimo de R$ 240 sem citar saque em dinheiro na Google Play nem na Privacidade).",
+            "Na outra ponta, o [PineDrama](/pt/pinedrama-paga-mesmo-como-sacar-pix/) —app oficial do TikTok— tem aba Recompensas ativa no Brasil pagando centavos reais via PIX a 30.000 pontos = R$ 1 (~$0,18 USD), embora essa aba não exista na maioria dos países de língua espanhola ou inglesa. Já o [DramaBox](/pt/dramabox-e-pago-ou-gratuito-confiavel-review/) é exclusivamente streaming freemium (mais de 16 mil doramas), onde moedas só desbloqueiam episódios dentro do app."
+          ]
+        },
+        {
+          "heading": "As travas e padrões repetidos nos apps que não pagam",
+          "paragraphs": [
+            "Embora mudem de nome, os apps que prometem dezenas ou centenas de dólares repetem a mesma engenharia de retenção: inflam o saldo logo no primeiro dia para parecer que falta pouco e depois bloqueiam o resgate. No nosso teste de [saque do CashDrama](/pt/cashdrama-paga-mesmo-como-sacar-dinheiro/), o saldo foi a $99,86 e $106,84 no Dia 1 (mostrando '$0 to go' no cartão de $100), mas o botão 'Withdraw Now' seguiu cinza atrás de 'Day 2 Unlock' e '12 ep. left'.",
+            "No DramaStack, a tela mostra mínimo de R$ 300 e níveis a partir de R$ 1,51 mil, enquanto o painel Regras vincula os bônus ao desbloqueio de episódios. Todos ainda exibem tickers ou listas internas de supostos saques ($100–$800, R$ 240, R$ 300) sem qualquer comprovante bancário verificável."
+          ],
+          "image": {
+            "key": "cashdrama-withdraw-1",
+            "alt": "Tela Withdraw do CashDrama com saldo de $99,86, $1 travado em 12 episódios e $100 travado em Day 2 Unlock",
+            "caption": "CashDrama com $99,86: até o cartão de $1 exige 12 episódios com recompensa, e o de $100 fica preso em 'Day 2 Unlock'.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Cash Fortune Drama: mínimo de $500 a $3.000, pop-up AD e isca de iPhone",
+          "paragraphs": [
+            "O Cash Fortune Drama leva o exagero ainda mais longe. O saldo salta de $0 para $15 e $35 rapidamente no feed Shorts, mas a aba Withdraw coloca o menor saque em $500 (com níveis travados de $1.000, $1.500 e $3.000) exibindo botões de PIX, PicPay, Mercado Libre e Nubank junto a um ticker superior não verificável de $500 e $1.500.",
+            "No meio da tela, o pop-up 'Congratulations!' destaca um botão roxo gigante 'Claim $200' com ícone 'AD' contra um link minúsculo 'Only $10', enquanto outro aviso promete enviar um iPhone 17 Pro MAX ($1.199) da Apple para quem assistir a uma série inteira e preencher o endereço residencial. Como anúncios geram centavos por visualização, essas promessas não fecham a conta e expõem dados sem garantia."
+          ],
+          "image": {
+            "key": "cashfortunedrama-withdraw",
+            "alt": "Tela Withdraw do Cash Fortune Drama com saldo de $35, mínimos de $500 a $3.000, abas PIX e PicPay e ticker superior",
+            "caption": "Tela Withdraw do Cash Fortune Drama: BALANCE $35 diante de metas de $500 a $3.000 e ticker sem comprovação externa.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "DramaGood: saldo em R$ 106,60 e a barreira invisível de R$ 240",
+          "paragraphs": [
+            "No teste de 16 de novembro de 2026 no DramaGood (com.drama.good.shortplay.atsab), a carteira marcou R$ 106,60 logo no início —faltando R$ 133,40 para o mínimo de R$ 240 (com níveis até R$ 1.600) e missões anunciando R$ 7.777 e R$ 3.333. Mesmo após concluir a avaliação 5 estrelas e ativar notificações, o saldo seguiu travado.",
+            "Mais importante: nem a ficha oficial da Google Play nem a Política de Privacidade (drama-good.com/privacy.html) citam PIX, transferência bancária ou programa de pagamento em dinheiro, descrevendo o aplicativo apenas como streaming com benefícios internos."
+          ],
+          "image": {
+            "key": "dramagood-carteira",
+            "alt": "Carteira do DramaGood com saldo de R$ 106,60 e faixas de saque de R$ 240 a R$ 1.600",
+            "caption": "Carteira do DramaGood: saldo de R$ 106,60 estagnado a R$ 133,40 do mínimo de R$ 240, com ícones de PIX e cartões.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "PineDrama vs. DramaBox: centavos no PIX vs. streaming sem saque",
+          "paragraphs": [
+            "Ao contrário dos clones acima, o [PineDrama](/pt/pinedrama-e-confiavel-review-completo/) (com.ss.android.ttmd.video) é oficial do TikTok e mostra a matemática real na tela do Brasil: 30.000 pontos = R$ 1 (~$0,18 USD), com Central de resgate no PIX em R$ 0,10 (único), R$ 0,50, R$ 1,00 e R$ 2,00. O limite está no retorno por hora: assistir a todos os 30 anúncios diários de 30 segundos (15 minutos de propaganda) rende no máximo 12.000 pontos (~R$ 0,40), e fora de mercados promocionais a aba nem existe.",
+            "Já o DramaBox (com.storymatrix.drama) não promete dinheiro: suas Reward Coins (+10 a +30 por anúncio) servem apenas para destravar capítulos dentro de um catálogo freemium com mais de 16 mil séries, sem opção de PIX — veja os custos no comparativo de [preço das moedas no DramaBox vs. assinatura VIP](/pt/dramabox-preco-moedas-recarga-vs-assinatura-vip/)."
+          ],
+          "image": {
+            "key": "pinedrama-cashout",
+            "alt": "Central de resgate do PineDrama mostrando 920 pontos convertidos em R$ 0,03 e opções PIX de R$ 0,10 a R$ 2,00",
+            "caption": "Central de resgate do PineDrama: conversão transparente de 30.000 pontos = R$ 1 e saques modestos via PIX no Brasil.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Vídeos curtos com saque baixo via PIX: TikTok Lite",
+          "paragraphs": [
+            "Para quem quer acumular trocados assistindo a vídeos curtos com regras claras no Brasil, o [TikTok Lite](/pt/tiktok-lite-recompensas-saque/) (com.zhiliaoapp.musically.go) mostra a conversão direta e os prazos de validade dos pontos. Nas capturas de 16 de novembro de 2026, 240.769 pontos equivaliam a R$ 8,02 (~30.000 pontos por R$ 1,00), com saque via PIX, PagBank e transferência bancária a partir de R$ 0,50 (botões de R$ 0,50, R$ 1, R$ 15 e R$ 30) e recarga de celular desde R$ 10.",
+            "Sem indicações, os 30 anúncios diários (6.000 pontos) rendem cerca de R$ 0,20 e os pontos expiram após o prazo informado no topo. Use como bônus leve de entretenimento e confira se sua conta nova é elegível ao código de convite DL70959891."
+          ],
+          "image": {
+            "key": "tiktoklite-saque",
+            "alt": "Tela Resgatar recompensas do TikTok Lite com PIX, PagBank e transferência a partir de R$ 0,50",
+            "caption": "Tela de resgate do TikTok Lite: mínimo baixo de R$ 0,50 via PIX e PagBank em contas elegíveis.",
+            "wide": false
+          },
+          "cta": {
+            "label": "Baixar TikTok Lite pelo link oficial (código DL70959891)",
+            "url": "https://www.tiktok.com/d/4/ZS9fcGCx9xhYn-v2KXS/",
+            "sponsored": true
+          }
+        },
+        {
+          "heading": "Alternativas reais que pagam no PayPal, Bitcoin e gift cards",
+          "paragraphs": [
+            "Se o objetivo é renda extra real em dinheiro sem promessas irreais, plataformas dedicadas de pesquisas e tarefas oferecem mínimos baixos e comprovados. O [Prime Opinion](/pt/prime-opinion-como-funciona-e-confiavel-paga-mesmo/) exibe o valor exato em dólar antes de cada questionário (como $0,27 USD em 2 minutos), libera saque via PayPal, Venmo, transferência ou gift cards a partir de $5,25 USD e dá +10% por 24h com o código ALNTFL. O [AttaPoll](/pt/attapoll-como-funciona/) traz pesquisas e jogos no celular com avaliação em estrelas e mínimos baixos no PayPal conforme o país ($3 na Google Play em inglês / €2,50 em espanhol).",
+            "Para diversificar entre internet compartilhada opcional, pesquisas e metas de jogos, o [Pawns.app](/pt/pawns-app-como-funciona-guia-completo/) tem saque mínimo de $5,00 USD no PayPal ou Bitcoin (e código 6823713 com bônus de $3 dividido em $1 após os três primeiros saques válidos). Já o [Freecash](/pt/freecash-ofertas-convites/) (operado pela Almedia GmbH, código 3C7GKG) concentra ofertas maiores em jogos, exigindo atenção ao mínimo regional de primeiro saque (como US$ 25 na ajuda oficial) e às taxas do PayPal (5% + US$ 1 em saques de $5 a $20), detalhadas na nossa avaliação sobre se o [Freecash é confiável e paga mesmo](/pt/freecash-e-confiavel-paga-mesmo-avaliacoes/)."
+          ],
+          "image": {
+            "key": "primeopinion-rewards",
+            "alt": "Menu de saque do Prime Opinion exibindo opções PayPal e Venmo a partir de $5,25 USD",
+            "caption": "Menu de resgate do Prime Opinion: saques reais a partir de $5,25 USD via PayPal em vez de travas de $100 a $500.",
+            "wide": true
+          },
+          "cta": {
+            "label": "Cadastrar no Prime Opinion com +10% de bônus (código ALNTFL)",
+            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d",
+            "sponsored": true
+          }
+        }
+      ],
+      "tables": [
+        {
+          "heading": "Comparativo 2026: Apps de Novelas Curtas vs. Apps que Realmente Pagam",
+          "columns": [
+            "App",
+            "Promessa / Mínimo exibido",
+            "Realidade observada nos testes",
+            "Status em 2026"
+          ],
+          "rows": [
+            [
+              "DramaStack",
+              "R$ 300 (~$55–$60 USD) a R$ 1,51 mil+",
+              "Política de privacidade diz que moedas virtuais não viram dinheiro; bônus desbloqueiam episódios",
+              "Não paga na prática"
+            ],
+            [
+              "CashDrama",
+              "$1 (12 ep.) / $100 a $1K",
+              "Saldo vai a $99,86–$106,84 no Dia 1, mas Withdraw Now segue travado em Day 2 Unlock e 12 ep.",
+              "Não paga de forma confiável"
+            ],
+            [
+              "Cash Fortune Drama",
+              "$500 a $3.000 + iPhone 17 Pro MAX",
+              "Salto $0 -> $35, pop-up +$200 AD vs. Only $10, isca de iPhone $1.199 pedindo endereço, ticker sem prova",
+              "Não paga"
+            ],
+            [
+              "DramaGood",
+              "R$ 240 a R$ 1.600 / tarefas R$ 7.777",
+              "Saldo trava em R$ 106,60 (faltam R$ 133,40); Google Play e Privacidade não citam pagamento",
+              "Não paga"
+            ],
+            [
+              "PineDrama",
+              "R$ 0,10–R$ 2,00 PIX (30.000 pts = R$ 1)",
+              "App oficial do TikTok; paga centavos simbólicos no Brasil (~R$ 0,40 em 30 anúncios); ausente na maioria dos países",
+              "Paga centavos limitados"
+            ],
+            [
+              "DramaBox",
+              "Reward Coins (+10 a +30 por anúncio)",
+              "Streaming freemium (16 mil+ séries); moedas só desbloqueiam capítulos dentro do app",
+              "Apenas streaming (sem saque)"
+            ],
+            [
+              "TikTok Lite",
+              "A partir de R$ 0,50 no PIX/PagBank",
+              "30.000 pts = R$ 1,00 no Brasil; 30 anúncios = ~R$ 0,20; pontos expiram; código DL70959891",
+              "Paga valores baixos (campanha regional)"
+            ],
+            [
+              "Prime Opinion",
+              "A partir de $5,25 USD (PayPal, Venmo, cards)",
+              "Valor direto em dólar por pesquisa ($0,27+ em 2 min), notas da comunidade e +10% código ALNTFL",
+              "Verificado e paga"
+            ],
+            [
+              "Pawns.app",
+              "A partir de $5,00 USD (PayPal, Bitcoin, cards)",
+              "Pesquisas, jogos e internet compartilhada opcional; bônus $3 (código 6823713) em 3 saques válidos",
+              "Verificado e paga"
+            ],
+            [
+              "Freecash",
+              "Conforme método (US$ 25 no 1º saque regional)",
+              "Plataforma da Almedia GmbH para jogos e ofertas; taxa PayPal 5% + US$ 1 em $5–$20; código 3C7GKG",
+              "Legítimo (regras de rastreamento/KYC)"
+            ],
+            [
+              "AttaPoll",
+              "Mínimo regional baixo no PayPal ($3 / €2,50)",
+              "Pesquisas e jogos com avaliação em estrelas; envio em até 72h; código cgfky",
+              "Verificado e paga"
+            ]
+          ],
+          "afterSectionIndex": 0
+        }
+      ],
+      "steps": [
+        "Abra primeiro a tela de saque de qualquer app de novelas para conferir se exige R$ 240–R$ 300 ou $100–$3.000.",
+        "Leia a ficha na Google Play e a Política de Privacidade: se não existir programa de pagamento documentado (como no DramaStack e DramaGood), não espere dinheiro.",
+        "Nunca informe seu endereço residencial ou dados bancários em pop-ups que prometem iPhone 17 Pro MAX ou prêmios físicos.",
+        "Se quiser apenas assistir a mininovelas grátis, prefira apps oficiais como PineDrama ou DramaBox sem contar com renda.",
+        "Quando buscar dinheiro real no PIX ou PayPal, escolha plataformas verificadas como Prime Opinion, Pawns.app, AttaPoll, Freecash ou TikTok Lite."
+      ],
+      "pros": [
+        "Reúne provas reais e prints lado a lado separando armadilhas de anúncios, streaming puro e apps que pagam.",
+        "Links diretos para as análises individuais, regras de saque e códigos oficiais verificados no site."
+      ],
+      "cons": [
+        "A maioria dos apps de novelas que prometem dinheiro trava os saques com mínimos irreais ou regras restritivas.",
+        "Mesmo programas legítimos de vídeos curtos (PineDrama e TikTok Lite) pagam apenas centavos por dia sem indicações."
+      ],
+      "faq": [
+        {
+          "q": "Qual app de novela curta paga de verdade no PIX?",
+          "a": "Nenhum aplicativo de novelas paga os valores altos anunciados em propagandas. Entre os apps de mininovelas, apenas o PineDrama (oficial do TikTok) exibe saque no PIX no Brasil a partir de R$ 0,10, porém pagando apenas centavos simbólicos (30.000 pontos = R$ 1). O DramaBox não tem saque."
+        },
+        {
+          "q": "DramaStack, CashDrama, Cash Fortune Drama ou DramaGood pagam?",
+          "a": "Não de forma confiável. Nos testes do apps308, o DramaStack exibe R$ 300 mas sua política proíbe converter moedas em dinheiro; o CashDrama trava $100+ com 'Day 2 Unlock' e 12 episódios; o Cash Fortune Drama exige $500–$3.000 com isca de iPhone; e o DramaGood para em R$ 106,60 antes do mínimo de R$ 240."
+        },
+        {
+          "q": "PineDrama ainda paga para assistir novelas em 2026?",
+          "a": "No Brasil, a aba Recompensas do PineDrama converte 30.000 pontos em R$ 1 (~$0,18 USD) com saques via PIX de R$ 0,10 a R$ 2,00, mas assistir a 30 anúncios diários rende cerca de R$ 0,40. Na maioria dos outros países, o app funciona só como streaming gratuito."
+        },
+        {
+          "q": "Qual alternativa realmente paga via PIX ou PayPal?",
+          "a": "Entre as opções verificadas com saque baixo estão o TikTok Lite (PIX desde R$ 0,50 no Brasil, código DL70959891), Prime Opinion (PayPal desde $5,25 USD, código ALNTFL), Pawns.app (PayPal/Bitcoin desde $5,00 USD, código 6823713), AttaPoll (PayPal com mínimo regional baixo, código cgfky) e Freecash (ofertas de jogos, código 3C7GKG)."
+        }
+      ],
+      "verdict": "DramaStack, CashDrama, Cash Fortune Drama e DramaGood não entregam os saques prometidos: os saldos altos e mínimos de R$ 240–R$ 300 ou $100–$3.000 servem apenas para gerar visualizações de anúncios. Use DramaBox ou PineDrama só como entretenimento gratuito e recorra a TikTok Lite, Prime Opinion, Pawns.app, AttaPoll ou Freecash se quiser dinheiro de verdade.",
+      "imageAlt": "Tela de saque do DramaStack mostrando mínimo de R$ 300 e níveis superiores",
+      "caption": "O DramaStack exibe saque mínimo de R$ 300 e níveis de R$ 1,51 mil+, mas sua política de privacidade afirma que moedas virtuais não se convertem em dinheiro.",
+      "imageKey": "dramastack-payout",
+      "imageWide": false,
+      "relatedIds": [
+        "dramastack",
+        "cashdrama",
+        "cashfortunedrama",
+        "dramagood",
+        "pinedrama-rewards",
+        "primeopinion",
+        "pawns",
+        "tiktoklite"
+      ]
+    },
+    {
+      "id": "opinion-vs-primeopinion-attapoll",
+      "app": "compare",
+      "category": "rewards",
+      "slug": "google-opinion-rewards-vs-prime-opinion-qual-paga-mais",
+      "title": "Google Opinion Rewards vs Prime Opinion (2026): Saldo Play ou Dinheiro no PayPal?",
+      "description": "Google Opinion Rewards ou Prime Opinion e AttaPoll? Compare quanto paga cada app, validade do saldo na Play Store vs. saque em dinheiro real no PayPal e PIX.",
+      "modifiedDate": "2026-11-18",
+      "intro": "O Google Opinion Rewards é um dos apps de pesquisas mais baixados no Android, mas muita gente só descobre depois que o saldo cai apenas como crédito na Google Play Store — sem saque direto para PayPal ou PIX. Comparar o [Google Opinion Rewards](/pt/google-opinion-rewards-como-funciona/) lado a lado com [Prime Opinion](/pt/prime-opinion-como-funciona-e-confiavel-paga-mesmo/) e [AttaPoll](/pt/attapoll-como-funciona/) deixa claro quando vale ficar no crédito da loja e quando migrar para plataformas que pagam dinheiro de verdade.",
+      "topCallout": {
+        "title": "Leia os guias completos de cada plataforma",
+        "text": "Confira prints reais, regras de saque e códigos oficiais antes de começar:",
+        "links": [
+          {
+            "label": "Google Opinion Rewards (crédito Play e validade)",
+            "url": "/pt/google-opinion-rewards-como-funciona/"
+          },
+          {
+            "label": "Prime Opinion (+10% com código ALNTFL)",
+            "url": "/pt/prime-opinion-como-funciona-e-confiavel-paga-mesmo/"
+          },
+          {
+            "label": "AttaPoll (estrelas e código cgfky)",
+            "url": "/pt/attapoll-como-funciona/"
+          }
+        ]
+      },
+      "sections": [
+        {
+          "heading": "Tipo de recompensa e validade: crédito na Play Store vs. dinheiro no PayPal",
+          "paragraphs": [
+            "A maior diferença entre os três aplicativos está no destino do dinheiro. Segundo a documentação oficial do Google, o [Google Opinion Rewards no Android](/pt/google-opinion-rewards-como-funciona/) paga exclusivamente em créditos da Google Play Store — não permite transferência bancária, PayPal ou saque via PIX no Android — e cada crédito vence após um ano. No iOS, a disponibilidade e as regras de pagamento são diferentes e variam por país.",
+            "Já o [Prime Opinion](/pt/como-sacar-no-prime-opinion-paypal-codigo-bonus/) exibe seus ganhos diretamente em dólar e libera resgates via PayPal (onde a conversão para Reais ocorre na sua carteira), Venmo, transferências bancárias e vales-presente digitais (incluindo Google Play e Apple) a partir de $5,25 USD. O [AttaPoll](/pt/como-sacar-no-attapoll/) também oferece carteiras como PayPal e Revolut, além de cartões-presente brasileiros na conta analisada (Carrefour, Assaí, Casas Bahia, Renner, C&A, Centauro, Decathlon e Petz)."
+          ]
+        },
+        {
+          "heading": "Frequência e controle de pesquisas: Prime Opinion (ALNTFL) vs. notificações passivas",
+          "paragraphs": [
+            "No Google Opinion Rewards, o usuário não escolhe pesquisas em uma lista aberta: as perguntas chegam de forma passiva conforme o perfil e a elegibilidade do serviço, algumas expiram em 24 horas e o crédito pode levar alguns dias para aparecer, sem rotina diária previsível.",
+            "No Prime Opinion, você acessa um painel ativo com filtros práticos — 'Best Match' (Mais Relevantes), 'Short Surveys' (menos de 5 minutos) e 'Highest Payout' (Maiores Ganhos) — além de notas da comunidade em estrelas (como 5 estrelas em 110 avaliações), valores exatos em dólar antes de começar (por exemplo, $0,27 USD por um questionário de 2 minutos) e ofertas de jogos. Quem cria conta pelo link oficial ou informa o código ALNTFL nas primeiras 24 horas recebe um bônus de +10% em todas as pesquisas respondidas durante o primeiro dia."
+          ],
+          "image": {
+            "key": "primeopinion-home",
+            "alt": "Tela inicial do Prime Opinion mostrando saldo em dólar, pesquisas curtas e bônus de +25%",
+            "caption": "Painel do Prime Opinion: filtros por pesquisas curtas, valores em dólar e bônus de +10% nas primeiras 24h com código ALNTFL.",
+            "wide": false
+          },
+          "cta": {
+            "label": "Cadastrar no Prime Opinion com +10% de bônus (código ALNTFL)",
+            "url": "https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d",
+            "sponsored": true
+          }
+        },
+        {
+          "heading": "Pesquisas no AttaPoll, sistema de estrelas e código cgfky (7 dias)",
+          "paragraphs": [
+            "O [AttaPoll](/pt/attapoll-como-funciona/) também coloca pesquisas remuneradas, jogos e tarefas em uma lista ativa no celular. Cada cartão mostra o valor ofertado, o tempo estimado e estrelas — que, segundo a ajuda oficial, indicam a chance relativa de concluir aquela pesquisa (na conta das capturas havia ofertas de US$ 0,12 em 12 min com 2 estrelas, US$ 0,39 em 8 min com 3 estrelas e US$ 0,02 para desbloquear questionários em 11 perguntas).",
+            "Assim como no Prime Opinion, a aprovação depende do perfil e da validação do provedor, podendo haver desqualificações ou cotas encerradas. Para usar o [código de convite cgfky no AttaPoll](/pt/codigo-convite-attapoll/), o próprio app e a ajuda oficial permitem inseri-lo em Configurações em até sete dias após o cadastro, desde que nenhuma outra indicação já tenha sido vinculada."
+          ],
+          "image": {
+            "key": "attapoll-pesquisas",
+            "alt": "Lista de pesquisas do AttaPoll com valores em dólar, duração estimada e estrelas",
+            "caption": "Lista de pesquisas no AttaPoll: valores exibidos antes de iniciar e estrelas indicando probabilidade relativa de conclusão.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Mínimos de saque, prazos e disponibilidade de PayPal ou PIX",
+          "paragraphs": [
+            "Os métodos, moedas e mínimos mudam conforme o país e a conta. No Google Opinion Rewards (Android), não há mínimo de saque porque o crédito entra direto na Google Play para compras na loja em até 1 ano. No [resgate do Prime Opinion](/pt/como-sacar-no-prime-opinion-paypal-codigo-bonus/), o mínimo começa em $5,25 USD para PayPal, Venmo e cartões-presente — vales costumam sair quase na hora e transferências no PayPal chegam em minutos ou até 24 horas úteis (taxas de terceiros podem incidir e só é permitida uma conta verificada).",
+            "No [saque do AttaPoll](/pt/como-sacar-no-attapoll/), não existe um mínimo global único: a carteira do aplicativo mostra o limite exato da sua conta. A ficha da Google Play em inglês cita $3 e a em espanhol cita €2,50, enquanto a captura brasileira exibiu saldo acumulado de US$ 2,52 (com indicador superior de US$ 3), opções de PayPal, Revolut e cartões-presente nacionais — sem PIX visível nas capturas inspecionadas (confira sua própria carteira no app). A ajuda oficial informa prazo de até 72 horas para envio do pagamento."
+          ],
+          "image": {
+            "key": "primeopinion-rewards",
+            "alt": "Menu de resgate do Prime Opinion exibindo PayPal, Venmo e cartões-presente a partir de $5,25 USD",
+            "caption": "Tela de resgate do Prime Opinion: opções em dinheiro no PayPal e vales-presente a partir de $5,25 USD.",
+            "wide": false
+          },
+          "cta": {
+            "label": "Baixar o AttaPoll com código de convite cgfky",
+            "url": "https://attapoll.app/join/cgfky",
+            "sponsored": true
+          }
+        },
+        {
+          "heading": "Vale a pena usar os três aplicativos juntos?",
+          "paragraphs": [
+            "Sim, porque eles atendem objetivos diferentes sem conflito. Mantenha o Google Opinion Rewards instalado no Android se você costuma comprar apps, jogos ou assinaturas na Play Store e lembre-se de gastar os créditos antes do prazo de 1 ano.",
+            "Quando o foco for dinheiro real no PayPal ou vales fora da Play Store, concentre sua rotina no Prime Opinion (aproveitando o bônus de +10% nas primeiras 24h com ALNTFL) e deixe o AttaPoll aberto como segunda opção no celular com o [código cgfky](/pt/codigo-convite-attapoll/) para pesquisas curtas e saques menores conforme sua região."
+          ],
+          "image": {
+            "key": "attapoll-carteira",
+            "alt": "Carteira do AttaPoll exibindo saldo acumulado de US$ 2,52 e botão Retirada",
+            "caption": "Carteira do AttaPoll (exemplo com US$ 2,52 acumulados): métodos disponíveis e mínimo variam por país e conta.",
+            "wide": false
+          }
+        }
+      ],
+      "tables": [
+        {
+          "heading": "Google Opinion Rewards vs. Prime Opinion vs. AttaPoll (Comparativo 2026)",
+          "columns": [
+            "Critério",
+            "Google Opinion Rewards",
+            "Prime Opinion",
+            "AttaPoll"
+          ],
+          "rows": [
+            [
+              "Tipo de pagamento",
+              "Crédito Google Play no Android (regras distintas no iOS)",
+              "Dinheiro em USD (PayPal, Venmo, banco) e gift cards",
+              "Carteiras (PayPal, Revolut) e cartões-presente locais"
+            ],
+            [
+              "Validade / Mínimo",
+              "Crédito Play no Android vence em 1 ano; sem saque PIX/PayPal",
+              "A partir de $5,25 USD (PayPal em minutos a 24h; vales quase na hora)",
+              "Varia por país/método ($3 EN / €2,50 ES na Play Store; envio em até 72h)"
+            ],
+            [
+              "Controle de pesquisas",
+              "Notificações passivas; frequência imprevisível; pesquisas vencem em 24h",
+              "Painel ativo com filtros (Best Match, Curtas <5 min, Maiores Ganhos) + jogos",
+              "Lista ativa com valor, duração, estrelas de conclusão, jogos e tarefas"
+            ],
+            [
+              "Bônus de convite",
+              "Apenas link genérico de compartilhamento (sem bônus de indicação)",
+              "Código ALNTFL (+10% nas pesquisas por 24h após o cadastro)",
+              "Código cgfky (inserir em Configurações em até 7 dias após cadastro)"
+            ],
+            [
+              "Melhor uso prático",
+              "Abater compras ocasionais dentro da Google Play Store",
+              "Saques rápidos no PayPal com valores transparentes em dólar",
+              "Pesquisas rápidas no celular com mínimos regionais baixos"
+            ]
+          ],
+          "afterSectionIndex": 0
+        }
+      ],
+      "steps": [
+        "Defina primeiro seu objetivo: crédito na Google Play Store (Google Opinion Rewards) ou dinheiro sacável (Prime Opinion e AttaPoll).",
+        "No Android, use o Google Opinion Rewards apenas para abater compras na Play Store e acompanhe o vencimento de 1 ano dos créditos.",
+        "Crie sua conta no Prime Opinion pelo link oficial e aplique o código ALNTFL nas primeiras 24 horas para ativar o bônus de +10%.",
+        "Instale o AttaPoll, insira o código cgfky em Configurações em até 7 dias e dê prioridade às pesquisas com mais estrelas.",
+        "Confira sempre os métodos e o mínimo exibidos na sua própria conta antes de pedir um saque no PayPal ou vale-presente."
+      ],
+      "pros": [
+        "Mostra com clareza a diferença entre saldo preso na Google Play (com validade de 1 ano) e saque em dinheiro no PayPal.",
+        "Reúne prints reais, prazos oficiais dos códigos (ALNTFL em 24h e cgfky em 7 dias) e regras regionais sem promessas irreais."
+      ],
+      "cons": [
+        "Nenhum dos três aplicativos garante volume diário fixo de pesquisas ou renda fixa.",
+        "Métodos de pagamento (como PayPal, Revolut ou vales locais), moedas e mínimos variam conforme país e conta."
+      ],
+      "faq": [
+        {
+          "q": "Dá para sacar o saldo do Google Opinion Rewards no PayPal ou PIX?",
+          "a": "No Android, não. A documentação oficial do Google informa que as recompensas no Android são créditos para compras elegíveis na Google Play Store, sem saque para conta bancária, PayPal ou PIX, e com validade de 1 ano. No iOS, a disponibilidade e as regras de pagamento variam por país."
+        },
+        {
+          "q": "Qual paga mais rápido em dinheiro real: Prime Opinion ou AttaPoll?",
+          "a": "O Prime Opinion libera saques a partir de $5,25 USD via PayPal, Venmo ou gift cards e costuma processar pedidos no PayPal em minutos até 24 horas. O AttaPoll tem mínimos regionais baixos em vários países (como $3 ou €2,50 citados na Google Play, conforme método e conta) com prazo oficial de envio de até 72 horas."
+        },
+        {
+          "q": "Vale usar os três apps juntos (Google Opinion Rewards, Prime Opinion e AttaPoll)?",
+          "a": "Sim. Como o Google Opinion Rewards envia alertas esporádicos para crédito na Play Store enquanto Prime Opinion e AttaPoll trazem painéis ativos para sacar no PayPal, usar os três em paralelo cobre tanto gastos na loja quanto dinheiro livre."
+        },
+        {
+          "q": "Como ativar os códigos ALNTFL e cgfky?",
+          "a": "No Prime Opinion, cadastre-se pelo link oficial ou digite o código ALNTFL na aba 'Refer a Friend' dentro das primeiras 24 horas para ganhar +10% nas pesquisas por um dia. No AttaPoll, insira o código cgfky em Configurações em até 7 dias após criar a conta (caso não haja outra indicação ativa)."
+        },
+        {
+          "q": "O saldo do Prime Opinion ou do AttaPoll vence em 1 ano como no Google Opinion Rewards?",
+          "a": "O vencimento de 1 ano é uma regra informada pelo Google para créditos do Google Opinion Rewards no Android gastos na Play Store. Prime Opinion e AttaPoll não aplicam essa validade de loja, embora sigam os termos de uso e regras regionais de cada plataforma."
+        }
+      ],
+      "verdict": "Fique no Google Opinion Rewards apenas se você já gasta com aplicativos, jogos ou assinaturas na Play Store. Se a meta é dinheiro real no PayPal ou cartões fora da loja do Google, o Prime Opinion (com +10% via código ALNTFL) e o AttaPoll (com mínimos regionais baixos e código cgfky) entregam muito mais flexibilidade — e usar os três juntos aproveita o melhor de cada um.",
+      "imageAlt": "Tela de tarefas do Google Opinion Rewards mostrando pesquisa disponível e opções de perfil",
+      "caption": "Interface do Google Opinion Rewards no Android: pesquisas pagam crédito na Play Store (validade de 1 ano), sem saque em dinheiro.",
+      "imageKey": "opinion",
+      "imageWide": false,
+      "relatedIds": [
+        "opinion",
+        "primeopinion",
+        "primeopinion-cashout",
+        "attapoll",
+        "attapoll-saque",
+        "attapoll-convite"
+      ]
+    },
+    {
+      "id": "microsoft-catalog",
+      "app": "microsoft",
+      "category": "rewards",
+      "slug": "catalogo-microsoft-rewards-quanto-valem-os-pontos-resgate",
+      "title": "Catálogo Microsoft Rewards (2026): Quanto Valem os Pontos e Como Resgatar",
+      "description": "Entenda o catálogo do Microsoft Rewards em 2026: como funciona o valor dos pontos, Nível 1 vs. Nível 2, gift cards, sequências diárias e selos (stamps).",
+      "intro": "Antes de passar semanas juntando pontos no Microsoft Rewards, abra a aba Resgatar dentro da sua própria conta Microsoft. Como os pontos não têm valor fixo em dinheiro no mundo todo, a quantidade exata exigida para cartões Microsoft/Xbox, gift cards de lojas parceiras ou sorteios varia conforme o catálogo do seu país, o status Nível 1 vs. Nível 2 e os selos ou sequências ativas no painel. Se você está começando agora, combine esta leitura com nosso [guia inicial de pontos Microsoft Rewards](/pt/guia-pontos-microsoft-rewards/).",
+      "topCallout": {
+        "title": "Veja as regras básicas ou compare apps que pagam no PayPal",
+        "text": "Confira o guia introdutório do Microsoft Rewards ou compare aplicativos de pesquisas caso queira dinheiro sacável:",
+        "links": [
+          {
+            "label": "Guia básico de pontos e acompanhamento de pedidos",
+            "url": "/pt/guia-pontos-microsoft-rewards/"
+          },
+          {
+            "label": "Google Opinion Rewards vs. Prime Opinion e AttaPoll (PayPal)",
+            "url": "/pt/google-opinion-rewards-vs-prime-opinion-qual-paga-mais/"
+          }
+        ]
+      },
+      "sections": [
+        {
+          "heading": "Como funciona o catálogo regional do Microsoft Rewards e por que o valor muda",
+          "paragraphs": [
+            "A Microsoft informa claramente que os pontos do Rewards não têm valor em dinheiro e só podem ser trocados por itens elegíveis exibidos no catálogo da sua região. Dependendo do país, a aba Resgatar reúne gift cards da Microsoft e Xbox, crédito na loja, cartões-presente de parceiros, doações e sorteios — e a lista pode mudar ao longo do tempo.",
+            "Por isso, não existe uma cotação única universal. Como exemplo referencial em mercados como os EUA, cartões Microsoft/Xbox costumam ficar perto de ~1.000 pontos por US$ 1, enquanto gift cards de parceiros exigem mais pontos (por exemplo, ~5.000 a 6.500+ pontos em faixas equivalentes a US$ 5, dependendo do nível e do catálogo regional). Trate qualquer tabela externa apenas como referência de ordem de grandeza e confira o valor exato exibido na sua conta."
+          ],
+          "source": {
+            "title": "Microsoft: regiões compatíveis com o Rewards",
+            "url": "https://support.microsoft.com/en-us/accounts-billing/rewards/microsoft-rewards-regions"
+          }
+        },
+        {
+          "heading": "Nível 1 vs. Nível 2: limites de ganho, descontos e conferência antes de juntar",
+          "paragraphs": [
+            "O Microsoft Rewards divide os participantes entre Nível 1 e Nível 2 de acordo com a pontuação acumulada no mês na aba Status. Alcançar o Nível 2 nos mercados compatíveis amplia os limites diários de pesquisas e atividades e pode reduzir a pontuação necessária para resgatar recompensas próprias da Microsoft em comparação ao Nível 1.",
+            "Antes de mirar um prêmio alto, clique no item desejado dentro de Resgatar para ver o custo exato no Nível 1 e no Nível 2, além dos valores disponíveis na moeda local. Observe também se a recompensa é crédito promocional na conta Microsoft (com regras próprias de uso) ou código de vale-presente entregue pelo histórico de pedidos e e-mail."
+          ],
+          "source": {
+            "title": "Microsoft: como resgatar pontos do Rewards",
+            "url": "https://support.microsoft.com/en-us/accounts-billing/rewards/how-to-redeem-microsoft-rewards-points"
+          }
+        },
+        {
+          "heading": "Sequências diárias e selos (stamps / puzzle pieces): como ganhar sem bloqueio",
+          "paragraphs": [
+            "Além das buscas no Bing e questionários, muitos painéis exibem Conjuntos Diários (Daily Sets), contadores de sequência e cartões promocionais de selos (stamps / punch cards) ou peças de quebra-cabeça (puzzle pieces) conforme disponibilidade da conta. Cumprir as etapas em dias seguidos libera bônus extras — mas falhar um único dia zera a sequência, e os cartões de selos só contam tarefas feitas dentro da janela ativa.",
+            "Nunca tente acelerar sequências ou selos com VPN, alteração de localização, scripts, extensões ou buscas automatizadas. A Microsoft proíbe automação e pode exigir confirmação por número de telefone celular ou fixo real no resgate (números VoIP não são aceitos), sempre na mesma região da conta."
+          ],
+          "source": {
+            "title": "Microsoft: como ganhar pontos no Rewards",
+            "url": "https://support.microsoft.com/en-us/accounts-billing/rewards/how-to-earn-microsoft-rewards-points"
+          }
+        },
+        {
+          "heading": "Quando usar o Microsoft Rewards vs. complementar com pesquisas pagas",
+          "paragraphs": [
+            "O Microsoft Rewards compensa mais para quem já usa Bing, Edge ou Xbox no dia a dia e quer abater jogos, assinaturas ou compras em lojas parceiras — não para quem precisa de dinheiro vivo. Os pontos nunca se convertem em Pix, PayPal ou transferência bancária.",
+            "Se o seu objetivo é complementar com dinheiro sacável em dólar ou moeda local, vale combinar o uso com aplicativos de pesquisas remuneradas como o [Prime Opinion](/pt/prime-opinion-como-funciona-e-confiavel-paga-mesmo/) (saques a partir de $5,25 USD e +10% nas primeiras 24h com o código ALNTFL) ou o [AttaPoll](/pt/attapoll-como-funciona/) (mínimos regionais baixos e código cgfky). Veja as diferenças práticas no nosso [comparativo de apps de pesquisas pagas](/pt/google-opinion-rewards-vs-prime-opinion-qual-paga-mais/)."
+          ],
+          "image": {
+            "key": "primeopinion-rewards",
+            "alt": "Tela de resgate do Prime Opinion mostrando PayPal, Venmo e gift cards a partir de $5,25 USD",
+            "caption": "Ao contrário dos gift cards do Microsoft Rewards, plataformas como o Prime Opinion pagam em dinheiro via PayPal a partir de $5,25 USD.",
+            "wide": false
+          }
+        }
+      ],
+      "tables": [
+        {
+          "heading": "Fatores do Catálogo Microsoft Rewards: Gift Cards, Níveis e Selos (2026)",
+          "columns": [
+            "Fator do Catálogo",
+            "Como Funciona na Prática",
+            "Variação Regional e de Nível",
+            "Cuidados Antes do Resgate"
+          ],
+          "rows": [
+            [
+              "Cartões Microsoft e Xbox",
+              "Crédito na conta Microsoft ou saldo para jogos e assinaturas Xbox",
+              "Geralmente têm a melhor taxa por ponto (ex.: referência ~1.000 pts ≈ US$ 1 em mercados como os EUA); Nível 2 pode dar desconto",
+              "Confira validade do crédito promocional e opções disponíveis no seu menu Resgatar"
+            ],
+            [
+              "Gift Cards de Terceiros",
+              "Vales-presente digitais de lojas parceiras disponíveis no país",
+              "Costumam exigir mais pontos (ex.: ~5.000–6.500+ pts em faixas de US$ 5 em catálogos referenciais) e mudam conforme o mercado",
+              "Verifique se o parceiro continua em estoque na sua conta antes de juntar pontos"
+            ],
+            [
+              "Nível 1 vs. Nível 2",
+              "Categoria mensal definida pelos pontos acumulados na aba Status",
+              "O Nível 2 aumenta os tetos diários e reduz a pontuação pedida em itens Microsoft em regiões elegíveis",
+              "Acompanhe quantos pontos faltam no mês para manter o Nível 2"
+            ],
+            [
+              "Sequências Diárias e Selos (Stamps)",
+              "Tarefas seguidas e cartões promocionais de etapas no painel",
+              "Disponibilidade e bônus mudam por conta e país; perder um dia reinicia a sequência",
+              "Leia os requisitos e prazos de cada cartão antes de iniciar"
+            ],
+            [
+              "Regras de Resgate e Telefone",
+              "Etapa final acompanhada em Resgatar > Histórico de pedidos",
+              "Exige estar na mesma região da conta e pode pedir telefone celular ou fixo",
+              "Evite VPN, números VoIP e buscas automatizadas para não bloquear a conta"
+            ]
+          ],
+          "afterSectionIndex": 0
+        }
+      ],
+      "steps": [
+        "Entre no painel oficial do Microsoft Rewards e abra a aba Resgatar para conferir o catálogo do seu país.",
+        "Escolha uma recompensa útil (Microsoft/Xbox ou loja parceira) e anote o custo em pontos no Nível 1 e Nível 2.",
+        "Abra a aba Status para acompanhar o progresso mensal do Nível 2 e liberar tetos diários maiores.",
+        "Faça os conjuntos diários e cartões de selos (stamps) disponíveis em sequência, sem pular dias.",
+        "Na hora de resgatar, desligue qualquer VPN, confirme um telefone válido se solicitado e acompanhe em Resgatar > Histórico de pedidos."
+      ],
+      "pros": [
+        "Painel oficial claro para acompanhar Nível 1 vs. Nível 2, catálogo e histórico de pedidos.",
+        "Cartões Microsoft e Xbox costumam render mais pontos por valor do que marcas terceiras."
+      ],
+      "cons": [
+        "Os pontos não têm valor em dinheiro e não oferecem saque via Pix ou PayPal.",
+        "Prêmios disponíveis, selos promocionais e pontuação exata mudam bastante conforme o país."
+      ],
+      "faq": [
+        {
+          "q": "Quanto valem os pontos do Microsoft Rewards no catálogo em 2026?",
+          "a": "A Microsoft informa que os pontos não têm valor em dinheiro, então o rendimento real depende do catálogo do seu país, do prêmio escolhido e do Nível 1 ou Nível 2. Como referência orientativa em mercados como os EUA, cartões Microsoft/Xbox ficam perto de ~1.000 pontos por US$ 1, enquanto gift cards de terceiros costumam pedir ~5.000–6.500+ pontos em faixas de US$ 5; confira sempre o valor oficial na sua aba Resgatar."
+        },
+        {
+          "q": "Como conseguir selos (stamps) e bônus de sequência diária no Microsoft Rewards?",
+          "a": "Os selos, cartões promocionais, peças de quebra-cabeça e sequências diárias aparecem diretamente no painel oficial do Microsoft Rewards quando ativos na sua região. Cumpra os passos listados em dias consecutivos dentro do prazo — falhar um dia reinicia a sequência — sem usar VPN ou automação."
+        },
+        {
+          "q": "Qual é a diferença entre Nível 1 e Nível 2 no Microsoft Rewards?",
+          "a": "O Nível 2 aumenta os limites diários de ganho de pontos em buscas e atividades elegíveis e pode oferecer taxas menores em pontos para resgatar recompensas da própria Microsoft em regiões compatíveis. Os detalhes aparecem na aba Status da sua conta."
+        },
+        {
+          "q": "Posso trocar pontos do Microsoft Rewards por dinheiro no PayPal ou Pix?",
+          "a": "Não. Os pontos do Microsoft Rewards não são dinheiro e só resgatam itens exibidos no catálogo regional (como gift cards, crédito na loja, doações ou sorteios). Para saque em dinheiro no PayPal, prefira aplicativos de pesquisas como Prime Opinion ou AttaPoll."
+        },
+        {
+          "q": "Por que o Microsoft Rewards pede telefone ou recusa o resgate?",
+          "a": "A Microsoft pode exigir confirmação por telefone celular ou fixo válido e não aceita números VoIP, uso de VPN, região divergente ou buscas automatizadas. Verifique sempre o andamento em Resgatar > Histórico de pedidos."
+        }
+      ],
+      "verdict": "O Microsoft Rewards vale a pena quando o catálogo do seu país traz gift cards da Microsoft, Xbox ou lojas parceiras que você já usaria — principalmente mantendo o Nível 2 e aproveitando sequências e selos do painel dentro das regras oficiais. Como não paga em dinheiro, quem busca saque no PayPal pode combiná-lo com Prime Opinion ou AttaPoll.",
+      "imageAlt": "Portal oficial do Microsoft Rewards exibindo as abas Ganhar, Resgatar e benefícios da conta",
+      "caption": "Portal oficial do Microsoft Rewards: confira as abas Ganhar e Resgatar da sua própria conta antes de planejar pontos ou selos.",
+      "imageKey": "microsoft",
+      "imageWide": false,
+      "relatedIds": [
+        "microsoft",
+        "opinion-vs-primeopinion-attapoll",
+        "primeopinion",
+        "attapoll"
+      ]
     }
   ]
 };
@@ -14393,9 +18280,19 @@ export const apps:Record<string,{name:string;url:string;os:string;sources:{title
       {"title":"TikTok Support: Referral Program","url":"https://support.tiktok.com/en/using-tiktok/growing-your-audience/tiktok-referral-program"},
       {"title":"TikTok Terms of Service","url":"https://www.tiktok.com/legal/page/row/terms-of-service/en"}
     ]
+  },
+  "cashfortunedrama": {
+    "name": "Cash Fortune Drama",
+    "url": "https://www.apps308.com/en/cash-fortune-drama-review-does-it-pay-legit/",
+    "os": "iOS, Android",
+    "sources": [
+      {"title":"CashDrama on Google Play (com.reward.drama.earn.watch.tool)","url":"https://play.google.com/store/apps/details?id=com.reward.drama.earn.watch.tool&hl=en"},
+      {"title":"DramaStack on Google Play (com.reeltime.dramastack)","url":"https://play.google.com/store/apps/details?id=com.reeltime.dramastack&hl=en"},
+      {"title":"DramaGood on Google Play (com.drama.good.shortplay.atsab)","url":"https://play.google.com/store/apps/details?id=com.drama.good.shortplay.atsab&hl=en"}
+    ]
   }
 };
-const defaultSourcesFor=(article:Article)=>article.id==='compare'?[...apps.opinion.sources.slice(0,1),...apps.microsoft.sources.slice(0,1),...apps.freecash.sources.slice(0,1),...apps.swagbucks.sources.slice(0,1)]:article.id==='nordvpn-vs-surfshark'?[...apps.nordvpn.sources,...apps.surfshark.sources]:article.id==='swagbucks-vs-freecash'?[...apps.swagbucks.sources.slice(0,3),...apps.freecash.sources.slice(0,2)]:article.id==='pawns-vs-freecash'?[...apps.pawns.sources.slice(0,3),...apps.freecash.sources.slice(0,2)]:article.id==='primeopinion-vs-swagbucks'?[...apps.primeopinion.sources.slice(0,3),...apps.swagbucks.sources.slice(0,2)]:article.id==='pinedrama-vs-dramastack'?[...apps.pinedrama.sources,...apps.dramastack.sources.slice(0,2)]:article.id==='cashdrama-proofs'?[...apps.cashdrama.sources,...apps.dramastack.sources.slice(0,2)]:(article.app==='attapoll'||article.app==='tiktoklite'||article.app==='dramagood')&&article.sources?.length?[]:apps[article.app].sources;
+const defaultSourcesFor=(article:Article)=>article.id==='compare'?[...apps.opinion.sources.slice(0,1),...apps.microsoft.sources.slice(0,1),...apps.freecash.sources.slice(0,1),...apps.swagbucks.sources.slice(0,1)]:article.id==='opinion-vs-primeopinion-attapoll'?[...apps.opinion.sources,...apps.primeopinion.sources,...apps.attapoll.sources]:article.id==='short-drama-apps-compared'?[...apps.dramastack.sources.slice(0,2),...apps.cashdrama.sources.slice(0,1),...apps.dramagood.sources.slice(0,2),...apps.pinedrama.sources.slice(0,2),...apps.dramabox.sources.slice(0,2),...apps.tiktoklite.sources.slice(0,2),...apps.primeopinion.sources.slice(0,2),...apps.pawns.sources.slice(0,2),...apps.freecash.sources.slice(0,1),...apps.attapoll.sources.slice(0,2)]:article.id==='nordvpn-vs-surfshark'?[...apps.nordvpn.sources,...apps.surfshark.sources]:article.id==='swagbucks-vs-freecash'?[...apps.swagbucks.sources.slice(0,3),...apps.freecash.sources.slice(0,2)]:article.id==='pawns-vs-freecash'?[...apps.pawns.sources.slice(0,3),...apps.freecash.sources.slice(0,2)]:article.id==='primeopinion-vs-swagbucks'?[...apps.primeopinion.sources.slice(0,3),...apps.swagbucks.sources.slice(0,2)]:article.id==='pinedrama-vs-dramastack'?[...apps.pinedrama.sources,...apps.dramastack.sources.slice(0,2)]:article.id==='cashdrama-proofs'?[...apps.cashdrama.sources,...apps.dramastack.sources.slice(0,2)]:(article.app==='attapoll'||article.app==='tiktoklite'||article.app==='dramagood'||article.app==='cashfortunedrama')&&article.sources?.length?[]:apps[article.app].sources;
 
 export const sourcesFor=(article:Article)=>{
  const all=[...(article.sources||[]),...defaultSourcesFor(article),...article.sections.flatMap(section=>[...(section.source?[section.source]:[]),...(section.sources||[])])];

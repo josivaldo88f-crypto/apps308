@@ -34,6 +34,7 @@ A configuração também é compatível com `npm run build` depois de instalar d
 
 ## Documentação e entrega
 
+- [Guia permanente de criação e SEO de novos artigos](docs/GUIA-NOVOS-ARTIGOS-SEO.md)
 - [Relatório de entrega e URLs](docs/ENTREGA.md)
 - [Cloudflare Pages](docs/DEPLOY-CLOUDFLARE.md)
 - [Manifesto das capturas](docs/capture-manifest.json)
