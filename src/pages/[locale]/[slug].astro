@@ -27,9 +27,17 @@ const readTime=Math.max(2,Math.ceil([article.intro,...article.sections.flatMap(s
 const isCluster=['microsoft','freecash','swagbucks','pawns','primeopinion','pinedrama','cashdrama','dramabox','dramagood','attapoll','tiktoklite'].includes(article.app);
 const clusterSeries=articles[locale].filter(a=>a.app===article.app&&a.id!==article.id);
 const clusterHeading={microsoft:{en:'Microsoft Rewards complete guide series',es:'Serie completa de guías sobre Microsoft Rewards',pt:'Série completa de guias sobre Microsoft Rewards'},freecash:{en:'Freecash complete guide series',es:'Serie completa de guías sobre Freecash',pt:'Série completa de guias sobre o Freecash'},dramabox:{en:'DramaBox complete guide series',es:'Serie completa de guías sobre DramaBox',pt:'Série completa de guias sobre o DramaBox'},dramagood:{en:'DramaGood complete guide series',es:'Serie completa de guías sobre DramaGood',pt:'Série completa de guias sobre o DramaGood'},cashdrama:{en:'CashDrama complete guide series',es:'Serie completa de guías sobre CashDrama',pt:'Série completa de guias sobre o CashDrama'},pinedrama:{en:'PineDrama complete guide series',es:'Serie completa de guías sobre PineDrama',pt:'Série completa de guias sobre o PineDrama'},primeopinion:{en:'Prime Opinion complete guide series',es:'Serie completa de guías sobre Prime Opinion',pt:'Série completa de guias sobre o Prime Opinion'},pawns:{en:'Pawns.app complete guide series',es:'Serie completa de guías sobre Pawns.app',pt:'Série completa de guias sobre o Pawns.app'},swagbucks:{en:'Swagbucks complete guide series',es:'Serie completa de guías sobre Swagbucks',pt:'Série completa de guias sobre o Swagbucks'},attapoll:{en:'AttaPoll complete guide series',es:'Serie completa de guías sobre AttaPoll',pt:'Série completa de guias sobre o AttaPoll'},tiktoklite:{en:'TikTok Lite complete guide series',es:'Serie completa de guías sobre TikTok Lite',pt:'Série completa de guias sobre o TikTok Lite'}}[article.app]?.[locale]||'';
-const relatedArticles=isCluster
-  ?[...clusterSeries.slice(0,2),...articles[locale].filter(a=>a.app!==article.app&&a.id!=='lens').slice(0,1)]
-  :[...articles[locale].filter(a=>['primeopinion','pawns','swagbucks'].includes(a.id)),...articles[locale].filter(a=>a.id!==article.id).slice(0,2)];
+const clusterAll=articles[locale].filter(a=>a.app===article.app);
+const clusterPos=clusterAll.findIndex(a=>a.id===article.id);
+const rotatedCluster=clusterAll.length>1?[...clusterAll.slice(clusterPos+1),...clusterAll.slice(0,clusterPos)]:[];
+const explicitRelated=(article.relatedIds||[]).map(id=>articles[locale].find(a=>a.id===id)).filter((a):a is Article=>Boolean(a)&&a.id!==article.id);
+const otherCandidates=articles[locale].filter(a=>a.app!==article.app&&a.id!=='lens');
+const articleIndex=articles[locale].findIndex(a=>a.id===article.id);
+const rotatedOther=otherCandidates.length?[otherCandidates[Math.max(0,articleIndex)%otherCandidates.length]]:[];
+const fallbackRelated=isCluster
+  ?[...rotatedCluster.slice(0,2),...rotatedOther]
+  :[...articles[locale].filter(a=>['primeopinion','pawns','swagbucks'].includes(a.id)&&a.id!==article.id),...articles[locale].filter(a=>a.id!==article.id)];
+const relatedArticles=[...explicitRelated,...fallbackRelated].filter((item,idx,arr)=>arr.findIndex(x=>x.id===item.id)===idx).slice(0,3);
 const hasInlineSteps=typeof article.stepsSectionIndex==='number';
 const sectionSources=(s:Article['sections'][number])=>{
   const list=[...(s.source?[s.source]:[]),...(s.sources||[])];

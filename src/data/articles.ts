@@ -2107,7 +2107,8 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Is the PineDrama app safe and free to use?",
           "paragraphs": [
             "Downloading PineDrama from Google Play or the official TikTok portal is safe from a malware standpoint, as data handling follows TikTok's official privacy policy. However, avoid unofficial APK mirror sites searching for modded versions, which risk account compromise.",
-            "As for cost, browsing and watching introductory or ad-supported episodes is free, though specific markets or series may gate later episodes behind ads or coin unlocks. Treat any reward points as a minor bonus rather than guaranteed income."
+            "As for cost, browsing and watching introductory or ad-supported episodes is free, though specific markets or series may gate later episodes behind ads or coin unlocks. Treat any reward points as a minor bonus rather than guaranteed income.",
+            "For official store links, TikTok login setup, and why there is no confirmed standalone desktop installer, read our [PineDrama download, login & PC guide](/en/pinedrama-app-download-login-pc-shows-guide/)."
           ]
         }
       ],
@@ -2151,7 +2152,12 @@ export const articles:Record<Locale,Article[]>={
         "alt": "PineDrama Discover tab displaying Categories, Popular, and New short dramas",
         "caption": "The Discover feed highlights Popular and New vertical dramas with view counts in the millions.",
         "wide": false
-      }
+      },
+      "relatedIds": [
+        "pinedrama-guide",
+        "pinedrama-rewards",
+        "pinedrama-vs-dramastack"
+      ]
     },
     {
       "id": "pinedrama-rewards",
@@ -2183,7 +2189,8 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "Why some regions see no Rewards tab at all",
           "paragraphs": [
-            "Outside promotional markets, PineDrama functions purely as a free or ad-supported micro-drama viewer without cash tasks, which is why US and European users often report zero money-making features. Even where the Rewards tab exists, point values and minimum cashout rules are governed by in-app Terms and Conditions that can change without notice. For a side-by-side look at how PineDrama compares with non-paying drama apps and real payout platforms, check our [2026 short drama apps comparison](/en/short-drama-apps-that-claim-to-pay-real-money-compared/)."
+            "Outside promotional markets, PineDrama functions purely as a free or ad-supported micro-drama viewer without cash tasks, which is why US and European users often report zero money-making features. Even where the Rewards tab exists, point values and minimum cashout rules are governed by in-app Terms and Conditions that can change without notice. For a side-by-side look at how PineDrama compares with non-paying drama apps and real payout platforms, check our [2026 short drama apps comparison](/en/short-drama-apps-that-claim-to-pay-real-money-compared/).",
+            "If you need official installation steps, TikTok sign-in help, or clarity on desktop availability, see our [PineDrama download, TikTok login & PC availability guide](/en/pinedrama-app-download-login-pc-shows-guide/)."
           ],
           "source": {
             "title": "TikTok Privacy Policy (PineDrama Developer)",
@@ -2233,7 +2240,9 @@ export const articles:Record<Locale,Article[]>={
       },
       "modifiedDate": "2026-11-18",
       "relatedIds": [
+        "pinedrama-guide",
         "short-drama-apps-compared",
+        "pinedrama",
         "dramastack",
         "cashdrama",
         "primeopinion",
@@ -2814,7 +2823,7 @@ export const articles:Record<Locale,Article[]>={
       "slug": "how-to-get-free-dramabox-coins-unlock-episodes",
       "title": "How to Get Free DramaBox Coins (2026): Unlock Episodes Without Paying",
       "description": "Step-by-step guide to earning free DramaBox Reward Coins: daily check-ins (+10 to +50), Watch Ad for 30 coins, account tasks, and safe ways to watch free episodes.",
-      "modifiedDate": "2026-11-18",
+      "modifiedDate": "2026-11-19",
       "intro": "Once the free opening episodes of a DramaBox series end, each new episode locks behind a coin paywall. Fortunately, you do not need to buy coins or pay for a weekly plan right away—DramaBox includes an Earn Rewards center that hands out free Reward Coins for daily check-ins, short video ads, and simple profile tasks.",
       "sections": [
         {
@@ -2834,6 +2843,13 @@ export const articles:Record<Locale,Article[]>={
             "title": "DramaBox - Stream Drama Shorts on Google Play",
             "url": "https://play.google.com/store/apps/details?id=com.storymatrix.drama&hl=en"
           }
+        },
+        {
+          "heading": "Daily free coin routine: how to unlock episodes consistently",
+          "paragraphs": [
+            "If you do not want to buy a subscription, the most consistent strategy is to claim the 7-day check-in streak first without breaking a day—since Day 7 alone pays +50 coins—and then stack the +30-coin Watch Ad button with short batches from the 0/30 daily 10-coin video counter.",
+            "Keeping your account logged in also protects your Reward Coins balance across reinstalls and unlocks the +60 login bonus. Before deciding whether free ad farming is worth your time on a 90-episode drama, review our [DramaBox review (free vs. paid)](/en/dramabox-app-review-free-or-paid-safe/) and [DramaBox subscription cost & cancellation guide](/en/dramabox-subscription-cost-how-to-cancel/)."
+          ]
         }
       ],
       "steps": [
@@ -2881,6 +2897,49 @@ export const articles:Record<Locale,Article[]>={
         "dramabox-recharge",
         "dramabox-subscription",
         "pinedrama"
+      ],
+      "tables": [
+        {
+          "heading": "Verified free Reward Coin sources inside DramaBox",
+          "columns": [
+            "Task in Earn Rewards",
+            "Reward shown in app",
+            "Frequency"
+          ],
+          "rows": [
+            [
+              "7-day check-in streak",
+              "+10 (D1–2), +20 (D3–4), +25 (D5), +30 (D6), +50 (D7)",
+              "Daily (consecutive streak)"
+            ],
+            [
+              "Watch Ad to earn 30 coins",
+              "+30 coins",
+              "Repeatable in-app ad task"
+            ],
+            [
+              "Earn rewards (0/30) video ads",
+              "+10 coins per video (up to 30/cycle)",
+              "Daily cap (30 videos)"
+            ],
+            [
+              "Login with any account",
+              "+60 coins",
+              "One-time bonus"
+            ],
+            [
+              "Turn on push notifications",
+              "+60 coins",
+              "One-time bonus"
+            ],
+            [
+              "Join Telegram / Follow Facebook or YouTube",
+              "+30 (Telegram), +20 (Facebook), +20 (YouTube)",
+              "One-time per account"
+            ]
+          ],
+          "afterSectionIndex": 0
+        }
       ]
     },
     {
@@ -6460,7 +6519,8 @@ export const articles:Record<Locale,Article[]>={
           "heading": "¿DramaStack paga dinero real por ver videos o es una estafa?",
           "paragraphs": [
             "Encontramos una página de retiro en DramaStack (Drama Stack) con un mínimo de R$300 (~$55–$60 USD, ~50 € o ~$1.050 MXN), pero no probamos un pago. La política escrita dice que las monedas virtuales no pueden convertirse en dinero y las reglas de la app vinculan los bonos al desbloqueo de episodios. Con lo que pudimos verificar, no cuentes el saldo ni las tareas como ingresos.",
-            "Si instalas la app para ver sus dramas cortos, considera las recompensas como funciones sujetas a condiciones, al igual que ocurre en [DramaGood](/es/dramagood-paga-de-verdad/) y [CashDrama](/es/cashdrama-es-confiable-si-paga-opiniones/), o en nuestro análisis sobre [si PineDrama paga dinero real por ver videos](/es/pinedrama-paga-dinero-real-como-retirar/) y la [comparativa de apps de novelas cortas 2026](/es/apps-de-novelas-cortas-que-pagan-por-ver-videos/). No gastes dinero ni muchas horas basándote solo en la pantalla de retiro; si quieres recompensas transparentes en móvil o PayPal, prioriza opciones como el [código de invitación TikTok Lite](/es/codigo-invitacion-tiktok-lite/), AttaPoll, Pawns.app o consulta [cómo funciona Prime Opinion y opiniones reales](/es/prime-opinion-opiniones-como-funciona-paga/)."
+            "Si instalas la app para ver sus dramas cortos, considera las recompensas como funciones sujetas a condiciones, al igual que ocurre en [DramaGood](/es/dramagood-paga-de-verdad/) y [CashDrama](/es/cashdrama-es-confiable-si-paga-opiniones/), o en nuestro análisis sobre [si PineDrama paga dinero real por ver videos](/es/pinedrama-paga-dinero-real-como-retirar/) y la [comparativa de apps de novelas cortas 2026](/es/apps-de-novelas-cortas-que-pagan-por-ver-videos/). No gastes dinero ni muchas horas basándote solo en la pantalla de retiro; si quieres recompensas transparentes en móvil o PayPal, prioriza opciones como el [código de invitación TikTok Lite](/es/codigo-invitacion-tiktok-lite/), AttaPoll, Pawns.app o consulta [cómo funciona Prime Opinion y opiniones reales](/es/prime-opinion-opiniones-como-funciona-paga/).",
+            "También puedes comparar alternativas establecidas de encuestas y reembolsos revisando [encuestas y cashback en Swagbucks](/es/encuestas-pagadas-y-cashback-en-swagbucks/) y sus reglas de [retiro por PayPal y tarjetas regalo en Swagbucks](/es/como-retirar-dinero-swagbucks-paypal-tarjetas/)."
           ],
           "cta": {
             "label": "Ver alternativa verificada desde $5 USD por PayPal: guía de Pawns.app",
@@ -6656,7 +6716,8 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Expectativas reales: encuestas, juegos y cashback",
           "paragraphs": [
             "Cada canal tiene un ritmo distinto. Las encuestas cortas de nuestra captura pagaban entre 5 SB (5 minutos) y 25 SB (20 minutos): no requieren gastar dinero, aunque las preguntas filtro iniciales pueden descartarte si tu perfil no coincide con el público buscado.",
-            "Los juegos móviles anuncian recompensas totales más altas —como hasta 919 SB en Farm Craze o hasta 2.373 SB en Puzzles & Chaos: Frozen Castle—, pero exigen superar niveles progresivos dentro de un plazo de 30 días y permitir el seguimiento de la app. Toma Swagbucks como un complemento para sumar saldo extra o tarjetas regalo en ratos libres, no como un ingreso mensual fijo."
+            "Los juegos móviles anuncian recompensas totales más altas —como hasta 919 SB en Farm Craze o hasta 2.373 SB en Puzzles & Chaos: Frozen Castle—, pero exigen superar niveles progresivos dentro de un plazo de 30 días y permitir el seguimiento de la app. Toma Swagbucks como un complemento para sumar saldo extra o tarjetas regalo en ratos libres, no como un ingreso mensual fijo.",
+            "Para evitar descartes inesperados y revisar el seguimiento en compras, consulta nuestra guía de [encuestas pagadas y cashback en Swagbucks](/es/encuestas-pagadas-y-cashback-en-swagbucks/). Y cuando acumules saldo disponible, sigue las reglas de PayPal y verificación en [cómo retirar dinero en Swagbucks](/es/como-retirar-dinero-swagbucks-paypal-tarjetas/)."
           ],
           "source": {
             "title": "Swagbucks: tienda de recompensas (Rewards Store)",
@@ -6703,7 +6764,12 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Catálogo Play Games and Earn de Swagbucks en Android con recompensas en SB",
         "caption": "La sección Play Games and Earn muestra títulos para Android con metas que van desde 26 SB hasta 2.373 SB.",
         "wide": true
-      }
+      },
+      "relatedIds": [
+        "swagbucks-cashout",
+        "swagbucks-surveys",
+        "swagbucks-games"
+      ]
     },
     {
       "id": "swagbucks-games",
@@ -6863,7 +6929,8 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Qué hacer si terminaste una encuesta o compra y no aparecen SB",
           "paragraphs": [
             "Para una encuesta, guarda el Survey ID y la confirmación final, revisa Answer en Activity y respeta cualquier plazo de crédito diferido anunciado al inicio. Si ese plazo terminó y falta el crédito, usa Get Help para esa encuesta. Un mensaje de descarte no demuestra que la completaste.",
-            "En compras, separa la espera hasta que aparezca el pedido de la espera posterior hasta acreditar los SB pendientes. Consulta la ayuda actual y las Special Terms de la tienda: no hay una promesa única para todos los comercios, reservas y pedidos. Conserva el recibo y no compres más para investigar una compra sin seguimiento."
+            "En compras, separa la espera hasta que aparezca el pedido de la espera posterior hasta acreditar los SB pendientes. Consulta la ayuda actual y las Special Terms de la tienda: no hay una promesa única para todos los comercios, reservas y pedidos. Conserva el recibo y no compres más para investigar una compra sin seguimiento.",
+            "Cuando tus puntos pasen de Pending a saldo disponible, revisa nuestra guía de [cómo retirar dinero en Swagbucks por PayPal o tarjetas regalo](/es/como-retirar-dinero-swagbucks-paypal-tarjetas/) y el análisis general de [cómo funciona Swagbucks](/es/como-funciona-swagbucks-opiniones-paga/)."
           ],
           "source": {
             "title": "Swagbucks: encuesta terminada sin SB",
@@ -6915,7 +6982,45 @@ export const articles:Record<Locale,Article[]>={
         "caption": "El panel de ofertas ilustra dónde aparecen las condiciones; consulta las vigentes en tu cuenta para comprobar plazos y requisitos.",
         "wide": true
       },
-      "modifiedDate": "2026-11-15"
+      "modifiedDate": "2026-11-19",
+      "tables": [
+        {
+          "heading": "Estados en el historial Activity de Swagbucks: cómo interpretarlos",
+          "columns": [
+            "Estado en Activity",
+            "Qué significa",
+            "Cuándo reclamar en soporte"
+          ],
+          "rows": [
+            [
+              "Visited",
+              "Registra únicamente el clic inicial hacia la tienda u oferta",
+              "No equivale a compra validada; revisa el plazo de reporte de la tienda"
+            ],
+            [
+              "Pending",
+              "Actividad rastreada esperando fecha de acreditación del anunciante",
+              "Espera a que venza la fecha estimada indicada en el detalle"
+            ],
+            [
+              "Posted",
+              "Puntos SB ya acreditados en tu saldo disponible para canjear",
+              "Ya puedes usarlos en la Rewards Store"
+            ],
+            [
+              "Descarte en encuesta",
+              "El estudio cerró cupo o buscaba otro perfil demográfico",
+              "No corresponde reclamo de crédito completo salvo finalización confirmada"
+            ]
+          ],
+          "afterSectionIndex": 4
+        }
+      ],
+      "relatedIds": [
+        "swagbucks",
+        "swagbucks-cashout",
+        "swagbucks-games"
+      ]
     },
     {
       "id": "swagbucks-cashout",
@@ -6930,7 +7035,8 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Puntos SB pendientes frente a saldo disponible: por qué hay espera",
           "paragraphs": [
             "Cuando alcanzas una meta en un juego móvil, completas un registro en Discover o realizas una compra con cashback, los puntos rara vez se pueden retirar en el acto. En la oferta de Farm Craze que capturamos, las condiciones indican claramente: 'Award will pend for 5 days' (la recompensa quedará pendiente durante 5 días). Durante ese plazo, los SB aparecen en tu Activity Ledger con una fecha de liberación mientras el anunciante valida la actividad.",
-            "Solo puedes canjear los SB que ya cumplieron su periodo pendiente y pasaron a tu saldo disponible. Las encuestas cortas suelen acreditarse al instante, mientras que los niveles de juegos, ofertas financieras como Coinbase y compras en tiendas tienen esperas de entre 5 y más de 30 días según el comercio."
+            "Solo puedes canjear los SB que ya cumplieron su periodo pendiente y pasaron a tu saldo disponible. Las encuestas cortas suelen acreditarse al instante, mientras que los niveles de juegos, ofertas financieras como Coinbase y compras en tiendas tienen esperas de entre 5 y más de 30 días según el comercio.",
+            "Si necesitas revisar cómo distinguir los estados Visited, Pending y Posted en encuestas o compras antes de solicitar tu retiro, consulta nuestra guía de [encuestas pagadas y cashback en Swagbucks](/es/encuestas-pagadas-y-cashback-en-swagbucks/) y el resumen general de [cómo funciona Swagbucks y cuánto vale 1 SB](/es/como-funciona-swagbucks-opiniones-paga/)."
           ],
           "source": {
             "title": "Swagbucks: catálogo de la Rewards Store",
@@ -7000,7 +7106,51 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Ventana completa de la oferta Farm Craze en Swagbucks con instalación QR y niveles",
         "caption": "Revisar la ficha completa antes de jugar te permite conocer el plazo pendiente, el sistema requerido y el límite de 30 días.",
         "wide": true
-      }
+      },
+      "modifiedDate": "2026-11-19",
+      "tables": [
+        {
+          "heading": "Resumen de retiros en Swagbucks: métodos, espera y verificación",
+          "columns": [
+            "Aspecto",
+            "Tarjetas regalo digitales",
+            "Efectivo en PayPal"
+          ],
+          "rows": [
+            [
+              "Equivalencia estándar",
+              "100 SB = 1,00 USD",
+              "100 SB = 1,00 USD"
+            ],
+            [
+              "Mínimo orientativo",
+              "A menudo desde 300 a 500 SB según tienda y país",
+              "Depende del catálogo de tu región"
+            ],
+            [
+              "Requisito de cuenta",
+              "Cuenta verificada y saldo ya en estado Posted",
+              "Mismo correo y nombre exactos que tu PayPal verificado"
+            ],
+            [
+              "Validación de seguridad",
+              "Código SMS a móvil real (no VoIP) o pregunta de seguridad",
+              "SMS a móvil real y posible verificación de identidad en el primer retiro"
+            ],
+            [
+              "Plazo habitual de entrega",
+              "2 a 5 días laborables (hasta 10 en revisiones)",
+              "2 a 5 días laborables (hasta 10 en revisiones)"
+            ]
+          ],
+          "afterSectionIndex": 1
+        }
+      ],
+      "relatedIds": [
+        "swagbucks",
+        "swagbucks-surveys",
+        "swagbucks-vs-freecash"
+      ]
     },
     {
       "id": "swagbucks-vs-freecash",
@@ -9035,7 +9185,7 @@ export const articles:Record<Locale,Article[]>={
       "slug": "como-ver-dramabox-gratis-conseguir-monedas",
       "title": "Cómo Ver DramaBox Gratis (2026): Conseguir Monedas, Anuncios y Tareas",
       "description": "Guía paso a paso para conseguir monedas gratis en DramaBox: check-in de 7 días (+10 a +50), anuncios de 30 y 10 monedas, y tareas diarias sin pagar.",
-      "modifiedDate": "2026-11-18",
+      "modifiedDate": "2026-11-19",
       "intro": "Cuando terminan los primeros capítulos gratuitos de una serie en DramaBox, los siguientes episodios quedan bloqueados. Aun así, puedes seguir viendo dramas sin gastar dinero aprovechando la sección Earn Rewards, donde la app entrega monedas por iniciar sesión a diario, ver anuncios cortos y completar tareas simples.",
       "sections": [
         {
@@ -9055,6 +9205,13 @@ export const articles:Record<Locale,Article[]>={
             "title": "DramaBox en Google Play (StoryMatrix)",
             "url": "https://play.google.com/store/apps/details?id=com.storymatrix.drama&hl=es"
           }
+        },
+        {
+          "heading": "Rutina diaria de monedas gratis para desbloquear episodios sin suscripción",
+          "paragraphs": [
+            "Para avanzar en una serie sin pagar, conviene reclamar primero el check-in diario sin perder la racha —el día 7 entrega +50 monedas por sí solo— y después combinar el botón de anuncio de +30 monedas con bloques cortos del contador diario de 0/30 videos de +10 monedas.",
+            "Mantener tu cuenta vinculada además evita perder tu saldo de Reward Coins si cambias de teléfono y desbloquea el bono único de +60 monedas por iniciar sesión. Si dudas entre ver anuncios o pagar, revisa nuestra [reseña completa de DramaBox](/es/dramabox-es-confiable-gratis-o-de-paga/) y la guía de [precio y cancelación de la suscripción de DramaBox](/es/dramabox-cuanto-cuesta-como-cancelar-suscripcion/)."
+          ]
         }
       ],
       "steps": [
@@ -9102,6 +9259,49 @@ export const articles:Record<Locale,Article[]>={
         "dramabox-recharge",
         "dramabox-subscription",
         "pinedrama"
+      ],
+      "tables": [
+        {
+          "heading": "Fuentes oficiales de monedas gratis verificadas en DramaBox",
+          "columns": [
+            "Tarea en Earn Rewards",
+            "Recompensa mostrada en la app",
+            "Frecuencia"
+          ],
+          "rows": [
+            [
+              "Check-in de 7 días",
+              "+10 (D1–2), +20 (D3–4), +25 (D5), +30 (D6), +50 (D7)",
+              "Diaria (racha consecutiva)"
+            ],
+            [
+              "Watch Ad to earn 30 coins",
+              "+30 monedas",
+              "Repetible dentro de la app"
+            ],
+            [
+              "Earn rewards (0/30) por video",
+              "+10 monedas por anuncio (hasta 30/ciclo)",
+              "Límite diario (30 videos)"
+            ],
+            [
+              "Iniciar sesión con cuenta",
+              "+60 monedas",
+              "Bono único"
+            ],
+            [
+              "Activar notificaciones push",
+              "+60 monedas",
+              "Bono único"
+            ],
+            [
+              "Telegram, Facebook y YouTube",
+              "+30 (Telegram), +20 (Facebook), +20 (YouTube)",
+              "Una vez por cuenta"
+            ]
+          ],
+          "afterSectionIndex": 0
+        }
       ]
     },
     {
@@ -10553,7 +10753,8 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Cómo usar el código de invitación DL70959891 en TikTok Lite",
           "paragraphs": [
             "Al abrir el enlace https://www.tiktok.com/d/4/ZS9fcGCx9xhYn-v2KXS/ desde el móvil, TikTok redirige a la página de campaña con el parámetro invite_code=DL70959891 para descargar e instalar la app. Entrar primero por el enlace es la forma más directa para que la invitación quede vinculada al registrarte.",
-            "Si la aplicación te muestra el cuadro manual después del registro, toca el icono de la moneda dorada o ve a Perfil > Recompensas, busca la opción para ingresar código de invitación, escribe DL70959891 sin el numeral (#) y pulsa Confirmar."
+            "Si la aplicación te muestra el cuadro manual después del registro, toca el icono de la moneda dorada o ve a Perfil > Recompensas, busca la opción para ingresar código de invitación, escribe DL70959891 sin el numeral (#) y pulsa Confirmar.",
+            "Para verificar el paquete oficial de Google Play y las diferencias frente a la app normal antes de instalar, consulta el paso a paso para [descargar TikTok Lite oficial en Android y iPhone](/es/descargar-tiktok-lite/)."
           ],
           "cta": {
             "label": "Descargar TikTok Lite con el código DL70959891",
@@ -10708,7 +10909,8 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Cómo descargar TikTok Lite oficial en Android de forma segura",
           "paragraphs": [
             "En Android, la aplicación oficial publicada por TikTok Pte. Ltd. figura en Google Play con el paquete com.zhiliaoapp.musically.go (y en ciertas regiones como com.ss.android.ugc.tiktok.lite). Comprueba siempre que el desarrollador sea TikTok Pte. Ltd. y evita páginas desconocidas de APK modificados.",
-            "Si quieres registrarte dentro del programa de invitación como nuevo usuario, puedes iniciar la descarga desde el enlace oficial de abajo, que incluye el código DL70959891 (#DL70959891)."
+            "Si quieres registrarte dentro del programa de invitación como nuevo usuario, puedes iniciar la descarga desde el enlace oficial de abajo, que incluye el código DL70959891 (#DL70959891).",
+            "Antes de crear tu cuenta, conviene comprobar si cumples las reglas de dispositivo nuevo para aplicar el [código de invitación TikTok Lite DL70959891](/es/codigo-invitacion-tiktok-lite/) y revisar cuánto rinden las tareas diarias y retiros en la guía de [recompensas y retiro en TikTok Lite](/es/tiktok-lite-recompensas-retiro/)."
           ],
           "cta": {
             "label": "Descargar TikTok Lite por el enlace oficial",
@@ -10746,6 +10948,13 @@ export const articles:Record<Locale,Article[]>={
               "title": "Soporte de TikTok: Programa de referidos",
               "url": "https://support.tiktok.com/es/using-tiktok/growing-your-audience/tiktok-referral-program"
             }
+          ]
+        },
+        {
+          "heading": "Checklist de verificación tras instalar TikTok Lite en tu móvil",
+          "paragraphs": [
+            "Una vez completada la instalación desde Google Play, abre la aplicación con tu conexión habitual sin VPN y verifica en el menú de Perfil si aparece el icono de moneda de Recompensas. En países donde el programa promocional está activo, la ventana para vincular un código manual suele durar 24 horas para cuentas recién creadas en dispositivos sin instalaciones previas.",
+            "Si el icono de Recompensas no aparece o buscas simplemente ahorrar espacio y datos móviles, TikTok Lite sigue funcionando como reproductor ligero de videos cortos. Mantén la aplicación actualizada únicamente mediante la tienda oficial para evitar bloqueos de cuenta o fallos de seguridad."
           ]
         }
       ],
@@ -10838,8 +11047,10 @@ export const articles:Record<Locale,Article[]>={
       ],
       "relatedIds": [
         "tiktoklite-convite",
-        "tiktoklite"
-      ]
+        "tiktoklite",
+        "pinedrama-guide"
+      ],
+      "modifiedDate": "2026-11-19"
     },
     {
       "id": "tiktoklite",
@@ -10854,7 +11065,8 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Cómo se calculan los puntos y qué pagan las tareas diarias",
           "paragraphs": [
             "En las capturas de TikTok Lite en Brasil del 16 de noviembre de 2026, un saldo de 240.769 puntos equivale a R$ 8,02 — aproximadamente 30.000 puntos por cada R$ 1,00. La tasa exacta y la moneda dependen siempre del país y de la campaña activa.",
-            "Esa misma pantalla muestra una racha de check-in de 7 días de hasta 4.557 puntos (315 el día 1 hasta 1.428 el día 7), hasta 6.000 puntos viendo 30 anuncios diarios (200 puntos por cada 15 segundos) y hasta 1.500 puntos por ver videos hasta 120 minutos. Si vas a abrir una cuenta nueva elegible, puedes usar el enlace con el código DL70959891."
+            "Esa misma pantalla muestra una racha de check-in de 7 días de hasta 4.557 puntos (315 el día 1 hasta 1.428 el día 7), hasta 6.000 puntos viendo 30 anuncios diarios (200 puntos por cada 15 segundos) y hasta 1.500 puntos por ver videos hasta 120 minutos. Si vas a abrir una cuenta nueva elegible, puedes usar el enlace con el código DL70959891.",
+            "Si aún no tienes la aplicación instalada y quieres comprobar el paquete oficial en Android o su disponibilidad en iPhone, revisa nuestra guía para [descargar TikTok Lite de forma oficial](/es/descargar-tiktok-lite/)."
           ],
           "cta": {
             "label": "Entrar a TikTok Lite con el código DL70959891",
@@ -12433,7 +12645,8 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Separe oferta, recompensa e saque",
           "paragraphs": [
             "Uma oferta é uma atividade com requisitos; a recompensa creditada resulta de uma atividade aceita; o saque é um pedido posterior para resgatar o saldo disponível. Instalar um jogo, ver um total promocional ou inserir um código não conclui essas três etapas.",
-            "Comece conferindo se as atividades da sua conta e do seu aparelho interessam a você. Não planeje seus ganhos pelo catálogo de outra pessoa nem presuma que todas as pesquisas e formas de pagamento existem no seu país."
+            "Comece conferindo se as atividades da sua conta e do seu aparelho interessam a você. Não planeje seus ganhos pelo catálogo de outra pessoa nem presuma que todas as pesquisas e formas de pagamento existem no seu país.",
+            "No sistema do Freecash, 1.000 moedas equivalem a US$ 1,00, mas cada tarefa lista etapas intermediárias e prazos próprios. Antes de escolher uma oferta longa, vale comparar a [análise de avaliações e regras do Freecash](/pt/freecash-e-confiavel-paga-mesmo-avaliacoes/) e entender o [guia de saque, mínimo inicial e taxas do Freecash](/pt/freecash-codigo-bonus-como-sacar-dinheiro/)."
           ]
         },
         {
@@ -12451,7 +12664,8 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Um plano para a primeira sessão",
           "paragraphs": [
             "Antes de começar, guarde nome da oferta, requisitos, prazo, metas e compras exigidas. Decida quanto tempo pretende dedicar. Se a primeira ação não aparecer, investigue antes de continuar.",
-            "Consulte Cashout para saber qual valor e verificação seriam exigidos da sua conta. Essa é uma conferência prévia, não um pedido de saque. Se as recompensas ou os dados pessoais exigidos não servirem para você, pare antes de acumular um saldo que não vai querer resgatar."
+            "Consulte Cashout para saber qual valor e verificação seriam exigidos da sua conta. Essa é uma conferência prévia, não um pedido de saque. Se as recompensas ou os dados pessoais exigidos não servirem para você, pare antes de acumular um saldo que não vai querer resgatar.",
+            "Se você quer testar outras plataformas antes de concentrar seu tempo em uma única conta, consulte também o comparativo [Swagbucks ou Freecash: qual vale mais a pena](/pt/swagbucks-ou-freecash-comparativo-sites-recompensas/) e [Pawns.app vs. Freecash](/pt/pawns-app-vs-freecash-qual-o-melhor-para-ganhar-dinheiro/)."
           ],
           "source": {
             "title": "Freecash: requisitos do primeiro saque",
@@ -12461,6 +12675,13 @@ export const articles:Record<Locale,Article[]>={
             "label": "Veja como avaliar jogos e ofertas do Freecash",
             "url": "/pt/freecash-jogos-e-ofertas-como-ganhar-mais/"
           }
+        },
+        {
+          "heading": "O que verificar no rastreamento antes de investir horas em um jogo",
+          "paragraphs": [
+            "Grande parte das frustrações de iniciantes acontece quando o aplicativo parceiro não registra a instalação inicial. Sempre abra a oferta diretamente pelo link do Freecash, aceite as permissões de rastreamento do dispositivo, desative VPNs ou bloqueadores de anúncios e instale apenas jogos que nunca estiveram no seu aparelho antes.",
+            "Ao atingir a primeira meta simples da oferta, aguarde a confirmação no histórico da conta antes de avançar para níveis altos. Se o primeiro marco não aparecer registrado, interrompa a tentativa e revise o nosso [guia de jogos e rastreamento no Freecash](/pt/freecash-jogos-e-ofertas-como-ganhar-mais/)."
+          ]
         }
       ],
       "steps": [
@@ -12495,7 +12716,59 @@ export const articles:Record<Locale,Article[]>={
       "verdict": "Use esta página como ponto de partida: entenda a oferta, confira o convite e defina um limite antes de dedicar tempo. Passe ao guia específico quando precisar resolver um saque ou o rastreamento.",
       "imageAlt": "Painel do link de indicação do Freecash com identificador 3C7GKG",
       "caption": "Esta captura guardada mostra um link de indicação, não um comprovante de saque.",
-      "modifiedDate": "2026-11-15"
+      "modifiedDate": "2026-11-19",
+      "topCallout": {
+        "title": "Resumo rápido do Freecash antes de começar",
+        "text": "O Freecash remunera ofertas de jogos, pesquisas e testes de parceiros em moedas (1.000 moedas = US$ 1,00). O código 3C7GKG é um identificador de indicação (não garante bônus fixo), e os requisitos do primeiro saque variam por região.",
+        "links": [
+          {
+            "label": "Ver saque, taxas e bônus no Freecash",
+            "url": "/pt/freecash-codigo-bonus-como-sacar-dinheiro/"
+          },
+          {
+            "label": "Comparar Swagbucks vs. Freecash",
+            "url": "/pt/swagbucks-ou-freecash-comparativo-sites-recompensas/"
+          }
+        ]
+      },
+      "tables": [
+        {
+          "heading": "Resumo prático: primeiros passos no Freecash",
+          "columns": [
+            "Etapa",
+            "O que conferir na sua conta",
+            "Ponto de atenção"
+          ],
+          "rows": [
+            [
+              "Cadastro e convite",
+              "Link oficial com identificador 3C7GKG antes da caixa inicial",
+              "É relação de afiliado; condições variam por país"
+            ],
+            [
+              "Escolha da oferta",
+              "Requisitos, prazo, metas parciais e compras exigidas",
+              "Instalar o jogo não libera o valor total anunciado"
+            ],
+            [
+              "Rastreamento",
+              "Permissão de tracking ativa e aparelho sem instalação prévia",
+              "Evite VPN, proxy ou múltiplas contas"
+            ],
+            [
+              "Primeiro saque",
+              "Mínimo vigente na aba Cashout e verificação de conta",
+              "Consulte métodos e taxas disponíveis no seu país antes de acumular saldo"
+            ]
+          ],
+          "afterSectionIndex": 1
+        }
+      ],
+      "relatedIds": [
+        "freecash-bonus-cashout",
+        "freecash-games-offers",
+        "swagbucks-vs-freecash"
+      ]
     },
     {
       "id": "dramastack",
@@ -12676,7 +12949,8 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Expectativas reais de ganhos: pesquisas, jogos e cashback",
           "paragraphs": [
             "Cada canal de ganho tem uma dinâmica própria. As pesquisas rápidas da nossa captura pagavam entre 5 SB (5 minutos) e 25 SB (20 minutos), sendo uma opção sem custo financeiro, embora as perguntas de triagem possam desqualificar seu perfil se você não fizer parte do público-alvo procurado pela marca.",
-            "Já as ofertas de jogos no celular anunciam tetos mais altos — como até 919 SB no Farm Craze ou até 2.373 SB no Puzzles & Chaos: Frozen Castle —, mas exigem atingir níveis elevados dentro de 30 dias e seguir à risca o rastreamento do aplicativo. Encare o Swagbucks como uma forma de fazer renda extra moderada no tempo livre, e não como substituto de uma renda mensal fixa."
+            "Já as ofertas de jogos no celular anunciam tetos mais altos — como até 919 SB no Farm Craze ou até 2.373 SB no Puzzles & Chaos: Frozen Castle —, mas exigem atingir níveis elevados dentro de 30 dias e seguir à risca o rastreamento do aplicativo. Encare o Swagbucks como uma forma de fazer renda extra moderada no tempo livre, e não como substituto de uma renda mensal fixa.",
+            "Para aprofundar em cada canal da plataforma, veja nossos guias específicos de [pesquisas remuneradas e cashback no Swagbucks](/pt/pesquisas-remuneradas-e-cashback-swagbucks/), [jogos do Swagbucks e rastreamento por nível](/pt/jogos-swagbucks-como-ganhar-rastreamento/), [regras de saque no PayPal e gift cards](/pt/como-sacar-no-swagbucks-paypal-gift-cards/) e o comparativo [Swagbucks ou Freecash](/pt/swagbucks-ou-freecash-comparativo-sites-recompensas/)."
           ],
           "source": {
             "title": "Swagbucks: catálogo da Rewards Store",
@@ -12723,7 +12997,65 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Catálogo Play Games and Earn do Swagbucks no Android com recompensas em SB",
         "caption": "A seção Play Games and Earn lista jogos de Android com recompensas máximas que vão de 26 SB a 2.373 SB.",
         "wide": true
-      }
+      },
+      "modifiedDate": "2026-11-19",
+      "topCallout": {
+        "title": "Resumo rápido: Swagbucks em 2026",
+        "text": "Plataforma legítima da Prodege, LLC com paridade padrão de 100 SB = US$ 1,00. Permite combinar pesquisas, jogos mobile e cashback, mas exige paciência com pontos pendentes e diferenças de catálogo por país.",
+        "links": [
+          {
+            "label": "Como sacar no Swagbucks (PayPal e gift cards)",
+            "url": "/pt/como-sacar-no-swagbucks-paypal-gift-cards/"
+          },
+          {
+            "label": "Swagbucks ou Freecash: comparativo completo",
+            "url": "/pt/swagbucks-ou-freecash-comparativo-sites-recompensas/"
+          }
+        ]
+      },
+      "tables": [
+        {
+          "heading": "Visão geral do Swagbucks: canais, conversão e prazos",
+          "columns": [
+            "Canal / Recurso",
+            "Como funciona na prática",
+            "Atenção ao prazo / regra"
+          ],
+          "rows": [
+            [
+              "Conversão de pontos",
+              "100 SB = US$ 1,00 na Rewards Store",
+              "500 SB = US$ 5 em gift cards ou PayPal (conforme região)"
+            ],
+            [
+              "Answer Surveys (Pesquisas)",
+              "Exemplos capturados de 5 SB (5 min) a 25 SB (20 min)",
+              "Desqualificações de triagem são comuns; mantenha perfil real"
+            ],
+            [
+              "Play Games (Jogos)",
+              "Metas progressivas por nível (ex.: até 919 SB ou 2.373 SB)",
+              "Prazo de 30 dias, tracking ativo e dias pendentes"
+            ],
+            [
+              "Shop & Earn (Cashback)",
+              "Devolve SB em compras elegíveis de lojas parceiras",
+              "Exige iniciar o clique pelo Swagbucks sem cupons conflitantes"
+            ],
+            [
+              "Resgate / Saque",
+              "PayPal verificado ou gift cards digitais",
+              "Mesmo e-mail do PayPal, confirmação SMS e 2 a 5 dias úteis"
+            ]
+          ],
+          "afterSectionIndex": 0
+        }
+      ],
+      "relatedIds": [
+        "swagbucks-surveys",
+        "swagbucks-cashout",
+        "swagbucks-vs-freecash"
+      ]
     },
     {
       "id": "swagbucks-games",
@@ -12761,7 +13093,8 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Prazo de 30 dias, compras no app e espera de 5 dias pendentes",
           "paragraphs": [
             "Na nossa captura de Farm Craze, o quadro 'Important Things to Know' trazia três regras essenciais: chegar ao nível máximo em até 30 dias após a instalação, seguir os passos de rastreamento do aplicativo ('Para ser recompensado pela sua jogabilidade, siga os passos de rastreamento do aplicativo aqui') e observar que o prêmio fica pendente por 5 dias ('Award will pend for 5 days'). Isso significa que, após bater uma meta, os pontos SB aguardam 5 dias antes de entrar no saldo liberado para saque.",
-            "Confira a barra Goal Progress logo após atingir a primeira meta curta (como o Nível 30). Se o primeiro nível não aparecer como pendente, pare de jogar antes de gastar dezenas de horas nos níveis altos. Avalie também se metas opcionais de compra (como +52 SB, ou US$ 0,52, por fazer uma compra) custam mais caro do que os pontos devolvidos."
+            "Confira a barra Goal Progress logo após atingir a primeira meta curta (como o Nível 30). Se o primeiro nível não aparecer como pendente, pare de jogar antes de gastar dezenas de horas nos níveis altos. Avalie também se metas opcionais de compra (como +52 SB, ou US$ 0,52, por fazer uma compra) custam mais caro do que os pontos devolvidos.",
+            "Antes de começar uma nova meta longa, confira também a visão geral de [como funciona o Swagbucks (pontos SB e PayPal)](/pt/como-funciona-swagbucks-e-confiavel-paga/) e compare os catálogos de jogos em [Swagbucks ou Freecash](/pt/swagbucks-ou-freecash-comparativo-sites-recompensas/)."
           ],
           "source": {
             "title": "Prodege: termos de uso e elegibilidade de ofertas",
@@ -12808,7 +13141,12 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Detalhes da oferta Farm Craze no Swagbucks com QR Code, regras de rastreamento e metas de 30 dias",
         "caption": "Por dentro da oferta Farm Craze: instalação via QR Code, prazo de 30 dias, aviso de rastreamento em português e 5 dias pendentes.",
         "wide": true
-      }
+      },
+      "relatedIds": [
+        "swagbucks",
+        "swagbucks-vs-freecash",
+        "swagbucks-cashout"
+      ]
     },
     {
       "id": "swagbucks-surveys",
@@ -12983,7 +13321,8 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Pontos SB pendentes versus saldo disponível: por que existe espera",
           "paragraphs": [
             "Quando você atinge uma meta em um jogo mobile, conclui um cadastro no Discover ou faz uma compra com cashback, os pontos raramente ficam livres para saque na mesma hora. Na oferta de Farm Craze que capturamos, as regras informam de forma direta: 'Award will pend for 5 days' (a recompensa ficará pendente por 5 dias). Durante esse período, os SB aparecem no seu Activity Ledger com a data de liberação enquanto o anunciante confirma a atividade.",
-            "Você só pode resgatar os pontos SB que já cumpriram o prazo pendente e entraram no seu saldo disponível. Pesquisas curtas costumam ser creditadas na hora, enquanto metas de jogos, ofertas como Coinbase e cashback em lojas têm prazos pendentes que variam de 5 a mais de 30 dias conforme o parceiro."
+            "Você só pode resgatar os pontos SB que já cumpriram o prazo pendente e entraram no seu saldo disponível. Pesquisas curtas costumam ser creditadas na hora, enquanto metas de jogos, ofertas como Coinbase e cashback em lojas têm prazos pendentes que variam de 5 a mais de 30 dias conforme o parceiro.",
+            "Se você ainda está montando sua rotina de pontos na plataforma, consulte o guia principal de [como funciona o Swagbucks e quanto valem os pontos SB](/pt/como-funciona-swagbucks-e-confiavel-paga/) e o passo a passo sobre [pesquisas remuneradas e cashback no Swagbucks](/pt/pesquisas-remuneradas-e-cashback-swagbucks/)."
           ],
           "source": {
             "title": "Swagbucks: opções de resgate na Rewards Store",
@@ -13053,7 +13392,12 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Janela completa da oferta Farm Craze no Swagbucks com QR Code e regras de níveis",
         "caption": "Conferir a janela completa da oferta antes de instalar ajuda a ver o prazo pendente, o sistema exigido e o limite de 30 dias.",
         "wide": true
-      }
+      },
+      "relatedIds": [
+        "swagbucks",
+        "swagbucks-surveys",
+        "swagbucks-vs-freecash"
+      ]
     },
     {
       "id": "swagbucks-vs-freecash",
@@ -13068,7 +13412,8 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Onde o Swagbucks se diferencia: portal de cashback além de jogos e pesquisas",
           "paragraphs": [
             "O Freecash concentra seu catálogo em metas de jogos mobile, muros de ofertas e pesquisas. O Swagbucks cobre essas mesmas frentes — nossa captura no Android mostrou jogos como Puzzles & Chaos (até 2.373 SB) e Screw Out (até 1.233 SB), além da Coinbase na aba Discover —, mas acrescenta um portal próprio de cashback (Shop and Earn) com varejistas como Walmart (até 8%), eBay (até 5%) e The Home Depot (até 15%).",
-            "Para quem já faz compras online em lojas parceiras ou prefere começar com tarefas rápidas como pesquisas de 5 minutos (de 5 a 10 SB), o Swagbucks oferece mais caminhos para somar pontos quando a lista de jogos está parada."
+            "Para quem já faz compras online em lojas parceiras ou prefere começar com tarefas rápidas como pesquisas de 5 minutos (de 5 a 10 SB), o Swagbucks oferece mais caminhos para somar pontos quando a lista de jogos está parada.",
+            "Se você ainda não conhece os detalhes de cada painel, consulte antes o nosso guia [como funciona o Swagbucks e quanto valem os pontos SB](/pt/como-funciona-swagbucks-e-confiavel-paga/) e o passo a passo inicial [como funciona o Freecash (ofertas e convites)](/pt/freecash-ofertas-convites/)."
           ],
           "source": {
             "title": "Swagbucks: funcionamento e canais de ganho",
@@ -13138,7 +13483,56 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Portal de cashback Shop and Earn e pesquisas no Swagbucks",
         "caption": "Diferente de sites focados apenas em offerwalls, o Swagbucks traz um portal de cashback que devolve até 15 SB por dólar em lojas parceiras.",
         "wide": true
-      }
+      },
+      "modifiedDate": "2026-11-19",
+      "tables": [
+        {
+          "heading": "Comparativo direto: Swagbucks vs. Freecash (2026)",
+          "columns": [
+            "Critério",
+            "Swagbucks",
+            "Freecash"
+          ],
+          "rows": [
+            [
+              "Conversão interna",
+              "100 SB = US$ 1,00",
+              "1.000 moedas = US$ 1,00"
+            ],
+            [
+              "Cashback em lojas online",
+              "Sim (portal Shop & Earn com lojas parceiras)",
+              "Não é o foco principal (concentra-se em jogos e offerwalls)"
+            ],
+            [
+              "Jogos mobile e ofertas",
+              "Metas progressivas em 30 dias com dias pendentes",
+              "Metas progressivas em jogos, pesquisas e muros de ofertas"
+            ],
+            [
+              "Métodos de saque",
+              "PayPal verificado e gift cards digitais",
+              "Criptomoedas, transferência bancária, PayPal e gift cards (varia por país)"
+            ],
+            [
+              "Primeiro saque e verificação",
+              "Mesmo e-mail do PayPal + SMS (celular real) + 2–5 dias úteis",
+              "Central cita mínimo inicial variável (ex.: US$ 25) + verificação de e-mail/ID"
+            ],
+            [
+              "Regra crítica",
+              "Proíbe VPN, proxy e múltiplas contas",
+              "Proíbe VPN, proxy e ofertas repetidas no mesmo aparelho"
+            ]
+          ],
+          "afterSectionIndex": 1
+        }
+      ],
+      "relatedIds": [
+        "swagbucks",
+        "freecash",
+        "pawns-vs-freecash"
+      ]
     },
     {
       "id": "pawns",
@@ -13165,7 +13559,8 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Ganhos ativos: pesquisas diárias e jogos de celular",
           "paragraphs": [
             "A captura de pesquisas mostra exemplos de $0,14 a $0,67 com durações estimadas. São exemplos daquela tela, não uma faixa normal, e nem toda tentativa atende aos requisitos para receber.",
-            "A captura de ofertas inclui Clockmaker ($20,66) e Candy Crush Saga ($54,17) como totais anunciados. São metas condicionadas de uma tela histórica, não valores atuais garantidos por instalar ou jogar."
+            "A captura de ofertas inclui Clockmaker ($20,66) e Candy Crush Saga ($54,17) como totais anunciados. São metas condicionadas de uma tela histórica, não valores atuais garantidos por instalar ou jogar.",
+            "Para detalhes sobre desqualificação, valores e como filtrar questionários, veja o guia de [pesquisas remuneradas no Pawns.app](/pt/pawns-app-pesquisas-remuneradas-ganhos/)."
           ],
           "source": {
             "title": "Pawns.app: Guia oficial de funcionamento",
@@ -13176,7 +13571,8 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Opções de saque e o bônus de convite de $3",
           "paragraphs": [
             "O Pawns.app publica mínimo de saque de $5. Os métodos dependem do país; confira taxas, verificação e eventuais etapas de resgate antes de confirmar. O solicitado pode diferir do recebido.",
-            "A regra atual divide o bônus anunciado de $3 em $1 após cada um dos três primeiros saques válidos, com prazos regionais mostrados no app. O código 6823713 não dispensa essas condições."
+            "A regra atual divide o bônus anunciado de $3 em $1 após cada um dos três primeiros saques válidos, com prazos regionais mostrados no app. O código 6823713 não dispensa essas condições.",
+            "Confira o passo a passo completo de taxas, verificação e liberação das parcelas do bônus em [como sacar no Pawns.app](/pt/pawns-app-como-sacar-metodos-bono-convite/), ou compare com outra plataforma popular em [Pawns.app vs. Freecash](/pt/pawns-app-vs-freecash-qual-o-melhor-para-ganhar-dinheiro/)."
           ],
           "source": {
             "title": "Pawns.app: referral bonus conditions",
@@ -13225,7 +13621,12 @@ export const articles:Record<Locale,Article[]>={
         "caption": "A captura de pesquisas mostra valores e durações históricos, não uma taxa diária confiável.",
         "wide": true
       },
-      "modifiedDate": "2026-11-15"
+      "modifiedDate": "2026-11-15",
+      "relatedIds": [
+        "pawns-cashout",
+        "pawns-surveys",
+        "pawns-vs-freecash"
+      ]
     },
     {
       "id": "pawns-surveys",
@@ -14372,7 +14773,8 @@ export const articles:Record<Locale,Article[]>={
           "heading": "O PineDrama é seguro e gratuito?",
           "paragraphs": [
             "Baixando o PineDrama pela Google Play ou pelo portal oficial shortdrama.tiktok.com, o aplicativo é seguro e segue a política de privacidade oficial do TikTok. O risco está em baixar APKs modificados de sites de terceiros que prometem moedas infinitas.",
-            "O download e o acesso às mininovelas com anúncios são gratuitos. Caso utilize a aba de Recompensas, encare os pontos como um bônus simbólico enquanto assiste às histórias."
+            "O download e o acesso às mininovelas com anúncios são gratuitos. Caso utilize a aba de Recompensas, encare os pontos como um bônus simbólico enquanto assiste às histórias.",
+            "Se você quer saber exatamente como instalar o aplicativo e se existe versão oficial para computador, veja nosso passo a passo de [como baixar o PineDrama, fazer login e disponibilidade no PC](/pt/como-baixar-pinedrama-pc-login-novelas/). Já para entender a matemática dos pontos e o saque no PIX (30.000 pontos = R$ 1), confira a análise [PineDrama paga mesmo no PIX?](/pt/pinedrama-paga-mesmo-como-sacar-pix/)."
           ]
         }
       ],
@@ -14416,7 +14818,45 @@ export const articles:Record<Locale,Article[]>={
         "alt": "Aba Descobrir do PineDrama com categorias e novelas populares em português",
         "caption": "Catálogo na aba Descobrir com filtros Categorias, Populares e Novos e milhões de visualizações.",
         "wide": false
-      }
+      },
+      "modifiedDate": "2026-11-19",
+      "tables": [
+        {
+          "heading": "Ficha rápida de segurança e funcionamento do PineDrama (2026)",
+          "columns": [
+            "Item verificado",
+            "O que observamos no app oficial"
+          ],
+          "rows": [
+            [
+              "Desenvolvedor oficial",
+              "TikTok Pte. Ltd. (ecossistema TikTok / ByteDance)"
+            ],
+            [
+              "Pacote na Google Play",
+              "com.ss.android.ttmd.video (portal shortdrama.tiktok.com)"
+            ],
+            [
+              "Custo para assistir",
+              "Gratuito com suporte a anúncios (sem assinatura obrigatória para começar)"
+            ],
+            [
+              "Aba de Recompensas (Brasil)",
+              "Conversão exibida de 30.000 pontos = R$ 1 (retorno simbólico de centavos)"
+            ],
+            [
+              "Principal risco a evitar",
+              "APKs modificados de terceiros que prometem moedas infinitas"
+            ]
+          ],
+          "afterSectionIndex": 0
+        }
+      ],
+      "relatedIds": [
+        "pinedrama-rewards",
+        "pinedrama-guide",
+        "pinedrama-vs-dramastack"
+      ]
     },
     {
       "id": "pinedrama-rewards",
@@ -14448,7 +14888,8 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "O que observar antes de tentar juntar moedas no PineDrama",
           "paragraphs": [
-            "Os valores de cada missão mudam dinamicamente conforme a conta e o período promocional, e toda participação fica sujeita aos Termos e Condições do app. Por isso, não vale gastar horas assistindo a anúncios esperando renda mensal: os valores existem como incentivo simbólico para manter você dentro do catálogo. Veja também nosso [comparativo de apps de novelas curtas 2026](/pt/apps-de-novelas-curtas-que-pagam-comparativo/) para comparar o PineDrama com outros aplicativos e alternativas que pagam mais."
+            "Os valores de cada missão mudam dinamicamente conforme a conta e o período promocional, e toda participação fica sujeita aos Termos e Condições do app. Por isso, não vale gastar horas assistindo a anúncios esperando renda mensal: os valores existem como incentivo simbólico para manter você dentro do catálogo. Veja também nosso [comparativo de apps de novelas curtas 2026](/pt/apps-de-novelas-curtas-que-pagam-comparativo/) para comparar o PineDrama com outros aplicativos e alternativas que pagam mais.",
+            "Para verificar quem desenvolve o app, segurança e avaliações reais antes de instalar, leia nosso [review completo: PineDrama é confiável?](/pt/pinedrama-e-confiavel-review-completo/). Se precisa instalar no celular ou tirar dúvidas sobre acesso no computador, consulte o guia de [como baixar o PineDrama, fazer login e disponibilidade no PC](/pt/como-baixar-pinedrama-pc-login-novelas/)."
           ],
           "source": {
             "title": "Política de Privacidade do TikTok (Desenvolvedor do PineDrama)",
@@ -14502,6 +14943,8 @@ export const articles:Record<Locale,Article[]>={
       },
       "modifiedDate": "2026-11-18",
       "relatedIds": [
+        "pinedrama",
+        "pinedrama-guide",
         "short-drama-apps-compared",
         "dramastack",
         "cashdrama",
@@ -15116,7 +15559,7 @@ export const articles:Record<Locale,Article[]>={
       "slug": "dramabox-quanto-custa-como-cancelar-assinatura",
       "title": "DramaBox: Quanto Custa a Assinatura e Como Cancelar (Android e iPhone)",
       "description": "Preços oficiais do DramaBox no Brasil (plano semanal e anual), regras de renovação automática e passo a passo para cancelar a assinatura na Google Play e iPhone.",
-      "modifiedDate": "2026-11-18",
+      "modifiedDate": "2026-11-19",
       "intro": "A assinatura do DramaBox libera acesso ilimitado a mais de 16 mil séries em 1080p e downloads offline, mas funciona com cobrança recorrente e renovação automática ativada por padrão. Saber os valores exatos e onde cancelar evita ser cobrado novamente após a primeira semana.",
       "sections": [
         {
@@ -15135,6 +15578,13 @@ export const articles:Record<Locale,Article[]>={
           "paragraphs": [
             "Apenas desinstalar o aplicativo do celular NÃO cancela a assinatura do DramaBox. Como a cobrança passa pela Google Play ou pela Apple, o cancelamento precisa ser feito diretamente na loja de aplicativos pelo menos 24 horas antes da renovação.",
             "No Android (Google Play): abra a Google Play Store -> toque na sua foto de perfil -> Pagamentos e assinaturas -> Assinaturas -> DramaBox -> Cancelar assinatura. No iPhone: abra Ajustes -> toque no seu nome (ID Apple) -> Assinaturas -> DramaBox -> Cancelar assinatura."
+          ]
+        },
+        {
+          "heading": "Quando compensa assinar e como evitar cobranças surpresa",
+          "paragraphs": [
+            "Como o plano semanal promocional de R$ 34,99 sobe para R$ 45,99/semana após as 3 primeiras semanas, manter a renovação ativa por descuido pode custar mais do que serviços tradicionais de streaming mensal. Se o seu objetivo for assistir apenas a uma ou duas minisséries específicas, cancelar a assinatura imediatamente após a ativação garante o acesso VIP até o fim dos 7 dias pagos sem risco de nova cobrança.",
+            "Quem assiste em ritmo leve não precisa assinar: é possível combinar os episódios iniciais gratuitos com a coleta diária de moedas descrita no guia de [como assistir DramaBox grátis e ganhar moedas](/pt/como-assistir-dramabox-gratis-ganhar-moedas/), ou revisar se o app vale a pena na nossa [análise completa do DramaBox](/pt/dramabox-e-pago-ou-gratuito-confiavel-review/)."
           ]
         }
       ],
@@ -15182,6 +15632,39 @@ export const articles:Record<Locale,Article[]>={
         "dramabox-recharge",
         "dramabox-coins",
         "pinedrama"
+      ],
+      "tables": [
+        {
+          "heading": "Planos do DramaBox e cancelamento (Android vs. iPhone)",
+          "columns": [
+            "Item",
+            "Android (Google Play)",
+            "iPhone (App Store)"
+          ],
+          "rows": [
+            [
+              "Plano semanal (tela verificada no Brasil)",
+              "R$ 34,99/sem nas 3 primeiras semanas; depois R$ 45,99/sem",
+              "Exibido na tela oficial da conta Apple (renova automaticamente)"
+            ],
+            [
+              "Plano anual (tela verificada no Brasil)",
+              "R$ 459,99/ano (~R$ 8,83/semana)",
+              "Cobrança anual gerenciada pelo ID Apple"
+            ],
+            [
+              "Regra de renovação",
+              "Cobra até 24h antes do fim do ciclo atual",
+              "Cobra até 24h antes do fim do ciclo atual"
+            ],
+            [
+              "Onde cancelar",
+              "Google Play -> Perfil -> Pagamentos e assinaturas -> Assinaturas",
+              "Ajustes -> ID Apple -> Assinaturas -> DramaBox"
+            ]
+          ],
+          "afterSectionIndex": 1
+        }
       ]
     },
     {
@@ -15757,7 +16240,8 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Como começar no aplicativo",
           "paragraphs": [
             "Antes da primeira pesquisa, instale o aplicativo oficial e preencha o cadastro solicitado. Depois, reserve alguns minutos para conhecer a lista e a carteira.",
-            "Para começar, baixe o AttaPoll pelo convite. O código de convite é cgfky; se precisar inseri-lo manualmente, confira o prazo e as condições no próprio app."
+            "Para começar, baixe o AttaPoll pelo convite. O código de convite é cgfky; se precisar inseri-lo manualmente, confira o prazo e as condições no próprio app.",
+            "Para conferir o prazo oficial de 7 dias, onde inserir manualmente e o que significa o incentivo de 10%, leia o guia dedicado do [código de convite AttaPoll cgfky](/pt/codigo-convite-attapoll/)."
           ],
           "cta": {
             "label": "Baixar o AttaPoll pelo convite",
@@ -15829,8 +16313,9 @@ export const articles:Record<Locale,Article[]>={
       ],
       "modifiedDate": "2026-11-18",
       "relatedIds": [
-        "opinion-vs-primeopinion-attapoll",
+        "attapoll-convite",
         "attapoll-saque",
+        "opinion-vs-primeopinion-attapoll",
         "attapoll-jogos"
       ],
       "tables": [
@@ -16314,7 +16799,8 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Por que uma indicação pode não ser aceita",
           "paragraphs": [
             "Confira se o código foi registrado no prazo, se a conta já tinha outra indicação e se a instalação veio de uma campanha diferente. Os termos também informam que país e verificações de qualidade podem afetar a elegibilidade. São critérios do programa, não um diagnóstico do que ocorreu com a sua conta.",
-            "Se a opção de código não aparecer, veja se o app está atualizado e consulte a ajuda. Quando houver uma mensagem de erro, leia o motivo informado e procure o suporte se precisar esclarecer o caso. Não é necessário apagar a conta para tentar trocar a indicação; a ajuda informa que um código já associado não pode ser substituído."
+            "Se a opção de código não aparecer, veja se o app está atualizado e consulte a ajuda. Quando houver uma mensagem de erro, leia o motivo informado e procure o suporte se precisar esclarecer o caso. Não é necessário apagar a conta para tentar trocar a indicação; a ajuda informa que um código já associado não pode ser substituído.",
+            "Depois de concluir o cadastro, vale entender como interpretar estrelas e duração no guia [como funciona o AttaPoll](/pt/attapoll-como-funciona/) e conferir os limites de retirada em [como sacar no AttaPoll](/pt/como-sacar-no-attapoll/)."
           ],
           "source": {
             "title": "AttaPoll: termos e condições em português brasileiro",
@@ -16376,10 +16862,45 @@ export const articles:Record<Locale,Article[]>={
         }
       ],
       "relatedIds": [
-        "attapoll"
+        "attapoll",
+        "attapoll-saque",
+        "attapoll-jogos"
       ],
       "stepsSectionIndex": 0,
-      "imageWide": false
+      "imageWide": false,
+      "modifiedDate": "2026-11-19",
+      "tables": [
+        {
+          "heading": "Regras práticas do código de convite AttaPoll (cgfky)",
+          "columns": [
+            "Regra do programa",
+            "O que consta nos termos e na captura"
+          ],
+          "rows": [
+            [
+              "Código de indicação",
+              "cgfky (exibido como CGFKY na tela Convidar & Ganhar)"
+            ],
+            [
+              "Prazo para inserção manual",
+              "Até 7 dias após a criação da conta em Configurações"
+            ],
+            [
+              "Troca de código",
+              "Não permitida — cada conta aceita apenas uma indicação"
+            ],
+            [
+              "Incentivo de 10%",
+              "Benefício de quem convida sobre pesquisas elegíveis concluídas pelos convidados"
+            ],
+            [
+              "Bônus inicial do convidado",
+              "Varia por país/campanha; não há valor fixo garantido para todas as contas"
+            ]
+          ],
+          "afterSectionIndex": 1
+        }
+      ]
     },
     {
       "id": "tiktoklite-convite",

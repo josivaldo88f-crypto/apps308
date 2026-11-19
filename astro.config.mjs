@@ -8,7 +8,7 @@ export default defineConfig({
  site,output:'static',trailingSlash:'always',
  i18n:{defaultLocale:'en',locales:languages,routing:{prefixDefaultLocale:true,redirectToDefaultLocale:false}},
  integrations:[sitemap({
-  filter:page=>!page.endsWith('/404/')&&!page.endsWith('/404.html')&&!page.endsWith('/privacy/'),
+  filter:page=>page!==`${site}/`&&!page.endsWith('/404/')&&!page.endsWith('/404.html')&&!page.endsWith('/privacy/'),
   serialize(item){
    const parts=new URL(item.url).pathname.split('/').filter(Boolean);
    if(parts.length===0){

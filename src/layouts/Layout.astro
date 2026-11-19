@@ -19,7 +19,7 @@ const xDefaultHref=translations.en||translations[locale]||translations[available
   gtag('js', new Date());
 </script>
 <title>{title}</title><meta name="description" content={description}/><meta name="theme-color" content="#183f34"/>
-<link rel="icon" type="image/svg+xml" href="/favicon.svg"/><link rel="canonical" href={current}/>
+<link rel="icon" href="/favicon.ico" sizes="48x48"/><link rel="icon" type="image/svg+xml" href="/favicon.svg"/><link rel="canonical" href={current}/>
 {availableLocales.map(l=><link rel="alternate" hreflang={l} href={new URL(translations[l],'https://www.apps308.com').href}/>)}
 <link rel="alternate" hreflang="x-default" href={new URL(xDefaultHref,'https://www.apps308.com').href}/>
 {noindex&&<meta name="robots" content="noindex,follow"/>}
