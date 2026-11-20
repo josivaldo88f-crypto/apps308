@@ -1,0 +1,55 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import {text,locales,href,type Locale} from '../../data/i18n';
+export function getStaticPaths(){return locales.map(locale=>({params:{locale}}));}
+const locale=Astro.params.locale as Locale;
+const t=text[locale];
+const email='josivaldof20@gmail.com';
+const content={
+  en:{
+    heading:'Terms of Use & Disclaimer',
+    intro:'By accessing apps308, you agree to the informational terms below. Our guides are written to help readers evaluate mobile apps, reward programs, and digital tools with realistic expectations.',
+    sections:[
+      ['Informational purpose only','All articles, comparisons, tables, and FAQs on apps308 are published for general informational and educational purposes. Nothing on this website constitutes financial, legal, tax, or investment advice.'],
+      ['No guarantee of earnings or payouts','apps308 does not guarantee earnings, survey qualification, bonus approval, or cashouts on any third-party platform. Reward rates, minimum withdrawal thresholds, supported payment methods, and regional eligibility change frequently and depend exclusively on each app provider.'],
+      ['Affiliate and referral disclosure','Some guides include verified affiliate links or referral invite codes (marked with rel="sponsored" and identified near the offer). If you register or purchase through those links, apps308 may receive a commission or referral reward at no extra cost to you. Commercial availability does not determine our editorial verdict: we explicitly warn readers when an app shows unverifiable payout rules or high barriers.'],
+      ['Third-party websites and trademarks','All product names, logos, and trademarks mentioned in our reviews belong to their respective owners. External links lead to independent websites governed by their own terms of service and privacy policies.'],
+      ['Updates and contact','Last updated: November 20, 2026. If you spot outdated terms or want to report a correction, contact us at ']
+    ]
+  },
+  es:{
+    heading:'Términos de uso y aviso legal',
+    intro:'Al navegar por apps308, aceptas las condiciones informativas descritas a continuación. Nuestras guías existen para ayudar a evaluar aplicaciones móviles, programas de recompensas y herramientas digitales con expectativas realistas.',
+    sections:[
+      ['Finalidad estrictamente informativa','Todos los artículos, comparativas, tablas y preguntas frecuentes publicados en apps308 tienen carácter informativo y educativo. Ningún contenido de este sitio constituye asesoramiento financiero, legal, fiscal o de inversión.'],
+      ['Sin garantía de ingresos ni pagos','apps308 no garantiza ganancias, calificación en encuestas, bonos ni retiros en plataformas de terceros. Los valores de recompensa, mínimos de retiro, métodos de pago y disponibilidad regional cambian con frecuencia y dependen exclusivamente de cada proveedor.'],
+      ['Divulgación de afiliados y referidos','Algunas guías incluyen enlaces de afiliado o códigos de invitación verificados (marcados con rel="sponsored" e identificados junto a la oferta). Si te registras o contratas un servicio mediante esos enlaces, apps308 puede recibir una comisión o bono sin costo adicional para ti. La existencia de afiliación no compra nuestro veredicto: advertimos explícitamente cuando una app presenta reglas de pago no verificables o barreras elevadas.'],
+      ['Sitios de terceros y marcas registradas','Todos los nombres de productos, logotipos y marcas citados pertenecen a sus respectivos propietarios. Los enlaces externos dirigen a sitios independientes regidos por sus propios términos y políticas de privacidad.'],
+      ['Actualizaciones y contacto','Última actualización: 20 de noviembre de 2026. Si detectas información desactualizada o deseas enviar una corrección, escríbenos a ']
+    ]
+  },
+  pt:{
+    heading:'Termos de uso e aviso legal',
+    intro:'Ao acessar o apps308, você concorda com as condições informativas abaixo. Nossos guias existem para ajudar leitores a avaliar aplicativos móveis, programas de recompensas e ferramentas digitais com expectativas realistas.',
+    sections:[
+      ['Finalidade exclusivamente informativa','Todos os artigos, comparativos, tabelas e perguntas frequentes publicados no apps308 têm caráter informativo e educacional. Nenhum conteúdo deste site constitui recomendação financeira, jurídica, tributária ou de investimento.'],
+      ['Sem garantia de ganhos ou pagamentos','O apps308 não garante ganhos, aprovação em pesquisas, recebimento de bônus ou saques em plataformas de terceiros. Valores de recompensa, mínimos de resgate, métodos de pagamento e disponibilidade regional mudam com frequência e dependem exclusivamente de cada fornecedor.'],
+      ['Divulgação de afiliados e convites','Alguns guias incluem links de afiliado ou códigos de convite verificados (marcados com rel="sponsored" e sinalizados junto à oferta). Caso você faça cadastro ou contrate um serviço por esses links, o apps308 pode receber uma comissão ou bônus sem custo adicional para você. A existência de parceria não determina o veredito editorial: alertamos explicitamente quando um aplicativo apresenta regras de saque inviáveis ou não comprovadas.'],
+      ['Sites de terceiros e marcas registradas','Todos os nomes de produtos, marcas e logotipos mencionados pertencem aos seus respectivos proprietários. Links externos levam a sites independentes sujeitos aos seus próprios termos de uso e políticas de privacidade.'],
+      ['Atualizações e contato','Última atualização: 20 de novembro de 2026. Se encontrar alguma regra desatualizada ou quiser reportar uma correção, entre em contato pelo e-mail ']
+    ]
+  }
+}[locale];
+---
+<Layout locale={locale} title={`${t.terms} | apps308`} description={content.intro} noindex={true} alternates={Object.fromEntries(locales.map(l=>[l,href(l,'terms')]))}>
+<div class="policy wrap">
+<h1>{content.heading}</h1>
+<p>{content.intro}</p>
+{content.sections.slice(0,-1).map(([h,p])=><section><h2>{h}</h2><p>{p}</p></section>)}
+<section>
+<h2>{content.sections[content.sections.length-1][0]}</h2>
+<p>{content.sections[content.sections.length-1][1]}<a href={`mailto:${email}`}>{email}</a>.</p>
+</section>
+<p class="policy-links"><a href={href(locale,'about')}>{t.about}</a> · <a href={href(locale,'contact')}>{t.contact}</a> · <a href={href(locale,'privacy')}>{t.privacy}</a></p>
+</div>
+</Layout>

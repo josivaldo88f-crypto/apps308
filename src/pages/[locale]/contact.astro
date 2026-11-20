@@ -1,0 +1,70 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import {text,locales,href,type Locale} from '../../data/i18n';
+export function getStaticPaths(){return locales.map(locale=>({params:{locale}}));}
+const locale=Astro.params.locale as Locale;
+const t=text[locale];
+const email='josivaldof20@gmail.com';
+const content={
+  en:{
+    heading:'Contact apps308',
+    intro:'Have a factual correction, broken link report, partnership inquiry, or privacy request? Reach out directly to the apps308 editorial team by email.',
+    emailLabel:'Direct editorial and privacy email',
+    emailNote:'We review messages in English, Spanish, and Portuguese.',
+    sections:[
+      ['What you can contact us about','Send updates when an app changes its withdrawal rules, regional availability, or official support links. You can also use this address for editorial questions, affiliate compliance inquiries, or data privacy requests (LGPD, GDPR, and CCPA).'],
+      ['Important note about third-party apps','apps308 is an independent editorial website. We do not operate Swagbucks, Freecash, Prime Opinion, Pawns.app, AttaPoll, TikTok Lite, NordVPN, Surfshark, Kaspersky, or any other app reviewed here. We cannot access your account, recover passwords, or issue payouts—for account support, always use the official help links cited in each guide.'],
+      ['Related institutional pages','Learn more about how we test apps and maintain editorial independence on our About page, or review our Privacy Policy and Terms & Disclaimer below.']
+    ]
+  },
+  es:{
+    heading:'Contacto de apps308',
+    intro:'¿Quieres reportar una corrección factual, un enlace roto, una consulta editorial o una solicitud de privacidad? Escribe directamente al equipo editorial de apps308 por correo electrónico.',
+    emailLabel:'Correo directo editorial y de privacidad',
+    emailNote:'Respondemos mensajes en español, inglés y portugués.',
+    sections:[
+      ['Motivos de contacto','Puedes escribirnos si una app cambió sus reglas de retiro, disponibilidad regional o enlaces oficiales de soporte. También atendemos consultas editoriales, transparencia de afiliados y solicitudes de privacidad (LGPD, GDPR y CCPA).'],
+      ['Aviso importante sobre apps de terceros','apps308 es un sitio editorial independiente. No administramos Swagbucks, Freecash, Prime Opinion, Pawns.app, AttaPoll, TikTok Lite, NordVPN, Surfshark, Kaspersky ni ninguna otra aplicación reseñada aquí. No tenemos acceso a tu cuenta ni podemos procesar pagos; para soporte de cuenta, usa siempre los enlaces oficiales citados en cada guía.'],
+      ['Páginas institucionales relacionadas','Consulta cómo probamos las apps y mantenemos nuestra independencia editorial en Acerca de apps308, o revisa nuestra Política de Privacidad y Términos y aviso legal.']
+    ]
+  },
+  pt:{
+    heading:'Contato do apps308',
+    intro:'Encontrou uma informação desatualizada, link quebrado ou deseja enviar uma dúvida editorial ou solicitação de privacidade? Fale diretamente com a equipe editorial do apps308 por e-mail.',
+    emailLabel:'E-mail direto editorial e de privacidade',
+    emailNote:'Atendemos mensagens em português, inglês e espanhol.',
+    sections:[
+      ['Assuntos atendidos','Envie avisos quando algum aplicativo mudar regras de saque, disponibilidade regional ou páginas oficiais de suporte. Este canal também recebe dúvidas editoriais, questões sobre links de afiliados e solicitações de privacidade (LGPD, GDPR e CCPA).'],
+      ['Aviso importante sobre aplicativos de terceiros','O apps308 é um site editorial independente. Não operamos Swagbucks, Freecash, Prime Opinion, Pawns.app, AttaPoll, TikTok Lite, NordVPN, Surfshark, Kaspersky nem nenhum outro aplicativo analisado aqui. Não temos acesso à sua conta nem realizamos pagamentos — para suporte de conta, utilize sempre os canais oficiais indicados ao final de cada guia.'],
+      ['Páginas institucionais relacionadas','Saiba como testamos os aplicativos e mantemos independência editorial na página Sobre o apps308, ou consulte nossa Política de Privacidade e Termos e aviso legal.']
+    ]
+  }
+}[locale];
+const schema=[{
+  '@context':'https://schema.org',
+  '@type':'ContactPage',
+  name:content.heading,
+  description:content.intro,
+  url:`https://www.apps308.com${href(locale,'contact')}`,
+  inLanguage:locale,
+  mainEntity:{
+    '@type':'Organization',
+    name:'apps308',
+    url:'https://www.apps308.com',
+    email:`mailto:${email}`
+  }
+}];
+---
+<Layout locale={locale} title={`${t.contact} | apps308`} description={content.intro} alternates={Object.fromEntries(locales.map(l=>[l,href(l,'contact')]))} schema={schema}>
+<div class="policy wrap">
+<h1>{content.heading}</h1>
+<p>{content.intro}</p>
+<aside class="contact-card">
+<p class="contact-label">{content.emailLabel}</p>
+<p class="contact-email"><a href={`mailto:${email}`}>{email}</a></p>
+<p class="contact-note">{content.emailNote}</p>
+</aside>
+{content.sections.map(([h,p])=><section><h2>{h}</h2><p>{p}</p></section>)}
+<p class="policy-links"><a href={href(locale,'about')}>{t.about}</a> · <a href={href(locale,'privacy')}>{t.privacy}</a> · <a href={href(locale,'terms')}>{t.terms}</a></p>
+</div>
+</Layout>

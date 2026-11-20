@@ -12,12 +12,11 @@ const xDefaultHref=translations.en||translations[locale]||translations[available
 ---
 <!doctype html><html lang={locale}><head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<script is:inline async src="https://www.googletagmanager.com/gtm.js?id=GTM-NZJRRRLM"></script>
 <script is:inline>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  window.dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
 </script>
+<script is:inline async src="https://www.googletagmanager.com/gtm.js?id=GTM-NZJRRRLM"></script>
 <title>{title}</title><meta name="description" content={description}/><meta name="theme-color" content="#183f34"/>
 <link rel="icon" href="/favicon.ico" sizes="48x48"/><link rel="icon" type="image/svg+xml" href="/favicon.svg"/><link rel="canonical" href={current}/>
 {availableLocales.map(l=><link rel="alternate" hreflang={l} href={new URL(translations[l],'https://www.apps308.com').href}/>)}
@@ -33,5 +32,5 @@ const xDefaultHref=translations.en||translations[locale]||translations[available
 <div class="header-actions"><details class="language-picker"><summary><Icon name="globe" size={17}/>{locale.toUpperCase()}<span class="down-caret">⌄</span></summary><div class="language-options">{locales.map(l=><a href={translations[l]||href(l)} lang={l} hreflang={l} aria-current={l===locale?'page':undefined}>{text[l].name}<span>{l===locale?'✓':''}</span></a>)}</div></details><a class="header-search" href={`${href(locale)}#search`} aria-label={t.search}><Icon name="search"/></a></div>
 </header>
 <main id="main"><slot/></main>
-<footer><div class="footer-main wrap"><div><a class="brand" href={href(locale)}><span class="brand-symbol"><i></i><i></i><i></i><i></i></span>apps<span class="brand-num">308</span><span class="brand-period">.</span></a><p class="footer-slogan">{t.footer}</p><p class="footer-description">{t.footerSub}</p></div><div class="footer-links"><a href={href(locale,'about')}>{t.about}<Icon name="arrow" size={16}/></a><a href={href(locale,'privacy')}>{t.privacy}<Icon name="arrow" size={16}/></a><div class="footer-languages">{locales.map(l=><a lang={l} href={translations[l]||href(l)} aria-current={l===locale?'page':undefined}>{text[l].name}</a>)}</div></div></div><div class="footer-bottom wrap"><span>© {new Date().getUTCFullYear()} apps308</span><span>Made for the curious <span class="footer-star">✳</span></span></div></footer>
+<footer><div class="footer-main wrap"><div><a class="brand" href={href(locale)}><span class="brand-symbol"><i></i><i></i><i></i><i></i></span>apps<span class="brand-num">308</span><span class="brand-period">.</span></a><p class="footer-slogan">{t.footer}</p><p class="footer-description">{t.footerSub}</p></div><div class="footer-links"><a href={href(locale,'about')}>{t.about}<Icon name="arrow" size={16}/></a><a href={href(locale,'contact')}>{t.contact}<Icon name="arrow" size={16}/></a><a href={href(locale,'privacy')}>{t.privacy}<Icon name="arrow" size={16}/></a><a href={href(locale,'terms')}>{t.terms}<Icon name="arrow" size={16}/></a><div class="footer-languages">{locales.map(l=><a lang={l} href={translations[l]||href(l)} aria-current={l===locale?'page':undefined}>{text[l].name}</a>)}</div></div></div><div class="footer-bottom wrap"><span>© {new Date().getUTCFullYear()} apps308</span><span>Made for the curious <span class="footer-star">✳</span></span></div></footer>
 </body></html>

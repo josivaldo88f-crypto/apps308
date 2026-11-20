@@ -1,61 +1,55 @@
 ---
-import Layout from '../../layouts/Layout.astro';import {text,locales,href,type Locale} from '../../data/i18n';
-export function getStaticPaths(){return locales.map(locale=>({params:{locale}}));}const locale=Astro.params.locale as Locale;const t=text[locale];
+import Layout from '../../layouts/Layout.astro';
+import {text,locales,href,type Locale} from '../../data/i18n';
+export function getStaticPaths(){return locales.map(locale=>({params:{locale}}));}
+const locale=Astro.params.locale as Locale;
+const t=text[locale];
+const email='josivaldof20@gmail.com';
 const content={
-  "en": [
-    [
-      "About apps308",
-      "apps308 helps you discover useful apps, websites and reward programs. Find practical explanations, features to explore and tips for choosing what fits your daily life."
-    ],
-    [
-      "What you will find here",
-      "Our guides cover how to get started, useful features, strengths and limitations. For reward programs, we explain the type of reward, redemption requirements and processing information published by the provider."
-    ],
-    [
-      "Explore in your language",
-      "Read in English, Spanish or Portuguese. Use the language selector to open the equivalent guide and keep exploring."
-    ],
-    [
-      "Up-to-date information",
-      "Features, offers and regional availability can change. Each guide includes links to the provider’s product and support pages for current details."
+  en:{
+    heading:'About apps308',
+    intro:'apps308 is an independent editorial website created to review reward apps, paid survey platforms, short-drama apps, and everyday digital security tools with practical, verifiable evidence.',
+    sections:[
+      ['How we test and verify apps','Before publishing a guide, we inspect the official app store listing, public terms of service, withdrawal rules, and real Android interface screens. Screenshots published on apps308 are captured directly from test devices with personal identifiers cropped out. We never invent star ratings, user reviews, or guaranteed earnings figures.'],
+      ['Why we publish critical verdicts','The reward-app category is crowded with exaggerated claims. When an app displays high cashout thresholds, unverifiable payout rules, or contradictions between its interface and written policy, we say so plainly and point readers toward transparent alternatives.'],
+      ['Editorial independence and affiliate disclosure','Some guides include verified affiliate links or referral codes (clearly labeled and marked with rel="sponsored"). Using those links costs you nothing extra and may help support the project. Affiliate availability never dictates our verdict: we cover apps with no affiliate program and advise against apps that do not hold up under inspection.'],
+      ['Multilingual coverage and updates','Every guide is maintained in English, Spanish, and Portuguese so readers can compare regional differences such as local currency thresholds and country availability. Features and payout conditions change frequently, so each article links to official product and support sources and displays its last update date.'],
+      ['Who runs apps308 & how to contact us','apps308 is maintained independently by Josivaldo F. and the apps308 editorial team. For corrections, outdated terms, or editorial inquiries, visit our Contact page or write to ']
     ]
-  ],
-  "es": [
-    [
-      "Acerca de apps308",
-      "apps308 te ayuda a descubrir apps, sitios útiles y programas de recompensas. Encuentra explicaciones prácticas, funciones para explorar y consejos para elegir lo que encaja con tu día a día."
-    ],
-    [
-      "Qué encontrarás aquí",
-      "Las guías explican cómo empezar, funciones útiles, ventajas y aspectos a considerar. Para las recompensas, detallamos el tipo de beneficio, los requisitos de canje y los plazos publicados por el proveedor."
-    ],
-    [
-      "Explora en tu idioma",
-      "Lee en español, inglés o portugués. El selector de idioma abre la guía equivalente para seguir explorando."
-    ],
-    [
-      "Información actualizada",
-      "Las funciones, ofertas y disponibilidad regional pueden cambiar. Cada guía enlaza las páginas del producto y de soporte para consultar los detalles vigentes."
+  },
+  es:{
+    heading:'Acerca de apps308',
+    intro:'apps308 es un sitio editorial independiente dedicado a analizar aplicaciones de recompensas, plataformas de encuestas pagadas, apps de dramas cortos y herramientas de seguridad digital con pruebas prácticas y verificables.',
+    sections:[
+      ['Cómo probamos y verificamos cada app','Antes de publicar una guía, revisamos la ficha oficial en tienda, los términos de servicio públicos, las reglas de retiro y pantallas reales en Android. Las capturas publicadas en apps308 provienen de dispositivos de prueba con datos personales recortados. Nunca inventamos puntuaciones, reseñas ficticias ni promesas de ganancias garantizadas.'],
+      ['Por qué publicamos veredictos críticos','El sector de apps de recompensas está lleno de promesas exageradas. Cuando una aplicación muestra mínimos de retiro irreales, reglas poco claras o contradicciones entre su pantalla y sus términos escritos, lo señalamos abiertamente y mostramos alternativas transparentes.'],
+      ['Independencia editorial y transparencia de afiliados','Algunas guías incluyen enlaces de afiliado o códigos de invitación verificados (señalizados y marcados con rel="sponsored"). Usar esos enlaces no tiene costo adicional para ti y ayuda a sostener el proyecto. La existencia de afiliación nunca define nuestro veredicto: reseñamos apps sin programa de afiliados y desaconsejamos apps que no superan nuestra revisión.'],
+      ['Cobertura multilingüe y actualizaciones','Cada guía se mantiene en español, inglés y portugués para explicar diferencias regionales como monedas locales y disponibilidad por país. Como las reglas y recompensas cambian con frecuencia, cada artículo cita fuentes oficiales y muestra su fecha de actualización.'],
+      ['Quién gestiona apps308 y cómo contactarnos','apps308 es un proyecto editorial independiente mantenido por Josivaldo F. y el equipo editorial de apps308. Para correcciones, cambios de condiciones o consultas, visita nuestra página de Contacto o escribe a ']
     ]
-  ],
-  "pt": [
-    [
-      "Sobre o apps308",
-      "O apps308 ajuda você a descobrir aplicativos, sites úteis e programas de recompensas. Encontre explicações práticas, recursos para explorar e dicas para escolher o que combina com seu dia a dia."
-    ],
-    [
-      "O que você encontra por aqui",
-      "Os guias explicam como começar, recursos úteis, pontos positivos e o que considerar. Nos programas de recompensas, detalhamos o tipo de benefício, os requisitos de resgate e os prazos publicados pelo fornecedor."
-    ],
-    [
-      "Explore no seu idioma",
-      "Leia em português, inglês ou espanhol. Use o seletor de idioma para abrir o guia equivalente e continuar explorando."
-    ],
-    [
-      "Informações atualizadas",
-      "Recursos, ofertas e disponibilidade regional podem mudar. Cada guia inclui links para as páginas do produto e de suporte, onde você pode conferir os detalhes atuais."
+  },
+  pt:{
+    heading:'Sobre o apps308',
+    intro:'O apps308 é um site editorial independente criado para analisar aplicativos de recompensas, plataformas de pesquisas remuneradas, apps de novelas curtas e ferramentas de segurança digital com base em verificações práticas e transparentes.',
+    sections:[
+      ['Como testamos e verificamos cada aplicativo','Antes de publicar um guia, verificamos a ficha oficial na loja, os termos de uso públicos, as regras de saque e telas reais em aparelho Android. As capturas publicadas no apps308 são obtidas em testes próprios com dados pessoais recortados. Nunca inventamos notas, avaliações fictícias ou promessas de renda garantida.'],
+      ['Por que publicamos vereditos críticos','O nicho de aplicativos que prometem pagar concentra muitas promessas exageradas. Quando um aplicativo exibe metas de saque incompatíveis, regras não comprovadas ou contradições entre a tela promocional e a política escrita, apontamos isso claramente e indicamos alternativas verificadas.'],
+      ['Independência editorial e transparência de afiliados','Alguns guias trazem links de afiliado ou códigos de convite verificados (sinalizados ao leitor e marcados com rel="sponsored"). Utilizar esses links não gera custo extra e ajuda a manter o site. A presença de link de afiliado nunca define o veredito: analisamos apps sem parceria comercial e desaconselhamos aplicativos que não passam na checagem.'],
+      ['Cobertura multilíngue e atualizações','Os guias são mantidos em português, inglês e espanhol para facilitar a comparação entre moedas, prazos e disponibilidade regional. Como regras e ofertas mudam com frequência, cada guia cita as fontes oficiais e exibe a data da última atualização.'],
+      ['Quem mantém o apps308 e como falar conosco','O apps308 é mantido de forma independente por Josivaldo F. e pela equipe editorial do apps308. Para enviar correções, avisar sobre mudanças de regras ou tirar dúvidas, acesse a página de Contato ou escreva para ']
     ]
-  ]
-};
+  }
+}[locale];
 ---
-<Layout locale={locale} title={`${t.about} | apps308`} description={content[locale][0][1]} alternates={Object.fromEntries(locales.map(l=>[l,href(l,'about')]))}><div class="policy wrap"><h1>{content[locale][0][0]}</h1><p>{content[locale][0][1]}</p>{content[locale].slice(1).map(([h,p])=><section><h2>{h}</h2><p>{p}</p></section>)}</div></Layout>
+<Layout locale={locale} title={`${t.about} | apps308`} description={content.intro} alternates={Object.fromEntries(locales.map(l=>[l,href(l,'about')]))}>
+<div class="policy wrap">
+<h1>{content.heading}</h1>
+<p>{content.intro}</p>
+{content.sections.slice(0,-1).map(([h,p])=><section><h2>{h}</h2><p>{p}</p></section>)}
+<section>
+<h2>{content.sections[content.sections.length-1][0]}</h2>
+<p>{content.sections[content.sections.length-1][1]}<a href={`mailto:${email}`}>{email}</a>.</p>
+</section>
+<p class="policy-links"><a href={href(locale,'contact')}>{t.contact}</a> · <a href={href(locale,'privacy')}>{t.privacy}</a> · <a href={href(locale,'terms')}>{t.terms}</a></p>
+</div>
+</Layout>

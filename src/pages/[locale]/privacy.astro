@@ -1,6 +1,62 @@
 ---
-import Layout from '../../layouts/Layout.astro';import {text,locales,href,type Locale} from '../../data/i18n';
-export function getStaticPaths(){return locales.map(locale=>({params:{locale}}));}const locale=Astro.params.locale as Locale;const t=text[locale];
-const content={en:[['Privacy','This version of apps308 has no registration, newsletter form, advertising scripts or analytics installed. Searching and filtering guides happens in your browser; search terms are not sent to an apps308 application server.'],['Hosting and external websites','The hosting provider may process standard access logs to deliver and secure the website. Following a link to Google, Microsoft, Freecash or another provider takes you to a separate website with its own privacy policy.'],['Device captures','Only captures intended for publication are included. Personal account identifiers are omitted or removed. This website does not access your phone, Google account or Microsoft account.'],['Updates','Last updated: November 5, 2026. Review this page if new features are added.']],es:[['Privacidad','Esta versión de apps308 no incluye registro, boletín, scripts publicitarios ni analítica. La búsqueda y los filtros se ejecutan en tu navegador; no se envían a un servidor de la aplicación.'],['Alojamiento y sitios externos','El proveedor de alojamiento puede procesar registros de acceso para entregar y proteger el sitio. Los enlaces a Google, Microsoft, Freecash y otros proveedores abren sitios independientes con sus propias políticas de privacidad.'],['Capturas de dispositivos','Solo incluimos capturas destinadas a publicación. Los identificadores personales se omiten o eliminan. Este sitio no accede a tu teléfono ni a tus cuentas de Google o Microsoft.'],['Actualizaciones','Última actualización: 5 de noviembre de 2026. Consulta esta página si se añaden funciones.']],pt:[['Privacidade','Esta versão do apps308 não possui cadastro, formulário de newsletter, scripts publicitários ou ferramentas de análise instaladas. Busca e filtros funcionam no navegador; os termos não são enviados a um servidor da aplicação.'],['Hospedagem e sites externos','O provedor de hospedagem pode processar registros de acesso para entregar e proteger o site. Links para Google, Microsoft, Freecash e outros fornecedores levam a sites independentes, com suas próprias políticas de privacidade.'],['Capturas de aparelho','Incluímos apenas capturas destinadas à publicação. Identificadores pessoais são omitidos ou removidos. Este site não acessa seu celular nem suas contas Google e Microsoft.'],['Atualizações','Última atualização: 5 de novembro de 2026. Consulte esta página se novas funções forem adicionadas.']]};
+import Layout from '../../layouts/Layout.astro';
+import {text,locales,href,type Locale} from '../../data/i18n';
+export function getStaticPaths(){return locales.map(locale=>({params:{locale}}));}
+const locale=Astro.params.locale as Locale;
+const t=text[locale];
+const email='josivaldof20@gmail.com';
+const content={
+  en:{
+    heading:'Privacy Policy',
+    intro:'apps308 does not offer user accounts, logins, comment sections, or newsletter signup forms. Searching and category filtering on our pages run directly in your browser without sending search terms to an apps308 application server.',
+    sections:[
+      ['Analytics and tag management','This website uses Google Tag Manager (GTM-NZJRRRLM) to manage aggregated traffic measurement (such as visited pages, language preference, referrers, and device type) so we can improve our guides. Depending on the tags enabled inside GTM, analytics cookies or similar browser identifiers may be stored by Google. You can block or delete cookies in your browser settings or use Google Analytics opt-out tools at any time.'],
+      ['Hosting and security logs','apps308 is served as a static website through Cloudflare Pages. The hosting and CDN provider may process standard technical access logs (such as IP address, user agent, and request timestamp) to deliver pages reliably and mitigate abuse.'],
+      ['External websites and affiliate links','Our guides link to official app stores, help centers, and verified affiliate or referral partners (including CJ Affiliate advertisers and official app referral pages). When you click an external or partner link, you leave apps308 and are subject to that third party’s privacy policy and cookie practices.'],
+      ['Device captures','Screenshots published in our guides are captured for editorial demonstration only, with personal account identifiers cropped or omitted. This website never accesses your phone, Google account, or Microsoft account.'],
+      ['Your privacy rights (LGPD, GDPR & CCPA)','Because apps308 does not collect personal registration profiles, we do not sell personal data. If you have questions about privacy, cookies, or rights under Brazil’s LGPD, the EU/UK GDPR, or US state privacy laws (CCPA/CPRA), contact us directly at '],
+      ['Updates','Last updated: November 20, 2026. This policy will be revised whenever new measurement or monetization features are added.']
+    ]
+  },
+  es:{
+    heading:'Política de privacidad',
+    intro:'apps308 no ofrece cuentas de usuario, inicio de sesión, comentarios ni formularios de boletín. La búsqueda y los filtros de categorías se ejecutan directamente en tu navegador sin enviar los términos a un servidor propio de apps308.',
+    sections:[
+      ['Analítica y gestión de etiquetas','Este sitio utiliza Google Tag Manager (GTM-NZJRRRLM) para gestionar mediciones agregadas de tráfico (como páginas vistas, idioma, procedencia y tipo de dispositivo) con el fin de mejorar nuestras guías. Según las etiquetas activas en GTM, Google puede utilizar cookies analíticas o identificadores similares del navegador. Puedes bloquear o eliminar las cookies desde la configuración de tu navegador en cualquier momento.'],
+      ['Alojamiento y registros de seguridad','apps308 se publica como sitio estático mediante Cloudflare Pages. El proveedor de alojamiento y CDN puede procesar registros técnicos de acceso estándar (dirección IP, navegador y fecha de solicitud) para entregar el sitio y protegerlo frente a abusos.'],
+      ['Sitios externos y enlaces de afiliado','Nuestras guías enlazan tiendas oficiales, centros de ayuda y socios verificados de afiliados o referidos (incluidos anunciantes de CJ Affiliate y páginas oficiales de invitación). Al hacer clic en un enlace externo o de socio, sales de apps308 y pasas a regirte por la política de privacidad y cookies de ese tercero.'],
+      ['Capturas de dispositivos','Las capturas publicadas en las guías se toman únicamente con fines editoriales y omiten o recortan identificadores personales de cuenta. Este sitio no accede a tu teléfono ni a tus cuentas de Google o Microsoft.'],
+      ['Tus derechos de privacidad (LGPD, GDPR y CCPA)','apps308 no recopila perfiles personales de registro ni vende datos personales. Si tienes preguntas sobre privacidad, cookies o derechos bajo la LGPD, el RGPD/GDPR europeo o leyes estatales de EE. UU. (CCPA/CPRA), escríbenos a '],
+      ['Actualizaciones','Última actualización: 20 de noviembre de 2026. Esta política se actualizará siempre que se incorporen nuevas funciones de medición o monetización.']
+    ]
+  },
+  pt:{
+    heading:'Política de privacidade',
+    intro:'O apps308 não possui cadastro de usuários, login, área de comentários nem formulário de newsletter. A busca e os filtros de categorias funcionam diretamente no seu navegador, sem enviar os termos pesquisados para um servidor próprio do apps308.',
+    sections:[
+      ['Análise de tráfego e gerenciamento de tags','Este site utiliza o Google Tag Manager (GTM-NZJRRRLM) para gerenciar medições agregadas de audiência (como páginas acessadas, idioma, origem de tráfego e tipo de dispositivo) para melhorar nossos guias. Conforme as tags ativas no GTM, o Google pode armazenar cookies de análise ou identificadores equivalentes no navegador. Você pode bloquear ou apagar cookies nas configurações do seu navegador a qualquer momento.'],
+      ['Hospedagem e registros de segurança','O apps308 é servido como site estático pela Cloudflare Pages. O provedor de hospedagem e CDN pode processar registros técnicos padrão de acesso (como endereço IP, navegador e horário da requisição) para entregar as páginas com estabilidade e prevenir ataques.'],
+      ['Sites externos e links de afiliado','Nossos guias incluem links para lojas oficiais, centrais de ajuda e parceiros verificados de afiliados ou indicação (incluindo anunciantes da CJ Affiliate e páginas oficiais de convite). Ao clicar em um link externo ou de parceiro, você sai do apps308 e fica sujeito à política de privacidade e aos cookies daquele site terceiro.'],
+      ['Capturas de aparelho','As capturas de tela publicadas nos guias têm finalidade exclusivamente editorial, com identificadores pessoais de conta recortados ou omitidos. Este site nunca acessa seu celular nem suas contas Google ou Microsoft.'],
+      ['Seus direitos de privacidade (LGPD, GDPR e CCPA)','O apps308 não mantém cadastros pessoais nem comercializa dados pessoais. Para dúvidas sobre privacidade, cookies ou direitos previstos na LGPD (Brasil), GDPR (Europa/Reino Unido) ou CCPA/CPRA (EUA), escreva diretamente para '],
+      ['Atualizações','Última atualização: 20 de novembro de 2026. Esta página será revisada sempre que novos recursos de medição ou monetização forem adicionados.']
+    ]
+  }
+}[locale];
 ---
-<Layout locale={locale} title={`${t.privacy} | apps308`} description={content[locale][0][1]} noindex={true} alternates={Object.fromEntries(locales.map(l=>[l,href(l,'privacy')]))}><div class="policy wrap"><h1>{content[locale][0][0]}</h1><p>{content[locale][0][1]}</p>{content[locale].slice(1).map(([h,p])=><section><h2>{h}</h2><p>{p}</p></section>)}</div></Layout>
+<Layout locale={locale} title={`${t.privacy} | apps308`} description={content.intro} noindex={true} alternates={Object.fromEntries(locales.map(l=>[l,href(l,'privacy')]))}>
+<div class="policy wrap">
+<h1>{content.heading}</h1>
+<p>{content.intro}</p>
+{content.sections.slice(0,4).map(([h,p])=><section><h2>{h}</h2><p>{p}</p></section>)}
+<section>
+<h2>{content.sections[4][0]}</h2>
+<p>{content.sections[4][1]}<a href={`mailto:${email}`}>{email}</a>.</p>
+</section>
+<section>
+<h2>{content.sections[5][0]}</h2>
+<p>{content.sections[5][1]}</p>
+</section>
+<p class="policy-links"><a href={href(locale,'about')}>{t.about}</a> · <a href={href(locale,'contact')}>{t.contact}</a> · <a href={href(locale,'terms')}>{t.terms}</a></p>
+</div>
+</Layout>
