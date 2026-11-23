@@ -18,11 +18,10 @@ const schema:any[]=[
   {'@context':'https://schema.org','@type':'FAQPage',inLanguage:locale,mainEntity:article.faq.map(f=>({'@type':'Question',name:f.q,acceptedAnswer:{'@type':'Answer',text:f.a}}))},
   {'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[
     {'@type':'ListItem',position:1,name:'apps308',item:`https://www.apps308.com${href(locale)}`},
-    {'@type':'ListItem',position:2,name:category(locale,article.category),item:`https://www.apps308.com${href(locale)}#guides`},
-    {'@type':'ListItem',position:3,name:article.title,item:url}
+    {'@type':'ListItem',position:2,name:article.title,item:url}
   ]}
 ];
-if(article.app!=='compare')schema.push({'@context':'https://schema.org','@type':'SoftwareApplication',name:apps[article.app].name,url:article.app==='cashfortunedrama'?url:apps[article.app].url,operatingSystem:apps[article.app].os,applicationCategory:article.app==='lens'?'UtilitiesApplication':(article.app==='dramastack'||article.app==='pinedrama'||article.app==='cashdrama'||article.app==='dramabox'||article.app==='dramagood'||article.app==='tiktoklite'||article.app==='cashfortunedrama')?'EntertainmentApplication':'LifestyleApplication',...(article.app==='lens'?{offers:{'@type':'Offer',price:'0',priceCurrency:'USD'}}:{})});
+if(article.app!=='compare'&&!article.id.includes('-vs-'))schema.push({'@context':'https://schema.org','@type':'SoftwareApplication',name:apps[article.app].name,url:article.app==='cashfortunedrama'?url:apps[article.app].url,operatingSystem:apps[article.app].os,applicationCategory:article.app==='lens'?'UtilitiesApplication':(article.app==='dramastack'||article.app==='pinedrama'||article.app==='cashdrama'||article.app==='dramabox'||article.app==='dramagood'||article.app==='tiktoklite'||article.app==='cashfortunedrama')?'EntertainmentApplication':'LifestyleApplication',offers:{'@type':'Offer',price:'0',priceCurrency:'USD'}});
 const date=new Intl.DateTimeFormat(locale,{dateStyle:'medium',timeZone:'UTC'}).format(new Date(`${modifiedDate}T12:00:00Z`));
 const readTime=Math.max(2,Math.ceil([article.intro,...article.sections.flatMap(s=>s.paragraphs),...article.steps,...article.faq.map(f=>f.a)].join(' ').split(/\s+/).length/180));
 const isCluster=['microsoft','freecash','swagbucks','pawns','primeopinion','pinedrama','cashdrama','dramabox','dramagood','attapoll','tiktoklite'].includes(article.app);
@@ -79,7 +78,7 @@ const showAffiliateNotice=hasVerifiedBox||hasSponsoredLinks;
 </section>{hasInlineSteps&&article.stepsSectionIndex===i&&<section id="steps"><h2>{t.steps}</h2><ol>{article.steps.map(step=><li>{step}</li>)}</ol></section>}</>)}
 {!hasInlineSteps&&<section id="steps"><h2>{t.steps}</h2><ol>{article.steps.map(step=><li>{step}</li>)}</ol></section>}
 <div class="pros-cons"><div><h2>{t.pros}</h2><ul>{article.pros.map(p=><li>{p}</li>)}</ul></div><div><h2>{t.cons}</h2><ul>{article.cons.map(p=><li>{p}</li>)}</ul></div></div>
-{!['compare','freecash','pawns','primeopinion','cashfortunedrama'].includes(article.app)&&<AffiliateBox locale={locale} app={article.app}/>}
+{!['compare','freecash','swagbucks','pawns','primeopinion','cashfortunedrama'].includes(article.app)&&<AffiliateBox locale={locale} app={article.app}/>}
 <section class="verdict-box"><h2>{t.verdict}</h2><p>{article.verdict}</p></section>
 {isCluster&&<nav class="cluster-box" aria-label={clusterHeading}><h2>{clusterHeading}</h2><ul>{clusterSeries.map(item=><li><a href={href(locale,item.slug)}>{item.title}<Icon name="arrow" size={13}/></a></li>)}</ul></nav>}
 <section id="faq"><h2>{t.faq}</h2>{article.faq.map(f=><details class="faq-item"><summary>{f.q}</summary><p>{f.a}</p></details>)}</section>

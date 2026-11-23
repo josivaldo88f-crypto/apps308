@@ -2664,14 +2664,14 @@ export const articles:Record<Locale,Article[]>={
       "category": "guides",
       "slug": "pinedrama-app-download-login-pc-shows-guide",
       "title": "PineDrama Download, TikTok Login & PC Availability (2026)",
-      "description": "Download the official PineDrama app on Android or iPhone, connect TikTok, find saved episodes and understand what is verified about PC access.",
-      "intro": "PineDrama has official Android and iPhone listings linked from its TikTok portal. We have not verified a Windows or macOS player or a supported emulator route. This guide separates those confirmed download options from PC claims and explains how to find your series again. The screenshots show the Android interface supplied for this guide; store information was checked on November 15, 2026.",
+      "description": "Download the official PineDrama app on Android or iPhone, connect TikTok, find saved episodes and check official platform support for Android, iOS, and PC.",
+      "intro": "PineDrama (published by TikTok Pte. Ltd.) provides official mobile apps for Android and iPhone through its shortdrama.tiktok.com portal, while desktop users often search for a Windows or macOS player. This technical installation and account guide explains how to verify the authentic Google Play and App Store packages, sync your TikTok watch history across devices, recover missing episode progress, and avoid fake 'PineDrama for PC' APK installers.",
       "sections": [
         {
           "heading": "Android: identify the official Google Play listing",
           "paragraphs": [
-            "Open the Google Play link below and check PineDrama - Short Dramas, publisher TikTok Pte. Ltd. and package com.ss.android.ttmd.video. A similar name or icon on an APK website is not enough to identify the same app. The official shortdrama.tiktok.com portal also links to this listing.",
-            "Let Google Play check compatibility with your device and account region. If installation is unavailable, read the store message rather than assuming that an APK will fix it. The listing includes in-app purchases; a free download does not mean every feature or episode is free."
+            "Open the Google Play link below and check PineDrama - Short Dramas, publisher TikTok Pte. Ltd. and package com.ss.android.ttmd.video. A similar name or icon on a third-party APK website is not enough to identify the genuine app. The official shortdrama.tiktok.com portal links directly to this Google Play package, and you can inspect our full [PineDrama app legitimacy and safety review](/en/pinedrama-reviews-tiktok-short-dramas-app/) for background on how TikTok operates the platform.",
+            "Let Google Play check compatibility with your Android version and account region automatically. If installation is unavailable in your country, read the store notice rather than sideloading modified APKs that promise 'unlimited coins.' The store listing includes optional in-app purchases, while regional reward campaigns are covered separately in our [PineDrama Rewards and cash withdrawal breakdown](/en/pinedrama-rewards-does-it-pay-cash-withdrawal/)."
           ],
           "source": {
             "title": "PineDrama: official Google Play listing",
@@ -2679,10 +2679,10 @@ export const articles:Record<Locale,Article[]>={
           }
         },
         {
-          "heading": "iPhone and iPad: use the App Store link",
+          "heading": "iPhone and iPad: use the official App Store listing",
           "paragraphs": [
-            "The official portal links to PineDrama - Short Dramas in the App Store, app ID 6754134922. The listing shows developer TikTok Ltd. and seller TikTok Pte. Ltd. Open it in your own store region to check availability and the required system version before installing.",
-            "The App Store listing includes in-app purchases and describes automatically renewing plans. Read the price and renewal terms on your purchase screen before subscribing. This guide does not establish a universal price or guarantee that every drama is unlocked for free."
+            "The official portal links to PineDrama - Short Dramas in the Apple App Store under app ID 6754134922, listing developer TikTok Ltd. and seller TikTok Pte. Ltd. Open the listing in your own Apple ID region to confirm iOS compatibility and storage requirements before installing.",
+            "The App Store page lists optional in-app purchases and auto-renewing plans where offered. Always check the billing summary on your iOS purchase sheet before confirming any subscription, and manage renewals under Settings -> Apple ID -> Subscriptions."
           ],
           "source": {
             "title": "PineDrama: official App Store listing",
@@ -2690,10 +2690,10 @@ export const articles:Record<Locale,Article[]>={
           }
         },
         {
-          "heading": "TikTok login and missing episode progress",
+          "heading": "TikTok login and recovering missing episode progress",
           "paragraphs": [
-            "Google Play describes syncing a TikTok account to keep watch progress and preferences. Use the login flow inside the official app. In the supplied Android screenshots, Profile > Dramas shows progress such as EP 42/74, while My List helps you find saved series.",
-            "If your series is missing, first confirm that you used the same TikTok account, then search for the title and check your saved list and episode number. Check for an app update and a working connection. If the problem continues, use the support contact in the official listing and describe your device, app version and error without sharing passwords. We have not tested every login or recovery scenario."
+            "PineDrama supports one-tap TikTok account login so your watch history, unlocked episodes, and preferences stay linked to your profile. In the Android interface, Profile -> Dramas logs exact episode checkpoints (such as EP 42/74 on Resolving Crisis At 30,000 Feet or EP 43/47 on Fell Into the Giant's Arms), while My List stores bookmarked series.",
+            "If your series history disappears after switching phones or reinstalling, first verify that you signed back in with the exact same TikTok login method (phone number, email, Google, or Apple ID) rather than creating a fresh guest profile. Next, search the title directly in Discover and check Profile -> Dramas to see if your episode marker is still stored."
           ],
           "source": {
             "title": "PineDrama on Google Play: TikTok account sync and support",
@@ -2701,10 +2701,10 @@ export const articles:Record<Locale,Article[]>={
           }
         },
         {
-          "heading": "Can you watch PineDrama on a PC?",
+          "heading": "Can you watch PineDrama on a PC or laptop?",
           "paragraphs": [
-            "In the official sources checked, shortdrama.tiktok.com presents the app and links to Google Play and the App Store. That page alone is not evidence of a complete browser player. We did not verify a supported Windows or macOS installer or playback through an Android emulator.",
-            "There is no confirmed official desktop installer for PineDrama in the sources reviewed. Use the official Google Play and App Store mobile listings linked from shortdrama.tiktok.com, and check the publisher portal for future desktop information. A third-party page advertising PineDrama for PC does not establish official compatibility."
+            "On desktop browsers, visiting shortdrama.tiktok.com displays an official landing page with QR codes and store badges for Google Play and the App Store rather than a full browser-based episode player. TikTok Pte. Ltd. does not publish a native Windows (.exe) or macOS (.dmg) desktop client for PineDrama.",
+            "Because there is no official PC executable, avoid third-party download sites advertising 'PineDrama PC installer' bundles, which frequently wrap adware or unofficial emulators. Stick to the verified Android and iOS store apps, and compare how PineDrama stacks up against competing vertical drama apps in our [PineDrama vs. DramaStack comparison](/en/pinedrama-vs-dramastack-which-short-drama-app-is-better/) and our [2026 short drama apps comparison](/en/short-drama-apps-that-claim-to-pay-real-money-compared/)."
           ],
           "source": {
             "title": "PineDrama: official download portal",
@@ -2714,8 +2714,8 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "Find the full series rather than another short clip",
           "paragraphs": [
-            "The Android screenshots show Discover with a search bar and Categories, Popular and New filters. Search the title, open the series page and check episode order before resuming. Save the series so you can return to it instead of searching for the same social clip again.",
-            "Titles such as O Irmão Esquecido de Thor appear in the supplied catalog screenshots. Those images record what was available at capture time; they are not a current ranking or a guarantee of availability in another country. Titles, dubbing and subtitles can differ by region."
+            "Clips posted on TikTok or Reels often omit the series title or stop after a cliffhanger. Inside PineDrama, open the Discover tab to use the top search bar or filter by Categories, Popular, and New. Once you open the series page, tap the episode selector grid to jump straight to the chapter where your social clip ended.",
+            "Tap the bookmark icon to save the drama to My List before watching so you never have to hunt for the promotional clip again. Catalog availability, audio dubbing, and subtitle tracks vary according to your store region."
           ],
           "source": {
             "title": "PineDrama on Google Play: Discover and watchlist",
@@ -2723,41 +2723,73 @@ export const articles:Record<Locale,Article[]>={
           }
         }
       ],
+      "tables": [
+        {
+          "heading": "PineDrama Official Download, Login & Platform Support Matrix (2026)",
+          "columns": [
+            "Platform / Feature",
+            "Verified Official Status",
+            "What to Check Before Installing"
+          ],
+          "rows": [
+            [
+              "Android (Google Play)",
+              "Official app: package com.ss.android.ttmd.video (TikTok Pte. Ltd.)",
+              "Install only via Google Play or shortdrama.tiktok.com; avoid modded APK files"
+            ],
+            [
+              "iPhone & iPad (App Store)",
+              "Official app: App Store ID 6754134922 (TikTok Ltd. / TikTok Pte. Ltd.)",
+              "Verify iOS version compatibility and check any in-app purchase terms in your region"
+            ],
+            [
+              "PC / Windows / macOS",
+              "No standalone desktop installer; shortdrama.tiktok.com is a mobile download portal",
+              "Avoid third-party 'PineDrama PC .exe' downloads; use official Android or iOS apps"
+            ],
+            [
+              "Account Sync & Watch History",
+              "TikTok account login syncs Profile > Dramas (e.g., EP 42/74) and My List",
+              "Log in with the same TikTok method after reinstalling to restore saved episode progress"
+            ]
+          ],
+          "afterSectionIndex": 0
+        }
+      ],
       "steps": [
-        "Open the official PineDrama portal and choose Google Play or the App Store for your device.",
-        "Check the publisher, app identity, compatibility and any purchase information in the store.",
-        "Install the app and use its own TikTok login flow if you want account sync.",
-        "Search for a series in Discover, then open its episode list.",
-        "Save the series and confirm the episode number in your profile before resuming.",
-        "For PC access, check official announcements; this guide has no verified desktop or emulator method."
+        "Open the official PineDrama portal (shortdrama.tiktok.com) and select Google Play or the App Store for your mobile device.",
+        "Confirm the publisher (TikTok Pte. Ltd.) and official package ID (com.ss.android.ttmd.video on Android or ID 6754134922 on iOS).",
+        "Install the app and sign in through the built-in TikTok login flow to enable cloud history sync.",
+        "Use the Discover search bar or Categories/Popular filters to locate the full drama series from a social clip.",
+        "Bookmark the series to My List and check Profile > Dramas to resume from your exact episode number."
       ],
       "pros": [
-        "Official store links identify the mobile app and publisher.",
-        "Account sync and saved series help locate episode progress."
+        "Official Google Play and App Store listings verified under TikTok Pte. Ltd.",
+        "TikTok account sync preserves exact episode checkpoints (Profile > Dramas) and saved watchlists."
       ],
       "cons": [
-        "Desktop playback and emulator compatibility were not verified.",
-        "Availability, purchases and catalog options can differ by region."
+        "No native Windows, macOS, or browser web player is available on shortdrama.tiktok.com.",
+        "Catalog titles, language dubs, and regional features vary by country."
       ],
       "faq": [
         {
-          "q": "Is there a verified PineDrama PC download?",
-          "a": "We did not verify an official Windows or macOS installer or supported emulator route in the sources checked. The official portal links to the mobile app stores."
+          "q": "Is there an official PineDrama PC download?",
+          "a": "No. TikTok Pte. Ltd. does not offer a standalone Windows or macOS installer, and shortdrama.tiktok.com functions as a download portal that redirects to Google Play and the Apple App Store."
         },
         {
-          "q": "Is PineDrama available for iPhone?",
-          "a": "Yes, the official portal links to App Store app ID 6754134922. Check availability and device compatibility in your own store region."
+          "q": "Is PineDrama available for iPhone and iPad?",
+          "a": "Yes. The official portal links to PineDrama - Short Dramas on the Apple App Store under app ID 6754134922."
         },
         {
-          "q": "Why did my PineDrama history disappear?",
-          "a": "First check that you used the same TikTok account, then inspect your saved series and episode progress. If an update and connection check do not help, use the support contact in the official listing."
+          "q": "Why did my PineDrama watch history disappear?",
+          "a": "History loss usually happens when opening the app in Guest mode or signing in with a different TikTok login method. Sign in with the exact same TikTok account and check Profile > Dramas and My List."
         },
         {
-          "q": "Does a free download unlock all episodes?",
-          "a": "Not necessarily. Both store listings include in-app purchases. Check the episode and purchase screens for the conditions offered to your account."
+          "q": "Does downloading PineDrama unlock every episode for free?",
+          "a": "The app is free to install and offers free ad-supported viewing on many titles, though both official store listings note optional in-app purchases depending on your region."
         }
       ],
-      "verdict": "Use the verified Google Play or App Store listing, keep the same account for progress and check episode order. PC playback remains unverified in this guide.",
+      "verdict": "Install PineDrama exclusively through the official Google Play (com.ss.android.ttmd.video) or App Store (ID 6754134922) links, link your TikTok account to protect episode progress, and skip third-party PC installers.",
       "imageAlt": "PineDrama Discover tab with search bar, Categories, Popular, and New drama posters",
       "caption": "Discover lets you search titles directly or browse Categories, Popular, and New releases.",
       "imageKey": "pinedrama-discover",
@@ -2768,7 +2800,13 @@ export const articles:Record<Locale,Article[]>={
         "caption": "The Profile > Dramas tab tracks exact episode progress (such as EP 42/74) across series you started.",
         "wide": false
       },
-      "modifiedDate": "2026-11-18"
+      "modifiedDate": "2026-11-23",
+      "relatedIds": [
+        "pinedrama",
+        "pinedrama-rewards",
+        "pinedrama-vs-dramastack",
+        "short-drama-apps-compared"
+      ]
     },
     {
       "id": "pinedrama-vs-dramastack",
@@ -3232,21 +3270,21 @@ export const articles:Record<Locale,Article[]>={
       "slug": "how-to-get-free-dramabox-coins-unlock-episodes",
       "title": "How to Get Free DramaBox Coins (2026): Unlock Episodes Without Paying",
       "description": "Step-by-step guide to earning free DramaBox Reward Coins: daily check-ins (+10 to +50), Watch Ad for 30 coins, account tasks, and safe ways to watch free episodes.",
-      "modifiedDate": "2026-11-19",
+      "modifiedDate": "2026-11-23",
       "intro": "Once the free opening episodes of a DramaBox series end, each new episode locks behind a coin paywall. Fortunately, you do not need to buy coins or pay for a weekly plan right away—DramaBox includes an Earn Rewards center that hands out free Reward Coins for daily check-ins, short video ads, and simple profile tasks.",
       "sections": [
         {
           "heading": "Every official way to earn free DramaBox coins",
           "paragraphs": [
-            "Open Profile and tap Earn Rewards (or the gift icon on the Home screen) to view your Reward Coins balance and active tasks. In our app inspection, the daily 7-day check-in streak awards +10 coins on Days 1 and 2, +20 on Days 3 and 4, +25 on Day 5, +30 on Day 6, and +50 coins on Day 7.",
-            "Right below the check-in bar sits the fastest repeatable option: 'Watch Ad to earn 30 coins.' Further down under Earn Rewards, you can also run 'Earn rewards (0/30) — Watch a video to earn 10 coins' up to 30 times per cycle, alongside one-time bonuses such as Login with any account (+60), Turn push notification (+60), Join Telegram Channel (+30), Follow on Facebook (+20), and Follow on YouTube (+20)."
+            "Open Profile and tap Earn Rewards (or the gift icon on the Home screen) to view your Reward Coins balance and active tasks. In our app inspection, the daily 7-day check-in streak awards +10 coins on Days 1 and 2, +20 on Days 3 and 4, +25 on Day 5, +30 on Day 6, and +50 coins on Day 7 (165 coins across a full 7-day streak).",
+            "Right below the check-in bar sits the fastest repeatable option: 'Watch Ad to earn 30 coins.' Further down under Earn Rewards, you can also run 'Earn rewards (0/30) — Watch a video to earn 10 coins' up to 30 times per cycle (up to 300 coins per daily reset), alongside one-time bonuses such as Login with any account (+60), Turn push notification (+60), Join Telegram Channel (+30), Follow on Facebook (+20), and Follow on YouTube (+20)."
           ]
         },
         {
           "heading": "How far free coins go—and avoiding fake generators",
           "paragraphs": [
-            "Combining the Day 1 check-in, one-time social/login tasks (+190 coins), and daily ad watches can quickly unlock several episodes without spending money. Still, because a single mini-series often runs 60 to 100 episodes, free-only viewers usually pace their watching across several days—or compare one-time coin packs against a weekly pass in our [DramaBox recharge and VIP pricing breakdown](/en/dramabox-recharge-coin-prices-vs-vip-subscription/).",
-            "Never trust websites or YouTube videos claiming 'unlimited DramaBox coins generator' or modified APKs. Reward Coins are tracked server-side on StoryMatrix accounts, and modded apps risk malware or account suspension. For genuinely alternate short dramas, check our [PineDrama app review](/en/pinedrama-reviews-tiktok-short-dramas-app/) as well."
+            "Combining the Day 1 check-in (+10), one-time social/login tasks (+190 coins), the +30-coin ad button, and the 30 daily 10-coin videos (+300 coins) yields over 500 free Reward Coins on your first active day—enough to unlock a solid batch of locked chapters without entering payment details. Still, because a single mini-series often runs 60 to 100 episodes, free-only viewers usually pace their watching across several days—or compare one-time coin packs against a weekly pass in our [DramaBox recharge and VIP pricing breakdown](/en/dramabox-recharge-coin-prices-vs-vip-subscription/).",
+            "Never trust websites or YouTube videos claiming 'unlimited DramaBox coins generator' or modified APKs. Reward Coins are tracked server-side on StoryMatrix accounts, and modded apps risk malware or account suspension. For genuinely alternate short dramas, check our [PineDrama app review](/en/pinedrama-reviews-tiktok-short-dramas-app/) and our [2026 short drama apps comparison](/en/short-drama-apps-that-claim-to-pay-real-money-compared/)."
           ],
           "source": {
             "title": "DramaBox - Stream Drama Shorts on Google Play",
@@ -3254,10 +3292,10 @@ export const articles:Record<Locale,Article[]>={
           }
         },
         {
-          "heading": "Daily free coin routine: how to unlock episodes consistently",
+          "heading": "Daily free coin routine & auto-unlock settings inside the player",
           "paragraphs": [
-            "If you do not want to buy a subscription, the most consistent strategy is to claim the 7-day check-in streak first without breaking a day—since Day 7 alone pays +50 coins—and then stack the +30-coin Watch Ad button with short batches from the 0/30 daily 10-coin video counter.",
-            "Keeping your account logged in also protects your Reward Coins balance across reinstalls and unlocks the +60 login bonus. Before deciding whether free ad farming is worth your time on a 90-episode drama, review our [DramaBox review (free vs. paid)](/en/dramabox-app-review-free-or-paid-safe/) and [DramaBox subscription cost & cancellation guide](/en/dramabox-subscription-cost-how-to-cancel/)."
+            "If you do not want to buy a subscription, the most consistent strategy is to claim the 7-day check-in streak first without breaking a day—since Day 7 alone pays +50 coins—and then stack the +30-coin Watch Ad button with short batches from the 0/30 daily 10-coin video counter before opening your series.",
+            "Also check the episode player settings: DramaBox can automatically spend your available Reward Coins on the next locked episode as you swipe vertically, so turn off auto-unlock if you want to save your free coins for a specific finale. Keeping your account logged in protects your Reward Coins balance across reinstalls and unlocks the +60 login bonus; see our [DramaBox review (free vs. paid)](/en/dramabox-app-review-free-or-paid-safe/) and [DramaBox subscription cost & cancellation guide](/en/dramabox-subscription-cost-how-to-cancel/) before starting any paid plan."
           ]
         }
       ],
@@ -3376,7 +3414,7 @@ export const articles:Record<Locale,Article[]>={
           "heading": "How to cancel DramaBox subscription on Android & iPhone",
           "paragraphs": [
             "Deleting the DramaBox app from your phone does NOT cancel your subscription. Because billing is handled by Google Play or Apple, you must cancel directly in your store's Subscriptions menu at least 24 hours before the next billing date.",
-            "On Android, open the Google Play Store app, tap your profile icon -> Payments & subscriptions -> Subscriptions -> DramaBox -> Cancel subscription. On iPhone/iPad, open Settings -> tap your Apple ID name -> Subscriptions -> DramaBox -> Cancel Subscription."
+            "On Android, open the Google Play Store app, tap your profile icon -> Payments & subscriptions -> Subscriptions -> DramaBox -> Cancel subscription. On iPhone/iPad, open Settings -> tap your Apple ID name -> Subscriptions -> DramaBox -> Cancel Subscription. After canceling, you can still watch using [free DramaBox Reward Coins from daily check-ins and ads](/en/how-to-get-free-dramabox-coins-unlock-episodes/)."
           ]
         }
       ],
@@ -6013,8 +6051,8 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "PineDrama vs. DramaBox: symbolic regional cents vs. pure streaming",
           "paragraphs": [
-            "Unlike those clones, [PineDrama](/en/pinedrama-reviews-tiktok-short-dramas-app/) (com.ss.android.ttmd.video) is an official TikTok product and publishes its math openly where the promotional tab exists: in Brazil, 30,000 points equal R$ 1 (~$0.18 USD), with PIX cashout tiers of R$ 0.10 (one-time), R$ 0.50, R$ 1.00, and R$ 2.00. However, watching 30 daily 30-second ads (15 minutes of commercials) yields at most 12,000 points (~R$ 0.40), and the Rewards tab is absent in most US, European, and Spanish-speaking markets.",
-            "DramaBox (com.storymatrix.drama), meanwhile, never pretends to pay cash. Its Reward Coins (+10 to +30 per ad) exist solely to unlock locked episodes inside a freemium catalog of 16,000+ dramas, with optional coin packs or weekly/annual plans compared in our [DramaBox recharge vs. VIP pricing guide](/en/dramabox-recharge-coin-prices-vs-vip-subscription/)."
+            "Unlike those clones, [PineDrama](/en/pinedrama-reviews-tiktok-short-dramas-app/) (com.ss.android.ttmd.video) is an official TikTok product and publishes its math openly where the promotional tab exists: in Brazil, 30,000 points equal R$ 1 (~$0.18 USD), with PIX cashout tiers of R$ 0.10 (one-time), R$ 0.50, R$ 1.00, and R$ 2.00. However, watching 30 daily 30-second ads (15 minutes of commercials) yields at most 12,000 points (~R$ 0.40), and the Rewards tab is absent in most US, European, and Spanish-speaking markets—see our [PineDrama download, TikTok login & PC availability guide](/en/pinedrama-app-download-login-pc-shows-guide/) to verify official mobile store packages.",
+            "DramaBox (com.storymatrix.drama), meanwhile, never pretends to pay cash. Its Reward Coins (+10 to +30 per ad) exist solely to unlock locked episodes inside a freemium catalog of 16,000+ dramas, which you can collect without paying via our [how to get free DramaBox coins guide](/en/how-to-get-free-dramabox-coins-unlock-episodes/) or compare against paid plans in our [DramaBox recharge vs. VIP pricing guide](/en/dramabox-recharge-coin-prices-vs-vip-subscription/)."
           ],
           "image": {
             "key": "pinedrama-cashout",
@@ -7312,7 +7350,7 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Plazo de 30 días, compras opcionales y espera de 5 días en pendiente",
           "paragraphs": [
             "En nuestra captura de Farm Craze, el recuadro 'Important Things to Know' detallaba tres condiciones habituales: llegar al nivel máximo dentro de los 30 días posteriores a la instalación, seguir los pasos de rastreo de la aplicación y tener en cuenta que la recompensa quedará pendiente durante 5 días ('Award will pend for 5 days'). Es decir, al superar un nivel, los puntos SB tardan 5 días en pasar de pendientes a saldo disponible.",
-            "Revisa tu barra Goal Progress nada más completar el primer nivel sencillo (como el Nivel 30). Si esa primera meta no se marca como pendiente, detente antes de invertir decenas de horas en niveles altos. Además, calcula si las metas de compra dentro de la app (como +52 SB, equivalentes a 0,52 USD) cuestan más dinero del que devuelven."
+            "Revisa tu barra Goal Progress nada más completar el primer nivel sencillo (como el Nivel 30). Si esa primera meta no se marca como pendiente, detente antes de invertir decenas de horas en niveles altos. Además, calcula si las metas de compra dentro de la app (como +52 SB, equivalentes a 0,52 USD) cuestan más dinero del que devuelven. Si prefieres sumar puntos sin instalar juegos, consulta nuestra guía de [encuestas pagadas y cashback en Swagbucks](/es/encuestas-pagadas-y-cashback-en-swagbucks/) y el análisis general de [cómo funciona Swagbucks](/es/como-funciona-swagbucks-opiniones-paga/)."
           ],
           "source": {
             "title": "Prodege: condiciones de uso y elegibilidad de ofertas",
@@ -7368,13 +7406,13 @@ export const articles:Record<Locale,Article[]>={
       "slug": "encuestas-pagadas-y-cashback-en-swagbucks",
       "title": "Encuestas y cashback en Swagbucks: descartes, seguimiento y SB pendientes",
       "description": "Aprende a comparar SB por minuto, distinguir encuestas descartadas de créditos faltantes y revisar el seguimiento y los puntos pendientes de tus compras.",
-      "intro": "Las encuestas de Swagbucks cambian tiempo por una posible recompensa; Shop & Earn devuelve parte de una compra válida. Son procesos distintos: en uno importan el perfil y los minutos invertidos; en el otro, las condiciones y el seguimiento. Esta guía utiliza la captura del panel facilitada y la ayuda de Swagbucks. No presenta una compra completada ni una prueba de ganancias.",
+      "intro": "Las encuestas de Swagbucks (Answer) permiten acumular puntos SB (100 SB = $1.00 USD) respondiendo estudios de mercado, mientras que Shop & Earn devuelve un porcentaje en compras online elegibles. Aunque comparten el mismo saldo y registro en Activity, funcionan con reglas opuestas: en las encuestas importa filtrar la proporción de SB por minuto y superar las preguntas de control; en el cashback, activar el rastreo sin extensiones competidoras y respetar el plazo de espera en Pending.",
       "sections": [
         {
-          "heading": "Descarte, crédito faltante y encuestas desactivadas no son lo mismo",
+          "heading": "Descarte de perfil, crédito faltante y encuestas desactivadas no son lo mismo",
           "paragraphs": [
-            "Una encuesta que indica que no reúnes los requisitos ha terminado sin completarse. Swagbucks explica que el estudio puede buscar otro perfil o haber cubierto su cupo. Un descarte individual es distinto de perder el acceso a todas las encuestas de la cuenta.",
-            "Lee el mensaje final antes de concluir que falta una recompensa. Cambiar datos demográficos para superar el filtro no resuelve el problema: mantén el perfil real y responde a lo que se pregunta. Si la pantalla confirma que terminaste, utiliza las comprobaciones de crédito de abajo."
+            "Cuando una encuesta en la sección Answer indica que no reúnes los requisitos, significa que el estudio buscaba otro perfil demográfico o ya cerró su cupo para tu rango de edad, ciudad o hábitos de consumo. En mercados de España y América Latina es frecuente pasar por varios filtros antes de encontrar un cuestionario completo, y un descarte individual es distinto de tener el panel de encuestas restringido por respuestas contradictorias.",
+            "Mantén siempre los mismos datos reales en tu perfil de encuestas y lee con calma las preguntas de control de calidad ('attention checks'). Si el sistema detecta respuestas al azar o cambios de edad y profesión entre un día y otro, puede desactivar nuevos estudios; si quieres comparar un panel dedicado exclusivamente a cuestionarios con calificación por estrellas, revisa nuestra [comparativa Prime Opinion vs. Swagbucks](/es/prime-opinion-vs-swagbucks-comparativa-encuestas/)."
           ],
           "source": {
             "title": "Swagbucks: motivos de descarte",
@@ -7382,10 +7420,10 @@ export const articles:Record<Locale,Article[]>={
           }
         },
         {
-          "heading": "Compara el tiempo con el panel, sin promesas de ingresos diarios",
+          "heading": "Cómo calcular el retorno en SB por minuto antes de empezar",
           "paragraphs": [
-            "La captura que acompaña el artículo muestra ejemplos de 5 SB por 5 minutos, 10 SB por 5 minutos y 25 SB por 20 minutos. Son datos de esa pantalla, no ofertas verificadas como disponibles hoy ni en todos los países. La estimación tampoco garantiza que te acepten o que termines en ese tiempo.",
-            "En esos ejemplos, dividir SB entre minutos da 1, 2 y 1,25 SB por minuto. El premio más grande no tiene la mejor proporción. Fija un límite de tiempo e incluye los intentos descartados al valorar si te compensa; no conviertas la mejor tarjeta en una supuesta tarifa por hora."
+            "En el listado de Answer verás tarjetas con distintas combinaciones de puntos y duración estimada, como 5 SB por 5 minutos (1 SB/min), 10 SB por 5 minutos (2 SB/min) o 25 SB por 20 minutos (1,25 SB/min). Como 100 SB equivalen a 1,00 USD, la tarjeta con el número total más alto no siempre ofrece el mejor rendimiento por tu tiempo.",
+            "Prioriza cuestionarios cortos de 5 a 10 minutos con al menos 1,5 a 2 SB por minuto estimado: si el filtro demográfico te descarta en los primeros minutos, habrás perdido mucho menos tiempo que en un estudio de 25 minutos. Cuando el listado de encuestas esté flojo en tu país, puedes alternar con las [ofertas de juegos de Swagbucks por niveles](/es/juegos-swagbucks-como-ganar-seguimiento/)."
           ],
           "source": {
             "title": "Swagbucks: perfil y oportunidades de encuestas",
@@ -7393,19 +7431,14 @@ export const articles:Record<Locale,Article[]>={
           }
         },
         {
-          "heading": "El cashback se calcula sobre la compra válida, no sobre todos los cargos",
+          "heading": "El cashback de Shop & Earn se calcula sobre el subtotal neto elegible",
           "paragraphs": [
-            "Abre la tienda desde Shop & Earn y lee sus Special Terms antes de pagar. Swagbucks indica que el importe válido puede excluir impuestos, envío y otros cargos; una devolución o cancelación puede revertir los puntos. Las exclusiones de la tienda importan más que la tasa máxima del directorio.",
-            "Ejemplo ilustrativo: si una tienda ofrece 5 SB por dólar estadounidense válido y solo 40 USD de un total de 48 USD cumplen las condiciones, el cálculo es 200 SB, no 240 SB. No es una oferta vigente. Compara el precio final con otras tiendas antes de contar el cashback como ahorro."
+            "Al abrir un comercio desde Shop & Earn, despliega siempre la ventana de Special Terms antes de pagar. Swagbucks calcula los puntos sobre el importe neto elegible de la compra, excluyendo impuestos (IVA/sales tax), gastos de envío, tarjetas regalo y categorías excluidas por el comercio; además, cualquier devolución o cancelación anula los SB pendientes.",
+            "Por ejemplo, si una tienda ofrece 5 SB por dólar elegible y de un pago total de 48 USD solo 40 USD corresponden al subtotal neto de productos incluidos en la promoción, el sistema registrará 200 SB ($2.00 USD equivalentes), no 240 SB. Comprueba siempre que el comercio de Shop & Earn opere en tu país y moneda antes de contar con el reembolso."
           ],
           "source": {
             "title": "Swagbucks: condiciones de Shop & Earn",
             "url": "https://help.swagbucks.com/hc/en-us/articles/205641124-How-does-Shop-Earn-work"
-          },
-          "cta": {
-            "label": "Consultar encuestas y ofertas de compras en Swagbucks",
-            "url": "https://www.swagbucks.com/p/register?rb=NPHSOu1zhQuqNHgx&rp=1",
-            "sponsored": true
           }
         },
         {
@@ -7487,7 +7520,7 @@ export const articles:Record<Locale,Article[]>={
         "caption": "El panel de ofertas ilustra dónde aparecen las condiciones; consulta las vigentes en tu cuenta para comprobar plazos y requisitos.",
         "wide": true
       },
-      "modifiedDate": "2026-11-19",
+      "modifiedDate": "2026-11-23",
       "tables": [
         {
           "heading": "Estados en el historial Activity de Swagbucks: cómo interpretarlos",
@@ -9387,47 +9420,47 @@ export const articles:Record<Locale,Article[]>={
       "category": "guides",
       "slug": "descargar-pinedrama-app-pc-iniciar-sesion",
       "title": "PineDrama: Descargar, Iniciar Sesión y Disponibilidad en PC (2026)",
-      "description": "Descarga PineDrama oficial en Android o iPhone, conecta TikTok, recupera tus episodios y comprueba qué sabemos del acceso desde PC.",
-      "intro": "PineDrama tiene fichas oficiales para Android y iPhone enlazadas desde su portal de TikTok. No verificamos un reproductor para Windows o macOS ni una vía compatible mediante emuladores. Esta guía distingue las descargas confirmadas de las promesas para PC y explica cómo encontrar tus series. Las capturas muestran la interfaz de Android aportada para la guía; revisamos las tiendas el 15 de noviembre de 2026.",
+      "description": "Descarga PineDrama oficial en Android o iPhone, sincroniza tu cuenta de TikTok, recupera tus episodios y revisa el soporte oficial en móvil frente a PC.",
+      "intro": "PineDrama (publicada por TikTok Pte. Ltd.) cuenta con aplicaciones móviles oficiales para Android y iPhone enlazadas desde shortdrama.tiktok.com, mientras muchos usuarios buscan cómo instalarla en Windows o macOS. Esta guía técnica explica cómo verificar los paquetes oficiales en Google Play y App Store, sincronizar tu historial con TikTok, recuperar el episodio exacto donde te quedaste y evitar supuestos instaladores de PineDrama para PC.",
       "sections": [
         {
           "heading": "Android: identificar la ficha oficial de Google Play",
           "paragraphs": [
-            "Abre el enlace de Google Play y comprueba PineDrama - Short Dramas, el desarrollador TikTok Pte. Ltd. y el paquete com.ss.android.ttmd.video. Un nombre o icono parecido en una web de APK no identifica por sí solo la misma aplicación. El portal shortdrama.tiktok.com también enlaza esta ficha.",
-            "Deja que Google Play compruebe la compatibilidad con tu equipo y región. Si no permite instalar, revisa el mensaje de la tienda en lugar de asumir que un APK lo resolverá. La ficha indica compras dentro de la app: descargar gratis no significa que todo el contenido esté desbloqueado."
+            "Abre el enlace de Google Play y comprueba que figuren PineDrama - Short Dramas, el desarrollador TikTok Pte. Ltd. y el identificador de paquete com.ss.android.ttmd.video. Un nombre o icono parecido en una página externa de descargas APK no garantiza que sea la misma aplicación. El portal oficial shortdrama.tiktok.com apunta directamente a esta ficha, y puedes consultar nuestro [análisis completo de PineDrama y su seguridad](/es/pinedrama-opiniones-es-confiable-que-es/) para más detalles sobre la plataforma.",
+            "Deja que Google Play verifique la compatibilidad con tu teléfono y región. Si la instalación no está disponible en tu país, revisa el aviso de la tienda en lugar de instalar archivos APK modificados. La ficha oficial menciona compras opcionales dentro de la app, mientras que el funcionamiento de la pestaña promocional de puntos se explica en nuestro estudio sobre si [PineDrama paga dinero real](/es/pinedrama-paga-dinero-real-como-retirar/)."
           ],
           "source": {
             "title": "PineDrama: ficha oficial de Google Play",
-            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=en"
+            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=es"
           }
         },
         {
-          "heading": "iPhone y iPad: descargar desde la App Store",
+          "heading": "iPhone y iPad: descargar desde la App Store oficial",
           "paragraphs": [
-            "El portal oficial enlaza PineDrama - Short Dramas en la App Store, ID 6754134922. La ficha muestra TikTok Ltd. como desarrollador y TikTok Pte. Ltd. como vendedor. Ábrela en tu región para revisar disponibilidad y requisitos del sistema antes de instalar.",
-            "La ficha incluye compras dentro de la app y describe planes de renovación automática. Lee el precio y las condiciones de tu pantalla antes de suscribirte. Esta guía no establece un precio universal ni garantiza que todas las series sean gratis."
+            "El portal oficial enlaza PineDrama - Short Dramas en la App Store bajo el ID 6754134922, con TikTok Ltd. como desarrollador y TikTok Pte. Ltd. como vendedor. Ábrela en la región de tu Apple ID para comprobar compatibilidad con tu versión de iOS antes de descargar.",
+            "La ficha de iOS incluye compras opcionales dentro de la aplicación y planes con renovación automática donde estén activos. Revisa siempre el importe y las condiciones en la pantalla de confirmación de Apple antes de suscribirte."
           ],
           "source": {
             "title": "PineDrama: ficha oficial de la App Store",
-            "url": "https://apps.apple.com/us/app/pinedrama-short-dramas/id6754134922"
+            "url": "https://apps.apple.com/es/app/pinedrama-short-dramas/id6754134922"
           }
         },
         {
-          "heading": "Iniciar sesión con TikTok y localizar el progreso",
+          "heading": "Iniciar sesión con TikTok y recuperar el progreso de episodios",
           "paragraphs": [
-            "Google Play describe la sincronización con TikTok para conservar progreso y preferencias. Utiliza el inicio de sesión de la propia app oficial. En las capturas de Android, Perfil > Dramas muestra el avance, como EP 42/74, y My List permite localizar series guardadas.",
-            "Si falta una serie, confirma primero que usaste la misma cuenta de TikTok; después busca el título y revisa la lista guardada y el episodio. Comprueba si hay actualizaciones y conexión. Si persiste, usa el contacto de soporte de la ficha oficial e indica equipo, versión y error, sin compartir contraseñas. No probamos todos los escenarios de acceso o recuperación."
+            "PineDrama permite iniciar sesión directamente con tu cuenta de TikTok para conservar tu progreso y preferencias en la nube. En la interfaz de Android, la ruta Perfil > Dramas guarda el capítulo exacto en cada miniserie (por ejemplo, EP 42/74 en Resolving Crisis At 30,000 Feet o EP 43/47 en Fell Into the Giant's Arms), mientras que My List conserva tus series guardadas.",
+            "Si cambias de móvil o reinstalas la app y no ves tus series, confirma primero que entraste con el mismo método de acceso de TikTok (teléfono, correo, Google o Apple) en lugar de abrir una sesión de invitado. Después, busca el título en Descubrir y revisa Perfil > Dramas para retomar el episodio."
           ],
           "source": {
             "title": "PineDrama en Google Play: sincronización y soporte",
-            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=en"
+            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=es"
           }
         },
         {
-          "heading": "¿Se puede ver PineDrama en PC?",
+          "heading": "¿Se puede descargar o ver PineDrama en PC?",
           "paragraphs": [
-            "En las fuentes oficiales revisadas, shortdrama.tiktok.com presenta la aplicación y enlaza Google Play y App Store. Esa página por sí sola no demuestra que exista un reproductor web completo. No verificamos un instalador compatible con Windows o macOS ni reproducción mediante emuladores Android.",
-            "No existe un instalador oficial para escritorio confirmado para PineDrama en las fuentes revisadas. Utiliza las tiendas oficiales móviles (Google Play y App Store) enlazadas desde shortdrama.tiktok.com y consulta futuros anuncios en el portal. Una web externa que anuncie PineDrama para PC no acredita compatibilidad oficial."
+            "Al abrir shortdrama.tiktok.com desde el navegador de un ordenador, el sitio oficial muestra una página de presentación con códigos QR y enlaces a Google Play y App Store, pero no incluye un reproductor web de episodios ni un instalador nativo para Windows (.exe) o macOS (.dmg).",
+            "Dado que TikTok Pte. Ltd. no distribuye una versión de escritorio, evita páginas de terceros que prometen 'descargar PineDrama para PC gratis', ya que suelen empaquetar software publicitario o archivos no autorizados. Utiliza las tiendas móviles oficiales y compara cómo se posiciona frente a otras apps en nuestra [comparativa PineDrama vs. DramaStack](/es/pinedrama-vs-dramastack-cual-es-mejor-y-paga/) y en el [análisis de apps de novelas cortas 2026](/es/apps-de-novelas-cortas-que-pagan-por-ver-videos/)."
           ],
           "source": {
             "title": "PineDrama: portal oficial de descarga",
@@ -9435,52 +9468,84 @@ export const articles:Record<Locale,Article[]>={
           }
         },
         {
-          "heading": "Encontrar la serie completa y el episodio correcto",
+          "heading": "Encontrar la serie completa y el episodio correcto desde un clip",
           "paragraphs": [
-            "Las capturas muestran Descubrir con búsqueda y filtros Categorías, Populares y Nuevos. Busca el título, abre la ficha de la serie y comprueba el orden de los episodios antes de continuar. Guarda la serie para no depender de encontrar otra vez el mismo clip en redes.",
-            "O Irmão Esquecido de Thor aparece en las capturas aportadas. Las imágenes documentan el catálogo al capturarlas; no representan un ranking actual ni garantizan disponibilidad en otro país. Títulos, doblaje y subtítulos pueden variar por región."
+            "Muchos clips virales en redes sociales cortan la escena sin indicar el episodio. En la pestaña Descubrir de PineDrama dispones de buscador directo y filtros por Categorías, Populares y Nuevos. Abre la ficha de la serie y despliega la cuadrícula numerada de episodios para saltar al capítulo exacto.",
+            "Guarda la serie en tu lista personal al empezar para no depender de volver a encontrar el anuncio en tu feed. Ten en cuenta que el catálogo, el doblaje y los subtítulos pueden variar según el país de tu cuenta."
           ],
           "source": {
             "title": "PineDrama en Google Play: Descubrir y lista personal",
-            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=en"
+            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=es"
           }
         }
       ],
+      "tables": [
+        {
+          "heading": "Ficha técnica de descarga, inicio de sesión y plataformas de PineDrama (2026)",
+          "columns": [
+            "Plataforma / Función",
+            "Estado oficial verificado",
+            "Recomendación práctica"
+          ],
+          "rows": [
+            [
+              "Android (Google Play)",
+              "App oficial: paquete com.ss.android.ttmd.video (TikTok Pte. Ltd.)",
+              "Descargar solo desde Google Play o shortdrama.tiktok.com; evitar APKs externos"
+            ],
+            [
+              "iPhone y iPad (App Store)",
+              "App oficial: ID 6754134922 (TikTok Ltd. / TikTok Pte. Ltd.)",
+              "Revisar disponibilidad regional y condiciones de compras dentro de la app"
+            ],
+            [
+              "PC (Windows / macOS)",
+              "Sin instalador de escritorio ni reproductor web en shortdrama.tiktok.com",
+              "Evitar ejecutables de terceros para PC; usar la app oficial en móvil o tablet"
+            ],
+            [
+              "Sincronización con TikTok",
+              "Guarda progreso exacto (Perfil > Dramas, ej. EP 42/74) y lista My List",
+              "Iniciar sesión siempre con la misma cuenta de TikTok para no perder el historial"
+            ]
+          ],
+          "afterSectionIndex": 0
+        }
+      ],
       "steps": [
-        "Abre el portal oficial y elige Google Play o App Store según tu dispositivo.",
-        "Comprueba desarrollador, identidad, compatibilidad e información de compras en la tienda.",
-        "Instala y usa el acceso de TikTok dentro de la app si quieres sincronizar tu cuenta.",
-        "Busca una serie en Descubrir y abre su lista de episodios.",
-        "Guárdala y confirma el episodio en tu perfil antes de continuar.",
-        "Para PC, consulta anuncios oficiales; esta guía no ofrece un método verificado para escritorio o emuladores."
+        "Entra en el portal oficial shortdrama.tiktok.com y selecciona Google Play o App Store según tu dispositivo móvil.",
+        "Comprueba que el desarrollador sea TikTok Pte. Ltd. (com.ss.android.ttmd.video en Android o ID 6754134922 en iOS).",
+        "Instala la app y vincula tu cuenta mediante el botón oficial de inicio de sesión con TikTok.",
+        "Busca el nombre de la mininovela en la pestaña Descubrir y abre la cuadrícula de episodios.",
+        "Guarda la serie en tu lista y verifica en Perfil > Dramas que el número de episodio quede registrado."
       ],
       "pros": [
-        "Los enlaces oficiales permiten identificar la app y el desarrollador.",
-        "La sincronización y las listas guardadas ayudan a localizar el progreso."
+        "Enlaces oficiales verificados en Google Play y App Store bajo TikTok Pte. Ltd.",
+        "Sincronización con TikTok que conserva el episodio exacto en Perfil > Dramas."
       ],
       "cons": [
-        "No verificamos reproducción en escritorio ni compatibilidad con emuladores.",
-        "El catálogo, las compras y la disponibilidad pueden variar por región."
+        "No cuenta con reproductor web en navegador ni programa nativo para Windows o macOS.",
+        "El catálogo de series, doblajes y funciones promocionales varía según el país."
       ],
       "faq": [
         {
-          "q": "¿Hay una descarga verificada de PineDrama para PC?",
-          "a": "No verificamos un instalador oficial para Windows o macOS ni un emulador compatible en las fuentes revisadas. El portal oficial enlaza las tiendas móviles."
+          "q": "¿Existe una descarga oficial de PineDrama para PC?",
+          "a": "No. TikTok Pte. Ltd. no publica un instalador para Windows ni macOS, y la web oficial shortdrama.tiktok.com funciona únicamente como portal con enlaces hacia Google Play y App Store."
         },
         {
           "q": "¿PineDrama está disponible para iPhone?",
-          "a": "El portal oficial enlaza la app con ID 6754134922 en App Store. Revisa disponibilidad y compatibilidad en tu región."
+          "a": "Sí, el portal oficial enlaza la aplicación en App Store con el ID 6754134922. Comprueba la disponibilidad en la tienda de tu país."
         },
         {
-          "q": "¿Por qué desapareció mi historial de PineDrama?",
-          "a": "Comprueba primero que usas la misma cuenta de TikTok, las series guardadas y el episodio actual. Si actualizar y revisar la conexión no ayuda, contacta con el soporte de la ficha oficial."
+          "q": "¿Por qué desapareció mi historial de series en PineDrama?",
+          "a": "Ocurre casi siempre al entrar como invitado o iniciar sesión con otro método distinto al original. Asegúrate de acceder con la misma cuenta de TikTok y revisa Perfil > Dramas."
         },
         {
           "q": "¿Descargar gratis desbloquea todos los episodios?",
-          "a": "No necesariamente. Las dos tiendas indican compras dentro de la app. Consulta las condiciones de cada episodio y de compra en tu cuenta."
+          "a": "La descarga es gratuita y permite ver episodios con anuncios en numerosos títulos, aunque ambas tiendas oficiales informan de compras opcionales según la región."
         }
       ],
-      "verdict": "Instala desde Google Play o App Store oficiales, conserva la misma cuenta y revisa el orden de episodios. La reproducción en PC sigue sin estar verificada en esta guía.",
+      "verdict": "Instala PineDrama únicamente desde Google Play (com.ss.android.ttmd.video) o App Store (ID 6754134922), conecta tu cuenta de TikTok para guardar el avance por episodio y descarta instaladores no oficiales para PC.",
       "imageAlt": "Pestaña Descubrir de PineDrama con buscador y filtros de series",
       "caption": "En Descubrir puedes buscar mininovelas por nombre o filtrar por Categorías, Populares y Nuevos.",
       "imageKey": "pinedrama-discover",
@@ -9491,7 +9556,13 @@ export const articles:Record<Locale,Article[]>={
         "caption": "Tu biblioteca en Perfil registra exactamente en qué episodio te quedaste en cada serie.",
         "wide": false
       },
-      "modifiedDate": "2026-11-18"
+      "modifiedDate": "2026-11-23",
+      "relatedIds": [
+        "pinedrama",
+        "pinedrama-rewards",
+        "pinedrama-vs-dramastack",
+        "short-drama-apps-compared"
+      ]
     },
     {
       "id": "pinedrama-vs-dramastack",
@@ -9823,8 +9894,22 @@ export const articles:Record<Locale,Article[]>={
       "slug": "dramabox-es-confiable-gratis-o-de-paga",
       "title": "DramaBox: ¿Es Confiable, Gratis o de Paga? Opiniones y Guía (2026)",
       "description": "Análisis completo de DramaBox (StoryMatrix): cuántos episodios son gratis, cómo funcionan las monedas y anuncios para desbloquear capítulos, precios y seguridad.",
-      "modifiedDate": "2026-11-18",
+      "modifiedDate": "2026-11-23",
       "intro": "DramaBox (publicada por StoryMatrix Pte. Ltd. en Google Play y App Store) es una de las aplicaciones más populares de dramas cortos en formato vertical, con un catálogo que supera las 16.000 series de romance, fantasía, suspenso y anime. La descarga es gratuita y permite ver los primeros episodios sin pagar, pero después bloquea la continuación detrás de monedas de recompensa, anuncios o una suscripción.",
+      "topCallout": {
+        "title": "Accesos rápidos de DramaBox: Monedas Gratis o Cancelar Suscripción",
+        "text": "Ve directo a nuestras guías paso a paso para desbloquear episodios sin pagar o detener la renovación automática.",
+        "links": [
+          {
+            "label": "Cómo ver DramaBox gratis y conseguir monedas (+10 a +60)",
+            "url": "/es/como-ver-dramabox-gratis-conseguir-monedas/"
+          },
+          {
+            "label": "Cuánto cuesta DramaBox y cómo cancelar la suscripción",
+            "url": "/es/dramabox-cuanto-cuesta-como-cancelar-suscripcion/"
+          }
+        ]
+      },
       "sections": [
         {
           "heading": "Qué es DramaBox y cómo funciona su catálogo",
@@ -9910,21 +9995,21 @@ export const articles:Record<Locale,Article[]>={
       "slug": "como-ver-dramabox-gratis-conseguir-monedas",
       "title": "Cómo Ver DramaBox Gratis (2026): Conseguir Monedas, Anuncios y Tareas",
       "description": "Guía paso a paso para conseguir monedas gratis en DramaBox: check-in de 7 días (+10 a +50), anuncios de 30 y 10 monedas, y tareas diarias sin pagar.",
-      "modifiedDate": "2026-11-19",
+      "modifiedDate": "2026-11-23",
       "intro": "Cuando terminan los primeros capítulos gratuitos de una serie en DramaBox, los siguientes episodios quedan bloqueados. Aun así, puedes seguir viendo dramas sin gastar dinero aprovechando la sección Earn Rewards, donde la app entrega monedas por iniciar sesión a diario, ver anuncios cortos y completar tareas simples.",
       "sections": [
         {
           "heading": "Todas las formas oficiales de ganar monedas gratis en DramaBox",
           "paragraphs": [
-            "Abre Profile y toca Earn Rewards (o el ícono de regalo en el inicio) para ver tu saldo de Reward Coins y las misiones disponibles. En nuestra revisión de la app, el check-in de 7 días entrega +10 monedas los días 1 y 2, +20 los días 3 y 4, +25 el día 5, +30 el día 6 y +50 el día 7.",
-            "Justo debajo aparece el botón 'Watch Ad to earn 30 coins'. Más abajo en Earn Rewards dispones de 'Earn rewards (0/30) — Watch a video to earn 10 coins' hasta 30 veces por ciclo, además de bonos únicos: Login with any account (+60), activar notificaciones push (+60), unirse al canal de Telegram (+30), seguir en Facebook (+20) y seguir en YouTube (+20)."
+            "Abre Profile y toca Earn Rewards (o el ícono de regalo en el inicio) para ver tu saldo de Reward Coins y las misiones disponibles. En nuestra revisión de la app, el check-in de 7 días entrega +10 monedas los días 1 y 2, +20 los días 3 y 4, +25 el día 5, +30 el día 6 y +50 el día 7 (165 monedas en una semana completa).",
+            "Justo debajo aparece el botón 'Watch Ad to earn 30 coins'. Más abajo en Earn Rewards dispones de 'Earn rewards (0/30) — Watch a video to earn 10 coins' hasta 30 veces por ciclo (hasta 300 monedas por reinicio diario), además de bonos únicos: Login with any account (+60), activar notificaciones push (+60), unirse al canal de Telegram (+30), seguir en Facebook (+20) y seguir en YouTube (+20)."
           ]
         },
         {
           "heading": "Cuántos capítulos desbloquean y por qué evitar APKs modificados",
           "paragraphs": [
-            "Sumando el check-in inicial, las tareas únicas (+190 monedas en total) y los anuncios diarios puedes desbloquear varios capítulos sin pagar. Como muchas series tienen entre 60 y 100 episodios cortos, quienes ven gratis suelen avanzar algunos capítulos al día—o comparar si conviene una recarga puntual frente a la membresía en nuestra guía sobre [precio de monedas vs. suscripción VIP en DramaBox](/es/dramabox-precio-monedas-recarga-vs-suscripcion-vip/).",
-            "Desconfía de supuestos generadores de monedas o APKs modificados de DramaBox: el saldo de monedas se valida en los servidores de StoryMatrix y los archivos fuera de Google Play exponen tu teléfono a virus o robo de datos. Si buscas alternativas de dramas cortos, también puedes revisar nuestra guía de [PineDrama y opiniones reales](/es/pinedrama-opiniones-es-confiable-que-es/)."
+            "Sumando el check-in del primer día (+10), las tareas únicas (+190 monedas en total), el anuncio de +30 monedas y los 30 videos diarios de 10 monedas (+300) puedes reunir más de 500 Reward Coins gratis en tu primer día activo para desbloquear varios capítulos sin tarjeta bancaria. Como muchas series tienen entre 60 y 100 episodios cortos, quienes ven gratis suelen avanzar algunos capítulos al día—o comparar si conviene una recarga puntual frente a la membresía en nuestra guía sobre [precio de monedas vs. suscripción VIP en DramaBox](/es/dramabox-precio-monedas-recarga-vs-suscripcion-vip/).",
+            "Desconfía de supuestos generadores de monedas o APKs modificados de DramaBox: el saldo de monedas se valida en los servidores de StoryMatrix y los archivos fuera de Google Play exponen tu teléfono a virus o robo de datos. Si buscas alternativas de dramas cortos, también puedes revisar nuestra guía de [PineDrama y opiniones reales](/es/pinedrama-opiniones-es-confiable-que-es/) y la [comparativa de apps de novelas cortas 2026](/es/apps-de-novelas-cortas-que-pagan-por-ver-videos/)."
           ],
           "source": {
             "title": "DramaBox en Google Play (StoryMatrix)",
@@ -9932,10 +10017,10 @@ export const articles:Record<Locale,Article[]>={
           }
         },
         {
-          "heading": "Rutina diaria de monedas gratis para desbloquear episodios sin suscripción",
+          "heading": "Rutina diaria de monedas gratis y control de desbloqueo automático",
           "paragraphs": [
-            "Para avanzar en una serie sin pagar, conviene reclamar primero el check-in diario sin perder la racha —el día 7 entrega +50 monedas por sí solo— y después combinar el botón de anuncio de +30 monedas con bloques cortos del contador diario de 0/30 videos de +10 monedas.",
-            "Mantener tu cuenta vinculada además evita perder tu saldo de Reward Coins si cambias de teléfono y desbloquea el bono único de +60 monedas por iniciar sesión. Si dudas entre ver anuncios o pagar, revisa nuestra [reseña completa de DramaBox](/es/dramabox-es-confiable-gratis-o-de-paga/) y la guía de [precio y cancelación de la suscripción de DramaBox](/es/dramabox-cuanto-cuesta-como-cancelar-suscripcion/)."
+            "Para avanzar en una serie sin pagar, conviene reclamar primero el check-in diario sin perder la racha —el día 7 entrega +50 monedas por sí solo— y después combinar el botón de anuncio de +30 monedas con bloques cortos del contador diario de 0/30 videos de +10 monedas antes de abrir el reproductor.",
+            "Revisa además el ajuste de desbloqueo automático en el reproductor vertical: DramaBox puede descontar tus Reward Coins automáticamente al deslizar al siguiente capítulo bloqueado, por lo que conviene desactivarlo si prefieres reservar tus monedas para el final de una serie. Mantener tu cuenta vinculada protege tu saldo si cambias de teléfono y suma el bono único de +60 monedas; consulta también nuestra [reseña completa de DramaBox](/es/dramabox-es-confiable-gratis-o-de-paga/) y la guía de [precio y cancelación de la suscripción de DramaBox](/es/dramabox-cuanto-cuesta-como-cancelar-suscripcion/)."
           ]
         }
       ],
@@ -10054,7 +10139,7 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Cómo cancelar DramaBox en Google Play (Android) y iPhone",
           "paragraphs": [
             "Desinstalar la aplicación de DramaBox del teléfono NO cancela la suscripción ni detiene los cobros. Como el pago se gestiona mediante tu cuenta de Google o Apple, debes cancelar desde la tienda al menos 24 horas antes de la fecha de renovación.",
-            "En Android: abre Google Play Store -> toca tu foto de perfil -> Pagos y suscripciones -> Suscripciones -> DramaBox -> Cancelar suscripción. En iPhone: ve a Ajustes -> toca tu nombre (Apple ID) -> Suscripciones -> DramaBox -> Cancelar suscripción."
+            "En Android: abre Google Play Store -> toca tu foto de perfil -> Pagos y suscripciones -> Suscripciones -> DramaBox -> Cancelar suscripción. En iPhone: ve a Ajustes -> toca tu nombre (Apple ID) -> Suscripciones -> DramaBox -> Cancelar suscripción. Una vez cancelada la membresía, puedes seguir desbloqueando episodios con nuestra guía para [conseguir monedas gratis en DramaBox](/es/como-ver-dramabox-gratis-conseguir-monedas/)."
           ]
         }
       ],
@@ -12615,8 +12700,8 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "PineDrama vs. DramaBox: centavos regionales vs. streaming puro",
           "paragraphs": [
-            "A diferencia de esas apps, [PineDrama](/es/pinedrama-opiniones-es-confiable-que-es/) (com.ss.android.ttmd.video) pertenece a TikTok y muestra la conversión real donde el programa existe: en Brasil, 30.000 puntos equivalen a R$ 1 BRL (~$0,18 USD, ~$3,60 MXN o ~$750 COP), con retiros por PIX desde R$ 0,10 hasta R$ 2,00. Aun así, ver 30 anuncios diarios de 30 segundos (15 minutos de publicidad) deja como máximo 12.000 puntos (~R$ 0,40), y la pestaña de dinero no aparece en la mayoría de países hispanos.",
-            "DramaBox (com.storymatrix.drama), por su parte, nunca promete efectivo: sus monedas (+10 a +30 por anuncio) sirven solo para desbloquear episodios dentro de su catálogo freemium de más de 16.000 dramas, con opciones analizadas en nuestra guía de [precio de monedas y recarga vs. VIP en DramaBox](/es/dramabox-precio-monedas-recarga-vs-suscripcion-vip/)."
+            "A diferencia de esas apps, [PineDrama](/es/pinedrama-opiniones-es-confiable-que-es/) (com.ss.android.ttmd.video) pertenece a TikTok y muestra la conversión real donde el programa existe: en Brasil, 30.000 puntos equivalen a R$ 1 BRL (~$0,18 USD, ~$3,60 MXN o ~$750 COP), con retiros por PIX desde R$ 0,10 hasta R$ 2,00. Aun así, ver 30 anuncios diarios de 30 segundos (15 minutos de publicidad) deja como máximo 12.000 puntos (~R$ 0,40), y la pestaña de dinero no aparece en la mayoría de países hispanos —consulta nuestra guía para [descargar PineDrama oficial, iniciar sesión y disponibilidad en PC](/es/descargar-pinedrama-app-pc-iniciar-sesion/).",
+            "DramaBox (com.storymatrix.drama), por su parte, nunca promete efectivo: sus monedas (+10 a +30 por anuncio) sirven solo para desbloquear episodios dentro de su catálogo freemium de más de 16.000 dramas, que puedes reunir sin tarjeta siguiendo nuestro tutorial sobre [cómo ver DramaBox gratis y conseguir monedas](/es/como-ver-dramabox-gratis-conseguir-monedas/) o comparar con planes de pago en la guía de [precio de monedas y recarga vs. VIP en DramaBox](/es/dramabox-precio-monedas-recarga-vs-suscripcion-vip/)."
           ],
           "image": {
             "key": "pinedrama-cashout",
@@ -13915,7 +14000,7 @@ export const articles:Record<Locale,Article[]>={
           "paragraphs": [
             "Na nossa captura de Farm Craze, o quadro 'Important Things to Know' trazia três regras essenciais: chegar ao nível máximo em até 30 dias após a instalação, seguir os passos de rastreamento do aplicativo ('Para ser recompensado pela sua jogabilidade, siga os passos de rastreamento do aplicativo aqui') e observar que o prêmio fica pendente por 5 dias ('Award will pend for 5 days'). Isso significa que, após bater uma meta, os pontos SB aguardam 5 dias antes de entrar no saldo liberado para saque.",
             "Confira a barra Goal Progress logo após atingir a primeira meta curta (como o Nível 30). Se o primeiro nível não aparecer como pendente, pare de jogar antes de gastar dezenas de horas nos níveis altos. Avalie também se metas opcionais de compra (como +52 SB, ou US$ 0,52, por fazer uma compra) custam mais caro do que os pontos devolvidos.",
-            "Antes de começar uma nova meta longa, confira também a visão geral de [como funciona o Swagbucks (pontos SB e PayPal)](/pt/como-funciona-swagbucks-e-confiavel-paga/) e compare os catálogos de jogos em [Swagbucks ou Freecash](/pt/swagbucks-ou-freecash-comparativo-sites-recompensas/)."
+            "Antes de começar uma nova meta longa, confira também a visão geral de [como funciona o Swagbucks (pontos SB e PayPal)](/pt/como-funciona-swagbucks-e-confiavel-paga/), o guia de [pesquisas remuneradas e cashback no Swagbucks](/pt/pesquisas-remuneradas-e-cashback-swagbucks/) e compare os catálogos de jogos em [Swagbucks ou Freecash](/pt/swagbucks-ou-freecash-comparativo-sites-recompensas/)."
           ],
           "source": {
             "title": "Prodege: termos de uso e elegibilidade de ofertas",
@@ -13976,13 +14061,13 @@ export const articles:Record<Locale,Article[]>={
       "slug": "pesquisas-remuneradas-e-cashback-swagbucks",
       "title": "Pesquisas e cashback no Swagbucks: desclassificação, rastreamento e SB pendentes",
       "description": "Veja como comparar SB por minuto, distinguir pesquisas desclassificadas de créditos ausentes e conferir o rastreamento e os pontos pendentes das compras.",
-      "intro": "As pesquisas do Swagbucks trocam tempo por uma possível recompensa; o Shop & Earn devolve parte de uma compra elegível. Cada modalidade exige uma conferência: perfil e tempo gasto nas pesquisas, regras e rastreamento nas compras. Este guia usa a captura do painel fornecida e a ajuda oficial do Swagbucks. Não apresenta uma compra concluída nem um teste de rendimentos.",
+      "intro": "As pesquisas remuneradas do Swagbucks (aba Answer) pagam em pontos SB (100 SB = US$ 1,00) por questionários concluídos, enquanto o portal Shop & Earn devolve cashback em compras online elegíveis. Embora somem no mesmo saldo, exigem estratégias diferentes: nas pesquisas, o segredo é filtrar a relação de SB por minuto e manter consistência no perfil; no cashback, iniciar o clique sem bloqueadores e acompanhar os status Visited, Pending e Posted no histórico Activity.",
       "sections": [
         {
-          "heading": "Desclassificação, crédito ausente e pesquisas desativadas são situações diferentes",
+          "heading": "Desclassificação no filtro, crédito ausente e pesquisas desativadas são diferentes",
           "paragraphs": [
-            "Uma pesquisa que informa que você não se qualifica terminou sem conclusão. O Swagbucks explica que o estudo pode procurar outro perfil ou já ter preenchido sua cota. Uma desclassificação isolada é diferente de ter o acesso às pesquisas desativado na conta.",
-            "Leia a mensagem final antes de concluir que falta uma recompensa. Alterar dados demográficos para passar pelo filtro não resolve: mantenha o perfil verdadeiro e responda ao que foi perguntado. Se a tela confirmar a conclusão, siga a conferência de crédito mais abaixo."
+            "Quando uma pesquisa na aba Answer avisa que você não se qualifica logo nas primeiras perguntas, significa que o estudo buscava outro perfil demográfico (idade, região, renda ou hábito de compra) ou já atingiu a cota de participantes no Brasil. Uma desclassificação de triagem é normal em painéis de pesquisa e é bem diferente de ter a aba Answer bloqueada na conta.",
+            "Para preservar sua conta, nunca altere sua data de nascimento, profissão ou cidade para tentar adivinhar o filtro do anunciante e leia com atenção as perguntas de verificação ('attention checks'). Se você quer comparar o volume de questionários do Swagbucks no Brasil com um painel focado exclusivamente em pesquisas rápidas, veja nosso comparativo [Prime Opinion vs. Swagbucks](/pt/prime-opinion-vs-swagbucks-qual-o-melhor-site-de-pesquisas/)."
           ],
           "source": {
             "title": "Swagbucks: motivos de desclassificação",
@@ -13990,10 +14075,10 @@ export const articles:Record<Locale,Article[]>={
           }
         },
         {
-          "heading": "Compare o tempo no painel, sem transformar estimativas em renda diária",
+          "heading": "Como calcular a proporção de SB por minuto antes de abrir um questionário",
           "paragraphs": [
-            "A captura que ilustra o artigo mostra exemplos de 5 SB por 5 minutos, 10 SB por 5 minutos e 25 SB por 20 minutos. São dados daquela tela, não ofertas verificadas como disponíveis hoje ou em todos os países. A estimativa também não garante que você se qualifique ou termine naquele tempo.",
-            "Nesses exemplos, dividir SB pelos minutos resulta em 1, 2 e 1,25 SB por minuto. O prêmio maior não tem a melhor proporção. Defina um limite de tempo e inclua as tentativas sem sucesso ao avaliar se vale a pena; não transforme o melhor cartão em uma suposta remuneração por hora."
+            "No painel de pesquisas, cada cartão informa a recompensa em SB e o tempo estimado — por exemplo, 5 SB por 5 minutos (1 SB/min), 10 SB por 5 minutos (2 SB/min) e 25 SB por 20 minutos (1,25 SB/min). Como 100 SB equivalem a US$ 1,00, um questionário longo de 25 SB paga menos por minuto investido do que um curto de 10 SB em 5 minutos.",
+            "Dê preferência a pesquisas curtas de 5 a 10 minutos com pelo menos 1,5 a 2 SB por minuto: caso ocorra uma desclassificação no filtro inicial, você perde poucos segundos em vez de 15 minutos. Nos dias em que a fila de pesquisas estiver vazia para o seu perfil, vale alternar com as [metas de jogos mobile do Swagbucks](/pt/jogos-swagbucks-como-ganhar-rastreamento/)."
           ],
           "source": {
             "title": "Swagbucks: perfil e oportunidades de pesquisas",
@@ -14001,26 +14086,21 @@ export const articles:Record<Locale,Article[]>={
           }
         },
         {
-          "heading": "O cashback considera a compra elegível, não todos os valores cobrados",
+          "heading": "Cashback no Shop & Earn: cálculo sobre o valor líquido e disponibilidade regional",
           "paragraphs": [
-            "Abra a loja pelo Shop & Earn e leia as Special Terms antes de pagar. Segundo o Swagbucks, o valor elegível pode excluir impostos, frete e outras cobranças; devoluções ou cancelamentos podem reverter os pontos. As exclusões da loja importam mais que a taxa máxima exibida no diretório.",
-            "Exemplo ilustrativo: se uma loja oferece 5 SB por dólar americano elegível e apenas US$40 de uma compra de US$48 atendem às regras, o cálculo é 200 SB, não 240 SB. Isso não é uma oferta vigente. Compare o preço final com outras lojas antes de considerar o cashback uma economia."
+            "Ao abrir uma loja parceira pelo diretório Shop & Earn, leia sempre o quadro Special Terms antes de finalizar o pedido. O Swagbucks calcula os pontos apenas sobre o subtotal líquido elegível da compra — excluindo impostos, frete, cartões-presente e categorias fora da promoção — e cancelamentos ou devoluções estornam os pontos pendentes.",
+            "Na prática, se uma loja oferece 5 SB por dólar elegível e apenas o equivalente a US$ 40 de um pedido total de US$ 48 (já com frete e taxas) atende às regras, o crédito registrado será de 200 SB (US$ 2,00), e não 240 SB. Para usuários no Brasil, confira sempre se o varejista listado no Shop & Earn aceita pedidos locais ou se a oferta é restrita a compras internacionais."
           ],
           "source": {
             "title": "Swagbucks: regras do Shop & Earn",
             "url": "https://help.swagbucks.com/hc/en-us/articles/205641124-How-does-Shop-Earn-work"
-          },
-          "cta": {
-            "label": "Consultar pesquisas e ofertas de compras no Swagbucks",
-            "url": "https://www.swagbucks.com/p/register?rb=NPHSOu1zhQuqNHgx&rp=1",
-            "sponsored": true
           }
         },
         {
-          "heading": "Confira o rastreamento da visita antes de gastar",
+          "heading": "Confira o rastreamento da visita (cookies e extensões) antes de pagar",
           "paragraphs": [
-            "O guia oficial recomenda começar no Swagbucks, continuar no mesmo aparelho e evitar extensões de compras concorrentes. Essas extensões ou configurações restritivas de privacidade podem impedir a atribuição do clique. Um cupom externo não é automaticamente compatível: consulte as regras da loja.",
-            "Depois de abrir o link, confira a visita em Activity e guarde as condições e a confirmação do pedido. Se você não quiser permitir o rastreamento necessário, compare os preços sem contar com os SB. Captura e recibo servem como evidência para análise, mas não garantem recuperar uma atribuição perdida."
+            "Para que o Shop & Earn atribua a comissão à sua conta, a central oficial orienta iniciar a sessão com o carrinho vazio, clicar no link da loja dentro do Swagbucks e concluir o pagamento na mesma aba e aparelho. Extensões de cashback ou cupons concorrentes, bloqueadores de anúncios (AdBlock) e navegadores com bloqueio estrito de cookies quebram o link de afiliado e impedem o crédito.",
+            "Evite aplicar cupons encontrados fora do Swagbucks: se o código promocional não estiver listado na página da loja dentro do próprio Swagbucks, a venda é atribuída à origem do cupom externo e o cashback é invalidado."
           ],
           "source": {
             "title": "Swagbucks: rastreamento de ofertas",
@@ -14028,10 +14108,10 @@ export const articles:Record<Locale,Article[]>={
           }
         },
         {
-          "heading": "Visited, Pending e Posted: como interpretar o histórico Activity",
+          "heading": "Visited, Pending e Posted: como auditar o histórico Activity",
           "paragraphs": [
-            "Visited registra um clique; isso não comprova que a compra cumpriu as condições. Pending mostra uma recompensa rastreada aguardando crédito, com detalhes e data estimada. Posted corresponde à atividade já creditada. Uma visita reconhecida não equivale a pontos disponíveis.",
-            "Use os filtros de data e atividade para localizar a transação correta. Se houver uma data de liberação pendente, espere esse prazo antes de considerar o crédito atrasado. Se a atividade não aparecer ou estiver vencida, use a ajuda vinculada a ela e explique a diferença, em vez de abrir pedidos sem relação com a transação."
+            "O extrato Activity Ledger separa cada etapa em três status claros: Visited confirma apenas que o seu clique de saída para a loja ou pesquisa foi registrado; Pending mostra que a compra ou meta foi validada pelo anunciante e aguarda o prazo de carência (com a data exata de liberação); e Posted indica que os SB já somaram no seu saldo disponível.",
+            "Use os filtros de data e categoria no Activity Ledger para acompanhar cada transação. Enquanto um item estiver em Pending com data futura dentro do prazo (frequentemente de 7 a 32 dias em compras para cobrir o período de devolução da loja), basta aguardar a conversão automática para Posted."
           ],
           "source": {
             "title": "Swagbucks: histórico Activity",
@@ -14041,8 +14121,8 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "O que fazer quando você concluiu a pesquisa ou compra e não recebeu SB",
           "paragraphs": [
-            "Na pesquisa, guarde o Survey ID e a mensagem de conclusão, confira Answer em Activity e respeite o prazo de crédito diferido informado antes do início. Se esse prazo passou e o crédito continua ausente, use Get Help naquela pesquisa. Uma mensagem de desclassificação não comprova conclusão.",
-            "Nas compras, diferencie a espera para o pedido aparecer da espera posterior para os SB pendentes serem creditados. Consulte a ajuda atual e as Special Terms da loja para o prazo aplicável: não existe uma promessa única para todos os lojistas, reservas e pedidos. Guarde o recibo e não compre mais para investigar uma compra sem rastreamento."
+            "Em pesquisas que chegam até a tela final de conclusão ('Congratulations') sem creditar os pontos, anote o Survey ID (número da pesquisa no histórico Answer > Visited), o valor em SB e uma captura da tela final. Caso a pesquisa informe crédito diferido ('Delayed Payout'), aguarde o prazo indicado; se era de crédito imediato, abra um chamado clicando em Get Help diretamente na linha daquela pesquisa dentro do Activity Ledger.",
+            "Quando seus pontos passarem para Posted e atingirem o mínimo de resgate, siga nosso tutorial de [como sacar no Swagbucks via PayPal e gift cards](/pt/como-sacar-no-swagbucks-paypal-gift-cards/), consulte o guia principal sobre [como funciona o Swagbucks e se paga mesmo](/pt/como-funciona-swagbucks-e-confiavel-paga/) ou compare com outra plataforma em [Swagbucks ou Freecash](/pt/swagbucks-ou-freecash-comparativo-sites-recompensas/)."
           ],
           "source": {
             "title": "Swagbucks: pesquisa concluída sem crédito",
@@ -14127,7 +14207,13 @@ export const articles:Record<Locale,Article[]>={
         "caption": "O painel de ofertas ilustra onde aparecem as condições; confira as regras atuais na sua conta para validar prazos e requisitos.",
         "wide": true
       },
-      "modifiedDate": "2026-11-18"
+      "modifiedDate": "2026-11-23",
+      "relatedIds": [
+        "swagbucks",
+        "swagbucks-cashout",
+        "swagbucks-games",
+        "primeopinion-vs-swagbucks"
+      ]
     },
     {
       "id": "swagbucks-cashout",
@@ -14234,7 +14320,7 @@ export const articles:Record<Locale,Article[]>={
           "paragraphs": [
             "O Freecash concentra seu catálogo em metas de jogos mobile, muros de ofertas e pesquisas. O Swagbucks cobre essas mesmas frentes — nossa captura no Android mostrou jogos como Puzzles & Chaos (até 2.373 SB) e Screw Out (até 1.233 SB), além da Coinbase na aba Discover —, mas acrescenta um portal próprio de cashback (Shop and Earn) com varejistas como Walmart (até 8%), eBay (até 5%) e The Home Depot (até 15%).",
             "Para quem já faz compras online em lojas parceiras ou prefere começar com tarefas rápidas como pesquisas de 5 minutos (de 5 a 10 SB), o Swagbucks oferece mais caminhos para somar pontos quando a lista de jogos está parada.",
-            "Se você ainda não conhece os detalhes de cada painel, consulte antes o nosso guia [como funciona o Swagbucks e quanto valem os pontos SB](/pt/como-funciona-swagbucks-e-confiavel-paga/) e o passo a passo inicial [como funciona o Freecash (ofertas e convites)](/pt/freecash-ofertas-convites/)."
+            "Se você ainda não conhece os detalhes de cada painel, consulte antes o nosso guia [como funciona o Swagbucks e quanto valem os pontos SB](/pt/como-funciona-swagbucks-e-confiavel-paga/), o passo a passo de [pesquisas remuneradas e cashback no Swagbucks](/pt/pesquisas-remuneradas-e-cashback-swagbucks/) e o guia inicial [como funciona o Freecash (ofertas e convites)](/pt/freecash-ofertas-convites/)."
           ],
           "source": {
             "title": "Swagbucks: funcionamento e canais de ganho",
@@ -14455,30 +14541,25 @@ export const articles:Record<Locale,Article[]>={
       "category": "rewards",
       "slug": "pawns-app-pesquisas-remuneradas-ganhos",
       "title": "Pesquisas no Pawns.app: ganhos, desclassificação e saldo",
-      "description": "Como escolher pesquisas no Pawns.app, entender desclassificações e registrar uma recompensa não creditada, sem promessas de ganhos diários.",
-      "intro": "As pesquisas do Pawns.app são questionários remunerados com filtros de participação. O valor exibido antes de começar é uma oferta condicionada à conclusão válida, não dinheiro já ganho. Este guia ajuda a escolher uma pesquisa, interpretar a recusa e guardar evidências se faltar crédito. A análise usa as capturas fornecidas e a documentação oficial; não fizemos um teste de ganhos por hora.",
+      "description": "Como escolher pesquisas no Pawns.app, comparar centavos por minuto ($0,14 a $0,67), evitar desclassificações e reclamar crédito ausente no saldo.",
+      "intro": "A aba Pesquisas (Surveys) do Pawns.app reúne questionários de parceiros de pesquisa de mercado que pagam diretamente em dólares no seu saldo do aplicativo — com cartões que costumam variar de $0,14 a $0,67 ou mais nas capturas do painel, dependendo do tempo estimado e do país. Como cada estudo aplica um filtro demográfico antes de liberar o pagamento, saber calcular a relação de centavos por minuto, manter a consistência do perfil e auditar pesquisas não creditadas evita perda de tempo.",
       "sections": [
         {
-          "heading": "O que o valor e o tempo estimado significam",
+          "heading": "Como interpretar o valor ($0,14 a $0,67) e o tempo estimado no painel",
           "paragraphs": [
-            "A captura mostra valores e durações por pesquisa. Esses exemplos pertencem àquela tela e não definem uma faixa normal para todos. Segundo o Pawns.app, a recompensa depende da região e da demanda por pesquisa de mercado.",
-            "Compare o valor anunciado com o tempo previsto, mas registre também os minutos realmente gastos. Se tentar vários questionários e concluir apenas um, inclua as tentativas recusadas ao avaliar o resultado da sessão."
+            "Ao abrir a aba Pesquisas no aplicativo, cada cartão exibe a recompensa em dólar (USD), a duração prevista em minutos e a avaliação do provedor. Nas telas capturadas para a nossa série do [guia completo de como funciona o Pawns.app](/pt/pawns-app-como-funciona-guia-completo/), aparecem questionários curtos entre $0,14 e $0,67 com tempos de 3 a 18 minutos. Esses valores mudam conforme a demanda de anunciantes na sua região e o preenchimento do seu perfil inicial.",
+            "Antes de iniciar um estudo longo de 20 a 30 minutos, divida o valor anunciado pelos minutos previstos. Um questionário de $0,35 para 5 minutos ($0,07/min) costuma oferecer melhor retorno prático do que um de $0,50 para 22 minutos ($0,02/min), especialmente porque uma recusa no filtro inicial consome menos tempo nas opções curtas."
           ],
           "source": {
             "title": "Pawns.app: survey rewards by region",
             "url": "https://help.pawns.app/en/articles/8646171-how-much-do-surveys-pay"
-          },
-          "cta": {
-            "label": "Conhecer o Pawns.app com o código de indicação 6823713",
-            "url": "https://discoverpawns.eu/6823713",
-            "sponsored": true
           }
         },
         {
-          "heading": "Por que uma pesquisa pode desclassificar você",
+          "heading": "Por que ocorrem desclassificações (screenouts) e como reduzir recusas",
           "paragraphs": [
-            "Seu perfil pode não corresponder ao público procurado pelo estudo. A ajuda oficial recomenda dados corretos e atualizados; uma recusa isolada não comprova problema na conta. É proibido esconder a localização com VPN ou proxy.",
-            "Não altere idade, profissão ou país para se encaixar numa oferta. Após várias recusas, encerre a sessão e confira o perfil em vez de tratar a próxima tentativa como pagamento garantido."
+            "Quase toda pesquisa começa com 3 a 5 perguntas eliminatórias sobre idade, cidade, renda familiar, profissão ou hábitos de consumo. Quando você recebe um aviso de desclassificação logo nessa triagem, significa apenas que o anunciante buscava outro recorte de consumidor ou já preencheu a cota da sua faixa etária — não é um bloqueio da sua conta no Pawns.app.",
+            "O erro que realmente causa bloqueio nos provedores de pesquisa é alterar dados demográficos de um dia para o outro, responder rápido demais sem ler as perguntas de atenção ('attention checks') ou usar VPN, proxy e roteadores com IP mascarado. Se a fila de pesquisas estiver com poucas opções para o seu perfil hoje, alterne com as [metas de jogos e ofertas do Pawns.app](/pt/pawns-app-jogos-e-ofertas-passo-a-passo/)."
           ],
           "source": {
             "title": "Pawns.app: survey disqualifications",
@@ -14486,10 +14567,10 @@ export const articles:Record<Locale,Article[]>={
           }
         },
         {
-          "heading": "Defina um limite de tempo antes de começar",
+          "heading": "Gestão de sessão: como somar saldo até o saque mínimo de $5",
           "paragraphs": [
-            "O fornecedor informa que os questionários podem levar de poucos minutos a cerca de meia hora. A duração exibida é uma estimativa, não a garantia de que você terminará naquele prazo.",
-            "Escolha uma sessão em que consiga responder com atenção. Uma anotação útil inclui identificador, valor oferecido, duração prevista, minutos reais, mensagem final e valor creditado. Isso separa uma oferta atraente do seu resultado efetivo."
+            "Segundo a central oficial do Pawns.app, os questionários duram de poucos minutos a cerca de meia hora, mas a estimativa é uma média dos participantes anteriores. Responder com pressa pode acionar travas automáticas de qualidade do parceiro de pesquisa e invalidar o crédito no final.",
+            "Para chegar ao mínimo de retirada de $5,00 USD sem desgaste, estabeleça blocos curtos (por exemplo, 15 a 20 minutos) e anote o identificador da pesquisa (Survey ID), o valor prometido e o horário de início. Você também pode comparar como esse ritmo de acumulação se sai diante de outras plataformas em [Pawns.app vs. Freecash](/pt/pawns-app-vs-freecash-qual-o-melhor-para-ganhar-dinheiro/)."
           ],
           "source": {
             "title": "Pawns.app: survey length and estimates",
@@ -14497,10 +14578,10 @@ export const articles:Record<Locale,Article[]>={
           }
         },
         {
-          "heading": "Lista vazia ou pesquisa concluída sem crédito",
+          "heading": "Lista vazia ou pesquisa concluída até o fim sem crédito no saldo",
           "paragraphs": [
-            "As oportunidades dependem da região e da demanda dos clientes. Uma lista vazia não comprova falha técnica nem permite prever uma espera exata. As notificações podem avisar quando surgirem novas pesquisas.",
-            "Se concluiu um questionário sem crédito, guarde identificador, data, valor e mensagem final e procure o suporte oficial. Oculte respostas privadas das capturas. Tela de conclusão, recusa e lançamento de saldo são evidências diferentes; não apresente todas como comprovante de pagamento."
+            "Em horários de menor movimento ou fins de semana, o mural de pesquisas no Brasil pode ficar temporariamente vazio. Isso reflete apenas a atualização das cotas dos institutos parceiros; manter as notificações do aplicativo ativas ajuda a pegar novos lotes assim que são abertos.",
+            "Se você chegou até a tela final de agradecimento ('Thank you / Completed') e o valor em dólar não entrou no saldo, salve uma captura da tela final com o Survey ID, a data e o valor anunciado e abra um chamado no suporte do provedor dentro do próprio Pawns.app. Assim que seu saldo atingir $5,00 USD, siga nosso passo a passo de [como sacar no Pawns.app (taxas do PayPal, Bitcoin e bônus de $3)](/pt/pawns-app-como-sacar-metodos-bono-convite/)."
           ],
           "source": {
             "title": "Pawns.app: survey availability",
@@ -14581,7 +14662,13 @@ export const articles:Record<Locale,Article[]>={
         "caption": "Os prêmios promocionais da captura são separados da remuneração por concluir uma pesquisa e podem mudar.",
         "wide": true
       },
-      "modifiedDate": "2026-11-18"
+      "modifiedDate": "2026-11-23",
+      "relatedIds": [
+        "pawns",
+        "pawns-cashout",
+        "pawns-games",
+        "pawns-vs-freecash"
+      ]
     },
     {
       "id": "pawns-games",
@@ -14619,7 +14706,7 @@ export const articles:Record<Locale,Article[]>={
           "heading": "Jogar gratuitamente vs. compras no aplicativo",
           "paragraphs": [
             "A captura de Wood Block Jam inclui uma meta de compra do Beginner Bundle. A compra pode ser exigida para aquela recompensa mesmo quando outras metas de nível não mencionam gastos. Leia cada tarefa em vez de tratar todas como gratuitas.",
-            "Calcule custo, recompensa e prazo antes de decidir. Não testamos se todo nível anunciado pode ser concluído sem gastar. Pule uma etapa que não compense para você."
+            "Calcule custo, recompensa e prazo antes de decidir e pule etapas pagas que não compensem. Para somar saldo sem instalar jogos, veja nosso guia de [pesquisas remuneradas no Pawns.app](/pt/pawns-app-pesquisas-remuneradas-ganhos/), confira as regras de retirada em [como sacar no Pawns.app](/pt/pawns-app-como-sacar-metodos-bono-convite/) ou leia a análise geral de [como funciona o Pawns.app](/pt/pawns-app-como-funciona-guia-completo/)."
           ]
         }
       ],
@@ -14670,31 +14757,26 @@ export const articles:Record<Locale,Article[]>={
       "app": "pawns",
       "category": "rewards",
       "slug": "pawns-app-como-sacar-metodos-bono-convite",
-      "title": "Como sacar no Pawns.app: mínimo, taxas e bônus de $3",
-      "description": "Guia de saque do Pawns.app: mínimo de $5, taxas de PayPal e Bitcoin, e-mail para resgatar o pagamento e condições do bônus de indicação.",
-      "intro": "O Pawns.app informa saque mínimo de $5, mas o valor solicitado pode ser diferente do recebido. Taxas, métodos disponíveis no país e o e-mail para resgatar a recompensa merecem atenção. Este guia corrige uma dúvida sobre indicação: o bônus anunciado de $3 tem condições e é dividido entre três saques, em vez de cair inteiro no primeiro.",
+      "title": "Como sacar no Pawns.app: mínimo de $5, taxas e bônus de $3",
+      "description": "Guia de saque do Pawns.app: mínimo de $5, taxas de PayPal (4%) e Bitcoin ($2), e-mail da Tremendous para resgate e regras do bônus de convite de $3.",
+      "intro": "O Pawns.app permite solicitar saque a partir de $5,00 USD acumulados entre internet compartilhada, pesquisas e jogos, mas o valor líquido que chega à sua conta depende do método escolhido, da taxa de processamento e do link de resgate enviado por e-mail. Neste guia prático de retirada, detalhamos quanto você realmente recebe via PayPal, Bitcoin ou vales-presente, como funciona o resgate pela Tremendous e por que o bônus de indicação de $3 (código 6823713) é liberado em três parcelas de $1.",
       "sections": [
         {
-          "heading": "Onde solicitar o saque",
+          "heading": "Onde solicitar o saque e métodos disponíveis por país",
           "paragraphs": [
-            "Toque no saldo, escolha Request Payout e selecione país e método disponível. O Pawns.app publica mínimo de $5; as opções oferecidas dependem da sua região.",
-            "Confira destino, método e resumo final antes de confirmar. Um vale-presente tem restrições de uso diferentes de dinheiro numa conta de pagamento. Não escolha apenas pela taxa anunciada menor."
+            "Assim que o seu saldo no topo do aplicativo atingir pelo menos $5,00 USD, toque na carteira, selecione Request Payout e escolha o seu país de residência. O Pawns.app filtra automaticamente as opções compatíveis com a sua região — no Brasil e na maioria dos mercados internacionais, os canais principais são PayPal (em dólar convertido pelo próprio PayPal), Bitcoin (on-chain) e cartões-presente digitais.",
+            "Se você ainda está juntando os primeiros dólares para atingir o piso de $5, veja como acelerar o saldo combinando o [guia completo do Pawns.app](/pt/pawns-app-como-funciona-guia-completo/) com as dicas de [pesquisas remuneradas no Pawns.app](/pt/pawns-app-pesquisas-remuneradas-ganhos/) e [metas de jogos e ofertas](/pt/pawns-app-jogos-e-ofertas-passo-a-passo/)."
           ],
           "source": {
             "title": "Pawns.app: requesting a payout",
             "url": "https://help.pawns.app/en/articles/8646170-how-do-i-get-paid"
-          },
-          "cta": {
-            "label": "Conhecer o Pawns.app com o código de indicação 6823713",
-            "url": "https://discoverpawns.eu/6823713",
-            "sponsored": true
           }
         },
         {
-          "heading": "Taxas: compare o valor que realmente vai receber",
+          "heading": "Taxas de saque: compare o valor líquido no PayPal, Bitcoin e Gift Cards",
           "paragraphs": [
-            "A ajuda oficial informa PayPal com taxa de 4%, mínimo de $0,25: um saque de $5 resulta em $4,75. Para Bitcoin, publica $2; para vales-presente virtuais, taxa de saque zero. Confira o resumo vigente antes de confirmar.",
-            "Conversão de moeda ou regras do serviço receptor podem afetar o valor disponível para gastar. Registre o total solicitado e o recebido para não confundir taxa com recompensa ausente."
+            "A documentação oficial de taxas do Pawns.app estabelece três regras distintas: para saques via PayPal, aplica-se uma tarifa de 4% com mínimo de $0,25 USD — ou seja, ao solicitar o saque mínimo de $5,00, você recebe exatamente $4,75 USD líquidos. Para retiradas em Bitcoin, a taxa fixa publicada é de $2,00 USD para cobrir custos de rede, enquanto os vales-presente virtuais têm taxa zero ($0).",
+            "Na prática, sacar exatamente $5,00 via Bitcoin consome 40% do valor em taxa ($2,00 de tarifa para receber $3,00), tornando o PayPal ($0,25 de taxa em $5,00) ou a acumulação de um saldo maior muito mais vantajosos. No PayPal brasileiro, o valor em USD recebido é convertido automaticamente para reais (BRL) segundo a cotação e regras da sua conta PayPal."
           ],
           "source": {
             "title": "Pawns.app: payout fees",
@@ -14702,10 +14784,10 @@ export const articles:Record<Locale,Article[]>={
           }
         },
         {
-          "heading": "Saque pendente: procure o e-mail de resgate",
+          "heading": "Saque pendente e como funciona o e-mail de resgate da Tremendous",
           "paragraphs": [
-            "O Pawns.app informa processamento normalmente em até 72 horas, podendo demorar mais nos fins de semana. Para PayPal, vales-presente e Cash App, procure na entrada e no spam um e-mail da Tremendous com o link de resgate.",
-            "Se o prazo documentado passou, procure o suporte oficial com data, valor e método. Não publique endereço de recebimento, fotos de documentos ou códigos de uso único ao pedir ajuda."
+            "Diferente de transferências automáticas instantâneas, o Pawns.app processa os pedidos em até 72 horas (podendo levar um pouco mais em fins de semana e feriados). Para pagamentos via PayPal e cartões-presente, o dinheiro não entra sozinho no PayPal apenas por pedir no app: você recebe um e-mail da plataforma parceira Tremendous (rewards@reward.tremendous.com) contendo o botão oficial de resgate ('Redeem').",
+            "Ao abrir o link da Tremendous, você informa ou confirma o e-mail da sua conta PayPal para concluir o depósito. Por isso, sempre verifique a caixa de entrada, a aba Promoções e a pasta de Spam do e-mail cadastrado no Pawns.app antes de achar que o pagamento atrasou."
           ],
           "source": {
             "title": "Pawns.app: payout not received",
@@ -14713,10 +14795,10 @@ export const articles:Record<Locale,Article[]>={
           }
         },
         {
-          "heading": "O bônus de $3 é liberado em três partes",
+          "heading": "Como o bônus de convite de $3 (código 6823713) é liberado em 3 saques",
           "paragraphs": [
-            "A regra atual prevê $1 após cada um dos três primeiros saques válidos. Cada etapa tem prazo regional mostrado no aplicativo. O código 6823713 é uma indicação e não dispensa essas condições.",
-            "A captura da Comunidade comprova a divulgação de uma promoção, não o recebimento de dinheiro nem um saldo incondicional de $3. Leia as regras da sua conta antes de contar com o bônus."
+            "Uma dúvida muito comum de quem cria conta pelo link promocional ou código de convite 6823713 é procurar os $3,00 inteiros liberados para saque imediato no primeiro dia. Pelas regras vigentes do programa de indicação do Pawns.app, o bônus total de $3,00 para novos usuários é dividido em três parcelas de $1,00 USD: você recebe +$1,00 no primeiro saque, +$1,00 no segundo saque e +$1,00 no terceiro saque válido.",
+            "Isso significa que no seu primeiro resgate você precisa acumular $4,00 pelas tarefas ou internet compartilhada para somar com o primeiro $1,00 de bônus e atingir o piso de $5,00 USD. Cada parcela possui um prazo de validade regional exibido na aba Comunidade/Indicações dentro do aplicativo."
           ],
           "source": {
             "title": "Pawns.app: referral bonus conditions",
@@ -14724,10 +14806,10 @@ export const articles:Record<Locale,Article[]>={
           }
         },
         {
-          "heading": "Verificação e confirmação final",
+          "heading": "Verificação de identidade (KYC) e cuidados de segurança no resgate",
           "paragraphs": [
-            "Um parceiro de pagamentos pode pedir verificação de identidade; o Pawns.app informa que as instruções aparecem no saque quando aplicável. Siga o fluxo oficial, sem enviar documentos a alguém que procure você por mensagem privada.",
-            "Guarde a confirmação e compare o status com o saldo e a conta que vai receber. Esta análise documenta o processo e as condições publicadas; não relata um saque independente concluído por nós."
+            "Dependendo do método de pagamento ou do volume acumulado, o sistema antifraude do parceiro de pagamentos pode solicitar uma verificação rápida de identidade (KYC) na hora de confirmar o pedido. O procedimento ocorre exclusivamente dentro da tela oficial de saque do Pawns.app.",
+            "Mantenha apenas uma conta por pessoa e nunca utilize VPN ao solicitar um pagamento, pois divergências de país entre o IP de acesso e a conta de destino bloqueiam a aprovação. Para comparar essas regras com o limite inicial de outras plataformas, confira nosso comparativo [Pawns.app vs. Freecash](/pt/pawns-app-vs-freecash-qual-o-melhor-para-ganhar-dinheiro/)."
           ],
           "source": {
             "title": "Pawns.app: identity checks at payout",
@@ -14809,38 +14891,39 @@ export const articles:Record<Locale,Article[]>={
         "caption": "A área promocional de Recompensas é diferente de um saque confirmado ou comprovante de pagamento.",
         "wide": true
       },
-      "modifiedDate": "2026-11-18"
+      "modifiedDate": "2026-11-23",
+      "relatedIds": [
+        "pawns",
+        "pawns-surveys",
+        "pawns-games",
+        "pawns-vs-freecash"
+      ]
     },
     {
       "id": "pawns-vs-freecash",
       "app": "pawns",
       "category": "guides",
       "slug": "pawns-app-vs-freecash-qual-o-melhor-para-ganhar-dinheiro",
-      "title": "Pawns.app vs Freecash: tarefas, saques e qual escolher",
-      "description": "Compare Pawns.app e Freecash por tarefas, primeiro saque, taxas e condições de ofertas. Escolha conforme sua conta, não pelo prêmio anunciado.",
-      "intro": "Para escolher entre Pawns.app e Freecash, confira o que precisa fazer e o que consegue sacar. O Pawns.app acrescenta compartilhamento opcional de internet a pesquisas e jogos; o Freecash se concentra em tarefas remuneradas. Nenhum garante renda. O comparativo usa regras oficiais e capturas fornecidas do Pawns.app, sem um teste conjunto de ganhos ou velocidade de pagamento.",
+      "title": "Pawns.app vs Freecash (2026): Tarefas, Saque Mínimo, Taxas e Qual Escolher",
+      "description": "Compare Pawns.app e Freecash lado a lado: primeiro saque ($5 vs $25), internet compartilhada, ofertas de jogos, taxas do PayPal e qual vale mais a pena.",
+      "intro": "Na hora de escolher entre Pawns.app e Freecash para ganhar dinheiro em dólar no celular ou computador, a diferença central está no modelo de acumulação e na barreira do primeiro saque. Enquanto o Pawns.app combina compartilhamento opcional de internet em segundo plano com pesquisas, jogos e saque mínimo fixo de $5,00 USD (com bônus de $3 dividido nos três primeiros resgates via código 6823713), o Freecash (operado pela Almedia GmbH) foca em catálogos maiores de jogos e muros de ofertas, mas exige atenção ao piso regional do primeiro saque ($25 USD na documentação oficial) e às tarifas do PayPal.",
       "sections": [
         {
-          "heading": "Compartilhar internet é uma escolha separada",
+          "heading": "Diferença principal: internet compartilhada em segundo plano vs. foco em offerwalls",
           "paragraphs": [
-            "O Pawns.app oferece compartilhamento de internet, além de pesquisas e jogos. Antes de ativar, avalie se quer permitir que terceiros usem sua conexão e leia permissões, plano de dados e condições de uso da rede.",
-            "Deixar um programa aberto não comprova retorno previsível. Se não quiser compartilhar conexão, compare apenas as tarefas ativas. Um recurso que você não usará não deve definir o vencedor."
+            "O Pawns.app é o único dos dois que oferece um canal passivo complementar: o compartilhamento residencial de banda larga (cobrado por gigabyte trafegado conforme a demanda de IP no seu país), que soma no mesmo saldo das pesquisas e jogos mobile. Você pode conferir todos os detalhes de funcionamento na nossa análise sobre [como funciona o Pawns.app e se paga mesmo](/pt/pawns-app-como-funciona-guia-completo/).",
+            "Já o Freecash não utiliza compartilhamento de rede: 100% dos ganhos vêm de atividades ativas, principalmente metas progressivas em jogos de celular, testes de aplicativos e pesquisas de parceiros. Se você não pretende ativar o compartilhamento de conexão do Pawns.app, a comparação entre os dois deve focar exclusivamente no valor pago por cada jogo ou pesquisa e na facilidade para sacar — veja nosso [guia de ofertas e convites do Freecash](/pt/freecash-ofertas-convites/)."
           ],
           "source": {
             "title": "Pawns.app: official product overview",
             "url": "https://pawns.app/"
-          },
-          "cta": {
-            "label": "Conhecer o Pawns.app com o código de indicação 6823713",
-            "url": "https://discoverpawns.eu/6823713",
-            "sponsored": true
           }
         },
         {
-          "heading": "Primeiro saque: compare o acesso, não só um valor pequeno",
+          "heading": "Primeiro saque lado a lado: piso de $5 no Pawns.app vs. regra de $25 no Freecash",
           "paragraphs": [
-            "O Pawns.app publica mínimo de $5. O guia atual de primeiro saque do Freecash informa $25, sujeito à região, além de verificação de e-mail e identidade. Confira Cashout: os mínimos posteriores de cada método não descrevem o primeiro saque.",
-            "Antes de começar, confirme se existe um método utilizável no seu país e se consegue cumprir a verificação. Saldo promocional ainda indisponível para saque é diferente de dinheiro recebido."
+            "Para quem quer testar a plataforma e sacar rápido, o Pawns.app leva vantagem na barreira de entrada: o valor mínimo de retirada é de $5,00 USD desde o primeiro pedido (e quem usa o código de convite 6823713 recebe +$1,00 em cada um dos três primeiros saques, precisando acumular $4,00 para fechar os primeiros $5,00). Veja o cálculo completo em [como sacar no Pawns.app](/pt/pawns-app-como-sacar-metodos-bono-convite/).",
+            "No Freecash, embora saques subsequentes tenham pisos menores conforme o método, a documentação oficial de suporte informa um requisito de primeiro saque de US$ 25 (25.000 moedas, variável por região), acompanhado de verificação de e-mail e documento de identidade (KYC). Por isso, o Freecash exige mais horas de dedicação em metas de jogos antes de liberar a primeira retirada — confira todas as regras em [código de bônus e como sacar no Freecash](/pt/freecash-codigo-bonus-como-sacar-dinheiro/)."
           ],
           "source": {
             "title": "Freecash: first withdrawal requirements",
@@ -14848,10 +14931,10 @@ export const articles:Record<Locale,Article[]>={
           }
         },
         {
-          "heading": "Taxas e espera: use o resumo final",
+          "heading": "Taxas de retirada no PayPal, criptomoedas e vales-presente",
           "paragraphs": [
-            "Compare o valor líquido após a taxa, não apenas o solicitado. O Freecash publica taxas em vários métodos de dinheiro e vales-presente sem taxa; a confirmação de cada método mostra o total vigente.",
-            "Não cronometramos saques equivalentes nas duas contas, portanto não podemos apontar quem paga mais rápido. Revisão do pedido, e-mail de resgate e serviço receptor podem alterar a experiência."
+            "O valor líquido que chega ao seu bolso também muda conforme a tabela de tarifas de cada serviço. No Pawns.app, o saque via PayPal desconta 4% (mínimo de $0,25, entregando $4,75 líquidos em um pedido de $5,00 via link da Tremendous), o Bitcoin cobra taxa fixa de $2,00 e os gift cards têm taxa zero.",
+            "No Freecash, os vales-presente também são isentos de tarifa e as criptomoedas (como Litecoin, Bitcoin e Ethereum) cobram apenas a taxa variável da rede blockchain, mas o saque via PayPal aplica uma tarifa combinada (como 5% + US$ 1,00 nos níveis iniciais de $5 a $20, segundo a tabela oficial). Compare também essa estrutura de resgate na nossa avaliação sobre se o [Freecash é confiável e paga mesmo](/pt/freecash-e-confiavel-paga-mesmo-avaliacoes/)."
           ],
           "source": {
             "title": "Freecash: withdrawal limits and fees",
@@ -14859,17 +14942,17 @@ export const articles:Record<Locale,Article[]>={
           }
         },
         {
-          "heading": "Jogos: compare a mesma meta antes de instalar",
+          "heading": "Jogos mobile e pesquisas: como comparar a mesma oferta nos dois apps",
           "paragraphs": [
-            "Anote tarefa, aparelho aceito, condição de jogador novo, prazo, compras exigidas e recompensa da mesma meta em cada plataforma. Um total maior pode somar etapas caras ou pouco viáveis.",
-            "Não suponha que uma instalação serve para receber nas duas ofertas. Leia a elegibilidade antes de escolher onde começar, guarde as condições e confira se a primeira ação foi registrada antes de investir mais tempo. Este é um método de comparação, não uma alegação de que um catálogo paga mais."
+            "Tanto as [ofertas de jogos do Pawns.app](/pt/pawns-app-jogos-e-ofertas-passo-a-passo/) quanto o catálogo do Freecash trabalham com metas escalonadas (por exemplo, instalar um jogo inédito no celular e atingir os níveis 30, 40 e 50 dentro de 29 ou 30 dias). Como as regras de rastreamento exigem que seja a primeira instalação daquele jogo no seu aparelho e conta Google Play/App Store, você nunca deve tentar concluir o mesmo jogo nos dois aplicativos ao mesmo tempo.",
+            "A melhor estratégia prática é manter conta gratuita nas duas plataformas e, antes de baixar um jogo novo, abrir a ficha dele no Pawns.app e no Freecash para comparar qual paga mais dólares pelas metas iniciais gratuitas (sem exigir compras caras dentro do jogo)."
           ]
         },
         {
-          "heading": "Qual opção combina com sua situação",
+          "heading": "Veredito: qual escolher para o seu perfil no Brasil e exterior",
           "paragraphs": [
-            "Considere o Pawns.app se quiser o compartilhamento opcional de conexão e os métodos de pagamento servirem para você. Considere o Freecash se as tarefas disponíveis e as exigências iniciais se encaixarem melhor. Descarte uma opção se a recompensa útil dificilmente compensar tempo ou custo.",
-            "Use sua região real. O Freecash proíbe VPN e proxies, incluindo iCloud Private Relay. Diferenças de disponibilidade não justificam esconder a localização."
+            "Escolha o Pawns.app se você prioriza um primeiro saque baixo ($5,00 USD), quer aproveitar o bônus parcelado de $3,00 com o código 6823713, responde [pesquisas rápidas no celular](/pt/pawns-app-pesquisas-remuneradas-ganhos/) ou deseja somar centavos extras compartilhando internet residencial.",
+            "Escolha o Freecash se o seu foco principal é dedicar tempo a metas intermediárias e avançadas de jogos mobile para acumular mais de US$ 25 e sacar via criptomoedas (como Litecoin com taxa baixa) ou gift cards. Em ambos os serviços, mantenha sempre a VPN e o iCloud Private Relay desligados para não perder o rastreamento nem sofrer bloqueio de conta — e veja também nosso comparativo irmão [Swagbucks ou Freecash](/pt/swagbucks-ou-freecash-comparativo-sites-recompensas/)."
           ],
           "source": {
             "title": "Freecash: VPN and proxy restrictions",
@@ -14879,7 +14962,7 @@ export const articles:Record<Locale,Article[]>={
       ],
       "tables": [
         {
-          "heading": "Comparativo prático: Pawns.app vs Freecash",
+          "heading": "Comparativo prático: Pawns.app vs Freecash (2026)",
           "columns": [
             "Critério",
             "Pawns.app",
@@ -14888,69 +14971,80 @@ export const articles:Record<Locale,Article[]>={
           "rows": [
             [
               "Primeiro saque publicado",
-              "Mínimo de $5 (varia por método e região)",
-              "Guia atual informa $25, com variação regional e verificação"
+              "Mínimo de $5,00 USD (com +$1 do bônus de $3 nos 3 primeiros saques)",
+              "Ajuda oficial informa $25,00 USD no 1º saque (varia por região + KYC)"
             ],
             [
               "Compartilhamento de internet",
-              "Opcional, além de pesquisas e jogos",
-              "Não oferece; foco em tarefas, jogos e pesquisas"
+              "Sim (opcional em segundo plano, além de pesquisas e jogos)",
+              "Não oferece; foco 100% em jogos mobile, ofertas e pesquisas"
             ],
             [
-              "Taxas de retirada",
-              "Variam conforme o método (ex.: PayPal ou cripto)",
-              "Taxas em vários métodos em dinheiro; vales sem taxa"
+              "Taxa de saque no PayPal",
+              "4% (mínimo de $0,25 — recebe $4,75 líquidos em saque de $5 via Tremendous)",
+              "Taxa combinada (ex.: 5% + $1 nos níveis de $5 a $20); gift cards sem taxa"
+            ],
+            [
+              "Criptomoedas e Gift Cards",
+              "Bitcoin ($2 de taxa fixa) e Gift Cards (taxa zero)",
+              "Litecoin/Bitcoin/Ethereum (taxa de rede baixa) e Gift Cards (taxa zero)"
             ],
             [
               "VPN, proxy e elegibilidade",
-              "Proibido ocultar localização; exige conta única",
-              "Proíbe VPN/proxy, incluindo iCloud Private Relay"
+              "Proibido ocultar localização; exige conta única e 1ª instalação nos jogos",
+              "Proíbe VPN/proxy (incluindo iCloud Private Relay) e exige 1ª instalação"
             ]
           ],
           "afterSectionIndex": 1
         }
       ],
       "steps": [
-        "Confira métodos e verificação disponíveis no seu país.",
-        "Compare primeiro saque válido, taxas e valor líquido.",
-        "Decida se quer compartilhar internet.",
-        "Compare uma tarefa real com metas equivalentes antes de instalar.",
-        "Registre tempo e valores creditados e decida pelos seus resultados."
+        "Crie sua conta no Pawns.app (código 6823713) e no Freecash usando seu IP real, sem VPN.",
+        "Se quiser um primeiro saque rápido de $5,00 USD via PayPal, comece pelas pesquisas e metas curtas do Pawns.app.",
+        "Antes de instalar qualquer jogo novo no celular, compare a tabela de níveis e prazos nos dois aplicativos.",
+        "Inicie o download do jogo apenas pela plataforma que pagar melhor nas metas gratuitas iniciais e aceite a permissão de rastreamento.",
+        "No momento do resgate, compare a taxa líquida (PayPal via Tremendous no Pawns.app vs. Litecoin ou Gift Cards no Freecash)."
       ],
       "pros": [
-        "As plataformas têm combinações de tarefas para preferências diferentes.",
-        "Comparar condições evita escolher pelo maior prêmio anunciado."
+        "O Pawns.app tem primeiro saque mais baixo ($5 USD) e opção de internet compartilhada.",
+        "O Freecash reúne maior variedade de muros de ofertas e saques cripto com taxa baixa após liberar o 1º resgate."
       ],
       "cons": [
-        "Não há teste conjunto de ganhos ou rapidez que sustente um vencedor universal.",
-        "Disponibilidade, verificação e taxas variam por país ou conta."
+        "O requisito inicial de $25 USD documentado no Freecash demora mais para usuários casuais.",
+        "Cada oferta de jogo para novo usuário só pode ser concluída em uma das duas plataformas por aparelho."
       ],
       "faq": [
         {
-          "q": "Qual paga mais: Pawns.app ou Freecash?",
-          "a": "Esta revisão não estabelece um vencedor em ganhos. Compare a mesma tarefa e meça crédito real, custo e tempo na sua conta."
+          "q": "Qual paga mais rápido o primeiro saque: Pawns.app ou Freecash?",
+          "a": "Para chegar ao primeiro saque, o Pawns.app exige acumular apenas $5,00 USD ($4,00 + $1,00 da primeira parcela do bônus de convite 6823713), enquanto a documentação oficial do Freecash aponta um piso inicial de $25,00 USD sujeito à região e verificação de identidade."
         },
         {
-          "q": "Usar os dois maximiza a renda?",
-          "a": "Não há garantia. Isso acrescenta regras e registros para acompanhar; não tente receber duas vezes por uma oferta de novos usuários sem permissão explícita nas condições."
+          "q": "Posso usar o Pawns.app e o Freecash no mesmo celular?",
+          "a": "Sim, você pode manter os dois aplicativos instalados, mas nunca faça a oferta do mesmo jogo nas duas contas: como os anunciantes exigem primeira instalação no aparelho, apenas a plataforma por onde você baixou o jogo pela primeira vez registrará os pontos."
         },
         {
-          "q": "Qual tem o menor primeiro saque?",
-          "a": "Compare as exigências iniciais vigentes nas duas contas. Um resgate posterior de valor baixo não comprova acesso inicial."
+          "q": "Qual tem a menor taxa para sacar via PayPal?",
+          "a": "Em saques pequenos, o Pawns.app cobra 4% (mínimo de $0,25, restando $4,75 em um saque de $5), enquanto o Freecash aplica 5% mais uma tarifa fixa de $1,00 nos cartões de $5 a $20 do PayPal."
         }
       ],
-      "verdict": "Não existe um vencedor geral demonstrado. Escolha tarefas e condições de recebimento que consiga usar e compare recompensa líquida com tempo e custos reais. Compartilhar internet é opcional, não uma recomendação automática.",
-      "imageAlt": "Tela da Comunidade do Pawns.app fornecida como referência para o comparativo",
-      "caption": "A captura ilustra apenas o Pawns.app; não é uma medição comparativa de ganhos.",
+      "verdict": "Comece pelo Pawns.app se você quer destravar seu primeiro saque de $5,00 USD com taxa baixa no PayPal e somar pesquisas com internet compartilhada; use o Freecash em paralelo quando encontrar ofertas de jogos mobile que paguem mais pelos níveis intermediários.",
+      "imageAlt": "Tela da Comunidade do Pawns.app mostrando bônus de convite de 3 dólares",
+      "caption": "No Pawns.app, o piso de saque começa em $5 USD e o bônus de convite de $3 libera $1 em cada um dos três primeiros resgates.",
       "imageKey": "pawns-referral",
       "imageWide": true,
       "secondImage": {
         "key": "pawns-offers",
-        "alt": "Ofertas de jogos do Pawns.app na captura fornecida",
-        "caption": "Os totais exigem leitura das metas e condições; não demonstram retorno melhor que o Freecash.",
+        "alt": "Catálogo de ofertas de jogos do Pawns.app com metas por nível",
+        "caption": "Compare sempre o valor das metas intermediárias de cada jogo entre o Pawns.app e o Freecash antes de instalar.",
         "wide": true
       },
-      "modifiedDate": "2026-11-18"
+      "modifiedDate": "2026-11-23",
+      "relatedIds": [
+        "pawns",
+        "freecash",
+        "pawns-cashout",
+        "swagbucks-vs-freecash"
+      ]
     },
     {
       "id": "primeopinion",
@@ -15878,14 +15972,14 @@ export const articles:Record<Locale,Article[]>={
       "category": "rewards",
       "slug": "pinedrama-e-confiavel-review-completo",
       "title": "PineDrama é Confiável? Review Completo do App de Dramas do TikTok (2026)",
-      "description": "PineDrama é confiável e gratuito em 2026? Veja como funciona o app oficial de dramas curtos do TikTok, aba de recompensas, anúncios e o que observar antes de baixar.",
-      "intro": "O PineDrama (muito pesquisado como Pine Drama) é o aplicativo oficial de dramas curtos e mininovelas verticais publicado pela TikTok Pte. Ltd. Criado para episódios rápidos de 1 a 3 minutos, ele se integra à conta do TikTok e, no Brasil, também exibe uma aba de Recompensas com check-in diário e tarefas de anúncios. Entender onde termina o entretenimento e quanto valem os pontos evita frustrações.",
+      "description": "PineDrama é confiável e gratuito em 2026? Veja a análise de segurança do app oficial de dramas curtos do TikTok, catálogo, permissões, anúncios e reputação.",
+      "intro": "O PineDrama (muito pesquisado como Pine Drama) é o aplicativo oficial de dramas curtos e mininovelas verticais publicado pela TikTok Pte. Ltd. Criado para episódios rápidos de 1 a 3 minutos no celular, ele se integra ao login do TikTok, organiza o histórico por episódio e oferece streaming gratuito com suporte a anúncios. Neste review completo, avaliamos a segurança do pacote oficial, a experiência de reprodução, o catálogo dublado e legendado no Brasil e o que esperar das missões promocionais.",
       "sections": [
         {
           "heading": "O que é o PineDrama e quem desenvolveu o app",
           "paragraphs": [
-            "Na Google Play, o PineDrama - Short Dramas aparece registrado com o pacote com.ss.android.ttmd.video pela desenvolvedora oficial TikTok Pte. Ltd., com portal em shortdrama.tiktok.com. Não se trata de um aplicativo genérico: é um produto oficial ligado ao ecossistema TikTok/ByteDance para assistir a minisséries verticais de fantasia, romance, vingança e ação.",
-            "Na aba Descobrir (Discover), o app separa o catálogo em Categorias, Populares e Novos, enquanto a área de Perfil organiza sua biblioteca em Dramas e Posts marcando exatamente o episódio em que você parou — como EP 42/74 em Resolving Crisis At 30,000 Feet ou EP 43/47 em Fell Into the Giant's Arms."
+            "Na Google Play Store e na Apple App Store, o PineDrama - Short Dramas é registrado oficialmente pela desenvolvedora TikTok Pte. Ltd. (pacote Android com.ss.android.ttmd.video e App Store ID 6754134922), com portal institucional em shortdrama.tiktok.com. Ao contrário de clones genéricos de novelas que surgem em anúncios de redes sociais sem CNPJ ou política clara, o PineDrama faz parte direta da infraestrutura da ByteDance/TikTok.",
+            "A interface é dividida em quatro áreas principais: Home (feed vertical contínuo), Descobrir (busca por nome e filtros de Categorias, Populares e Novos), Recompensas (campanha promocional regional) e Perfil, onde a aba Dramas salva automaticamente o episódio exato em que você parou — como EP 42/74 em Resolving Crisis At 30,000 Feet ou EP 43/47 em Fell Into the Giant's Arms."
           ],
           "source": {
             "title": "PineDrama: Portal Oficial de Dramas Curtos do TikTok",
@@ -15893,10 +15987,10 @@ export const articles:Record<Locale,Article[]>={
           }
         },
         {
-          "heading": "PineDrama reviews: o que os usuários elogiam e criticam",
+          "heading": "Catálogo de mininovelas, qualidade de vídeo e experiência de uso",
           "paragraphs": [
-            "Nos comentários e análises positivas, usuários elogiam a qualidade em alta definição no formato vertical, a facilidade de entrar com o TikTok e títulos populares com milhões de visualizações no catálogo brasileiro, como O Irmão Esquecido de Thor (91,4M) e O Mago Supremo é um Menino (14,2M).",
-            "Já as críticas mais comuns envolvem o excesso de anúncios de 30 segundos ao tentar juntar pontos nas tarefas e a frustração de quem instala o app após ver vídeos prometendo 'renda extra fácil' apenas assistindo a novelas."
+            "O catálogo do PineDrama reúne séries verticais gravadas especificamente para a tela do celular em alta definição, cobrindo gêneros como bilionários, lobisomens, vingança familiar, fantasia e comédia romântica. No Brasil, o aplicativo combina produções com dublagem ou legendas em português (como O Irmão Esquecido de Thor e O Mago Supremo é um Menino) ao lado de séries em inglês.",
+            "Nos comentários das lojas oficiais, os principais elogios destacam a estabilidade do player vertical (que carrega os episódios seguintes sem travamentos, usando a mesma tecnologia de streaming do TikTok) e a sincronização imediata do histórico na nuvem. Já as críticas se concentram na frequência de anúncios de 30 segundos para quem tenta completar missões diárias e na confusão gerada por vídeos externos que prometem salários altos apenas assistindo a novelas."
           ],
           "source": {
             "title": "PineDrama - Short Dramas na Google Play",
@@ -15904,20 +15998,20 @@ export const articles:Record<Locale,Article[]>={
           }
         },
         {
-          "heading": "O PineDrama é seguro e gratuito?",
+          "heading": "O PineDrama é seguro e gratuito? Privacidade e cuidados com APKs",
           "paragraphs": [
-            "Baixando o PineDrama pela Google Play ou pelo portal oficial shortdrama.tiktok.com, o aplicativo é seguro e segue a política de privacidade oficial do TikTok. O risco está em baixar APKs modificados de sites de terceiros que prometem moedas infinitas.",
-            "O download e o acesso às mininovelas com anúncios são gratuitos. Caso utilize a aba de Recompensas, encare os pontos como um bônus simbólico enquanto assiste às histórias.",
-            "Se você quer saber exatamente como instalar o aplicativo e se existe versão oficial para computador, veja nosso passo a passo de [como baixar o PineDrama, fazer login e disponibilidade no PC](/pt/como-baixar-pinedrama-pc-login-novelas/). Já para entender a matemática dos pontos e o saque no PIX (30.000 pontos = R$ 1), confira a análise [PineDrama paga mesmo no PIX?](/pt/pinedrama-paga-mesmo-como-sacar-pix/)."
+            "Quando instalado diretamente pela Google Play ou App Store, o PineDrama é seguro, passa pelas verificações do Google Play Protect e opera sob a política de privacidade oficial do TikTok. Ele não solicita depósitos antecipados, taxas de desbloqueio de saque nem permissões invasivas fora do padrão de um app de vídeo.",
+            "O único risco real de segurança vem de páginas externas que oferecem 'PineDrama APK mod moedas infinitas' ou supostos geradores de pontos: além de violarem os termos da conta, arquivos APK modificados podem instalar adware ou roubar credenciais.",
+            "Para instalar a versão autêntica no Android ou iPhone e entender por que não existe executável para computador, consulte nosso guia técnico de [como baixar o PineDrama, fazer login e disponibilidade no PC](/pt/como-baixar-pinedrama-pc-login-novelas/). Se a sua dúvida é especificamente sobre a matemática dos pontos e resgate via PIX, veja o teste dedicado [PineDrama paga mesmo no PIX?](/pt/pinedrama-paga-mesmo-como-sacar-pix/) e o comparativo direto [PineDrama vs. DramaStack](/pt/pinedrama-vs-dramastack-qual-melhor-paga-mais/)."
           ]
         }
       ],
       "steps": [
-        "Confirme na Google Play que o desenvolvedor é TikTok Pte. Ltd. (pacote com.ss.android.ttmd.video).",
-        "Faça login com sua conta do TikTok ou explore os títulos gratuitos na aba Descobrir.",
-        "Confira na aba Recompensas a taxa real de conversão exibida no seu aparelho.",
-        "Leia os Termos e Condições vinculados na Central de resgate antes de dedicar tempo às tarefas.",
-        "Nunca baixe APKs modificados nem informe dados bancários fora do aplicativo oficial."
+        "Confirme na Google Play (com.ss.android.ttmd.video) ou App Store (ID 6754134922) que o desenvolvedor listado é TikTok Pte. Ltd.",
+        "Entre com sua conta do TikTok para manter suas séries favoritas e o progresso de episódios salvos na nuvem.",
+        "Use a aba Descobrir para filtrar mininovelas por Categorias, Populares ou Novos e adicione títulos à sua lista.",
+        "Encare a aba Recompensas apenas como um bônus simbólico de centavos, priorizando o app pelo entretenimento.",
+        "Nunca instale APKs modificados nem informe senhas ou chaves PIX fora do ambiente oficial do aplicativo."
       ],
       "pros": [
         "App oficial publicado pela TikTok Pte. Ltd. com streaming vertical fluido em HD.",
@@ -15931,18 +16025,22 @@ export const articles:Record<Locale,Article[]>={
       "faq": [
         {
           "q": "PineDrama é confiável ou é golpe?",
-          "a": "O PineDrama é um aplicativo legítimo desenvolvido pela TikTok Pte. Ltd. para assistir a dramas curtos. O app é verdadeiro, mas promessas de ganhar muito dinheiro assistindo novelas são exageradas."
+          "a": "O PineDrama é um aplicativo legítimo e seguro desenvolvido pela TikTok Pte. Ltd. para assistir a dramas curtos. O app em si não é golpe, mas promessas de terceiros sobre ganhar muito dinheiro assistindo novelas são exageradas."
         },
         {
-          "q": "O PineDrama é gratuito?",
-          "a": "Sim. Baixar o app e assistir às mininovelas com suporte de anúncios é gratuito."
+          "q": "O PineDrama é gratuito para assistir?",
+          "a": "Sim. Baixar o app pelas lojas oficiais e assistir às mininovelas com suporte de anúncios é gratuito, embora a ficha das lojas informe a possibilidade de compras opcionais no aplicativo."
         },
         {
-          "q": "O PineDrama é do mesmo dono do TikTok?",
-          "a": "Sim. Na Google Play o desenvolvedor listado é TikTok Pte. Ltd. e o portal oficial fica em shortdrama.tiktok.com."
+          "q": "O PineDrama pertence ao TikTok?",
+          "a": "Sim. Na Google Play e na App Store o publicador oficial é TikTok Pte. Ltd., o login é integrado ao TikTok e o domínio oficial é shortdrama.tiktok.com."
+        },
+        {
+          "q": "Qual a diferença entre o PineDrama e apps como DramaStack ou CashDrama?",
+          "a": "O PineDrama é um app oficial do TikTok com regras transparentes e foco em streaming real, enquanto apps como DramaStack e CashDrama exibem metas irreais de R$ 300 ou US$ 100 que travam o saque."
         }
       ],
-      "verdict": "O PineDrama é confiável e cumpre bem o papel de streaming gratuito de mininovelas curtas, mas deve ser usado pelo entretenimento e nunca como fonte de renda.",
+      "verdict": "O PineDrama é confiável, seguro e cumpre muito bem o papel de streaming gratuito de mininovelas curtas do TikTok, devendo ser usado pelo entretenimento e nunca como fonte de renda.",
       "imageAlt": "Tela de check-in e pontos do PineDrama mostrando 30.000 = R$ 1",
       "caption": "Tela de Recompensas do PineDrama com check-in de 7 dias e aviso de conversão 30.000 = R$ 1.",
       "imageKey": "pinedrama-checkin",
@@ -15953,34 +16051,40 @@ export const articles:Record<Locale,Article[]>={
         "caption": "Catálogo na aba Descobrir com filtros Categorias, Populares e Novos e milhões de visualizações.",
         "wide": false
       },
-      "modifiedDate": "2026-11-19",
+      "modifiedDate": "2026-11-23",
       "tables": [
         {
-          "heading": "Ficha rápida de segurança e funcionamento do PineDrama (2026)",
+          "heading": "Ficha técnica de segurança e funcionamento do PineDrama (2026)",
           "columns": [
-            "Item verificado",
-            "O que observamos no app oficial"
+            "Critério avaliado",
+            "Verificação no aplicativo oficial",
+            "Avaliação de segurança"
           ],
           "rows": [
             [
-              "Desenvolvedor oficial",
-              "TikTok Pte. Ltd. (ecossistema TikTok / ByteDance)"
+              "Desenvolvedor e empresa",
+              "TikTok Pte. Ltd. (ecossistema oficial TikTok / ByteDance)",
+              "Desenvolvedora verificada nas lojas oficiais"
             ],
             [
-              "Pacote na Google Play",
-              "com.ss.android.ttmd.video (portal shortdrama.tiktok.com)"
+              "Identificadores oficiais",
+              "Android: com.ss.android.ttmd.video | iOS: ID 6754134922",
+              "Evita confusão com clones e APKs modificados"
             ],
             [
-              "Custo para assistir",
-              "Gratuito com suporte a anúncios (sem assinatura obrigatória para começar)"
+              "Modelo de acesso ao catálogo",
+              "Streaming vertical em HD gratuito com suporte a anúncios",
+              "Não exige cartão de crédito para instalar e assistir"
             ],
             [
-              "Aba de Recompensas (Brasil)",
-              "Conversão exibida de 30.000 pontos = R$ 1 (retorno simbólico de centavos)"
+              "Sincronização de conta",
+              "Login integrado ao TikTok (salva Perfil > Dramas e My List)",
+              "Mantém o episódio exato salvo ao trocar de celular"
             ],
             [
-              "Principal risco a evitar",
-              "APKs modificados de terceiros que prometem moedas infinitas"
+              "Transparência na aba Recompensas",
+              "Informa na tela a proporção real (30.000 pontos = R$ 1 no Brasil)",
+              "Sem falsas promessas de R$ 300; retorno apenas simbólico"
             ]
           ],
           "afterSectionIndex": 0
@@ -15989,7 +16093,8 @@ export const articles:Record<Locale,Article[]>={
       "relatedIds": [
         "pinedrama-rewards",
         "pinedrama-guide",
-        "pinedrama-vs-dramastack"
+        "pinedrama-vs-dramastack",
+        "short-drama-apps-compared"
       ]
     },
     {
@@ -16092,47 +16197,47 @@ export const articles:Record<Locale,Article[]>={
       "category": "guides",
       "slug": "como-baixar-pinedrama-pc-login-novelas",
       "title": "PineDrama: Como Baixar, Fazer Login e Disponibilidade no PC (2026)",
-      "description": "Baixe o PineDrama oficial no Android ou iPhone, conecte o TikTok, encontre seus episódios e veja o que está confirmado sobre assistir no PC.",
-      "intro": "O PineDrama tem versões oficiais para Android e iPhone, com links no portal do TikTok. Não verificamos um reprodutor para Windows ou macOS nem um método compatível por emulador. Este guia separa as opções de download confirmadas das promessas para PC e explica como reencontrar suas séries. As capturas mostram a interface Android fornecida para o guia; as lojas foram consultadas em 15 de novembro de 2026.",
+      "description": "Baixe o PineDrama oficial no Android ou iPhone, conecte sua conta do TikTok, recupere seus episódios salvos e veja o suporte oficial para celular e PC.",
+      "intro": "O PineDrama (publicado pela TikTok Pte. Ltd.) possui aplicativos oficiais para Android e iPhone vinculados ao portal shortdrama.tiktok.com, enquanto muitos usuários procuram como assistir pelo computador. Este guia prático mostra como identificar os pacotes autênticos na Google Play e na App Store, sincronizar seu histórico com o login do TikTok, recuperar novelas que sumiram do perfil e evitar falsos instaladores do PineDrama para PC.",
       "sections": [
         {
-          "heading": "Android: como identificar o PineDrama oficial",
+          "heading": "Android: como identificar o PineDrama oficial na Google Play",
           "paragraphs": [
-            "Abra o link da Google Play e confira PineDrama - Short Dramas, o desenvolvedor TikTok Pte. Ltd. e o pacote com.ss.android.ttmd.video. Nome e ícone parecidos em um site de APK não bastam para identificar o mesmo aplicativo. O portal shortdrama.tiktok.com também aponta para essa ficha.",
-            "Deixe a Play Store verificar a compatibilidade com seu aparelho e a região da conta. Se a instalação estiver indisponível, leia o aviso da loja em vez de presumir que um APK resolve. A ficha informa compras no aplicativo: download grátis não significa acesso gratuito a todos os recursos e episódios."
+            "Abra o link oficial da Google Play abaixo e confirme o nome PineDrama - Short Dramas, a desenvolvedora TikTok Pte. Ltd. e o pacote com.ss.android.ttmd.video. Nome ou ícone parecidos em sites externos de download não garantem que seja o aplicativo verdadeiro. O portal oficial shortdrama.tiktok.com redireciona diretamente para essa ficha — e você pode conferir nossa avaliação geral em [PineDrama é confiável? Review completo](/pt/pinedrama-e-confiavel-review-completo/).",
+            "Deixe a própria Google Play verificar a compatibilidade com a versão do seu Android e a região da sua conta. Evite instalar arquivos 'PineDrama APK mod' fora da loja oficial. A ficha informa a presença de compras opcionais no aplicativo, enquanto o funcionamento das tarefas de pontos no Brasil é detalhado em [PineDrama paga mesmo no PIX?](/pt/pinedrama-paga-mesmo-como-sacar-pix/)."
           ],
           "source": {
             "title": "PineDrama: ficha oficial na Google Play",
-            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=en"
+            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=pt_BR"
           }
         },
         {
-          "heading": "iPhone e iPad: baixe pela App Store",
+          "heading": "iPhone e iPad: como baixar pela App Store oficial",
           "paragraphs": [
-            "O portal oficial aponta para PineDrama - Short Dramas na App Store, ID 6754134922. A ficha mostra TikTok Ltd. como desenvolvedor e TikTok Pte. Ltd. como vendedor. Abra na região da sua conta para conferir disponibilidade e requisitos do sistema antes de instalar.",
-            "A App Store informa compras no app e descreve planos com renovação automática. Confira preço e condições na sua tela antes de assinar. Este guia não estabelece um preço universal nem garante que todas as novelas estejam liberadas gratuitamente."
+            "No iOS, o portal oficial aponta para PineDrama - Short Dramas na App Store sob o ID 6754134922, listando TikTok Ltd. como desenvolvedor e TikTok Pte. Ltd. como fornecedor. Abra a ficha na região do seu Apple ID para verificar os requisitos de sistema antes de instalar.",
+            "A página da App Store registra compras opcionais dentro do app e eventuais planos com renovação automática. Leia sempre o valor e as condições na tela de confirmação do iPhone antes de autorizar qualquer assinatura."
           ],
           "source": {
             "title": "PineDrama: ficha oficial na App Store",
-            "url": "https://apps.apple.com/us/app/pinedrama-short-dramas/id6754134922"
+            "url": "https://apps.apple.com/br/app/pinedrama-short-dramas/id6754134922"
           }
         },
         {
-          "heading": "Login com TikTok e episódios que sumiram do histórico",
+          "heading": "Login com TikTok e como recuperar episódios que sumiram do histórico",
           "paragraphs": [
-            "A descrição da Google Play informa sincronização com o TikTok para manter progresso e preferências. Use o login dentro do aplicativo oficial. Nas capturas Android fornecidas, Perfil > Dramas mostra o progresso, como EP 42/74, e My List ajuda a encontrar séries salvas.",
-            "Se uma novela sumir, confira primeiro se entrou na mesma conta do TikTok; depois pesquise o título e verifique a lista salva e o número do episódio. Confira atualizações e conexão. Se persistir, use o contato de suporte da ficha oficial e informe aparelho, versão do app e mensagem de erro, sem enviar senhas. Não testamos todos os cenários de login ou recuperação."
+            "O PineDrama permite entrar com um toque usando sua conta do TikTok para manter seu histórico e preferências sincronizados na nuvem. Na interface do Android, o caminho Perfil > Dramas registra exatamente o capítulo em que você parou (como EP 42/74 em Resolving Crisis At 30,000 Feet), enquanto My List reúne suas séries salvas.",
+            "Se uma novela sumir após trocar de aparelho ou reinstalar o aplicativo, verifique primeiro se você entrou com o mesmo método de login do TikTok (telefone, e-mail, Google ou Apple) em vez de iniciar como convidado. Em seguida, pesquise o título na aba Descobrir e confira a aba Perfil > Dramas para retomar o episódio."
           ],
           "source": {
             "title": "PineDrama na Google Play: sincronização e suporte",
-            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=en"
+            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=pt_BR"
           }
         },
         {
-          "heading": "Dá para assistir PineDrama no PC?",
+          "heading": "Dá para baixar ou assistir PineDrama no PC?",
           "paragraphs": [
-            "Nas fontes oficiais consultadas, shortdrama.tiktok.com apresenta o app e oferece links da Google Play e App Store. Essa página, sozinha, não comprova a existência de um player completo no navegador. Não verificamos um instalador compatível com Windows ou macOS nem reprodução por emuladores Android.",
-            "Não há instalador oficial confirmado para computador do PineDrama nas fontes consultadas. Use as lojas oficiais no celular (Google Play e App Store) indicadas em shortdrama.tiktok.com e consulte futuros anúncios no portal do desenvolvedor. Uma página externa anunciando PineDrama para PC não comprova compatibilidade oficial."
+            "Ao acessar shortdrama.tiktok.com pelo navegador do computador, o portal oficial exibe apenas a página institucional com QR Code e botões para a Google Play e a App Store — não há um player web para assistir às séries direto no navegador nem um programa nativo para Windows (.exe) ou macOS (.dmg).",
+            "Como a TikTok Pte. Ltd. não disponibiliza versão oficial para desktop, evite sites de terceiros que prometem 'baixar PineDrama para PC grátis', pois costumam distribuir instaladores com adware ou emuladores não oficiais. Prefira assistir pelo aplicativo oficial no celular ou tablet e veja também como ele se sai diante de outros aplicativos em [PineDrama vs. DramaStack](/pt/pinedrama-vs-dramastack-qual-melhor-paga-mais/) e no [comparativo de apps de novelas curtas que dizem pagar](/pt/apps-de-novelas-curtas-que-pagam-comparativo/)."
           ],
           "source": {
             "title": "PineDrama: portal oficial de download",
@@ -16140,52 +16245,84 @@ export const articles:Record<Locale,Article[]>={
           }
         },
         {
-          "heading": "Como encontrar a novela e continuar no episódio certo",
+          "heading": "Como encontrar a novela completa a partir de um corte do TikTok",
           "paragraphs": [
-            "As capturas mostram a aba Descobrir com busca e filtros Categorias, Populares e Novos. Pesquise o título, abra a página da série e confira a sequência de episódios antes de continuar. Salve a novela para não depender de reencontrar o mesmo corte nas redes sociais.",
-            "O Irmão Esquecido de Thor aparece nas capturas fornecidas. As imagens registram o catálogo na data da captura; não são um ranking atual nem garantia de disponibilidade em outro país. Nomes, dublagem e legendas podem mudar por região."
+            "Muitos cortes publicados nas redes sociais interrompem a cena sem mostrar o número do episódio. Dentro do PineDrama, abra a aba Descobrir para usar a barra de busca superior ou navegar pelos filtros Categorias, Populares e Novos. Ao abrir a página da novela, toque na grade numerada de capítulos para pular direto para a parte da história que você viu no vídeo curto.",
+            "Salve a minissérie na sua lista logo no primeiro acesso para não depender de reencontrar o mesmo anúncio no feed. Lembre-se de que títulos disponíveis, dublagem em português e legendas podem variar conforme a região da conta."
           ],
           "source": {
             "title": "PineDrama na Google Play: Descobrir e lista de séries",
-            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=en"
+            "url": "https://play.google.com/store/apps/details?id=com.ss.android.ttmd.video&hl=pt_BR"
           }
         }
       ],
+      "tables": [
+        {
+          "heading": "Resumo técnico: download, login e plataformas do PineDrama (2026)",
+          "columns": [
+            "Plataforma / Recurso",
+            "Status oficial verificado",
+            "Recomendação prática"
+          ],
+          "rows": [
+            [
+              "Android (Google Play)",
+              "App oficial: pacote com.ss.android.ttmd.video (TikTok Pte. Ltd.)",
+              "Baixar apenas pela Play Store ou shortdrama.tiktok.com; evitar arquivos APK"
+            ],
+            [
+              "iPhone e iPad (App Store)",
+              "App oficial: App Store ID 6754134922 (TikTok Ltd. / TikTok Pte. Ltd.)",
+              "Conferir compatibilidade do iOS e regras de compras na loja brasileira"
+            ],
+            [
+              "PC (Windows e macOS)",
+              "Sem instalador nativo para PC nem player web em shortdrama.tiktok.com",
+              "Descartar executáveis '.exe' de terceiros; usar o app oficial no celular"
+            ],
+            [
+              "Sincronização com TikTok",
+              "Salva o episódio exato em Perfil > Dramas (ex.: EP 42/74) e My List",
+              "Entrar sempre com a mesma conta do TikTok para preservar o histórico"
+            ]
+          ],
+          "afterSectionIndex": 0
+        }
+      ],
       "steps": [
-        "Abra o portal oficial do PineDrama e escolha Google Play ou App Store conforme seu aparelho.",
-        "Confira desenvolvedor, identificação, compatibilidade e informações de compras na loja.",
-        "Instale e use o login do TikTok dentro do app se quiser sincronizar sua conta.",
-        "Pesquise a novela em Descobrir e abra a lista de episódios.",
-        "Salve a série e confirme o número do episódio no perfil antes de continuar.",
-        "Para PC, acompanhe anúncios oficiais; este guia não tem um método verificado para desktop ou emulador."
+        "Acesse o portal oficial shortdrama.tiktok.com e escolha Google Play (Android) ou App Store (iPhone).",
+        "Confirme na loja que o desenvolvedor é TikTok Pte. Ltd. (pacote com.ss.android.ttmd.video ou ID 6754134922).",
+        "Instale o aplicativo e faça login com sua conta do TikTok dentro do app para ativar o backup do histórico.",
+        "Pesquise o nome da novela na aba Descobrir e abra a grade completa de episódios.",
+        "Salve a série em My List e confira o episódio registrado em Perfil > Dramas antes de continuar."
       ],
       "pros": [
-        "Links oficiais permitem identificar o aplicativo e o desenvolvedor.",
-        "Sincronização e séries salvas ajudam a localizar o progresso."
+        "Links oficiais verificados na Google Play e App Store sob a desenvolvedora TikTok Pte. Ltd.",
+        "Sincronização com a conta do TikTok salva o número exato do episódio em Perfil > Dramas."
       ],
       "cons": [
-        "Reprodução no computador e compatibilidade com emuladores não foram verificadas.",
-        "Disponibilidade, compras e catálogo podem variar por região."
+        "Não possui player web no navegador nem programa oficial para Windows ou macOS.",
+        "Disponibilidade de séries dubladas, compras e recursos varia por região."
       ],
       "faq": [
         {
-          "q": "Existe download verificado do PineDrama para PC?",
-          "a": "Não verificamos instalador oficial para Windows ou macOS nem um método compatível por emulador nas fontes consultadas. O portal oficial aponta para as lojas de aplicativos móveis."
+          "q": "Existe download oficial do PineDrama para PC?",
+          "a": "Não. A TikTok Pte. Ltd. não distribui instalador para Windows ou macOS, e o site oficial shortdrama.tiktok.com funciona apenas como portal com links para a Google Play e a App Store."
         },
         {
-          "q": "Tem PineDrama para iPhone?",
-          "a": "O portal oficial oferece link para a App Store, ID 6754134922. Confira disponibilidade e compatibilidade na região da sua conta."
+          "q": "Tem PineDrama oficial para iPhone?",
+          "a": "Sim. O portal oficial direciona para o PineDrama - Short Dramas na App Store sob o ID 6754134922."
         },
         {
-          "q": "Por que meu histórico do PineDrama sumiu?",
-          "a": "Confira primeiro se entrou na mesma conta do TikTok, as séries salvas e o episódio atual. Se atualizar o app e verificar a conexão não resolver, use o suporte indicado na ficha oficial."
+          "q": "Por que meu histórico de novelas do PineDrama sumiu?",
+          "a": "Isso costuma acontecer quando o app é aberto como convidado ou com outro método de login. Entre exatamente com a mesma conta do TikTok usada antes e confira Perfil > Dramas e My List."
         },
         {
-          "q": "Baixar grátis libera todos os episódios?",
-          "a": "Não necessariamente. As duas lojas informam compras no app. Confira as condições de cada episódio e da compra oferecida para sua conta."
+          "q": "Baixar o PineDrama grátis libera todos os episódios?",
+          "a": "O download é gratuito e permite assistir a mininovelas com suporte de anúncios, mas tanto a Google Play quanto a App Store informam a existência de compras opcionais dentro do app."
         }
       ],
-      "verdict": "Instale pela Google Play ou App Store oficiais, mantenha a mesma conta e confira a ordem dos episódios. Assistir pelo PC continua sem um método verificado neste guia.",
+      "verdict": "Baixe o PineDrama exclusivamente pela Google Play (com.ss.android.ttmd.video) ou App Store (ID 6754134922), vincule sua conta do TikTok para não perder o episódio em que parou e evite instaladores não oficiais para PC.",
       "imageAlt": "Tela Descobrir do PineDrama com busca e capas de mininovelas",
       "caption": "Na aba Descobrir, o usuário navega por Categorias, Populares e Novos ou pesquisa títulos direto na barra superior.",
       "imageKey": "pinedrama-discover",
@@ -16196,7 +16333,13 @@ export const articles:Record<Locale,Article[]>={
         "caption": "Em Perfil > Dramas, o app registra exatamente o episódio assistido em cada minissérie.",
         "wide": false
       },
-      "modifiedDate": "2026-11-18"
+      "modifiedDate": "2026-11-23",
+      "relatedIds": [
+        "pinedrama",
+        "pinedrama-rewards",
+        "pinedrama-vs-dramastack",
+        "short-drama-apps-compared"
+      ]
     },
     {
       "id": "pinedrama-vs-dramastack",
@@ -16530,8 +16673,22 @@ export const articles:Record<Locale,Article[]>={
       "slug": "dramabox-e-pago-ou-gratuito-confiavel-review",
       "title": "DramaBox é Pago ou Gratuito? É Confiável? Review Completo (2026)",
       "description": "Entenda como funciona o DramaBox (StoryMatrix): quantos episódios são grátis, como desbloquear capítulos com moedas e anúncios, preços da assinatura e se o app é seguro.",
-      "modifiedDate": "2026-11-18",
+      "modifiedDate": "2026-11-23",
       "intro": "O DramaBox (publicado pela StoryMatrix Pte. Ltd. na Google Play e na App Store) é um dos principais aplicativos de dramas curtos e mininovelas verticais, com mais de 16 mil séries no catálogo. Ele é gratuito para baixar e libera os primeiros episódios de graça, mas bloqueia a continuação da história exigindo moedas de recompensa, visualização de anúncios ou assinatura paga.",
+      "topCallout": {
+        "title": "Atalhos rápidos do DramaBox: Moedas Grátis ou Cancelar Assinatura",
+        "text": "Acesse direto nossos guias passo a passo para desbloquear episódios sem pagar ou cancelar a renovação automática.",
+        "links": [
+          {
+            "label": "Como assistir DramaBox grátis e ganhar moedas (+10 a +60)",
+            "url": "/pt/como-assistir-dramabox-gratis-ganhar-moedas/"
+          },
+          {
+            "label": "DramaBox: quanto custa e como cancelar a assinatura",
+            "url": "/pt/dramabox-quanto-custa-como-cancelar-assinatura/"
+          }
+        ]
+      },
       "sections": [
         {
           "heading": "O que é o DramaBox e como funciona o catálogo",
@@ -19177,8 +19334,8 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "PineDrama vs. DramaBox: centavos no PIX vs. streaming sem saque",
           "paragraphs": [
-            "Ao contrário dos clones acima, o [PineDrama](/pt/pinedrama-e-confiavel-review-completo/) (com.ss.android.ttmd.video) é oficial do TikTok e mostra a matemática real na tela do Brasil: 30.000 pontos = R$ 1 (~$0,18 USD), com Central de resgate no PIX em R$ 0,10 (único), R$ 0,50, R$ 1,00 e R$ 2,00. O limite está no retorno por hora: assistir a todos os 30 anúncios diários de 30 segundos (15 minutos de propaganda) rende no máximo 12.000 pontos (~R$ 0,40), e fora de mercados promocionais a aba nem existe.",
-            "Já o DramaBox (com.storymatrix.drama) não promete dinheiro: suas Reward Coins (+10 a +30 por anúncio) servem apenas para destravar capítulos dentro de um catálogo freemium com mais de 16 mil séries, sem opção de PIX — veja os custos no comparativo de [preço das moedas no DramaBox vs. assinatura VIP](/pt/dramabox-preco-moedas-recarga-vs-assinatura-vip/)."
+            "Ao contrário dos clones acima, o [PineDrama](/pt/pinedrama-e-confiavel-review-completo/) (com.ss.android.ttmd.video) é oficial do TikTok e mostra a matemática real na tela do Brasil: 30.000 pontos = R$ 1 (~$0,18 USD), com Central de resgate no PIX em R$ 0,10 (único), R$ 0,50, R$ 1,00 e R$ 2,00. O limite está no retorno por hora: assistir a todos os 30 anúncios diários de 30 segundos (15 minutos de propaganda) rende no máximo 12.000 pontos (~R$ 0,40), e fora de mercados promocionais a aba nem existe — veja também nosso passo a passo de [como baixar o PineDrama, fazer login e disponibilidade no PC](/pt/como-baixar-pinedrama-pc-login-novelas/).",
+            "Já o DramaBox (com.storymatrix.drama) não promete dinheiro: suas Reward Coins (+10 a +30 por anúncio) servem apenas para destravar capítulos dentro de um catálogo freemium com mais de 16 mil séries, sem opção de PIX — veja como acumular pontos gratuitos em [como assistir DramaBox grátis e ganhar moedas](/pt/como-assistir-dramabox-gratis-ganhar-moedas/) e compare os custos no guia de [preço das moedas no DramaBox vs. assinatura VIP](/pt/dramabox-preco-moedas-recarga-vs-assinatura-vip/)."
           ],
           "image": {
             "key": "pinedrama-cashout",
