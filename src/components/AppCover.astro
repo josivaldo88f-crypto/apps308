@@ -49,6 +49,8 @@ const names=
   variant==='tiktoklite-convite'?['tiktoklite-convite','tiktoklite-tarefas']:
   variant==='tiktoklite-baixar'?['tiktoklite-tarefas','tiktoklite-convite']:
   app==='tiktoklite'?['tiktoklite-saque','tiktoklite-tarefas']:
+  variant==='arrow-win-invite'?['arrow-win-id-de-indicacao','arrow-win-botao-indicador']:
+  variant==='arrow-win-download'?['arrow-win-abertura','arrow-win-tela-inicial']:
   app==='cashfortunedrama'?['cashfortunedrama-withdraw','cashfortunedrama-popup']:
   variant==='microsoft-catalog'?['microsoft']:
   app==='dramastack'?['dramastack-payout','dramastack']:[app];
@@ -118,7 +120,9 @@ const tag:Record<Locale,Record<string,string>>={
     'attapoll-convite':'Code cgfky · How to use',
     tiktoklite:'Rewards · Points · Cashout',
     'tiktoklite-convite':'Code DL70959891 · How to enter',
-    'tiktoklite-baixar':'Official download · Android & iOS'
+    'tiktoklite-baixar':'Official download · Android & iOS',
+    'arrow-win-invite':'Referral ID · In-game steps',
+    'arrow-win-download':'Google Play · First launch'
   },
   es:{
     lens:'Busca · Copia · Traduce',
@@ -173,7 +177,9 @@ const tag:Record<Locale,Record<string,string>>={
     'attapoll-convite':'Código cgfky · Cómo usar',
     tiktoklite:'Recompensas · Puntos · Retiro',
     'tiktoklite-convite':'Código DL70959891 · Cómo usar',
-    'tiktoklite-baixar':'Descarga oficial · Android e iOS'
+    'tiktoklite-baixar':'Descarga oficial · Android e iOS',
+    'arrow-win-invite':'Código de invitación · Pasos en el juego',
+    'arrow-win-download':'Google Play · Primer inicio'
   },
   pt:{
     lens:'Busque · Copie · Traduza',
@@ -228,14 +234,16 @@ const tag:Record<Locale,Record<string,string>>={
     'attapoll-convite':'Código cgfky · Como usar',
     tiktoklite:'Recompensas · Pontos · Saque',
     'tiktoklite-convite':'Código DL70959891 · Como colocar',
-    'tiktoklite-baixar':'Baixar oficial · Android e iOS'
+    'tiktoklite-baixar':'Baixar oficial · Android e iOS',
+    'arrow-win-invite':'ID de indicação · Passo a passo',
+    'arrow-win-download':'Google Play · Primeira abertura'
   }
 };
 ---
 <div class:list={['app-cover',`cover-${app}`,`variant-${variant}`,{large}]}>
   <div class="cover-copy">
     <div class:list={['cover-mark',`mark-${app}`]} aria-hidden="true">
-      {app==='microsoft'?<><i></i><i></i><i></i><i></i></>:app==='lens'?<svg viewBox="0 0 64 64"><path d="M8 24V16a8 8 0 0 1 8-8h8" stroke="#ea4335"/><path d="M40 8h8a8 8 0 0 1 8 8v8" stroke="#4285f4"/><path d="M8 40v8a8 8 0 0 0 8 8h8" stroke="#fbbc04"/><circle cx="32" cy="32" r="11" stroke="#4285f4"/><circle cx="51" cy="51" r="7" fill="#34a853" stroke="none"/></svg>:app==='opinion'?<svg viewBox="0 0 64 64"><path d="M17 12h30v24L32 52 17 36Z" fill="#4285f4"/><path d="M23 32l6 6 13-15" fill="none" stroke="white" stroke-width="5"/></svg>:app==='freecash'?<span>F<span>✦</span></span>:app==='dramastack'?<span class="drama-logo">D<span>▶</span></span>:app==='dramabox'?<span class="dramabox-logo">DB<span>▶</span></span>:app==='dramagood'?<span class="dramagood-logo">DG<span>▶</span></span>:app==='cashdrama'?<span class="cashdrama-logo">CD<span>$</span></span>:app==='cashfortunedrama'?<span class="cfd-logo">CF<span>$</span></span>:app==='pinedrama'?<span class="pine-logo">P<span>▶</span></span>:app==='swagbucks'?<span class="sb-logo">SB<span>◈</span></span>:app==='pawns'?<span class="pawns-logo">P<span>♟</span></span>:app==='primeopinion'?<span class="po-logo">PO<span>★</span></span>:app==='attapoll'?<span class="attapoll-logo">A<span>$</span></span>:app==='tiktoklite'?<span class="tiktoklite-logo">TT<span>⚡</span></span>:<span>↗</span>}
+      {app==='microsoft'?<><i></i><i></i><i></i><i></i></>:app==='lens'?<svg viewBox="0 0 64 64"><path d="M8 24V16a8 8 0 0 1 8-8h8" stroke="#ea4335"/><path d="M40 8h8a8 8 0 0 1 8 8v8" stroke="#4285f4"/><path d="M8 40v8a8 8 0 0 0 8 8h8" stroke="#fbbc04"/><circle cx="32" cy="32" r="11" stroke="#4285f4"/><circle cx="51" cy="51" r="7" fill="#34a853" stroke="none"/></svg>:app==='opinion'?<svg viewBox="0 0 64 64"><path d="M17 12h30v24L32 52 17 36Z" fill="#4285f4"/><path d="M23 32l6 6 13-15" fill="none" stroke="white" stroke-width="5"/></svg>:app==='freecash'?<span>F<span>✦</span></span>:app==='dramastack'?<span class="drama-logo">D<span>▶</span></span>:app==='dramabox'?<span class="dramabox-logo">DB<span>▶</span></span>:app==='dramagood'?<span class="dramagood-logo">DG<span>▶</span></span>:app==='cashdrama'?<span class="cashdrama-logo">CD<span>$</span></span>:app==='cashfortunedrama'?<span class="cfd-logo">CF<span>$</span></span>:app==='pinedrama'?<span class="pine-logo">P<span>▶</span></span>:app==='swagbucks'?<span class="sb-logo">SB<span>◈</span></span>:app==='pawns'?<span class="pawns-logo">P<span>♟</span></span>:app==='primeopinion'?<span class="po-logo">PO<span>★</span></span>:app==='attapoll'?<span class="attapoll-logo">A<span>$</span></span>:app==='tiktoklite'?<span class="tiktoklite-logo">TT<span>⚡</span></span>:app==='arrowwin'?<span>➜</span>:<span>↗</span>}
     </div>
     <strong>{label}</strong><span class="cover-tagline">{tag[locale][variant]||tag[locale][app]}</span>
     <span class="cover-credit">apps308<span>✳</span></span>

@@ -1,9 +1,145 @@
 import type { Locale } from './i18n';
-export interface ArticleCallout { title:string;text?:string;links:{label:string;url:string;sponsored?:boolean}[]; }
+import affiliateData from './affiliates.json';
+
+const arrowWinStore = 'https://play.google.com/store/apps/details?id=com.qrgame.arrowwin';
+const arrowWinInvite = affiliateData.programs.arrowwin;
+
+export interface ArticleCallout { title:string;text?:string;copyCode?:string;links:{label:string;url:string;sponsored?:boolean}[]; }
 export interface ArticleImage { key:string;alt:string;caption:string;wide?:boolean; }
-export interface Article { id:string;app:string;category:string;slug:string;title:string;description:string;intro:string;modifiedDate?:string;topCallout?:ArticleCallout;sections:{heading:string;callout?:ArticleCallout;paragraphs:string[];image?:ArticleImage;source?:{title:string;url:string};sources?:{title:string;url:string}[];cta?:{label:string;url:string;sponsored?:boolean}}[];steps:string[];stepsSectionIndex?:number;tables?:{heading:string;columns:string[];rows:string[][];afterSectionIndex:number}[];pros:string[];cons:string[];faq:{q:string;a:string}[];verdict:string;imageAlt:string;caption:string;imageKey?:string;imageWide?:boolean;secondImage?:ArticleImage;sources?:{title:string;url:string}[];relatedIds?:string[]; }
+export interface Article { id:string;app:string;category:string;slug:string;title:string;description:string;intro:string;modifiedDate?:string;topCallout?:ArticleCallout;sections:{heading:string;callout?:ArticleCallout;paragraphs:string[];image?:ArticleImage;source?:{title:string;url:string};sources?:{title:string;url:string}[];cta?:{label:string;url:string;sponsored?:boolean}}[];steps:string[];stepsSectionIndex?:number;tables?:{heading:string;columns:string[];rows:string[][];afterSectionIndex:number}[];pros:string[];cons:string[];faq:{q:string;a:string}[];verdict:string;imageAlt:string;caption:string;imageKey?:string;imageSectionIndex?:number;imageWide?:boolean;secondImage?:ArticleImage;sources?:{title:string;url:string}[];relatedIds?:string[]; }
 export const articles:Record<Locale,Article[]>={
   "en": [
+    {
+      "id": "arrow-win-invite",
+      "app": "arrowwin",
+      "category": "rewards",
+      "slug": "arrow-win-invite-code",
+      "title": "Arrow Win Invite Code and Where to Enter It",
+      "description": "V15TT is the Arrow Win invite code. Copy the referral code, find the right button on the home screen, and see how to submit it in the Android game.",
+      "intro": "V15TT is the Arrow Win invite code. Use it in the referral ID field inside the Android game.",
+      "modifiedDate": "2026-11-23",
+      "topCallout": {
+        "title": "Arrow Win referral code",
+        "copyCode": arrowWinInvite.code,
+        "links": [
+          { "label": "Download app", "url": arrowWinStore }
+        ]
+      },
+      "sections": [
+        {
+          "heading": "Where to enter the Arrow Win referral code",
+          "paragraphs": ["Enter the code on the game’s home screen. The screenshots show the Portuguese interface, so look for the labels in quotation marks."]
+        },
+        {
+          "heading": "Open the referral form from the home screen",
+          "paragraphs": ["Tap “Indicador” (Referrer) on the right side of the home screen. Its icon shows an ID card just above and to the right of “Jogar” (Play)."]
+        },
+        {
+          "heading": "Enter the referral ID and tap Submit",
+          "paragraphs": ["Enter V15TT in the field under “ID de indicação” (Referral ID). If the keyboard stays open, tap “OK” on the keyboard to confirm your entry. Then tap “Enviar” (Submit) in the game."],
+          "image": {
+            "key": "arrow-win-id-de-indicacao",
+            "alt": "Arrow Win referral ID form with V15TT entered above the Enviar button",
+            "caption": "At 00:37, V15TT is in “ID de indicação” (Referral ID), above “Enviar” (Submit).",
+            "wide": false
+          }
+        },
+        {
+          "heading": "What the game showed after submission",
+          "paragraphs": [
+            "The recording shows an in-game reward animation after the code was submitted.",
+            "If you searched for the Arowin invite code and still need the game, the [Arrow Win download guide](/en/arrow-win-download/) shows how to identify its Google Play listing."
+          ]
+        }
+      ],
+      "tables": [{
+        "heading": "Referral code at a glance",
+        "columns": ["Item", "What to look for"],
+        "rows": [["Invite code", "V15TT"], ["Home screen button", "“Indicador” (Referrer)"], ["Entry field", "“ID de indicação” (Referral ID)"], ["Submit button", "“Enviar” (Submit)"]],
+        "afterSectionIndex": 0
+      }],
+      "steps": ["Open Arrow Win and tap “Indicador” (Referrer).", "Type or paste V15TT in the “ID de indicação” (Referral ID) field.", "Tap “OK” on the keyboard if needed, then tap “Enviar” (Submit)."],
+      "stepsSectionIndex": 0,
+      "pros": ["You can copy the code or type it directly into the game.", "The screenshots show where to find the button and the form."],
+      "cons": ["The recording covers one device."],
+      "faq": [
+        { "q": "What is the Arrow Win invite code?", "a": "V15TT is the invite code, also called a referral code, shown in this guide." },
+        { "q": "Where do I enter the Arrow Win referral code?", "a": "On the home screen, tap “Indicador” (Referrer), enter V15TT in “ID de indicação” (Referral ID), and tap “Enviar” (Submit)." },
+        { "q": "What do I do if the keyboard stays open?", "a": "Tap “OK” on the keyboard to confirm V15TT, then tap “Enviar” (Submit) in Arrow Win." }
+      ],
+      "verdict": "Copy V15TT, open “Indicador” (Referrer) in Arrow Win, and submit it from the referral ID form.",
+      "imageKey": "arrow-win-botao-indicador",
+      "imageSectionIndex": 1,
+      "imageWide": false,
+      "imageAlt": "Arrow Win home screen with the Indicador button to the right of the level path",
+      "caption": "At 00:02, the “Indicador” (Referrer) button is on the right, above “Jogar” (Play).",
+      "relatedIds": ["arrow-win-download"]
+    },
+    {
+      "id": "arrow-win-download",
+      "app": "arrowwin",
+      "category": "rewards",
+      "slug": "arrow-win-download",
+      "title": "Arrow Win Download for Android and First Launch",
+      "description": "Download Arrow Win by COOLYA from Google Play. Check the Android app name and developer, then see the loading screen and home menu before your first game.",
+      "intro": "Download Arrow Win from Google Play on Android. The listing is for Arrow Win by COOLYA.",
+      "modifiedDate": "2026-11-23",
+      "topCallout": {
+        "title": "Arrow Win for Android",
+        "links": [
+          { "label": "Download app", "url": arrowWinStore }
+        ]
+      },
+      "sections": [
+        {
+          "heading": "How to identify Arrow Win on Google Play",
+          "paragraphs": [
+            "If you searched for Arowin, look for the name Arrow Win and the developer COOLYA. The address of the Google Play listing contains the package ID com.qrgame.arrowwin.",
+            "Check the install option in Google Play on the Android device you plan to use."
+          ]
+        },
+        {
+          "heading": "The loading screen",
+          "paragraphs": ["When the game opens, look for the Arrow Win logo, a green chameleon, and a loading bar."]
+        },
+        {
+          "heading": "What you’ll see on the home screen",
+          "paragraphs": ["The recording shows a path of numbered levels and the orange “Jogar” (Play) button below it. Along the sides are shortcuts for “Tarefas” (Tasks), “Minijogo” (Minigame), and “Convidar” (Invite)."],
+          "image": {
+            "key": "arrow-win-tela-inicial",
+            "alt": "Arrow Win home screen with the level path and orange Jogar button",
+            "caption": "The home screen shows the level path, the green chameleon, and “Jogar” (Play).",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Where to enter the invite code",
+          "paragraphs": ["After installing, use the [Arrow Win invite code guide](/en/arrow-win-invite-code/) to see where to enter V15TT."]
+        }
+      ],
+      "tables": [{
+        "heading": "Android listing details",
+        "columns": ["Field", "What to check"],
+        "rows": [["App", "Arrow Win"], ["Developer", "COOLYA"], ["Store", "Google Play"], ["Package ID", "com.qrgame.arrowwin"]],
+        "afterSectionIndex": 0
+      }],
+      "steps": ["Open the Arrow Win listing in Google Play on your Android device.", "Check that the developer is COOLYA, then tap Install if it’s available.", "Open the game when installation finishes. Look for the green chameleon on the loading screen."],
+      "stepsSectionIndex": 0,
+      "pros": ["The Google Play listing identifies the game by name, developer, and package ID.", "The screenshots show what to look for when opening the app."],
+      "cons": ["The install option depends on your Google Play account and device.", "An App Store listing for this game was not confirmed."],
+      "faq": [
+        { "q": "Where can I download Arrow Win for Android?", "a": "Open the listing for Arrow Win by COOLYA in Google Play. Its Android package ID is com.qrgame.arrowwin." },
+        { "q": "Is Arrow Win available for iPhone?", "a": "We could not confirm an App Store listing for COOLYA’s Arrow Win. This guide covers the verified Android listing." },
+        { "q": "What appears when I first open Arrow Win?", "a": "Look for the Arrow Win logo, a green chameleon, and a loading bar. The home screen shows a level path and the orange “Jogar” (Play) button." }
+      ],
+      "verdict": "Open the Google Play listing for Arrow Win by COOLYA and check the install option on your Android device.",
+      "imageKey": "arrow-win-abertura",
+      "imageSectionIndex": 1,
+      "imageWide": false,
+      "imageAlt": "Arrow Win loading screen with the game logo and a green chameleon",
+      "caption": "The game opens with the Arrow Win logo, a green chameleon, and a loading bar.",
+      "relatedIds": ["arrow-win-invite"]
+    },
     {
       "id": "lens",
       "app": "lens",
@@ -6585,6 +6721,137 @@ export const articles:Record<Locale,Article[]>={
     }
   ],
   "es": [
+    {
+      "id": "arrow-win-invite",
+      "app": "arrowwin",
+      "category": "rewards",
+      "slug": "codigo-de-invitacion-arrow-win",
+      "title": "Código de invitación de Arrow Win y dónde ingresarlo",
+      "description": "V15TT es el código de invitación de Arrow Win. Cópialo y mira las capturas para encontrar el campo de referido y enviar el código en el juego de Android.",
+      "intro": "V15TT es el código de invitación de Arrow Win. Puedes ingresarlo en el campo de referido dentro del juego de Android.",
+      "modifiedDate": "2026-11-23",
+      "topCallout": {
+        "title": "Código de invitación de Arrow Win",
+        "copyCode": arrowWinInvite.code,
+        "links": [
+          { "label": "Descargar app", "url": arrowWinStore }
+        ]
+      },
+      "sections": [
+        {
+          "heading": "Dónde se ingresa el código de referido de Arrow Win",
+          "paragraphs": ["El formulario se abre desde la pantalla principal del juego. Las capturas muestran la interfaz en portugués. Busca los nombres entre comillas para ubicar cada opción."]
+        },
+        {
+          "heading": "Abre el formulario desde la pantalla principal",
+          "paragraphs": ["Pulsa “Indicador”, el botón para indicar quién te invitó. El ícono de la tarjeta con las letras ID está a la derecha, un poco más arriba que “Jogar” (Jugar)."]
+        },
+        {
+          "heading": "Ingresa el código de invitación y envíalo",
+          "paragraphs": ["Escribe V15TT en el campo de “ID de indicação” (ID de referido). Si el teclado sigue abierto, pulsa “OK” en el teclado para confirmar. Después, toca “Enviar” en el juego."],
+          "image": {
+            "key": "arrow-win-id-de-indicacao",
+            "alt": "Formulario de referido de Arrow Win con V15TT escrito encima del botón Enviar",
+            "caption": "En el segundo 00:37, V15TT aparece en “ID de indicação” (ID de referido), encima de “Enviar”.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Qué apareció después del envío",
+          "paragraphs": [
+            "Tras enviar el código, la grabación muestra una animación de recompensa dentro del juego.",
+            "Si buscaste el código para Arowin y aún no tienes el juego, consulta [cómo descargar Arrow Win](/es/descargar-arrow-win/) e identificar su ficha en Google Play."
+          ]
+        }
+      ],
+      "tables": [{
+        "heading": "Datos del código de invitación",
+        "columns": ["Elemento", "Qué buscar"],
+        "rows": [["Código de invitación", "V15TT"], ["Acceso al formulario", "“Indicador”"], ["Campo del código", "“ID de indicação” (ID de referido)"], ["Botón de envío", "“Enviar”"]],
+        "afterSectionIndex": 0
+      }],
+      "steps": ["Abre Arrow Win y pulsa “Indicador” en la pantalla principal.", "Escribe o pega V15TT en “ID de indicação” (ID de referido).", "Si hace falta, pulsa “OK” en el teclado. Luego toca “Enviar”."],
+      "stepsSectionIndex": 0,
+      "pros": ["Puedes copiar el código o escribirlo directamente en el juego.", "Las capturas ubican el acceso y el campo del código."],
+      "cons": ["La grabación muestra un solo dispositivo."],
+      "faq": [
+        { "q": "¿Cuál es el código de invitación de Arrow Win?", "a": "V15TT es el código de invitación o código de referido que se muestra en esta guía." },
+        { "q": "¿Dónde pongo el código V15TT en Arrow Win?", "a": "Pulsa “Indicador” en la pantalla principal, escribe V15TT en “ID de indicação” (ID de referido) y toca “Enviar”." },
+        { "q": "¿Qué hago si el teclado sigue abierto?", "a": "Pulsa “OK” en el teclado para confirmar V15TT. Luego toca “Enviar” en Arrow Win." }
+      ],
+      "verdict": "Copia V15TT, abre “Indicador” en Arrow Win e ingresa el código en el formulario de referido.",
+      "imageKey": "arrow-win-botao-indicador",
+      "imageSectionIndex": 1,
+      "imageWide": false,
+      "imageAlt": "Pantalla principal de Arrow Win con el botón Indicador a la derecha de los niveles",
+      "caption": "En el segundo 00:02, “Indicador” aparece a la derecha, por encima de “Jogar” (Jugar).",
+      "relatedIds": ["arrow-win-download"]
+    },
+    {
+      "id": "arrow-win-download",
+      "app": "arrowwin",
+      "category": "rewards",
+      "slug": "descargar-arrow-win",
+      "title": "Descargar Arrow Win en Android y reconocer el juego",
+      "description": "Descarga Arrow Win de COOLYA en Google Play. Identifica la ficha correcta de Android y mira las pantallas de carga e inicio que aparecen al abrir el juego.",
+      "intro": "Puedes descargar Arrow Win en Google Play para Android. La ficha identifica el juego como Arrow Win y al desarrollador como COOLYA.",
+      "modifiedDate": "2026-11-23",
+      "topCallout": {
+        "title": "Arrow Win para Android",
+        "links": [
+          { "label": "Descargar app", "url": arrowWinStore }
+        ]
+      },
+      "sections": [
+        {
+          "heading": "Cómo identificar Arrow Win en Google Play",
+          "paragraphs": [
+            "Si buscaste Arowin, comprueba que la ficha indique Arrow Win y COOLYA. La dirección de Google Play contiene el identificador de paquete com.qrgame.arrowwin.",
+            "Abre la ficha con tu cuenta de Google Play en el dispositivo donde planeas jugar para ver si aparece la opción de instalar."
+          ]
+        },
+        {
+          "heading": "Qué aparece mientras carga el juego",
+          "paragraphs": ["Al abrir el juego aparece el logotipo de Arrow Win con un camaleón verde y una barra de carga."]
+        },
+        {
+          "heading": "Cómo reconocer la pantalla principal",
+          "paragraphs": ["La grabación muestra un recorrido con niveles numerados y el botón naranja “Jogar” (Jugar) debajo. A los lados aparecen “Tarefas” (Tareas), “Minijogo” (Minijuego) y “Convidar” (Invitar)."],
+          "image": {
+            "key": "arrow-win-tela-inicial",
+            "alt": "Pantalla principal de Arrow Win con los niveles y el botón naranja Jogar",
+            "caption": "La pantalla principal muestra los niveles, el camaleón verde y el botón “Jogar” (Jugar).",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Dónde usar el código de invitación",
+          "paragraphs": ["Después de instalar el juego, consulta la [guía del código de invitación de Arrow Win](/es/codigo-de-invitacion-arrow-win/) para ver dónde ingresar V15TT."]
+        }
+      ],
+      "tables": [{
+        "heading": "Datos de la ficha de Android",
+        "columns": ["Dato", "Qué comprobar"],
+        "rows": [["Nombre del juego", "Arrow Win"], ["Desarrollador", "COOLYA"], ["Tienda", "Google Play"], ["Identificador de paquete", "com.qrgame.arrowwin"]],
+        "afterSectionIndex": 0
+      }],
+      "steps": ["Abre la ficha de Arrow Win en Google Play desde tu dispositivo Android.", "Comprueba que el desarrollador sea COOLYA y toca Instalar si está disponible.", "Abre el juego al terminar la instalación y busca el camaleón verde en la pantalla de carga."],
+      "stepsSectionIndex": 0,
+      "pros": ["Puedes reconocer la ficha por el nombre, el desarrollador y el identificador.", "Las capturas muestran las primeras pantallas del juego."],
+      "cons": ["La opción de instalar depende de tu cuenta y dispositivo.", "La ficha de este juego en la App Store sigue sin confirmarse."],
+      "faq": [
+        { "q": "¿Dónde puedo descargar Arrow Win para Android?", "a": "En la ficha de Google Play de Arrow Win, publicado por COOLYA. El identificador de paquete es com.qrgame.arrowwin." },
+        { "q": "¿Está disponible Arrow Win para iPhone?", "a": "No pudimos confirmar una ficha de Arrow Win de COOLYA en la App Store. Esta guía cubre la ficha de Android que verificamos." },
+        { "q": "¿Qué aparece al abrir Arrow Win por primera vez?", "a": "Durante la carga verás el logotipo y un camaleón verde. En la pantalla principal aparecen los niveles y el botón naranja “Jogar” (Jugar)." }
+      ],
+      "verdict": "Busca Arrow Win de COOLYA en Google Play y comprueba la opción de instalación en tu Android.",
+      "imageKey": "arrow-win-abertura",
+      "imageSectionIndex": 1,
+      "imageWide": false,
+      "imageAlt": "Pantalla de carga de Arrow Win con el logotipo y un camaleón verde",
+      "caption": "Al abrir Arrow Win, verás el logotipo, un camaleón verde y la barra de carga.",
+      "relatedIds": ["arrow-win-invite"]
+    },
     {
       "id": "lens",
       "app": "lens",
@@ -13235,6 +13502,137 @@ export const articles:Record<Locale,Article[]>={
   ],
   "pt": [
     {
+      "id": "arrow-win-invite",
+      "app": "arrowwin",
+      "category": "rewards",
+      "slug": "codigo-de-convite-arrow-win",
+      "title": "Código de convite Arrow Win e onde inserir no jogo",
+      "description": "V15TT é o código de convite do Arrow Win. Copie o código de indicação e veja nas capturas onde abrir o formulário, preencher o campo e enviar no jogo.",
+      "intro": "V15TT é o código de convite do Arrow Win. Você pode inseri-lo no campo de indicação dentro do jogo no Android.",
+      "modifiedDate": "2026-11-23",
+      "topCallout": {
+        "title": "Código de indicação do Arrow Win",
+        "copyCode": arrowWinInvite.code,
+        "links": [
+          { "label": "Baixar app", "url": arrowWinStore }
+        ]
+      },
+      "sections": [
+        {
+          "heading": "Onde colocar o código de indicação do Arrow Win",
+          "paragraphs": ["O formulário fica na tela inicial do jogo. Os nomes abaixo são os que aparecem na interface em português."]
+        },
+        {
+          "heading": "Toque em “Indicador” na tela inicial",
+          "paragraphs": ["Procure o ícone de cartão com as letras ID no lado direito, um pouco acima de “Jogar”. Toque em “Indicador” para abrir o formulário."]
+        },
+        {
+          "heading": "Preencha o ID de indicação e toque em “Enviar”",
+          "paragraphs": ["Digite ou cole V15TT no campo “ID de indicação”. Se o teclado continuar aberto, toque em “OK” no teclado para confirmar o texto. Depois, toque em “Enviar” no jogo."],
+          "image": {
+            "key": "arrow-win-id-de-indicacao",
+            "alt": "Formulário de indicação do Arrow Win com V15TT preenchido acima do botão Enviar",
+            "caption": "Aos 00:37, o código V15TT está preenchido no formulário “ID de indicação”, acima de “Enviar”.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "O que apareceu depois do envio",
+          "paragraphs": [
+            "Depois do envio do código, a gravação mostra uma animação de recompensa dentro do jogo.",
+            "Se você buscou pelo código de Arowin e ainda vai instalar o jogo, veja [como baixar o Arrow Win](/pt/baixar-arrow-win/) e conferir a ficha na Google Play."
+          ]
+        }
+      ],
+      "tables": [{
+        "heading": "Resumo do convite",
+        "columns": ["Item", "O que procurar"],
+        "rows": [["Código de convite", "V15TT"], ["Atalho na tela inicial", "“Indicador”"], ["Campo do código", "“ID de indicação”"], ["Botão de envio", "“Enviar”"]],
+        "afterSectionIndex": 0
+      }],
+      "steps": ["Abra o Arrow Win e toque em “Indicador” na tela inicial.", "Digite ou cole V15TT em “ID de indicação”.", "Confirme com “OK” no teclado, se necessário, e toque em “Enviar”."],
+      "stepsSectionIndex": 0,
+      "pros": ["O código pode ser copiado ou digitado no jogo.", "As capturas ajudam a localizar o atalho e o campo."],
+      "cons": ["A gravação acompanha um único aparelho."],
+      "faq": [
+        { "q": "Qual é o código de convite do Arrow Win?", "a": "V15TT é o código de convite, também chamado de código de indicação, usado neste guia." },
+        { "q": "Onde coloco o código V15TT no Arrow Win?", "a": "Na tela inicial, toque em “Indicador”, preencha “ID de indicação” com V15TT e toque em “Enviar”." },
+        { "q": "O que faço se o teclado continuar aberto?", "a": "Toque em “OK” no teclado para confirmar V15TT. Depois, toque em “Enviar” no Arrow Win." }
+      ],
+      "verdict": "Copie V15TT, abra “Indicador” no Arrow Win e envie o código pelo formulário de indicação.",
+      "imageKey": "arrow-win-botao-indicador",
+      "imageSectionIndex": 1,
+      "imageWide": false,
+      "imageAlt": "Tela inicial do Arrow Win com o botão Indicador à direita do caminho de níveis",
+      "caption": "Aos 00:02, o botão “Indicador” aparece à direita, acima de “Jogar”.",
+      "relatedIds": ["arrow-win-download"]
+    },
+    {
+      "id": "arrow-win-download",
+      "app": "arrowwin",
+      "category": "rewards",
+      "slug": "baixar-arrow-win",
+      "title": "Baixar Arrow Win no Android e identificar o jogo",
+      "description": "Baixe o Arrow Win da COOLYA na Google Play. Confira o nome e o identificador do jogo na loja e veja as telas de abertura e início do app para Android.",
+      "intro": "Baixe o Arrow Win na Google Play para Android. Na ficha da loja, confira o nome Arrow Win e a desenvolvedora COOLYA.",
+      "modifiedDate": "2026-11-23",
+      "topCallout": {
+        "title": "Arrow Win para Android",
+        "links": [
+          { "label": "Baixar app", "url": arrowWinStore }
+        ]
+      },
+      "sections": [
+        {
+          "heading": "Como identificar o Arrow Win na Google Play",
+          "paragraphs": [
+            "Se você buscou por Arowin, procure o nome Arrow Win e a desenvolvedora COOLYA na loja. O endereço da ficha contém o identificador do pacote com.qrgame.arrowwin.",
+            "Abra a ficha no aparelho em que pretende jogar para conferir se a Google Play oferece a opção de instalar."
+          ]
+        },
+        {
+          "heading": "O que aparece na abertura",
+          "paragraphs": ["Ao abrir o jogo, aparece a marca Arrow Win, acompanhada de um camaleão verde e uma barra de carregamento."]
+        },
+        {
+          "heading": "Como reconhecer a tela inicial",
+          "paragraphs": ["A gravação mostra um caminho com níveis numerados e, logo abaixo, o botão laranja “Jogar”. Nas laterais, aparecem atalhos como “Tarefas”, “Minijogo” e “Convidar”."],
+          "image": {
+            "key": "arrow-win-tela-inicial",
+            "alt": "Tela inicial do Arrow Win com o caminho de níveis e o botão laranja Jogar",
+            "caption": "Na tela inicial, o camaleão aparece no caminho de níveis, acima do botão “Jogar”.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Onde inserir o código de convite",
+          "paragraphs": ["Depois de instalar o jogo, consulte o [guia do código de convite do Arrow Win](/pt/codigo-de-convite-arrow-win/) para ver onde inserir V15TT."]
+        }
+      ],
+      "tables": [{
+        "heading": "Resumo da ficha Android",
+        "columns": ["Dado", "O que conferir"],
+        "rows": [["Nome do jogo", "Arrow Win"], ["Desenvolvedora", "COOLYA"], ["Loja", "Google Play"], ["Pacote Android", "com.qrgame.arrowwin"]],
+        "afterSectionIndex": 0
+      }],
+      "steps": ["Abra a ficha do Arrow Win na Google Play pelo aparelho Android.", "Confira se a desenvolvedora é COOLYA e toque em Instalar se a opção aparecer.", "Ao terminar, abra o jogo e procure o camaleão verde na tela de carregamento."],
+      "stepsSectionIndex": 0,
+      "pros": ["A ficha pode ser conferida pelo nome, desenvolvedora e identificador do pacote.", "As capturas mostram a abertura e a tela inicial."],
+      "cons": ["A opção de instalar depende da conta e do aparelho.", "A ficha deste jogo na App Store segue sem confirmação."],
+      "faq": [
+        { "q": "Onde baixar Arrow Win para Android?", "a": "Na ficha do Arrow Win da COOLYA na Google Play. O identificador do pacote Android é com.qrgame.arrowwin." },
+        { "q": "Tem Arrow Win para iPhone?", "a": "A ficha do Arrow Win da COOLYA na App Store não foi confirmada. Este guia cobre a ficha verificada para Android." },
+        { "q": "O que aparece ao abrir o Arrow Win pela primeira vez?", "a": "A abertura mostra o logotipo e um camaleão verde. Na tela inicial aparecem o caminho de níveis e o botão laranja “Jogar”." }
+      ],
+      "verdict": "Abra a ficha do Arrow Win da COOLYA e confira a opção de instalar na Google Play do seu Android.",
+      "imageKey": "arrow-win-abertura",
+      "imageSectionIndex": 1,
+      "imageWide": false,
+      "imageAlt": "Tela de carregamento do Arrow Win com a marca do jogo e um camaleão verde",
+      "caption": "A abertura mostra a marca Arrow Win, um camaleão verde e a barra de carregamento.",
+      "relatedIds": ["arrow-win-invite"]
+    },
+    {
       "id": "lens",
       "app": "lens",
       "category": "tools",
@@ -19869,6 +20267,17 @@ export const articles:Record<Locale,Article[]>={
   ]
 };
 export const apps:Record<string,{name:string;url:string;os:string;sources:{title:string;url:string}[]}>= {
+  "arrowwin": {
+    "name": "Arrow Win",
+    "url": arrowWinStore,
+    "os": "Android",
+    "sources": [
+      {
+        "title": "Arrow Win · COOLYA · Google Play",
+        "url": arrowWinStore
+      }
+    ]
+  },
   "lens": {
     "name": "Google Lens",
     "url": "https://lens.google/",

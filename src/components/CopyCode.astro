@@ -1,0 +1,29 @@
+---
+import { text, type Locale } from '../data/i18n';
+
+const { code, locale } = Astro.props as { code: string; locale: Locale };
+const t = text[locale];
+---
+<div class="copy-row">
+  <code>{code}</code>
+  <button type="button" data-copy={code} data-success={t.copied} data-failure={t.copyFail}>{t.copy}</button>
+  <span role="status" aria-live="polite"></span>
+</div>
+<script is:inline>
+  {
+    const copyRow = document.currentScript?.previousElementSibling;
+    const copyButton = copyRow?.querySelector('[data-copy]');
+    const copyStatus = copyRow?.querySelector('[role=status]');
+
+    if (copyButton && copyStatus) {
+      copyButton.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(copyButton.dataset.copy);
+          copyStatus.textContent = copyButton.dataset.success;
+        } catch {
+          copyStatus.textContent = copyButton.dataset.failure;
+        }
+      });
+    }
+  }
+</script>

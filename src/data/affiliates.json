@@ -1,5 +1,5 @@
 {
-  "lastReviewed": "2026-11-12",
+  "lastReviewed": "2026-11-23",
   "programs": {
     "lens": {
       "status": "not-verified",
@@ -89,6 +89,14 @@
       "verifiedAt": "2026-11-15",
       "codeType": "referral-registration-link",
       "evidence": "Official AttaPoll invitation link https://attapoll.app/join/cgfky with code cgfky (shown as CGFKY in the Convidar & Ganhar screen)."
+    },
+    "arrowwin": {
+      "status": "verified",
+      "code": "V15TT",
+      "referralUrl": "https://aw.shareearn3.com/?code=V15TT",
+      "verifiedAt": "2026-11-23",
+      "codeType": "referral-id",
+      "evidence": "The landing page returned HTTP 200, displayed V15TT and linked to the Arrow Win Google Play listing with referrer=code%3DV15TT. The Android recording shows manual submission and an in-game reward animation."
     },
     "tiktoklite": {
       "status": "verified",

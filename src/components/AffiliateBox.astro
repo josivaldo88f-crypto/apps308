@@ -3,6 +3,7 @@ import data from '../data/affiliates.json';
 import {text,type Locale} from '../data/i18n';
 import {apps} from '../data/articles';
 import Icon from './Icon.astro';
+import CopyCode from './CopyCode.astro';
 const {locale,app}=Astro.props as {locale:Locale;app:string};
 const t=text[locale];
 const program=data.programs[app as keyof typeof data.programs] as {status?:string;code?:string|null;referralUrl?:string|null;localeUrls?:Record<string,string>}|undefined;
@@ -89,9 +90,6 @@ const store={en:'Get it on Google Play',es:'Descargar en Google Play',pt:'Baixar
     <strong>{apps[app].name}</strong>
     {subtext[app]&&<p class="access-sub">{subtext[app][locale]}</p>}
   </div>
-  {hasCodeCopy&&<div class="copy-row"><code>{program?.code}</code><button type="button" data-copy={program?.code} data-success={t.copied} data-failure={t.copyFail}>{t.copy}</button><span role="status" aria-live="polite"></span></div>}
+  {hasCodeCopy&&program?.code&&<CopyCode code={program.code} locale={locale}/>}
   <a class="access-button" href={hasInvite?targetUrl!:apps[app].url} rel={hasInvite?'sponsored noopener':'noopener'}>{hasInvite?(open[app]?.[locale]||t.visit):(app==='dramastack'||app==='cashdrama'||app==='dramabox'||app==='dramagood')?store[locale]:t.visit}<Icon name="arrow" size={17}/></a>
 </aside>
-{hasCodeCopy&&<script is:inline>
- document.querySelectorAll('[data-copy]').forEach(button=>{button.addEventListener('click',async()=>{const status=button.parentElement?.querySelector('[role=status]');try{await navigator.clipboard.writeText(button.dataset.copy||'');if(status)status.textContent=button.dataset.success||'Copied';}catch{if(status)status.textContent=button.dataset.failure||'Copy manually';}});});
-</script>}
