@@ -141,5 +141,18 @@
     },
     "privacy": "Status bar, account avatar and financial balance excluded where present",
     "sourceLanguage": "en"
+  },
+  {
+    "app": "arrow-win-recompensa-na-tela",
+    "captureMethod": "video frame from project recording (arrow-win-short)",
+    "captured": "2026-11-23",
+    "crop": {
+      "left": 0,
+      "top": 0,
+      "width": 640,
+      "height": 814
+    },
+    "privacy": "No status bar, avatar or personal account data present; in-game reward screen only",
+    "sourceLanguage": "pt"
   }
 ]

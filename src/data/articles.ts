@@ -15,9 +15,9 @@ export const articles:Record<Locale,Article[]>={
       "category": "rewards",
       "slug": "arrow-win-invite-code",
       "title": "Arrow Win Invite Code and Where to Enter It",
-      "description": "V15TT is the Arrow Win invite code. Copy the referral code, find the right button on the home screen, and see how to submit it in the Android game.",
-      "intro": "V15TT is the Arrow Win invite code. Use it in the referral ID field inside the Android game.",
-      "modifiedDate": "2026-11-23",
+      "description": "V15TT is the Arrow Win invite code. See where to enter it in the game, what appears after submission, and what to check if the code is not accepted.",
+      "intro": "V15TT is the Arrow Win invite code. Use it in the referral ID field inside the Android game. The guide shows the form, the reward screen after submission, and what to check if the code is not accepted.",
+      "modifiedDate": "2026-11-26",
       "topCallout": {
         "title": "Arrow Win referral code",
         "copyCode": arrowWinInvite.code,
@@ -32,7 +32,7 @@ export const articles:Record<Locale,Article[]>={
         },
         {
           "heading": "Open the referral form from the home screen",
-          "paragraphs": ["Tap “Indicador” (Referrer) on the right side of the home screen. Its icon shows an ID card just above and to the right of “Jogar” (Play)."]
+          "paragraphs": ["Tap “Indicador” (Referrer) on the right side of the home screen. Its icon shows an ID card just above and to the right of “Jogar” (Play).", "Do not confuse it with the “Convidar” (Invite) shortcut, which also appears on the home screen next to “Tarefas” (Tasks) and “Minijogo” (Minigame): the form in this guide opens from “Indicador”, to register the code of the person who invited you."]
         },
         {
           "heading": "Enter the referral ID and tap Submit",
@@ -47,27 +47,44 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "What the game showed after submission",
           "paragraphs": [
-            "The recording shows an in-game reward animation after the code was submitted.",
+            "After the code was submitted, the recording shows an in-game reward animation: the title “Legal!” over a pile of coins marked R$ 1,500, with “Clique para FECHAR (3s)” (Tap to CLOSE, 3s) at the bottom.",
+            "That value is the in-game balance shown on the reward screen. The recording does not show a real-money cashout, and reward eligibility depends on the app and the account: treat the animation as a record of what appeared on that device, not as a payment promise.",
             "If you searched for the Arowin invite code and still need the game, the [Arrow Win download guide](/en/arrow-win-download/) shows how to identify its Google Play listing."
+          ],
+          "image": {
+            "key": "arrow-win-recompensa-na-tela",
+            "alt": "Arrow Win reward screen after submitting the code, with the Legal! title and coins marked R$ 1,500",
+            "caption": "After submission, the animation shows “Legal!”, coins with R$ 1,500 in-game, and “Clique para FECHAR (3s)”.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "If the code is not accepted",
+          "paragraphs": [
+            "Check that the text is exactly V15TT, in uppercase, in the “ID de indicação” (Referral ID) field opened by “Indicador”. The recording shows two simple precautions: confirm the entry with “OK” on the keyboard before tapping “Enviar” (Submit), and do not leave the code half entered.",
+            "If the game answers with a different message, the cause may be account eligibility: the recording covers a single device, and the app itself defines which accounts can claim referral rewards. In that case, check the official Google Play listing and the rules shown inside the game before trying again."
           ]
         }
       ],
       "tables": [{
         "heading": "Referral code at a glance",
         "columns": ["Item", "What to look for"],
-        "rows": [["Invite code", "V15TT"], ["Home screen button", "“Indicador” (Referrer)"], ["Entry field", "“ID de indicação” (Referral ID)"], ["Submit button", "“Enviar” (Submit)"]],
+        "rows": [["Invite code", "V15TT"], ["Home screen button", "“Indicador” (Referrer)"], ["Entry field", "“ID de indicação” (Referral ID)"], ["Submit button", "“Enviar” (Submit)"], ["Screen after submission", "“Legal!” animation with coins and R$ 1,500 in-game"], ["Closing the reward", "“Clique para FECHAR (3s)” (Tap to CLOSE)"]],
         "afterSectionIndex": 0
       }],
-      "steps": ["Open Arrow Win and tap “Indicador” (Referrer).", "Type or paste V15TT in the “ID de indicação” (Referral ID) field.", "Tap “OK” on the keyboard if needed, then tap “Enviar” (Submit)."],
+      "steps": ["Open Arrow Win and tap “Indicador” (Referrer).", "Type or paste V15TT in the “ID de indicação” (Referral ID) field.", "Tap “OK” on the keyboard if needed, then tap “Enviar” (Submit).", "Tap “Clique para FECHAR (3s)” to return to the home screen."],
       "stepsSectionIndex": 0,
-      "pros": ["You can copy the code or type it directly into the game.", "The screenshots show where to find the button and the form."],
-      "cons": ["The recording covers one device."],
+      "pros": ["You can copy the code or type it directly into the game.", "The screenshots show where to find the button and the form.", "The reward screen after submission is documented in a screenshot."],
+      "cons": ["The recording covers one device.", "The animation value is in-game balance, not a confirmed cash withdrawal."],
       "faq": [
         { "q": "What is the Arrow Win invite code?", "a": "V15TT is the invite code, also called a referral code, shown in this guide." },
         { "q": "Where do I enter the Arrow Win referral code?", "a": "On the home screen, tap “Indicador” (Referrer), enter V15TT in “ID de indicação” (Referral ID), and tap “Enviar” (Submit)." },
-        { "q": "What do I do if the keyboard stays open?", "a": "Tap “OK” on the keyboard to confirm V15TT, then tap “Enviar” (Submit) in Arrow Win." }
+        { "q": "What do I do if the keyboard stays open?", "a": "Tap “OK” on the keyboard to confirm V15TT, then tap “Enviar” (Submit) in Arrow Win." },
+        { "q": "What appears after submitting V15TT?", "a": "The recording shows the “Legal!” animation with a pile of coins marked R$ 1,500 and “Clique para FECHAR (3s)” (Tap to CLOSE). It is the in-game balance on that screen; the recording does not confirm a real-money cashout." },
+        { "q": "Does V15TT work on any account?", "a": "The recording shows submission on a single device. Referral reward eligibility depends on the app and the account; there is no guarantee that every account receives the same reward." },
+        { "q": "Is it safe to enter the referral code in Arrow Win?", "a": "The form shown in the recording asks only for the code, with no personal data. Download the game only from COOLYA’s official Google Play listing and avoid modified APKs that promise extra coins." }
       ],
-      "verdict": "Copy V15TT, open “Indicador” (Referrer) in Arrow Win, and submit it from the referral ID form.",
+      "verdict": "Copy V15TT, open “Indicador” (Referrer) in Arrow Win, and submit it from the referral ID form. The recording shows the reward animation after submission; the value shown is in-game balance, and eligibility depends on the account.",
       "imageKey": "arrow-win-botao-indicador",
       "imageSectionIndex": 1,
       "imageWide": false,
@@ -6727,9 +6744,9 @@ export const articles:Record<Locale,Article[]>={
       "category": "rewards",
       "slug": "codigo-de-invitacion-arrow-win",
       "title": "Código de invitación de Arrow Win y dónde ingresarlo",
-      "description": "V15TT es el código de invitación de Arrow Win. Cópialo y mira las capturas para encontrar el campo de referido y enviar el código en el juego de Android.",
-      "intro": "V15TT es el código de invitación de Arrow Win. Puedes ingresarlo en el campo de referido dentro del juego de Android.",
-      "modifiedDate": "2026-11-23",
+      "description": "V15TT es el código de invitación de Arrow Win. Mira dónde ingresarlo, qué aparece después del envío y qué revisar si el código no es aceptado.",
+      "intro": "V15TT es el código de invitación de Arrow Win. Puedes ingresarlo en el campo de referido dentro del juego de Android. La guía muestra el formulario, la pantalla de recompensa tras el envío y qué revisar si el código no es aceptado.",
+      "modifiedDate": "2026-11-26",
       "topCallout": {
         "title": "Código de invitación de Arrow Win",
         "copyCode": arrowWinInvite.code,
@@ -6744,7 +6761,7 @@ export const articles:Record<Locale,Article[]>={
         },
         {
           "heading": "Abre el formulario desde la pantalla principal",
-          "paragraphs": ["Pulsa “Indicador”, el botón para indicar quién te invitó. El ícono de la tarjeta con las letras ID está a la derecha, un poco más arriba que “Jogar” (Jugar)."]
+          "paragraphs": ["Pulsa “Indicador”, el botón para indicar quién te invitó. El ícono de la tarjeta con las letras ID está a la derecha, un poco más arriba que “Jogar” (Jugar).", "No lo confundas con el acceso “Convidar” (Invitar), que también aparece en la pantalla principal junto a “Tarefas” (Tareas) y “Minijogo” (Minijuego): el formulario de esta guía se abre en “Indicador”, para registrar el código de quien te invitó."]
         },
         {
           "heading": "Ingresa el código de invitación y envíalo",
@@ -6759,27 +6776,44 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "Qué apareció después del envío",
           "paragraphs": [
-            "Tras enviar el código, la grabación muestra una animación de recompensa dentro del juego.",
+            "Tras enviar el código, la grabación muestra una animación de recompensa dentro del juego: el título “Legal!” sobre una pila de monedas con el valor R$ 1,500 y, abajo, el aviso “Clique para FECHAR (3s)” (Toca para CERRAR, 3 s).",
+            "Ese valor es el saldo interno que muestra el juego en la pantalla de recompensa. La grabación no muestra un retiro en dinero real, y la elegibilidad de recompensas depende de la app y de la cuenta: toma la animación como registro de lo que apareció en ese dispositivo, no como promesa de pago.",
             "Si buscaste el código para Arowin y aún no tienes el juego, consulta [cómo descargar Arrow Win](/es/descargar-arrow-win/) e identificar su ficha en Google Play."
+          ],
+          "image": {
+            "key": "arrow-win-recompensa-na-tela",
+            "alt": "Pantalla de recompensa de Arrow Win tras enviar el código, con el título Legal! y monedas marcadas R$ 1,500",
+            "caption": "Tras el envío, la animación muestra “Legal!”, monedas con R$ 1,500 del juego y “Clique para FECHAR (3s)”.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Si el código no es aceptado",
+          "paragraphs": [
+            "Comprueba que el texto esté exactamente como V15TT, en mayúsculas, en el campo “ID de indicação” (ID de referido) abierto por “Indicador”. La grabación muestra dos cuidados simples: confirmar el texto con “OK” en el teclado antes de tocar “Enviar” y no dejar el código a medias.",
+            "Si el juego responde con un mensaje diferente, la causa puede estar en la elegibilidad de la cuenta: la grabación cubre un solo dispositivo, y la propia app define qué cuentas pueden canjear recompensas de referido. En ese caso, revisa la ficha oficial en Google Play y las reglas mostradas dentro del juego antes de intentar de nuevo."
           ]
         }
       ],
       "tables": [{
         "heading": "Datos del código de invitación",
         "columns": ["Elemento", "Qué buscar"],
-        "rows": [["Código de invitación", "V15TT"], ["Acceso al formulario", "“Indicador”"], ["Campo del código", "“ID de indicação” (ID de referido)"], ["Botón de envío", "“Enviar”"]],
+        "rows": [["Código de invitación", "V15TT"], ["Acceso al formulario", "“Indicador”"], ["Campo del código", "“ID de indicação” (ID de referido)"], ["Botón de envío", "“Enviar”"], ["Pantalla tras el envío", "Animación “Legal!” con monedas y R$ 1,500 del juego"], ["Cerrar la recompensa", "“Clique para FECHAR (3s)” (Toca para CERRAR)"]],
         "afterSectionIndex": 0
       }],
-      "steps": ["Abre Arrow Win y pulsa “Indicador” en la pantalla principal.", "Escribe o pega V15TT en “ID de indicação” (ID de referido).", "Si hace falta, pulsa “OK” en el teclado. Luego toca “Enviar”."],
+      "steps": ["Abre Arrow Win y pulsa “Indicador” en la pantalla principal.", "Escribe o pega V15TT en “ID de indicação” (ID de referido).", "Si hace falta, pulsa “OK” en el teclado. Luego toca “Enviar”.", "Toca “Clique para FECHAR (3s)” para volver a la pantalla principal."],
       "stepsSectionIndex": 0,
-      "pros": ["Puedes copiar el código o escribirlo directamente en el juego.", "Las capturas ubican el acceso y el campo del código."],
-      "cons": ["La grabación muestra un solo dispositivo."],
+      "pros": ["Puedes copiar el código o escribirlo directamente en el juego.", "Las capturas ubican el acceso y el campo del código.", "La pantalla de recompensa tras el envío está documentada en captura."],
+      "cons": ["La grabación muestra un solo dispositivo.", "El valor de la animación es saldo del juego, no un retiro en dinero confirmado."],
       "faq": [
         { "q": "¿Cuál es el código de invitación de Arrow Win?", "a": "V15TT es el código de invitación o código de referido que se muestra en esta guía." },
         { "q": "¿Dónde pongo el código V15TT en Arrow Win?", "a": "Pulsa “Indicador” en la pantalla principal, escribe V15TT en “ID de indicação” (ID de referido) y toca “Enviar”." },
-        { "q": "¿Qué hago si el teclado sigue abierto?", "a": "Pulsa “OK” en el teclado para confirmar V15TT. Luego toca “Enviar” en Arrow Win." }
+        { "q": "¿Qué hago si el teclado sigue abierto?", "a": "Pulsa “OK” en el teclado para confirmar V15TT. Luego toca “Enviar” en Arrow Win." },
+        { "q": "¿Qué aparece después de enviar V15TT?", "a": "La grabación muestra la animación “Legal!” con una pila de monedas marcadas R$ 1,500 y el aviso “Clique para FECHAR (3s)”. Es el saldo interno del juego en esa pantalla; la grabación no confirma un retiro en dinero real." },
+        { "q": "¿El código V15TT funciona en cualquier cuenta?", "a": "La grabación muestra el envío en un solo dispositivo. La elegibilidad de recompensas de referido depende de la app y de la cuenta; no hay garantía de que toda cuenta reciba la misma recompensa." },
+        { "q": "¿Es seguro ingresar el código de referido en Arrow Win?", "a": "El formulario mostrado en la grabación pide solo el código, sin datos personales. Descarga el juego únicamente desde la ficha oficial de COOLYA en Google Play y desconfía de APKs modificados que prometen monedas extra." }
       ],
-      "verdict": "Copia V15TT, abre “Indicador” en Arrow Win e ingresa el código en el formulario de referido.",
+      "verdict": "Copia V15TT, abre “Indicador” en Arrow Win e ingresa el código en el formulario de referido. La grabación muestra la animación de recompensa tras el envío; el valor mostrado es saldo del juego, y la elegibilidad depende de la cuenta.",
       "imageKey": "arrow-win-botao-indicador",
       "imageSectionIndex": 1,
       "imageWide": false,
@@ -13508,9 +13542,9 @@ export const articles:Record<Locale,Article[]>={
       "category": "rewards",
       "slug": "codigo-de-convite-arrow-win",
       "title": "Código de convite Arrow Win e onde inserir no jogo",
-      "description": "V15TT é o código de convite do Arrow Win. Copie o código de indicação e veja nas capturas onde abrir o formulário, preencher o campo e enviar no jogo.",
-      "intro": "V15TT é o código de convite do Arrow Win. Você pode inseri-lo no campo de indicação dentro do jogo no Android.",
-      "modifiedDate": "2026-11-23",
+      "description": "V15TT é o código de convite do Arrow Win. Veja onde inserir no jogo, o que aparece depois do envio e o que conferir se o código não for aceito.",
+      "intro": "V15TT é o código de convite do Arrow Win. Você pode inseri-lo no campo de indicação dentro do jogo no Android. O guia mostra o formulário, a tela de recompensa após o envio e o que conferir se o código não for aceito.",
+      "modifiedDate": "2026-11-26",
       "topCallout": {
         "title": "Código de indicação do Arrow Win",
         "copyCode": arrowWinInvite.code,
@@ -13525,7 +13559,7 @@ export const articles:Record<Locale,Article[]>={
         },
         {
           "heading": "Toque em “Indicador” na tela inicial",
-          "paragraphs": ["Procure o ícone de cartão com as letras ID no lado direito, um pouco acima de “Jogar”. Toque em “Indicador” para abrir o formulário."]
+          "paragraphs": ["Procure o ícone de cartão com as letras ID no lado direito, um pouco acima de “Jogar”. Toque em “Indicador” para abrir o formulário.", "Não confunda com o atalho “Convidar”, que também aparece na tela inicial ao lado de “Tarefas” e “Minijogo”: o formulário deste guia é o que abre em “Indicador”, para registrar o código de quem convidou você."]
         },
         {
           "heading": "Preencha o ID de indicação e toque em “Enviar”",
@@ -13540,27 +13574,44 @@ export const articles:Record<Locale,Article[]>={
         {
           "heading": "O que apareceu depois do envio",
           "paragraphs": [
-            "Depois do envio do código, a gravação mostra uma animação de recompensa dentro do jogo.",
+            "Depois do envio do código, a gravação mostra uma animação de recompensa dentro do jogo: o título “Legal!” sobre uma pilha de moedas com o valor R$ 1,500 e, na parte de baixo, o aviso “Clique para FECHAR (3s)”.",
+            "Esse valor é o saldo interno exibido pelo jogo na tela de recompensa. A gravação não mostra saque em dinheiro real, e a elegibilidade de recompensas depende do app e da conta: trate a animação como registro do que apareceu naquele aparelho, não como promessa de pagamento.",
             "Se você buscou pelo código de Arowin e ainda vai instalar o jogo, veja [como baixar o Arrow Win](/pt/baixar-arrow-win/) e conferir a ficha na Google Play."
+          ],
+          "image": {
+            "key": "arrow-win-recompensa-na-tela",
+            "alt": "Tela de recompensa do Arrow Win após o envio do código, com o título Legal! e moedas marcadas R$ 1,500",
+            "caption": "Após o envio, a animação mostra “Legal!”, moedas com R$ 1,500 do jogo e “Clique para FECHAR (3s)”.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Se o código não for aceito",
+          "paragraphs": [
+            "Confira se o texto está exatamente como V15TT, em maiúsculas, no campo “ID de indicação” aberto pelo botão “Indicador”. A gravação mostra dois cuidados simples: confirmar o texto com “OK” no teclado antes de tocar em “Enviar” e não deixar o código pela metade.",
+            "Se o jogo responder com uma mensagem diferente, a causa pode estar na elegibilidade da conta: a gravação cobre um único aparelho, e o próprio app define quais contas podem resgatar recompensas de indicação. Nesse caso, confira a ficha oficial na Google Play e as regras exibidas dentro do jogo antes de tentar de novo."
           ]
         }
       ],
       "tables": [{
         "heading": "Resumo do convite",
         "columns": ["Item", "O que procurar"],
-        "rows": [["Código de convite", "V15TT"], ["Atalho na tela inicial", "“Indicador”"], ["Campo do código", "“ID de indicação”"], ["Botão de envio", "“Enviar”"]],
+        "rows": [["Código de convite", "V15TT"], ["Atalho na tela inicial", "“Indicador”"], ["Campo do código", "“ID de indicação”"], ["Botão de envio", "“Enviar”"], ["Tela após o envio", "Animação “Legal!” com moedas e R$ 1,500 do jogo"], ["Fechar a recompensa", "“Clique para FECHAR (3s)”"]],
         "afterSectionIndex": 0
       }],
-      "steps": ["Abra o Arrow Win e toque em “Indicador” na tela inicial.", "Digite ou cole V15TT em “ID de indicação”.", "Confirme com “OK” no teclado, se necessário, e toque em “Enviar”."],
+      "steps": ["Abra o Arrow Win e toque em “Indicador” na tela inicial.", "Digite ou cole V15TT em “ID de indicação”.", "Confirme com “OK” no teclado, se necessário, e toque em “Enviar”.", "Toque em “Clique para FECHAR (3s)” para voltar à tela inicial."],
       "stepsSectionIndex": 0,
-      "pros": ["O código pode ser copiado ou digitado no jogo.", "As capturas ajudam a localizar o atalho e o campo."],
-      "cons": ["A gravação acompanha um único aparelho."],
+      "pros": ["O código pode ser copiado ou digitado no jogo.", "As capturas ajudam a localizar o atalho e o campo.", "A tela de recompensa após o envio está documentada em captura."],
+      "cons": ["A gravação acompanha um único aparelho.", "O valor da animação é saldo do jogo, não saque em dinheiro confirmado."],
       "faq": [
         { "q": "Qual é o código de convite do Arrow Win?", "a": "V15TT é o código de convite, também chamado de código de indicação, usado neste guia." },
         { "q": "Onde coloco o código V15TT no Arrow Win?", "a": "Na tela inicial, toque em “Indicador”, preencha “ID de indicação” com V15TT e toque em “Enviar”." },
-        { "q": "O que faço se o teclado continuar aberto?", "a": "Toque em “OK” no teclado para confirmar V15TT. Depois, toque em “Enviar” no Arrow Win." }
+        { "q": "O que faço se o teclado continuar aberto?", "a": "Toque em “OK” no teclado para confirmar V15TT. Depois, toque em “Enviar” no Arrow Win." },
+        { "q": "O que aparece depois de enviar o código V15TT?", "a": "A gravação mostra a animação “Legal!” com uma pilha de moedas marcadas R$ 1,500 e o aviso “Clique para FECHAR (3s)”. É o saldo interno do jogo naquela tela; a gravação não confirma saque em dinheiro real." },
+        { "q": "O código V15TT funciona em qualquer conta?", "a": "A gravação mostra o envio em um único aparelho. A elegibilidade de recompensas de indicação depende do app e da conta; não há garantia de que toda conta receba a mesma recompensa." },
+        { "q": "É seguro inserir o código de indicação no Arrow Win?", "a": "O formulário mostrado na gravação pede apenas o código, sem dados pessoais. Baixe o jogo somente pela ficha oficial da COOLYA na Google Play e desconfie de APKs modificados que prometem moedas extras." }
       ],
-      "verdict": "Copie V15TT, abra “Indicador” no Arrow Win e envie o código pelo formulário de indicação.",
+      "verdict": "Copie V15TT, abra “Indicador” no Arrow Win e envie o código pelo formulário de indicação. A gravação mostra a animação de recompensa depois do envio; o valor exibido é saldo do jogo, e a elegibilidade depende da conta.",
       "imageKey": "arrow-win-botao-indicador",
       "imageSectionIndex": 1,
       "imageWide": false,

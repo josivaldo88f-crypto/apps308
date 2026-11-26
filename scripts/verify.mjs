@@ -48,7 +48,7 @@ for(const [file,html] of htmls){
   const calloutLinks=[...(callout||'').matchAll(/<a\b[^>]*>/g)].map(([tag])=>attr(tag,'href'));
   assert.deepEqual(calloutLinks,[arrowWinStore],relative+' one direct Google Play CTA');
   assert(anchors.some(tag=>attr(tag,'href')==='/'+arrowWinRoute.sibling.replace('index.html','')),relative+' localized sibling link');
-  assert.equal((html.match(/<figure class="article-figure"/g)||[]).length,2,relative+' two editorial screenshots');
+  assert.equal((html.match(/<figure class="article-figure"/g)||[]).length,arrowWinRoute.copiesCode?3:2,relative+' editorial screenshots (3 invite, 2 download)');
   const copyButtons=[...html.matchAll(/<button\b[^>]*>/g)].filter(([tag])=>attr(tag,'data-copy')==='V15TT');
   assert.equal(copyButtons.length,Number(arrowWinRoute.copiesCode),relative+' copy only in invite guide');
   const scripts=html.replace(analyticsTag,'').match(/<script(?![^>]*type="application\/ld\+json")[^>]*>/g)||[];
