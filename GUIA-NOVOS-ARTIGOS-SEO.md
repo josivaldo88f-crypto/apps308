@@ -9,14 +9,14 @@ Manual técnico e editorial obrigatório para qualquer editor ou agente de IA qu
 Mais de 80% do tráfego do `apps308` ocorre em dispositivos móveis, onde títulos longos são truncados na SERP e reduzem o CTR mesmo no Top 5.
 
 1. **Limite e formato de `article.title`:**
-   - Mantenha `article.title` com **até ~65–68 caracteres** (teto prático de 70 caracteres para evitar truncamento no mobile).
+   - Mantenha `article.title` com **até ~50–55 caracteres** (teto prático de 55). O template soma ` | apps308` (+10 caracteres) ao renderizar o `<title>`, então o título final na SERP fica ≤65 caracteres. Títulos base de 60+ caracteres truncam no mobile e cortam o gancho final (aprendizado do ciclo GSC de 2026-11-26: 150/165 títulos truncavam com o teto antigo de 65–68).
    - **Nunca inclua `| apps308`** dentro de `article.title` em `src/data/articles.ts`. O template `src/pages/[locale]/[slug].astro` já renderiza `<Layout title={`${article.title} | apps308`} ...>` automaticamente e usa `article.title` puro no `<h1>`.
 2. **Proibição de "Zero-Click Spoilers":**
    - Nunca entregue a resposta seca no título (ex.: *"DramaGood paga mesmo? Teste real mostra que não"*), pois o usuário lê o *"não"* na SERP e não clica.
    - Use o **gancho concreto da trava, valor em tela, conversão de pontos ou prova do teste** entre parênteses ou após os dois-pontos:
-     - Bom: `DramaGood Paga Mesmo ou é Golpe? A Verdade Sobre o Saque de R$ 240`
-     - Bom: `CashDrama Paga Mesmo e é Confiável? A Trava dos $100 no Saque (2026)`
-     - Bom: `PineDrama Paga Mesmo no PIX? Valor dos Pontos e Saque Real (2026)`
+     - Bom: `DramaGood Paga Mesmo? A Trava do Saque de R$ 240`
+     - Bom: `CashDrama App Review (2026): Is It Legit or a Scam?`
+     - Bom: `Does PineDrama Pay Real Money? (2026 Rewards Test)`
 3. **Alinhamento com a intenção de busca real (GSC):**
    - Para nomes de apps e ferramentas comerciais (ex.: `surfshark`, `nordvpn`, `dramastack`), avalie se a busca dominante pede **review / opiniões / vale a pena / paga mesmo** em vez de manual técnico de configuração.
    - Inclua **sinônimos, grafias separadas e variações fonéticas reais** observadas no GSC no `intro`, nos `H2` e nas `FAQ` (sem keyword stuffing):
@@ -24,6 +24,7 @@ Mais de 80% do tráfego do `apps308` ocorre em dispositivos móveis, onde títul
 4. **Regras de `meta description`:**
    - Escreva entre **140 e 156 caracteres**.
    - Coloque o **dado concreto ou prova logo no início** (ex.: taxa de conversão real `30.000 pontos = R$ 1`, trava de `$100` / `$500`, código bônus `ALNTFL` / `cgfky` / `DL70959891`, ou prazo de expiração de 1 ano).
+   - Em artigos `EN`, **nunca use valores em R$ ou métodos locais (PIX) sem equivalência USD** — o público global não conhece a moeda brasileira (ex.: `R$ 240 (~$45)`, `30,000 coins ≈ $0.18–$0.20`). Não comece a description com nome de pacote (`com.…`): isso desperdiça o espaço nobre do snippet.
 
 ---
 
@@ -106,7 +107,7 @@ Em `src/pages/[locale]/[slug].astro`, apenas `article.intro` e `section.paragrap
 Siga esta sequência na ordem exata:
 
 1. **`apps308/src/data/articles.ts`:**
-   - Crie o artigo nos 3 idiomas (`en`, `es`, `pt`) com o mesmo `id`, `slug` único e localizado, `title` (≤ ~68 chars, sem `| apps308`), `description` (140–156 chars), `intro` com resposta na 1ª frase, `tables` (`afterSectionIndex: 0`), `topCallout` (quando aplicável), `faq`, `pros`, `cons`, `verdict` e `modifiedDate`.
+   - Crie o artigo nos 3 idiomas (`en`, `es`, `pt`) com o mesmo `id`, `slug` único e localizado, `title` (≤ ~55 chars, sem `| apps308`; o sufixo renderizado soma +10), `description` (140–156 chars), `intro` com resposta na 1ª frase, `tables` (`afterSectionIndex: 0`), `topCallout` (quando aplicável), `faq`, `pros`, `cons`, `verdict` e `modifiedDate`.
    - Se for **novo app**, adicione a entrada correspondente em `apps` (nome, URL oficial verificada ou canônica do artigo se não houver página oficial pública confiável, `os`, `sources[]`).
    - Se for **comparativo** (`app: 'compare'`), adicione a regra do `article.id` em `defaultSourcesFor(article)`.
    - Se o app tiver `sources` próprias por artigo e não quiser mesclar as fontes genéricas de `apps[article.app]`, inclua `article.app` na condição de exceção de `defaultSourcesFor` (como `attapoll`, `tiktoklite`, `dramagood`, `cashfortunedrama`) ou ajuste `sourcesFor`.

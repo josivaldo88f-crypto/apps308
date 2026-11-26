@@ -538,9 +538,9 @@ export const articles:Record<Locale,Article[]>={
       "app": "dramastack",
       "category": "rewards",
       "slug": "dramastack-pays-or-not",
-      "title": "Does DramaStack Pay Real Money? (2026 Review & Cashout Limit Proof)",
+      "title": "Does DramaStack Pay Real Money? (2026 Cashout Test)",
       "description": "Is DramaStack legit for earning money or a scam? See our real test of DramaStack's high cashout threshold ($60 / R$300), ad requirements, and Play Store rules.",
-      "modifiedDate": "2026-11-18",
+      "modifiedDate": "2026-11-26",
       "intro": "DramaStack (also searched as Drama Stack) is primarily a short-drama streaming app, but its Benefits tab also advertises tasks, a cash balance and withdrawals. The screen looks like a way to earn money. The app's own rules describe the rewards differently, so read those terms before spending time on the tasks.",
       "sections": [
         {
@@ -2709,8 +2709,9 @@ export const articles:Record<Locale,Article[]>={
       "app": "pinedrama",
       "category": "rewards",
       "slug": "pinedrama-rewards-does-it-pay-cash-withdrawal",
-      "title": "Does PineDrama Pay Real Money? How the Rewards Tab & Cashout Work (2026)",
-      "description": "Can you earn money on PineDrama? See how daily check-ins, 30-second ad tasks, coin conversion rates (30,000 coins = R$1), and regional PIX payouts work.",
+      "title": "Does PineDrama Pay Real Money? (2026 Rewards Test)",
+      "description": "Can you earn money on PineDrama? See the real coin math (30,000 coins ≈ $0.18–$0.20), daily ad limits, and where cashout is actually available.",
+      "modifiedDate": "2026-11-26",
       "intro": "If you found PineDrama through a 'get paid to watch dramas' video, you probably noticed a Rewards tab inside the app—or wondered why others say it does not pay at all. Both reactions stem from regional rollouts: in supported markets like Brazil, PineDrama actually displays point tasks and PIX withdrawal options, but the math tells a very modest story.",
       "sections": [
         {
@@ -2783,7 +2784,6 @@ export const articles:Record<Locale,Article[]>={
         "caption": "Daily missions include up to 30 ads (12,000 pts), timed rewards (up to 2,880 pts), and full-series milestones (1,800 pts).",
         "wide": false
       },
-      "modifiedDate": "2026-11-18",
       "relatedIds": [
         "pinedrama-guide",
         "short-drama-apps-compared",
@@ -3028,8 +3028,9 @@ export const articles:Record<Locale,Article[]>={
       "app": "cashdrama",
       "category": "rewards",
       "slug": "cashdrama-review-is-it-legit-or-scam",
-      "title": "CashDrama Review (2026): Is the Short Drama App Legit, Safe or a Scam?",
-      "description": "Honest CashDrama app review (com.reward.drama.earn.watch.tool): why balances jump to $99.86–$106.84 fast, how the $1 and $100 withdrawal locks work, and whether it pays.",
+      "title": "CashDrama App Review (2026): Is It Legit or a Scam?",
+      "description": "We tested CashDrama: the balance jumps to $99.86–$106.84, then withdrawal locks at $1 and $100. See the episode and day-unlock barriers before you install.",
+      "modifiedDate": "2026-11-26",
       "intro": "CashDrama (package com.reward.drama.earn.watch.tool on Google Play) pitches itself as a short-drama app that rewards you with cash for watching vertical mini-series. In our hands-on inspection, the balance climbed to $99.86 and $106.84 on Day 1—yet the Withdraw Now button stayed disabled behind shifting episode and day-unlock gates.",
       "sections": [
         {
@@ -3099,7 +3100,6 @@ export const articles:Record<Locale,Article[]>={
         "caption": "Even with a $106.84 balance, Discover displays the 'Watch 12 more episodes to cash out' gate.",
         "wide": false
       },
-      "modifiedDate": "2026-11-18",
       "relatedIds": [
         "short-drama-apps-compared",
         "cashdrama-withdraw",
@@ -5507,8 +5507,9 @@ export const articles:Record<Locale,Article[]>={
       "app": "dramagood",
       "category": "rewards",
       "slug": "dramagood-app-review",
-      "title": "DramaGood app review: does it pay? Real test says no (2026)",
-      "description": "We tested DramaGood: balance stuck at R$ 106.60 with a R$ 240 minimum withdrawal. Why this short-drama app doesn't pay and what Play Store says.",
+      "title": "DramaGood Review (2026): Does It Pay Real Money?",
+      "description": "We tested DramaGood: the wallet stops at R$ 106.60 (~$20) and cashout starts at R$ 240 (~$45). See the withdrawal lock and what Google Play says.",
+      "modifiedDate": "2026-11-26",
       "intro": "DramaGood promises money for watching short vertical dramas: banners celebrating withdrawals of R$ 240 to R$ 1,000 cross the screen, the tasks tab dangles R$ 7,777 prizes and the wallet shows R$ 106.60 from the first session. We tested the app on November 16, 2026, and the answer is direct: it doesn't pay. The balance climbs fast at the start and stalls short of the required minimum, and no official document from the developer mentions cash payouts. Amounts below are in Brazilian reais because we tested the app's Portuguese version in Brazil.",
       "sections": [
         {
@@ -5592,8 +5593,8 @@ export const articles:Record<Locale,Article[]>={
           "a": "As a short-drama player, it works; as a money-making app, no. The Play Store listing only mentions in-app perks, and the Privacy Policy describes a streaming service."
         },
         {
-          "q": "Does DramaGood actually pay?",
-          "a": "No. In our November 16, 2026 test, the balance stayed at R$ 106.60 while the withdrawal minimum is R$ 240, and no official document mentions cash payouts."
+          "q": "Does DramaGood pay real money?",
+          "a": "No. In our November 16, 2026 test, the balance stayed at R$ 106.60 (~$20 USD) while the withdrawal minimum is R$ 240 (~$45 USD), and no official document mentions cash payouts."
         },
         {
           "q": "Is DramaGood a scam?",
@@ -5621,7 +5622,6 @@ export const articles:Record<Locale,Article[]>={
           "url": "https://www.drama-good.com/privacy.html"
         }
       ],
-      "modifiedDate": "2026-11-18",
       "relatedIds": [
         "short-drama-apps-compared",
         "dramagood-saque",
@@ -11167,7 +11167,8 @@ export const articles:Record<Locale,Article[]>={
       "category": "rewards",
       "slug": "como-retirar-dinero-attapoll",
       "title": "Cómo retirar dinero de AttaPoll: PayPal y mínimos",
-      "description": "Aprende a retirar dinero de AttaPoll, consultar el mínimo para PayPal y revisar un pago pendiente. Los métodos y requisitos dependen de tu cuenta.",
+      "description": "Retira AttaPoll por PayPal: el mínimo varía por país (Play Store cita $3 o €2,50) y el envío tarda hasta 72 h. Pasos y qué hacer si queda pendiente.",
+      "modifiedDate": "2026-11-26",
       "intro": "Para retirar dinero de AttaPoll, comprueba el saldo confirmado, el mínimo del método elegido y los datos de la cuenta de destino antes de enviar la solicitud. La ayuda oficial indica que el envío del pago puede tardar hasta 72 horas. El siguiente paso depende de si la solicitud está pendiente, ha fallado o figura como completada.",
       "sections": [
         {
@@ -12286,8 +12287,9 @@ export const articles:Record<Locale,Article[]>={
       "app": "dramagood",
       "category": "rewards",
       "slug": "dramagood-paga-de-verdad",
-      "title": "¿DramaGood paga de verdad? Nuestro testeo dice que no (2026)",
-      "description": "Probamos DramaGood: saldo de R$ 106,60, retiro mínimo de R$ 240 y premios de R$ 7.777. Te contamos por qué esta app de dramas no paga.",
+      "title": "¿DramaGood Paga de Verdad? Nuestro Test (2026)",
+      "description": "Probamos DramaGood: saldo de R$ 106,60 (~$20 USD), retiro mínimo de R$ 240 (~$45) y premios de R$ 7.777. Mira la traba del retiro y qué dice Google Play.",
+      "modifiedDate": "2026-11-26",
       "intro": "DramaGood promete dinero por ver mininovelas cortas: banners de retiros de R$ 240 a R$ 1.000 cruzan la pantalla, la pestaña de tareas anuncia premios de R$ 7.777 y la cartera marca R$ 106,60 desde la primera sesión. Lo probamos el 16 de noviembre de 2026 y la respuesta es directa: no paga. El saldo sube rápido al inicio y se frena antes del mínimo exigido, y ningún documento oficial del desarrollador menciona retiros en efectivo. Los valores aparecen en reales brasileños (R$) porque el testeo se hizo en la versión en portugués de la app, en Brasil.",
       "sections": [
         {
@@ -12400,7 +12402,6 @@ export const articles:Record<Locale,Article[]>={
           "url": "https://www.drama-good.com/privacy.html"
         }
       ],
-      "modifiedDate": "2026-11-18",
       "relatedIds": [
         "short-drama-apps-compared",
         "dramagood-saque",
@@ -12891,9 +12892,9 @@ export const articles:Record<Locale,Article[]>={
       "app": "compare",
       "category": "rewards",
       "slug": "apps-de-novelas-cortas-que-pagan-por-ver-videos",
-      "title": "Apps que Prometen Pagar por Ver Novelas y Videos (2026): ¿Cuáles Sí Pagan?",
-      "description": "Comparamos DramaStack, CashDrama, Cash Fortune Drama, DramaGood y PineDrama: qué apps de mininovelas bloquean el retiro y cuáles sí pagan dinero real en 2026.",
-      "modifiedDate": "2026-11-18",
+      "title": "Apps de Novelas: ¿Pagan por Ver Videos? Test (2026)",
+      "description": "Comparamos DramaStack, CashDrama, Cash Fortune Drama, DramaGood y PineDrama: qué apps de mininovelas bloquean el retiro y cuáles sí pagan dinero real.",
+      "modifiedDate": "2026-11-26",
       "intro": "Decenas de apps de novelas cortas verticales prometen entre $100 y $3,000 USD —o retiros instantáneos por PIX y PayPal— solo por ver capítulos cortos. Tras revisar pantalla por pantalla DramaStack, CashDrama, Cash Fortune Drama, DramaGood, PineDrama y DramaBox en 2026, el resultado es claro: cuatro no pagan dinero real, DramaBox es solo streaming freemium y únicamente PineDrama ofrece centavos simbólicos en mercados promocionales concretos (30.000 puntos = R$ 1 / ~$0,18 USD), sin pestaña de cobro en la mayoría de países hispanos.",
       "topCallout": {
         "title": "Evita mínimos imposibles de $100–$500 en apps de novelas: alternativas que sí pagan",
@@ -18897,8 +18898,9 @@ export const articles:Record<Locale,Article[]>={
       "app": "tiktoklite",
       "category": "rewards",
       "slug": "tiktok-lite-recompensas-saque",
-      "title": "TikTok Lite recompensas 2026: pontos, tarefas diárias, saque e código DL70959891",
-      "description": "Entenda como funcionam os pontos do TikTok Lite na prática: check-in diário, anúncios, vídeos, saque mínimo de R$ 0,50, validade dos pontos e código DL70959891.",
+      "title": "TikTok Lite: Pontos, Saque de R$ 0,50 e Código (2026)",
+      "description": "Check-in diário, anúncios e vídeos: veja como funcionam os pontos do TikTok Lite, o saque mínimo de R$ 0,50, a validade e o código DL70959891.",
+      "modifiedDate": "2026-11-26",
       "intro": "O TikTok Lite mantém no Brasil uma aba de Recompensas em que você junta pontos com check-in diário, anúncios, tempo assistindo a vídeos e indicação de amigos. Analisar telas reais do aplicativo mostra quanto os pontos realmente valem, como funciona o saque via Pix e quando o saldo expira.",
       "sections": [
         {
@@ -19048,8 +19050,9 @@ export const articles:Record<Locale,Article[]>={
       "app": "dramagood",
       "category": "rewards",
       "slug": "dramagood-paga-mesmo",
-      "title": "DramaGood Paga Mesmo ou é Golpe? A Verdade Sobre o Saque de R$ 240",
+      "title": "DramaGood Paga Mesmo? A Trava do Saque de R$ 240",
       "description": "O app DramaGood é confiável e paga mesmo em 2026? Testamos o saldo de R$ 106,60, a trava do saque mínimo de R$ 240 e o aviso oculto na Google Play Store.",
+      "modifiedDate": "2026-11-26",
       "intro": "O DramaGood (também buscado como Drama Good) promete dinheiro por assistir a mininovelas curtas: banners de saques de R$ 240 a R$ 1.000 desfilam sobre os vídeos, a aba de tarefas anuncia prêmios de R$ 7.777 e a carteira marca R$ 106,60 já na primeira sessão. Testamos o app em 16 de novembro de 2026 e a resposta é direta: ele não paga. O saldo sobe rápido no começo e fica antes do mínimo exigido, e nenhum documento oficial do desenvolvedor menciona saque em dinheiro. Este artigo mostra o que o app faz, o que a ficha da Google Play e a Política de Privacidade dizem dele e por que as contas não fecham.",
       "sections": [
         {
@@ -19166,7 +19169,6 @@ export const articles:Record<Locale,Article[]>={
           "url": "https://www.drama-good.com/privacy.html"
         }
       ],
-      "modifiedDate": "2026-11-18",
       "relatedIds": [
         "short-drama-apps-compared",
         "dramagood-saque",
