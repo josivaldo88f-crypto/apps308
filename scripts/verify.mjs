@@ -15,6 +15,8 @@ const arrowWinRoutes=new Map([
  [download,{copiesCode:false,sibling:invite}]
 ]));
 const arrowWinStore='https://play.google.com/store/apps/details?id=com.qrgame.arrowwin';
+const runTeamRoutes=new Set(['en/run-team-invite-code/index.html','es/codigo-de-invitacion-run-team/index.html','pt/codigo-de-convite-run-team/index.html']);
+const runTeamInviteUrl='https://d3oi8atn0xpwup.cloudfront.net/rt/index_3.html?id=67080261';
 const attr=(tag,name)=>tag.match(new RegExp(`(?:^|\\s)${name}="([^"]*)"`))?.[1];
 function targetFile(url){const pathname=decodeURIComponent(url.pathname);return path.join(root,pathname.endsWith('/')?pathname+'index.html':pathname);}
 for(const [file,html] of htmls){
@@ -38,7 +40,7 @@ for(const [file,html] of htmls){
  const arrowWinRoute=arrowWinRoutes.get(relative);
  const analyticsTag='<script>\n  window.dataLayer = window.dataLayer || [];\n  window.dataLayer.push({\'gtm.start\': new Date().getTime(), event: \'gtm.js\'});\n</script><script async src="https://www.googletagmanager.com/gtm.js?id=GTM-NZJRRRLM"></script>';
  assert(html.includes(analyticsTag),relative+' analytics tag');
- if(schemas.some(s=>s['@type']==='Article')){articleCount++;assert(schemas.some(s=>s['@type']==='FAQPage'),relative+' faq');if(!arrowWinRoute?.copiesCode&&!relative.includes('freecash')&&!relative.includes('pawns')&&!relative.includes('prime')&&!relative.includes('attapoll')&&!relative.includes('tiktok-lite'))assert(!/<script(?![^>]*type="application\/ld\+json")[^>]*>/g.test(html.replace(analyticsTag,'')),relative+' zero client JS');assert(html.includes('srcset=')||html.includes('<img'),relative+' screenshot included');if(relative.includes('swagbucks')&&!relative.includes('prime')){assert(html.includes('https://www.swagbucks.com/p/register?rb=NPHSOu1zhQuqNHgx&amp;rp=1'),relative+' swagbucks affiliate link');assert(html.includes('rel="sponsored noopener"'),relative+' sponsored rel');}if(relative.includes('pawns')){assert(html.includes('https://discoverpawns.eu/6823713'),relative+' pawns affiliate link');}if(relative.includes('prime')){assert(html.includes('https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d'),relative+' primeopinion affiliate link');}if(relative.includes('attapoll')){assert(html.includes('https://attapoll.app/join/cgfky'),relative+' attapoll invite link');assert(html.includes('rel="sponsored noopener"'),relative+' attapoll sponsored rel');}if(relative.includes('tiktok-lite')){assert(html.includes('https://www.tiktok.com/d/4/ZS9fcGCx9xhYn-v2KXS/'),relative+' tiktoklite invite link');assert(html.includes('rel="sponsored noopener"'),relative+' tiktoklite sponsored rel');}}
+ if(schemas.some(s=>s['@type']==='Article')){articleCount++;assert(schemas.some(s=>s['@type']==='FAQPage'),relative+' faq');if(!arrowWinRoute?.copiesCode&&!runTeamRoutes.has(relative)&&!relative.includes('freecash')&&!relative.includes('pawns')&&!relative.includes('prime')&&!relative.includes('attapoll')&&!relative.includes('tiktok-lite'))assert(!/<script(?![^>]*type="application\/ld\+json")[^>]*>/g.test(html.replace(analyticsTag,'')),relative+' zero client JS');assert(html.includes('srcset=')||html.includes('<img'),relative+' screenshot included');if(relative.includes('swagbucks')&&!relative.includes('prime')){assert(html.includes('https://www.swagbucks.com/p/register?rb=NPHSOu1zhQuqNHgx&amp;rp=1'),relative+' swagbucks affiliate link');assert(html.includes('rel="sponsored noopener"'),relative+' sponsored rel');}if(relative.includes('pawns')){assert(html.includes('https://discoverpawns.eu/6823713'),relative+' pawns affiliate link');}if(relative.includes('prime')){assert(html.includes('https://primeopinion.com/register?ref=a32dad65-3bc5-4c37-af10-4f7590595b0d'),relative+' primeopinion affiliate link');}if(relative.includes('attapoll')){assert(html.includes('https://attapoll.app/join/cgfky'),relative+' attapoll invite link');assert(html.includes('rel="sponsored noopener"'),relative+' attapoll sponsored rel');}if(relative.includes('tiktok-lite')){assert(html.includes('https://www.tiktok.com/d/4/ZS9fcGCx9xhYn-v2KXS/'),relative+' tiktoklite invite link');assert(html.includes('rel="sponsored noopener"'),relative+' tiktoklite sponsored rel');}}
  if(arrowWinRoute){
   assert(articleSchema,relative+' Arrow Win article schema');
   assert(schemas.some(s=>s['@type']==='SoftwareApplication'&&s.url===arrowWinStore),relative+' verified store schema');
@@ -54,10 +56,21 @@ for(const [file,html] of htmls){
   const scripts=html.replace(analyticsTag,'').match(/<script(?![^>]*type="application\/ld\+json")[^>]*>/g)||[];
   assert.equal(scripts.length,Number(arrowWinRoute.copiesCode),relative+' script only for invite copy button');
  }
+ if(runTeamRoutes.has(relative)){
+  assert(articleSchema,relative+' Run Team article schema');
+  assert(schemas.some(s=>s['@type']==='SoftwareApplication'&&s.url==='https://play.google.com/store/apps/details?id=com.runteam.android'),relative+' verified Run Team store schema');
+  const copyButtons=[...html.matchAll(/<button\b[^>]*>/g)].filter(([tag])=>attr(tag,'data-copy')==='67080261');
+  assert.equal(copyButtons.length,1,relative+' runteam copy button');
+  assert(html.includes(runTeamInviteUrl),relative+' runteam invite link');
+  assert(html.includes('rel="sponsored noopener"'),relative+' runteam sponsored rel');
+  const scripts=html.replace(analyticsTag,'').match(/<script(?![^>]*type="application\/ld\+json")[^>]*>/g)||[];
+  assert.equal(scripts.length,1,relative+' script only for invite copy button');
+  assert.equal((html.match(/<figure class="article-figure"/g)||[]).length,7,relative+' seven editorial screenshots');
+ }
  for(const m of html.matchAll(/<img\b[^>]*>/g)){assert(attr(m[0],'alt'),relative+' alt');assert(attr(m[0],'width')&&attr(m[0],'height'),relative+' dimensions');assert(attr(m[0],'loading')==='lazy',relative+' lazy image');imageCount++;}
  for(const schema of schemas)assert(!schema.aggregateRating,relative+' no invented ratings');
 }
-assert.equal(articleCount,165,'165 localized articles');
+assert.equal(articleCount,168,'168 localized articles');
 for(const route of arrowWinRoutes.keys())assert(htmls.has(path.join(root,route)),route+' generated');
 const sitemap=await readFile(path.join(root,'sitemap-0.xml'),'utf8');assert(sitemap.includes('x-default'),'sitemap x-default');for(const lang of ['en','es','pt'])assert(sitemap.includes(`hreflang="${lang}"`),'sitemap '+lang);
 const sitemapEntries=new Map([...sitemap.matchAll(/<url>(.*?)<\/url>/gs)].map(match=>[match[1].match(/<loc>(.*?)<\/loc>/)?.[1],match[1]]));

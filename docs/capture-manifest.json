@@ -154,5 +154,110 @@
     },
     "privacy": "No status bar, avatar or personal account data present; in-game reward screen only",
     "sourceLanguage": "pt"
+  },
+  {
+    "app": "run-team-home",
+    "captureMethod": "ffmpeg frame extraction from Android screen recording (1080x2400, 60fps)",
+    "captured": "2026-11-26",
+    "videoTimestamp": "00:00",
+    "crop": {
+      "left": 0,
+      "top": 0,
+      "width": 1080,
+      "height": 2400
+    },
+    "privacy": "No status bar, notification shade, keyboard or personal device data in selected frames; black letterbox bars trimmed",
+    "sourceLanguage": "en",
+    "note": "Home screen before entry: Invite tile (R$10K) and ID icon (R$5)."
+  },
+  {
+    "app": "run-team-invite-rules",
+    "captureMethod": "ffmpeg frame extraction from Android screen recording (1080x2400, 60fps)",
+    "captured": "2026-11-26",
+    "videoTimestamp": "00:04",
+    "crop": {
+      "left": 0,
+      "top": 0,
+      "width": 1080,
+      "height": 2400
+    },
+    "privacy": "No status bar, notification shade, keyboard or personal device data in selected frames; black letterbox bars trimmed",
+    "sourceLanguage": "en",
+    "note": "Invite page: Invitation ID bar, Reward rules (levels 2/4/6), 40-reward cap."
+  },
+  {
+    "app": "run-team-my-inviter",
+    "captureMethod": "ffmpeg frame extraction from Android screen recording (1080x2400, 60fps)",
+    "captured": "2026-11-26",
+    "videoTimestamp": "00:06",
+    "crop": {
+      "left": 0,
+      "top": 0,
+      "width": 1080,
+      "height": 2400
+    },
+    "privacy": "No status bar, notification shade, keyboard or personal device data in selected frames; black letterbox bars trimmed",
+    "sourceLanguage": "en",
+    "note": "My inviter: None, Fill in ID Reward button, Will get R$5."
+  },
+  {
+    "app": "run-team-invitation-form",
+    "captureMethod": "ffmpeg frame extraction from Android screen recording (1080x2400, 60fps)",
+    "captured": "2026-11-26",
+    "videoTimestamp": "00:30",
+    "crop": {
+      "left": 0,
+      "top": 0,
+      "width": 1080,
+      "height": 2400
+    },
+    "privacy": "No status bar, notification shade, keyboard or personal device data in selected frames; black letterbox bars trimmed",
+    "sourceLanguage": "en",
+    "note": "Invitation ID dialog with 67080261 entered above Submit (keyboard dismissed)."
+  },
+  {
+    "app": "run-team-congratulations",
+    "captureMethod": "ffmpeg frame extraction from Android screen recording (1080x2400, 60fps)",
+    "captured": "2026-11-26",
+    "videoTimestamp": "00:31",
+    "crop": {
+      "left": 49,
+      "top": 409,
+      "width": 982,
+      "height": 1394
+    },
+    "privacy": "No status bar, notification shade, keyboard or personal device data in selected frames; black letterbox bars trimmed",
+    "sourceLanguage": "en",
+    "note": "Congratulations popup with R$5 cash and I understand."
+  },
+  {
+    "app": "run-team-code-accepted",
+    "captureMethod": "ffmpeg frame extraction from Android screen recording (1080x2400, 60fps)",
+    "captured": "2026-11-26",
+    "videoTimestamp": "00:37",
+    "crop": {
+      "left": 0,
+      "top": 0,
+      "width": 1080,
+      "height": 2400
+    },
+    "privacy": "No status bar, notification shade, keyboard or personal device data in selected frames; black letterbox bars trimmed",
+    "sourceLanguage": "en",
+    "note": "Invitation code has been filled in, rewards have been issued; Filled in button."
+  },
+  {
+    "app": "run-team-balance",
+    "captureMethod": "ffmpeg frame extraction from Android screen recording (1080x2400, 60fps)",
+    "captured": "2026-11-26",
+    "videoTimestamp": "00:46",
+    "crop": {
+      "left": 0,
+      "top": 0,
+      "width": 1080,
+      "height": 2400
+    },
+    "privacy": "No status bar, notification shade, keyboard or personal device data in selected frames; black letterbox bars trimmed",
+    "sourceLanguage": "en",
+    "note": "Home screen after entry: cash balance R$5 with 10% badge."
   }
 ]

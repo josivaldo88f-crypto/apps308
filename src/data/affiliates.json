@@ -98,6 +98,14 @@
       "codeType": "referral-id",
       "evidence": "The landing page returned HTTP 200, displayed V15TT and linked to the Arrow Win Google Play listing with referrer=code%3DV15TT. The Android recording shows manual submission and an in-game reward animation."
     },
+    "runteam": {
+      "status": "verified",
+      "code": "67080261",
+      "referralUrl": "https://d3oi8atn0xpwup.cloudfront.net/rt/index_3.html?id=67080261",
+      "verifiedAt": "2026-11-26",
+      "codeType": "referral-id",
+      "evidence": "The invite landing page returned HTTP 200 displaying code 67080261 and the R$5 entry bonus, and its invite_n.js script builds the Run Team Google Play URL (com.runteam.android) with referrer=rtid%3D67080261. The Android recording of 2026-11-26 shows manual submission of 67080261 and the +R$5 reward screens."
+    },
     "tiktoklite": {
       "status": "verified",
       "code": "DL70959891",

@@ -57,6 +57,20 @@
 .cover-arrowwin .screen-1 { width: 35%; height: auto; right: 4%; top: 22px; transform: rotate(8deg); }
 .cover-arrowwin .screen-2 { width: 34%; height: auto; right: 14%; top: 107px; transform: rotate(-8deg); }
 .large.cover-arrowwin .screen-2 { top: 131px; }
+.cover-runteam {
+  background: linear-gradient(135deg, #0b4ea2 0%, #2f9bf0 100%);
+  --cover-accent: #ffd166;
+}
+.cover-runteam .cover-copy { color: #fff; width: 51%; }
+.cover-runteam .cover-tagline { color: #d9efff; }
+.mark-runteam { background: #0a3d80; border: 1px solid #66b8f5; color: #ffd166; }
+.mark-runteam .runteam-logo { font: 850 22px/1 var(--sans); letter-spacing: -1px; position: relative; }
+.mark-runteam .runteam-logo > span { position: absolute; font-size: 11px; right: -10px; top: -4px; }
+.cover-runteam .cover-screen { border-color: #7cc4f8; background: #0a3d80; }
+.cover-runteam .screen-1 { width: 35%; height: auto; right: 4%; top: 22px; transform: rotate(8deg); }
+.cover-runteam .screen-2 { width: 34%; height: auto; right: 14%; top: 107px; transform: rotate(-8deg); }
+.large.cover-runteam .screen-2 { top: 131px; }
+.large .mark-runteam .runteam-logo { font-size: 30px; }
 .copy-row code { user-select: text; }
 .article-callout .copy-row { margin-top: 10px; }
 .article-callout .copy-row button { min-height: 44px; }

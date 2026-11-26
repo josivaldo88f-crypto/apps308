@@ -3,12 +3,182 @@ import affiliateData from './affiliates.json';
 
 const arrowWinStore = 'https://play.google.com/store/apps/details?id=com.qrgame.arrowwin';
 const arrowWinInvite = affiliateData.programs.arrowwin;
+const runTeamStore = 'https://play.google.com/store/apps/details?id=com.runteam.android';
+const runTeamInvite = affiliateData.programs.runteam;
 
 export interface ArticleCallout { title:string;text?:string;copyCode?:string;links:{label:string;url:string;sponsored?:boolean}[]; }
 export interface ArticleImage { key:string;alt:string;caption:string;wide?:boolean; }
 export interface Article { id:string;app:string;category:string;slug:string;title:string;description:string;intro:string;modifiedDate?:string;topCallout?:ArticleCallout;sections:{heading:string;callout?:ArticleCallout;paragraphs:string[];image?:ArticleImage;source?:{title:string;url:string};sources?:{title:string;url:string}[];cta?:{label:string;url:string;sponsored?:boolean}}[];steps:string[];stepsSectionIndex?:number;tables?:{heading:string;columns:string[];rows:string[][];afterSectionIndex:number}[];pros:string[];cons:string[];faq:{q:string;a:string}[];verdict:string;imageAlt:string;caption:string;imageKey?:string;imageSectionIndex?:number;imageWide?:boolean;secondImage?:ArticleImage;sources?:{title:string;url:string}[];relatedIds?:string[]; }
 export const articles:Record<Locale,Article[]>={
   "en": [
+    {
+      "id": "runteam-invite",
+      "app": "runteam",
+      "category": "rewards",
+      "slug": "run-team-invite-code",
+      "title": "Run Team Invite Code 67080261: Where to Enter It",
+      "description": "Enter Run Team invite code 67080261 in the Invitation ID field to get R$5 (~US$1) instantly. See the exact buttons, reward screens and referral rules.",
+      "intro": "67080261 is the Run Team invite code we tested on Android: entering it in the Invitation ID form credited R$5 (about US$1) to the cash balance immediately. This guide shows the exact buttons, the reward screens after submission and the referral rules, whether you searched for the Run Team invite code, the RunTeam invitation ID or a Run Team referral code.",
+      "modifiedDate": "2026-11-26",
+      "topCallout": {
+        "title": "Run Team invitation ID (tested on Android)",
+        "copyCode": runTeamInvite.code,
+        "links": [
+          { "label": "Open invite page with code 67080261", "url": runTeamInvite.referralUrl, "sponsored": true },
+          { "label": "Run Team on Google Play", "url": runTeamStore }
+        ]
+      },
+      "sections": [
+        {
+          "heading": "What the Run Team invite code pays",
+          "paragraphs": [
+            "The entry bonus is R$5 (about US$1) in the green cash balance, credited once per account right after Submit. In our recording the cash counter moved from R$0 to R$5 and the small badge beside it changed from 0% to 10%.",
+            "Run Team keeps two balances: gold coins and green cash. The invite headline 'Reward for every invite R$10K' and the R$250 milestone figures carry the coin icon, while the cash side of each milestone is labelled 'Possible to obtain R$0.5' (about US$0.09). Coins are in-game points, not withdrawable money.",
+            "The bonus registers an inviter for your account. After submission the form locks as 'Filled in' and the Invite page lists the code under 'My inviter', so a second code cannot be added later."
+          ],
+          "image": {
+            "key": "run-team-invite-rules",
+            "alt": "Run Team Invite page with the Reward rules for friend levels 2, 4 and 6 and the 40-reward cap",
+            "caption": "Invite page rules: R$250 in coins at friend levels 2, 4 and 6, 'Possible to obtain R$0.5' in cash, 1 reward per 2 levels up to 40 times.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Where to enter the Run Team invitation ID",
+          "paragraphs": [
+            "On the home screen, two shortcuts open the same Invite page: the green 'Invite' tile labelled R$10K at the bottom right, and the small ID-card icon marked R$5 on the right edge. The ID icon is the entry-bonus shortcut; the Invite tile also shows your own code and the referral rules.",
+            "Scroll past the rules on the Invite page to the 'My inviter' panel. Before any code is registered it reads 'None', which is the state required to claim the entry bonus."
+          ]
+        },
+        {
+          "heading": "Open the form with Fill in ID Reward",
+          "paragraphs": [
+            "Tap the blue 'Fill in ID Reward' button inside the 'My inviter' panel. The line below it, 'Will get R$5', states the entry bonus for registering a friend's code.",
+            "The 'Invitation ID' dialog opens with the message 'Fill in the invitation code and you will immediately receive the following rewards' and a +R$5 cash bundle above the input field."
+          ],
+          "image": {
+            "key": "run-team-my-inviter",
+            "alt": "Run Team My inviter panel showing None, the Fill in ID Reward button and Will get R$5",
+            "caption": "Before entry: 'My inviter: None', the 'Fill in ID Reward' button and 'Will get R$5'.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Type the code and tap Submit",
+          "paragraphs": [
+            "Type or paste 67080261 into the field labelled 'Enter your friend's invite ID' and tap 'Submit'. The recording shows the eight-digit ID entered in full before submission; any valid friend's Invitation ID works the same way, because the reward comes from registering an inviter, not from the specific digits."
+          ],
+          "image": {
+            "key": "run-team-invitation-form",
+            "alt": "Run Team Invitation ID form with 67080261 entered above the Submit button",
+            "caption": "The Invitation ID form with 67080261 entered above the Submit button.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "The reward screens after submission",
+          "paragraphs": [
+            "Immediately after Submit, a 'Congratulations' popup displays the green cash bundle labelled R$5 with an 'I understand' button.",
+            "Closing it returns to the Invitation ID dialog, now reading 'Invitation code has been filled in, rewards have been issued', with 67080261 locked in the field and the button renamed 'Filled in'."
+          ],
+          "image": {
+            "key": "run-team-congratulations",
+            "alt": "Run Team Congratulations popup with the R$5 cash reward and the I understand button",
+            "caption": "The Congratulations popup with the R$5 cash reward and the 'I understand' button.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Confirm the inviter registered on your account",
+          "paragraphs": [
+            "On the Invite page, 'My inviter' now shows 67080261. The 'He has obtained' line stayed at R$0 coins and R$0 cash: the inviter earns only when the invited account passes the milestone levels, not at registration."
+          ],
+          "image": {
+            "key": "run-team-code-accepted",
+            "alt": "Run Team dialog reading Invitation code has been filled in, rewards have been issued, with 67080261 and the Filled in button",
+            "caption": "'Invitation code has been filled in, rewards have been issued', with 67080261 and the 'Filled in' button.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Check the balance and find your own Invitation ID",
+          "paragraphs": [
+            "Back on the home screen the green cash balance reads R$5 and the badge shows 10%. The recording never opens a withdrawal screen, so treat the percentage as an in-app progress marker: this guide confirms the bonus credit, not a cashout threshold or a payment.",
+            "Your own code sits in the 'Invitation ID' bar at the top of the Invite page, with a copy icon (our test account showed 80546254). Sharing it is how the referrer side of the program earns: R$250 in coins plus a possible R$0.5 in cash each time a friend passes levels 2, 4 and 6, up to 40 rewards.",
+            "If you prefer reward programs with published payout terms instead of unverified in-app balances, compare them in our [Freecash starter guide](/en/freecash-offers-referrals-guide/)."
+          ],
+          "image": {
+            "key": "run-team-balance",
+            "alt": "Run Team home screen after entry with the cash balance R$5 and the 10% badge",
+            "caption": "After entry: cash balance R$5 and the 10% badge on the home screen.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "If the Run Team code is not accepted",
+          "paragraphs": [
+            "Check that the field contains exactly eight digits with no spaces, and that 'My inviter' still reads 'None': accounts that already registered an inviter see the locked 'Filled in' form instead of a new submission.",
+            "Currency and amounts are regionalized. Our recording ran in Brazilian reais (R$5, about US$1); players in other countries see other currencies and figures, so compare the rules on your own screen rather than the exact numbers here.",
+            "Install only from DotVerse's official Google Play listing (package com.runteam.android) and avoid modified APKs promising extra cash. The 'successfully withdrawn' ticker on the invite landing page is marketing, not independent payment proof."
+          ],
+          "sources": [
+            { "title": "Run Team invite landing page (code 67080261)", "url": runTeamInvite.referralUrl }
+          ]
+        }
+      ],
+      "tables": [{
+        "heading": "Run Team invite code at a glance",
+        "columns": ["Item", "What we verified"],
+        "rows": [
+          ["Invite code (Invitation ID)", "67080261"],
+          ["Entry bonus", "+R$5 cash (about US$1), once per account"],
+          ["Entry route", "Invite tile or ID icon (R$5) → 'Fill in ID Reward'"],
+          ["Field label", "'Enter your friend's invite ID'"],
+          ["After submission", "'Congratulations' R$5, then 'rewards have been issued' / 'Filled in'"],
+          ["Referrer milestones", "Friend levels 2, 4, 6: R$250 coins + possible R$0.5 cash each"],
+          ["Referral cap", "1 reward per 2 levels, up to 40 times"],
+          ["Your own code", "'Invitation ID' bar at the top of the Invite page"],
+          ["Currency", "Recording in R$ (Brazil); values vary by region"]
+        ],
+        "afterSectionIndex": 0
+      }],
+      "steps": [
+        "Open Run Team and tap the Invite tile (R$10K) or the ID icon marked R$5.",
+        "Scroll to the 'My inviter' panel and tap 'Fill in ID Reward'.",
+        "Enter 67080261 in the 'Enter your friend's invite ID' field.",
+        "Tap Submit, then 'I understand' on the Congratulations popup.",
+        "Return to the home screen and check the cash balance: R$5 with the 10% badge."
+      ],
+      "stepsSectionIndex": 3,
+      "pros": [
+        "The R$5 entry bonus appeared immediately after Submit in our recording.",
+        "The form asks only for the invitation ID, with no personal or payment data.",
+        "Every screen from the home shortcut to the locked 'Filled in' state is documented.",
+        "Your own Invitation ID can be copied from the Invite page in one tap."
+      ],
+      "cons": [
+        "No withdrawal screen appears in the recording: R$5 is in-app balance, not confirmed payment.",
+        "The R$10K headline and R$250 milestones are coin values; the cash side is only 'possible to obtain R$0.5'.",
+        "The entry bonus is one-time per account; a second code cannot be registered.",
+        "Amounts and currency are regionalized, so your screen may differ from the R$ figures shown."
+      ],
+      "faq": [
+        { "q": "What is the Run Team invite code?", "a": "67080261 is the Invitation ID we entered in our Android test, also searched as the RunTeam invite code or Run Team referral code. Any valid friend's Invitation ID works the same way." },
+        { "q": "Where do I enter the Run Team invitation ID?", "a": "On the Invite page (green Invite tile or the ID icon marked R$5), scroll to 'My inviter', tap 'Fill in ID Reward', type the code in 'Enter your friend's invite ID' and tap Submit." },
+        { "q": "What bonus does the Run Team invite code give?", "a": "R$5 (about US$1) in the cash balance immediately after submission, once per account. The inviter separately earns R$250 in coins plus a possible R$0.5 in cash when the friend passes levels 2, 4 and 6, up to 40 rewards." },
+        { "q": "Does the Run Team invite code work on any account?", "a": "The bonus is one-time: accounts that already show a code under 'My inviter' get the locked 'Filled in' form. Eligibility is defined by the app, and our recording covers a single device." },
+        { "q": "Can I withdraw the R$5 bonus right away?", "a": "The recording shows only the balance and a 10% badge, never a withdrawal screen or a payment. Treat the R$5 as in-app balance until the app's own cashout conditions are met and confirmed." },
+        { "q": "Where is my own Run Team Invitation ID?", "a": "In the 'Invitation ID' bar at the top of the Invite page, next to a copy icon. Our test account displayed 80546254 there; that is the code to share with friends." },
+        { "q": "Is it safe to enter a Run Team invite code?", "a": "The form asks only for digits, no personal or payment data. Install Run Team only from DotVerse's official Google Play listing (com.runteam.android), and ignore landing-page withdrawal tickers or modified APKs promising extra cash." }
+      ],
+      "verdict": "Enter 67080261, or any friend's Invitation ID, once through Invite → 'Fill in ID Reward' → Submit to claim the R$5 (about US$1) entry bonus shown in our test. Treat the R$10K headline and every larger figure as coins or marketing: the recording confirms the bonus credit, not a cashout.",
+      "imageKey": "run-team-home",
+      "imageSectionIndex": 1,
+      "imageWide": false,
+      "imageAlt": "Run Team home screen with the green Invite tile and the ID icon marked R$5",
+      "caption": "Home screen: the Invite tile (R$10K) and the ID icon (R$5) on the right both open the invitation page.",
+      "relatedIds": ["freecash"]
+    },
     {
       "id": "arrow-win-invite",
       "app": "arrowwin",
@@ -6738,6 +6908,174 @@ export const articles:Record<Locale,Article[]>={
     }
   ],
   "es": [
+    {
+      "id": "runteam-invite",
+      "app": "runteam",
+      "category": "rewards",
+      "slug": "codigo-de-invitacion-run-team",
+      "title": "Código Run Team 67080261: dónde ingresarlo (+R$5)",
+      "description": "Código de invitación Run Team 67080261: ingresa el ID y recibe R$5 (~US$1) al instante. Mira el campo exacto, las pantallas de recompensa y las reglas.",
+      "intro": "67080261 es el código de invitación de Run Team que probamos en Android: al ingresarlo en el formulario Invitation ID se acreditaron R$5 (cerca de US$1) en el saldo de efectivo al instante. Esta guía muestra los botones exactos, las pantallas de recompensa posteriores al envío y las reglas de referidos, ya sea que busques el código de invitación de Run Team, el ID de invitación RunTeam o un código de referido de Run Team.",
+      "modifiedDate": "2026-11-26",
+      "topCallout": {
+        "title": "ID de invitación de Run Team (probado en Android)",
+        "copyCode": runTeamInvite.code,
+        "links": [
+          { "label": "Abrir página de invitación con el código 67080261", "url": runTeamInvite.referralUrl, "sponsored": true },
+          { "label": "Run Team en Google Play", "url": runTeamStore }
+        ]
+      },
+      "sections": [
+        {
+          "heading": "Qué paga el código de invitación de Run Team",
+          "paragraphs": [
+            "El bono de entrada es R$5 (cerca de US$1) en el saldo de efectivo verde, acreditado una sola vez por cuenta justo después de Submit. En nuestra grabación el contador de efectivo pasó de R$0 a R$5 y la insignia pequeña junto a él cambió de 0% a 10%.",
+            "Run Team mantiene dos saldos: monedas doradas y efectivo verde. El titular de invitación 'Reward for every invite R$10K' y las cifras de R$250 por hito llevan el icono de moneda, mientras que el lado en efectivo de cada hito dice 'Possible to obtain R$0.5' (cerca de US$0.09). Las monedas son puntos del juego, no dinero retirables.",
+            "El bono registra un invitador en tu cuenta. Tras el envío el formulario queda bloqueado como 'Filled in' y la página Invite lista el código en 'My inviter', así que no se puede agregar un segundo código después."
+          ],
+          "image": {
+            "key": "run-team-invite-rules",
+            "alt": "Página Invite de Run Team con las reglas de recompensa por niveles 2, 4 y 6 del amigo y el tope de 40 recompensas",
+            "caption": "Reglas de la página Invite: R$250 en monedas en los niveles 2, 4 y 6 del amigo, 'Possible to obtain R$0.5' en efectivo, 1 recompensa cada 2 niveles hasta 40 veces.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Dónde ingresar el ID de invitación de Run Team",
+          "paragraphs": [
+            "En la pantalla de inicio, dos accesos abren la misma página Invite: el mosaico verde 'Invite' etiquetado R$10K abajo a la derecha y el icono pequeño de tarjeta ID marcado R$5 en el borde derecho. El icono ID es el acceso al bono de entrada; el mosaico Invite también muestra tu propio código y las reglas de referidos.",
+            "Desplázate más allá de las reglas en la página Invite hasta el panel 'My inviter'. Antes de registrar cualquier código dice 'None', que es el estado necesario para reclamar el bono de entrada."
+          ]
+        },
+        {
+          "heading": "Abre el formulario con Fill in ID Reward",
+          "paragraphs": [
+            "Toca el botón azul 'Fill in ID Reward' dentro del panel 'My inviter'. La línea debajo, 'Will get R$5', indica el bono de entrada por registrar el código de un amigo.",
+            "El diálogo 'Invitation ID' se abre con el mensaje 'Fill in the invitation code and you will immediately receive the following rewards' y un fajo de efectivo +R$5 sobre el campo de entrada."
+          ],
+          "image": {
+            "key": "run-team-my-inviter",
+            "alt": "Panel My inviter de Run Team en None, con el botón Fill in ID Reward y Will get R$5",
+            "caption": "Antes de ingresar: 'My inviter: None', el botón 'Fill in ID Reward' y 'Will get R$5'.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Escribe el código y toca Submit",
+          "paragraphs": [
+            "Escribe o pega 67080261 en el campo 'Enter your friend's invite ID' y toca 'Submit'. La grabación muestra el ID de ocho dígitos ingresado completo antes del envío; cualquier ID de invitación válido de un amigo funciona igual, porque la recompensa viene de registrar un invitador, no de los dígitos específicos."
+          ],
+          "image": {
+            "key": "run-team-invitation-form",
+            "alt": "Formulario Invitation ID de Run Team con 67080261 ingresado sobre el botón Submit",
+            "caption": "El formulario Invitation ID con 67080261 ingresado sobre el botón Submit.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Las pantallas de recompensa tras el envío",
+          "paragraphs": [
+            "Inmediatamente después de Submit, un popup 'Congratulations' muestra el fajo de efectivo verde etiquetado R$5 con un botón 'I understand'.",
+            "Al cerrarlo vuelves al diálogo Invitation ID, que ahora dice 'Invitation code has been filled in, rewards have been issued', con 67080261 bloqueado en el campo y el botón renombrado 'Filled in'."
+          ],
+          "image": {
+            "key": "run-team-congratulations",
+            "alt": "Popup Congratulations de Run Team con la recompensa de R$5 en efectivo y el botón I understand",
+            "caption": "El popup Congratulations con la recompensa de R$5 en efectivo y el botón 'I understand'.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Confirma el invitador registrado en tu cuenta",
+          "paragraphs": [
+            "En la página Invite, 'My inviter' ahora muestra 67080261. La línea 'He has obtained' siguió en R$0 monedas y R$0 efectivo: el invitador gana solo cuando la cuenta invitada supera los niveles de hito, no al registrarse."
+          ],
+          "image": {
+            "key": "run-team-code-accepted",
+            "alt": "Diálogo de Run Team con Invitation code has been filled in, rewards have been issued, con 67080261 y el botón Filled in",
+            "caption": "'Invitation code has been filled in, rewards have been issued', con 67080261 y el botón 'Filled in'.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Revisa el saldo y encuentra tu propio ID de invitación",
+          "paragraphs": [
+            "De vuelta en la pantalla de inicio, el saldo de efectivo verde dice R$5 y la insignia muestra 10%. La grabación nunca abre una pantalla de retiro, así que trata el porcentaje como un marcador de progreso dentro de la app: esta guía confirma el crédito del bono, no un mínimo de retiro ni un pago.",
+            "Tu propio código está en la barra 'Invitation ID' arriba de la página Invite, con un icono de copiado (nuestra cuenta de prueba mostró 80546254). Compartirlo es como gana el lado invitador del programa: R$250 en monedas más un posible R$0.5 en efectivo cada vez que un amigo supera los niveles 2, 4 y 6, hasta 40 recompensas.",
+            "Si prefieres programas de recompensas con condiciones de pago publicadas en lugar de saldos dentro de la app sin verificar, compáralos en nuestra [guía inicial de Freecash](/es/freecash-ofertas-invitaciones/)."
+          ],
+          "image": {
+            "key": "run-team-balance",
+            "alt": "Pantalla de inicio de Run Team tras el ingreso con saldo de efectivo R$5 y la insignia de 10%",
+            "caption": "Tras el ingreso: saldo de efectivo R$5 y la insignia de 10% en la pantalla de inicio.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Si el código de Run Team no es aceptado",
+          "paragraphs": [
+            "Verifica que el campo contenga exactamente ocho dígitos sin espacios y que 'My inviter' aún diga 'None': las cuentas que ya registraron un invitador ven el formulario bloqueado 'Filled in' en lugar de un nuevo envío.",
+            "La moneda y los montos están regionalizados. Nuestra grabación corrió en reales brasileños (R$5, cerca de US$1); los jugadores de otros países ven otras monedas y cifras, así que compara las reglas en tu propia pantalla en lugar de los números exactos de aquí.",
+            "Instala solo desde la ficha oficial de Google Play de DotVerse (paquete com.runteam.android) y evita APKs modificados que prometen efectivo extra. El ticker de 'successfully withdrawn' de la página de invitación es marketing, no prueba independiente de pago."
+          ],
+          "sources": [
+            { "title": "Página de invitación de Run Team (código 67080261)", "url": runTeamInvite.referralUrl }
+          ]
+        }
+      ],
+      "tables": [{
+        "heading": "Código de invitación Run Team en resumen",
+        "columns": ["Elemento", "Qué verificamos"],
+        "rows": [
+          ["Código de invitación (Invitation ID)", "67080261"],
+          ["Bono de entrada", "+R$5 en efectivo (cerca de US$1), una vez por cuenta"],
+          ["Ruta de entrada", "Mosaico Invite o icono ID (R$5) → 'Fill in ID Reward'"],
+          ["Etiqueta del campo", "'Enter your friend's invite ID'"],
+          ["Tras el envío", "'Congratulations' R$5, luego 'rewards have been issued' / 'Filled in'"],
+          ["Hitos del invitador", "Niveles 2, 4, 6 del amigo: R$250 monedas + posible R$0.5 efectivo cada uno"],
+          ["Tope de referidos", "1 recompensa cada 2 niveles, hasta 40 veces"],
+          ["Tu propio código", "Barra 'Invitation ID' arriba de la página Invite"],
+          ["Moneda", "Grabación en R$ (Brasil); los valores varían por región"]
+        ],
+        "afterSectionIndex": 0
+      }],
+      "steps": [
+        "Abre Run Team y toca el mosaico Invite (R$10K) o el icono ID marcado R$5.",
+        "Desplázate al panel 'My inviter' y toca 'Fill in ID Reward'.",
+        "Ingresa 67080261 en el campo 'Enter your friend's invite ID'.",
+        "Toca Submit y luego 'I understand' en el popup Congratulations.",
+        "Vuelve a la pantalla de inicio y revisa el saldo de efectivo: R$5 con la insignia de 10%."
+      ],
+      "stepsSectionIndex": 3,
+      "pros": [
+        "El bono de entrada de R$5 apareció de inmediato tras Submit en nuestra grabación.",
+        "El formulario pide solo el ID de invitación, sin datos personales ni de pago.",
+        "Cada pantalla, desde el acceso en inicio hasta el estado bloqueado 'Filled in', está documentada.",
+        "Tu propio ID de invitación se copia de la página Invite con un toque."
+      ],
+      "cons": [
+        "Ninguna pantalla de retiro aparece en la grabación: R$5 es saldo dentro de la app, no pago confirmado.",
+        "El titular R$10K y los hitos de R$250 son valores en monedas; el lado en efectivo es solo 'possible to obtain R$0.5'.",
+        "El bono de entrada es único por cuenta; no se puede registrar un segundo código.",
+        "Montos y moneda están regionalizados, así que tu pantalla puede diferir de las cifras en R$ mostradas."
+      ],
+      "faq": [
+        { "q": "¿Cuál es el código de invitación de Run Team?", "a": "67080261 es el ID de invitación que ingresamos en nuestra prueba en Android, también buscado como código RunTeam o código de referido de Run Team. Cualquier ID de invitación válido de un amigo funciona igual." },
+        { "q": "¿Dónde ingreso el ID de invitación de Run Team?", "a": "En la página Invite (mosaico verde Invite o icono ID marcado R$5), desplázate a 'My inviter', toca 'Fill in ID Reward', escribe el código en 'Enter your friend's invite ID' y toca Submit." },
+        { "q": "¿Qué bono da el código de invitación de Run Team?", "a": "R$5 (cerca de US$1) en el saldo de efectivo inmediatamente tras el envío, una vez por cuenta. El invitador gana aparte R$250 en monedas más un posible R$0.5 en efectivo cuando el amigo supera los niveles 2, 4 y 6, hasta 40 recompensas." },
+        { "q": "¿El código de Run Team funciona en cualquier cuenta?", "a": "El bono es único: las cuentas que ya muestran un código en 'My inviter' reciben el formulario bloqueado 'Filled in'. La elegibilidad la define la app y nuestra grabación cubre un solo dispositivo." },
+        { "q": "¿Puedo retirar el bono de R$5 de inmediato?", "a": "La grabación muestra solo el saldo y una insignia de 10%, nunca una pantalla de retiro ni un pago. Trata los R$5 como saldo dentro de la app hasta que se cumplan y confirmen las condiciones de retiro de la propia app." },
+        { "q": "¿Dónde está mi propio ID de invitación de Run Team?", "a": "En la barra 'Invitation ID' arriba de la página Invite, junto a un icono de copiado. Nuestra cuenta de prueba mostró 80546254 ahí; ese es el código para compartir con amigos." },
+        { "q": "¿Es seguro ingresar un código de invitación de Run Team?", "a": "El formulario pide solo dígitos, sin datos personales ni de pago. Instala Run Team solo desde la ficha oficial de Google Play de DotVerse (com.runteam.android) e ignora tickers de retiros en páginas de invitación o APKs modificados que prometen efectivo extra." }
+      ],
+      "verdict": "Ingresa 67080261, o el ID de invitación de cualquier amigo, una vez por Invite → 'Fill in ID Reward' → Submit para reclamar el bono de entrada de R$5 (cerca de US$1) mostrado en nuestra prueba. Trata el titular R$10K y cualquier cifra mayor como monedas o marketing: la grabación confirma el crédito del bono, no un retiro.",
+      "imageKey": "run-team-home",
+      "imageSectionIndex": 1,
+      "imageWide": false,
+      "imageAlt": "Pantalla de inicio de Run Team con el mosaico verde Invite y el icono ID marcado R$5",
+      "caption": "Pantalla de inicio: el mosaico Invite (R$10K) y el icono ID (R$5) a la derecha abren la página de invitación.",
+      "relatedIds": ["freecash"]
+    },
     {
       "id": "arrow-win-invite",
       "app": "arrowwin",
@@ -13536,6 +13874,174 @@ export const articles:Record<Locale,Article[]>={
     }
   ],
   "pt": [
+    {
+      "id": "runteam-invite",
+      "app": "runteam",
+      "category": "rewards",
+      "slug": "codigo-de-convite-run-team",
+      "title": "Código de convite Run Team 67080261: onde colocar",
+      "description": "Código de convite Run Team 67080261: insira o ID e receba R$5 (~US$1) na hora. Veja o campo exato, as telas de recompensa e as regras de indicação.",
+      "intro": "67080261 é o código de convite do Run Team que testamos no Android: ao inseri-lo no formulário Invitation ID, R$5 (cerca de US$1) foram creditados no saldo de dinheiro na hora. Este guia mostra os botões exatos, as telas de recompensa após o envio e as regras de indicação, quer você tenha buscado o código de convite do Run Team, o ID de convite RunTeam ou um código de indicação do Run Team.",
+      "modifiedDate": "2026-11-26",
+      "topCallout": {
+        "title": "ID de convite do Run Team (testado no Android)",
+        "copyCode": runTeamInvite.code,
+        "links": [
+          { "label": "Abrir página de convite com o código 67080261", "url": runTeamInvite.referralUrl, "sponsored": true },
+          { "label": "Run Team no Google Play", "url": runTeamStore }
+        ]
+      },
+      "sections": [
+        {
+          "heading": "O que o código de convite do Run Team paga",
+          "paragraphs": [
+            "O bônus de entrada é R$5 (cerca de US$1) no saldo de dinheiro verde, creditado uma única vez por conta logo após o Submit. Na nossa gravação o contador de dinheiro foi de R$0 a R$5 e o selo pequeno ao lado mudou de 0% para 10%.",
+            "O Run Team mantém dois saldos: moedas douradas e dinheiro verde. O título do convite 'Reward for every invite R$10K' e os valores de R$250 por marco usam o ícone de moeda, enquanto o lado em dinheiro de cada marco diz 'Possible to obtain R$0.5' (cerca de US$0.09). Moedas são pontos do jogo, não dinheiro sacável.",
+            "O bônus registra um indicador na sua conta. Após o envio o formulário trava como 'Filled in' e a página Invite lista o código em 'My inviter', então não dá para adicionar um segundo código depois."
+          ],
+          "image": {
+            "key": "run-team-invite-rules",
+            "alt": "Página Invite do Run Team com as regras de recompensa pelos níveis 2, 4 e 6 do amigo e o limite de 40 recompensas",
+            "caption": "Regras da página Invite: R$250 em moedas nos níveis 2, 4 e 6 do amigo, 'Possible to obtain R$0.5' em dinheiro, 1 recompensa a cada 2 níveis até 40 vezes.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Onde colocar o ID de convite do Run Team",
+          "paragraphs": [
+            "Na tela inicial, dois atalhos abrem a mesma página Invite: o bloco verde 'Invite' rotulado R$10K no canto inferior direito e o ícone pequeno de cartão ID marcado R$5 na borda direita. O ícone ID é o atalho do bônus de entrada; o bloco Invite também mostra o seu próprio código e as regras de indicação.",
+            "Role além das regras na página Invite até o painel 'My inviter'. Antes de registrar qualquer código ele mostra 'None', que é o estado necessário para reivindicar o bônus de entrada."
+          ]
+        },
+        {
+          "heading": "Abra o formulário com Fill in ID Reward",
+          "paragraphs": [
+            "Toque no botão azul 'Fill in ID Reward' dentro do painel 'My inviter'. A linha abaixo, 'Will get R$5', indica o bônus de entrada por registrar o código de um amigo.",
+            "O diálogo 'Invitation ID' abre com a mensagem 'Fill in the invitation code and you will immediately receive the following rewards' e um maço de dinheiro +R$5 acima do campo de entrada."
+          ],
+          "image": {
+            "key": "run-team-my-inviter",
+            "alt": "Painel My inviter do Run Team em None, com o botão Fill in ID Reward e Will get R$5",
+            "caption": "Antes de inserir: 'My inviter: None', o botão 'Fill in ID Reward' e 'Will get R$5'.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Digite o código e toque em Submit",
+          "paragraphs": [
+            "Digite ou cole 67080261 no campo 'Enter your friend's invite ID' e toque em 'Submit'. A gravação mostra o ID de oito dígitos inserido por completo antes do envio; qualquer ID de convite válido de um amigo funciona igual, porque a recompensa vem de registrar um indicador, não dos dígitos específicos."
+          ],
+          "image": {
+            "key": "run-team-invitation-form",
+            "alt": "Formulário Invitation ID do Run Team com 67080261 inserido acima do botão Submit",
+            "caption": "O formulário Invitation ID com 67080261 inserido acima do botão Submit.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "As telas de recompensa após o envio",
+          "paragraphs": [
+            "Imediatamente após o Submit, um popup 'Congratulations' exibe o maço de dinheiro verde rotulado R$5 com um botão 'I understand'.",
+            "Ao fechá-lo você volta ao diálogo Invitation ID, agora com 'Invitation code has been filled in, rewards have been issued', com 67080261 travado no campo e o botão renomeado para 'Filled in'."
+          ],
+          "image": {
+            "key": "run-team-congratulations",
+            "alt": "Popup Congratulations do Run Team com a recompensa de R$5 em dinheiro e o botão I understand",
+            "caption": "O popup Congratulations com a recompensa de R$5 em dinheiro e o botão 'I understand'.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Confirme o indicador registrado na sua conta",
+          "paragraphs": [
+            "Na página Invite, 'My inviter' agora mostra 67080261. A linha 'He has obtained' permaneceu em R$0 moedas e R$0 dinheiro: o indicador ganha apenas quando a conta convidada passa dos níveis de marco, não no registro."
+          ],
+          "image": {
+            "key": "run-team-code-accepted",
+            "alt": "Diálogo do Run Team com Invitation code has been filled in, rewards have been issued, com 67080261 e o botão Filled in",
+            "caption": "'Invitation code has been filled in, rewards have been issued', com 67080261 e o botão 'Filled in'.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Confira o saldo e encontre o seu próprio ID de convite",
+          "paragraphs": [
+            "De volta à tela inicial, o saldo de dinheiro verde mostra R$5 e o selo exibe 10%. A gravação nunca abre uma tela de saque, então trate o porcentual como um marcador de progresso dentro do app: este guia confirma o crédito do bônus, não um mínimo de saque nem um pagamento.",
+            "O seu próprio código fica na barra 'Invitation ID' no topo da página Invite, com um ícone de copiar (nossa conta de teste mostrou 80546254). Compartilhá-lo é como o lado indicador do programa ganha: R$250 em moedas mais um possível R$0.5 em dinheiro cada vez que um amigo passa dos níveis 2, 4 e 6, até 40 recompensas.",
+            "Se você prefere programas de recompensas com condições de pagamento publicadas em vez de saldos não verificados dentro do app, compare-os no nosso [guia inicial do Freecash](/pt/freecash-ofertas-convites/)."
+          ],
+          "image": {
+            "key": "run-team-balance",
+            "alt": "Tela inicial do Run Team após a inserção com saldo de dinheiro R$5 e o selo de 10%",
+            "caption": "Após a inserção: saldo de dinheiro R$5 e o selo de 10% na tela inicial.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Se o código do Run Team não for aceito",
+          "paragraphs": [
+            "Verifique se o campo contém exatamente oito dígitos sem espaços e se 'My inviter' ainda mostra 'None': contas que já registraram um indicador veem o formulário travado 'Filled in' em vez de um novo envio.",
+            "Moeda e valores são regionalizados. Nossa gravação rodou em reais brasileiros (R$5, cerca de US$1); jogadores de outros países veem outras moedas e cifras, então compare as regras na sua própria tela em vez dos números exatos daqui.",
+            "Instale apenas pela ficha oficial do Google Play da DotVerse (pacote com.runteam.android) e evite APKs modificados que prometem dinheiro extra. O ticker de 'successfully withdrawn' da página de convite é marketing, não prova independente de pagamento."
+          ],
+          "sources": [
+            { "title": "Página de convite do Run Team (código 67080261)", "url": runTeamInvite.referralUrl }
+          ]
+        }
+      ],
+      "tables": [{
+        "heading": "Código de convite Run Team em resumo",
+        "columns": ["Item", "O que verificamos"],
+        "rows": [
+          ["Código de convite (Invitation ID)", "67080261"],
+          ["Bônus de entrada", "+R$5 em dinheiro (cerca de US$1), uma vez por conta"],
+          ["Rota de entrada", "Bloco Invite ou ícone ID (R$5) → 'Fill in ID Reward'"],
+          ["Rótulo do campo", "'Enter your friend's invite ID'"],
+          ["Após o envio", "'Congratulations' R$5, depois 'rewards have been issued' / 'Filled in'"],
+          ["Marcos do indicador", "Níveis 2, 4, 6 do amigo: R$250 moedas + possível R$0.5 dinheiro cada"],
+          ["Limite de indicações", "1 recompensa a cada 2 níveis, até 40 vezes"],
+          ["Seu próprio código", "Barra 'Invitation ID' no topo da página Invite"],
+          ["Moeda", "Gravação em R$ (Brasil); valores variam por região"]
+        ],
+        "afterSectionIndex": 0
+      }],
+      "steps": [
+        "Abra o Run Team e toque no bloco Invite (R$10K) ou no ícone ID marcado R$5.",
+        "Role até o painel 'My inviter' e toque em 'Fill in ID Reward'.",
+        "Insira 67080261 no campo 'Enter your friend's invite ID'.",
+        "Toque em Submit e depois em 'I understand' no popup Congratulations.",
+        "Volte à tela inicial e confira o saldo de dinheiro: R$5 com o selo de 10%."
+      ],
+      "stepsSectionIndex": 3,
+      "pros": [
+        "O bônus de entrada de R$5 apareceu imediatamente após o Submit na nossa gravação.",
+        "O formulário pede apenas o ID de convite, sem dados pessoais ou de pagamento.",
+        "Cada tela, do atalho na inicial até o estado travado 'Filled in', está documentada.",
+        "Seu próprio ID de convite é copiado da página Invite com um toque."
+      ],
+      "cons": [
+        "Nenhuma tela de saque aparece na gravação: R$5 é saldo dentro do app, não pagamento confirmado.",
+        "O título R$10K e os marcos de R$250 são valores em moedas; o lado em dinheiro é apenas 'possible to obtain R$0.5'.",
+        "O bônus de entrada é único por conta; não dá para registrar um segundo código.",
+        "Valores e moeda são regionalizados, então sua tela pode diferir das cifras em R$ mostradas."
+      ],
+      "faq": [
+        { "q": "Qual é o código de convite do Run Team?", "a": "67080261 é o ID de convite que inserimos no nosso teste no Android, também buscado como código RunTeam ou código de indicação do Run Team. Qualquer ID de convite válido de um amigo funciona igual." },
+        { "q": "Onde coloco o ID de convite do Run Team?", "a": "Na página Invite (bloco verde Invite ou ícone ID marcado R$5), role até 'My inviter', toque em 'Fill in ID Reward', digite o código em 'Enter your friend's invite ID' e toque em Submit." },
+        { "q": "Que bônus o código de convite do Run Team dá?", "a": "R$5 (cerca de US$1) no saldo de dinheiro imediatamente após o envio, uma vez por conta. O indicador ganha à parte R$250 em moedas mais um possível R$0.5 em dinheiro quando o amigo passa dos níveis 2, 4 e 6, até 40 recompensas." },
+        { "q": "O código do Run Team funciona em qualquer conta?", "a": "O bônus é único: contas que já mostram um código em 'My inviter' recebem o formulário travado 'Filled in'. A elegibilidade é definida pelo app, e nossa gravação cobre um único dispositivo." },
+        { "q": "Posso sacar o bônus de R$5 na hora?", "a": "A gravação mostra apenas o saldo e um selo de 10%, nunca uma tela de saque ou um pagamento. Trate os R$5 como saldo dentro do app até que as condições de saque do próprio app sejam cumpridas e confirmadas." },
+        { "q": "Onde fica o meu próprio ID de convite do Run Team?", "a": "Na barra 'Invitation ID' no topo da página Invite, ao lado de um ícone de copiar. Nossa conta de teste exibiu 80546254 ali; esse é o código para compartilhar com amigos." },
+        { "q": "É seguro inserir um código de convite do Run Team?", "a": "O formulário pede apenas dígitos, sem dados pessoais ou de pagamento. Instale o Run Team apenas pela ficha oficial do Google Play da DotVerse (com.runteam.android) e ignore tickers de saque em páginas de convite ou APKs modificados que prometem dinheiro extra." }
+      ],
+      "verdict": "Insira 67080261, ou o ID de convite de qualquer amigo, uma vez por Invite → 'Fill in ID Reward' → Submit para reivindicar o bônus de entrada de R$5 (cerca de US$1) mostrado no nosso teste. Trate o título R$10K e qualquer cifra maior como moedas ou marketing: a gravação confirma o crédito do bônus, não um saque.",
+      "imageKey": "run-team-home",
+      "imageSectionIndex": 1,
+      "imageWide": false,
+      "imageAlt": "Tela inicial do Run Team com o bloco verde Invite e o ícone ID marcado R$5",
+      "caption": "Tela inicial: o bloco Invite (R$10K) e o ícone ID (R$5) à direita abrem a página de convite.",
+      "relatedIds": ["freecash"]
+    },
     {
       "id": "arrow-win-invite",
       "app": "arrowwin",
@@ -20563,6 +21069,15 @@ export const apps:Record<string,{name:string;url:string;os:string;sources:{title
       {"title":"CashDrama on Google Play (com.reward.drama.earn.watch.tool)","url":"https://play.google.com/store/apps/details?id=com.reward.drama.earn.watch.tool&hl=en"},
       {"title":"DramaStack on Google Play (com.reeltime.dramastack)","url":"https://play.google.com/store/apps/details?id=com.reeltime.dramastack&hl=en"},
       {"title":"DramaGood on Google Play (com.drama.good.shortplay.atsab)","url":"https://play.google.com/store/apps/details?id=com.drama.good.shortplay.atsab&hl=en"}
+    ]
+  },
+  "runteam": {
+    "name": "Run Team",
+    "url": runTeamStore,
+    "os": "Android",
+    "sources": [
+      {"title":"Run Team on Google Play (DotVerse, com.runteam.android)","url":runTeamStore},
+      {"title":"Run Team official site","url":"https://runteamgame.com/"}
     ]
   }
 };
