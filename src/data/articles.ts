@@ -180,6 +180,294 @@ export const articles:Record<Locale,Article[]>={
       "relatedIds": ["freecash"]
     },
     {
+      "id": "arrow-win-earn",
+      "app": "arrowwin",
+      "category": "rewards",
+      "slug": "arrow-win-money-making-game",
+      "title": "Arrow Win: Money-Making Game App, Code V15TT & Cashout",
+      "description": "Arrow Win uses two wallets: 10,000 coins ≈ R$1 (~$0.18–$0.20) and 200 green bills for R$20 (~$3.60–$4). See real screens, code V15TT and download link.",
+      "intro": "Arrow Win is a free Android money-making game app with arrow puzzles and two wallets: gold coins (cashout from R$0.30 / ~$0.06) and green bills (minimum R$20 / ~$3.80 for 200 bills). Install via the referral link with code V15TT to unlock the starter reward and check the real conversion math below.",
+      "modifiedDate": "2026-11-27",
+      "topCallout": {
+        "title": "Arrow Win download & invite code V15TT",
+        "text": "Copy invite code V15TT, install Arrow Win through the referral link or Google Play, and submit the code in the referral field to claim the starter in-game reward.",
+        "copyCode": "V15TT",
+        "links": [
+          {
+            "label": "Open invite link (code V15TT)",
+            "url": "https://aw.shareearn1.com/?code=V15TT",
+            "sponsored": true
+          },
+          {
+            "label": "Download on Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.qrgame.arrowwin&referrer=code%3DV15TT",
+            "sponsored": true
+          }
+        ]
+      },
+      "sections": [
+        {
+          "heading": "How does the Arrow Win money-making app work?",
+          "paragraphs": [
+            "Arrow Win (Android package com.qrgame.arrowwin, published by COOLYA on Google Play) is a casual puzzle game built around clearing tangled arrows from a board. You earn in-game balances by finishing levels, completing daily missions, and watching video ads.",
+            "Unlike single-currency reward apps, Arrow Win runs a two-wallet system. Gold coins come from daily tasks and minigames, while green bills accumulate from levels, timed events, and referrals, each with its own withdrawal thresholds.",
+            "If you have not installed the game yet, check the [Arrow Win Android download guide](/en/arrow-win-download/) to verify the official Google Play publisher before downloading."
+          ]
+        },
+        {
+          "heading": "What do you see on the Arrow Win home screen?",
+          "paragraphs": [
+            "At Level 1, the top bar displays both balances side by side: gold coins on the left (R$0) and green bills on the right (R$5, roughly $0.90–$1.00 in local screen currency).",
+            "Along the level path sit shortcuts for Tasks (displaying up to 2,000 coins), Mini-Game (150 coins), Invite (16 bills), and a timed star event. The bottom bar holds Bonus and Ranking, while the orange Play button launches the next puzzle.",
+            "Keep in mind that amounts shown in our captures reflect a Brazilian Real (R$) interface; exact currency labels vary by region."
+          ],
+          "image": {
+            "key": "arrow-win-home-pt",
+            "alt": "Arrow Win Level 1 home screen showing R$5 green bill balance and shortcuts for Tasks, Mini-Game, and Invite",
+            "caption": "Arrow Win Level 1 home screen displaying both reward bars, the Play button, and side shortcuts.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "How does the Level 3 arrow puzzle gameplay work?",
+          "paragraphs": [
+            "Each stage packs colorful caterpillar-shaped arrows tightly across a grid. You tap pieces in the right sequence so each arrow exits without colliding with another piece blocking its path.",
+            "On Level 3, you start with 3 hearts (lives) and a running timer at the top. Wrong taps cost hearts, and the lightbulb hint button at the bottom unlocks clues in exchange for watching an ad.",
+            "Clearing stages advances you along the level map and counts toward your daily removal goals."
+          ],
+          "image": {
+            "key": "arrow-win-gameplay-level3",
+            "alt": "Arrow Win Level 3 puzzle board with colorful tangled pieces, three hearts, and a 58-second timer",
+            "caption": "Level 3 gameplay: clear outer pieces first to open paths for the inner arrows.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Which daily tasks pay coins in Arrow Win?",
+          "paragraphs": [
+            "The DAILY screen tracks five repeatable tasks that award activity points and gold coins. Reaching 30, 70, and 100 daily points unlocks milestone chests marked 200, 500, and 800 coins.",
+            "The listed missions are Watch Ads (0/2 for +25 pts and 100 coins), Complete 2 mini-games (+25 pts and 150 coins), Complete 100 removals (+30 pts and 200 coins), stay Online for 30 minutes (+15 pts and 40 coins), and Use Arrow Win (+5 pts and 10 coins).",
+            "Watch out for the currency prefix next to coin icons: it labels internal coin units, not direct cash in your bank account."
+          ],
+          "image": {
+            "key": "arrow-win-daily-tasks",
+            "alt": "Arrow Win DAILY tasks screen listing Watch Ads, Complete 2 mini-games, Complete 100 removals, and 30-minute online goal",
+            "caption": "DAILY mission checklist with 30/70/100-point milestones and coin rewards.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "How does the chameleon mini-game work and what is the risk?",
+          "paragraphs": [
+            "Opening Mini-Game launches a catching arena where a chameleon aims at passing bugs labeled with coin values (such as 498 to 793 coins). Each tap on CATCH costs 500 coins at the x1 multiplier.",
+            "You can adjust the multiplier with the minus and plus buttons, which scales both the cost and the potential catch. Missing shots or hitting low-value targets drains your coin balance quickly.",
+            "Treat the mini-game strictly as a way to finish the daily 2-game quest rather than a reliable way to multiply coins."
+          ],
+          "image": {
+            "key": "arrow-win-minigame",
+            "alt": "Arrow Win chameleon mini-game with bugs marked 498 to 793 coins and a CATCH button costing 500 coins",
+            "caption": "Chameleon mini-game: each CATCH attempt costs 500 coins at the x1 setting.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "How do you apply invite code V15TT for the starter bonus?",
+          "paragraphs": [
+            "Installing Arrow Win through the referral link passes code V15TT automatically. You can also enter V15TT in uppercase inside the in-game referral form to confirm the credit on your account.",
+            "For exact button locations and screenshots of the form, follow our [Arrow Win invite code guide](/en/arrow-win-invite-code/).",
+            "By Level 3 in our captures, the account displays 86 coins and 41.06 green bills after early gameplay and starter bonuses."
+          ],
+          "cta": {
+            "label": "Open Arrow Win invite link (code V15TT)",
+            "url": "https://aw.shareearn1.com/?code=V15TT",
+            "sponsored": true
+          },
+          "image": {
+            "key": "arrow-win-home-en",
+            "alt": "Arrow Win Level 3 home screen in English showing 86 coins and 41.06 green bills",
+            "caption": "Level 3 progress screen showing both active balances: 86 coins and 41.06 green bills.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "How much are coins worth on the withdraw coins screen?",
+          "paragraphs": [
+            "The withdraw coins screen states the exchange rate clearly in the top right: 10,000 Coins ≈ R$1 (roughly $0.18–$0.20 USD or €0.17 EUR). In the capture, 86 coins equal R$0.0086.",
+            "Four redemption tiers appear on screen: R$0.3 (~$0.06) for 3,000 coins with a 1-per-day limit, R$1 (~$0.18–$0.20) for 10,000 coins with a 1-per-day limit, R$5 (~$0.90–$1.00) for 50,000 coins, and R$20 (~$3.60–$4.00) for 200,000 coins.",
+            "Before tapping WITHDRAW NOW, you must link a payout destination under Withdrawal method > Add account."
+          ],
+          "image": {
+            "key": "arrow-win-withdraw-coins",
+            "alt": "Arrow Win withdraw coins screen showing 10000 Coins equals R$1 and cashout tiers from 3,000 to 200,000 coins",
+            "caption": "Coins cashout screen: explicit rate of 10,000 coins ≈ R$1 (~$0.18–$0.20) starting at 3,000 coins.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "How does the green-bill cash withdrawal screen work?",
+          "paragraphs": [
+            "The cash withdrawal screen converts green bills at a 10-to-1 ratio. Cashing out R$20 (~$3.60–$4.00) requires 200 bills; R$50 (~$9–$10) requires 500 bills; R$100 (~$18–$20) requires 1,000 bills; and R$300 (~$55–$60) requires 3,000 bills.",
+            "That ratio explains a common misconception: seeing 41.06 on the home bar does not mean $41 or R$41 ready to withdraw—it equals roughly R$4.10 (~$0.75) of progress toward the 200-bill minimum.",
+            "At the bottom of both withdrawal screens, the app prints Ocean Merge v1.0.8 and the account ID (ID:V15TT), showing it shares a reward engine with similar casual puzzles."
+          ],
+          "cta": {
+            "label": "Download Arrow Win on Google Play (code V15TT)",
+            "url": "https://play.google.com/store/apps/details?id=com.qrgame.arrowwin&referrer=code%3DV15TT",
+            "sponsored": true
+          },
+          "image": {
+            "key": "arrow-win-cash-withdrawal",
+            "alt": "Arrow Win cash withdrawal screen with 41.06 balance and tiers from R$20 (200 bills) to R$300 (3,000 bills)",
+            "caption": "Cash withdrawal screen: the first R$20 (~$3.60–$4.00) tier requires 200 green bills.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Limitations: when NOT to use Arrow Win and verified alternatives",
+          "paragraphs": [
+            "Skip Arrow Win if you expect steady hourly extra income. At 10,000 coins per R$1 (~$0.18–$0.20), progress relies heavily on ads, and final payout approval remains subject to the developer's account rules.",
+            "Never pay an upfront fee to unlock a withdrawal. Legitimate reward apps do not ask for deposits before releasing earnings.",
+            "If you want established platforms for surveys and mobile game milestones with documented PayPal payouts, compare [Freecash reviews and payout rules](/en/freecash-reviews-is-it-legit-or-scam/), [Prime Opinion review](/en/prime-opinion-review-how-it-works-is-it-legit/), [AttaPoll how it works](/en/attapoll-how-it-works/), [Pawns.app review](/en/pawns-app-review-how-it-works/), and [Pawns.app vs. Freecash](/en/pawns-app-vs-freecash-rewards-compared/)."
+          ]
+        }
+      ],
+      "tables": [
+        {
+          "heading": "Arrow Win quick facts (verified from app screens)",
+          "columns": [
+            "Item",
+            "Observed in Arrow Win"
+          ],
+          "rows": [
+            [
+              "App & package ID",
+              "Arrow Win (com.qrgame.arrowwin) — COOLYA"
+            ],
+            [
+              "Invite code",
+              "V15TT (referral link or in-game referral ID form)"
+            ],
+            [
+              "Wallet 1 (Coins)",
+              "10,000 coins ≈ R$1 (~$0.18–$0.20) · Min R$0.30 (3,000 coins, 1/day)"
+            ],
+            [
+              "Wallet 2 (Green bills)",
+              "10 bills = R$1 · Min R$20 (~$3.60–$4) for 200 bills up to R$300 (~$55–$60)"
+            ],
+            [
+              "Mini-game cost",
+              "500 coins per CATCH attempt (x1 multiplier)"
+            ],
+            [
+              "Footer build label",
+              "Ocean Merge v1.0.8"
+            ]
+          ],
+          "afterSectionIndex": 0
+        },
+        {
+          "heading": "Arrow Win cashout tiers across both wallets",
+          "columns": [
+            "Wallet",
+            "Displayed payout (USD approx.)",
+            "Balance required",
+            "Extra rule"
+          ],
+          "rows": [
+            [
+              "Coins (withdraw coins)",
+              "R$0.30 (~$0.06)",
+              "3,000 coins",
+              "Daily limit: 1"
+            ],
+            [
+              "Coins (withdraw coins)",
+              "R$1.00 (~$0.18–$0.20)",
+              "10,000 coins",
+              "Daily limit: 1"
+            ],
+            [
+              "Coins (withdraw coins)",
+              "R$5 (~$0.95) / R$20 (~$3.80)",
+              "50,000 / 200,000 coins",
+              "No daily cap badge shown"
+            ],
+            [
+              "Green bills (cash)",
+              "R$20 (~$3.80) / R$50 (~$9.50)",
+              "200 / 500 bills",
+              "Requires Add account"
+            ],
+            [
+              "Green bills (cash)",
+              "R$100 (~$19) / R$300 (~$57)",
+              "1,000 / 3,000 bills",
+              "Fixed 10:1 bill-to-R$ ratio"
+            ]
+          ],
+          "afterSectionIndex": 6
+        }
+      ],
+      "steps": [
+        "Open the official Arrow Win referral link or its Google Play listing by COOLYA.",
+        "Install and launch the Android game until the home screen with the green chameleon appears.",
+        "Open the referral ID menu, enter V15TT in uppercase, and submit it to claim the starter reward.",
+        "Play arrow-removal levels and finish DAILY tasks to grow both your coin and green-bill balances.",
+        "Once you reach 3,000 coins (R$0.30 / ~$0.06) or 200 green bills (R$20 / ~$3.80), add a payout method under Withdrawal method > Add account."
+      ],
+      "stepsSectionIndex": 5,
+      "pros": [
+        "Free Android download on Google Play with simple, lightweight puzzle gameplay.",
+        "Transparent coin conversion rate printed directly on the cashout screen (10,000 coins ≈ R$1 / ~$0.18–$0.20).",
+        "Low first coin test threshold at 3,000 coins (R$0.30 / ~$0.06).",
+        "Invite code V15TT requires no personal documents to submit."
+      ],
+      "cons": [
+        "Low coin value means slow earnings heavily tied to watching ads.",
+        "The 10:1 green-bill ratio (200 bills for R$20) can mislead new players reading the top counter.",
+        "The chameleon mini-game charges 500 coins per attempt and can burn your balance.",
+        "No independent guarantee that every account receives approved cashouts."
+      ],
+      "faq": [
+        {
+          "q": "Is Arrow Win a free money-making game app?",
+          "a": "Yes. Arrow Win (com.qrgame.arrowwin by COOLYA) is free to download on Google Play. The app monetizes through video ads shown during hints, levels, and daily tasks."
+        },
+        {
+          "q": "What is the Arrow Win invite code for the reward?",
+          "a": "The invite code is V15TT. Install through the referral link or enter V15TT in uppercase inside the in-game referral ID field."
+        },
+        {
+          "q": "What is the minimum withdrawal in Arrow Win?",
+          "a": "On the withdraw coins screen, the lowest tier is R$0.30 (~$0.06 USD) for 3,000 coins (1 per day). On the cash withdrawal screen, the minimum is R$20 (~$3.60–$4.00 USD), requiring 200 green bills."
+        },
+        {
+          "q": "How much are 10,000 coins worth in Arrow Win?",
+          "a": "According to the app's withdraw coins screen, 10,000 coins equal approximately R$1 (about $0.18–$0.20 USD)."
+        },
+        {
+          "q": "Can Arrow Win replace a regular extra income source?",
+          "a": "No. Treat it as a casual puzzle pastime with small rewards. For more predictable side rewards, compare verified platforms like Freecash, Prime Opinion, and AttaPoll."
+        },
+        {
+          "q": "Should I ever pay a fee to unlock a cashout?",
+          "a": "No. Never send money or pay upfront fees to release a withdrawal in any mobile reward game."
+        }
+      ],
+      "verdict": "Decide in 10 seconds: install Arrow Win via the referral link with code V15TT if you enjoy casual arrow puzzles and want to test the 3,000-coin (R$0.30 / ~$0.06) tier for free. Skip it if you want reliable hourly extra income—use verified survey and offer platforms like Freecash, Prime Opinion, or AttaPoll instead.",
+      "imageKey": "arrow-win-splash",
+      "imageSectionIndex": 0,
+      "imageWide": false,
+      "imageAlt": "Arrow Win loading screen displaying the game logo, green chameleon, and 100% progress bar",
+      "caption": "Arrow Win Android splash screen (package com.qrgame.arrowwin).",
+      "relatedIds": [
+        "arrow-win-invite",
+        "arrow-win-download",
+        "freecash"
+      ]
+    },
+    {
       "id": "arrow-win-invite",
       "app": "arrowwin",
       "category": "rewards",
@@ -260,7 +548,7 @@ export const articles:Record<Locale,Article[]>={
       "imageWide": false,
       "imageAlt": "Arrow Win home screen with the Indicador button to the right of the level path",
       "caption": "At 00:02, the “Indicador” (Referrer) button is on the right, above “Jogar” (Play).",
-      "relatedIds": ["arrow-win-download"]
+      "relatedIds": ["arrow-win-earn", "arrow-win-download"]
     },
     {
       "id": "arrow-win-download",
@@ -325,7 +613,7 @@ export const articles:Record<Locale,Article[]>={
       "imageWide": false,
       "imageAlt": "Arrow Win loading screen with the game logo and a green chameleon",
       "caption": "The game opens with the Arrow Win logo, a green chameleon, and a loading bar.",
-      "relatedIds": ["arrow-win-invite"]
+      "relatedIds": ["arrow-win-earn", "arrow-win-invite"]
     },
     {
       "id": "lens",
@@ -7077,6 +7365,294 @@ export const articles:Record<Locale,Article[]>={
       "relatedIds": ["freecash"]
     },
     {
+      "id": "arrow-win-earn",
+      "app": "arrowwin",
+      "category": "rewards",
+      "slug": "arrow-win-app-ganar-dinero",
+      "title": "Arrow Win: App y Juego Para Ganar Dinero (Código V15TT)",
+      "description": "Arrow Win usa dos saldos: 10.000 monedas ≈ R$1 (~$0,18 USD) y mínimo de 200 billetes para R$20 (~$3,80 USD). Mira pantallas reales, código V15TT y descarga.",
+      "intro": "Arrow Win es una app para ganar dinero gratis en Android con rompecabezas de flechas y dos billeteras: monedas (retiro desde R$0,30 / ~$0,06 USD) y billetes verdes (mínimo R$20 / ~$3,80 USD con 200 billetes). Instala desde el enlace de invitación con el código V15TT para activar la recompensa inicial y revisa las cifras reales.",
+      "modifiedDate": "2026-11-27",
+      "topCallout": {
+        "title": "Descarga de Arrow Win y código de invitación V15TT",
+        "text": "Copia el código V15TT, descarga Arrow Win desde el enlace oficial de invitación o Google Play e ingrésalo en el campo de referido para recibir la recompensa inicial.",
+        "copyCode": "V15TT",
+        "links": [
+          {
+            "label": "Abrir enlace de invitación (código V15TT)",
+            "url": "https://aw.shareearn1.com/?code=V15TT",
+            "sponsored": true
+          },
+          {
+            "label": "Descargar en Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.qrgame.arrowwin&referrer=code%3DV15TT",
+            "sponsored": true
+          }
+        ]
+      },
+      "sections": [
+        {
+          "heading": "¿Cómo funciona la aplicación para ganar dinero Arrow Win?",
+          "paragraphs": [
+            "Arrow Win (paquete Android com.qrgame.arrowwin, publicado por COOLYA en Google Play) es un juego para ganar dinero basado en niveles de lógica. Acumulas recompensas internas al despejar flechas del tablero, completar misiones diarias y ver anuncios.",
+            "El sistema funciona con doble billetera. Las monedas doradas se obtienen en tareas diarias y minijuegos, mientras que los billetes verdes suben con niveles, eventos y referidos, cada uno con sus propias reglas de retiro.",
+            "Si todavía no lo instalaste, revisa nuestra [guía para descargar Arrow Win en Google Play](/es/descargar-arrow-win/) y comprueba el desarrollador oficial."
+          ]
+        },
+        {
+          "heading": "¿Qué aparece en la pantalla principal al empezar en Arrow Win?",
+          "paragraphs": [
+            "En el Nivel 1, la barra superior muestra ambos saldos: monedas doradas a la izquierda (R$0) y billetes verdes a la derecha (R$5, unos $0,90–$1,00 USD / ~$18 MXN de saldo inicial en pantalla).",
+            "A los costados del mapa de niveles aparecen Tareas (hasta 2.000 monedas), Minijuego (150 monedas), Invitar (16 billetes) y un evento de estrella con cuenta regresiva. Abajo están Bono, Ranking y el botón naranja Jugar.",
+            "Las capturas reflejan una cuenta configurada en reales brasileños (R$); la divisa mostrada puede cambiar según tu país."
+          ],
+          "image": {
+            "key": "arrow-win-home-pt",
+            "alt": "Pantalla principal de Arrow Win en el Nivel 1 con saldo de R$5 en billetes y accesos a Tareas, Minijuego e Invitar",
+            "caption": "Pantalla principal en el Nivel 1 con los dos marcadores superiores y el botón Jugar.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "¿Cómo se juegan los niveles del rompecabezas de flechas?",
+          "paragraphs": [
+            "Cada nivel muestra un tablero lleno de piezas y orugas de colores entrelazadas. Debes tocarlas en el orden correcto para que salgan sin chocar contra otra pieza que bloquee el paso.",
+            "En el Nivel 3 cuentas con 3 corazones (vidas) y un temporizador activo en la parte superior. Si fallas pierdes una vida, y el botón de bombilla inferior entrega pistas a cambio de ver un anuncio.",
+            "Completar tableros desbloquea nuevos niveles y suma eliminaciones para las metas diarias."
+          ],
+          "image": {
+            "key": "arrow-win-gameplay-level3",
+            "alt": "Tablero del Nivel 3 de Arrow Win con piezas de colores entrelazadas, tres vidas y cronómetro de 58 segundos",
+            "caption": "Partida real en el Nivel 3: primero despeja los bordes para liberar las piezas centrales.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "¿Qué tareas diarias pagan monedas en el juego?",
+          "paragraphs": [
+            "La pestaña DAILY agrupa cinco misiones diarias que otorgan puntos de actividad y monedas. Al llegar a 30, 70 y 100 puntos liberas cofres extra de 200, 500 y 800 monedas internas.",
+            "Las tareas son ver 2 anuncios (+25 pts y 100 monedas), completar 2 minijuegos (+25 pts y 150 monedas), lograr 100 eliminaciones (+30 pts y 200 monedas), permanecer 30 minutos en línea (+15 pts y 40 monedas) y usar Arrow Win (+5 pts y 10 monedas).",
+            "Ojo con el símbolo monetario junto a las monedas: indica unidades internas de monedas y no dinero directo listo para transferir."
+          ],
+          "image": {
+            "key": "arrow-win-daily-tasks",
+            "alt": "Pantalla DAILY de Arrow Win con metas de 30, 70 y 100 puntos y tareas como ver anuncios y completar 100 eliminaciones",
+            "caption": "Misiones diarias (DAILY) con barra de progreso y recompensas en monedas.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "¿Cómo funciona el minijuego del camaleón y qué riesgo tiene?",
+          "paragraphs": [
+            "El acceso Minijuego abre una arena donde el camaleón dispara a insectos con premios de entre 498 y 793 monedas. Cada intento en el botón CATCH cuesta 500 monedas en el multiplicador x1.",
+            "Los botones menos y más suben o bajan el multiplicador. Si fallas el disparo o atrapas insectos de menor valor, tu saldo de monedas baja en lugar de crecer.",
+            "Úsalo solo para cumplir la misión diaria de 2 minijuegos y evita arriesgar todo tu saldo acumulado."
+          ],
+          "image": {
+            "key": "arrow-win-minigame",
+            "alt": "Minijuego del camaleón en Arrow Win con insectos de 498 a 793 monedas y botón CATCH con costo de 500 monedas",
+            "caption": "Minijuego del camaleón: cada tiro en CATCH descuenta 500 monedas en x1.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "¿Cómo activar el código de invitación V15TT para ganar la recompensa?",
+          "paragraphs": [
+            "Al instalar el juego mediante el enlace oficial de invitación ya llevas asociado el código V15TT. Aun así, conviene verificar el menú de referido dentro de la app para confirmar el registro.",
+            "Ingresa V15TT en mayúsculas y pulsa enviar. Puedes ver las capturas exactas del formulario en nuestra [guía del código de invitación de Arrow Win](/es/codigo-de-invitacion-arrow-win/).",
+            "En la captura del Nivel 3, la cuenta ya marca 86 monedas y 41,06 billetes verdes tras las primeras partidas y bonos iniciales."
+          ],
+          "cta": {
+            "label": "Abrir enlace de invitación Arrow Win (código V15TT)",
+            "url": "https://aw.shareearn1.com/?code=V15TT",
+            "sponsored": true
+          },
+          "image": {
+            "key": "arrow-win-home-en",
+            "alt": "Pantalla principal de Arrow Win en el Nivel 3 con 86 monedas y 41,06 billetes verdes",
+            "caption": "Progreso en el Nivel 3 mostrando ambos saldos activos: 86 monedas y 41,06 billetes.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "¿Cuánto valen las monedas en la pantalla de retiro (withdraw coins)?",
+          "paragraphs": [
+            "La pantalla withdraw coins muestra la tasa exacta arriba a la derecha: 10.000 monedas equivalen aproximadamente a R$1 (~$0,18–$0,20 USD / ~0,17 € / ~$3,50 MXN). Así, 86 monedas equivalen a R$0,0086.",
+            "Los cuatro montos disponibles son R$0,30 (~$0,06 USD) por 3.000 monedas con límite de 1 retiro al día, R$1 (~$0,18–$0,20 USD) por 10.000 monedas con límite de 1 al día, R$5 (~$0,95 USD) por 50.000 monedas y R$20 (~$3,80 USD) por 200.000 monedas.",
+            "Antes de pulsar WITHDRAW NOW debes vincular una cuenta en Withdrawal method > Add account."
+          ],
+          "image": {
+            "key": "arrow-win-withdraw-coins",
+            "alt": "Pantalla withdraw coins de Arrow Win indicando 10000 Coins igual a R$1 y retiros desde 3.000 hasta 200.000 monedas",
+            "caption": "Retiro de monedas: tasa de 10.000 monedas ≈ R$1 (~$0,18–$0,20 USD) con mínimo de 3.000 monedas.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "¿Cómo funciona el retiro de billetes verdes (cash withdrawal)?",
+          "paragraphs": [
+            "La cartera de billetes verdes (cash withdrawal) aplica una relación de 10 a 1. Para retirar R$20 (~$3,80 USD / ~3,50 € / ~$70 MXN) necesitas 200 billetes; para R$50 (~$9,50 USD) son 500; para R$100 (~$19 USD) son 1.000; y para R$300 (~$57 USD / ~50 € / ~$1.050 MXN) son 3.000 billetes.",
+            "Este punto evita la confusión más frecuente: ver 41,06 en la barra superior no significa tener 41 reales listos para retirar, sino unos R$4,10 (~$0,75 USD) de avance hacia el primer umbral de 200 billetes.",
+            "Al pie de ambas pantallas aparece Ocean Merge v1.0.8 junto al ID de cuenta (ID:V15TT), confirmando que comparte motor de recompensas con otros juegos casuales."
+          ],
+          "cta": {
+            "label": "Descargar Arrow Win en Google Play (código V15TT)",
+            "url": "https://play.google.com/store/apps/details?id=com.qrgame.arrowwin&referrer=code%3DV15TT",
+            "sponsored": true
+          },
+          "image": {
+            "key": "arrow-win-cash-withdrawal",
+            "alt": "Pantalla cash withdrawal de Arrow Win con saldo de 41,06 billetes y opciones desde R$20 (200 billetes) hasta R$300 (3.000 billetes)",
+            "caption": "Retiro de billetes verdes: el primer umbral de R$20 (~$3,80 USD) requiere 200 billetes.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Limitaciones: cuándo NO usar Arrow Win y alternativas verificadas",
+          "paragraphs": [
+            "No instales Arrow Win esperando ingresos extra fijos por hora. Con una tasa de 10.000 monedas por R$1 (~$0,18–$0,20 USD), el avance es lento, depende de ver muchos anuncios y la aprobación final del pago depende de las reglas del desarrollador.",
+            "Regla clave de seguridad: ninguna app legítima para ganar dinero cobra comisiones previas para liberar un retiro. Si te piden depositar dinero antes de cobrar, desinstala de inmediato.",
+            "Si buscas plataformas consolidadas de encuestas y metas en juegos con pagos documentados por PayPal, compara [opiniones de Freecash](/es/freecash-opiniones-es-confiable-si-paga/), [análisis de Prime Opinion](/es/prime-opinion-opiniones-como-funciona-paga/), [cómo funciona AttaPoll](/es/attapoll-como-funciona-encuestas/), [guía de Pawns.app](/es/pawns-app-como-funciona-guia-completo/) y [Pawns.app vs. Freecash](/es/pawns-app-vs-freecash-comparativa-recompensas/)."
+          ]
+        }
+      ],
+      "tables": [
+        {
+          "heading": "Resumen técnico de Arrow Win (datos de pantallas reales)",
+          "columns": [
+            "Dato",
+            "Observado en la aplicación"
+          ],
+          "rows": [
+            [
+              "App y paquete Android",
+              "Arrow Win (com.qrgame.arrowwin) — COOLYA"
+            ],
+            [
+              "Código de invitación",
+              "V15TT (enlace de referido o menú de invitación)"
+            ],
+            [
+              "Cartera 1 (Monedas)",
+              "10.000 monedas ≈ R$1 (~$0,18–$0,20 USD) · Mín. R$0,30 (3.000, 1/día)"
+            ],
+            [
+              "Cartera 2 (Billetes verdes)",
+              "10 billetes = R$1 · Mín. R$20 (~$3,80 USD) con 200 billetes hasta R$300 (~$57 USD)"
+            ],
+            [
+              "Costo del minijogo",
+              "500 monedas por tiro CATCH (multiplicador x1)"
+            ],
+            [
+              "Versión en pantalla de retiro",
+              "Ocean Merge v1.0.8"
+            ]
+          ],
+          "afterSectionIndex": 0
+        },
+        {
+          "heading": "Tabla de montos mínimos en las dos billeteras",
+          "columns": [
+            "Billetera",
+            "Monto en pantalla (aprox. USD)",
+            "Saldo requerido",
+            "Condición adicional"
+          ],
+          "rows": [
+            [
+              "Monedas (withdraw coins)",
+              "R$0,30 (~$0,06 USD)",
+              "3.000 monedas",
+              "Límite diario: 1 retiro"
+            ],
+            [
+              "Monedas (withdraw coins)",
+              "R$1,00 (~$0,18–$0,20 USD)",
+              "10.000 monedas",
+              "Límite diario: 1 retiro"
+            ],
+            [
+              "Monedas (withdraw coins)",
+              "R$5 (~$0,95) / R$20 (~$3,80)",
+              "50.000 / 200.000 monedas",
+              "Sin etiqueta de límite diario"
+            ],
+            [
+              "Billetes verdes (cash)",
+              "R$20 (~$3,80) / R$50 (~$9,50)",
+              "200 / 500 billetes",
+              "Requiere vincular cuenta"
+            ],
+            [
+              "Billetes verdes (cash)",
+              "R$100 (~$19) / R$300 (~$57)",
+              "1.000 / 3.000 billetes",
+              "Relación fija 10 billetes = R$1"
+            ]
+          ],
+          "afterSectionIndex": 6
+        }
+      ],
+      "steps": [
+        "Abre el enlace oficial de invitación de Arrow Win o la ficha en Google Play publicada por COOLYA.",
+        "Instala y abre el juego en Android hasta ver el mapa de niveles con el camaleón verde.",
+        "Entra al campo de código de invitación, escribe V15TT en mayúsculas y confirma para activar la recompensa.",
+        "Supera niveles del rompecabezas y completa las tareas DAILY para sumar monedas y billetes.",
+        "Al alcanzar 3.000 monedas (R$0,30 / ~$0,06 USD) o 200 billetes (R$20 / ~$3,80 USD), agrega tu cuenta en Withdrawal method > Add account."
+      ],
+      "stepsSectionIndex": 5,
+      "pros": [
+        "Descarga gratuita en Google Play con rompecabezas ligero y fácil de entender.",
+        "Tasa de conversión visible directamente en la pantalla de monedas (10.000 monedas ≈ R$1 / ~$0,18–$0,20 USD).",
+        "Primer umbral de prueba bajo en monedas: 3.000 monedas (R$0,30 / ~$0,06 USD).",
+        "El código de invitación V15TT se ingresa sin entregar documentos personales."
+      ],
+      "cons": [
+        "El valor por moneda es bajo y depende de ver anuncios con frecuencia.",
+        "La proporción 10:1 de los billetes verdes (200 para R$20) puede confundir a usuarios nuevos.",
+        "El minijuego cobra 500 monedas por disparo y puede vaciar tu saldo rápido.",
+        "No existe garantía independiente de pago aprobado para todas las cuentas."
+      ],
+      "faq": [
+        {
+          "q": "¿Arrow Win es una app gratuita para ganar dinero?",
+          "a": "Sí. Se descarga gratis en Google Play (paquete com.qrgame.arrowwin de COOLYA) y se financia mostrando anuncios en pistas, niveles y misiones diarias."
+        },
+        {
+          "q": "¿Cuál es el código de invitación de Arrow Win?",
+          "a": "El código es V15TT. Puedes instalar desde el enlace oficial de invitación o escribir V15TT en mayúsculas en el formulario de referido dentro del juego."
+        },
+        {
+          "q": "¿Cuál es el retiro mínimo en Arrow Win?",
+          "a": "En monedas (withdraw coins), el mínimo mostrado es R$0,30 (~$0,06 USD) por 3.000 monedas (límite de 1 por día). En billetes verdes (cash withdrawal), el mínimo es R$20 (~$3,80 USD), equivalente a 200 billetes."
+        },
+        {
+          "q": "¿Cuánto valen 10.000 monedas en Arrow Win?",
+          "a": "Según la propia pantalla withdraw coins del juego, 10.000 monedas equivalen aproximadamente a R$1 (alrededor de $0,18–$0,20 USD o 0,17 €)."
+        },
+        {
+          "q": "¿Sirve Arrow Win para generar ingresos extra estables?",
+          "a": "No. Tómalo como entretenimiento casual con recompensas pequeñas. Para ingresos extra más predecibles en el móvil, compara plataformas verificadas como Freecash, Prime Opinion o AttaPoll."
+        },
+        {
+          "q": "¿Debo pagar alguna comisión para retirar dinero en Arrow Win?",
+          "a": "No. Nunca deposites dinero ni pagues tarifas por adelantado para liberar retiros en ningún juego de recompensas."
+        }
+      ],
+      "verdict": "Decide en 10 segundos: instala Arrow Win con el enlace y código V15TT si te gustan los rompecabezas casuales y quieres probar gratis el umbral de 3.000 monedas (R$0,30 / ~$0,06 USD). Evítalo si buscas ingresos extra constantes por hora; en ese caso elige plataformas verificadas como Freecash, Prime Opinion o AttaPoll.",
+      "imageKey": "arrow-win-splash",
+      "imageSectionIndex": 0,
+      "imageWide": false,
+      "imageAlt": "Pantalla de carga de Arrow Win con el logotipo del juego, el camaleón verde y la barra al 100%",
+      "caption": "Pantalla de inicio de Arrow Win en Android (paquete com.qrgame.arrowwin).",
+      "relatedIds": [
+        "arrow-win-invite",
+        "arrow-win-download",
+        "freecash"
+      ]
+    },
+    {
       "id": "arrow-win-invite",
       "app": "arrowwin",
       "category": "rewards",
@@ -7157,7 +7733,7 @@ export const articles:Record<Locale,Article[]>={
       "imageWide": false,
       "imageAlt": "Pantalla principal de Arrow Win con el botón Indicador a la derecha de los niveles",
       "caption": "En el segundo 00:02, “Indicador” aparece a la derecha, por encima de “Jogar” (Jugar).",
-      "relatedIds": ["arrow-win-download"]
+      "relatedIds": ["arrow-win-earn", "arrow-win-download"]
     },
     {
       "id": "arrow-win-download",
@@ -7222,7 +7798,7 @@ export const articles:Record<Locale,Article[]>={
       "imageWide": false,
       "imageAlt": "Pantalla de carga de Arrow Win con el logotipo y un camaleón verde",
       "caption": "Al abrir Arrow Win, verás el logotipo, un camaleón verde y la barra de carga.",
-      "relatedIds": ["arrow-win-invite"]
+      "relatedIds": ["arrow-win-earn", "arrow-win-invite"]
     },
     {
       "id": "lens",
@@ -14043,6 +14619,294 @@ export const articles:Record<Locale,Article[]>={
       "relatedIds": ["freecash"]
     },
     {
+      "id": "arrow-win-earn",
+      "app": "arrowwin",
+      "category": "rewards",
+      "slug": "arrow-win-jogo-ganhar-dinheiro",
+      "title": "Arrow Win: Jogo Para Ganhar Dinheiro e Renda Extra",
+      "description": "Arrow Win funciona com duas carteiras: 10.000 moedas ≈ R$ 1 e mínimo de 200 notas para R$ 20. Veja telas reais, código V15TT e link de download.",
+      "intro": "Arrow Win é um aplicativo de ganhar dinheiro grátis para Android com quebra-cabeça de setas e duas carteiras: moedas (saque desde R$ 0,30) e notas verdes (mínimo R$ 20 com 200 notas). Use o link de convite e o código V15TT para liberar a recompensa inicial e confira a conversão real abaixo.",
+      "modifiedDate": "2026-11-27",
+      "topCallout": {
+        "title": "Download do Arrow Win e código de convite V15TT",
+        "text": "Copie o código V15TT, baixe o Arrow Win pelo link oficial de convite ou pela Google Play e insira o código no menu Indicador para receber a recompensa inicial do app.",
+        "copyCode": "V15TT",
+        "links": [
+          {
+            "label": "Acessar link de convite (código V15TT)",
+            "url": "https://aw.shareearn1.com/?code=V15TT",
+            "sponsored": true
+          },
+          {
+            "label": "Baixar na Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.qrgame.arrowwin&referrer=code%3DV15TT",
+            "sponsored": true
+          }
+        ]
+      },
+      "sections": [
+        {
+          "heading": "Como funciona o aplicativo de ganhar dinheiro Arrow Win?",
+          "paragraphs": [
+            "O Arrow Win (pacote com.qrgame.arrowwin, publicado por COOLYA na Google Play) é um jogo para ganhar dinheiro baseado em fases de lógica. Em vez de pagar por tempo ocioso, o app recompensa o jogador por remover setas do tabuleiro, concluir metas diárias e assistir anúncios.",
+            "Na prática, ele opera como um app de ganhar dinheiro com economia dupla. Você acumula moedas douradas em tarefas curtas e notas verdes em fases e convites, cada uma com regra própria de saque.",
+            "Se você ainda não instalou o aplicativo no celular, confira o [guia de como baixar o Arrow Win na Google Play](/pt/baixar-arrow-win/) para verificar o desenvolvedor correto e evitar clones."
+          ]
+        },
+        {
+          "heading": "O que aparece na tela inicial do Arrow Win ao criar conta?",
+          "paragraphs": [
+            "Ao abrir o jogo pela primeira vez no Nível 1, a barra superior já exibe os dois saldos lado a lado: moedas douradas à esquerda (R$ 0) e notas verdes à direita (R$ 5 de saldo inicial em tela).",
+            "Nas laterais do mapa de níveis ficam os atalhos que alimentam a renda extra dentro do app: Tarefas (teto exibido de R$ 2.000 em moedas), Minijogo (R$ 150 em moedas), Convidar (R$ 16 em notas) e o evento da estrela com cronômetro regressivo.",
+            "No rodapé ficam os botões Bônus e Ranking. O botão laranja Jogar inicia a fase atual do quebra-cabeça imediatamente."
+          ],
+          "image": {
+            "key": "arrow-win-home-pt",
+            "alt": "Tela inicial em português do Arrow Win no Nível 1 com saldo de R$ 5 em notas e atalhos de Tarefas, Minijogo e Convidar",
+            "caption": "Tela inicial do Arrow Win no Nível 1 com saldos de moedas e notas, botão Jogar e atalhos laterais.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Como jogar as fases do quebra-cabeça para acumular pontos?",
+          "paragraphs": [
+            "Cada fase do Arrow Win apresenta um tabuleiro preenchido por setas e lagartas coloridas entrelaçadas. Sua missão é tocar nas peças na ordem certa para que saiam do quadro sem bater em outra peça bloqueando o caminho.",
+            "No Nível 3, você começa com 3 corações (vidas) e um cronômetro correndo no topo da tela. Erros consomem corações, e o botão de lâmpada no canto inferior oferece dicas mediante exibição de vídeo publicitário.",
+            "Limpar o tabuleiro desbloqueia a próxima fase da trilha e soma pontos para as metas de remoção diárias."
+          ],
+          "image": {
+            "key": "arrow-win-gameplay-level3",
+            "alt": "Tabuleiro do Nível 3 no Arrow Win com peças coloridas entrelaçadas, três vidas e cronômetro de 58 segundos",
+            "caption": "Gameplay real do Nível 3: é preciso liberar as peças externas antes de destravar o centro do tabuleiro.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Quais tarefas diárias pagam moedas no app de ganhar dinheiro?",
+          "paragraphs": [
+            "A aba DAILY reúne missões rápidas que rendem pontos de atividade e moedas douradas. Ao bater 30, 70 e 100 pontos no dia, você libera baús extras de R$ 200, R$ 500 e R$ 800 em moedas internas.",
+            "As cinco tarefas listadas na tela diária são assistir 2 anúncios (+25 pts e 100 moedas), concluir 2 minijogos (+25 pts e 150 moedas), fazer 100 remoções no tabuleiro (+30 pts e 200 moedas), ficar 30 minutos online (+15 pts e 40 moedas) e abrir o Arrow Win (+5 pts e 10 moedas).",
+            "Atenção ao rótulo visual: o prefixo R$ ao lado das moedas representa unidades internas de moedas, não reais diretos na conta bancária."
+          ],
+          "image": {
+            "key": "arrow-win-daily-tasks",
+            "alt": "Tela de tarefas diárias do Arrow Win com metas de 30, 70 e 100 pontos e missões como Watch Ads e Complete 100 removals",
+            "caption": "Lista de tarefas diárias (DAILY) com pontuação de progresso e recompensas em moedas.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Como funciona o minijogo do camaleão e qual é o risco?",
+          "paragraphs": [
+            "O atalho Minijogo abre uma arena onde o camaleão mira em insetos com prêmios exibidos acima deles (como 498 a 793 moedas). Cada disparo no botão CATCH custa 500 moedas no multiplicador x1.",
+            "Os botões de menos e mais alteram o multiplicador do lance. Se você errar ou capturar um inseto de valor baixo, seu saldo de moedas cai rápido em vez de subir.",
+            "Use o minijogo apenas quando precisar bater a missão diária de 2 partidas, evitando apostar todo o saldo acumulado nas fases."
+          ],
+          "image": {
+            "key": "arrow-win-minigame",
+            "alt": "Minijogo do camaleão no Arrow Win com insetos valendo entre 498 e 793 moedas e botão CATCH custando 500 moedas",
+            "caption": "Arena do minijogo: cada tentativa no botão CATCH consome 500 moedas no modo x1.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Como ativar o código de convite V15TT para ganhar recompensa?",
+          "paragraphs": [
+            "Quem baixa o jogo pelo link oficial de convite já carrega a referência do código V15TT. Mesmo assim, vale conferir o menu de indicação dentro do app para garantir o registro na conta.",
+            "Na tela inicial, toque no atalho de indicação, digite V15TT em letras maiúsculas e confirme no botão de envio. Veja o passo a passo ilustrado de onde digitar no [guia do código de convite Arrow Win](/pt/codigo-de-convite-arrow-win/).",
+            "Nas capturas do Nível 3, o saldo já avançou para 86 moedas e 41,06 notas verdes após as primeiras jogadas e bônus iniciais."
+          ],
+          "cta": {
+            "label": "Abrir link de convite Arrow Win (código V15TT)",
+            "url": "https://aw.shareearn1.com/?code=V15TT",
+            "sponsored": true
+          },
+          "image": {
+            "key": "arrow-win-home-en",
+            "alt": "Tela inicial do Arrow Win no Nível 3 exibindo 86 moedas e 41,06 em notas verdes",
+            "caption": "Evolução no Nível 3 mostrando os dois saldos ativos: 86 moedas e 41,06 em notas.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Quanto valem as moedas no saque (withdraw coins)?",
+          "paragraphs": [
+            "A tela withdraw coins mostra a taxa de conversão de forma direta no canto superior direito: 10.000 moedas equivalem a aproximadamente R$ 1. No exemplo da captura, 86 moedas correspondem a cerca de R$ 0,0086.",
+            "As quatro faixas disponíveis para resgate são R$ 0,30 (3.000 moedas, limite de 1 saque por dia), R$ 1 (10.000 moedas, limite de 1 por dia), R$ 5 (50.000 moedas) e R$ 20 (200.000 moedas).",
+            "Antes de tocar em WITHDRAW NOW, é obrigatório cadastrar uma conta de recebimento em Withdrawal method > Add account."
+          ],
+          "image": {
+            "key": "arrow-win-withdraw-coins",
+            "alt": "Tela withdraw coins do Arrow Win indicando 10000 Coins igual a R$ 1 e faixas de R$ 0,30 até R$ 20",
+            "caption": "Carteira de moedas: taxa explícita de 10.000 moedas ≈ R$ 1 e saque inicial a partir de 3.000 moedas (R$ 0,30).",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Como funciona o saque das notas verdes (cash withdrawal)?",
+          "paragraphs": [
+            "A segunda carteira (cash withdrawal) usa notas verdes com proporção de 10 para 1. Para sacar R$ 20, você precisa juntar 200 notas; para R$ 50, são 500 notas; para R$ 100, 1.000 notas; e para R$ 300, 3.000 notas.",
+            "Esse detalhe derruba a confusão mais comum entre iniciantes: exibir 41,06 no topo não significa ter R$ 41,06 prontos para saque, e sim cerca de R$ 4,10 de progresso rumo à primeira meta de 200 notas (R$ 20).",
+            "No rodapé das duas telas de saque aparece a identificação técnica Ocean Merge v1.0.8 e o ID da conta (ID:V15TT), confirmando que o jogo usa um motor de recompensas compartilhado com outros puzzles casuais."
+          ],
+          "cta": {
+            "label": "Baixar Arrow Win na Google Play com código V15TT",
+            "url": "https://play.google.com/store/apps/details?id=com.qrgame.arrowwin&referrer=code%3DV15TT",
+            "sponsored": true
+          },
+          "image": {
+            "key": "arrow-win-cash-withdrawal",
+            "alt": "Tela cash withdrawal do Arrow Win com saldo de 41,06 notas e opções de saque de R$ 20 (200 notas) até R$ 300 (3.000 notas)",
+            "caption": "Carteira de notas verdes: o primeiro saque de R$ 20 exige 200 notas acumuladas.",
+            "wide": false
+          }
+        },
+        {
+          "heading": "Limitações: quando NÃO usar o Arrow Win e alternativas reais",
+          "paragraphs": [
+            "Não baixe o Arrow Win esperando salário fixo ou retorno rápido por hora. O ganho com moedas (10.000 moedas por R$ 1) é lento, exige anúncios frequentes e a aprovação final do saque depende das regras internas do desenvolvedor.",
+            "Regra de segurança inegociável: nenhum aplicativo legítimo de renda extra cobra taxa via Pix para liberar saque. Se qualquer tela ou anúncio externo pedir depósito antecipado, feche e desinstale imediatamente.",
+            "Para quem prefere plataformas de renda extra com histórico consolidado em pesquisas e ofertas de jogos, vale comparar opções já analisadas no site: [como funciona o Freecash](/pt/freecash-e-confiavel-paga-mesmo-avaliacoes/), [review do Prime Opinion](/pt/prime-opinion-como-funciona-e-confiavel-paga-mesmo/), [guia do AttaPoll](/pt/attapoll-como-funciona/), [como funciona o Pawns.app](/pt/pawns-app-como-funciona-guia-completo/) e o [comparativo Pawns.app vs. Freecash](/pt/pawns-app-vs-freecash-qual-o-melhor-para-ganhar-dinheiro/)."
+          ]
+        }
+      ],
+      "tables": [
+        {
+          "heading": "Resumo técnico do Arrow Win (dados das telas reais)",
+          "columns": [
+            "Critério",
+            "Dado observado no aplicativo"
+          ],
+          "rows": [
+            [
+              "Nome e pacote Android",
+              "Arrow Win (com.qrgame.arrowwin) — COOLYA"
+            ],
+            [
+              "Código de convite",
+              "V15TT (ativado via link ou menu Indicador)"
+            ],
+            [
+              "Carteira 1 (Moedas)",
+              "10.000 moedas ≈ R$ 1 · Mínimo R$ 0,30 (3.000 moedas, 1/dia)"
+            ],
+            [
+              "Carteira 2 (Notas verdes)",
+              "10 notas = R$ 1 · Mínimo R$ 20 (200 notas) até R$ 300 (3.000 notas)"
+            ],
+            [
+              "Custo do Minijogo",
+              "500 moedas por lance (multiplicador x1)"
+            ],
+            [
+              "Versão exibida no saque",
+              "Ocean Merge v1.0.8"
+            ]
+          ],
+          "afterSectionIndex": 0
+        },
+        {
+          "heading": "Comparativo das faixas de saque nas duas carteiras",
+          "columns": [
+            "Carteira",
+            "Valor em R$",
+            "Saldo exigido",
+            "Regra adicional"
+          ],
+          "rows": [
+            [
+              "Moedas (withdraw coins)",
+              "R$ 0,30",
+              "3.000 moedas",
+              "Limite diário: 1 saque"
+            ],
+            [
+              "Moedas (withdraw coins)",
+              "R$ 1,00",
+              "10.000 moedas",
+              "Limite diário: 1 saque"
+            ],
+            [
+              "Moedas (withdraw coins)",
+              "R$ 5,00 / R$ 20,00",
+              "50.000 / 200.000 moedas",
+              "Sem etiqueta de limite diário"
+            ],
+            [
+              "Notas verdes (cash)",
+              "R$ 20,00 / R$ 50,00",
+              "200 / 500 notas",
+              "Exige vincular conta em Add account"
+            ],
+            [
+              "Notas verdes (cash)",
+              "R$ 100,00 / R$ 300,00",
+              "1.000 / 3.000 notas",
+              "Proporção fixa de 10 notas por R$ 1"
+            ]
+          ],
+          "afterSectionIndex": 6
+        }
+      ],
+      "steps": [
+        "Acesse o link de convite oficial do Arrow Win ou abra a ficha do app na Google Play (desenvolvedor COOLYA).",
+        "Instale e abra o aplicativo no Android até carregar a tela inicial com o camaleão verde.",
+        "Toque no atalho de indicação, digite o código V15TT em maiúsculas e confirme para liberar a recompensa inicial.",
+        "Avance nas fases do quebra-cabeça e complete as missões diárias (DAILY) para acumular moedas e notas.",
+        "Ao atingir 3.000 moedas (R$ 0,30) ou 200 notas verdes (R$ 20), cadastre sua conta em Withdrawal method > Add account antes de solicitar o resgate."
+      ],
+      "stepsSectionIndex": 5,
+      "pros": [
+        "Download gratuito na Google Play oficial com jogabilidade leve de quebra-cabeça.",
+        "Taxa de conversão das moedas exibida de forma clara na tela (10.000 moedas ≈ R$ 1).",
+        "Primeiro patamar de teste em moedas começa em 3.000 moedas (R$ 0,30).",
+        "Código de convite V15TT pode ser copiado e aplicado sem informar dados pessoais."
+      ],
+      "cons": [
+        "Conversão baixa em moedas exige muitas tarefas e anúncios para valores relevantes.",
+        "Carteira de notas verdes exige 200 notas para R$ 20, o que pode confundir quem lê o número do topo como reais diretos.",
+        "Minijogo cobra 500 moedas por tentativa e pode drenar seu saldo rapidamente.",
+        "Não há comprovação independente de saque garantido para todas as contas."
+      ],
+      "faq": [
+        {
+          "q": "Arrow Win é um aplicativo de ganhar dinheiro gratuito?",
+          "a": "Sim. O download na Google Play (pacote com.qrgame.arrowwin, COOLYA) é gratuito. O app gera receita exibindo anúncios durante fases, dicas e tarefas diárias."
+        },
+        {
+          "q": "Qual é o código de convite do Arrow Win para ganhar recompensa?",
+          "a": "O código de convite é V15TT. Você pode instalar pelo link oficial de convite ou digitar V15TT em letras maiúsculas no campo de indicação dentro do aplicativo."
+        },
+        {
+          "q": "Qual é o valor mínimo de saque no Arrow Win?",
+          "a": "Na carteira de moedas (withdraw coins), o mínimo exibido é R$ 0,30 (3.000 moedas, limite de 1 por dia). Na carteira de notas verdes (cash withdrawal), o mínimo exibido é R$ 20, exigindo 200 notas."
+        },
+        {
+          "q": "Quanto valem 10.000 moedas no Arrow Win?",
+          "a": "Conforme a própria tela withdraw coins do aplicativo, 10.000 moedas equivalem a aproximadamente R$ 1."
+        },
+        {
+          "q": "O Arrow Win serve como renda extra principal?",
+          "a": "Não. Use o aplicativo como passatempo casual com recompensas baixas. Para complementar a renda extra no celular, compare também plataformas consolidadas de pesquisas e tarefas como Freecash, Prime Opinion e AttaPoll."
+        },
+        {
+          "q": "Preciso pagar alguma taxa para sacar no Arrow Win?",
+          "a": "Não. Nunca transfira dinheiro nem pague taxas via Pix para liberar saques em jogos de recompensa."
+        }
+      ],
+      "verdict": "Decida em 10 segundos: baixe o Arrow Win pelo link oficial com o código V15TT se você gosta de jogos de quebra-cabeça leves e quer testar o resgate mínimo de 3.000 moedas (R$ 0,30) sem investir dinheiro. Passe longe se busca renda extra previsível por hora — nesse caso, migre para plataformas de pesquisas e metas verificadas como Freecash, Prime Opinion ou AttaPoll.",
+      "imageKey": "arrow-win-splash",
+      "imageSectionIndex": 0,
+      "imageWide": false,
+      "imageAlt": "Tela de carregamento do Arrow Win exibindo o logotipo do jogo, o camaleão verde e a barra em 100%",
+      "caption": "Tela inicial de abertura do Arrow Win no Android (pacote com.qrgame.arrowwin).",
+      "relatedIds": [
+        "arrow-win-invite",
+        "arrow-win-download",
+        "freecash"
+      ]
+    },
+    {
       "id": "arrow-win-invite",
       "app": "arrowwin",
       "category": "rewards",
@@ -14123,7 +14987,7 @@ export const articles:Record<Locale,Article[]>={
       "imageWide": false,
       "imageAlt": "Tela inicial do Arrow Win com o botão Indicador à direita do caminho de níveis",
       "caption": "Aos 00:02, o botão “Indicador” aparece à direita, acima de “Jogar”.",
-      "relatedIds": ["arrow-win-download"]
+      "relatedIds": ["arrow-win-earn", "arrow-win-download"]
     },
     {
       "id": "arrow-win-download",
@@ -14188,7 +15052,7 @@ export const articles:Record<Locale,Article[]>={
       "imageWide": false,
       "imageAlt": "Tela de carregamento do Arrow Win com a marca do jogo e um camaleão verde",
       "caption": "A abertura mostra a marca Arrow Win, um camaleão verde e a barra de carregamento.",
-      "relatedIds": ["arrow-win-invite"]
+      "relatedIds": ["arrow-win-earn", "arrow-win-invite"]
     },
     {
       "id": "lens",

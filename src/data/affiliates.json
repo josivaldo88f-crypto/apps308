@@ -93,10 +93,10 @@
     "arrowwin": {
       "status": "verified",
       "code": "V15TT",
-      "referralUrl": "https://aw.shareearn3.com/?code=V15TT",
-      "verifiedAt": "2026-11-23",
+      "referralUrl": "https://aw.shareearn1.com/?code=V15TT",
+      "verifiedAt": "2026-11-27",
       "codeType": "referral-id",
-      "evidence": "The landing page returned HTTP 200, displayed V15TT and linked to the Arrow Win Google Play listing with referrer=code%3DV15TT. The Android recording shows manual submission and an in-game reward animation."
+      "evidence": "Official invite link https://aw.shareearn1.com/?code=V15TT and Google Play referrer URL https://play.google.com/store/apps/details?id=com.qrgame.arrowwin&referrer=code%3DV15TT verified with Android captures of the splash, home, Level 3, DAILY tasks, mini-game, coin withdrawal, and cash withdrawal screens showing ID:V15TT."
     },
     "runteam": {
       "status": "verified",
